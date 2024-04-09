@@ -133,8 +133,8 @@ importers:
         specifier: 6.4.2
         version: 6.4.2(@types/jest@29.5.12)(jest@29.7.0)
       '@testing-library/react':
-        specifier: 14.2.1
-        version: 14.2.1(react-dom@18.2.0)(react@18.2.0)
+        specifier: 14.3.0
+        version: 14.3.0(react-dom@18.2.0)(react@18.2.0)
       '@testing-library/user-event':
         specifier: 14.5.2
         version: 14.5.2(@testing-library/dom@9.3.4)
@@ -5538,8 +5538,8 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react@14.2.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-sGdjws32ai5TLerhvzThYFbpnF9XtL65Cjf+gB0Dhr29BGqK+mAeN7SURSdu+eqgET4ANcWoC7FQpkaiGvBr+A==}
+  /@testing-library/react@14.3.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-AYJGvNFMbCa5vt1UtDCa/dcaABrXq8gph6VN+cffIx0UeA0qiGqS+sT60+sb+Gjc8tGXdECWYQgaF0khf8b+Lg==}
     engines: {node: '>=14'}
     peerDependencies:
       react: ^18.0.0
@@ -5547,7 +5547,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.24.0
       '@testing-library/dom': 9.3.4
-      '@types/react-dom': 18.2.18
+      '@types/react-dom': 18.2.20
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: true
@@ -5920,12 +5920,6 @@ packages:
 
   /@types/range-parser@1.2.4:
     resolution: {integrity: sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==}
-    dev: true
-
-  /@types/react-dom@18.2.18:
-    resolution: {integrity: sha512-TJxDm6OfAX2KJWJdMEVTwWke5Sc/E/RlnPGvGfS0W7+6ocy2xhDVQVh/KvC2Uf7kACs+gDytdusDSdWfWkaNzw==}
-    dependencies:
-      '@types/react': 18.2.63
     dev: true
 
   /@types/react-dom@18.2.20:
