@@ -30,7 +30,7 @@
     "@gemeentenijmegen/font": "workspace:*",
     "@gemeentenijmegen/web-components-react": "workspace:*",
     "@gemeentenijmegen/web-components-stencil": "workspace:*",
-    "@storybook/addon-a11y": "7.6.17",
+    "@storybook/addon-a11y": "8.1.5",
     "@storybook/addon-actions": "7.6.17",
     "@storybook/addon-docs": "7.6.17",
     "@storybook/addon-interactions": "7.6.17",
