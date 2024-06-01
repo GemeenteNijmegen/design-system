@@ -293,8 +293,8 @@ importers:
         specifier: 18.2.20
         version: 18.2.20
       '@utrecht/components':
-        specifier: 3.0.1-alpha.27
-        version: 3.0.1-alpha.27
+        specifier: 4.0.0
+        version: 4.0.0
       '@vitejs/plugin-react':
         specifier: 4.2.1
         version: 4.2.1(vite@5.1.5)
@@ -6414,8 +6414,8 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@utrecht/components@3.0.1-alpha.27:
-    resolution: {integrity: sha512-GjLDze/ypv7kSxirMtd4KchaB4CwhELvvHzt+9FiVvI27VHEoBnTWgtSc71oZtIAfJECFJqzyYYDPeAmY2JGdQ==}
+  /@utrecht/components@4.0.0:
+    resolution: {integrity: sha512-vpw8p5FEU/yrSGL5JU+x6bDXIreEPU6WPEagOkcdqbFGMovWS8uUHNWmv+PY1xJIOjOb98RebSsbFDoA4zllVQ==}
     dependencies:
       clsx: 1.2.1
     dev: true
