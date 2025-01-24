@@ -1,6 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import '@utrecht/components/button/css/index.scss';
-import '@utrecht/components/icon/css/index.scss';
 import '@utrecht/button-group-css';
 import { IconExternalLink } from '@tabler/icons-react';
 import { Button } from '@utrecht/component-library-react';
