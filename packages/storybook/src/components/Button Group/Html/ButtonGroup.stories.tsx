@@ -3,32 +3,19 @@ import '@utrecht/components/button/css/index.scss';
 import '@utrecht/components/icon/css/index.scss';
 import '@utrecht/button-group-css';
 import type { StoryContext } from '@storybook/types';
+import { IconExternalLink } from '@tabler/icons-react';
 import { Button } from '@utrecht/component-library-react';
 import { ButtonGroup } from '@utrecht/component-library-react/dist/css-module';
 import prettierBabel from 'prettier/parser-babel';
 import * as prettier from 'prettier/standalone';
 import * as ReactDOMServer from 'react-dom/server';
+import { argTypes } from '../_ButtonGroup';
 
 const meta = {
   title: 'Components/Button Group/Html Implementation',
   id: 'css-button-group',
   component: ButtonGroup,
-  argTypes: {
-    direction: {
-      description: 'Layout of the button group',
-      control: 'select',
-      options: {
-        '': undefined,
-        column: 'column',
-        row: 'row',
-      },
-      children: {
-        name: 'Content',
-        description: 'Button text',
-        defaultValue: '',
-      },
-    },
-  },
+  argTypes: argTypes,
   args: {},
   parameters: {
     status: {
@@ -65,10 +52,24 @@ export const Default: Story = {
   args: {
     children: [
       <Button key="1" appearance="primary-action-button">
-        Save and continue
+        Opslaan en doorgaan
       </Button>,
       <Button key="2" appearance="secondary-action-button">
-        Back
+        Terug
+      </Button>,
+    ],
+  },
+};
+
+export const DefaultVariant: Story = {
+  args: {
+    children: [
+      <Button key="1" appearance="primary-action-button" iconBeginning="Tabler example">
+        Afspraak maken
+        <IconExternalLink stroke={2} />
+      </Button>,
+      <Button key="2" appearance="subtle-button">
+        Annuleren
       </Button>,
     ],
   },

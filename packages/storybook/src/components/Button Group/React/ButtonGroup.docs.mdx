@@ -17,13 +17,17 @@ This documentation page shows the implementation of the Button component in [Rea
 import '@gemeentenijmegen/design-tokens/dist/index.css';
 import '@gemeentenijmegen/font/dist/index.css';
 
-// specific for Button component
-import { Button } from "@utrecht/component-library-react";
+// specific for ButtonGroup component
+import { ButtonGroup, Button } from "@utrecht/component-library-react";
+import '@utrecht/components/button-group/css/index.scss';
 import '@utrecht/components/button/css/index.scss';
 
 export const MyPage = () => (
     <div className="nijmegen-theme">
-      <Button appearance="primary-action-button">Label</Button>
+      <ButtonGroup>
+        <Button appearance="primary-action-button">Opslaan en doorgaan</Button>
+        <Button appearance="secondary-action-button">Terug</Button>
+      </ButtonGroup>
     </div>
 );
 `} />
