@@ -3,10 +3,10 @@
     "heading-1": {
       "color": {
         "type": "color",
-        "value": "{nijmegen.heading.color}"
+        "value": "{nijmegen.heading-1.color}"
       },
       "font-family": {
-        "value": "{nijmegen.heading.font-family}",
+        "value": "{nijmegen.heading-1.font-family}",
         "type": "fontFamilies"
       },
       "font-weight": {
@@ -40,7 +40,7 @@
         "type": "lineHeights"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.2xl}",
+        "value": "{nijmegen.typography.font-size.xl}",
         "type": "fontSizes"
       }
     },
@@ -62,7 +62,7 @@
         "type": "lineHeights"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.xl}",
+        "value": "{nijmegen.typography.font-size.lg}",
         "type": "fontSizes"
       }
     },
@@ -84,7 +84,7 @@
         "type": "lineHeights"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.lg}",
+        "value": "{nijmegen.typography.font-size.md}",
         "type": "fontSizes"
       }
     },
@@ -106,7 +106,7 @@
         "type": "lineHeights"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.md}",
+        "value": "{nijmegen.typography.font-size.sm}",
         "type": "fontSizes"
       }
     },

@@ -57,7 +57,7 @@
           }
         },
         "font-weight": {
-          "value": "{nijmegen.document.strong.font-weight}",
+          "value": "{nijmegen.typography.font-weight.semi-bold}",
           "type": "fontWeights"
         },
         "active": {
@@ -131,7 +131,7 @@
           }
         },
         "font-weight": {
-          "value": "{nijmegen.document.strong.font-weight}",
+          "value": "{nijmegen.typography.font-weight.semi-bold}",
           "type": "fontWeights"
         },
         "active": {
@@ -151,7 +151,7 @@
       },
       "border-radius": {
         "type": "borderRadius",
-        "value": "{nijmegen.border-radius.sm}"
+        "value": "{nijmegen.border-radius.xs}"
       },
       "border-width": {
         "type": "borderWidth",
@@ -176,16 +176,12 @@
         "type": "fontFamilies"
       },
       "font-size": {
-        "value": "{nijmegen.document.font-size}",
+        "value": "{nijmegen.typography.font-size.sml}",
         "type": "fontSizes"
-      },
-      "font-weight": {
-        "value": "{nijmegen.document.strong.font-weight}",
-        "type": "fontWeights"
       },
       "subtle": {
         "font-weight": {
-          "value": "{nijmegen.document.strong.font-weight}",
+          "value": "{nijmegen.typography.font-weight.semi-bold}",
           "type": "fontWeights"
         },
         "hover": {
@@ -307,8 +303,8 @@
       },
       "hover": {
         "background-color": {
-          "type": "color",
-          "value": "{nijmegen.interaction.hover.color}"
+          "value": "{nijmegen.color.grijs.200}",
+          "type": "color"
         },
         "border-color": {
           "value": "transparent",
@@ -425,6 +421,10 @@
             "type": "color",
             "value": "{nijmegen.color.white}"
           }
+        },
+        "font-weight": {
+          "value": "{nijmegen.typography.font-weight.semi-bold}",
+          "type": "fontWeights"
         }
       }
     }
