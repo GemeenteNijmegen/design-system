@@ -275,34 +275,6 @@
       },
       "disabled": {
         "background-color": {
-          "type": "color",
-          "value": "{nijmegen.color.grijs.200}"
-        },
-        "border-color": {
-          "value": "transparent",
-          "type": "color"
-        },
-        "color": {
-          "type": "color",
-          "value": "{nijmegen.color.grijs.500}"
-        }
-      },
-      "focus": {
-        "background-color": {
-          "type": "color",
-          "value": "{nijmegen.focus.background-color}"
-        },
-        "border-color": {
-          "value": "transparent",
-          "type": "color"
-        },
-        "color": {
-          "type": "color",
-          "value": "{nijmegen.focus.color}"
-        }
-      },
-      "hover": {
-        "background-color": {
           "value": "{nijmegen.color.grijs.200}",
           "type": "color"
         },
@@ -311,35 +283,51 @@
           "type": "color"
         },
         "color": {
-          "type": "color",
-          "value": "{nijmegen.color.white}"
+          "value": "{nijmegen.color.grijs.500}",
+          "type": "color"
         }
       },
-      "active": {
+      "focus": {
         "background-color": {
-          "type": "color",
-          "value": "{nijmegen.interaction.active.color}"
+          "value": "{nijmegen.focus.background-color}",
+          "type": "color"
         },
         "border-color": {
           "value": "transparent",
           "type": "color"
         },
         "color": {
-          "type": "color",
-          "value": "{nijmegen.color.white}"
+          "value": "{nijmegen.focus.color}",
+          "type": "color"
         }
       },
-      "background-color": {
-        "type": "color",
-        "value": "{nijmegen.interaction.color}"
+      "hover": {
+        "background-color": {
+          "value": "{nijmegen.color.grijs.200}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{nijmegen.interaction.hover.color}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{nijmegen.interaction.hover.color}",
+          "type": "color"
+        }
       },
-      "border-color": {
-        "value": "transparent",
-        "type": "color"
-      },
-      "color": {
-        "type": "color",
-        "value": "{nijmegen.color.white}"
+      "active": {
+        "background-color": {
+          "value": "{nijmegen.color.grijs.100}",
+          "type": "color"
+        },
+        "border-color": {
+          "value": "{nijmegen.interaction.active.color}",
+          "type": "color"
+        },
+        "color": {
+          "value": "{nijmegen.interaction.active.color}",
+          "type": "color"
+        }
       },
       "min-block-size": {
         "type": "sizing",
