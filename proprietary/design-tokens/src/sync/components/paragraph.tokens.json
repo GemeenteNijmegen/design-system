@@ -3,14 +3,14 @@
     "paragraph": {
       "color": {
         "type": "color",
-        "value": "{nijmegen.document.color}"
+        "value": "{nijmegen.color.grijs.500}"
       },
       "font-family": {
         "value": "{nijmegen.document.font-family}",
         "type": "fontFamilies"
       },
       "font-size": {
-        "value": "{nijmegen.document.font-size}",
+        "value": "{nijmegen.typography.font-size.sml}",
         "type": "fontSizes"
       },
       "font-weight": {
@@ -25,18 +25,18 @@
     "paragraph-lead": {
       "color": {
         "type": "color",
-        "value": "{nijmegen.document.color}"
+        "value": "{nijmegen.color.grijs.500}"
       },
       "font-family": {
         "value": "{nijmegen.document.font-family}",
         "type": "fontFamilies"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.lg}",
+        "value": "{nijmegen.typography.font-size.md}",
         "type": "fontSizes"
       },
       "font-weight": {
-        "value": "{nijmegen.document.font-weight}",
+        "value": "{nijmegen.typography.font-weight.semi-bold}",
         "type": "fontWeights"
       },
       "line-height": {
@@ -47,7 +47,7 @@
     "paragraph-small-print": {
       "color": {
         "type": "color",
-        "value": "{nijmegen.document.color}"
+        "value": "{nijmegen.color.grijs.500}"
       },
       "font-family": {
         "value": "{nijmegen.document.font-family}",

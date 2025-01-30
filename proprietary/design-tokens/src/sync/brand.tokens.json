@@ -10,8 +10,12 @@
           "value": "16px",
           "type": "fontSizes"
         },
-        "md": {
+        "sml": {
           "value": "18px",
+          "type": "fontSizes"
+        },
+        "md": {
+          "value": "20px",
           "type": "fontSizes"
         },
         "lg": {

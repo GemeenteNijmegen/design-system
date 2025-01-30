@@ -7,10 +7,10 @@
       },
       "color": {
         "type": "color",
-        "value": "{nijmegen.document.color}"
+        "value": "{nijmegen.color.grijs.500}"
       },
       "font-familiy": {
-        "value": "{nijmegen.document.font-family}",
+        "value": "{nijmegen.typography.font-family.secondary}",
         "type": "fontFamilies"
       },
       "font-weight": {
@@ -18,7 +18,7 @@
         "type": "fontWeights"
       },
       "font-size": {
-        "value": "{nijmegen.document.font-size}",
+        "value": "{nijmegen.typography.font-size.sml}",
         "type": "fontSizes"
       },
       "line-height": {
