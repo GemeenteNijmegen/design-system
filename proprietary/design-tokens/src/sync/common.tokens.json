@@ -135,14 +135,6 @@
           "type": "color"
         }
       },
-      "outline-offset": {
-        "value": "1px",
-        "type": "other"
-      },
-      "outline-style": {
-        "value": "dashed",
-        "type": "other"
-      },
       "outline-width": {
         "value": "{nijmegen.border-width.md}",
         "type": "borderWidth"

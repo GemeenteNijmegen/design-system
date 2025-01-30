@@ -30,6 +30,7 @@
     "components/link.tokens",
     "components/link-list.tokens",
     "components/ordered-list.tokens",
+    "components/unordered-list.tokens",
     "components/pagination.tokens",
     "components/paragraph.tokens",
     "components/radio.tokens",
@@ -43,7 +44,6 @@
     "components/textbox.tokens",
     "components/toolbar-button.tokens",
     "components/header.tokens",
-    "components/unordered-list.tokens",
     "components/focus-ring.tokens",
     "button-group.tokens"
   ]
