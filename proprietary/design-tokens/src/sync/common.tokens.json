@@ -479,17 +479,5 @@
         "type": "dimension"
       }
     }
-  },
-  "nijmegen ": {
-    "focus": {
-      "outline-offset": {
-        "value": "0",
-        "type": "focus"
-      },
-      "outline-style": {
-        "value": "dotted",
-        "type": "focus"
-      }
-    }
   }
 }
