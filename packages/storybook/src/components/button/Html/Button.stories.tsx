@@ -15,7 +15,7 @@ const meta = {
   args: defaultArgs,
   parameters: {
     status: {
-      type: 'WORK IN PROGRESS',
+      type: 'BETA',
     },
     docs: {
       source: {
@@ -45,10 +45,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: { children: 'Button' },
-};
-
-export const Primary: Story = {
+  name: 'Primary',
   args: { children: 'Primaire button', appearance: 'Primary' },
   argTypes: {
     appearance: {

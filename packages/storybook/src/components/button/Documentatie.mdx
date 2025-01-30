@@ -31,7 +31,7 @@ Dit component is een implementatie van het `utrecht-button` component.
 
 Een Primaire knop is bedoeld voor de allerbelangrijkste handeling op het scherm in ons websites. Deze handeling is meestal verplicht of essentieel voor de gebruiker. Primaire knoppen zijn ontworpen om de cruciale handeling duidelijk te benadrukken. Daarom is het beter om te voorkomen dat er op één scherm meerdere Primaire knoppen staan. Voor minder belangrijke handelingen kun je overwegen om in plaats daarvan secundaire of aanvullende knoppen te gebruiken binnen ons design systeem.
 
-<Canvas of={ButtonStories.Primary} sourceState="none" />
+<Canvas of={ButtonStories.Default} sourceState="none" />
 
 ### Secundaire
 
@@ -50,9 +50,9 @@ Aanvullende knoppen kunnen gebruikt worden voor vergelijkbare handelingen als se
 Binnen ons websites kunnen pictogrammen aan knoppen worden toegevoegd om de handeling duidelijker te maken. In sommige gevallen is het ook nuttig om pictogrammen toe te voegen om belangrijke acties beter te onderscheiden. Het wordt echter niet aanbevolen om knoppen alleen met pictogrammen te gebruiken, omdat gebruikers pictogrammen op verschillende manieren kunnen interpreteren. Zie de iconsrichtlijnen voor meer informatie over het gebruik ervan binnen ons design systeem.
 
 Icon start
-<div class="nijmegen-theme ">
-    <div class="css-s230ta">
-        <div class="css-xzp052">
+<div className="nijmegen-theme ">
+    <div className="css-s230ta">
+        <div className="css-xzp052">
             <ButtonStory appearance="Primary" iconBeginning="Tabler example" >Label</ButtonStory> &nbsp;
             <ButtonStory appearance="Secondary" iconBeginning="Tabler example" >Label</ButtonStory> &nbsp;
             <ButtonStory appearance="Subtle" iconBeginning="Tabler example" >Label</ButtonStory> 
@@ -61,9 +61,9 @@ Icon start
 </div>
 
 Icon end
-<div class="nijmegen-theme ">
-    <div class="css-s230ta">
-        <div class="css-xzp052">
+<div className="nijmegen-theme ">
+    <div className="css-s230ta">
+        <div className="css-xzp052">
             <ButtonStory appearance="Primary" iconEnding="Tabler example" >Label</ButtonStory> &nbsp;
             <ButtonStory appearance="Secondary" iconEnding="Tabler example" >Label</ButtonStory> &nbsp;
             <ButtonStory appearance="Subtle" iconEnding="Tabler example" >Label</ButtonStory> 
@@ -76,11 +76,10 @@ Icon end
 ## States
 ### Default  
 De normale weergave van de knop zonder enige interactie.
-<div class="nijmegen-theme ">
-    <div class="css-s230ta">
-        <div class="css-xzp052">
+<div className="nijmegen-theme ">
+    <div className="css-s230ta">
+        <div className="css-xzp052">
             <Button>Label</Button> &nbsp;
-            <Button appearance="primary-action-button">Label</Button> &nbsp;
             <Button appearance="secondary-action-button">Label</Button> &nbsp;
             <Button appearance="subtle-button">Label</Button>
         </div>
@@ -89,11 +88,10 @@ De normale weergave van de knop zonder enige interactie.
 
 ### Active
 De toestand van de knop wanneer deze wordt ingedrukt of geactiveerd.
-<div class="nijmegen-theme ">
-    <div class="css-s230ta">
-        <div class="css-xzp052">
+<div className="nijmegen-theme ">
+    <div className="css-s230ta">
+        <div className="css-xzp052">
             <Button className="utrecht-button--active">Label</Button> &nbsp;
-            <Button appearance="primary-action-button" className="utrecht-button--active">Label</Button> &nbsp;
             <Button appearance="secondary-action-button" className="utrecht-button--active">Label</Button> &nbsp;
             <Button appearance="subtle-button" className="utrecht-button--active">Label</Button>
         </div>
@@ -102,11 +100,10 @@ De toestand van de knop wanneer deze wordt ingedrukt of geactiveerd.
 
 ### Hover
 De toestand wanneer de muis over de knop zweeft, zonder de knop in te drukken.
-<div class="nijmegen-theme ">
-    <div class="css-s230ta">
-        <div class="css-xzp052">
+<div className="nijmegen-theme ">
+    <div className="css-s230ta">
+        <div className="css-xzp052">
             <Button className="utrecht-button--hover">Label</Button> &nbsp;
-            <Button appearance="primary-action-button" className="utrecht-button--hover">Label</Button> &nbsp;
             <Button appearance="secondary-action-button" className="utrecht-button--hover">Label</Button> &nbsp;
             <Button appearance="subtle-button" className="utrecht-button--hover">Label</Button>
         </div>
@@ -115,11 +112,10 @@ De toestand wanneer de muis over de knop zweeft, zonder de knop in te drukken.
 
 ### Hover + focus-visible
 De toestand wanneer de muis over de knop zweeft en deze tegelijkertijd de focus heeft, bijvoorbeeld via het tabbladtoetsenbord.
-<div class="nijmegen-theme ">
-    <div class="css-s230ta">
-        <div class="css-xzp052">
+<div className="nijmegen-theme ">
+    <div className="css-s230ta">
+        <div className="css-xzp052">
             <Button className="utrecht-button--hover utrecht-button--focus utrecht-button--focus-visible">Label</Button> &nbsp;
-            <Button appearance="primary-action-button" className="utrecht-button--hover utrecht-button--focus utrecht-button--focus-visible">Label</Button> &nbsp;
             <Button appearance="secondary-action-button" className="utrecht-button--hover utrecht-button--focus utrecht-button--focus-visible">Label</Button> &nbsp;
             <Button appearance="subtle-button" className="utrecht-button--hover utrecht-button--focus utrecht-button--focus-visible">Label</Button>
         </div>
@@ -128,11 +124,10 @@ De toestand wanneer de muis over de knop zweeft en deze tegelijkertijd de focus 
 
 ### Focus
 De toestand wanneer de knop de focus heeft, meestal geactiveerd door het tabbladtoetsenbord.
-<div class="nijmegen-theme ">
-    <div class="css-s230ta">
-        <div class="css-xzp052">
+<div className="nijmegen-theme ">
+    <div className="css-s230ta">
+        <div className="css-xzp052">
             <Button className="utrecht-button--focus">Label</Button> &nbsp;
-            <Button appearance="primary-action-button" className="utrecht-button--focus">Label</Button> &nbsp;
             <Button appearance="secondary-action-button" className="utrecht-button--focus">Label</Button> &nbsp;
             <Button appearance="subtle-button" className="utrecht-button--focus">Label</Button>
         </div>
@@ -141,11 +136,10 @@ De toestand wanneer de knop de focus heeft, meestal geactiveerd door het tabblad
 
 ### Focus-visible
 De toestand wanneer de knop de focus heeft en deze visueel wordt benadrukt, vooral belangrijk voor toegankelijkheid.
-<div class="nijmegen-theme ">
-    <div class="css-s230ta">
-        <div class="css-xzp052">
+<div className="nijmegen-theme ">
+    <div className="css-s230ta">
+        <div className="css-xzp052">
             <Button className="utrecht-button--focus utrecht-button--focus-visible">Label</Button> &nbsp;
-            <Button appearance="primary-action-button" className="utrecht-button--focus utrecht-button--focus-visible">Label</Button> &nbsp;
             <Button appearance="secondary-action-button" className="utrecht-button--focus utrecht-button--focus-visible">Label</Button> &nbsp;
             <Button appearance="subtle-button" className="utrecht-button--focus utrecht-button--focus-visible">Label</Button>
         </div>
@@ -154,11 +148,10 @@ De toestand wanneer de knop de focus heeft en deze visueel wordt benadrukt, voor
 
 ### Disabled
 De toestand waarin de knop niet interactief is en geen acties kan uitvoeren. De knop ziet er visueel anders uit om duidelijk te maken dat deze gedeactiveerd is en niet kan worden geselecteerd.
-<div class="nijmegen-theme ">
-    <div class="css-s230ta">
-        <div class="css-xzp052">
+<div className="nijmegen-theme ">
+    <div className="css-s230ta">
+        <div className="css-xzp052">
             <Button disabled>Label</Button> &nbsp;
-            <Button appearance="primary-action-button" disabled>Label</Button> &nbsp;
             <Button appearance="secondary-action-button" disabled>Label</Button> &nbsp;
             <Button appearance="subtle-button" disabled>Label</Button>
         </div>
@@ -167,11 +160,10 @@ De toestand waarin de knop niet interactief is en geen acties kan uitvoeren. De 
 
 ### Disabled Focus-visible
 De knop is gedeactiveerd, maar kan nog wel focus krijgen voor toetsenbord- en schermlezergebruikers.
-<div class="nijmegen-theme ">
-    <div class="css-s230ta">
-        <div class="css-xzp052">
+<div className="nijmegen-theme ">
+    <div className="css-s230ta">
+        <div className="css-xzp052">
             <Button disabled className="utrecht-button--focus utrecht-button--focus-visible">Label</Button> &nbsp;
-            <Button disabled appearance="primary-action-button" className="utrecht-button--focus utrecht-button--focus-visible">Label</Button> &nbsp;
             <Button disabled appearance="secondary-action-button" className="utrecht-button--focus utrecht-button--focus-visible">Label</Button> &nbsp;
             <Button disabled appearance="subtle-button" className="utrecht-button--focus utrecht-button--focus-visible">Label</Button>
         </div>

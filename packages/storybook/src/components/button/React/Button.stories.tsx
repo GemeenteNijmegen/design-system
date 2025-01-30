@@ -49,7 +49,7 @@ const argTypes = {
     name: 'Variation',
     description: 'Button variations',
     control: { type: 'select' },
-    options: ['', 'primary-action-button', 'secondary-action-button', 'subtle-button'],
+    options: ['primary-action-button', 'secondary-action-button', 'subtle-button'],
     defaultValue: '',
     table: {
       type: {
@@ -104,7 +104,7 @@ const meta = {
   args: {},
   parameters: {
     status: {
-      type: 'WORK IN PROGRESS',
+      type: 'BETA',
     },
   },
 } satisfies Meta<typeof Button>;
@@ -113,18 +113,8 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+  name: 'Primary',
   args: { children: 'Button' },
-};
-
-export const Primary: Story = {
-  args: { children: 'Primaire button', appearance: 'primary-action-button' },
-  argTypes: {
-    appearance: {
-      table: {
-        disable: true,
-      },
-    },
-  },
 };
 
 export const Secondary: Story = {
