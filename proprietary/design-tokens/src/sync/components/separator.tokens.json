@@ -6,7 +6,7 @@
         "type": "color"
       },
       "block-size": {
-        "value": "{nijmegen.size.4xs}",
+        "value": "{nijmegen.size.50}",
         "type": "sizing"
       },
       "padding-block-end": {

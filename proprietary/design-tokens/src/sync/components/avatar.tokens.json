@@ -20,7 +20,7 @@
         "type": "color"
       },
       "color": {
-        "value": "{nijmegen.color.white}",
+        "value": "{nijmegen.color.wit}",
         "type": "color"
       },
       "text": {
@@ -59,7 +59,7 @@
           "type": "color"
         },
         "color": {
-          "value": "{nijmegen.color.white}",
+          "value": "{nijmegen.color.wit}",
           "type": "color"
         }
       }
