@@ -8,7 +8,7 @@
     },
     "document": {
       "background-color": {
-        "value": "{nijmegen.color.white}",
+        "value": "{nijmegen.color.wit}",
         "type": "color"
       },
       "color": {
@@ -21,7 +21,7 @@
           "type": "color"
         },
         "color": {
-          "value": "{nijmegen.color.white}",
+          "value": "{nijmegen.color.wit}",
           "type": "color"
         }
       },
@@ -40,7 +40,7 @@
         "type": "fontSizes"
       },
       "font-weight": {
-        "value": "{nijmegen.typography.font-weight.normal}",
+        "value": "{nijmegen.typography.font-weight.regular}",
         "type": "fontWeights"
       },
       "strong": {
@@ -121,7 +121,7 @@
       },
       "inverse": {
         "outline-color": {
-          "value": "{nijmegen.color.white}",
+          "value": "{nijmegen.color.wit}",
           "type": "color"
         }
       },
@@ -152,7 +152,7 @@
         "type": "color"
       },
       "background-color": {
-        "value": "{nijmegen.color.white}",
+        "value": "{nijmegen.color.wit}",
         "type": "color"
       },
       "border-color": {
@@ -205,7 +205,7 @@
       },
       "focus": {
         "background-color": {
-          "value": "{nijmegen.color.white}",
+          "value": "{nijmegen.color.wit}",
           "type": "color"
         },
         "border-color": {
@@ -245,7 +245,7 @@
       },
       "invalid": {
         "background-color": {
-          "value": "{nijmegen.color.white}",
+          "value": "{nijmegen.color.wit}",
           "type": "color"
         },
         "border-color": {
@@ -344,24 +344,24 @@
     },
     "pointer-target": {
       "min-size": {
-        "value": "{nijmegen.size.md}",
+        "value": "{nijmegen.size.400}",
         "type": "sizing"
       }
     },
     "icon": {
       "functional": {
         "size": {
-          "value": "{nijmegen.size.xs}",
+          "value": "{nijmegen.size.200}",
           "type": "sizing"
         },
         "size1": {
-          "value": "{nijmegen.size.2xs}",
+          "value": "{nijmegen.size.150}",
           "type": "sizing"
         }
       },
       "toptask": {
         "size": {
-          "value": "{nijmegen.size.md}",
+          "value": "{nijmegen.size.400}",
           "type": "sizing"
         }
       }

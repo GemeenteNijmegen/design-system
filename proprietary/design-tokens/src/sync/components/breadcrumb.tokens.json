@@ -88,7 +88,7 @@
       "divider": {
         "size": {
           "type": "sizing",
-          "value": "{nijmegen.size.2xs}"
+          "value": "{nijmegen.size.150}"
         },
         "color": {
           "value": "{nijmegen.color.grijs.400}",
