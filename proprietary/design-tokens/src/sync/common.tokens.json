@@ -8,7 +8,7 @@
     },
     "document": {
       "background-color": {
-        "value": "{nijmegen.color.white}",
+        "value": "{nijmegen.color.wit}",
         "type": "color"
       },
       "color": {
@@ -21,7 +21,7 @@
           "type": "color"
         },
         "color": {
-          "value": "{nijmegen.color.white}",
+          "value": "{nijmegen.color.wit}",
           "type": "color"
         }
       },
@@ -121,7 +121,7 @@
       },
       "inverse": {
         "outline-color": {
-          "value": "{nijmegen.color.white}",
+          "value": "{nijmegen.color.wit}",
           "type": "color"
         }
       },
@@ -152,7 +152,7 @@
         "type": "color"
       },
       "background-color": {
-        "value": "{nijmegen.color.white}",
+        "value": "{nijmegen.color.wit}",
         "type": "color"
       },
       "border-color": {
@@ -205,7 +205,7 @@
       },
       "focus": {
         "background-color": {
-          "value": "{nijmegen.color.white}",
+          "value": "{nijmegen.color.wit}",
           "type": "color"
         },
         "border-color": {
@@ -245,7 +245,7 @@
       },
       "invalid": {
         "background-color": {
-          "value": "{nijmegen.color.white}",
+          "value": "{nijmegen.color.wit}",
           "type": "color"
         },
         "border-color": {
