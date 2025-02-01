@@ -91,11 +91,11 @@
           "value": "{nijmegen.border-width.sm}"
         },
         "border-color": {
-          "value": "{nijmegen.line.border-color}",
+          "value": "{nijmegen.color.border.subdued}",
           "type": "color"
         },
         "color": {
-          "value": "{nijmegen.document.color}",
+          "value": "{utrecht.document.color}",
           "type": "color"
         }
       },

@@ -3,7 +3,7 @@
     "form-field-label": {
       "color": {
         "type": "color",
-        "value": "{nijmegen.document.color}"
+        "value": "{utrecht.document.color}"
       },
       "font-family": {
         "value": "{nijmegen.document.font-family}",

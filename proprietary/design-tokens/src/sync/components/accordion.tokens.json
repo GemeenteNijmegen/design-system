@@ -15,7 +15,7 @@
           "value": "auto"
         },
         "border-color": {
-          "value": "{nijmegen.line.border-color}",
+          "value": "{nijmegen.color.border.subdued}",
           "type": "color"
         }
       },
@@ -114,7 +114,7 @@
         },
         "background-color": {
           "type": "color",
-          "value": "{nijmegen.color.white}"
+          "value": "{nijmegen.color.wit}"
         },
         "border-color": {
           "value": "transparent",
@@ -161,7 +161,7 @@
           "type": "fontFamilies"
         },
         "font-weight": {
-          "value": "{nijmegen.typography.font-weight.semi-bold}",
+          "value": "{nijmegen.typography.font-weight.semibold}",
           "type": "fontWeights"
         }
       }
