@@ -108,7 +108,7 @@
         }
       },
       "font-weight": {
-        "value": "{nijmegen.typography.font-weight.normal}",
+        "value": "{nijmegen.typography.font-weight.regular}",
         "type": "fontWeights"
       }
     }

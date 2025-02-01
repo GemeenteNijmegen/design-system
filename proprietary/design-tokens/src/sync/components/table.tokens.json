@@ -45,7 +45,7 @@
           "type": "fontWeights"
         },
         "font-size": {
-          "value": "{nijmegen.typography.font-size.xl}",
+          "value": "{1.5rem}",
           "type": "fontSizes"
         }
       },
