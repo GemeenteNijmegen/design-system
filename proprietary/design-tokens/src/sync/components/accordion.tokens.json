@@ -15,7 +15,7 @@
           "value": "auto"
         },
         "border-color": {
-          "value": "{nijmegen.line.border-color}",
+          "value": "{nijmegen.color.border.subdued}",
           "type": "color"
         }
       },
@@ -51,7 +51,7 @@
           "type": "fontSizes"
         },
         "line-height": {
-          "value": "{nijmegen.document.line-height}",
+          "value": "{utrecht.document.line-height}",
           "type": "lineHeights"
         },
         "icon": {
@@ -114,7 +114,7 @@
         },
         "background-color": {
           "type": "color",
-          "value": "{nijmegen.color.white}"
+          "value": "{nijmegen.color.wit}"
         },
         "border-color": {
           "value": "transparent",
@@ -157,11 +157,11 @@
           "value": "{nijmegen.border-width.sm}"
         },
         "font-family": {
-          "value": "{nijmegen.document.font-family}",
+          "value": "{utrecht.document.font-family}",
           "type": "fontFamilies"
         },
         "font-weight": {
-          "value": "{nijmegen.typography.font-weight.semi-bold}",
+          "value": "{nijmegen.typography.font-weight.semibold}",
           "type": "fontWeights"
         }
       }
