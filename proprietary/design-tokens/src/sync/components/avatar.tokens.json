@@ -2,7 +2,7 @@
   "nl": {
     "avatar": {
       "size": {
-        "value": "{nijmegen.pointer-target.min-size}",
+        "value": "{utrecht.pointer-target.min-size}",
         "type": "sizing"
       },
       "icon": {
@@ -20,12 +20,12 @@
         "type": "color"
       },
       "color": {
-        "value": "{nijmegen.color.white}",
+        "value": "{nijmegen.color.wit}",
         "type": "color"
       },
       "text": {
         "font-family": {
-          "value": "{nijmegen.document.font-family}",
+          "value": "{utrecht.document.font-family}",
           "type": "fontFamilies"
         },
         "font-weight": {
@@ -33,7 +33,7 @@
           "type": "fontWeights"
         },
         "line-height": {
-          "value": "{nijmegen.document.line-height}",
+          "value": "{utrecht.document.line-height}",
           "type": "lineHeights"
         },
         "text-transform": {
@@ -41,7 +41,7 @@
           "type": "textCase"
         },
         "font-size": {
-          "value": "{nijmegen.document.font-size}",
+          "value": "{utrecht.document.font-size}",
           "type": "fontSizes"
         }
       },
@@ -59,7 +59,7 @@
           "type": "color"
         },
         "color": {
-          "value": "{nijmegen.color.white}",
+          "value": "{nijmegen.color.wit}",
           "type": "color"
         }
       }
