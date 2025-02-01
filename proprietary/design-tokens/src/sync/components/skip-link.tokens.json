@@ -6,15 +6,15 @@
         "type": "fontWeights"
       },
       "font-family": {
-        "value": "{nijmegen.document.font-family}",
+        "value": "{utrecht.document.font-family}",
         "type": "fontFamilies"
       },
       "font-size": {
-        "value": "{nijmegen.document.font-size}",
+        "value": "{utrecht.document.font-size}",
         "type": "fontSizes"
       },
       "line-height": {
-        "value": "{nijmegen.document.line-height}",
+        "value": "{utrecht.document.line-height}",
         "type": "lineHeights"
       },
       "min-block-size": {

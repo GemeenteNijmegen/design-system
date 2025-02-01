@@ -3,7 +3,7 @@
     "card-topics": {
       "base": {
         "background-color": {
-          "value": "{nijmegen.color.white}",
+          "value": "{nijmegen.color.wit}",
           "type": "color"
         },
         "border-color": {
@@ -61,7 +61,7 @@
       },
       "title": {
         "font-size": {
-          "value": "{nijmegen.typography.font-size.xl}",
+          "value": "{1.5rem}",
           "type": "fontSizes"
         }
       },
