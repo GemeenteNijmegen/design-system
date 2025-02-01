@@ -2,7 +2,7 @@
   "nijmegen": {
     "card-nieuws": {
       "background-color": {
-        "value": "{nijmegen.color.white}",
+        "value": "{nijmegen.color.wit}",
         "type": "color"
       },
       "border-color": {
