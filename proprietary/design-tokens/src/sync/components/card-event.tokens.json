@@ -39,7 +39,7 @@
           }
         },
         "font-weight": {
-          "value": "{nijmegen.typography.font-weight.semi-bold}",
+          "value": "{nijmegen.typography.font-weight.semibold}",
           "type": "fontWeights"
         },
         "line-height": {
@@ -61,7 +61,7 @@
           "type": "fontFamilies"
         },
         "font-weight": {
-          "value": "{nijmegen.typography.font-weight.normal}",
+          "value": "{nijmegen.typography.font-weight.regular}",
           "type": "fontWeights"
         },
         "font-size": {
@@ -75,7 +75,7 @@
           "type": "color"
         },
         "font-weight": {
-          "value": "{nijmegen.typography.font-weight.normal}",
+          "value": "{nijmegen.typography.font-weight.regular}",
           "type": "fontWeights"
         },
         "font-size": {
@@ -93,7 +93,7 @@
           "type": "fontFamilies"
         },
         "font-weight": {
-          "value": "{nijmegen.typography.font-weight.normal}",
+          "value": "{nijmegen.typography.font-weight.regular}",
           "type": "fontWeights"
         },
         "font-size": {
