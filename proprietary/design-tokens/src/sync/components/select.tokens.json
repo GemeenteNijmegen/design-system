@@ -116,19 +116,19 @@
         "type": "borderWidth"
       },
       "font-family": {
-        "value": "{nijmegen.document.font-family}",
+        "value": "{utrecht.document.font-family}",
         "type": "fontFamilies"
       },
       "font-weight": {
-        "value": "{nijmegen.document.font-weight}",
+        "value": "{utrecht.document.font-weight}",
         "type": "fontWeights"
       },
       "line-height": {
-        "value": "{nijmegen.document.line-height}",
+        "value": "{utrecht.document.line-height}",
         "type": "lineHeights"
       },
       "font-size": {
-        "value": "{nijmegen.document.font-size}",
+        "value": "{utrecht.document.font-size}",
         "type": "fontSizes"
       },
       "max-inline-size": {
