@@ -3,16 +3,16 @@
     "unordered-list": {
       "color": {
         "type": "color",
-        "value": "{nijmegen.document.color}"
+        "value": "{utrecht.document.color}"
       },
       "marker": {
         "border-color": {
           "type": "color",
-          "value": "{nijmegen.document.color}"
+          "value": "{utrecht.document.color}"
         },
         "color": {
           "type": "color",
-          "value": "{nijmegen.document.color}"
+          "value": "{utrecht.document.color}"
         }
       },
       "font-familiy": {

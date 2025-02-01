@@ -155,7 +155,7 @@
           },
           "color": {
             "type": "color",
-            "value": "{nijmegen.document.color}"
+            "value": "{utrecht.document.color}"
           }
         },
         "border-radius": {

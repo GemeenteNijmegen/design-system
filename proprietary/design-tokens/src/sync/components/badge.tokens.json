@@ -23,7 +23,7 @@
           "type": "color"
         },
         "background-color": {
-          "value": "{nijmegen.feedback.success-default.background-color}",
+          "value": "{nijmegen.color.feedback.success.default}",
           "type": "color"
         },
         "border-color": {
@@ -71,7 +71,7 @@
       },
       "warning": {
         "color": {
-          "value": "{nijmegen.feedback.warning-default.color}",
+          "value": "{nijmegen.color.feedback.warning.default}",
           "type": "color"
         },
         "background-color": {
@@ -85,7 +85,7 @@
       },
       "informative": {
         "color": {
-          "value": "{nijmegen.feedback.info-default.color}",
+          "value": "{nijmegen.color.feedback.info.default}",
           "type": "color"
         },
         "background-color": {
