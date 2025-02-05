@@ -2,145 +2,145 @@
   "utrecht": {
     "data-list": {
       "font-family": {
-        "value": "{nijmegen.document.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{utrecht.document.font-family}"
       },
       "item-value": {
         "font-weight": {
-          "value": "{nijmegen.document.font-weight}",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{utrecht.document.font-weight}"
         },
         "row": {
           "padding-block-end": {
-            "value": "{nijmegen.space.block.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{nijmegen.space.block.sm}"
           },
           "padding-block-start": {
-            "value": "{nijmegen.space.block.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{nijmegen.space.block.sm}"
           },
           "padding-inline-end": {
-            "value": "{nijmegen.space.inline.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{nijmegen.space.inline.sm}"
           },
           "padding-inline-start": {
-            "value": "{nijmegen.space.inline.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{nijmegen.space.inline.sm}"
           }
         },
         "padding-block-end": {
-          "value": "{nijmegen.space.block.sm}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.block.sm}"
         },
         "padding-block-start": {
-          "value": "{nijmegen.space.block.2xs}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.block.2xs}"
         },
         "padding-inline-end": {
-          "value": "{nijmegen.space.inline.sm}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.inline.sm}"
         },
         "padding-inline-start": {
-          "value": "{nijmegen.space.inline.sm}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.inline.sm}"
         }
       },
       "item-key": {
         "font-weight": {
-          "value": "{nijmegen.document.strong.font-weight}",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{nijmegen.document.strong.font-weight}"
         },
         "row": {
           "padding-block-end": {
-            "value": "{nijmegen.space.block.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{nijmegen.space.block.sm}"
           },
           "padding-block-start": {
-            "value": "{nijmegen.space.block.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{nijmegen.space.block.sm}"
           },
           "padding-inline-end": {
-            "value": "{nijmegen.space.inline.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{nijmegen.space.inline.sm}"
           },
           "padding-inline-start": {
-            "value": "{nijmegen.space.inline.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{nijmegen.space.inline.sm}"
           }
         },
         "padding-block-end": {
-          "value": "{nijmegen.space.block.2xs}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.block.2xs}"
         },
         "padding-block-start": {
-          "value": "{nijmegen.space.block.sm}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.block.sm}"
         },
         "padding-inline-end": {
-          "value": "{nijmegen.space.inline.sm}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.inline.sm}"
         },
         "padding-inline-start": {
-          "value": "{nijmegen.space.inline.sm}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.inline.sm}"
         }
       },
       "item": {
         "border-width": {
-          "type": "borderWidth",
-          "value": "{nijmegen.border-width.sm}"
+          "$type": "borderWidth",
+          "$value": "{nijmegen.border-width.sm}"
         },
         "border-color": {
-          "value": "{nijmegen.line.border-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.border.subdued}"
         },
         "color": {
-          "value": "{nijmegen.document.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{utrecht.document.color}"
         }
       },
       "font-size": {
-        "value": "{nijmegen.document.font-size}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{utrecht.document.font-size}"
       },
       "line-height": {
-        "value": "{nijmegen.document.line-height}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{utrecht.document.line-height}"
       },
       "item-action": {
         "row": {
           "padding-block-end": {
-            "value": "{nijmegen.space.block.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{nijmegen.space.block.sm}"
           },
           "padding-block-start": {
-            "value": "{nijmegen.space.block.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{nijmegen.space.block.sm}"
           },
           "padding-inline-end": {
-            "value": "{nijmegen.space.inline.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{nijmegen.space.inline.sm}"
           },
           "padding-inline-start": {
-            "value": "{nijmegen.space.inline.sm}",
-            "type": "spacing"
+            "$type": "spacing",
+            "$value": "{nijmegen.space.inline.sm}"
           }
         },
         "padding-block-end": {
-          "value": "{nijmegen.space.block.sm}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.block.sm}"
         },
         "padding-block-start": {
-          "value": "{nijmegen.space.block.sm}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.block.sm}"
         },
         "padding-inline-end": {
-          "value": "{nijmegen.space.inline.sm}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.inline.sm}"
         },
         "padding-inline-start": {
-          "value": "{nijmegen.space.inline.sm}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.inline.sm}"
         }
       }
     }

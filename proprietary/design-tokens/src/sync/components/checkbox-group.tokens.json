@@ -2,16 +2,16 @@
   "utrecht": {
     "checkbox-group": {
       "padding-block-end": {
-        "value": "{nijmegen.space.block.xs}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.block.xs}"
       },
       "padding-block-start": {
-        "value": "{nijmegen.space.block.xs}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.block.xs}"
       },
       "row-gap": {
-        "value": "{nijmegen.space.row.md}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.row.md}"
       }
     }
   }

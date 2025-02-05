@@ -3,25 +3,25 @@
     "toolbar-button": {
       "icon": {
         "margin-inline": {
-          "value": "{nijmegen.space.text.2xs}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.text.2xs}"
         }
       },
       "padding-block-end": {
-        "value": "{nijmegen.space.block.sm}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.block.sm}"
       },
       "padding-block-start": {
-        "value": "{nijmegen.space.block.sm}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.block.sm}"
       },
       "padding-inline-end": {
-        "value": "{nijmegen.space.inline.xs}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.inline.xs}"
       },
       "padding-inline-start": {
-        "value": "{nijmegen.space.inline.xs}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.inline.xs}"
       }
     }
   }

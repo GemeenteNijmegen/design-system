@@ -2,47 +2,47 @@
   "utrecht": {
     "unordered-list": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.document.color}"
+        "$type": "color",
+        "$value": "{utrecht.document.color}"
       },
       "marker": {
         "border-color": {
-          "type": "color",
-          "value": "{nijmegen.document.color}"
+          "$type": "color",
+          "$value": "{utrecht.document.color}"
         },
         "color": {
-          "type": "color",
-          "value": "{nijmegen.document.color}"
+          "$type": "color",
+          "$value": "{utrecht.document.color}"
         }
       },
       "font-familiy": {
-        "value": "{nijmegen.document.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{utrecht.document.font-family}"
       },
       "font-size": {
-        "value": "{nijmegen.document.font-size}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{utrecht.document.font-size}"
       },
       "font-weight": {
-        "value": "{nijmegen.document.font-weight}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{utrecht.document.font-weight}"
       },
       "line-height": {
-        "value": "{nijmegen.document.line-height}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{utrecht.document.line-height}"
       },
       "padding-inline-start": {
-        "value": "{nijmegen.space.inline.xl}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.inline.xl}"
       },
       "item": {
         "margin-block-end": {
-          "value": "{nijmegen.space.block.2xs}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.block.2xs}"
         },
         "margin-block-start": {
-          "value": "{nijmegen.space.block.2xs}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.block.2xs}"
         }
       }
     }
