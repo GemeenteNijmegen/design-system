@@ -3,33 +3,33 @@
     "form-field-error-message": {
       "icon": {
         "size": {
-          "type": "sizing",
-          "value": "{nijmegen.icon.functional.size}"
+          "$type": "sizing",
+          "$value": "{nijmegen.icon.functional.size}"
         },
         "margin-inline-end": {
-          "value": "{nijmegen.space.inline.xs}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.inline.xs}"
         }
       },
       "color": {
-        "type": "color",
-        "value": "{nijmegen.color.donkerrood.100}"
+        "$type": "color",
+        "$value": "{nijmegen.color.donkerrood.100}"
       },
       "font-family": {
-        "value": "{nijmegen.document.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{utrecht.document.font-family}"
       },
       "font-size": {
-        "value": "{nijmegen.document.font-size}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{utrecht.document.font-size}"
       },
       "font-weight": {
-        "value": "{nijmegen.document.font-weight}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{utrecht.document.font-weight}"
       },
       "line-height": {
-        "value": "{nijmegen.document.line-height}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{utrecht.document.line-height}"
       }
     }
   }
