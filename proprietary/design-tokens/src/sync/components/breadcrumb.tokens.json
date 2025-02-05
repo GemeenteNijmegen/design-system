@@ -2,11 +2,11 @@
   "utrecht": {
     "breadcrumb": {
       "line-height": {
-        "value": "{nijmegen.document.line-height}",
+        "value": "{utrecht.document.line-height}",
         "type": "lineHeights"
       },
       "font-size": {
-        "value": "{nijmegen.document.font-size}",
+        "value": "{utrecht.document.font-size}",
         "type": "fontSizes"
       },
       "link": {
@@ -88,7 +88,7 @@
       "divider": {
         "size": {
           "type": "sizing",
-          "value": "{nijmegen.size.2xs}"
+          "value": "{nijmegen.size.150}"
         },
         "color": {
           "value": "{nijmegen.color.grijs.400}",
@@ -100,11 +100,11 @@
         "type": "spacing"
       },
       "font-family": {
-        "value": "{nijmegen.document.font-family}",
+        "value": "{utrecht.document.font-family}",
         "type": "fontFamilies"
       },
       "font-weight": {
-        "value": "{nijmegen.document.font-weight}",
+        "value": "{utrecht.document.font-weight}",
         "type": "fontWeights"
       }
     }
