@@ -2,24 +2,16 @@
   "utrecht": {
     "focus": {
       "outline-width": {
-        "value": "{nijmegen.focus.outline-width}",
-        "type": "borderWidth"
-      },
-      "outline-offset": {
-        "value": "{nijmegen.focus.outline-offset}",
-        "type": "focus"
+        "$type": "borderWidth",
+        "$value": "{nijmegen.border-width.sm}"
       },
       "inverse-outline-color": {
-        "value": "{nijmegen.focus.inverse.outline-color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{utrecht.focus.inverse.outline-color}"
       },
       "outline-color": {
-        "value": "{nijmegen.focus.outline-color}",
-        "type": "color"
-      },
-      "outline-style": {
-        "value": "{nijmegen.focus.outline-style}",
-        "type": "other"
+        "$type": "color",
+        "$value": "{nijmegen.focus.color}"
       }
     }
   }
