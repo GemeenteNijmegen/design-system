@@ -216,7 +216,7 @@
       "ellipses": {
         "color": {
           "$type": "color",
-          "$value": "{nijmegen.document.subtle.color}"
+          "$value": "{nijmegen.color.foreground.subdued}"
         },
         "font-weight": {
           "$type": "fontWeights",

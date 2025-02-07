@@ -5,6 +5,10 @@
         "$type": "color",
         "$value": "transparant"
       },
+      "column-gap": {
+        "$type": "spacing",
+        "$value": "{nijmegen.space.50}"
+      },
       "margin-block-end": {
         "$type": "spacing",
         "$value": "0px"
@@ -20,6 +24,10 @@
       "padding-block-start": {
         "$type": "spacing",
         "$value": "0px"
+      },
+      "row-gap": {
+        "$type": "spacing",
+        "$value": "{nijmegen.space.50}"
       }
     }
   }

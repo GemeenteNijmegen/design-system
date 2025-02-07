@@ -63,7 +63,7 @@
       },
       "font-size": {
         "$type": "fontSizes",
-        "$value": "{1.5rem}"
+        "$value": "{nijmegen.typography.font-size.xl}"
       }
     },
     "heading-4": {
