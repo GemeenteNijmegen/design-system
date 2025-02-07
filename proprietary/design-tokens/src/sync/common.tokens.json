@@ -379,7 +379,7 @@
     "pointer-target": {
       "min-size": {
         "$type": "sizing",
-        "$value": "{nijmegen.size.400}"
+        "$value": "{nijmegen.size.300}"
       }
     }
   }
