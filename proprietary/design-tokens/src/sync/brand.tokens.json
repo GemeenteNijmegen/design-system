@@ -359,6 +359,10 @@
         "$type": "spacing",
         "$value": "0rem"
       },
+      "12": {
+        "$type": "spacing",
+        "$value": "0.125rem"
+      },
       "25": {
         "$type": "spacing",
         "$value": "0.25rem"
