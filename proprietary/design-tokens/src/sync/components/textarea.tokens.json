@@ -2,152 +2,136 @@
   "utrecht": {
     "textarea": {
       "max-inline-size": {
-        "value": "400px",
-        "type": "sizing"
-      },
-      "padding-block-end": {
-        "value": "{nijmegen.space.block.sm}",
-        "type": "spacing"
-      },
-      "padding-block-start": {
-        "value": "{nijmegen.space.block.sm}",
-        "type": "spacing"
-      },
-      "padding-inline-end": {
-        "value": "{nijmegen.space.inline.sm}",
-        "type": "spacing"
-      },
-      "padding-inline-start": {
-        "value": "{nijmegen.space.inline.sm}",
-        "type": "spacing"
+        "$type": "sizing",
+        "$value": "400px"
       },
       "background-color": {
-        "value": "{nijmegen.form-control.background-color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{nijmegen.form-control.background-color}"
       },
       "border-color": {
-        "value": "{nijmegen.form-control.border-color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{nijmegen.form-control.border-color}"
       },
       "color": {
-        "value": "{nijmegen.form-control.color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{nijmegen.form-control.color}"
       },
       "invalid": {
         "background-color": {
-          "value": "{nijmegen.form-control.invalid.background-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.invalid.background-color}"
         },
         "border-color": {
-          "value": "{nijmegen.form-control.invalid.border-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.invalid.border-color}"
         },
         "color": {
-          "value": "{nijmegen.form-control.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.color}"
         },
         "border-width": {
-          "value": "{nijmegen.form-control.invalid.border-width}",
-          "type": "borderWidth"
+          "$type": "borderWidth",
+          "$value": "{nijmegen.form-control.invalid.border-width}"
         }
       },
       "placeholder": {
         "color": {
-          "value": "{nijmegen.form-control.placeholder.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.placeholder.color}"
         }
       },
       "focus": {
         "background-color": {
-          "value": "{nijmegen.form-control.focus.background-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.focus.background-color}"
         },
         "border-color": {
-          "value": "{nijmegen.form-control.focus.border-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.focus.border-color}"
         },
         "color": {
-          "value": "{nijmegen.form-control.focus.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.focus.color}"
         },
         "border-width": {
-          "value": "{nijmegen.form-control.focus.border-width}",
-          "type": "borderWidth"
+          "$type": "borderWidth",
+          "$value": "{nijmegen.form-control.focus.border-width}"
         }
       },
       "disabled": {
         "background-color": {
-          "value": "{nijmegen.form-control.disabled.background-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.disabled.background-color}"
         },
         "border-color": {
-          "value": "{nijmegen.form-control.disabled.border-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.disabled.border-color}"
         },
         "color": {
-          "value": "{nijmegen.form-control.disabled.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.disabled.color}"
         }
       },
       "read-only": {
         "background-color": {
-          "value": "{nijmegen.form-control.read-only.background-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.read-only.background-color}"
         },
         "border-color": {
-          "value": "{nijmegen.form-control.read-only.border-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.read-only.border-color}"
         },
         "color": {
-          "value": "{nijmegen.form-control.read-only.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.read-only.color}"
         }
       },
       "hover": {
         "background-color": {
-          "value": "{nijmegen.form-control.hover.background-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.hover.background-color}"
         },
         "border-color": {
-          "value": "{nijmegen.form-control.hover.border-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.hover.border-color}"
         },
         "color": {
-          "value": "{nijmegen.form-control.hover.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.form-control.hover.color}"
         },
         "border-width": {
-          "value": "{nijmegen.form-control.hover.border-width}",
-          "type": "borderWidth"
+          "$type": "borderWidth",
+          "$value": "{nijmegen.form-control.hover.border-width}"
         }
       },
       "border-radius": {
-        "type": "borderRadius",
-        "value": "0px"
+        "$type": "borderRadius",
+        "$value": "0px"
       },
       "border-bottom-width": {
-        "value": "auto",
-        "type": "borderWidth"
+        "$type": "borderWidth",
+        "$value": "auto"
       },
       "border-width": {
-        "value": "{nijmegen.form-control.border-width}",
-        "type": "borderWidth"
+        "$type": "borderWidth",
+        "$value": "{nijmegen.form-control.border-width}"
       },
       "font-family": {
-        "value": "{nijmegen.document.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{utrecht.document.font-family}"
       },
       "font-weight": {
-        "value": "{nijmegen.document.font-weight}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{utrecht.document.font-weight}"
       },
       "line-height": {
-        "value": "{nijmegen.document.line-height}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{utrecht.document.line-height}"
       },
       "font-size": {
-        "value": "{nijmegen.document.font-size}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{utrecht.document.font-size}"
       }
     }
   }

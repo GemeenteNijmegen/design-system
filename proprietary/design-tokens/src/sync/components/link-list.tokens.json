@@ -3,113 +3,95 @@
     "link-list": {
       "base": {
         "background-color": {
-          "value": "transparent",
-          "type": "color"
+          "$type": "color",
+          "$value": "transparent"
         },
         "text-color": {
-          "value": "{nijmegen.color.groen.500}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.groen.500}"
         },
         "font-family": {
-          "value": "{nijmegen.typography.font-family.secondary}",
-          "type": "fontFamilies"
+          "$type": "fontFamilies",
+          "$value": "{nijmegen.typography.font-family.secondary}"
         },
         "font-size": {
-          "value": "{nijmegen.typography.font-size.md}",
-          "type": "fontSizes"
+          "$type": "fontSizes",
+          "$value": "{nijmegen.typography.font-size.md}"
         },
         "line-height": {
-          "value": "{nijmegen.typography.line-height.md}",
-          "type": "lineHeights"
-        },
-        "padding": {
-          "value": "{nijmegen.space.block.md}",
-          "type": "spacing"
+          "$type": "lineHeights",
+          "$value": "{nijmegen.typography.line-height.md}"
         },
         "border-radius": {
-          "value": "{nijmegen.border-radius.xs}",
-          "type": "borderRadius"
+          "$type": "borderRadius",
+          "$value": "{nijmegen.border-radius.xs}"
         }
       },
       "hover": {
         "text-color": {
-          "value": "{nijmegen.color.groen.700}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.groen.700}"
         },
         "text-decoration": {
-          "value": "{nijmegen.hover.text-decoration}",
-          "type": "textDecoration"
+          "$type": "textDecoration",
+          "$value": "{nijmegen.hover.text-decoration}"
         }
       },
       "focus": {
-        "background-color": {
-          "value": "{nijmegen.color.groen.50}",
-          "type": "color"
-        },
         "text-color": {
-          "value": "{nijmegen.color.groen.900}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.groen.900}"
         },
         "border-style": {
-          "value": "solid",
-          "type": "border"
+          "$type": "border",
+          "$value": "solid"
         },
         "border-width": {
-          "value": "{nijmegen.border-width.md}",
-          "type": "borderWidth"
+          "$type": "borderWidth",
+          "$value": "{nijmegen.border-width.md}"
         }
       },
       "focus-visible": {
-        "background-color": {
-          "value": "{nijmegen.color.groen.50}",
-          "type": "color"
-        },
         "text-color": {
-          "value": "{nijmegen.color.groen.900}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.groen.900}"
         },
         "border-color": {
-          "value": "{nijmegen.color.groen.900}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.groen.900}"
         },
         "border-style": {
-          "value": "dotted",
-          "type": "border"
+          "$type": "border",
+          "$value": "dotted"
         },
         "border-width": {
-          "value": "{nijmegen.border-width.md}",
-          "type": "borderWidth"
+          "$type": "borderWidth",
+          "$value": "{nijmegen.border-width.md}"
         }
       },
       "visited": {
         "text-color": {
-          "value": "{nijmegen.color.groen.700}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.groen.700}"
         },
         "text-decoration": {
-          "value": "{nijmegen.hover.text-decoration}",
-          "type": "textDecoration"
+          "$type": "textDecoration",
+          "$value": "{nijmegen.hover.text-decoration}"
         }
       },
       "active": {
         "border-style": {
-          "value": "{nijmegen.link-list.focus.border-style}",
-          "type": "border"
+          "$type": "border",
+          "$value": "{nijmegen.link-list.focus.border-style}"
         },
         "border-width": {
-          "value": "2px",
-          "type": "borderWidth"
-        }
-      },
-      "icon": {
-        "size": {
-          "value": "{nijmegen.size.icon.lg}",
-          "type": "sizing"
+          "$type": "borderWidth",
+          "$value": "2px"
         }
       },
       "font-weight": {
-        "value": "{nijmegen.typography.font-weight.normal}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{nijmegen.typography.font-weight.regular}"
       }
     }
   }
