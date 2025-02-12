@@ -2,65 +2,65 @@
   "nijmegen": {
     "card-persona": {
       "border-color": {
-        "$type": "color",
-        "$value": "{nijmegen.color.border.default}"
+        "value": "{nijmegen.color.border.default}",
+        "type": "color"
       },
       "border-radius": {
-        "$type": "borderRadius",
-        "$value": "{nijmegen.border-radius.xs}"
+        "value": "{nijmegen.border-radius.xs}",
+        "type": "borderRadius"
       },
       "title": {
         "color": {
-          "$type": "color",
-          "$value": "{nijmegen.color.zwart}"
+          "value": "{nijmegen.color.zwart}",
+          "type": "color"
         },
         "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{nijmegen.typography.font-family.secondary}"
+          "value": "{nijmegen.typography.font-family.secondary}",
+          "type": "fontFamilies"
         },
         "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{nijmegen.typography.font-weight.semibold}"
+          "value": "{nijmegen.typography.font-weight.semibold}",
+          "type": "fontWeights"
         },
         "font-size": {
-          "$type": "fontSizes",
-          "$value": "{nijmegen.typography.font-size.lg}"
+          "value": "{nijmegen.typography.font-size.lg}",
+          "type": "fontSizes"
         },
         "line-height": {
-          "$type": "lineHeights",
-          "$value": "{utrecht.heading-3.line-height}"
+          "value": "{utrecht.heading-3.line-height}",
+          "type": "lineHeights"
         },
         "hover": {
           "color": {
-            "$type": "color",
-            "$value": "{nijmegen.color.groen.700}"
+            "value": "{nijmegen.color.groen.700}",
+            "type": "color"
           },
           "text-decoration": {
-            "$type": "textDecoration",
-            "$value": "{nijmegen.hover.text-decoration}"
+            "value": "{nijmegen.hover.text-decoration}",
+            "type": "textDecoration"
           }
         }
       },
       "description": {
         "color": {
-          "$type": "color",
-          "$value": "{nijmegen.color.grijs.400}"
+          "value": "{nijmegen.color.grijs.400}",
+          "type": "color"
         },
         "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{nijmegen.typography.font-family.secondary}"
+          "value": "{nijmegen.typography.font-family.secondary}",
+          "type": "fontFamilies"
         },
         "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{nijmegen.typography.font-weight.regular}"
+          "value": "{nijmegen.typography.font-weight.regular}",
+          "type": "fontWeights"
         },
         "font-size": {
-          "$type": "fontSizes",
-          "$value": "{nijmegen.typography.font-size.md}"
+          "value": "{nijmegen.typography.font-size.md}",
+          "type": "fontSizes"
         },
         "line-height": {
-          "$type": "lineHeights",
-          "$value": "{utrecht.heading-3.line-height}"
+          "value": "{utrecht.heading-3.line-height}",
+          "type": "lineHeights"
         }
       }
     }

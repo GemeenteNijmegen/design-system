@@ -2,17 +2,17 @@
   "utrecht": {
     "link-list": {
       "row-gap": {
-        "$type": "spacing",
-        "$value": "{nijmegen.space.50}"
+        "value": "{nijmegen.space.50}",
+        "type": "spacing"
       },
       "icon": {
         "inset-block-start": {
-          "$type": "spacing",
-          "$value": "{nijmegen.space.12}"
+          "value": "{nijmegen.space.12}",
+          "type": "spacing"
         },
         "size": {
-          "$type": "sizing",
-          "$value": "{nijmegen.icon.functional.size}"
+          "value": "{nijmegen.icon.functional.size}",
+          "type": "sizing"
         }
       }
     }
@@ -21,29 +21,29 @@
     "link-list": {
       "item": {
         "column-gap": {
-          "$type": "spacing",
-          "$value": "{nijmegen.space.50}"
+          "value": "{nijmegen.space.50}",
+          "type": "spacing"
         },
         "text-decoration": {
-          "$type": "textDecoration",
-          "$value": "None"
+          "value": "None",
+          "type": "textDecoration"
         },
         "active": {
           "text-decoration": {
-            "$type": "textDecoration",
-            "$value": "underline"
+            "value": "underline",
+            "type": "textDecoration"
           }
         },
         "focus": {
           "text-decoration": {
-            "$type": "textDecoration",
-            "$value": "None"
+            "value": "None",
+            "type": "textDecoration"
           }
         },
         "hover": {
           "text-decoration": {
-            "$type": "textDecoration",
-            "$value": "underline"
+            "value": "underline",
+            "type": "textDecoration"
           }
         }
       }

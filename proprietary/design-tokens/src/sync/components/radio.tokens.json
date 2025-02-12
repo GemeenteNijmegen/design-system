@@ -3,173 +3,173 @@
     "radio": {
       "active": {
         "border-width": {
-          "$type": "borderWidth",
-          "$value": "{nijmegen.form-control.active.border-width}"
+          "value": "{nijmegen.form-control.active.border-width}",
+          "type": "borderWidth"
         },
         "border-color": {
-          "$type": "color",
-          "$value": "{nijmegen.form-control.active.border-color}"
+          "value": "{nijmegen.form-control.active.border-color}",
+          "type": "color"
         }
       },
       "size": {
-        "$type": "sizing",
-        "$value": "{nijmegen.size.200}"
+        "value": "{nijmegen.size.200}",
+        "type": "sizing"
       },
       "dot": {
         "size": {
-          "$type": "sizing",
-          "$value": "{nijmegen.size.100}"
+          "value": "{nijmegen.size.100}",
+          "type": "sizing"
         }
       },
       "background-color": {
-        "$type": "color",
-        "$value": "{nijmegen.form-control.background-color}"
+        "value": "{nijmegen.form-control.background-color}",
+        "type": "color"
       },
       "border-color": {
-        "$type": "color",
-        "$value": "{nijmegen.form-control.border-color}"
+        "value": "{nijmegen.form-control.border-color}",
+        "type": "color"
       },
       "invalid": {
         "background-color": {
-          "$type": "color",
-          "$value": "{nijmegen.form-control.invalid.background-color}"
+          "value": "{nijmegen.form-control.invalid.background-color}",
+          "type": "color"
         },
         "border-color": {
-          "$type": "color",
-          "$value": "{nijmegen.form-control.invalid.border-color}"
+          "value": "{nijmegen.form-control.invalid.border-color}",
+          "type": "color"
         },
         "border-width": {
-          "$type": "borderWidth",
-          "$value": "{nijmegen.form-control.invalid.border-width}"
+          "value": "{nijmegen.form-control.invalid.border-width}",
+          "type": "borderWidth"
         }
       },
       "focus": {
         "background-color": {
-          "$type": "color",
-          "$value": "{nijmegen.form-control.focus.background-color}"
+          "value": "{nijmegen.form-control.focus.background-color}",
+          "type": "color"
         },
         "border-color": {
-          "$type": "color",
-          "$value": "{nijmegen.form-control.focus.border-color}"
+          "value": "{nijmegen.form-control.focus.border-color}",
+          "type": "color"
         },
         "border-width": {
-          "$type": "borderWidth",
-          "$value": "{nijmegen.form-control.focus.border-width}"
+          "value": "{nijmegen.form-control.focus.border-width}",
+          "type": "borderWidth"
         }
       },
       "disabled": {
         "background-color": {
-          "$type": "color",
-          "$value": "{nijmegen.form-control.disabled.background-color}"
+          "value": "{nijmegen.form-control.disabled.background-color}",
+          "type": "color"
         },
         "border-color": {
-          "$type": "color",
-          "$value": "{nijmegen.form-control.disabled.border-color}"
+          "value": "{nijmegen.form-control.disabled.border-color}",
+          "type": "color"
         }
       },
       "checked": {
         "background-color": {
-          "$type": "color",
-          "$value": "{nijmegen.form-control.accent-color}"
+          "value": "{nijmegen.form-control.accent-color}",
+          "type": "color"
         },
         "border-color": {
-          "$type": "color",
-          "$value": "transparent"
+          "value": "transparent",
+          "type": "color"
         },
         "color": {
-          "$type": "color",
-          "$value": "{nijmegen.color.wit}"
+          "value": "{nijmegen.color.wit}",
+          "type": "color"
         },
         "hover": {
           "background-color": {
-            "$type": "color",
-            "$value": "{nijmegen.form-control.hover.accent-color}"
+            "value": "{nijmegen.form-control.hover.accent-color}",
+            "type": "color"
           },
           "border-color": {
-            "$type": "color",
-            "$value": "transparent"
+            "value": "transparent",
+            "type": "color"
           },
           "color": {
-            "$type": "color",
-            "$value": "{nijmegen.color.wit}"
+            "value": "{nijmegen.color.wit}",
+            "type": "color"
           },
           "border-width": {
-            "$type": "borderWidth",
-            "$value": "{nijmegen.form-control.hover.border-width}"
+            "value": "{nijmegen.form-control.hover.border-width}",
+            "type": "borderWidth"
           }
         },
         "active": {
           "background-color": {
-            "$type": "color",
-            "$value": "{nijmegen.form-control.active.accent-color}"
+            "value": "{nijmegen.form-control.active.accent-color}",
+            "type": "color"
           },
           "border-color": {
-            "$type": "color",
-            "$value": "transparent"
+            "value": "transparent",
+            "type": "color"
           },
           "color": {
-            "$type": "color",
-            "$value": "{nijmegen.color.wit}"
+            "value": "{nijmegen.color.wit}",
+            "type": "color"
           },
           "border-width": {
-            "$type": "borderWidth",
-            "$value": "{nijmegen.form-control.active.border-width}"
+            "value": "{nijmegen.form-control.active.border-width}",
+            "type": "borderWidth"
           }
         },
         "focus": {
           "background-color": {
-            "$type": "color",
-            "$value": "{nijmegen.form-control.focus.background-color}"
+            "value": "{nijmegen.form-control.focus.background-color}",
+            "type": "color"
           },
           "border-color": {
-            "$type": "color",
-            "$value": "{nijmegen.color.groen.800}"
+            "value": "{nijmegen.color.groen.800}",
+            "type": "color"
           },
           "color": {
-            "$type": "color",
-            "$value": "{nijmegen.color.groen.600}"
+            "value": "{nijmegen.color.groen.600}",
+            "type": "color"
           },
           "border-width": {
-            "$type": "borderWidth",
-            "$value": "{nijmegen.form-control.focus.border-width}"
+            "value": "{nijmegen.form-control.focus.border-width}",
+            "type": "borderWidth"
           }
         },
         "disabled": {
           "background-color": {
-            "$type": "color",
-            "$value": "{nijmegen.form-control.disabled.accent-color}"
+            "value": "{nijmegen.form-control.disabled.accent-color}",
+            "type": "color"
           },
           "border-color": {
-            "$type": "color",
-            "$value": "transparent"
+            "value": "transparent",
+            "type": "color"
           },
           "color": {
-            "$type": "color",
-            "$value": "{nijmegen.color.wit}"
+            "value": "{nijmegen.color.wit}",
+            "type": "color"
           }
         },
         "border-width": {
-          "$type": "borderWidth",
-          "$value": "{nijmegen.form-control.border-width}"
+          "value": "{nijmegen.form-control.border-width}",
+          "type": "borderWidth"
         }
       },
       "hover": {
         "background-color": {
-          "$type": "color",
-          "$value": "{nijmegen.form-control.hover.background-color}"
+          "value": "{nijmegen.form-control.hover.background-color}",
+          "type": "color"
         },
         "border-color": {
-          "$type": "color",
-          "$value": "{nijmegen.form-control.hover.border-color}"
+          "value": "{nijmegen.form-control.hover.border-color}",
+          "type": "color"
         },
         "border-width": {
-          "$type": "borderWidth",
-          "$value": "{nijmegen.form-control.hover.border-width}"
+          "value": "{nijmegen.form-control.hover.border-width}",
+          "type": "borderWidth"
         }
       },
       "border-width": {
-        "$type": "borderWidth",
-        "$value": "{nijmegen.form-control.border-width}"
+        "value": "{nijmegen.form-control.border-width}",
+        "type": "borderWidth"
       }
     }
   }
