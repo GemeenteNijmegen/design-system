@@ -2,15 +2,15 @@
   "utrecht": {
     "paragraph": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.document.color}"
+        "value": "{utrecht.document.color}",
+        "type": "color"
       },
       "font-family": {
         "value": "{utrecht.document.font-family}",
         "type": "fontFamilies"
       },
       "font-size": {
-        "value": "{nijmegen.document.font-size}",
+        "value": "{utrecht.document.font-size}",
         "type": "fontSizes"
       },
       "font-weight": {
@@ -24,19 +24,19 @@
     },
     "paragraph-lead": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.document.color}"
+        "value": "{utrecht.document.color}",
+        "type": "color"
       },
       "font-family": {
         "value": "{utrecht.document.font-family}",
         "type": "fontFamilies"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.md}",
+        "value": "{nijmegen.typography.font-size.lg}",
         "type": "fontSizes"
       },
       "font-weight": {
-        "value": "{nijmegen.document.font-weight}",
+        "value": "{utrecht.document.font-weight}",
         "type": "fontWeights"
       },
       "line-height": {
@@ -46,8 +46,8 @@
     },
     "paragraph-small-print": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.document.color}"
+        "value": "{utrecht.document.color}",
+        "type": "color"
       },
       "font-family": {
         "value": "{utrecht.document.font-family}",

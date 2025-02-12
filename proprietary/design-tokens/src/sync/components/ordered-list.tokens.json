@@ -2,11 +2,11 @@
   "utrecht": {
     "ordered-list": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.document.color}"
+        "value": "{utrecht.document.color}",
+        "type": "color"
       },
       "font-familiy": {
-        "value": "{nijmegen.document.font-family}",
+        "value": "{utrecht.document.font-family}",
         "type": "fontFamilies"
       },
       "font-weight": {
@@ -14,7 +14,7 @@
         "type": "fontWeights"
       },
       "font-size": {
-        "value": "{nijmegen.document.font-size}",
+        "value": "{utrecht.document.font-size}",
         "type": "fontSizes"
       },
       "line-height": {
