@@ -1,4 +1,4 @@
-import{j as e}from"./jsx-runtime-CKrituN3.js";import{j as i,k as r}from"./chunk-HLWAVYOI-av0RunYw.js";import{c as o}from"./createReactComponent-D_5DJZVZ.js";import{I as c}from"./IconArrowRight-pMXm72se.js";import{useMDXComponents as a}from"./index-DI5IigMn.js";import"./index-CBqU2yxZ.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-BNwdAAZ_.js";import"../sb-preview/runtime.js";import"./react-18-Bym-zv4b.js";import"./extends-CCbyfPlC.js";import"./index-VaGq4-f5.js";/**
+import{j as e}from"./jsx-runtime-CKrituN3.js";import{j as i,k as r}from"./chunk-HLWAVYOI-Dg4FlGpy.js";import{c as o}from"./createReactComponent-D_5DJZVZ.js";import{I as c}from"./IconArrowRight-pMXm72se.js";import{useMDXComponents as a}from"./index-DI5IigMn.js";import"./index-CBqU2yxZ.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-B5msSz7M.js";import"../sb-preview/runtime.js";import"./react-18-Bym-zv4b.js";import"./extends-CCbyfPlC.js";import"./index-VaGq4-f5.js";/**
  * @license @tabler/icons-react v3.20.0 - MIT
  *
  * This source code is licensed under the MIT license.

@@ -1,4 +1,4 @@
-import{M as i,g as s}from"./chunk-HLWAVYOI-av0RunYw.js";import{j as e}from"./jsx-runtime-CKrituN3.js";import{useMDXComponents as a}from"./index-DI5IigMn.js";import"./iframe-BNwdAAZ_.js";import"../sb-preview/runtime.js";import"./index-CBqU2yxZ.js";import"./_commonjsHelpers-BosuxZz1.js";import"./react-18-Bym-zv4b.js";import"./extends-CCbyfPlC.js";import"./index-VaGq4-f5.js";const m=`# Auteursrecht {auteur}
+import{M as i,g as s}from"./chunk-HLWAVYOI-Dg4FlGpy.js";import{j as e}from"./jsx-runtime-CKrituN3.js";import{useMDXComponents as a}from"./index-DI5IigMn.js";import"./iframe-B5msSz7M.js";import"../sb-preview/runtime.js";import"./index-CBqU2yxZ.js";import"./_commonjsHelpers-BosuxZz1.js";import"./react-18-Bym-zv4b.js";import"./extends-CCbyfPlC.js";import"./index-VaGq4-f5.js";const m=`# Auteursrecht {auteur}
 
 Copyright (c) 2024 gemeente Nijmegen
 
