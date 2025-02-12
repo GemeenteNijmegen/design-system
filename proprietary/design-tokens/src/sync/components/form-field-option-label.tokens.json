@@ -2,29 +2,29 @@
   "utrecht": {
     "form-field-option-label": {
       "color": {
-        "$type": "color",
-        "$value": "{nijmegen.form-control.color}"
+        "value": "{nijmegen.form-control.color}",
+        "type": "color"
       },
       "font-size": {
-        "$type": "fontSizes",
-        "$value": "{utrecht.document.font-size}"
+        "value": "{utrecht.document.font-size}",
+        "type": "fontSizes"
       },
       "line-height": {
-        "$type": "lineHeights",
-        "$value": "{utrecht.document.line-height}"
+        "value": "{utrecht.document.line-height}",
+        "type": "lineHeights"
       },
       "font-family": {
-        "$type": "fontFamilies",
-        "$value": "{utrecht.document.font-family}"
+        "value": "{utrecht.document.font-family}",
+        "type": "fontFamilies"
       },
       "font-weight": {
-        "$type": "fontWeights",
-        "$value": "{utrecht.document.font-weight}"
+        "value": "{utrecht.document.font-weight}",
+        "type": "fontWeights"
       },
       "disabled": {
         "color": {
-          "$type": "color",
-          "$value": "{nijmegen.color.grijs.600}"
+          "value": "{nijmegen.color.grijs.600}",
+          "type": "color"
         }
       }
     }

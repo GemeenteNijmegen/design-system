@@ -3,97 +3,97 @@
     "card-event": {
       "title": {
         "color": {
-          "$type": "color",
-          "$value": "{nijmegen.color.zwart}"
+          "value": "{nijmegen.color.zwart}",
+          "type": "color"
         },
         "hover": {
           "color": {
-            "$type": "color",
-            "$value": "{nijmegen.color.groen.700}"
+            "value": "{nijmegen.color.groen.700}",
+            "type": "color"
           }
         },
         "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{nijmegen.typography.font-weight.semibold}"
+          "value": "{nijmegen.typography.font-weight.semibold}",
+          "type": "fontWeights"
         },
         "line-height": {
-          "$type": "fontHeights",
-          "$value": "{utrecht.heading-3.line-height}"
+          "value": "{utrecht.heading-3.line-height}",
+          "type": "fontHeights"
         },
         "font-size": {
-          "$type": "fontSizes",
-          "$value": "{nijmegen.typography.font-size.lg}"
+          "value": "{nijmegen.typography.font-size.lg}",
+          "type": "fontSizes"
         }
       },
       "date": {
         "color": {
-          "$type": "color",
-          "$value": "{nijmegen.color.grijs.500}"
+          "value": "{nijmegen.color.grijs.500}",
+          "type": "color"
         },
         "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{nijmegen.typography.font-family.secondary}"
+          "value": "{nijmegen.typography.font-family.secondary}",
+          "type": "fontFamilies"
         },
         "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{nijmegen.typography.font-weight.regular}"
+          "value": "{nijmegen.typography.font-weight.regular}",
+          "type": "fontWeights"
         },
         "font-size": {
-          "$type": "fontSizes",
-          "$value": "{nijmegen.typography.font-size.md}"
+          "value": "{nijmegen.typography.font-size.md}",
+          "type": "fontSizes"
         }
       },
       "place": {
         "color": {
-          "$type": "color",
-          "$value": "{nijmegen.color.grijs.700}"
+          "value": "{nijmegen.color.grijs.700}",
+          "type": "color"
         },
         "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{nijmegen.typography.font-weight.regular}"
+          "value": "{nijmegen.typography.font-weight.regular}",
+          "type": "fontWeights"
         },
         "font-size": {
-          "$type": "fontSizes",
-          "$value": "{nijmegen.typography.font-size.md}"
+          "value": "{nijmegen.typography.font-size.md}",
+          "type": "fontSizes"
         }
       },
       "intro-text": {
         "color": {
-          "$type": "color",
-          "$value": "{nijmegen.color.grijs.500}"
+          "value": "{nijmegen.color.grijs.500}",
+          "type": "color"
         },
         "font-family": {
-          "$type": "fontFamilies",
-          "$value": "{nijmegen.typography.font-family.secondary}"
+          "value": "{nijmegen.typography.font-family.secondary}",
+          "type": "fontFamilies"
         },
         "font-weight": {
-          "$type": "fontWeights",
-          "$value": "{nijmegen.typography.font-weight.regular}"
+          "value": "{nijmegen.typography.font-weight.regular}",
+          "type": "fontWeights"
         },
         "font-size": {
-          "$type": "fontSizes",
-          "$value": "{nijmegen.typography.font-size.md}"
+          "value": "{nijmegen.typography.font-size.md}",
+          "type": "fontSizes"
         }
       },
       "icon": {
         "color": {
-          "$type": "color",
-          "$value": "{nijmegen.color.grijs.700}"
+          "value": "{nijmegen.color.grijs.700}",
+          "type": "color"
         }
       },
       "border": {
         "color": {
-          "$type": "color",
-          "$value": "{nijmegen.color.grijs.200}"
+          "value": "{nijmegen.color.grijs.200}",
+          "type": "color"
         }
       },
       "border-radius": {
-        "$type": "borderRadius",
-        "$value": "{nijmegen.border-radius.xs}"
+        "value": "{nijmegen.border-radius.xs}",
+        "type": "borderRadius"
       },
       "font-family": {
-        "$type": "fontFamilies",
-        "$value": "{nijmegen.typography.font-family.secondary}"
+        "value": "{nijmegen.typography.font-family.secondary}",
+        "type": "fontFamilies"
       }
     }
   }

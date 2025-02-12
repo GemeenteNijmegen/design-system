@@ -2,80 +2,80 @@
   "utrecht": {
     "link": {
       "color": {
-        "$type": "color",
-        "$value": "{nijmegen.interaction.color}"
+        "value": "{nijmegen.interaction.color}",
+        "type": "color"
       },
       "text-decoration-color": {
-        "$type": "color",
-        "$value": "{nijmegen.interaction.color}"
+        "value": "{nijmegen.interaction.color}",
+        "type": "color"
       },
       "active": {
         "color": {
-          "$type": "color",
-          "$value": "{nijmegen.interaction.active.color}"
+          "value": "{nijmegen.interaction.active.color}",
+          "type": "color"
         }
       },
       "focus": {
         "background-color": {
-          "$type": "color",
-          "$value": "{nijmegen.focus.background-color}"
+          "value": "{nijmegen.focus.background-color}",
+          "type": "color"
         },
         "color": {
-          "$type": "color",
-          "$value": "{nijmegen.focus.color}"
+          "value": "{nijmegen.focus.color}",
+          "type": "color"
         }
       },
       "focus-visible": {
         "text-decoration": {
-          "$type": "textDecoration",
-          "$value": "None"
+          "value": "None",
+          "type": "textDecoration"
         },
         "text-decoration-thickness": {
-          "$type": "other",
-          "$value": "auto"
+          "value": "auto",
+          "type": "other"
         }
       },
       "hover": {
         "color": {
-          "$type": "color",
-          "$value": "{nijmegen.interaction.hover.color}"
+          "value": "{nijmegen.interaction.hover.color}",
+          "type": "color"
         },
         "text-decoration": {
-          "$type": "textDecoration",
-          "$value": "None"
+          "value": "None",
+          "type": "textDecoration"
         },
         "text-decoration-thickness": {
-          "$type": "other",
-          "$value": "auto"
+          "value": "auto",
+          "type": "other"
         }
       },
       "visited": {
         "color": {
-          "$type": "color",
-          "$value": "{nijmegen.interaction.color}"
+          "value": "{nijmegen.interaction.color}",
+          "type": "color"
         }
       },
       "text-decoration": {
-        "$type": "textDecoration",
-        "$value": "underline"
+        "value": "underline",
+        "type": "textDecoration"
       },
       "icon": {
         "size": {
-          "$type": "sizing",
-          "$value": "{nijmegen.icon.functional.size}"
+          "value": "{nijmegen.icon.functional.size}",
+          "type": "sizing"
         }
       },
       "text-decoration-thickness": {
-        "$type": "other",
-        "$value": "auto"
+        "value": "auto",
+        "type": "other"
       },
       "text-underline-offset": {
-        "$type": "other",
-        "$value": "auto"
+        "value": "auto",
+        "type": "other"
       },
       "column-gap": {
-        "$type": "spacing",
-        "$value": "{nijmegen.space.25}"
+        "value": "{nijmegen.space.25}",
+        "type": "spacing"
       }
     }
   }

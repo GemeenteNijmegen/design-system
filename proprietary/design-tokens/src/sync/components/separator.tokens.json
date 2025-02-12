@@ -2,12 +2,12 @@
   "utrecht": {
     "separator": {
       "color": {
-        "$type": "color",
-        "$value": "{nijmegen.color.border.subdued}"
+        "value": "{nijmegen.color.border.subdued}",
+        "type": "color"
       },
       "block-size": {
-        "$type": "sizing",
-        "$value": "{nijmegen.size.50}"
+        "value": "{nijmegen.size.50}",
+        "type": "sizing"
       }
     }
   }
