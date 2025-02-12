@@ -6,23 +6,19 @@
           "value": "{nijmegen.form-control.active.border-width}",
           "type": "borderWidth"
         },
-        "background-color": {
-          "value": "{nijmegen.color.dark.alpha.50}",
-          "type": "color"
-        },
         "border-color": {
           "value": "{nijmegen.form-control.active.border-color}",
           "type": "color"
         }
       },
       "size": {
-        "type": "sizing",
-        "value": "{nijmegen.size.xs}"
+        "value": "{nijmegen.size.200}",
+        "type": "sizing"
       },
       "dot": {
         "size": {
-          "type": "sizing",
-          "value": "{nijmegen.size.3xs}"
+          "value": "{nijmegen.size.100}",
+          "type": "sizing"
         }
       },
       "background-color": {
@@ -81,7 +77,7 @@
           "type": "color"
         },
         "color": {
-          "value": "{nijmegen.color.white}",
+          "value": "{nijmegen.color.wit}",
           "type": "color"
         },
         "hover": {
@@ -94,7 +90,7 @@
             "type": "color"
           },
           "color": {
-            "value": "{nijmegen.color.white}",
+            "value": "{nijmegen.color.wit}",
             "type": "color"
           },
           "border-width": {
@@ -112,7 +108,7 @@
             "type": "color"
           },
           "color": {
-            "value": "{nijmegen.color.white}",
+            "value": "{nijmegen.color.wit}",
             "type": "color"
           },
           "border-width": {
@@ -148,7 +144,7 @@
             "type": "color"
           },
           "color": {
-            "value": "{nijmegen.color.white}",
+            "value": "{nijmegen.color.wit}",
             "type": "color"
           }
         },
@@ -170,10 +166,6 @@
           "value": "{nijmegen.form-control.hover.border-width}",
           "type": "borderWidth"
         }
-      },
-      "border-radius": {
-        "type": "borderRadius",
-        "value": "{nijmegen.border-radius.round}"
       },
       "border-width": {
         "value": "{nijmegen.form-control.border-width}",

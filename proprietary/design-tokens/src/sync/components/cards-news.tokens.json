@@ -2,38 +2,16 @@
   "nijmegen": {
     "card-nieuws": {
       "background-color": {
-        "value": "{nijmegen.color.white}",
+        "value": "{nijmegen.color.wit}",
         "type": "color"
       },
       "border-color": {
-        "value": "{nijmegen.container.border-color}",
+        "value": "{nijmegen.color.border.default}",
         "type": "color"
       },
       "border-radius": {
         "value": "{nijmegen.border-radius.xs}",
         "type": "borderRadius"
-      },
-      "content": {
-        "padding": {
-          "block-end": {
-            "value": "{nijmegen.space.block.2xl}",
-            "type": "spacing"
-          },
-          "block-start": {
-            "value": "{nijmegen.space.block.xl}",
-            "type": "spacing"
-          },
-          "inline": {
-            "value": "{nijmegen.space.inline.xl}",
-            "type": "spacing"
-          }
-        },
-        "row": {
-          "block-gap": {
-            "value": "{nijmegen.space.row.md}",
-            "type": "spacing"
-          }
-        }
       },
       "datum": {
         "color": {
@@ -49,10 +27,6 @@
         "font-family": {
           "value": "{nijmegen.heading.font-family}",
           "type": "color"
-        },
-        "font-size": {
-          "value": "{utrecht.heading-3.font-size}",
-          "type": "fontSizes"
         },
         "font-weight": {
           "value": "{nijmegen.heading.font-weight}",

@@ -1,39 +1,13 @@
 {
   "nijmegen": {
     "card-persona": {
-      "background-color": {
-        "value": "{nijmegen.color.background-default}",
-        "type": "color"
-      },
       "border-color": {
-        "value": "{nijmegen.container.border-color}",
+        "value": "{nijmegen.color.border.default}",
         "type": "color"
       },
       "border-radius": {
         "value": "{nijmegen.border-radius.xs}",
         "type": "borderRadius"
-      },
-      "content": {
-        "padding": {
-          "inline": {
-            "value": "{nijmegen.space.inline.xl}",
-            "type": "spacing"
-          },
-          "block-start": {
-            "value": "{nijmegen.space.block.xl}",
-            "type": "spacing"
-          },
-          "block-end": {
-            "value": "{nijmegen.space.block.2xl}",
-            "type": "spacing"
-          }
-        },
-        "row": {
-          "block-gap": {
-            "value": "{nijmegen.space.row.md}",
-            "type": "spacing"
-          }
-        }
       },
       "title": {
         "color": {
@@ -45,7 +19,7 @@
           "type": "fontFamilies"
         },
         "font-weight": {
-          "value": "{nijmegen.typography.font-weight.semi-bold}",
+          "value": "{nijmegen.typography.font-weight.semibold}",
           "type": "fontWeights"
         },
         "font-size": {
@@ -77,7 +51,7 @@
           "type": "fontFamilies"
         },
         "font-weight": {
-          "value": "{nijmegen.typography.font-weight.normal}",
+          "value": "{nijmegen.typography.font-weight.regular}",
           "type": "fontWeights"
         },
         "font-size": {

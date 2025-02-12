@@ -2,13 +2,14 @@
   "tokenSetOrder": [
     "brand.tokens",
     "common.tokens",
-    "components/avatar.tokens",
     "components/accordion.tokens",
     "components/alert.tokens",
+    "components/avatar.tokens",
     "components/badge.tokens",
     "components/blockquote.tokens",
     "components/breadcrumb.tokens",
     "components/button.tokens",
+    "components/button-group.tokens",
     "components/card-event.tokens",
     "components/cards-news.tokens",
     "components/card-persona.tokens",
@@ -30,7 +31,6 @@
     "components/link.tokens",
     "components/link-list.tokens",
     "components/ordered-list.tokens",
-    "components/unordered-list.tokens",
     "components/pagination.tokens",
     "components/paragraph.tokens",
     "components/radio.tokens",
@@ -44,7 +44,6 @@
     "components/textbox.tokens",
     "components/toolbar-button.tokens",
     "components/header.tokens",
-    "components/focus-ring.tokens",
-    "button-group.tokens"
+    "components/unordered-list.tokens"
   ]
 }

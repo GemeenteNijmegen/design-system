@@ -1,32 +1,6 @@
 {
   "nijmegen": {
     "card-event": {
-      "content": {
-        "padding": {
-          "inline": {
-            "value": "{nijmegen.space.inline.xl}",
-            "type": "spacing"
-          },
-          "block-start": {
-            "value": "{nijmegen.space.block.xl}",
-            "type": "spacing"
-          },
-          "block-end": {
-            "value": "{nijmegen.space.block.2xl}",
-            "type": "spacing"
-          }
-        },
-        "row": {
-          "block-gap": {
-            "value": "{nijmegen.space.block.md}",
-            "type": "spacing"
-          }
-        }
-      },
-      "background-color": {
-        "value": "{nijmegen.color.background-default}",
-        "type": "color"
-      },
       "title": {
         "color": {
           "value": "{nijmegen.color.zwart}",
@@ -39,7 +13,7 @@
           }
         },
         "font-weight": {
-          "value": "{nijmegen.typography.font-weight.semi-bold}",
+          "value": "{nijmegen.typography.font-weight.semibold}",
           "type": "fontWeights"
         },
         "line-height": {
@@ -61,7 +35,7 @@
           "type": "fontFamilies"
         },
         "font-weight": {
-          "value": "{nijmegen.typography.font-weight.normal}",
+          "value": "{nijmegen.typography.font-weight.regular}",
           "type": "fontWeights"
         },
         "font-size": {
@@ -75,7 +49,7 @@
           "type": "color"
         },
         "font-weight": {
-          "value": "{nijmegen.typography.font-weight.normal}",
+          "value": "{nijmegen.typography.font-weight.regular}",
           "type": "fontWeights"
         },
         "font-size": {
@@ -93,7 +67,7 @@
           "type": "fontFamilies"
         },
         "font-weight": {
-          "value": "{nijmegen.typography.font-weight.normal}",
+          "value": "{nijmegen.typography.font-weight.regular}",
           "type": "fontWeights"
         },
         "font-size": {
@@ -120,14 +94,6 @@
       "font-family": {
         "value": "{nijmegen.typography.font-family.secondary}",
         "type": "fontFamilies"
-      }
-    },
-    "card-topic": {
-      "icon": {
-        "size": {
-          "value": "{nijmegen.size.icon.md}",
-          "type": "sizing"
-        }
       }
     }
   }
