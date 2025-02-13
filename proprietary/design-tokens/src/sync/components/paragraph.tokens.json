@@ -2,55 +2,55 @@
   "utrecht": {
     "paragraph": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.color.grijs.500}"
+        "value": "{utrecht.document.color}",
+        "type": "color"
       },
       "font-family": {
-        "value": "{nijmegen.document.font-family}",
+        "value": "{utrecht.document.font-family}",
         "type": "fontFamilies"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.sml}",
+        "value": "{utrecht.document.font-size}",
         "type": "fontSizes"
       },
       "font-weight": {
-        "value": "{nijmegen.document.font-weight}",
+        "value": "{utrecht.document.font-weight}",
         "type": "fontWeights"
       },
       "line-height": {
-        "value": "{nijmegen.document.line-height}",
+        "value": "{utrecht.document.line-height}",
         "type": "lineHeights"
       }
     },
     "paragraph-lead": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.color.grijs.500}"
+        "value": "{utrecht.document.color}",
+        "type": "color"
       },
       "font-family": {
-        "value": "{nijmegen.document.font-family}",
+        "value": "{utrecht.document.font-family}",
         "type": "fontFamilies"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.md}",
+        "value": "{nijmegen.typography.font-size.lg}",
         "type": "fontSizes"
       },
       "font-weight": {
-        "value": "{nijmegen.typography.font-weight.semi-bold}",
+        "value": "{utrecht.document.font-weight}",
         "type": "fontWeights"
       },
       "line-height": {
-        "value": "{nijmegen.document.line-height}",
+        "value": "{utrecht.document.line-height}",
         "type": "lineHeights"
       }
     },
     "paragraph-small-print": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.color.grijs.500}"
+        "value": "{utrecht.document.color}",
+        "type": "color"
       },
       "font-family": {
-        "value": "{nijmegen.document.font-family}",
+        "value": "{utrecht.document.font-family}",
         "type": "fontFamilies"
       },
       "font-size": {
@@ -58,11 +58,11 @@
         "type": "fontSizes"
       },
       "font-weight": {
-        "value": "{nijmegen.document.font-weight}",
+        "value": "{utrecht.document.font-weight}",
         "type": "fontWeights"
       },
       "line-height": {
-        "value": "{nijmegen.document.line-height}",
+        "value": "{utrecht.document.line-height}",
         "type": "lineHeights"
       }
     }

@@ -2,23 +2,19 @@
   "utrecht": {
     "form-field-label": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.document.color}"
+        "value": "{utrecht.document.color}",
+        "type": "color"
       },
       "font-family": {
-        "value": "{nijmegen.document.font-family}",
+        "value": "{utrecht.document.font-family}",
         "type": "fontFamilies"
       },
       "font-size": {
-        "value": "{nijmegen.document.font-size}",
+        "value": "{utrecht.document.font-size}",
         "type": "fontSizes"
       },
-      "font-weight": {
-        "value": "{nijmegen.document.strong.font-weight}",
-        "type": "fontWeights"
-      },
       "line-height": {
-        "value": "{nijmegen.document.line-height}",
+        "value": "{utrecht.document.line-height}",
         "type": "lineHeights"
       }
     }

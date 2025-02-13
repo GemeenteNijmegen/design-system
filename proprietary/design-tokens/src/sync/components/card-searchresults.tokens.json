@@ -3,38 +3,16 @@
     "card-searchresults": {
       "base": {
         "background-color": {
-          "value": "{nijmegen.color.white}",
+          "value": "{nijmegen.color.wit}",
           "type": "color"
-        },
-        "border-width": {
-          "value": "{nijmegen.line.border-width}",
-          "type": "borderWidth"
-        },
-        "padding": {
-          "inline": {
-            "value": "{nijmegen.card-event.content.padding.inline}",
-            "type": "spacing"
-          },
-          "block-start": {
-            "value": "{nijmegen.space.block.xl}",
-            "type": "spacing"
-          },
-          "block-end": {
-            "value": "{nijmegen.space.block.xl}",
-            "type": "spacing"
-          }
         },
         "title": {
           "font-family": {
             "value": "{nijmegen.heading.font-family}",
             "type": "fontFamilies"
           },
-          "font-size": {
-            "value": "{nijmegen.typography.font-size.xl}",
-            "type": "fontSizes"
-          },
           "font-weight": {
-            "value": "{nijmegen.typography.font-weight.semi-bold}",
+            "value": "{nijmegen.typography.font-weight.semibold}",
             "type": "fontWeights"
           },
           "line-height": {
@@ -56,7 +34,7 @@
             "type": "fontSizes"
           },
           "font-weight": {
-            "value": "{nijmegen.typography.font-weight.normal}",
+            "value": "{nijmegen.typography.font-weight.regular}",
             "type": "fontWeights"
           },
           "line-height": {
@@ -88,26 +66,6 @@
           "color": {
             "value": "{nijmegen.color.grijs.400}",
             "type": "color"
-          },
-          "padding": {
-            "inline": {
-              "value": "{nijmegen.space.inline.md}",
-              "type": "spacing"
-            }
-          }
-        },
-        "row": {
-          "block-gap": {
-            "value": "{nijmegen.space.block.md}",
-            "type": "spacing"
-          }
-        },
-        "meta-description": {
-          "padding": {
-            "inline": {
-              "value": "{nijmegen.space.block.xs}",
-              "type": "spacing"
-            }
           }
         }
       },

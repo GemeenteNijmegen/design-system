@@ -2,11 +2,11 @@
   "utrecht": {
     "heading-1": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.heading-1.color}"
+        "value": "{nijmegen.heading.color}",
+        "type": "color"
       },
       "font-family": {
-        "value": "{nijmegen.heading-1.font-family}",
+        "value": "{nijmegen.heading.font-family}",
         "type": "fontFamilies"
       },
       "font-weight": {
@@ -24,8 +24,30 @@
     },
     "heading-2": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.color.zwart}"
+        "value": "{nijmegen.color.zwart}",
+        "type": "color"
+      },
+      "font-family": {
+        "value": "{nijmegen.heading.font-family}",
+        "type": "fontFamilies"
+      },
+      "font-weight": {
+        "value": "{nijmegen.heading.font-weight}",
+        "type": "fontWeights"
+      },
+      "line-height": {
+        "value": "{nijmegen.typography.line-height.sm}",
+        "type": "lineHeights"
+      },
+      "font-size": {
+        "value": "{nijmegen.typography.font-size.2xl}",
+        "type": "fontSizes"
+      }
+    },
+    "heading-3": {
+      "color": {
+        "value": "{nijmegen.heading.color}",
+        "type": "color"
       },
       "font-family": {
         "value": "{nijmegen.heading.font-family}",
@@ -44,10 +66,10 @@
         "type": "fontSizes"
       }
     },
-    "heading-3": {
+    "heading-4": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.heading.color}"
+        "value": "{nijmegen.heading.color}",
+        "type": "color"
       },
       "font-family": {
         "value": "{nijmegen.heading.font-family}",
@@ -58,7 +80,7 @@
         "type": "fontWeights"
       },
       "line-height": {
-        "value": "{nijmegen.typography.line-height.sm}",
+        "value": "{nijmegen.typography.line-height.md}",
         "type": "lineHeights"
       },
       "font-size": {
@@ -66,10 +88,10 @@
         "type": "fontSizes"
       }
     },
-    "heading-4": {
+    "heading-5": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.heading.color}"
+        "value": "{nijmegen.heading.color}",
+        "type": "color"
       },
       "font-family": {
         "value": "{nijmegen.heading.font-family}",
@@ -88,32 +110,10 @@
         "type": "fontSizes"
       }
     },
-    "heading-5": {
-      "color": {
-        "type": "color",
-        "value": "{nijmegen.heading.color}"
-      },
-      "font-family": {
-        "value": "{nijmegen.heading.font-family}",
-        "type": "fontFamilies"
-      },
-      "font-weight": {
-        "value": "{nijmegen.heading.font-weight}",
-        "type": "fontWeights"
-      },
-      "line-height": {
-        "value": "{nijmegen.typography.line-height.md}",
-        "type": "lineHeights"
-      },
-      "font-size": {
-        "value": "{nijmegen.typography.font-size.sm}",
-        "type": "fontSizes"
-      }
-    },
     "heading-6": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.heading.color}"
+        "value": "{nijmegen.heading.color}",
+        "type": "color"
       },
       "font-family": {
         "value": "{nijmegen.heading.font-family}",

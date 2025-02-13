@@ -1,39 +1,25 @@
 {
   "utrecht": {
     "ordered-list": {
-      "padding-inline-start": {
-        "value": "{nijmegen.space.inline.xl}",
-        "type": "spacing"
-      },
       "color": {
-        "type": "color",
-        "value": "{nijmegen.color.grijs.500}"
+        "value": "{utrecht.document.color}",
+        "type": "color"
       },
       "font-familiy": {
-        "value": "{nijmegen.typography.font-family.secondary}",
+        "value": "{utrecht.document.font-family}",
         "type": "fontFamilies"
       },
       "font-weight": {
-        "value": "{nijmegen.document.font-weight}",
+        "value": "{utrecht.document.font-weight}",
         "type": "fontWeights"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.sml}",
+        "value": "{utrecht.document.font-size}",
         "type": "fontSizes"
       },
       "line-height": {
-        "value": "{nijmegen.document.line-height}",
+        "value": "{utrecht.document.line-height}",
         "type": "lineHeights"
-      },
-      "item": {
-        "margin-block-end": {
-          "value": "{nijmegen.space.block.2xs}",
-          "type": "spacing"
-        },
-        "margin-block-start": {
-          "value": "{nijmegen.space.block.2xs}",
-          "type": "spacing"
-        }
       }
     }
   }
