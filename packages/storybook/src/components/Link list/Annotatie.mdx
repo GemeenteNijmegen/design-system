@@ -1,0 +1,110 @@
+import { Meta, Unstyled } from "@storybook/blocks";
+import { Canvas } from '@storybook/addon-docs';
+import * as LinkList from './React/LinkList.stories';
+
+# Annotatie Link list component
+De volgende sectie biedt een beknopte uitleg over de verschillende componenten. Elke component wordt voorzien van een duidelijke beschrijving om het concept helder te maken.
+
+## Voor redacteuren
+
+**1. Duidelijke en beschrijvende labels**
+- Schrijf korte, beschrijvende linkteksten die aangeven waar de link naartoe leidt. Vermijd vage termen zoals "Klik hier" of "Meer info".
+- Zorg ervoor dat de tekst uniek is binnen de pagina.
+
+**Goed voorbeeld:**
+- “Bekijk de richtlijnen voor toegankelijkheid”
+- “Lees meer over evenementen in Nijmegen”
+
+**2. Volgorde en context**
+- Presenteer de links in een logische en betekenisvolle volgorde.
+- Gebruik de lijst alleen voor een samenhangende groep links.
+
+**3. Altijd actieve links**
+- Controleer dat alle links werken en verwijzen naar de juiste content.
+
+**4. Contextueel plaatsen**
+- Bied korte inleidende teksten boven de Link List als extra context wanneer dat nodig is. Bijvoorbeeld:	“Hieronder vind je gerelateerde artikelen en richtlijnen.
+
+## Do’s en don’ts
+<Unstyled>
+<div className="utrecht-document nijmegen-theme">
+    <div className="preview-canvas preview-canvas-do">
+        <h4 class="utrecht-heading-4">Algemene goed voorbeelden</h4>
+        <br />
+        <ul role="list" class="utrecht-link-list utrecht-link-list--html-ul">
+            <li class="utrecht-link-list__item">
+                <a href="#"class="utrecht-link utrecht-link--html-a utrecht-link-list__link ">
+                    <span class="utrecht-link-list__link-text">Bekijk de evenementenagenda van Nijmegen</span>
+                </a>
+            </li>
+            <li class="utrecht-link-list__item">
+                <a href="#"class="utrecht-link utrecht-link--html-a utrecht-link-list__link">
+                    <span class="utrecht-link-list__link-text">Lees de richtlijnen voor toegankelijk ontwerp</span>
+                </a>
+            </li>
+            <li class="utrecht-link-list__item">
+                <a href="#"class="utrecht-link utrecht-link--html-a utrecht-link-list__link">
+                    <span class="utrecht-link-list__link-text">Bekijk de volledige programmagegevens</span>
+                </a>
+            </li>
+            <li class="utrecht-link-list__item">
+                <a href="#"class="utrecht-link utrecht-link--html-a utrecht-link-list__link">
+                    <span class="utrecht-link-list__link-text">Ga naar de evenementenpagina</span>
+                </a>
+            </li>
+            <li class="utrecht-link-list__item">
+                <a href="#"class="utrecht-link utrecht-link--html-a utrecht-link-list__link">
+                    <span class="utrecht-link-list__link-text">Download het jaarverslag 2023</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</Unstyled>
+
+### Do
+**✅ Gebruik beschrijvende linkteksten**
+- Linkteksten moeten duidelijk en specifiek zijn. Ze moeten de gebruiker vertellen waar de link naartoe leidt.
+
+<Unstyled>
+<div className="utrecht-document nijmegen-theme">
+    <div className="preview-canvas preview-canvas-dont">
+        <h4 class="utrecht-heading-4">Algemene slecht voorbeelden</h4>
+        <br />
+        <ul role="list" class="utrecht-link-list utrecht-link-list--html-ul">
+            <li class="utrecht-link-list__item">
+                <a href="#"class="utrecht-link utrecht-link--html-a utrecht-link-list__link ">
+                    <span class="utrecht-link-list__link-text">Lees hier het artikel</span>
+                </a>
+            </li>
+            <li class="utrecht-link-list__item">
+                <a href="#"class="utrecht-link utrecht-link--html-a utrecht-link-list__link">
+                    <span class="utrecht-link-list__link-text">Meer info</span>
+                </a>
+            </li>
+            <li class="utrecht-link-list__item">
+                <a href="#"class="utrecht-link utrecht-link--html-a utrecht-link-list__link">
+                    <span class="utrecht-link-list__link-text">Lees meer</span>
+                </a>
+            </li>
+            <li class="utrecht-link-list__item">
+                <a href="#"class="utrecht-link utrecht-link--html-a utrecht-link-list__link">
+                    <span class="utrecht-link-list__link-text">Download hier</span>
+                </a>
+            </li>
+            <li class="utrecht-link-list__item">
+                <a href="#"class="utrecht-link utrecht-link--html-a utrecht-link-list__link">
+                    <span class="utrecht-link-list__link-text">Klik hier voor details</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</Unstyled>
+
+### Don’ts
+**❌ Gebruik vage linkteksten**
+- Vermijd teksten zoals “Klik hier” of “Lees meer”. Ze geven geen context aan de gebruiker.
+
+**❌ Maak de lijst geen paragraaf**
+- Plaats links niet als losse teksten in een gewone paragraaf; gebruik altijd een lijst.
