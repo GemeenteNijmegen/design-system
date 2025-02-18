@@ -1,0 +1,28 @@
+{
+  "denhaag": {
+    "menu-button": {
+      "active": {
+        "color": { "value": "{nijmegen.color.zeegroen.500}" },
+        "font-weight": { "value": "{nijmegen.typography.font-weight.bold}" }
+      },
+      "color": { "value": "{nijmegen.color.grijs.900}" },
+      "font-family": { "value": "{nijmegen.typography.font-family.secondary}" },
+      "font-size": { "value": "{nijmegen.typography.font-size.md}" },
+      "font-weight": { "value": "{nijmegen.typography.font-weight.regular}" },
+      "hover": {
+        "color": { "value": "{nijmegen.color.zeegroen.700}" }
+      },
+      "line-height": { "value": "21px" },
+      "chevron": {
+        "padding-inline-start": { "value": "4px" },
+        "size": { "value": "12px" },
+        "active": {
+          "color": { "value": "{nijmegen.color.zeegroen.500}" }
+        },
+        "hover": {
+          "color": { "value": "{nijmegen.color.zeegroen.700}" }
+        }
+      }
+    }
+  }
+}

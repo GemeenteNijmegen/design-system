@@ -1,0 +1,20 @@
+{
+  "denhaag": {
+    "icon-button": {
+      "color": { "value": "{nijmegen.color.grijs.900}" },
+      "padding-block-start": { "value": "2px" },
+      "padding-block-end": { "value": "2px" },
+      "padding-inline-start": { "value": "2px" },
+      "padding-inline-end": { "value": "2px" },
+      "focus": {
+        "outline-color": { "value": "{nijmegen.form-control.focus.border-color}" },
+        "outline-width": { "value": "{nijmegen.form-control.focus.border-width}" },
+        "outline-style": { "value": "solid" },
+        "outline-offset": { "value": "0px" }
+      },
+      "hover": {
+        "color": { "value": "{nijmegen.color.zeegroen.500}" }
+      }
+    }
+  }
+}

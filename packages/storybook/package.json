@@ -75,6 +75,7 @@
     "webpack": "5.90.3"
   },
   "dependencies": {
+    "@gemeente-denhaag/header": "1.1.1",
     "@storybook/core": "8.3.4",
     "@tabler/icons-react": "3.20.0",
     "clsx": "2.1.0"

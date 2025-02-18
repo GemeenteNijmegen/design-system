@@ -213,6 +213,9 @@ importers:
 
   packages/storybook:
     dependencies:
+      '@gemeente-denhaag/header':
+        specifier: 1.1.1
+        version: 1.1.1(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0)
       '@storybook/core':
         specifier: 8.3.4
         version: 8.3.4
@@ -375,7 +378,7 @@ importers:
         version: 5.3.3
       vite:
         specifier: 5.1.5
-        version: 5.1.5(sass@1.71.1)
+        version: 5.1.5(@types/node@20.11.24)(sass@1.71.1)
       vite-plugin-html:
         specifier: 3.2.2
         version: 3.2.2(vite@5.1.5)
@@ -1853,7 +1856,6 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.0
-    dev: true
 
   /@babel/template@7.23.9:
     resolution: {integrity: sha512-+xrD2BWLpvHKNmX2QbpdpsBaWnRxahMwJjO+KZk2JOElj5nSmKezyS1B4u+QbHMTX69t4ukm6hh9lsYQ7GHCKA==}
@@ -2477,6 +2479,213 @@ packages:
     resolution: {integrity: sha512-5U2UvIYRkCMozZ388gCE73PEpa2MFgN/0t9O4a1FF7bGT/MIneQWSL1XpWZ8iMVYdh6ntxRf3iFA6slCIuFgkg==}
     dev: false
 
+  /@gemeente-denhaag/badge-counter@1.1.0(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-KVkZiRHOVnM26nPh09iMrmhVNK9Bl0vh+htCFKy1YU1QzQ/fQqGHDmmbmnoVNIQR73yiX8D8RbsoOMBwwUJbpg==}
+    peerDependencies:
+      react: '18'
+      react-dom: '18'
+    dependencies:
+      '@utrecht/component-library-react': 4.2.0(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0)
+      '@utrecht/components': 7.4.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - '@babel/runtime'
+      - date-fns
+      - react-vega
+      - vega
+    dev: false
+
+  /@gemeente-denhaag/breadcrumb@1.1.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-mWKi3bKzMXrX6Rw44xj8vNzYvF5IvDTUgOUg7WNdmYQggawVFbD7OUIvciui9d1c0fbm25Av/VJcZweYHafu1g==}
+    peerDependencies:
+      react: '18'
+      react-dom: '18'
+    dependencies:
+      '@gemeente-denhaag/icons': 2.1.0(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/link': 1.1.0(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/responsive-content': 0.2.0(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@gemeente-denhaag/button@1.1.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-BkWoVD213H5P4gXE4QZLLAfKjU05M+AlHz8gppyi3cn0zSOpUaIXzhTdpzQQth1aOjGfTv+qWLxVxbL/UEDfrg==}
+    peerDependencies:
+      react: '18'
+      react-dom: '18'
+    dependencies:
+      '@gemeente-denhaag/icons': 2.1.0(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@gemeente-denhaag/design-tokens-common@1.0.0:
+    resolution: {integrity: sha512-h6FbRVST9qnDqCVbyq9pRfz2NEdbjRX7gpj9xt+sseKhs62O5tk0Qiw+llO39iivSYbdzDoRMiOLCH9JqtPvPA==}
+    dev: false
+
+  /@gemeente-denhaag/design-tokens-components@1.0.1:
+    resolution: {integrity: sha512-APJsPW/ZZRv642/ZfyjMiC8trWzcwCFKHZzC8Ig5WgbCCJ5UZOvOe14ywvbXsLCj0BrdW2t6LquJNoyl8IoHig==}
+    dev: false
+
+  /@gemeente-denhaag/header-logo@1.1.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-bUZVMFCsmFGBCAh3BxzCHBFcOMs5z8Gix3u3PewKueZOwa406vtWyvRnkSS/DPt2EvHsqwnlOET2vI4VtLILpQ==}
+    peerDependencies:
+      react: '18'
+      react-dom: '18'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@gemeente-denhaag/header@1.1.1(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-OagXhMV1h+XDpgXUNQxFUVNLA+i8ktciCgnJGpOEY9IHfs/19ZBSuaAGkJCuGpPyAbSVtKMN4mlek8zp7QK6dg==}
+    peerDependencies:
+      react: '18'
+      react-dom: '18'
+    dependencies:
+      '@gemeente-denhaag/breadcrumb': 1.1.0(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/button': 1.1.0(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/header-logo': 1.1.0(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/iconbutton': 1.1.0(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/icons': 2.1.0(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/language-switcher': 1.1.0(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/link': 1.1.0(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/link-group': 0.2.0(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/menu': 1.1.0(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/responsive-content': 0.2.0(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/sheet': 1.1.0(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/typography': 1.1.1(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - '@babel/runtime'
+      - date-fns
+      - react-vega
+      - vega
+    dev: false
+
+  /@gemeente-denhaag/iconbutton@1.1.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-XcymVf3Ghl9Hzgx2IgNNJoFS+C5jHPJXyXatvkIHaRF4i6+XqAiEwP9WeC3YJfyz9mSsyIQieIpZzEh3LyDk5Q==}
+    peerDependencies:
+      react: '18'
+      react-dom: '18'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@gemeente-denhaag/icons@2.1.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-7EurQbR+6GaTky0qBEnC8dOR2hYyIvpDiyPB3IHLUazQFBv/+uBNzYxzfZ82J4wNCXa0ar+lopdWpMhXrYJWUA==}
+    peerDependencies:
+      react: '18'
+      react-dom: '18'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@gemeente-denhaag/language-switcher@1.1.0(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-sSnK1VlvgUoXA4eDGIYmOQ3q83UHDdlYQl9gcW2lHe5RCzVRvLJFDwWjjDYzUqSSXqrLSvVuxsqqRa4FycZ+wA==}
+    peerDependencies:
+      react: '18'
+      react-dom: '18'
+    dependencies:
+      '@gemeente-denhaag/icons': 2.1.0(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/link': 1.1.0(react-dom@18.2.0)(react@18.2.0)
+      '@utrecht/component-library-react': 4.2.0(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - '@babel/runtime'
+      - date-fns
+      - react-vega
+      - vega
+    dev: false
+
+  /@gemeente-denhaag/link-group@0.2.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-psgypPbty1m40TcMMAAAAwKKngGdB8x3Eyecx0ZnJvpUTTkfp2sQupfsAE/utVGnaZnRz5GHKcaiA2hD5lP8hQ==}
+    peerDependencies:
+      react: '18'
+      react-dom: '18'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@gemeente-denhaag/link@1.1.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-XEd2AFJ56CRZPe/d5HdRPWT3+Xor1UPhMaT07riySdsSGXKr5VZcg5179BWfWJKyEtyH+lL1Po2HTga2vFADFQ==}
+    peerDependencies:
+      react: '18'
+      react-dom: '18'
+    dependencies:
+      '@gemeente-denhaag/icons': 2.1.0(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@gemeente-denhaag/menu@1.1.0(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-zvNLI4opuVSXZ2oxfpboYK2XkFEUnJsf5zRN1uYLMsLuwmsTmcIT5bBUE5RzW013joaWd32wCo2ujPpj/CdebA==}
+    peerDependencies:
+      react: '18'
+      react-dom: '18'
+    dependencies:
+      '@gemeente-denhaag/badge-counter': 1.1.0(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/button': 1.1.0(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/icons': 2.1.0(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/language-switcher': 1.1.0(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0)
+      '@gemeente-denhaag/sheet': 1.1.0(react-dom@18.2.0)(react@18.2.0)
+      '@types/uuid': 10.0.0
+      '@utrecht/component-library-css': 7.0.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      uuid: 11.0.3
+    transitivePeerDependencies:
+      - '@babel/runtime'
+      - date-fns
+      - react-vega
+      - vega
+    dev: false
+
+  /@gemeente-denhaag/responsive-content@0.2.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-xn0gvU3oHc3UFJyGXE1CzGBGREjM0BDtu/LQasmDmwO1z6ri66Jv8wLOSGtvazZBxe6+O2a4EFqaENWhJazmDA==}
+    peerDependencies:
+      react: '18'
+      react-dom: '18'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@gemeente-denhaag/sheet@1.1.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-7wraa1JRuLxhfjreBKvEN7KW9z3QAyiHxxadagbukR9sJqXbx7rHmF3Plj4lMUbf3funCBx4rUMS14Tf/FhgVQ==}
+    peerDependencies:
+      react: '18'
+      react-dom: '18'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@gemeente-denhaag/typography@1.1.1(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-bd+wgYPTn3modQacqkxvriyS0wiVMi+d1o7mXNJL/IAZNY0eOqb0uwEkrEYJ0Um5MjNQ4tMdBkjU6woVrQmJDA==}
+    peerDependencies:
+      react: '18'
+      react-dom: '18'
+    dependencies:
+      '@gemeente-denhaag/design-tokens-common': 1.0.0
+      '@gemeente-denhaag/design-tokens-components': 1.0.1
+      '@utrecht/component-library-react': 4.2.0(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0)
+      '@utrecht/components': 7.4.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - '@babel/runtime'
+      - date-fns
+      - react-vega
+      - vega
+    dev: false
+
   /@humanwhocodes/config-array@0.11.14:
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
     engines: {node: '>=10.10.0'}
@@ -2773,7 +2982,7 @@ packages:
       magic-string: 0.27.0
       react-docgen-typescript: 2.2.2(typescript@5.3.3)
       typescript: 5.3.3
-      vite: 5.1.5(sass@1.71.1)
+      vite: 5.1.5(@types/node@20.11.24)(sass@1.71.1)
     dev: true
 
   /@jridgewell/gen-mapping@0.3.3:
@@ -4236,20 +4445,6 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@rollup/pluginutils@5.0.2:
-    resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
-    engines: {node: '>=14.0.0'}
-    peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0
-    peerDependenciesMeta:
-      rollup:
-        optional: true
-    dependencies:
-      '@types/estree': 1.0.1
-      estree-walker: 2.0.2
-      picomatch: 2.3.1
-    dev: true
-
   /@rollup/pluginutils@5.0.2(rollup@4.12.1):
     resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
     engines: {node: '>=14.0.0'}
@@ -4857,7 +5052,7 @@ packages:
       magic-string: 0.30.5
       rollup: 3.29.4
       typescript: 5.3.3
-      vite: 5.1.5(sass@1.71.1)
+      vite: 5.1.5(@types/node@20.11.24)(sass@1.71.1)
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -5736,7 +5931,7 @@ packages:
       vite: ^3.0.0 || ^4.0.0 || ^5.0.0
     dependencies:
       '@joshwooding/vite-plugin-react-docgen-typescript': 0.3.0(typescript@5.3.3)(vite@5.1.5)
-      '@rollup/pluginutils': 5.0.2
+      '@rollup/pluginutils': 5.0.2(rollup@4.12.1)
       '@storybook/builder-vite': 7.6.17(typescript@5.3.3)(vite@5.1.5)
       '@storybook/react': 7.6.17(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
       '@vitejs/plugin-react': 3.1.0(vite@5.1.5)
@@ -5744,7 +5939,7 @@ packages:
       react: 18.2.0
       react-docgen: 7.0.1
       react-dom: 18.2.0(react@18.2.0)
-      vite: 5.1.5(sass@1.71.1)
+      vite: 5.1.5(@types/node@20.11.24)(sass@1.71.1)
     transitivePeerDependencies:
       - '@preact/preset-vite'
       - encoding
@@ -6626,6 +6821,10 @@ packages:
     resolution: {integrity: sha512-dqId9J8K/vGi5Zr7oo212BGii5m3q5Hxlkwy3WpYuKPklmBEvsbMYYyLxAQpSffdLl/gdW0XUpKWFvYmyoWCoQ==}
     dev: true
 
+  /@types/uuid@10.0.0:
+    resolution: {integrity: sha512-7gqG38EyHgyP1S+7+xomFtL+ZNHcKv6DwNaCZmJmo1vgMugyF3TCnXVg4t1uk89mLNwnLtnY3TpOpCOyp1/xHQ==}
+    dev: false
+
   /@types/uuid@9.0.7:
     resolution: {integrity: sha512-WUtIVRUZ9i5dYXefDEAI7sh9/O7jGvHg7Df/5O/gtH3Yabe5odI3UWopVR1qbPXQtvOxWu3mM4XxlYeZtMWF4g==}
     dev: true
@@ -6782,6 +6981,34 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
+  /@utrecht/component-library-css@7.0.0:
+    resolution: {integrity: sha512-40POFlVA1rNfuVBsboUDFDAVzavnpam/Co2oKu+sxVOXyC/SxCZwJhxC6E04mM+5grU7/OdNobSmvqpWCO2OEg==}
+    dev: false
+
+  /@utrecht/component-library-react@4.2.0(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-xS6hpHtidYstCPjm1STc+iGTHmc02mc/dmvDcFAcRnwzweI4zunxawIxwF8cpG4SyjeK0b6iU8GJ3d7QXUe7mA==}
+    peerDependencies:
+      '@babel/runtime': ^7.23.6
+      date-fns: ^2.30.0
+      react: '18'
+      react-dom: '18'
+      react-vega: ^7.6.0
+      vega: ^5.25.0
+    peerDependenciesMeta:
+      date-fns:
+        optional: true
+      react-vega:
+        optional: true
+      vega:
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.24.0
+      clsx: 2.1.1
+      lodash.chunk: 4.2.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /@utrecht/component-library-react@7.1.0(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-TPYDkuGWKfvhkdFBPtVfUMEXjqqabSia++Ewf2FyRYuCSud/ZxWCkw53Pf7HXlEloAngQMc/BbrJB4f2Ok9B+Q==}
     peerDependencies:
@@ -6812,6 +7039,12 @@ packages:
       clsx: 1.2.1
     dev: true
 
+  /@utrecht/components@7.4.0:
+    resolution: {integrity: sha512-LWFJjJ7TF0eaoWq5TGrg7rNYnG+G5yIEJhuiwFlbICwSx2n+gZVbAE1dAW8YG2mGqveXZk38hBC2FWNE1tj1BQ==}
+    dependencies:
+      clsx: 2.1.1
+    dev: false
+
   /@vitejs/plugin-react@3.1.0(vite@5.1.5):
     resolution: {integrity: sha512-AfgcRL8ZBhAlc3BFdigClmTUMISmmzHn7sB2h9U1odvc5U/MjWXsAaz18b/WoppUTDBzxOJwo2VdClfUcItu9g==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -6823,7 +7056,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.23.3(@babel/core@7.24.0)
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 5.1.5(sass@1.71.1)
+      vite: 5.1.5(@types/node@20.11.24)(sass@1.71.1)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -6839,7 +7072,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.23.3(@babel/core@7.24.0)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.0
-      vite: 5.1.5(sass@1.71.1)
+      vite: 5.1.5(@types/node@20.11.24)(sass@1.71.1)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -8319,7 +8552,6 @@ packages:
   /clsx@2.1.1:
     resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
     engines: {node: '>=6'}
-    dev: true
 
   /cmd-shim@6.0.2:
     resolution: {integrity: sha512-+FFYbB0YLaAkhkcrjkyNLYDiOsFSfRjwjY19LXk/psmMx1z00xlCv7hhQoTGXXIKi+YXHL/iiFo8NqMVQX9nOw==}
@@ -13054,7 +13286,6 @@ packages:
 
   /lodash.chunk@4.2.0:
     resolution: {integrity: sha512-ZzydJKfUHJwHa+hF5X66zLFCBrWn5GeF28OHEr4WVWtNDXlQ/IjWKPBiikqKo2ne0+v6JgCgJ0GzJp8k8bHC7w==}
-    dev: true
 
   /lodash.debounce@4.0.8:
     resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
@@ -16399,7 +16630,6 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.23.0
-    dev: true
 
   /react-element-to-jsx-string@15.0.0(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-UDg4lXB6BzlobN60P8fHWVPX3Kyw8ORrTeBtClmIlGdkOOE+GYQSFvmEU5iLLpwp/6v42DINwNcwOhOLfQ//FQ==}
@@ -16687,7 +16917,6 @@ packages:
 
   /regenerator-runtime@0.14.0:
     resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
-    dev: true
 
   /regenerator-transform@0.15.2:
     resolution: {integrity: sha512-hfMp2BoF0qOk3uc5V20ALGDS2ddjQaLrdl7xrGXvAIow7qeWRM2VA2HuCHkUKk9slq3VwEwLNK3DFBqDfPGYtg==}
@@ -17226,7 +17455,6 @@ packages:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
     dependencies:
       loose-envify: 1.4.0
-    dev: true
 
   /schema-utils@3.3.0:
     resolution: {integrity: sha512-pN/yOAvcC+5rQ5nERGuwrjLlYvLTbCibnZ1I7B1LaiAz9BRBlE9GMgE/eqV30P7aJQUf7Ddimy/RsbYO/GrVGg==}
@@ -19108,6 +19336,11 @@ packages:
     resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
     engines: {node: '>= 0.4.0'}
 
+  /uuid@11.0.3:
+    resolution: {integrity: sha512-d0z310fCWv5dJwnX1Y/MncBAqGMKEzlBb1AOf7z9K8ALnd0utBX/msg/fA0+sbyN1ihbMsLhrBlnl1ak7Wa0rg==}
+    hasBin: true
+    dev: false
+
   /uuid@9.0.1:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
     hasBin: true
@@ -19226,7 +19459,7 @@ packages:
       html-minifier-terser: 6.1.0
       node-html-parser: 5.4.2
       pathe: 0.2.0
-      vite: 5.1.5(sass@1.71.1)
+      vite: 5.1.5(@types/node@20.11.24)(sass@1.71.1)
     dev: true
 
   /vite-plugin-markdown@2.2.0(vite@5.1.5):
@@ -19238,7 +19471,7 @@ packages:
       front-matter: 4.0.2
       htmlparser2: 6.1.0
       markdown-it: 12.3.2
-      vite: 5.1.5(sass@1.71.1)
+      vite: 5.1.5(@types/node@20.11.24)(sass@1.71.1)
     dev: true
 
   /vite-plugin-runtime-config@1.0.2(vite@5.1.5):
@@ -19283,42 +19516,6 @@ packages:
         optional: true
     dependencies:
       '@types/node': 20.11.24
-      esbuild: 0.19.8
-      postcss: 8.4.35
-      rollup: 4.12.1
-      sass: 1.71.1
-    optionalDependencies:
-      fsevents: 2.3.3
-    dev: true
-
-  /vite@5.1.5(sass@1.71.1):
-    resolution: {integrity: sha512-BdN1xh0Of/oQafhU+FvopafUp6WaYenLU/NFoL5WyJL++GxkNfieKzBhM24H3HVsPQrlAqB7iJYTHabzaRed5Q==}
-    engines: {node: ^18.0.0 || >=20.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': ^18.0.0 || >=20.0.0
-      less: '*'
-      lightningcss: ^1.21.0
-      sass: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      lightningcss:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
       esbuild: 0.19.8
       postcss: 8.4.35
       rollup: 4.12.1
