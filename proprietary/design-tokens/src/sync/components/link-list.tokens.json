@@ -2,17 +2,17 @@
   "utrecht": {
     "link-list": {
       "row-gap": {
-        "value": "{nijmegen.space.50}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.50}"
       },
       "icon": {
         "inset-block-start": {
-          "value": "{nijmegen.space.12}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.12}"
         },
         "size": {
-          "value": "{nijmegen.icon.functional.size}",
-          "type": "sizing"
+          "$type": "sizing",
+          "$value": "{nijmegen.icon.functional.size}"
         }
       }
     }
@@ -21,29 +21,29 @@
     "link-list": {
       "item": {
         "column-gap": {
-          "value": "{nijmegen.space.50}",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "{nijmegen.space.50}"
         },
         "text-decoration": {
-          "value": "None",
-          "type": "textDecoration"
+          "$type": "textDecoration",
+          "$value": "None"
         },
         "active": {
           "text-decoration": {
-            "value": "underline",
-            "type": "textDecoration"
+            "$type": "textDecoration",
+            "$value": "underline"
           }
         },
         "focus": {
           "text-decoration": {
-            "value": "None",
-            "type": "textDecoration"
+            "$type": "textDecoration",
+            "$value": "None"
           }
         },
         "hover": {
           "text-decoration": {
-            "value": "underline",
-            "type": "textDecoration"
+            "$type": "textDecoration",
+            "$value": "underline"
           }
         }
       }

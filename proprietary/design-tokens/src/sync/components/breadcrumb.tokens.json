@@ -2,94 +2,94 @@
   "utrecht": {
     "breadcrumb": {
       "line-height": {
-        "value": "{utrecht.document.line-height}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{utrecht.document.line-height}"
       },
       "font-size": {
-        "value": "{utrecht.document.font-size}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{utrecht.document.font-size}"
       },
       "link": {
         "icon": {
           "size": {
-            "value": "{nijmegen.icon.functional.size}",
-            "type": "sizing"
+            "$type": "sizing",
+            "$value": "{nijmegen.icon.functional.size}"
           }
         },
         "padding-inline-end": {
-          "value": "0px",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "0px"
         },
         "padding-inline-start": {
-          "value": "0px",
-          "type": "spacing"
+          "$type": "spacing",
+          "$value": "0px"
         },
         "color": {
-          "value": "{nijmegen.interaction.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.interaction.color}"
         },
         "active": {
           "color": {
-            "value": "{nijmegen.interaction.active.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.interaction.active.color}"
           },
           "text-decoration": {
-            "value": "none",
-            "type": "textDecoration"
+            "$type": "textDecoration",
+            "$value": "none"
           }
         },
         "focus": {
           "background-color": {
-            "value": "{nijmegen.focus.background-color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.focus.background-color}"
           },
           "color": {
-            "value": "{nijmegen.focus.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.focus.color}"
           },
           "text-decoration": {
-            "value": "none",
-            "type": "textDecoration"
+            "$type": "textDecoration",
+            "$value": "none"
           }
         },
         "hover": {
           "color": {
-            "value": "{nijmegen.interaction.hover.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.interaction.hover.color}"
           },
           "text-decoration": {
-            "value": "none",
-            "type": "textDecoration"
+            "$type": "textDecoration",
+            "$value": "none"
           }
         },
         "current": {
           "color": {
-            "value": "{nijmegen.color.grijs.500}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.grijs.500}"
           }
         },
         "text-decoration": {
-          "value": "underline",
-          "type": "textDecoration"
+          "$type": "textDecoration",
+          "$value": "underline"
         }
       },
       "divider": {
         "size": {
-          "value": "{nijmegen.size.150}",
-          "type": "sizing"
+          "$type": "sizing",
+          "$value": "{nijmegen.size.150}"
         },
         "color": {
-          "value": "{nijmegen.color.grijs.400}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.grijs.400}"
         }
       },
       "font-family": {
-        "value": "{utrecht.document.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{utrecht.document.font-family}"
       },
       "font-weight": {
-        "value": "{utrecht.document.font-weight}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{utrecht.document.font-weight}"
       }
     }
   }

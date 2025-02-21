@@ -2,24 +2,24 @@
   "utrecht": {
     "button-group": {
       "background-color": {
-        "value": "{nijmegen.color.none}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{nijmegen.color.none}"
       },
       "column-gap": {
-        "value": "{nijmegen.space.50}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.50}"
       },
       "padding-block-end": {
-        "value": "0px",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "0px"
       },
       "padding-block-start": {
-        "value": "0px",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "0px"
       },
       "row-gap": {
-        "value": "{nijmegen.space.50}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.50}"
       }
     }
   }

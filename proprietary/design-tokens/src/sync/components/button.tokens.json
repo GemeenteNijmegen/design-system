@@ -4,350 +4,350 @@
       "primary-action": {
         "hover": {
           "background-color": {
-            "value": "{nijmegen.interaction.hover.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.interaction.hover.color}"
           },
           "border-color": {
-            "value": "{nijmegen.color.none}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.none}"
           },
           "color": {
-            "value": "{nijmegen.color.wit}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.wit}"
           }
         },
         "background-color": {
-          "value": "{nijmegen.interaction.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.interaction.color}"
         },
         "border-color": {
-          "value": "{nijmegen.color.none}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.none}"
         },
         "color": {
-          "value": "{nijmegen.color.wit}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.wit}"
         },
         "disabled": {
           "background-color": {
-            "value": "{nijmegen.color.grijs.100}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.grijs.100}"
           },
           "border-color": {
-            "value": "{nijmegen.color.none}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.none}"
           },
           "color": {
-            "value": "{nijmegen.color.grijs.500}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.grijs.500}"
           }
         },
         "focus": {
           "background-color": {
-            "value": "{nijmegen.focus.background-color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.focus.background-color}"
           },
           "border-color": {
-            "value": "{nijmegen.color.none}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.none}"
           },
           "color": {
-            "value": "{nijmegen.focus.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.focus.color}"
           }
         },
         "font-weight": {
-          "value": "{nijmegen.typography.font-weight.bold}",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{nijmegen.typography.font-weight.bold}"
         },
         "active": {
           "background-color": {
-            "value": "{nijmegen.interaction.active.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.interaction.active.color}"
           },
           "border-color": {
-            "value": "{nijmegen.color.none}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.none}"
           },
           "color": {
-            "value": "{nijmegen.color.wit}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.wit}"
           }
         }
       },
       "secondary-action": {
         "hover": {
           "background-color": {
-            "value": "{nijmegen.color.zeegroen.100}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.zeegroen.100}"
           },
           "border-color": {
-            "value": "{nijmegen.interaction.hover.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.interaction.hover.color}"
           },
           "color": {
-            "value": "{nijmegen.interaction.hover.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.interaction.hover.color}"
           }
         },
         "background-color": {
-          "value": "{nijmegen.color.wit}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.wit}"
         },
         "border-color": {
-          "value": "{nijmegen.interaction.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.interaction.color}"
         },
         "color": {
-          "value": "{nijmegen.interaction.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.interaction.color}"
         },
         "disabled": {
           "background-color": {
-            "value": "{nijmegen.color.grijs.100}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.grijs.100}"
           },
           "border-color": {
-            "value": "{nijmegen.color.none}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.none}"
           },
           "color": {
-            "value": "{nijmegen.color.grijs.500}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.grijs.500}"
           }
         },
         "focus": {
           "background-color": {
-            "value": "{nijmegen.focus.background-color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.focus.background-color}"
           },
           "border-color": {
-            "value": "{nijmegen.color.none}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.none}"
           },
           "color": {
-            "value": "{nijmegen.focus.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.focus.color}"
           }
         },
         "font-weight": {
-          "value": "{nijmegen.typography.font-weight.bold}",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{nijmegen.typography.font-weight.bold}"
         },
         "active": {
           "background-color": {
-            "value": "{nijmegen.color.zeegroen.200}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.zeegroen.200}"
           },
           "border-color": {
-            "value": "{nijmegen.interaction.active.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.interaction.active.color}"
           },
           "color": {
-            "value": "{nijmegen.interaction.active.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.interaction.active.color}"
           }
         }
       },
       "border-radius": {
-        "value": "{nijmegen.border-radius.xs}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{nijmegen.border-radius.xs}"
       },
       "border-width": {
-        "value": "{nijmegen.border-width.sm}",
-        "type": "borderWidth"
+        "$type": "borderWidth",
+        "$value": "{nijmegen.border-width.sm}"
       },
       "icon": {
         "size": {
-          "value": "{nijmegen.icon.functional.size}",
-          "type": "sizing"
+          "$type": "sizing",
+          "$value": "{nijmegen.icon.functional.size}"
         }
       },
       "column-gap": {
-        "value": "{nijmegen.space.25}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.25}"
       },
       "font-family": {
-        "value": "{utrecht.document.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{utrecht.document.font-family}"
       },
       "font-size": {
-        "value": "{utrecht.document.font-size}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{utrecht.document.font-size}"
       },
       "font-weight": {
-        "value": "{nijmegen.typography.font-weight.bold}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{nijmegen.typography.font-weight.bold}"
       },
       "subtle": {
         "font-weight": {
-          "value": "{nijmegen.typography.font-weight.bold}",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{nijmegen.typography.font-weight.bold}"
         },
         "hover": {
           "background-color": {
-            "value": "{nijmegen.color.zeegroen.100}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.zeegroen.100}"
           },
           "border-color": {
-            "value": "{nijmegen.color.none}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.none}"
           },
           "color": {
-            "value": "{nijmegen.interaction.hover.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.interaction.hover.color}"
           }
         },
         "background-color": {
-          "value": "{nijmegen.color.none}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.none}"
         },
         "border-color": {
-          "value": "{nijmegen.color.none}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.none}"
         },
         "color": {
-          "value": "{nijmegen.interaction.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.interaction.color}"
         },
         "disabled": {
           "background-color": {
-            "value": "{nijmegen.color.grijs.100}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.grijs.100}"
           },
           "border-color": {
-            "value": "{nijmegen.color.none}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.none}"
           },
           "color": {
-            "value": "{nijmegen.color.grijs.500}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.grijs.500}"
           }
         },
         "focus": {
           "background-color": {
-            "value": "{nijmegen.focus.background-color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.focus.background-color}"
           },
           "border-color": {
-            "value": "{nijmegen.color.none}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.none}"
           },
           "color": {
-            "value": "{nijmegen.focus.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.focus.color}"
           }
         },
         "active": {
           "background-color": {
-            "value": "{nijmegen.color.zeegroen.200}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.zeegroen.200}"
           },
           "border-color": {
-            "value": "{nijmegen.color.none}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.color.none}"
           },
           "color": {
-            "value": "{nijmegen.interaction.active.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.interaction.active.color}"
           }
         }
       },
       "line-height": {
-        "value": "{utrecht.document.line-height}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{utrecht.document.line-height}"
       },
       "padding-block-end": {
-        "value": "{nijmegen.space.75}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.75}"
       },
       "padding-block-start": {
-        "value": "{nijmegen.space.75}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.75}"
       },
       "padding-inline-end": {
-        "value": "{nijmegen.space.100}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.100}"
       },
       "padding-inline-start": {
-        "value": "{nijmegen.space.100}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.100}"
       },
       "disabled": {
         "background-color": {
-          "value": "{nijmegen.color.grijs.100}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.grijs.100}"
         },
         "border-color": {
-          "value": "{nijmegen.color.none}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.none}"
         },
         "color": {
-          "value": "{nijmegen.color.grijs.500}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.grijs.500}"
         }
       },
       "focus": {
         "background-color": {
-          "value": "{nijmegen.focus.background-color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.focus.background-color}"
         },
         "border-color": {
-          "value": "{nijmegen.color.none}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.none}"
         },
         "color": {
-          "value": "{nijmegen.focus.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.focus.color}"
         }
       },
       "hover": {
         "background-color": {
-          "value": "{nijmegen.color.zeegroen.100}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.zeegroen.100}"
         },
         "border-color": {
-          "value": "{nijmegen.interaction.hover.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.interaction.hover.color}"
         },
         "color": {
-          "value": "{nijmegen.interaction.hover.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.interaction.hover.color}"
         }
       },
       "active": {
         "background-color": {
-          "value": "{nijmegen.color.zeegroen.200}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.zeegroen.200}"
         },
         "border-color": {
-          "value": "{nijmegen.interaction.active.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.interaction.active.color}"
         },
         "color": {
-          "value": "{nijmegen.interaction.active.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.interaction.active.color}"
         }
       },
       "background-color": {
-        "value": "{nijmegen.color.wit}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{nijmegen.color.wit}"
       },
       "border-color": {
-        "value": "{nijmegen.color.border.strong}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{nijmegen.color.border.strong}"
       },
       "color": {
-        "value": "{nijmegen.color.grijs.800}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{nijmegen.color.grijs.800}"
       },
       "min-block-size": {
-        "value": "{utrecht.pointer-target.min-size}",
-        "type": "sizing"
+        "$type": "sizing",
+        "$value": "{utrecht.pointer-target.min-size}"
       },
       "min-inline-size": {
-        "value": "{utrecht.pointer-target.min-size}",
-        "type": "sizing"
+        "$type": "sizing",
+        "$value": "{utrecht.pointer-target.min-size}"
       }
     }
   },
@@ -355,8 +355,8 @@
     "button": {
       "hover": {
         "text-decoration": {
-          "value": "{nijmegen.hover.text-decoration}",
-          "type": "textDecoration"
+          "$type": "textDecoration",
+          "$value": "{nijmegen.hover.text-decoration}"
         }
       }
     }

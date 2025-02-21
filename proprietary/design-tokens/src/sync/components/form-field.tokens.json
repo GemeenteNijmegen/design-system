@@ -3,8 +3,8 @@
     "form-field": {
       "invalid": {
         "border-inline-start-width": {
-          "value": "{nijmegen.border-width.md}",
-          "type": "borderWidth"
+          "$type": "borderWidth",
+          "$value": "{nijmegen.border-width.md}"
         }
       }
     }

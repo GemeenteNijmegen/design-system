@@ -2,99 +2,99 @@
   "nijmegen": {
     "badge": {
       "font-family": {
-        "value": "{utrecht.document.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{utrecht.document.font-family}"
       },
       "font-weight": {
-        "value": "{nijmegen.typography.font-weight.semibold}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{nijmegen.typography.font-weight.semibold}"
       },
       "line-height": {
-        "value": "{utrecht.document.line-height}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{utrecht.document.line-height}"
       },
       "font-size": {
-        "value": "{utrecht.document.font-size}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{utrecht.document.font-size}"
       },
       "positive": {
         "color": {
-          "value": "{nijmegen.color.feedback.success.default}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.feedback.success.default}"
         },
         "background-color": {
-          "value": "{nijmegen.color.feedback.success.subdued}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.feedback.success.subdued}"
         },
         "border-color": {
-          "value": "{nijmegen.color.none}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.none}"
         }
       },
       "border-width": {
-        "value": "{nijmegen.border-width.none}",
-        "type": "borderWidth"
+        "$type": "borderWidth",
+        "$value": "{nijmegen.border-width.none}"
       },
       "border-radius": {
-        "value": "{nijmegen.border-radius.sm}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{nijmegen.border-radius.sm}"
       },
       "padding-block-end": {
-        "value": "{nijmegen.space.25}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.25}"
       },
       "padding-block-start": {
-        "value": "{nijmegen.space.25}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.25}"
       },
       "padding-inline-end": {
-        "value": "{nijmegen.space.50}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.50}"
       },
       "padding-inline-start": {
-        "value": "{nijmegen.space.50}",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "{nijmegen.space.50}"
       },
       "negative": {
         "color": {
-          "value": "{nijmegen.color.feedback.error.default}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.feedback.error.default}"
         },
         "background-color": {
-          "value": "{nijmegen.color.feedback.error.subdued}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.feedback.error.subdued}"
         },
         "border-color": {
-          "value": "{nijmegen.color.none}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.none}"
         }
       },
       "warning": {
         "color": {
-          "value": "{nijmegen.color.feedback.warning.default}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.feedback.warning.default}"
         },
         "background-color": {
-          "value": "{nijmegen.color.feedback.warning.subdued}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.feedback.warning.subdued}"
         },
         "border-color": {
-          "value": "{nijmegen.color.none}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.none}"
         }
       },
       "informative": {
         "color": {
-          "value": "{nijmegen.color.feedback.info.default}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.feedback.info.default}"
         },
         "background-color": {
-          "value": "{nijmegen.color.feedback.info.subdued}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.feedback.info.subdued}"
         },
         "border-color": {
-          "value": "{nijmegen.color.none}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.none}"
         }
       }
     }

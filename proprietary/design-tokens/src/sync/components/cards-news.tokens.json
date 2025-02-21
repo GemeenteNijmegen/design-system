@@ -2,58 +2,58 @@
   "nijmegen": {
     "card-nieuws": {
       "background-color": {
-        "value": "{nijmegen.color.wit}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{nijmegen.color.wit}"
       },
       "border-color": {
-        "value": "{nijmegen.color.border.default}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{nijmegen.color.border.default}"
       },
       "border-radius": {
-        "value": "{nijmegen.border-radius.xs}",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "{nijmegen.border-radius.xs}"
       },
       "datum": {
         "color": {
-          "value": "{nijmegen.color.grijs.400}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.color.grijs.400}"
         }
       },
       "heading": {
         "color": {
-          "value": "{nijmegen.heading.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.heading.color}"
         },
         "font-family": {
-          "value": "{nijmegen.heading.font-family}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{nijmegen.heading.font-family}"
         },
         "font-weight": {
-          "value": "{nijmegen.heading.font-weight}",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "{nijmegen.heading.font-weight}"
         },
         "hover": {
           "color": {
-            "value": "{nijmegen.interaction.hover.color}",
-            "type": "color"
+            "$type": "color",
+            "$value": "{nijmegen.interaction.hover.color}"
           }
         },
         "line-height": {
-          "value": "{utrecht.heading-3.line-height}",
-          "type": "lineHeights"
+          "$type": "lineHeights",
+          "$value": "{utrecht.heading-3.line-height}"
         }
       },
       "paragraph": {
         "color": {
-          "value": "{utrecht.paragraph.color}",
-          "type": "color"
+          "$type": "color",
+          "$value": "{utrecht.paragraph.color}"
         }
       }
     },
     "card-news": {
       "font-family": {
-        "value": "{nijmegen.typography.font-family.secondary}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{nijmegen.typography.font-family.secondary}"
       }
     }
   }

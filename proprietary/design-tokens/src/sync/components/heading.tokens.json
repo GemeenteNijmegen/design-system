@@ -2,134 +2,134 @@
   "utrecht": {
     "heading-1": {
       "color": {
-        "value": "{nijmegen.heading.color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{nijmegen.heading.color}"
       },
       "font-family": {
-        "value": "{nijmegen.heading.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{nijmegen.heading.font-family}"
       },
       "font-weight": {
-        "value": "{nijmegen.heading.font-weight}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{nijmegen.heading.font-weight}"
       },
       "line-height": {
-        "value": "{nijmegen.typography.line-height.sm}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{nijmegen.typography.line-height.sm}"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.3xl}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{nijmegen.typography.font-size.3xl}"
       }
     },
     "heading-2": {
       "color": {
-        "value": "{nijmegen.color.zwart}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{nijmegen.color.zwart}"
       },
       "font-family": {
-        "value": "{nijmegen.heading.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{nijmegen.heading.font-family}"
       },
       "font-weight": {
-        "value": "{nijmegen.heading.font-weight}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{nijmegen.heading.font-weight}"
       },
       "line-height": {
-        "value": "{nijmegen.typography.line-height.sm}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{nijmegen.typography.line-height.sm}"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.2xl}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{nijmegen.typography.font-size.2xl}"
       }
     },
     "heading-3": {
       "color": {
-        "value": "{nijmegen.heading.color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{nijmegen.heading.color}"
       },
       "font-family": {
-        "value": "{nijmegen.heading.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{nijmegen.heading.font-family}"
       },
       "font-weight": {
-        "value": "{nijmegen.heading.font-weight}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{nijmegen.heading.font-weight}"
       },
       "line-height": {
-        "value": "{nijmegen.typography.line-height.sm}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{nijmegen.typography.line-height.sm}"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.xl}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{nijmegen.typography.font-size.xl}"
       }
     },
     "heading-4": {
       "color": {
-        "value": "{nijmegen.heading.color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{nijmegen.heading.color}"
       },
       "font-family": {
-        "value": "{nijmegen.heading.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{nijmegen.heading.font-family}"
       },
       "font-weight": {
-        "value": "{nijmegen.heading.font-weight}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{nijmegen.heading.font-weight}"
       },
       "line-height": {
-        "value": "{nijmegen.typography.line-height.md}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{nijmegen.typography.line-height.md}"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.lg}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{nijmegen.typography.font-size.lg}"
       }
     },
     "heading-5": {
       "color": {
-        "value": "{nijmegen.heading.color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{nijmegen.heading.color}"
       },
       "font-family": {
-        "value": "{nijmegen.heading.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{nijmegen.heading.font-family}"
       },
       "font-weight": {
-        "value": "{nijmegen.heading.font-weight}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{nijmegen.heading.font-weight}"
       },
       "line-height": {
-        "value": "{nijmegen.typography.line-height.md}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{nijmegen.typography.line-height.md}"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.md}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{nijmegen.typography.font-size.md}"
       }
     },
     "heading-6": {
       "color": {
-        "value": "{nijmegen.heading.color}",
-        "type": "color"
+        "$type": "color",
+        "$value": "{nijmegen.heading.color}"
       },
       "font-family": {
-        "value": "{nijmegen.heading.font-family}",
-        "type": "fontFamilies"
+        "$type": "fontFamilies",
+        "$value": "{nijmegen.heading.font-family}"
       },
       "font-weight": {
-        "value": "{nijmegen.heading.font-weight}",
-        "type": "fontWeights"
+        "$type": "fontWeights",
+        "$value": "{nijmegen.heading.font-weight}"
       },
       "line-height": {
-        "value": "{nijmegen.typography.line-height.md}",
-        "type": "lineHeights"
+        "$type": "lineHeights",
+        "$value": "{nijmegen.typography.line-height.md}"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.sm}",
-        "type": "fontSizes"
+        "$type": "fontSizes",
+        "$value": "{nijmegen.typography.font-size.sm}"
       }
     }
   }

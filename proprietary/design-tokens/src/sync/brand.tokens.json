@@ -3,546 +3,546 @@
     "typography": {
       "font-size": {
         "sm": {
-          "value": "1rem",
-          "type": "fontSizes"
+          "$type": "fontSizes",
+          "$value": "1rem"
         },
         "md": {
-          "value": "1.125rem",
-          "type": "fontSizes"
+          "$type": "fontSizes",
+          "$value": "1.125rem"
         },
         "lg": {
-          "value": "1.25rem",
-          "type": "fontSizes"
+          "$type": "fontSizes",
+          "$value": "1.25rem"
         },
         "xl": {
-          "value": "1.5rem",
-          "type": "fontSizes"
+          "$type": "fontSizes",
+          "$value": "1.5rem"
         },
         "2xl": {
-          "value": "2rem",
-          "type": "fontSizes"
+          "$type": "fontSizes",
+          "$value": "2rem"
         },
         "3xl": {
-          "value": "2.5rem",
-          "type": "fontSizes"
+          "$type": "fontSizes",
+          "$value": "2.5rem"
         },
         "4xl": {
-          "value": "3rem",
-          "type": "fontSizes"
+          "$type": "fontSizes",
+          "$value": "3rem"
         }
       },
       "line-height": {
         "xs": {
-          "value": "100%",
-          "type": "lineHeights"
+          "$type": "lineHeights",
+          "$value": "100%"
         },
         "sm": {
-          "value": "125%",
-          "type": "lineHeights"
+          "$type": "lineHeights",
+          "$value": "125%"
         },
         "md": {
-          "value": "150%",
-          "type": "lineHeights"
+          "$type": "lineHeights",
+          "$value": "150%"
         },
         "lg": {
-          "value": "200%",
-          "type": "lineHeights"
+          "$type": "lineHeights",
+          "$value": "200%"
         }
       },
       "font-weight": {
         "regular": {
-          "value": "400",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "400"
         },
         "bold": {
-          "value": "700",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "700"
         },
         "semibold": {
-          "value": "600",
-          "type": "fontWeights"
+          "$type": "fontWeights",
+          "$value": "600"
         }
       },
       "font-family": {
         "primary": {
-          "value": "Oranda BT, Georgia, serif",
-          "type": "fontFamilies"
+          "$type": "fontFamilies",
+          "$value": "Oranda BT, Georgia, serif"
         },
         "secondary": {
-          "value": "Source Sans Pro, Tahoma, Verdana, sans-serif",
-          "type": "fontFamilies"
+          "$type": "fontFamilies",
+          "$value": "Source Sans Pro, Tahoma, Verdana, sans-serif"
         }
       }
     },
     "color": {
       "wit": {
-        "value": "#FFFFFF",
-        "type": "color"
+        "$type": "color",
+        "$value": "#FFFFFF"
       },
       "zwart": {
-        "value": "#000000",
-        "type": "color"
+        "$type": "color",
+        "$value": "#000000"
       },
       "none": {
-        "value": "#FFFFFF00",
-        "type": "color"
+        "$type": "color",
+        "$value": "#FFFFFF00"
       },
       "oranje": {
         "100": {
-          "value": "#FEF1E5",
-          "type": "color"
+          "$type": "color",
+          "$value": "#FEF1E5"
         },
         "200": {
-          "value": "#FEE2C8",
-          "type": "color"
+          "$type": "color",
+          "$value": "#FEE2C8"
         },
         "300": {
-          "value": "#FECA9D",
-          "type": "color"
+          "$type": "color",
+          "$value": "#FECA9D"
         },
         "400": {
-          "value": "#FD8022",
-          "type": "color"
+          "$type": "color",
+          "$value": "#FD8022"
         },
         "500": {
-          "value": "#D96416",
-          "type": "color"
+          "$type": "color",
+          "$value": "#D96416"
         },
         "600": {
-          "value": "#B25012",
-          "type": "color"
+          "$type": "color",
+          "$value": "#B25012"
         },
         "700": {
-          "value": "#8F400D",
-          "type": "color"
+          "$type": "color",
+          "$value": "#8F400D"
         },
         "800": {
-          "value": "#6A2E09",
-          "type": "color"
+          "$type": "color",
+          "$value": "#6A2E09"
         },
         "900": {
-          "value": "#431D07",
-          "type": "color"
+          "$type": "color",
+          "$value": "#431D07"
         }
       },
       "geel": {
         "100": {
-          "value": "#FAF4D7",
-          "type": "color"
+          "$type": "color",
+          "$value": "#FAF4D7"
         },
         "200": {
-          "value": "#F4E8AA",
-          "type": "color"
+          "$type": "color",
+          "$value": "#F4E8AA"
         },
         "300": {
-          "value": "#EAD565",
-          "type": "color"
+          "$type": "color",
+          "$value": "#EAD565"
         },
         "400": {
-          "value": "#C0A100",
-          "type": "color"
+          "$type": "color",
+          "$value": "#C0A100"
         },
         "500": {
-          "value": "#9E8400",
-          "type": "color"
+          "$type": "color",
+          "$value": "#9E8400"
         },
         "600": {
-          "value": "#816C00",
-          "type": "color"
+          "$type": "color",
+          "$value": "#816C00"
         },
         "700": {
-          "value": "#675600",
-          "type": "color"
+          "$type": "color",
+          "$value": "#675600"
         },
         "800": {
-          "value": "#4C3F00",
-          "type": "color"
+          "$type": "color",
+          "$value": "#4C3F00"
         },
         "900": {
-          "value": "#2F2800",
-          "type": "color"
+          "$type": "color",
+          "$value": "#2F2800"
         }
       },
       "blauw": {
         "100": {
-          "value": "#ECF5FD",
-          "type": "color"
+          "$type": "color",
+          "$value": "#ECF5FD"
         },
         "200": {
-          "value": "#D7E9FB",
-          "type": "color"
+          "$type": "color",
+          "$value": "#D7E9FB"
         },
         "300": {
-          "value": "#B8D8F8",
-          "type": "color"
+          "$type": "color",
+          "$value": "#B8D8F8"
         },
         "400": {
-          "value": "#5FA8EF",
-          "type": "color"
+          "$type": "color",
+          "$value": "#5FA8EF"
         },
         "500": {
-          "value": "#2588E9",
-          "type": "color"
+          "$type": "color",
+          "$value": "#2588E9"
         },
         "600": {
-          "value": "#006BD4",
-          "type": "color"
+          "$type": "color",
+          "$value": "#006BD4"
         },
         "700": {
-          "value": "#0056AA",
-          "type": "color"
+          "$type": "color",
+          "$value": "#0056AA"
         },
         "800": {
-          "value": "#003F7D",
-          "type": "color"
+          "$type": "color",
+          "$value": "#003F7D"
         },
         "900": {
-          "value": "#00284F",
-          "type": "color"
+          "$type": "color",
+          "$value": "#00284F"
         }
       },
       "rood": {
         "100": {
-          "value": "#FAF1F3",
-          "type": "color"
+          "$type": "color",
+          "$value": "#FAF1F3"
         },
         "200": {
-          "value": "#F5E2E6",
-          "type": "color"
+          "$type": "color",
+          "$value": "#F5E2E6"
         },
         "300": {
-          "value": "#EDCCD3",
-          "type": "color"
+          "$type": "color",
+          "$value": "#EDCCD3"
         },
         "400": {
-          "value": "#D78F9F",
-          "type": "color"
+          "$type": "color",
+          "$value": "#D78F9F"
         },
         "500": {
-          "value": "#C9687E",
-          "type": "color"
+          "$type": "color",
+          "$value": "#C9687E"
         },
         "600": {
-          "value": "#BC415D",
-          "type": "color"
+          "$type": "color",
+          "$value": "#BC415D"
         },
         "700": {
-          "value": "#A80A2D",
-          "type": "color"
+          "$type": "color",
+          "$value": "#A80A2D"
         },
         "800": {
-          "value": "#830823",
-          "type": "color"
+          "$type": "color",
+          "$value": "#830823"
         },
         "900": {
-          "value": "#550517",
-          "type": "color"
+          "$type": "color",
+          "$value": "#550517"
         }
       },
       "groen": {
         "100": {
-          "value": "#EDF6F0",
-          "type": "color"
+          "$type": "color",
+          "$value": "#EDF6F0"
         },
         "200": {
-          "value": "#DAEBDF",
-          "type": "color"
+          "$type": "color",
+          "$value": "#DAEBDF"
         },
         "300": {
-          "value": "#BDDCC6",
-          "type": "color"
+          "$type": "color",
+          "$value": "#BDDCC6"
         },
         "400": {
-          "value": "#6EB281",
-          "type": "color"
+          "$type": "color",
+          "$value": "#6EB281"
         },
         "500": {
-          "value": "#3C9756",
-          "type": "color"
+          "$type": "color",
+          "$value": "#3C9756"
         },
         "600": {
-          "value": "#1D7D38",
-          "type": "color"
+          "$type": "color",
+          "$value": "#1D7D38"
         },
         "700": {
-          "value": "#17642D",
-          "type": "color"
+          "$type": "color",
+          "$value": "#17642D"
         },
         "800": {
-          "value": "#114A21",
-          "type": "color"
+          "$type": "color",
+          "$value": "#114A21"
         },
         "900": {
-          "value": "#0B2E15",
-          "type": "color"
+          "$type": "color",
+          "$value": "#0B2E15"
         }
       },
       "grijs": {
         "100": {
-          "value": "#F3F3F3",
-          "type": "color"
+          "$type": "color",
+          "$value": "#F3F3F3"
         },
         "200": {
-          "value": "#E7E7E7",
-          "type": "color"
+          "$type": "color",
+          "$value": "#E7E7E7"
         },
         "300": {
-          "value": "#D4D4D4",
-          "type": "color"
+          "$type": "color",
+          "$value": "#D4D4D4"
         },
         "400": {
-          "value": "#A3A3A3",
-          "type": "color"
+          "$type": "color",
+          "$value": "#A3A3A3"
         },
         "500": {
-          "value": "#868686",
-          "type": "color"
+          "$type": "color",
+          "$value": "#868686"
         },
         "600": {
-          "value": "#6D6D6D",
-          "type": "color"
+          "$type": "color",
+          "$value": "#6D6D6D"
         },
         "700": {
-          "value": "#575757",
-          "type": "color"
+          "$type": "color",
+          "$value": "#575757"
         },
         "800": {
-          "value": "#404040",
-          "type": "color"
+          "$type": "color",
+          "$value": "#404040"
         },
         "900": {
-          "value": "#282828",
-          "type": "color"
+          "$type": "color",
+          "$value": "#282828"
         }
       },
       "zeegroen": {
         "100": {
-          "value": "#EDF5F4",
-          "type": "color"
+          "$type": "color",
+          "$value": "#EDF5F4"
         },
         "200": {
-          "value": "#DAEAE7",
-          "type": "color"
+          "$type": "color",
+          "$value": "#DAEAE7"
         },
         "300": {
-          "value": "#BEDAD5",
-          "type": "color"
+          "$type": "color",
+          "$value": "#BEDAD5"
         },
         "400": {
-          "value": "#70AFA3",
-          "type": "color"
+          "$type": "color",
+          "$value": "#70AFA3"
         },
         "500": {
-          "value": "#409484",
-          "type": "color"
+          "$type": "color",
+          "$value": "#409484"
         },
         "600": {
-          "value": "#157C68",
-          "type": "color"
+          "$type": "color",
+          "$value": "#157C68"
         },
         "700": {
-          "value": "#116253",
-          "type": "color"
+          "$type": "color",
+          "$value": "#116253"
         },
         "800": {
-          "value": "#0C483D",
-          "type": "color"
+          "$type": "color",
+          "$value": "#0C483D"
         },
         "900": {
-          "value": "#082D26",
-          "type": "color"
+          "$type": "color",
+          "$value": "#082D26"
         }
       }
     },
     "space": {
       "0": {
-        "value": "0rem",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "0rem"
       },
       "12": {
-        "value": "0.125rem",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "0.125rem"
       },
       "25": {
-        "value": "0.25rem",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "0.25rem"
       },
       "50": {
-        "value": "0.5rem",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "0.5rem"
       },
       "75": {
-        "value": "0.75rem",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "0.75rem"
       },
       "100": {
-        "value": "1rem",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "1rem"
       },
       "125": {
-        "value": "1.25rem",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "1.25rem"
       },
       "150": {
-        "value": "1.5rem",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "1.5rem"
       },
       "200": {
-        "value": "2rem",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "2rem"
       },
       "250": {
-        "value": "2.5rem",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "2.5rem"
       },
       "300": {
-        "value": "3rem",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "3rem"
       },
       "400": {
-        "value": "4rem",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "4rem"
       },
       "500": {
-        "value": "5rem",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "5rem"
       },
       "600": {
-        "value": "6rem",
-        "type": "spacing"
+        "$type": "spacing",
+        "$value": "6rem"
       }
     },
     "border-width": {
       "sm": {
-        "value": "1px",
-        "type": "borderWidth"
+        "$type": "borderWidth",
+        "$value": "1px"
       },
       "none": {
-        "value": "0px",
-        "type": "borderWidth"
+        "$type": "borderWidth",
+        "$value": "0px"
       },
       "md": {
-        "value": "2px",
-        "type": "borderWidth"
+        "$type": "borderWidth",
+        "$value": "2px"
       },
       "lg": {
-        "value": "4px",
-        "type": "borderWidth"
+        "$type": "borderWidth",
+        "$value": "4px"
       }
     },
     "size": {
       "25": {
-        "value": "0.25rem",
-        "type": "sizing"
+        "$type": "sizing",
+        "$value": "0.25rem"
       },
       "50": {
-        "value": "0.5rem",
-        "type": "sizing"
+        "$type": "sizing",
+        "$value": "0.5rem"
       },
       "100": {
-        "value": "1rem",
-        "type": "sizing"
+        "$type": "sizing",
+        "$value": "1rem"
       },
       "150": {
-        "value": "1.5rem",
-        "type": "sizing"
+        "$type": "sizing",
+        "$value": "1.5rem"
       },
       "200": {
-        "value": "2rem",
-        "type": "sizing"
+        "$type": "sizing",
+        "$value": "2rem"
       },
       "300": {
-        "value": "3rem",
-        "type": "sizing"
+        "$type": "sizing",
+        "$value": "3rem"
       },
       "400": {
-        "value": "4rem",
-        "type": "sizing"
+        "$type": "sizing",
+        "$value": "4rem"
       },
       "600": {
-        "value": "6rem",
-        "type": "sizing"
+        "$type": "sizing",
+        "$value": "6rem"
       },
       "750": {
-        "value": "7.5rem",
-        "type": "sizing"
+        "$type": "sizing",
+        "$value": "7.5rem"
       },
       "1000": {
-        "value": "10rem",
-        "type": "sizing"
+        "$type": "sizing",
+        "$value": "10rem"
       }
     },
     "box-shadow": {
       "sm": {
-        "value": {
+        "$type": "boxShadow",
+        "$value": {
           "x": "0",
           "y": "2",
           "blur": "6",
           "spread": "0",
           "color": "{nijmegen.color.grijs.200}",
           "type": "dropShadow"
-        },
-        "type": "boxShadow"
+        }
       },
       "md": {
-        "value": {
+        "$type": "boxShadow",
+        "$value": {
           "x": "0",
           "y": "8",
           "blur": "16",
           "spread": "0",
           "color": "{nijmegen.color.grijs.200}",
           "type": "dropShadow"
-        },
-        "type": "boxShadow"
+        }
       },
       "lg": {
-        "value": {
+        "$type": "boxShadow",
+        "$value": {
           "x": "0",
           "y": "16",
           "blur": "48",
           "spread": "0",
           "color": "{nijmegen.color.grijs.200}",
           "type": "dropShadow"
-        },
-        "type": "boxShadow"
+        }
       }
     },
     "border-radius": {
       "none": {
-        "value": "0px",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "0px"
       },
       "xs": {
-        "value": "4px",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "4px"
       },
       "sm": {
-        "value": "8px",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "8px"
       },
       "md": {
-        "value": "12px",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "12px"
       },
       "lg": {
-        "value": "16px",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "16px"
       },
       "xl": {
-        "value": "32px",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "32px"
       },
       "2xl": {
-        "value": "40px",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "40px"
       },
       "3xl": {
-        "value": "64px",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "64px"
       },
       "circle": {
-        "value": "999px",
-        "type": "borderRadius"
+        "$type": "borderRadius",
+        "$value": "999px"
       }
     }
   }
