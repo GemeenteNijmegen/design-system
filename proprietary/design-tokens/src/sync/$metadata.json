@@ -49,6 +49,7 @@
     "components/textbox.tokens",
     "components/toolbar-button.tokens",
     "components/header.tokens",
-    "components/unordered-list.tokens"
+    "components/unordered-list.tokens",
+    "components/heading.tokens"
   ]
 }
