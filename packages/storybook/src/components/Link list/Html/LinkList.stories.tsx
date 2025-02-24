@@ -1,6 +1,7 @@
+import '@tabler/icons-webfont/dist/tabler-icons.css';
 import type { Meta, StoryObj } from '@storybook/react';
 import type { StoryContext } from '@storybook/types';
-import { LinkList } from '@utrecht/component-library-react';
+import { LinkList } from '@utrecht/component-library-react/dist/css-module';
 import prettierBabel from 'prettier/parser-babel';
 import * as prettier from 'prettier/standalone';
 import * as ReactDOMServer from 'react-dom/server';
@@ -45,10 +46,11 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
+    icon: () => <i className="ti ti-chevron-right"></i>,
     links: [
-      { href: '#', children: 'Link 1' },
-      { href: '#', children: 'Link 2' },
-      { href: '#', children: 'Link 3' },
+      { children: 'Link 1', href: '#' },
+      { children: 'Link 2', href: '#' },
+      { children: 'Link 3', href: '#' },
     ],
   },
 };
