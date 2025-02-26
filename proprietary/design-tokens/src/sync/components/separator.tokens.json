@@ -6,7 +6,7 @@
         "type": "color"
       },
       "block-size": {
-        "value": "{nijmegen.size.50}",
+        "value": "{nijmegen.size.25}",
         "type": "sizing"
       }
     }

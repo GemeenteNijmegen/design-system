@@ -27,6 +27,7 @@
     "components/form-field-option-label.tokens",
     "components/form-field-radio-option.tokens",
     "components/header.tokens",
+    "components/heading.tokens",
     "components/heading-1.tokens",
     "components/heading-2.tokens",
     "components/heading-3.tokens",
@@ -36,11 +37,14 @@
     "components/icon-only-button.tokens",
     "components/link.tokens",
     "components/link-list.tokens",
+    "components/mega-menu.tokens",
+    "components/menu.tokens",
     "components/ordered-list.tokens",
     "components/pagination.tokens",
     "components/paragraph.tokens",
     "components/radio.tokens",
     "components/radio-group.tokens",
+    "components/search-input.tokens",
     "components/select.tokens",
     "components/separator.tokens",
     "components/sidenav.tokens",
@@ -49,7 +53,6 @@
     "components/textarea.tokens",
     "components/textbox.tokens",
     "components/toolbar-button.tokens",
-    "components/unordered-list.tokens",
-    "components/heading.tokens"
+    "components/unordered-list.tokens"
   ]
 }
