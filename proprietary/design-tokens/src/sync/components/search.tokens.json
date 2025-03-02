@@ -1,6 +1,6 @@
 {
   "nijmegen": {
-    "search-input": {
+    "search": {
       "background-color": {
         "value": "{nijmegen.form-control.background-color}",
         "type": "color"
