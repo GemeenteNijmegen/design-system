@@ -107,13 +107,19 @@
           "type": "fontSizes"
         }
       },
-      "inline-size": {
+      "min-inline-size": {
         "value": "328px",
         "type": "sizing"
       },
       "max-block-size": {
         "value": "300px",
         "type": "sizing"
+      },
+      "icon": {
+        "inset-block-start": {
+          "value": "{nijmegen.space.12}",
+          "type": "spacing"
+        }
       }
     }
   }
