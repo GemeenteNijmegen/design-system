@@ -42,19 +42,19 @@
         "type": "sizing"
       },
       "min-block-size": {
-        "value": "{utrecht.pointer-target.min-size}",
+        "value": "51px",
         "type": "sizing"
       },
       "padding-block-end": {
-        "value": "{nijmegen.form-control.padding-block-end}",
+        "value": "{nijmegen.space.0}",
         "type": "spacing"
       },
       "padding-block-start": {
-        "value": "{nijmegen.form-control.padding-block-start}",
+        "value": "{nijmegen.space.0}",
         "type": "spacing"
       },
       "padding-inline-end": {
-        "value": "{nijmegen.form-control.padding-inline-end}",
+        "value": "{nijmegen.space.0}",
         "type": "spacing"
       },
       "padding-inline-start": {
