@@ -1,5 +1,5 @@
-import '@tabler/icons-webfont/dist/tabler-icons.css';
 import type { Meta, StoryObj } from '@storybook/react';
+import { IconChevronRight } from '@tabler/icons-react';
 import { LinkList } from '@utrecht/component-library-react/dist/css-module';
 import { argTypes } from '../_LinkList';
 
@@ -21,7 +21,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   name: 'Link list',
   args: {
-    icon: () => <i className="ti ti-chevron-right"></i>,
+    icon: () => <IconChevronRight stroke={2} />,
     links: [
       { children: 'Link 1', href: '#' },
       { children: 'Link 2', href: '#' },

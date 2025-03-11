@@ -1,10 +1,11 @@
 import { Meta, Unstyled } from "@storybook/blocks";
 import { Canvas } from '@storybook/addon-docs';
+import { IconChevronRight } from '@tabler/icons-react';
 import * as LinkList from './React/LinkList.stories';
 
 # Documentatie link list component
 
-De Link List-component is een gestructureerde manier om meerdere links overzichtelijk te presenteren in lijstvorm. Deze component is bedoeld om de gebruiker op een toegankelijke en intuïtieve manier door verschillende pagina’s of secties te navigeren.
+Het Link List-component is een gestructureerde manier om meerdere links overzichtelijk te presenteren in lijstvorm. Deze component is bedoeld om de gebruiker op een toegankelijke en intuïtieve manier door verschillende pagina’s of secties te navigeren.
 
 Het Link List-component biedt een gestructureerde manier om meerdere links te presenteren in een lijstvorm.
 
@@ -14,7 +15,7 @@ Dit component is een implementatie van het `utrecht-link-list` component.
 
 | Link                                                                                                                                           | Omschrijving                                                    |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| [NPM Utrecht link list css](https://www.npmjs.com/package/@utrecht/link-list-css) OF [NPM Utrecht Components](https://www.npmjs.com/package/@utrecht/components)                                                                    | Het huidige component vereist het `@utrecht/link-list-css` pakket voor een specifieke button group implementatie of het `@utrecht/link-list-css` pakket indien er meerdere componenten geimplementeerd worden. |
+| [NPM Utrecht link list css](https://www.npmjs.com/package/@utrecht/link-list-css) OF [NPM Utrecht Components](https://www.npmjs.com/package/@utrecht/components)                                                                    | Het huidige component vereist het `@utrecht/link-list-css` pakket voor een specifieke link list implementatie of het `@utrecht/link-list-css` pakket indien er meerdere componenten geimplementeerd worden. |
 | [NPM Utrecht Component Library React](https://www.npmjs.com/package/@utrecht/component-library-react)                                                                    | Voor de React implementatie is dit pakket vereist. |
 | [Figma gemeente Nijmegen](https://www.figma.com/design/g3AieWAFD3NtkbDDTTFC30/Novio---Nijmegen-Design-System?node-id=3985-17445) | Design documentatie van dit component.    
 
@@ -39,19 +40,19 @@ De toestand wanneer de gebruiker met de muis over de link beweegt.
         <ul role="list" class="utrecht-link-list utrecht-link-list--html-ul">
             <li class="utrecht-link-list__item">
                 <a href="#"class="utrecht-link utrecht-link--hover utrecht-link--html-a utrecht-link-list__link ">
-                    <i class="ti ti-chevron-right"></i>
+                    <IconChevronRight stroke={2} />
                     <span class="utrecht-link-list__link-text">Link 1</span>
                 </a>
             </li>
             <li class="utrecht-link-list__item">
                 <a href="#"class="utrecht-link utrecht-link--hover utrecht-link--html-a utrecht-link-list__link">
-                    <i class="ti ti-chevron-right"></i>
+                    <IconChevronRight stroke={2} />
                     <span class="utrecht-link-list__link-text">Link 2</span>
                 </a>
             </li>
             <li class="utrecht-link-list__item">
                 <a href="#"class="utrecht-link utrecht-link--hover utrecht-link--html-a utrecht-link-list__link">
-                    <i class="ti ti-chevron-right"></i>
+                    <IconChevronRight stroke={2} />
                     <span class="utrecht-link-list__link-text">Link 3</span>
                 </a>
             </li>
@@ -69,19 +70,19 @@ De toestand wanneer de link via het toetsenbord of andere hulpmiddelen wordt ges
         <ul role="list" class="utrecht-link-list utrecht-link-list--html-ul">
             <li class="utrecht-link-list__item">
                 <a href="#"class="utrecht-link utrecht-link--focus utrecht-link--html-a utrecht-link-list__link ">
-                    <i class="ti ti-chevron-right"></i>
+                    <IconChevronRight stroke={2} />
                     <span class="utrecht-link-list__link-text">Link 1</span>
                 </a>
             </li>
             <li class="utrecht-link-list__item">
                 <a href="#"class="utrecht-link utrecht-link--focus utrecht-link--html-a utrecht-link-list__link">
-                    <i class="ti ti-chevron-right"></i>
+                    <IconChevronRight stroke={2} />
                     <span class="utrecht-link-list__link-text">Link 2</span>
                 </a>
             </li>
             <li class="utrecht-link-list__item">
                 <a href="#"class="utrecht-link utrecht-link--focus utrecht-link--html-a utrecht-link-list__link">
-                    <i class="ti ti-chevron-right"></i>
+                    <IconChevronRight stroke={2} />
                     <span class="utrecht-link-list__link-text">Link 3</span>
                 </a>
             </li>
@@ -99,19 +100,19 @@ Een specifieke focusstaat die alleen zichtbaar is bij toetsenbordgebruik.
         <ul role="list" class="utrecht-link-list utrecht-link-list--html-ul">
             <li class="utrecht-link-list__item">
                 <a href="#"class="utrecht-link utrecht-link--focus utrecht-link--focus-visible utrecht-link--visible utrecht-link--html-a utrecht-link-list__link">
-                    <i class="ti ti-chevron-right"></i>
+                    <IconChevronRight stroke={2} />
                     <span class="utrecht-link-list__link-text">Link 1</span>
                 </a>
             </li>
             <li class="utrecht-link-list__item">
                 <a href="#"class="utrecht-link utrecht-link--focus utrecht-link--focus-visible utrecht-link--visible utrecht-link--html-a utrecht-link-list__link">
-                    <i class="ti ti-chevron-right"></i>
+                    <IconChevronRight stroke={2} />
                     <span class="utrecht-link-list__link-text">Link 2</span>
                 </a>
             </li>
             <li class="utrecht-link-list__item">
                 <a href="#"class="utrecht-link utrecht-link--focus utrecht-link--focus-visible utrecht-link--visible utrecht-link--html-a utrecht-link-list__link">
-                    <i class="ti ti-chevron-right"></i>
+                    <IconChevronRight stroke={2} />
                     <span class="utrecht-link-list__link-text">Link 3</span>
                 </a>
             </li>
