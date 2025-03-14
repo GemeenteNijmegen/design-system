@@ -2,8 +2,8 @@
   "utrecht": {
     "heading-1": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.heading.color}"
+        "value": "{nijmegen.heading.color}",
+        "type": "color"
       },
       "font-family": {
         "value": "{nijmegen.heading.font-family}",
@@ -24,8 +24,8 @@
     },
     "heading-2": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.color.zwart}"
+        "value": "{nijmegen.color.zwart}",
+        "type": "color"
       },
       "font-family": {
         "value": "{nijmegen.heading.font-family}",
@@ -46,8 +46,8 @@
     },
     "heading-3": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.heading.color}"
+        "value": "{nijmegen.heading.color}",
+        "type": "color"
       },
       "font-family": {
         "value": "{nijmegen.heading.font-family}",
@@ -68,8 +68,8 @@
     },
     "heading-4": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.heading.color}"
+        "value": "{nijmegen.heading.color}",
+        "type": "color"
       },
       "font-family": {
         "value": "{nijmegen.heading.font-family}",
@@ -90,8 +90,8 @@
     },
     "heading-5": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.heading.color}"
+        "value": "{nijmegen.heading.color}",
+        "type": "color"
       },
       "font-family": {
         "value": "{nijmegen.heading.font-family}",
@@ -112,8 +112,8 @@
     },
     "heading-6": {
       "color": {
-        "type": "color",
-        "value": "{nijmegen.heading.color}"
+        "value": "{nijmegen.heading.color}",
+        "type": "color"
       },
       "font-family": {
         "value": "{nijmegen.heading.font-family}",

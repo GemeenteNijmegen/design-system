@@ -3,23 +3,19 @@
     "table": {
       "header-cell": {
         "line-height": {
-          "value": "{nijmegen.document.line-height}",
+          "value": "{utrecht.document.line-height}",
           "type": "lineHeights"
         },
         "color": {
-          "value": "{nijmegen.document.color}",
+          "value": "{utrecht.document.color}",
           "type": "color"
         },
         "font-family": {
-          "value": "{nijmegen.document.font-family}",
+          "value": "{utrecht.document.font-family}",
           "type": "fontFamilies"
         },
-        "font-weight": {
-          "value": "{nijmegen.document.strong.font-weight}",
-          "type": "fontWeights"
-        },
         "font-size": {
-          "value": "{nijmegen.document.font-size}",
+          "value": "{utrecht.document.font-size}",
           "type": "fontSizes"
         }
       },
@@ -27,10 +23,6 @@
         "line-height": {
           "value": "{nijmegen.typography.line-height.sm}",
           "type": "lineHeights"
-        },
-        "margin-block-end": {
-          "value": "{nijmegen.space.block.xl}",
-          "type": "spacing"
         },
         "color": {
           "value": "{nijmegen.heading.color}",
@@ -43,49 +35,27 @@
         "font-weight": {
           "value": "{nijmegen.heading.font-weight}",
           "type": "fontWeights"
-        },
-        "font-size": {
-          "value": "{nijmegen.typography.font-size.xl}",
-          "type": "fontSizes"
-        }
-      },
-      "cell": {
-        "padding-block-end": {
-          "value": "{nijmegen.space.block.sm}",
-          "type": "spacing"
-        },
-        "padding-block-start": {
-          "value": "{nijmegen.space.block.sm}",
-          "type": "spacing"
-        },
-        "padding-inline-end": {
-          "value": "{nijmegen.space.inline.sm}",
-          "type": "spacing"
-        },
-        "padding-inline-start": {
-          "value": "{nijmegen.space.inline.sm}",
-          "type": "spacing"
         }
       },
       "data-cell": {
         "color": {
-          "value": "{nijmegen.document.color}",
+          "value": "{utrecht.document.color}",
           "type": "color"
         },
         "font-family": {
-          "value": "{nijmegen.document.font-family}",
+          "value": "{utrecht.document.font-family}",
           "type": "fontFamilies"
         },
         "font-weight": {
-          "value": "{nijmegen.document.font-weight}",
+          "value": "{utrecht.document.font-weight}",
           "type": "fontWeights"
         },
         "line-height": {
-          "value": "{nijmegen.document.line-height}",
+          "value": "{utrecht.document.line-height}",
           "type": "lineHeights"
         },
         "font-size": {
-          "value": "{nijmegen.document.font-size}",
+          "value": "{utrecht.document.font-size}",
           "type": "fontSizes"
         }
       },
@@ -95,7 +65,7 @@
           "type": "borderWidth"
         },
         "border-block-end-color": {
-          "value": "{nijmegen.line.border-color}",
+          "value": "{nijmegen.color.border.subdued}",
           "type": "color"
         },
         "background-color": {
@@ -109,7 +79,7 @@
           "type": "borderWidth"
         },
         "border-block-end-color": {
-          "value": "{nijmegen.line.border-color}",
+          "value": "{nijmegen.color.border.subdued}",
           "type": "color"
         },
         "background-color": {
@@ -123,7 +93,7 @@
           "type": "borderWidth"
         },
         "border-block-end-color": {
-          "value": "{nijmegen.line.border-color}",
+          "value": "{nijmegen.color.border.subdued}",
           "type": "color"
         },
         "background-color": {
@@ -132,24 +102,20 @@
         }
       },
       "footer-cell": {
-        "font-weight": {
-          "value": "{nijmegen.document.strong.font-weight}",
-          "type": "fontWeights"
-        },
         "font-size": {
-          "value": "{nijmegen.document.font-size}",
+          "value": "{utrecht.document.font-size}",
           "type": "fontSizes"
         },
         "color": {
-          "value": "{nijmegen.document.color}",
+          "value": "{utrecht.document.color}",
           "type": "color"
         },
         "font-family": {
-          "value": "{nijmegen.document.font-family}",
+          "value": "{utrecht.document.font-family}",
           "type": "fontFamilies"
         },
         "line-height": {
-          "value": "{nijmegen.document.line-height}",
+          "value": "{utrecht.document.line-height}",
           "type": "lineHeights"
         }
       },

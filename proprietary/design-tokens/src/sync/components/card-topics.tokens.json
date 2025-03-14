@@ -3,7 +3,7 @@
     "card-topics": {
       "base": {
         "background-color": {
-          "value": "{nijmegen.color.white}",
+          "value": "{nijmegen.color.wit}",
           "type": "color"
         },
         "border-color": {
@@ -57,40 +57,6 @@
         "border-width": {
           "value": "{nijmegen.border-width.md}",
           "type": "borderWidth"
-        }
-      },
-      "title": {
-        "font-size": {
-          "value": "{nijmegen.typography.font-size.xl}",
-          "type": "fontSizes"
-        }
-      },
-      "content": {
-        "padding": {
-          "inline": {
-            "value": "{nijmegen.space.block.xl}",
-            "type": "spacing"
-          },
-          "block-start": {
-            "value": "{nijmegen.space.block.xl}",
-            "type": "spacing"
-          },
-          "block-end": {
-            "value": "{nijmegen.space.block.2xl}",
-            "type": "spacing"
-          }
-        },
-        "row": {
-          "block-gap": {
-            "value": "{nijmegen.space.block.md}",
-            "type": "spacing"
-          }
-        }
-      },
-      "icon": {
-        "size": {
-          "value": "{nijmegen.size.icon.lg}",
-          "type": "sizing"
         }
       }
     }

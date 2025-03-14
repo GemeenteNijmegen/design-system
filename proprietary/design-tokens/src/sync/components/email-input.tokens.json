@@ -2,44 +2,28 @@
   "utrecht": {
     "email-input": {
       "border-radius": {
-        "type": "borderRadius",
-        "value": "0px"
+        "value": "0px",
+        "type": "borderRadius"
       },
       "font-family": {
-        "value": "{nijmegen.document.font-family}",
+        "value": "{utrecht.document.font-family}",
         "type": "fontFamilies"
       },
       "font-size": {
-        "value": "{nijmegen.document.font-size}",
+        "value": "{utrecht.document.font-size}",
         "type": "fontSizes"
       },
       "font-weight": {
-        "value": "{nijmegen.document.font-weight}",
+        "value": "{utrecht.document.font-weight}",
         "type": "fontWeights"
       },
       "line-height": {
-        "value": "{nijmegen.document.line-height}",
+        "value": "{utrecht.document.line-height}",
         "type": "lineHeights"
       },
       "max-inline-size": {
         "value": "400px",
         "type": "sizing"
-      },
-      "padding-block-end": {
-        "value": "{nijmegen.space.block.sm}",
-        "type": "spacing"
-      },
-      "padding-block-start": {
-        "value": "{nijmegen.space.block.sm}",
-        "type": "spacing"
-      },
-      "padding-inline-end": {
-        "value": "{nijmegen.space.inline.sm}",
-        "type": "spacing"
-      },
-      "padding-inline-start": {
-        "value": "{nijmegen.space.inline.sm}",
-        "type": "spacing"
       },
       "background-color": {
         "value": "{nijmegen.form-control.background-color}",
