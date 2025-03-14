@@ -349,6 +349,9 @@ importers:
       '@types/react-dom':
         specifier: 18.2.20
         version: 18.2.20
+      '@utrecht/button-group-css':
+        specifier: 1.4.0
+        version: 1.4.0
       '@utrecht/component-library-react':
         specifier: 7.1.0
         version: 7.1.0(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0)
@@ -7052,6 +7055,10 @@ packages:
 
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
+    dev: true
+
+  /@utrecht/button-group-css@1.4.0:
+    resolution: {integrity: sha512-NV12LA6wh0IaBuqjVVD+dZUzl4Sk0aKKiO3qL0BT7XQJvygDRjJq3M5d2pI9BDMMOb9jgT6VuIARST0Qk6JuxQ==}
     dev: true
 
   /@utrecht/component-library-react@7.1.0(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0):
