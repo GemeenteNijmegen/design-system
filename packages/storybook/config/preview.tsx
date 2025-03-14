@@ -1,5 +1,6 @@
 import '@gemeentenijmegen/design-tokens/dist/index.css';
 import '@gemeentenijmegen/font/src/index.scss';
+import './global.scss';
 import { defineCustomElements } from '@gemeentenijmegen/web-components-stencil/loader/index.js';
 import type { Preview, StoryContext } from '@storybook/react';
 
@@ -12,7 +13,7 @@ const preview: Preview = {
       storyContext.parameters['args'] = storyContext.args;
 
       return (
-        <div className="nijmegen-theme">
+        <div className="utrecht-document nijmegen-theme">
           <Story />
         </div>
       );
