@@ -237,6 +237,9 @@ importers:
       '@tabler/icons-react':
         specifier: 3.20.0
         version: 3.20.0(react@18.2.0)
+      '@tabler/icons-webfont':
+        specifier: 3.30.0
+        version: 3.30.0
       clsx:
         specifier: 2.1.0
         version: 2.1.0
@@ -6401,8 +6404,18 @@ packages:
       react: 18.2.0
     dev: false
 
+  /@tabler/icons-webfont@3.30.0:
+    resolution: {integrity: sha512-0JpX/0vV0VcnTbadS+qmHc8T9X37HoOgS4Wr8dmiBF3NLv83Q2Ll3KZM3gRIM1Um1cfZDCiR5Gqf28KZW6tJsA==}
+    dependencies:
+      '@tabler/icons': 3.30.0
+    dev: false
+
   /@tabler/icons@3.20.0:
     resolution: {integrity: sha512-nXSeUzsCOxX/Of+kdUVQfxL9bG+ck8XCWNf9dGSpE+nhVexRwk/4HiDQDxFDysfT7vfgSut6GXnrZsU5M5dSlA==}
+    dev: false
+
+  /@tabler/icons@3.30.0:
+    resolution: {integrity: sha512-c8OKLM48l00u9TFbh2qhSODMONIzML8ajtCyq95rW8vzkWcBrKRPM61tdkThz2j4kd5u17srPGIjqdeRUZdfdw==}
     dev: false
 
   /@testing-library/dom@9.3.4:
