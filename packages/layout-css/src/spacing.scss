@@ -23,7 +23,7 @@ $utilities: (
     class: nijmegen-margin-inline,
     values:
       map.merge(
-        $nijmegen-inline-spacers,
+        $nijmegen-space,
         (
           auto: auto,
         )
@@ -35,7 +35,7 @@ $utilities: (
     class: nijmegen-margin-inline-start,
     values:
       map.merge(
-        $nijmegen-inline-spacers,
+        $nijmegen-space,
         (
           auto: auto,
         )
@@ -47,7 +47,7 @@ $utilities: (
     class: nijmegen-margin-inline-end,
     values:
       map.merge(
-        $nijmegen-inline-spacers,
+        $nijmegen-space,
         (
           auto: auto,
         )
@@ -59,7 +59,7 @@ $utilities: (
     class: nijmegen-padding-inline,
     values:
       map.merge(
-        $nijmegen-inline-spacers,
+        $nijmegen-space,
         (
           auto: auto,
         )
@@ -71,7 +71,7 @@ $utilities: (
     class: nijmegen-padding-inline-start,
     values:
       map.merge(
-        $nijmegen-inline-spacers,
+        $nijmegen-space,
         (
           auto: auto,
         )
@@ -83,7 +83,7 @@ $utilities: (
     class: nijmegen-padding-inline-end,
     values:
       map.merge(
-        $nijmegen-inline-spacers,
+        $nijmegen-space,
         (
           auto: auto,
         )
@@ -95,7 +95,7 @@ $utilities: (
     class: nijmegen-margin-block,
     values:
       map.merge(
-        $nijmegen-block-spacers,
+        $nijmegen-space,
         (
           auto: auto,
         )
@@ -107,7 +107,7 @@ $utilities: (
     class: nijmegen-margin-block-start,
     values:
       map.merge(
-        $nijmegen-block-spacers,
+        $nijmegen-space,
         (
           auto: auto,
         )
@@ -119,7 +119,7 @@ $utilities: (
     class: nijmegen-margin-block-end,
     values:
       map.merge(
-        $nijmegen-block-spacers,
+        $nijmegen-space,
         (
           auto: auto,
         )
@@ -131,7 +131,7 @@ $utilities: (
     class: nijmegen-padding-block,
     values:
       map.merge(
-        $nijmegen-block-spacers,
+        $nijmegen-space,
         (
           auto: auto,
         )
@@ -143,7 +143,7 @@ $utilities: (
     class: nijmegen-padding-block-start,
     values:
       map.merge(
-        $nijmegen-block-spacers,
+        $nijmegen-space,
         (
           auto: auto,
         )
@@ -155,7 +155,7 @@ $utilities: (
     class: nijmegen-padding-block-end,
     values:
       map.merge(
-        $nijmegen-block-spacers,
+        $nijmegen-space,
         (
           auto: auto,
         )

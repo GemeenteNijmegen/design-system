@@ -51,11 +51,11 @@
             },
             "padding-inline" : {
                 "start": {
-                    "value": "{nijmegen.space.inline.sm}",
+                    "value": "{nijmegen.space.25}",
                     "type": "spacing"
                 },
                 "end": {
-                    "value": "{nijmegen.space.inline.sm}",
+                    "value": "{nijmegen.space.25}",
                     "type": "spacing"
                 }
             }

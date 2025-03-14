@@ -36,10 +36,10 @@ The following `max-width` values are used wicht are customizable based on the im
 
 Other container design tokens:
 
-| Design token                              | Default value             | Sass variable                              | Css variable                                     |
-| ----------------------------------------- | ------------------------- | ------------------------------------------ | ------------------------------------------------ |
-| `nijmegen.container.padding-inline-start` | `nijmegen.space.block.sm` | `$nijmegen-container-padding-inline-start` | `var(--nijmegen-container-padding-inline-start)` |
-| `nijmegen.container.padding-inline-end`   | `nijmegen.space.block.sm` | `$nijmegen-container-padding-inline-end`   | `var(--nijmegen-container-padding-inline-end)`   |
+| Design token                              | Default value       | Sass variable                              | Css variable                                     |
+| ----------------------------------------- | ------------------- | ------------------------------------------ | ------------------------------------------------ |
+| `nijmegen.container.padding-inline-start` | `nijmegen.space.25` | `$nijmegen-container-padding-inline-start` | `var(--nijmegen-container-padding-inline-start)` |
+| `nijmegen.container.padding-inline-end`   | `nijmegen.space.25` | `$nijmegen-container-padding-inline-end`   | `var(--nijmegen-container-padding-inline-end)`   |
 
 ### Default container
 
@@ -142,17 +142,20 @@ Spacing is a responsive wrapper for setting `margin-inline-start`, `margin-inlin
 
 **`{size}` options:**
 
-- `3xs`
-- `2xs`
-- `xs`
-- `sm`
-- `md`
-- `lg`
-- `xl`
-- `2xl`
-- `3xl`
-- `4xl`
-- `5xl`
+- `0`
+- `12`
+- `25`
+- `50`
+- `75`
+- `100`
+- `125`
+- `150`
+- `200`
+- `250`
+- `300`
+- `400`
+- `500`
+- `600`
 
 By default the `!important` statement is added to all spacing ultilities to make sure the correct spacings are forced added if the classes are set. You can disable this by changing the following Sass variable and recompile the `layout.scss` file.
 
@@ -162,30 +165,22 @@ $nijmegen-enable-important-utilities-on-spacing: false;
 
 ### Design tokens
 
-| Design token                | Default value | Sass variable                                           | Css variable                       |
-| --------------------------- | ------------- | ------------------------------------------------------- | ---------------------------------- |
-| `nijmegen.space.inline.3xs` | 0.125rem      | `map.set($nijmegen-inline-spacers, "3xs", $new-value);` | `var(--nijmegen-space-inline-3xs)` |
-| `nijmegen.space.inline.2xs` | 0.25rem       | `map.set($nijmegen-inline-spacers, "2xs", $new-value);` | `var(--nijmegen-space-inline-2xs)` |
-| `nijmegen.space.inline.xs`  | 0.5rem        | `map.set($nijmegen-inline-spacers, "xs", $new-value);`  | `var(--nijmegen-space-inline-xs)`  |
-| `nijmegen.space.inline.sm`  | 0.75rem       | `map.set($nijmegen-inline-spacers, "sm", $new-value);`  | `var(--nijmegen-space-inline-sm)`  |
-| `nijmegen.space.inline.md`  | 1rem          | `map.set($nijmegen-inline-spacers, "md", $new-value);`  | `var(--nijmegen-space-inline-md)`  |
-| `nijmegen.space.inline.lg`  | 1.25rem       | `map.set($nijmegen-inline-spacers, "lg", $new-value);`  | `var(--nijmegen-space-inline-lg)`  |
-| `nijmegen.space.inline.xl`  | 1.5rem        | `map.set($nijmegen-inline-spacers, "xl", $new-value);`  | `var(--nijmegen-space-inline-xl)`  |
-| `nijmegen.space.inline.2xl` | 2rem          | `map.set($nijmegen-inline-spacers, "2xl", $new-value);` | `var(--nijmegen-space-inline-2xl)` |
-| `nijmegen.space.inline.3xl` | 2.5rem        | `map.set($nijmegen-inline-spacers, "3xl", $new-value);` | `var(--nijmegen-space-inline-3xl)` |
-| `nijmegen.space.inline.4xl` | 3rem          | `map.set($nijmegen-inline-spacers, "4xl", $new-value);` | `var(--nijmegen-space-inline-4xl)` |
-| `nijmegen.space.inline.5xl` | 4rem          | `map.set($nijmegen-inline-spacers, "5xl", $new-value);` | `var(--nijmegen-space-inline-5xl)` |
-| `nijmegen.space.block.3xs`  | 0.125rem      | `map.set($nijmegen-block-spacers, "3xs", $new-value);`  | `var(--nijmegen-space-block-3xs)`  |
-| `nijmegen.space.block.2xs`  | 0.25rem       | `map.set($nijmegen-block-spacers, "2xs", $new-value);`  | `var(--nijmegen-space-block-2xs)`  |
-| `nijmegen.space.block.xs`   | 0.5rem        | `map.set($nijmegen-block-spacers, "xs", $new-value);`   | `var(--nijmegen-space-block-xs)`   |
-| `nijmegen.space.block.sm`   | 0.75rem       | `map.set($nijmegen-block-spacers, "sm", $new-value);`   | `var(--nijmegen-space-block-sm)`   |
-| `nijmegen.space.block.md`   | 1rem          | `map.set($nijmegen-block-spacers, "md", $new-value);`   | `var(--nijmegen-space-block-md)`   |
-| `nijmegen.space.block.lg`   | 1.25rem       | `map.set($nijmegen-block-spacers, "lg", $new-value);`   | `var(--nijmegen-space-block-lg)`   |
-| `nijmegen.space.block.xl`   | 1.5rem        | `map.set($nijmegen-block-spacers, "xl", $new-value);`   | `var(--nijmegen-space-block-xl)`   |
-| `nijmegen.space.block.2xl`  | 2rem          | `map.set($nijmegen-block-spacers, "2xl", $new-value);`  | `var(--nijmegen-space-block-2xl)`  |
-| `nijmegen.space.block.3xl`  | 2.5rem        | `map.set($nijmegen-block-spacers, "3xl", $new-value);`  | `var(--nijmegen-space-block-3xl)`  |
-| `nijmegen.space.block.4xl`  | 3rem          | `map.set($nijmegen-block-spacers, "4xl", $new-value);`  | `var(--nijmegen-space-block-4xl)`  |
-| `nijmegen.space.block.5xl`  | 4rem          | `map.set($nijmegen-block-spacers, "5xl", $new-value);`  | `var(--nijmegen-space-block-5xl)`  |
+| Design token         | Default value | Sass variable                                  | Css variable                |
+| -------------------- | ------------- | ---------------------------------------------- | --------------------------- |
+| `nijmegen.space.0`   | 0             | `map.set($nijmegen-space, "0", $new-value);`   | `var(--nijmegen-space-0)`   |
+| `nijmegen.space.12`  | 0.125rem      | `map.set($nijmegen-space, "12", $new-value);`  | `var(--nijmegen-space-12)`  |
+| `nijmegen.space.25`  | 0.25rem       | `map.set($nijmegen-space, "25", $new-value);`  | `var(--nijmegen-space-25)`  |
+| `nijmegen.space.50`  | 0.5rem        | `map.set($nijmegen-space, "50", $new-value);`  | `var(--nijmegen-space-50)`  |
+| `nijmegen.space.75`  | 0.75rem       | `map.set($nijmegen-space, "75", $new-value);`  | `var(--nijmegen-space-75)`  |
+| `nijmegen.space.100` | 1rem          | `map.set($nijmegen-space, "100", $new-value);` | `var(--nijmegen-space-100)` |
+| `nijmegen.space.125` | 1.25rem       | `map.set($nijmegen-space, "125", $new-value);` | `var(--nijmegen-space-125)` |
+| `nijmegen.space.150` | 1.5rem        | `map.set($nijmegen-space, "150", $new-value);` | `var(--nijmegen-space-150)` |
+| `nijmegen.space.200` | 2rem          | `map.set($nijmegen-space, "200", $new-value);` | `var(--nijmegen-space-200)` |
+| `nijmegen.space.250` | 2.5rem        | `map.set($nijmegen-space, "250", $new-value);` | `var(--nijmegen-space-250)` |
+| `nijmegen.space.300` | 3rem          | `map.set($nijmegen-space, "300", $new-value);` | `var(--nijmegen-space-300)` |
+| `nijmegen.space.400` | 4rem          | `map.set($nijmegen-space, "400", $new-value);` | `var(--nijmegen-space-400)` |
+| `nijmegen.space.500` | 5rem          | `map.set($nijmegen-space, "500", $new-value);` | `var(--nijmegen-space-500)` |
+| `nijmegen.space.600` | 6rem          | `map.set($nijmegen-space, "600", $new-value);` | `var(--nijmegen-space-600)` |
 
 ### Horizontal centering
 
@@ -198,21 +193,21 @@ The `.nijmegen-margin-inline-auto` class is available for horizontally centering
 ### Examples
 
 ```html
-<div class="nijmegen-margin-inline-start-md">start md margin</div>
+<div class="nijmegen-margin-inline-start-25">start 0.25rem margin</div>
 
-<div class="nijmegen-margin-inline-end-3xl">end 3xl margin</div>
+<div class="nijmegen-margin-inline-end-250">end 2.5rem margin</div>
 
-<div class="nijmegen-margin-inline-xl">horizonal xl margin</div>
+<div class="nijmegen-margin-inline-300">horizonal 3rem margin</div>
 
-<div class="nijmegen-padding-inline-4xl">horizontal 4xl padding</div>
+<div class="nijmegen-padding-inline-500">horizontal 5rem padding</div>
 
-<div class="nijmegen-margin-block-start-md">vertical md margin</div>
+<div class="nijmegen-margin-block-start-0">vertical 0 margin</div>
 
-<div class="nijmegen-margin-block-end-3xl">vertical end 3xl margin</div>
+<div class="nijmegen-margin-block-end-75">vertical end 0.75rem margin</div>
 
-<div class="nijmegen-margin-block-xl">vertical xl margin</div>
+<div class="nijmegen-margin-block-300">vertical 3rem margin</div>
 
-<div class="nijmegen-padding-block-4xl">vertical 4xl padding</div>
+<div class="nijmegen-padding-block-600">vertical 6rem padding</div>
 ```
 
 ## Customization
@@ -263,16 +258,16 @@ rollup -c
     <!-- or write them in your own "theme" following NL Design System standards -->
     <style>
       .my-theme {
-        --nijmegen-space-inline-md: 0.5rem;
+        --nijmegen-space-inline-0: 0.5rem;
       }
     </style>
   </head>
   <body>
     <div class="nijmegen-theme">
-      <div class="nijmegen-padding-inline-md">1rem horizontal padding</div>
+      <div class="nijmegen-padding-inline-0">0rem horizontal padding</div>
     </div>
     <div class="my-theme">
-      <div class="nijmegen-padding-inline-md">0.5rem horizontal padding</div>
+      <div class="nijmegen-padding-inline-0">0.5rem horizontal padding</div>
     </div>
   </body>
 </html>

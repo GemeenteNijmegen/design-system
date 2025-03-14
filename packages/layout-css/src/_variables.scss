@@ -17,6 +17,24 @@ $nijmegen-container-max-width-xxl: 1320px !default;
 
 // spacing
 $nijmegen-enable-important-utilities-on-spacing: true !default;
+$nijmegen-space: (
+  0: var(--nijmegen-space-0, 0),
+  12: var(--nijmegen-space-12, 0.125rem),
+  25: var(--nijmegen-space-25, 0.25rem),
+  50: var(--nijmegen-space-50, 0.5rem),
+  75: var(--nijmegen-space-75, 0.75rem),
+  100: var(--nijmegen-space-100, 1rem),
+  125: var(--nijmegen-space-125, 1.25rem),
+  150: var(--nijmegen-space-150, 1.5rem),
+  200: var(--nijmegen-space-200, 2rem),
+  250: var(--nijmegen-space-250, 2.5rem),
+  300: var(--nijmegen-space-300, 3rem),
+  400: var(--nijmegen-space-400, 4rem),
+  500: var(--nijmegen-space-500, 5rem),
+  600: var(--nijmegen-space-600, 6rem),
+) !default;
+
+// deprecated
 $nijmegen-inline-spacers: (
   3xs: var(--nijmegen-space-inline-3xs, 0.125rem),
   2xs: var(--nijmegen-space-inline-2xs, 0.25rem),
