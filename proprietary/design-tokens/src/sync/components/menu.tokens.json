@@ -129,9 +129,11 @@
         "value": "{utrecht.document.background-color}",
         "type": "color"
       },
-      "icon-size": {
-        "value": "{nijmegen.icon.functional.size}",
-        "type": "sizing"
+      "icon": {
+        "size": {
+          "value": "{nijmegen.icon.functional.size}",
+          "type": "sizing"
+        }
       },
       "row-gap": {
         "value": "{nijmegen.space.100}",

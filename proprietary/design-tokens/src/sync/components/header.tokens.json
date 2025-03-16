@@ -114,7 +114,7 @@
         }
       },
       "border-color": {
-        "value": "{nijmegen.color.grijs.300}",
+        "value": "{nijmegen.color.border.subdued}",
         "type": "color"
       },
       "border-block-end-width": {

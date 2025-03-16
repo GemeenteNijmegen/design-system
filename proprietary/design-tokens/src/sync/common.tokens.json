@@ -2,7 +2,7 @@
   "nijmegen": {
     "root": {
       "background-color": {
-        "value": "{nijmegen.color.background.subdued}",
+        "value": "{nijmegen.color.background.active}",
         "type": "color"
       }
     },
@@ -63,7 +63,7 @@
           "type": "color"
         },
         "background-color": {
-          "value": "{nijmegen.color.background.subdued}",
+          "value": "{nijmegen.color.background.active}",
           "type": "color"
         },
         "border-color": {
@@ -219,7 +219,7 @@
           "type": "color"
         },
         "subdued": {
-          "value": "{nijmegen.color.grijs.400}",
+          "value": "{nijmegen.color.grijs.300}",
           "type": "color"
         },
         "strong": {
@@ -281,15 +281,15 @@
       },
       "background": {
         "default": {
-          "value": "{nijmegen.color.grijs.200}",
+          "value": "{nijmegen.color.wit}",
           "type": "color"
         },
-        "subdued": {
-          "value": "{nijmegen.color.grijs.100}",
+        "active": {
+          "value": "{nijmegen.color.grijs.200}",
           "type": "color"
         },
         "hover": {
-          "value": "{nijmegen.color.grijs.200}",
+          "value": "{nijmegen.color.grijs.100}",
           "type": "color"
         }
       },
