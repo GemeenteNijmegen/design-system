@@ -21,7 +21,11 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   name: 'Link list',
   args: {
-    icon: () => <IconChevronRight stroke={2} />,
+    icon: () => (
+      <span className="utrecht-icon">
+        <IconChevronRight />
+      </span>
+    ),
     links: [
       { children: 'Link 1', href: '#' },
       { children: 'Link 2', href: '#' },
