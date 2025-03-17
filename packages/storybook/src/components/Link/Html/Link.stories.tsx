@@ -57,7 +57,12 @@ export const IconStart: Story = {
   args: {
     href: 'https://example.com',
     title: 'Link',
-    children: [<IconCalendarEvent stroke={2} />, <span>Text</span>],
+    children: [
+      <span className="utrecht-icon">
+        <IconCalendarEvent stroke={2} />
+      </span>,
+      <span>Text</span>,
+    ],
   },
 };
 
@@ -66,6 +71,11 @@ export const IconEnd: Story = {
   args: {
     href: 'https://example.com',
     title: 'Link',
-    children: [<span>Text</span>, <IconArrowRight stroke={2} />],
+    children: [
+      <span>Text</span>,
+      <span className="utrecht-icon">
+        <IconArrowRight stroke={2} />
+      </span>,
+    ],
   },
 };

@@ -1,18 +1,31 @@
 export const argTypes = {
-  href: {
-    name: 'href',
-    type: { name: 'string', required: false },
+  title: {
+    name: 'Title',
+    type: 'string',
   },
-  target: {
-    name: 'target',
-    type: { name: 'string', required: false },
+  children: {
+    name: 'Children',
+    type: 'string',
   },
   rel: {
     name: 'rel',
-    type: { name: 'string', required: false },
+    type: 'string',
+  },
+  target: {
+    name: 'Target',
+    description: 'Link target',
+    type: 'string',
+    control: { type: 'select' },
+    options: ['_self', '_blank', '_parent', '_top'],
   },
   placeholder: {
-    name: 'placeholder',
-    type: { name: 'boolean', required: false },
+    name: 'Placeholder',
+    description: 'Disable the link',
+    control: { type: 'boolean' },
+    table: {
+      type: {
+        summary: ['boolean'],
+      },
+    },
   },
 };
