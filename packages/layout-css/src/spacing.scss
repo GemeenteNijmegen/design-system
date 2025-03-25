@@ -1,0 +1,166 @@
+@use "sass:map";
+@import "breakpoints";
+@import "~bootstrap/scss/mixins/utilities";
+@import "~bootstrap/scss/vendor/rfs";
+
+/* stylelint-disable-next-line scss/dollar-variable-default, scss/dollar-variable-pattern  */
+$enable-important-utilities: $nijmegen-enable-important-utilities-on-spacing;
+/* stylelint-disable-next-line scss/dollar-variable-pattern  */
+$grid-breakpoints: (
+  xs: $nijmegen-breakpoint-xs,
+  sm: $nijmegen-breakpoint-sm,
+  md: $nijmegen-breakpoint-md,
+  lg: $nijmegen-breakpoint-lg,
+  xl: $nijmegen-breakpoint-xl,
+  xxl: $nijmegen-breakpoint-xxl,
+) !default;
+
+/* stylelint-disable-next-line scss/dollar-variable-pattern */
+$utilities: (
+  "margin-inline": (
+    responsive: true,
+    property: margin-inline-start margin-inline-end,
+    class: nijmegen-margin-inline,
+    values:
+      map.merge(
+        $nijmegen-space,
+        (
+          auto: auto,
+        )
+      ),
+  ),
+  "margin-inline-start": (
+    responsive: true,
+    property: margin-inline-start,
+    class: nijmegen-margin-inline-start,
+    values:
+      map.merge(
+        $nijmegen-space,
+        (
+          auto: auto,
+        )
+      ),
+  ),
+  "margin-inline-end": (
+    responsive: true,
+    property: margin-inline-end,
+    class: nijmegen-margin-inline-end,
+    values:
+      map.merge(
+        $nijmegen-space,
+        (
+          auto: auto,
+        )
+      ),
+  ),
+  "padding-inline": (
+    responsive: true,
+    property: padding-inline-start padding-inline-end,
+    class: nijmegen-padding-inline,
+    values:
+      map.merge(
+        $nijmegen-space,
+        (
+          auto: auto,
+        )
+      ),
+  ),
+  "padding-inline-start": (
+    responsive: true,
+    property: padding-inline-start,
+    class: nijmegen-padding-inline-start,
+    values:
+      map.merge(
+        $nijmegen-space,
+        (
+          auto: auto,
+        )
+      ),
+  ),
+  "padding-inline-end": (
+    responsive: true,
+    property: padding-inline-end,
+    class: nijmegen-padding-inline-end,
+    values:
+      map.merge(
+        $nijmegen-space,
+        (
+          auto: auto,
+        )
+      ),
+  ),
+  "margin-block": (
+    responsive: true,
+    property: margin-block-start margin-block-end,
+    class: nijmegen-margin-block,
+    values:
+      map.merge(
+        $nijmegen-space,
+        (
+          auto: auto,
+        )
+      ),
+  ),
+  "margin-block-start": (
+    responsive: true,
+    property: margin-block-start,
+    class: nijmegen-margin-block-start,
+    values:
+      map.merge(
+        $nijmegen-space,
+        (
+          auto: auto,
+        )
+      ),
+  ),
+  "margin-block-end": (
+    responsive: true,
+    property: margin-block-end,
+    class: nijmegen-margin-block-end,
+    values:
+      map.merge(
+        $nijmegen-space,
+        (
+          auto: auto,
+        )
+      ),
+  ),
+  "padding-block": (
+    responsive: true,
+    property: padding-block-start padding-block-end,
+    class: nijmegen-padding-block,
+    values:
+      map.merge(
+        $nijmegen-space,
+        (
+          auto: auto,
+        )
+      ),
+  ),
+  "padding-block-start": (
+    responsive: true,
+    property: padding-block-start,
+    class: nijmegen-padding-block-start,
+    values:
+      map.merge(
+        $nijmegen-space,
+        (
+          auto: auto,
+        )
+      ),
+  ),
+  "padding-block-end": (
+    responsive: true,
+    property: padding-block-end,
+    class: nijmegen-padding-block-end,
+    values:
+      map.merge(
+        $nijmegen-space,
+        (
+          auto: auto,
+        )
+      ),
+  ),
+) !default;
+
+@import "~bootstrap/scss/utilities/api";

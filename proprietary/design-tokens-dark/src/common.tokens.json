@@ -1,0 +1,42 @@
+{
+  "nijmegen": {
+    "interaction": {
+      "color": {
+        "value": "{nijmegen.color.groen.100}",
+        "type": "color"
+      },
+      "hover": {
+        "color": {
+          "value": "{nijmegen.color.groen.400}",
+          "type": "color"
+        }
+      }
+    },
+    "feedback": {
+      "info-default": {
+        "color": {
+          "value": "{nijmegen.color.blauw.200}",
+          "type": "color"
+        }
+      },
+      "error-default": {
+        "background-color": {
+          "value": "{nijmegen.color.rood.100}",
+          "type": "color"
+        }
+      },
+      "warning-default": {
+        "color": {
+          "value": "{nijmegen.color.oranje.400}",
+          "type": "color"
+        }
+      },
+      "success-default": {
+        "background-color": {
+          "value": "{nijmegen.color.groen.400}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}

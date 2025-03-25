@@ -1,0 +1,34 @@
+@import "breakpoints";
+
+@mixin make-cssgrid($columns: $nijmegen-grid-columns, $breakpoints: $nijmegen-grid-breakpoints) {
+  @each $breakpoint in map-keys($breakpoints) {
+    $nijmegen-infix: breakpoint-infix($breakpoint, $breakpoints); // stylelint-disable-line scss/dollar-variable-default
+
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+      @if $columns > 0 {
+        @for $i from 1 through $columns {
+          .nijmegen-g-col#{$nijmegen-infix}-#{$i} {
+            grid-column: auto / span $i;
+          }
+        }
+
+        // Start with `1` because `0` is an invalid value.
+        // Ends with `$columns - 1` because offsetting by the width of an entire row isn't possible.
+        @for $i from 1 through ($columns - 1) {
+          .nijmegen-g-start#{$nijmegen-infix}-#{$i} {
+            grid-column-start: $i;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nijmegen-grid {
+  display: grid;
+  gap: $nijmegen-grid-gap;
+  grid-template-columns: repeat($nijmegen-grid-columns, 1fr);
+  grid-template-rows: repeat($nijmegen-grid-rows, 1fr);
+
+  @include make-cssgrid;
+}

@@ -2,9 +2,9 @@ import clsx from 'clsx';
 
 export const argTypes = {
   children: {
+    control: { type: 'object' },
     name: 'Content',
     description: 'Button text',
-    defaultValue: '',
   },
   appearance: {
     name: 'Variation',

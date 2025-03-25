@@ -1,0 +1,12 @@
+@import "~bootstrap/scss/mixins/breakpoints";
+@import "variables";
+
+$nijmegen-grid-breakpoints: (
+  base: null,
+  xs: $nijmegen-breakpoint-xs,
+  sm: $nijmegen-breakpoint-sm,
+  md: $nijmegen-breakpoint-md,
+  lg: $nijmegen-breakpoint-lg,
+  xl: $nijmegen-breakpoint-xl,
+  xxl: $nijmegen-breakpoint-xxl,
+) !default;
