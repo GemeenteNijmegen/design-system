@@ -1,5 +1,5 @@
 import { ColorPalette } from '@storybook/addon-docs';
-import { BaseColorPalette, CustomColorItem, ThemedColorItem } from './ColorDockBlocks';
+import { BaseColorPalette, CustomColorItem } from './ColorDockBlocks';
 
 # Kleuren
 
@@ -9,58 +9,58 @@ Zorg dat je het minimale kleurcontrast in je project hebt volgens de richtlijnen
 ## Hoofdkleuren
 Huisstijlenkleuren worden gebruikt voor primaire, secundaire en tertiaire kleuren. Ze mogen niet worden gebruikt om de status van het systeem aan te geven.
 <ColorPalette>
-    <CustomColorItem token="nijmegen.color.rood.500" />
-    <CustomColorItem token="nijmegen.color.groen.500" />
+    <CustomColorItem token="nijmegen.color.rood.700" />
+    <CustomColorItem token="nijmegen.color.zeegroen.600" />
 </ColorPalette>
 
 ## Background
 Gebruik deze kleuren voor de achtergrond kleur van content blokken en componenten. Gebruik background-hover voor interactive elementen die background-default of background-subdued toegekend hebben gekregen.
 
 <ColorPalette>
-    <ThemedColorItem token="nijmegen.color.background.default" />
-    <ThemedColorItem token="nijmegen.color.background.hover" />
-    <ThemedColorItem token="nijmegen.color.background.subdued" />
+    <CustomColorItem token="nijmegen.color.background.default" />
+    <CustomColorItem token="nijmegen.color.background.hover" />
+    <CustomColorItem token="nijmegen.color.background.subdued" />
 </ColorPalette>
 
 ## Foreground
 Gebruik deze kleuren voor de achtergrond kleur van content blokken en componenten. Gebruik background-hover voor interactive elementen die background-default of background-subdued toegekend hebben gekregen.
 
 <ColorPalette>
-    <ThemedColorItem token="nijmegen.color.foreground.default" />
-    <ThemedColorItem token="nijmegen.color.foreground.subdued" />
-    <ThemedColorItem token="nijmegen.color.foreground.onEmphasis" />
+    <CustomColorItem token="nijmegen.color.foreground.default" />
+    <CustomColorItem token="nijmegen.color.foreground.subdued" />
+    <CustomColorItem token="nijmegen.color.foreground.onEmphasis" />
 </ColorPalette>
 
 ## Link
 Gebruik deze kleur voor het stijlen van hyperlinks in doorlopende teksten. Hoewel deze feitelijk onderdeel zijn van de componenttokens, worden hyperlinks in doorlopende tekst ook hier beschreven. Om consistentie te waarborgen, is de naamgevingsconventie van NL DS toegepast.
 
 <ColorPalette>
-    <ThemedColorItem token="nijmegen.interaction.color" />
-    <ThemedColorItem token="nijmegen.interaction.active.color" />
-    <ThemedColorItem token="nijmegen.interaction.hover.color" />
+    <CustomColorItem token="nijmegen.interaction.color" />
+    <CustomColorItem token="nijmegen.interaction.active.color" />
+    <CustomColorItem token="nijmegen.interaction.hover.color" />
 </ColorPalette>
 
 ## Border
 Gebruik deze kleuren voor de borders, dividers en overige lijnen.
 
 <ColorPalette>
-    <ThemedColorItem token="nijmegen.color.border.default" />
-    <ThemedColorItem token="nijmegen.color.border.subdued" />
-    <ThemedColorItem token="nijmegen.color.border.strong" />
+    <CustomColorItem token="nijmegen.color.border.default" />
+    <CustomColorItem token="nijmegen.color.border.subdued" />
+    <CustomColorItem token="nijmegen.color.border.strong" />
 </ColorPalette>
 
 ## Feedback
 Gebruik deze kleuren om de boodschap te benadrukken. Deze kleuren kunnen worden toegepast op achtergronden, randen, teksten en iconen.
 
 <ColorPalette>
-    <ThemedColorItem token="nijmegen.color.feedback.info.default" />
-    <ThemedColorItem token="nijmegen.color.feedback.info.subdued" />
-    <ThemedColorItem token="nijmegen.color.feedback.error.default" />
-    <ThemedColorItem token="nijmegen.color.feedback.error.subdued" />
-    <ThemedColorItem token="nijmegen.color.feedback.warning.default" />
-    <ThemedColorItem token="nijmegen.color.feedback.warning.subdued" />
-    <ThemedColorItem token="nijmegen.color.feedback.success.default" />
-    <ThemedColorItem token="nijmegen.color.feedback.success.subdued" />
+    <CustomColorItem token="nijmegen.color.feedback.info.default" />
+    <CustomColorItem token="nijmegen.color.feedback.info.subdued" />
+    <CustomColorItem token="nijmegen.color.feedback.error.default" />
+    <CustomColorItem token="nijmegen.color.feedback.error.subdued" />
+    <CustomColorItem token="nijmegen.color.feedback.warning.default" />
+    <CustomColorItem token="nijmegen.color.feedback.warning.subdued" />
+    <CustomColorItem token="nijmegen.color.feedback.success.default" />
+    <CustomColorItem token="nijmegen.color.feedback.success.subdued" />
 </ColorPalette>
 
 ## Basis
