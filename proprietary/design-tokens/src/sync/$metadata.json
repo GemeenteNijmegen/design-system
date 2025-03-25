@@ -27,7 +27,6 @@
     "components/form-field-option-label.tokens",
     "components/form-field-radio-option.tokens",
     "components/header.tokens",
-    "components/heading.tokens",
     "components/heading-1.tokens",
     "components/heading-2.tokens",
     "components/heading-3.tokens",
@@ -54,6 +53,7 @@
     "components/textarea.tokens",
     "components/textbox.tokens",
     "components/toolbar-button.tokens",
-    "components/unordered-list.tokens"
+    "components/unordered-list.tokens",
+    "layout.tokens"
   ]
 }

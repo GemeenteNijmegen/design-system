@@ -119,7 +119,7 @@
           }
         },
         "background-color": {
-          "value": "{nijmegen.color.background.subdued}",
+          "value": "{nijmegen.color.background.default}",
           "type": "color"
         },
         "border-color": {
