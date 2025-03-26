@@ -3,3 +3,10 @@
   border-block-end-width: var(--nijmegen-header-border-block-end-witdh, 0);
   border-color: var(--nijmegen-header-background-color, transparent);
 }
+
+@mixin nijmegen-header__content {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
