@@ -1,0 +1,152 @@
+{
+  "nijmegen": {
+    "menu": {
+      "link": {
+        "padding-inline-start": {
+          "value": "{nijmegen.space.100}",
+          "type": "spacing"
+        },
+        "padding-inline-end": {
+          "value": "{nijmegen.space.100}",
+          "type": "spacing"
+        },
+        "padding-block-start": {
+          "value": "{nijmegen.space.100}",
+          "type": "spacing"
+        },
+        "padding-block-end": {
+          "value": "{nijmegen.space.100}",
+          "type": "spacing"
+        },
+        "min-height": {
+          "value": "{utrecht.pointer-target.min-size}",
+          "type": "sizing"
+        },
+        "column-gap": {
+          "value": "{nijmegen.space.50}",
+          "type": "spacing"
+        },
+        "small": {
+          "column-gap": {
+            "value": "{nijmegen.space.50}",
+            "type": "spacing"
+          },
+          "font-size": {
+            "value": "{utrecht.document.font-size}",
+            "type": "fontSizes"
+          },
+          "padding-block-start": {
+            "value": "{nijmegen.space.75}",
+            "type": "spacing"
+          },
+          "padding-inline-start": {
+            "value": "{nijmegen.space.100}",
+            "type": "spacing"
+          },
+          "padding-inline-end": {
+            "value": "{nijmegen.space.100}",
+            "type": "spacing"
+          },
+          "padding-block-end": {
+            "value": "{nijmegen.space.75}",
+            "type": "spacing"
+          }
+        },
+        "color": {
+          "value": "{utrecht.document.color}",
+          "type": "color"
+        },
+        "expanded": {
+          "color": {
+            "value": "{nijmegen.color.zeegroen.800}",
+            "type": "color"
+          },
+          "background-color": {
+            "value": "{nijmegen.color.zeegroen.100}",
+            "type": "color"
+          }
+        },
+        "level-1": {
+          "font-weight": {
+            "value": "{nijmegen.heading.font-weight}",
+            "type": "fontWeights"
+          }
+        },
+        "font-family": {
+          "value": "{utrecht.document.font-family}",
+          "type": "fontFamilies"
+        },
+        "font-size": {
+          "value": "{nijmegen.typography.font-size.lg}",
+          "type": "fontSizes"
+        },
+        "font-weight": {
+          "value": "{utrecht.document.font-weight}",
+          "type": "fontWeights"
+        },
+        "line-height": {
+          "value": "{utrecht.document.line-height}",
+          "type": "lineHeights"
+        },
+        "current": {
+          "border-block-start-width": {
+            "value": "{nijmegen.border-width.lg}",
+            "type": "borderWidth"
+          },
+          "color": {
+            "value": "{nijmegen.interaction.active.color}",
+            "type": "color"
+          },
+          "border-color": {
+            "value": "{nijmegen.interaction.active.color}",
+            "type": "color"
+          }
+        }
+      },
+      "button": {
+        "padding-block-start": {
+          "value": "{nijmegen.space.50}",
+          "type": "spacing"
+        },
+        "padding-inline-start": {
+          "value": "{nijmegen.space.75}",
+          "type": "spacing"
+        },
+        "padding-inline-end": {
+          "value": "{nijmegen.space.75}",
+          "type": "spacing"
+        },
+        "padding-block-end": {
+          "value": "{nijmegen.space.50}",
+          "type": "spacing"
+        },
+        "column-gap": {
+          "value": "{nijmegen.space.50}",
+          "type": "spacing"
+        }
+      },
+      "background-color": {
+        "value": "{utrecht.document.background-color}",
+        "type": "color"
+      },
+      "icon": {
+        "size": {
+          "value": "{nijmegen.icon.functional.size}",
+          "type": "sizing"
+        }
+      },
+      "row-gap": {
+        "value": "{nijmegen.space.100}",
+        "type": "spacing"
+      },
+      "padding-block-start": {
+        "value": "{nijmegen.space.100}",
+        "type": "spacing"
+      },
+      "padding-block-end": {
+        "value": "{nijmegen.space.250}",
+        "type": "spacing"
+      }
+    }
+  }
+}
