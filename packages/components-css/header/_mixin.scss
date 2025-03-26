@@ -1,0 +1,5 @@
+@mixin nijmegen-header {
+  background-color: var(--nijmegen-header-background-color, #fff);
+  border-block-end-width: var(--nijmegen-header-border-block-end-witdh, 0);
+  border-color: var(--nijmegen-header-background-color, transparent);
+}
