@@ -391,7 +391,7 @@ const chevron = () => {
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M6 9l6 6l6 -6" />
@@ -411,7 +411,7 @@ const search = () => {
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-search"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-search"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
@@ -432,7 +432,7 @@ const user = () => {
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-user"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-user"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
@@ -453,7 +453,7 @@ const menu = () => {
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+      className="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M4 6l16 0" />
