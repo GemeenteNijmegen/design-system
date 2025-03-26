@@ -1,1 +1,22 @@
-{}
+{
+  "nijmegen": {
+    "icon-only-button": {
+      "padding-block-end": {
+        "value": "{nijmegen.space.75}",
+        "type": "spacing"
+      },
+      "padding-block-start": {
+        "value": "{nijmegen.space.75}",
+        "type": "spacing"
+      },
+      "padding-inline-end": {
+        "value": "{nijmegen.space.75}",
+        "type": "spacing"
+      },
+      "padding-inline-start": {
+        "value": "{nijmegen.space.75}",
+        "type": "spacing"
+      }
+    }
+  }
+}
