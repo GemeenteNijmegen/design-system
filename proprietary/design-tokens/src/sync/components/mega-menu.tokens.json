@@ -1,0 +1,56 @@
+{
+  "nijmegen": {
+    "mega-menu": {
+      "container": {
+        "max-inline-size": {
+          "value": "1280px",
+          "type": "sizing"
+        }
+      },
+      "content": {
+        "padding-block-start": {
+          "value": "{nijmegen.space.200}",
+          "type": "spacing"
+        },
+        "padding-inline-start": {
+          "value": "{nijmegen.space.100}",
+          "type": "spacing"
+        },
+        "padding-inline-end": {
+          "value": "{nijmegen.space.100}",
+          "type": "spacing"
+        },
+        "padding-block-end": {
+          "value": "{nijmegen.space.200}",
+          "type": "spacing"
+        },
+        "column-gap": {
+          "value": "{nijmegen.space.150}",
+          "type": "spacing"
+        },
+        "row-gap": {
+          "value": "{nijmegen.space.400}",
+          "type": "spacing"
+        }
+      },
+      "list": {
+        "row-gap": {
+          "value": "{nijmegen.space.100}",
+          "type": "spacing"
+        }
+      },
+      "background-color": {
+        "value": "{utrecht.document.background-color}",
+        "type": "color"
+      },
+      "border-color": {
+        "value": "{nijmegen.color.grijs.300}",
+        "type": "color"
+      },
+      "border-block-end-with": {
+        "value": "{nijmegen.border-width.sm}",
+        "type": "borderWidth"
+      }
+    }
+  }
+}

@@ -5,7 +5,19 @@
   "license": "EUPL-1.2",
   "name": "@gemeentenijmegen/components-css",
   "keywords": [
-    "nl-design-system"
+    "nl-design-system",
+    "nijmegen-components-css"
   ],
-  "private": true
+  "scripts": {
+    "build": "rollup -c ./rollup.config.mjs",
+    "clean": "rimraf dist"
+  },
+  "main": "dist/index.min.css",
+  "private": true,
+  "devDependencies": {
+    "@gemeentenijmegen/layout-css": "workspace:0.0.1-alpha.0",
+    "postcss-discard-duplicates": "7.0.1",
+    "rollup": "4.12.1",
+    "rollup-plugin-postcss": "4.0.2"
+  }
 }

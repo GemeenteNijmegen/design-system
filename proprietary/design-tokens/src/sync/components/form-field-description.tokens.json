@@ -9,13 +9,13 @@
         "value": "{utrecht.document.font-size}",
         "type": "fontSizes"
       },
-      "font-weight": {
-        "value": "{utrecht.document.font-weight}",
-        "type": "fontWeights"
-      },
       "line-height": {
         "value": "{utrecht.document.line-height}",
         "type": "lineHeights"
+      },
+      "color": {
+        "value": "{nijmegen.color.foreground.subdued}",
+        "type": "color"
       }
     }
   }
