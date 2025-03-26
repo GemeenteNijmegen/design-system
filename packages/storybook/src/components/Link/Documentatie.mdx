@@ -1,0 +1,92 @@
+import { Canvas } from '@storybook/addon-docs';
+import { Unstyled } from "@storybook/blocks";
+import * as Link from './React/Link.stories';
+
+# Documentatie link component
+
+## Component
+
+Dit component is een implementatie van het `utrecht-link` component.
+
+| Link                                                                                                                                           | Omschrijving                                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| [NPM Utrecht link css](https://www.npmjs.com/package/@utrecht/link-css) OF [NPM Utrecht Components](https://www.npmjs.com/package/@utrecht/components) | Het huidige component vereist het `@utrecht/link-css` pakket voor een specifieke link implementatie of het `@utrecht/link-css` pakket indien er meerdere componenten geimplementeerd worden. |
+| [NPM Utrecht Component Library React](https://www.npmjs.com/package/@utrecht/component-library-react) | Voor de React implementatie is dit pakket vereist. |
+| [Figma gemeente Nijmegen](https://www.figma.com/design/g3AieWAFD3NtkbDDTTFC30/Novio---Nijmegen-Design-System?node-id=6576-13126) | Design documentatie van dit component.  
+
+## Iconen
+Icon Start
+<Canvas of={Link.IconStart} sourceState="none" />
+
+Icon End
+<Canvas of={Link.IconEnd} sourceState="none" />
+
+## Gebruik
+### Losstaand 
+Wil je de Link losstaand gebruiken? Dan kun je simpelweg het component uit de bibliotheek gebruiken.
+<Canvas of={Link.Default} sourceState="none" />
+
+### Binnen een paragraaf 
+Wil je de Link binnen een paragraaf gebruiken? Selecteer dan de tekst waar je een Link van wilt maken en creëer de link door ‘Create link’ toe te passen. Hierdoor wordt de tekst onderstreept. Je kunt de underline ook handmatig toepassen via Type Settings. Vervolgens kun je met de Shared Color Style ‘nl/link’ de Link kleur toepassen. 
+<Unstyled>
+<div className="utrecht-document nijmegen-theme">
+    <div className="preview-canvas">
+        <p class="utrecht-paragraph">Dit is een voorbeeld paragraaf waar <a href="#" class="utrecht-link utrecht-link--html-a" title="Link">bij dit een Link is</a> en de tekst daarna weer verder gaat.</p>
+    </div>
+</div>
+</Unstyled>
+
+## States
+Default
+<Unstyled>
+<div className="utrecht-document nijmegen-theme">
+    <div className="preview-canvas">
+        <a href="#" class="utrecht-link utrecht-link--html-a" title="Link">Link</a>
+    </div>
+</div>
+</Unstyled>
+
+Hover
+<Unstyled>
+<div className="utrecht-document nijmegen-theme">
+    <div className="preview-canvas">
+        <a href="#" class="utrecht-link utrecht-link--html-a utrecht-link--hover" title="Link">Link</a>
+    </div>
+</div>
+</Unstyled>
+
+Active
+<Unstyled>
+<div className="utrecht-document nijmegen-theme">
+    <div className="preview-canvas">
+        <a href="#" class="utrecht-link utrecht-link--html-a utrecht-link--active" title="Link">Link</a>
+    </div>
+</div>
+</Unstyled>
+
+Focus
+<Unstyled>
+<div className="utrecht-document nijmegen-theme">
+    <div className="preview-canvas">
+        <a href="#" class="utrecht-link utrecht-link--html-a utrecht-link--focus" title="Link">Link</a>
+    </div>
+</div>
+</Unstyled>
+
+Focus-visible
+<Unstyled>
+<div className="utrecht-document nijmegen-theme">
+    <div className="preview-canvas">
+        <a href="#" class="utrecht-link utrecht-link--html-a utrecht-link--focus utrecht-link--focus-visible" title="Link">Link</a>
+    </div>
+</div>
+</Unstyled>
+
+Focus-visible
+<Unstyled>
+<div className="utrecht-document nijmegen-theme">
+    <div className="preview-canvas">
+        <a href="#" class="utrecht-link utrecht-link--html-a utrecht-link--visited" title="Link">Link</a>
+    </div>
+</div>
+</Unstyled>
