@@ -93,6 +93,9 @@ importers:
 
   packages/components-css:
     devDependencies:
+      '@gemeentenijmegen/layout-css':
+        specifier: workspace:0.0.1-alpha.0
+        version: link:../layout-css
       postcss-discard-duplicates:
         specifier: 7.0.1
         version: 7.0.1(postcss@8.4.35)
