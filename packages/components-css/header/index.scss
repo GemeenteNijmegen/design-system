@@ -1,1 +1,60 @@
-@import "./mixin";
+.nijmegen-header {
+  background-color: var(--nijmegen-header-background-color, #fff);
+  border: 0 solid var(--nijmegen-header-border-color, transparent);
+  border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
+  writing-mode: horizontal-tb;
+}
+
+.nijmegen-header__content {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-inline-size: var(--nijmegen-header-content-max-inline-size, 100%);
+  padding-block-end: var(--nijmegen-header-content-padding-block-end, 0);
+  padding-block-start: var(--nijmegen-header-content-padding-block-start, 0);
+  padding-inline-end: var(--nijmegen-header-content-padding-inline-end, 0);
+  padding-inline-start: var(--nijmegen-header-content-padding-inline-start, 0);
+}
+
+.nijmegen-header__navigation {
+  column-gap: var(--nijmegen-header-content-column-gap, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nijmegen-header-item {
+  align-items: end;
+  all: unset;
+  color: var(--nijmegen-header-item-color, #000);
+  column-gap: var(--nijmegen-header-item-column-gap, 0);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-family: var(--nijmegen-header-item-font-family, inherit);
+  font-size: var(--nijmegen-header-item-font-size, 1rem);
+  font-weight: var(--nijmegen-header-item-font-weight, 400);
+  justify-content: space-between;
+  line-height: var(--nijmegen-header-item-line-height, 1.5);
+  text-decoration: none;
+  &:hover {
+    color: var(--nijmegen-header-item-hover-color, #000);
+    text-decoration: var(--nijmegen-header-item-hover-text-decoration, none);
+  }
+  &:active {
+    color: var(--nijmegen-header-item-active-color, #000);
+    text-decoration: var(--nijmegen-header-item-active-text-decoration, none);
+  }
+  &:focus-visible {
+    background-color: var(--nijmegen-header-item-focus-visible-background-color, #fff);
+    color: var(--nijmegen-header-item-focus-visible-color, #000);
+  }
+}
+
+.nijmegen-header-item__icon {
+  svg {
+    height: var(--nijmegen-header-item-icon-size, 1rem); /* stylelint-disable-line property-disallowed-list */
+    width: var(--nijmegen-header-item-icon-size, 1rem); /* stylelint-disable-line property-disallowed-list */
+  }
+}
