@@ -161,6 +161,10 @@
         "size": {
           "value": "{nijmegen.icon.functional.size}",
           "type": "sizing"
+        },
+        "gap": {
+          "value": "{nijmegen.space.25}",
+          "type": "spacing"
         }
       },
       "column-gap": {
