@@ -1,5 +1,5 @@
 {
-  "utrecht": {
+  "nijmegen": {
     "form-field-label": {
       "color": {
         "value": "{utrecht.document.color}",
@@ -16,6 +16,14 @@
       "line-height": {
         "value": "{utrecht.document.line-height}",
         "type": "lineHeights"
+      },
+      "column-gap": {
+        "value": "{nijmegen.space.25}",
+        "type": "spacing"
+      },
+      "font-weight": {
+        "value": "{nijmegen.typography.font-weight.bold}",
+        "type": "fontWeights"
       }
     }
   }

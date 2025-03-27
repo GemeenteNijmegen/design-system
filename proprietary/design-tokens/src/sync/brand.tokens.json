@@ -431,6 +431,10 @@
       }
     },
     "size": {
+      "12": {
+        "value": "0.125rem",
+        "type": "sizing"
+      },
       "25": {
         "value": "0.25rem",
         "type": "sizing"
