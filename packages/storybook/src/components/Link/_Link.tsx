@@ -1,20 +1,19 @@
 export const argTypes = {
   title: {
     name: 'Title',
-    type: 'string',
+    control: 'text',
   },
   children: {
     name: 'Children',
-    type: 'string',
+    control: 'text',
   },
   rel: {
     name: 'rel',
-    type: 'string',
+    control: 'text',
   },
   target: {
     name: 'Target',
     description: 'Link target',
-    type: 'string',
     control: { type: 'select' },
     options: ['_self', '_blank', '_parent', '_top'],
   },
