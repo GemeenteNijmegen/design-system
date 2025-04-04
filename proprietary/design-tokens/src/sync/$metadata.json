@@ -10,6 +10,7 @@
     "components/breadcrumb.tokens",
     "components/button.tokens",
     "components/button-group.tokens",
+    "components/card.tokens",
     "components/card-event.tokens",
     "components/cards-news.tokens",
     "components/card-persona.tokens",
