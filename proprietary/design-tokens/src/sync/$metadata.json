@@ -7,7 +7,7 @@
     "components/avatar.tokens",
     "components/badge.tokens",
     "components/blockquote.tokens",
-    "components/breadcrumb.tokens",
+    "components/breadcrumb-nav.tokens",
     "components/button.tokens",
     "components/button-group.tokens",
     "components/card.tokens",
