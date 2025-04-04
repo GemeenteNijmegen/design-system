@@ -10,6 +10,7 @@
     "components/breadcrumb.tokens",
     "components/button.tokens",
     "components/button-group.tokens",
+    "components/card.tokens",
     "components/card-event.tokens",
     "components/cards-news.tokens",
     "components/card-persona.tokens",
@@ -53,7 +54,6 @@
     "components/textarea.tokens",
     "components/textbox.tokens",
     "components/toolbar-button.tokens",
-    "components/header.tokens",
     "components/unordered-list.tokens",
     "layout.tokens"
   ]
