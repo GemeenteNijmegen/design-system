@@ -354,15 +354,5 @@
         "type": "sizing"
       }
     }
-  },
-  "todo": {
-    "button": {
-      "hover": {
-        "text-decoration": {
-          "value": "{nijmegen.hover.text-decoration}",
-          "type": "textDecoration"
-        }
-      }
-    }
   }
 }
