@@ -19,7 +19,7 @@ export const argTypes = {
   },
   placeholder: {
     name: 'Placeholder',
-    description: 'Disable the link',
+    description: 'Show the placeholder',
     control: { type: 'boolean' },
     table: {
       type: {
