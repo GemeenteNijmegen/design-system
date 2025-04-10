@@ -9,11 +9,18 @@
     "css-layout",
     "gemeente-nijmegen"
   ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:GemeenteNijmegen/design-system.git"
+  },
   "scripts": {
     "build": "rollup -c ./rollup.config.mjs",
     "clean": "rimraf dist"
   },
-  "private": true,
   "devDependencies": {
     "bootstrap": "v5.3.3",
     "postcss-discard-duplicates": "7.0.1",
