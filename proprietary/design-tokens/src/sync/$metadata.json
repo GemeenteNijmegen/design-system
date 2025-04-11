@@ -41,6 +41,7 @@
     "components/mega-menu.tokens",
     "components/menu.tokens",
     "components/ordered-list.tokens",
+    "components/page-footer.tokens",
     "components/pagination.tokens",
     "components/paragraph.tokens",
     "components/radio.tokens",
