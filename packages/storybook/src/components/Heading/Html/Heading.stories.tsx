@@ -1,3 +1,9 @@
+import '@utrecht/heading-1-css';
+import '@utrecht/heading-2-css';
+import '@utrecht/heading-3-css';
+import '@utrecht/heading-4-css';
+import '@utrecht/heading-5-css';
+import '@utrecht/heading-6-css';
 import { Meta, StoryObj } from '@storybook/react';
 import type { StoryContext } from '@storybook/types';
 import prettierBabel from 'prettier/parser-babel';
