@@ -1,0 +1,86 @@
+{
+  "nijmegen": {
+    "page-footer": {
+      "color": {
+        "value": "{nijmegen.color.foreground.onEmphasis}",
+        "type": "color"
+      },
+      "main-footer": {
+        "content": {
+          "padding-block-start": {
+            "value": "{nijmegen.space.300}",
+            "type": "spacing"
+          },
+          "padding-block-end": {
+            "value": "{nijmegen.space.400}",
+            "type": "spacing"
+          },
+          "padding-inline-end": {
+            "value": "{nijmegen.space.100}",
+            "type": "spacing"
+          },
+          "padding-inline-start": {
+            "value": "{nijmegen.space.100}",
+            "type": "spacing"
+          }
+        }
+      },
+      "background-color": {
+        "value": "{nijmegen.color.primary.rood}",
+        "type": "color"
+      },
+      "sub-footer": {
+        "content": {
+          "padding-block-start": {
+            "value": "{nijmegen.space.150}",
+            "type": "spacing"
+          },
+          "padding-block-end": {
+            "value": "{nijmegen.space.150}",
+            "type": "spacing"
+          },
+          "padding-inline-end": {
+            "value": "{nijmegen.space.100}",
+            "type": "spacing"
+          },
+          "padding-inline-start": {
+            "value": "{nijmegen.space.100}",
+            "type": "spacing"
+          }
+        }
+      },
+      "content": {
+        "max-inline-size": {
+          "value": "1280px",
+          "type": "sizing"
+        },
+        "row-gap": {
+          "value": "{nijmegen.space.200}",
+          "type": "spacing"
+        },
+        "column-gap": {
+          "value": "{nijmegen.space.200}",
+          "type": "spacing"
+        },
+        "border-block-start-width": {
+          "value": "{nijmegen.border-width.sm}",
+          "type": "borderWidth"
+        },
+        "border-color": {
+          "value": "{nijmegen.color.rood.400}",
+          "type": "color"
+        }
+      },
+      "footer-block": {
+        "row-gap": {
+          "value": "{nijmegen.space.100}",
+          "type": "spacing"
+        },
+        "column-gap": {
+          "value": "{nijmegen.space.100}",
+          "type": "spacing"
+        }
+      }
+    }
+  }
+}
