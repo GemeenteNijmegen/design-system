@@ -361,6 +361,24 @@ importers:
       '@utrecht/components':
         specifier: 3.0.1-alpha.27
         version: 3.0.1-alpha.27
+      '@utrecht/heading-1-css':
+        specifier: 1.5.0
+        version: 1.5.0
+      '@utrecht/heading-2-css':
+        specifier: 1.5.0
+        version: 1.5.0
+      '@utrecht/heading-3-css':
+        specifier: 1.5.0
+        version: 1.5.0
+      '@utrecht/heading-4-css':
+        specifier: 1.5.0
+        version: 1.5.0
+      '@utrecht/heading-5-css':
+        specifier: 1.5.0
+        version: 1.5.0
+      '@utrecht/heading-6-css':
+        specifier: 1.5.0
+        version: 1.5.0
       '@vitejs/plugin-react':
         specifier: 4.2.1
         version: 4.2.1(vite@5.1.5)
@@ -7102,6 +7120,30 @@ packages:
     resolution: {integrity: sha512-GjLDze/ypv7kSxirMtd4KchaB4CwhELvvHzt+9FiVvI27VHEoBnTWgtSc71oZtIAfJECFJqzyYYDPeAmY2JGdQ==}
     dependencies:
       clsx: 1.2.1
+    dev: true
+
+  /@utrecht/heading-1-css@1.5.0:
+    resolution: {integrity: sha512-gDdpZvtTQzY2h4iFOFxOM5Te94/R/uAHTqZbt7Vk34nKhxSe379sKAP5RbScNeWVtR1WfOnLwHPhYfd8t4LLbg==}
+    dev: true
+
+  /@utrecht/heading-2-css@1.5.0:
+    resolution: {integrity: sha512-CQNljKKmmyywLoZWoX5zUWqTGDJjdJTFwRdGjigU1PZ6MjjKHOpLHt42hBChV3codGxjkrAUoFh3KKNfK7LLqQ==}
+    dev: true
+
+  /@utrecht/heading-3-css@1.5.0:
+    resolution: {integrity: sha512-opXNdnUpqUbBSoE49aMgck4uzVU2eO5H3NZnX9FdUmzSIMjmXjXTazyc+aedJWvfchZtcRyMJaiJkGoSoqm96Q==}
+    dev: true
+
+  /@utrecht/heading-4-css@1.5.0:
+    resolution: {integrity: sha512-m6PinCZK9Zhsx3LKWWCY7MIMCJl6IGFY0vyAwyNIhadnqg+FqxLKVbIZRjzjYyojdTxhuDYl16pxWzYUJQ8mKg==}
+    dev: true
+
+  /@utrecht/heading-5-css@1.5.0:
+    resolution: {integrity: sha512-AB6WtvpuAjx14d7hQxhrzUT+gE2Ftwz5kxZr1wGTNyHYr9a8D7b1+WI3GJn8EMnGuTR6+gMMNrZI/llhwXUA7w==}
+    dev: true
+
+  /@utrecht/heading-6-css@1.5.0:
+    resolution: {integrity: sha512-TtLDie62GuS3KzwNurt/zd9hsS/N5/ubwDWqpQa5t7io6YR1esujelm49m8d+Jfjhnva3Hw9TPbtDQrv6gTw9A==}
     dev: true
 
   /@vitejs/plugin-react@3.1.0(vite@5.1.5):
