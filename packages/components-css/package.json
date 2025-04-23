@@ -15,7 +15,7 @@
   "main": "dist/index.min.css",
   "private": true,
   "devDependencies": {
-    "@gemeentenijmegen/layout-css": "workspace:0.0.1-alpha.0",
+    "@gemeentenijmegen/layout-css": "workspace:*",
     "postcss-discard-duplicates": "7.0.1",
     "rollup": "4.12.1",
     "rollup-plugin-postcss": "4.0.2"
