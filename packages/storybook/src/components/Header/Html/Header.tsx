@@ -503,6 +503,7 @@ export const HeaderStory = () => {
             </button>
             <button className="nijmegen-header-item" aria-label="Mijn Nijmegen">
               {user()}
+              Mijn Nijmegen
             </button>
           </div>
         </div>
