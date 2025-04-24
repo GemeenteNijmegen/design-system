@@ -9,14 +9,14 @@
 
 .nijmegen-header__content {
   @include nijmegen-header-content;
-  @media (max-width: $nijmegen-breakpoint-md) {
+  @media (max-width: $nijmegen-breakpoint-lg) {
     display: none;
   }
 }
 
 .nijmegen-header__content__small {
   @include nijmegen-header-content;
-  @media (min-width: $nijmegen-breakpoint-md) {
+  @media (min-width: $nijmegen-breakpoint-lg) {
     display: none;
   }
 }
@@ -53,6 +53,9 @@
   }
   &:focus-visible {
     background-color: var(--nijmegen-header-item-focus-visible-background-color, #fff);
+    border: var(--nijmegen-header-item-focus-visible-border-line-width, 1px)
+      var(--nijmegen-header-item-focus-visible-border-line-style, dashed)
+      var(--nijmegen-header-item-focus-visible-border-color, #082d26);
     color: var(--nijmegen-header-item-focus-visible-color, #000);
   }
 }

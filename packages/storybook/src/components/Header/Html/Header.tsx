@@ -488,9 +488,6 @@ export const HeaderStory = () => {
               Over de gemeente
               {chevron()}
             </button>
-            <a href="#" className="nijmegen-header-item" aria-label="Nieuws">
-              Nieuws
-            </a>
             <a href="#" className="nijmegen-header-item" aria-label="Contact">
               Contact
             </a>
