@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/addon-docs';
+import { Meta, Source } from '@storybook/addon-docs';
 import { Unstyled } from "@storybook/blocks";
 import "@gemeentenijmegen/semantic-html/dist/index.css"
 
@@ -6,7 +6,6 @@ import "@gemeentenijmegen/semantic-html/dist/index.css"
 # Supported semantic HTML elements
 
 ## h1 - h6
-
 <Unstyled>
 <div className="nijmegen-html">
     <h1>Lorem ipsum dolor sit amet</h1>
@@ -18,6 +17,15 @@ import "@gemeentenijmegen/semantic-html/dist/index.css"
 </div>
 </Unstyled>
 
+<Source language="html" code={`
+<h1>Lorem ipsum dolor sit amet</h1>
+<h2>Lorem ipsum dolor sit amet</h2>
+<h3>Lorem ipsum dolor sit amet</h3>
+<h4>Lorem ipsum dolor sit amet</h4>
+<h5>Lorem ipsum dolor sit amet</h5>
+<h6>Lorem ipsum dolor sit amet</h6>
+
+`} />
 ## Paragraph
 
 <Unstyled>
@@ -26,6 +34,9 @@ import "@gemeentenijmegen/semantic-html/dist/index.css"
 </div>
 </Unstyled>
 
+<Source language="html" code={`
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+`} />
 ## Link
 
 <Unstyled>
@@ -34,6 +45,19 @@ import "@gemeentenijmegen/semantic-html/dist/index.css"
 </div>
 </Unstyled>
 
+<Source language="html" code={`
+<a href="#">Lorem ipsum dolor sit amet</a>
+`} />
+
+## Link list
+
+<Unstyled>
+<div className="nijmegen-html">
+<ul>
+    <li><a href="#">Text</a></li>
+</ul>
+</div>
+</Unstyled>
 ## Button
 
 <Unstyled>
@@ -41,3 +65,7 @@ import "@gemeentenijmegen/semantic-html/dist/index.css"
 <button>Lorem ipsum dolor sit amet</button>
 </div>
 </Unstyled>
+
+<Source language="html" code={`
+<button>Lorem ipsum dolor sit amet</button>
+`} />

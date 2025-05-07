@@ -219,6 +219,9 @@ importers:
       '@utrecht/button-css':
         specifier: 2.3.0
         version: 2.3.0
+      '@utrecht/document-css':
+        specifier: 1.5.0
+        version: 1.5.0
       '@utrecht/focus-ring-css':
         specifier: 2.3.0
         version: 2.3.0
@@ -7150,6 +7153,10 @@ packages:
     resolution: {integrity: sha512-GjLDze/ypv7kSxirMtd4KchaB4CwhELvvHzt+9FiVvI27VHEoBnTWgtSc71oZtIAfJECFJqzyYYDPeAmY2JGdQ==}
     dependencies:
       clsx: 1.2.1
+    dev: true
+
+  /@utrecht/document-css@1.5.0:
+    resolution: {integrity: sha512-BULQJRt7KUjsOuh6uol89AN3LjghH4U1m7C4OWTcqyGIXCltCPRKjzhuiUc/qe6twIPNhl72BDZaFV3I8Bbwng==}
     dev: true
 
   /@utrecht/focus-ring-css@2.3.0:

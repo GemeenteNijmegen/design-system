@@ -5,10 +5,13 @@
 @import "~@utrecht/heading-4-css/src/html/mixin";
 @import "~@utrecht/heading-5-css/src/html/mixin";
 @import "~@utrecht/heading-6-css/src/html/mixin";
+@import "~@utrecht/document-css/src/html/mixin";
 @import "~@utrecht/link-css/src/html/mixin";
 @import "~@utrecht/button-css/src/html/mixin";
+@import "link-list/mixin";
 
 .nijmegen-html {
+  @include utrecht-document;
   @include utrecht-html-button;
   @include utrecht-html-p;
   /* stylelint-disable-next-line */
@@ -22,4 +25,5 @@
   @include utrecht-html-h5;
   @include utrecht-html-h6;
   @include utrecht-html-a;
+  @include nijmegen-html-unordered-list;
 }
