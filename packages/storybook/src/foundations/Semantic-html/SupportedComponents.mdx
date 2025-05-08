@@ -73,19 +73,21 @@ import "@gemeentenijmegen/semantic-html/dist/index.css"
 <Unstyled>
 <div className="nijmegen-html">
 <ul>
-    <li><span>Item 1</span></li>
-    <li><span>Item 2</span></li>
-    <li><span>Item 3</span></li>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Unordered item with <a href="#">link 1</a> and <a href="#"> link 2</a></li>
 </ul>
 </div>
 </Unstyled>
-Note that nested unordered lists are not supported for the semantic html implementation
+Note that nested unordered lists are not supported at this moment for the semantic html implementation
 
 <Source language="html" code={`
 <ul>
-    <li><span>Item 1</span></li>
-    <li><span>Item 2</span></li>
-    <li><span>Item 3</span></li>
+    <li>Item 1</li>
+    <li>Item 2/li>
+    <li>Item 3</li>
+    <li>Unordered item with <a href="#">link 1</a> and <a href="#"> link 2</a></li>
 </ul>
 `} />
 ## Button
