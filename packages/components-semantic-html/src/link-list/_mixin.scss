@@ -8,13 +8,15 @@
     li {
       display: inline-block;
       list-style: none;
-      a {
-        @include nijmegen-link-list__link;
+      &::before {
+        content: "●";
+        padding-inline-end: var(--utrecht-unordered-list-item-padding-inline-start, 0.5rem);
       }
-      span {
+      &:has(> a:only-child) {
         &::before {
-          content: "●";
-          padding-inline-end: var(--utrecht-unordered-list-item-padding-inline-start, 0.5rem);
+          @include nijmegen-link-list__link-before;
+
+          padding-inline-end: 0;
         }
       }
     }
