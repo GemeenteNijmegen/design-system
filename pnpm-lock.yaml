@@ -96,6 +96,12 @@ importers:
       '@gemeentenijmegen/layout-css':
         specifier: workspace:*
         version: link:../layout-css
+      '@utrecht/focus-ring-css':
+        specifier: 2.3.1
+        version: 2.3.1
+      '@utrecht/link-css':
+        specifier: 1.6.0
+        version: 1.6.0
       postcss-discard-duplicates:
         specifier: 7.0.1
         version: 7.0.1(postcss@8.4.35)
@@ -229,9 +235,15 @@ importers:
 
   packages/components-semantic-html:
     devDependencies:
+      '@gemeentenijmegen/components-css':
+        specifier: workspace:*
+        version: link:../components-css
       '@utrecht/button-css':
         specifier: 2.3.0
         version: 2.3.0
+      '@utrecht/document-css':
+        specifier: 1.5.0
+        version: 1.5.0
       '@utrecht/focus-ring-css':
         specifier: 2.3.0
         version: 2.3.0
@@ -7193,8 +7205,16 @@ packages:
       clsx: 1.2.1
     dev: true
 
+  /@utrecht/document-css@1.5.0:
+    resolution: {integrity: sha512-BULQJRt7KUjsOuh6uol89AN3LjghH4U1m7C4OWTcqyGIXCltCPRKjzhuiUc/qe6twIPNhl72BDZaFV3I8Bbwng==}
+    dev: true
+
   /@utrecht/focus-ring-css@2.3.0:
     resolution: {integrity: sha512-HYsULqosoFp9zMypvGuEaGpsl01cW6qKGIYGQa9FZCcCtwXcS0dqFEcjeZJ1yue0RJsk0QuGVBrQOXjsNPNkBg==}
+    dev: true
+
+  /@utrecht/focus-ring-css@2.3.1:
+    resolution: {integrity: sha512-mmZeNnp2VeYVrnG0uhgkLcX2nVuMW0+oZjJ7lCI1FFODpj3ORmtTi7N5UNjhM3Pyppg5LdDwqMM6jF9clPg5Yg==}
     dev: true
 
   /@utrecht/heading-1-css@1.5.0:

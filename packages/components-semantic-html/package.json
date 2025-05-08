@@ -24,7 +24,9 @@
     "clean": "rimraf dist"
   },
   "devDependencies": {
+    "@gemeentenijmegen/components-css": "workspace:*",
     "@utrecht/button-css": "2.3.0",
+    "@utrecht/document-css": "1.5.0",
     "@utrecht/focus-ring-css": "2.3.0",
     "@utrecht/heading-1-css": "1.5.0",
     "@utrecht/heading-2-css": "1.5.0",

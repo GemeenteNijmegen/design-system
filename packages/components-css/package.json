@@ -16,6 +16,8 @@
   "private": true,
   "devDependencies": {
     "@gemeentenijmegen/layout-css": "workspace:*",
+    "@utrecht/focus-ring-css": "2.3.1",
+    "@utrecht/link-css": "1.6.0",
     "postcss-discard-duplicates": "7.0.1",
     "rollup": "4.12.1",
     "rollup-plugin-postcss": "4.0.2"

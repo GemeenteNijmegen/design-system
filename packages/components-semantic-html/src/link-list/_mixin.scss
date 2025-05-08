@@ -1,0 +1,22 @@
+@import "~@gemeentenijmegen/components-css/link-list/mixin";
+@mixin nijmegen-html-unordered-list {
+  ul {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--utrecht-link-list-row-gap);
+    li {
+      display: inline-block;
+      list-style: none;
+      a {
+        @include nijmegen-link-list__link;
+      }
+      span {
+        &::before {
+          content: "●";
+          padding-inline-end: var(--utrecht-unordered-list-item-padding-inline-start, 0.5rem);
+        }
+      }
+    }
+  }
+}
