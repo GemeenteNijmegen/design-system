@@ -235,6 +235,9 @@ importers:
 
   packages/components-semantic-html:
     devDependencies:
+      '@gemeentenijmegen/components-css':
+        specifier: workspace:*
+        version: link:../components-css
       '@utrecht/button-css':
         specifier: 2.3.0
         version: 2.3.0

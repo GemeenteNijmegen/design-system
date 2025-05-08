@@ -1,4 +1,4 @@
-@import "~@utrecht/link-css/src/html/mixin";
+@import "~@gemeentenijmegen/components-css/link-list/mixin";
 @mixin nijmegen-html-unordered-list {
   ul {
     all: unset;
@@ -6,24 +6,16 @@
     flex-direction: column;
     row-gap: var(--utrecht-link-list-row-gap);
     li {
+      display: inline-block;
       list-style: none;
-      @include utrecht-html-a;
       a {
-        padding-inline-start: --var(--nijmegen-space-50);
-        text-decoration: none;
+        @include nijmegen-link-list__link;
       }
-
-      a::before {
-        background-color: var(--utrecht-link-color);
-        content: "";
-        display: inline-block;
-        height: 1.5rem; /* stylelint-disable-line property-disallowed-list */
-        mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-chevron-right "><path d="M9 6l6 6l-6 6"></path></svg>');
-        mask-position: center;
-        mask-repeat: no-repeat;
-        mask-size: 100%;
-        vertical-align: middle;
-        width: 1.5rem; /* stylelint-disable-line property-disallowed-list */
+      span {
+        &::before {
+          content: "●";
+          padding-inline-end: var(--utrecht-unordered-list-item-padding-inline-start, 0.5rem);
+        }
       }
     }
   }
