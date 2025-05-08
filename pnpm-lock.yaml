@@ -91,7 +91,26 @@ importers:
         specifier: 5.3.3
         version: 5.3.3
 
-  packages/components-css: {}
+  packages/components-css:
+    devDependencies:
+      '@gemeentenijmegen/layout-css':
+        specifier: workspace:*
+        version: link:../layout-css
+      '@utrecht/focus-ring-css':
+        specifier: 2.3.1
+        version: 2.3.1
+      '@utrecht/link-css':
+        specifier: 1.6.0
+        version: 1.6.0
+      postcss-discard-duplicates:
+        specifier: 7.0.1
+        version: 7.0.1(postcss@8.4.35)
+      rollup:
+        specifier: 4.12.1
+        version: 4.12.1
+      rollup-plugin-postcss:
+        specifier: 4.0.2
+        version: 4.0.2(postcss@8.4.35)
 
   packages/components-react:
     dependencies:
@@ -7102,6 +7121,14 @@ packages:
     resolution: {integrity: sha512-GjLDze/ypv7kSxirMtd4KchaB4CwhELvvHzt+9FiVvI27VHEoBnTWgtSc71oZtIAfJECFJqzyYYDPeAmY2JGdQ==}
     dependencies:
       clsx: 1.2.1
+    dev: true
+
+  /@utrecht/focus-ring-css@2.3.1:
+    resolution: {integrity: sha512-mmZeNnp2VeYVrnG0uhgkLcX2nVuMW0+oZjJ7lCI1FFODpj3ORmtTi7N5UNjhM3Pyppg5LdDwqMM6jF9clPg5Yg==}
+    dev: true
+
+  /@utrecht/link-css@1.6.0:
+    resolution: {integrity: sha512-fdLo+YYwHA0Y2r5kww0EhoJnLKI1WMPYW9SjJT0asHzYBVWo2YuGqhlp4YlG4uHJPC1KyF201znOx4Pa7YF4Uw==}
     dev: true
 
   /@vitejs/plugin-react@3.1.0(vite@5.1.5):
@@ -14960,7 +14987,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       hosted-git-info: 4.1.0
-      is-core-module: 2.12.1
+      is-core-module: 2.13.1
       semver: 7.6.3
       validate-npm-package-license: 3.0.4
     dev: true
@@ -15980,7 +16007,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.21.9
+      browserslist: 4.22.2
       caniuse-api: 3.0.0
       colord: 2.9.3
       postcss: 8.4.35
@@ -15993,7 +16020,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.21.9
+      browserslist: 4.22.2
       postcss: 8.4.35
       postcss-value-parser: 4.2.0
     dev: true
@@ -16081,11 +16108,11 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.21.9
+      browserslist: 4.22.2
       caniuse-api: 3.0.0
       cssnano-utils: 3.1.0(postcss@8.4.35)
       postcss: 8.4.35
-      postcss-selector-parser: 6.0.13
+      postcss-selector-parser: 6.0.15
     dev: true
 
   /postcss-minify-font-values@5.1.0(postcss@8.4.35):
@@ -16116,7 +16143,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.21.9
+      browserslist: 4.22.2
       cssnano-utils: 3.1.0(postcss@8.4.35)
       postcss: 8.4.35
       postcss-value-parser: 4.2.0
@@ -16149,7 +16176,7 @@ packages:
     dependencies:
       icss-utils: 5.1.0(postcss@8.4.35)
       postcss: 8.4.35
-      postcss-selector-parser: 6.0.13
+      postcss-selector-parser: 6.0.15
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -16254,7 +16281,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.21.9
+      browserslist: 4.22.2
       postcss: 8.4.35
       postcss-value-parser: 4.2.0
     dev: true
@@ -16297,7 +16324,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      browserslist: 4.21.9
+      browserslist: 4.22.2
       caniuse-api: 3.0.0
       postcss: 8.4.35
     dev: true
@@ -18407,7 +18434,7 @@ packages:
     dependencies:
       browserslist: 4.21.9
       postcss: 8.4.35
-      postcss-selector-parser: 6.0.13
+      postcss-selector-parser: 6.0.15
     dev: true
 
   /stylelint-config-recommended-scss@14.0.0(postcss@8.4.35)(stylelint@16.2.1):
