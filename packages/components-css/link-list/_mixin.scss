@@ -30,9 +30,6 @@
 @mixin nijmegen-link-list__link {
   color: var(--utrecht-link-color);
   text-decoration: var(--nijmegen-link-list-item-text-decoration, none);
-  &::before {
-    @include nijmegen-link-list__link-before;
-  }
   &:active,
   &.nijmegen-link-list__link--active {
     @include utrecht-link--active;
