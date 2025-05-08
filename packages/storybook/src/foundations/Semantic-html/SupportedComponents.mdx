@@ -77,10 +77,10 @@ import "@gemeentenijmegen/semantic-html/dist/index.css"
     <li>Item 2</li>
     <li>Item 3</li>
     <li>Unordered item with <a href="#">link 1</a> and <a href="#"> link 2</a></li>
+    <li>Nested:<ul><li>Nested 1</li><li>Nested 2</li></ul></li>
 </ul>
 </div>
 </Unstyled>
-Note that nested unordered lists are not supported at this moment for the semantic html implementation
 
 <Source language="html" code={`
 <ul>
@@ -88,6 +88,12 @@ Note that nested unordered lists are not supported at this moment for the semant
     <li>Item 2/li>
     <li>Item 3</li>
     <li>Unordered item with <a href="#">link 1</a> and <a href="#"> link 2</a></li>
+    <li>Nested:
+        <ul>
+            <li>Nested 1</li>
+            <li>Nested 2</li>
+        </ul>
+    </li>
 </ul>
 `} />
 ## Button

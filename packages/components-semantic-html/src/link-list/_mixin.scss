@@ -19,6 +19,12 @@
           padding-inline-end: 0;
         }
       }
+      > a:only-child {
+        @include nijmegen-link-list__link;
+      }
+      > ul {
+        margin-block-start: 1rem;
+      }
     }
   }
 }
