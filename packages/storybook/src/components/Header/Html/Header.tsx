@@ -465,47 +465,53 @@ const menu = () => {
 export const HeaderStory = () => {
   return (
     <header className="nijmegen-header">
-      <div className="nijmegen-container">
-        <div className="nijmegen-header__content__small">
-          <button className="nijmegen-header-item" aria-expanded="false" aria-label="Menu openen">
-            {menu()}
-            Menu
-          </button>
-          <div>{logoMerk()}</div>
+      <div className="nijmegen-header__content__small">
+        <button className="nijmegen-toolbar-button" aria-expanded="false" aria-label="Menu openen">
+          {menu()}
+          Menu
+        </button>
+        <div>{logoMerk()}</div>
+        <button className="nijmegen-toolbar-button" aria-label="Zoeken">
+          {search()}
+          Zoeken
+        </button>
+      </div>
+      <div className="nijmegen-header__content">
+        <div>{logo()}</div>
+        <nav>
+          <ul className="nijmegen-header__navigation">
+            <li className="nijmegen-header__navigation-item nijmegen-header__navigation-item--has-children">
+              <button className="nijmegen-header-item" aria-expanded="false" aria-label="Onderwerpen">
+                Onderwerpen
+                {chevron()}
+              </button>
+            </li>
+            <li className="nijmegen-header__navigation-item nijmegen-header__navigation-item--has-children">
+              <button className="nijmegen-header-item" aria-expanded="false" aria-label="Over de gemeente">
+                Over de gemeente
+                {chevron()}
+              </button>
+            </li>
+            <li className="nijmegen-header__navigation-item">
+              <a href="#" className="nijmegen-header-item" aria-label="Contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div className="nijmegen-header__actions">
           <button className="nijmegen-header-item" aria-label="Zoeken">
             {search()}
-            zoeken
+            Zoeken
           </button>
-        </div>
-        <div className="nijmegen-header__content">
-          <div>{logo()}</div>
-          <nav className="nijmegen-header__navigation">
-            <button className="nijmegen-header-item" aria-expanded="false" aria-label="Onderwerpen">
-              Onderwerpen
-              {chevron()}
-            </button>
-            <button className="nijmegen-header-item" aria-expanded="false" aria-label="Over de gemeente">
-              Over de gemeente
-              {chevron()}
-            </button>
-            <a href="#" className="nijmegen-header-item" aria-label="Contact">
-              Contact
-            </a>
-          </nav>
-          <div className="nijmegen-header__actions">
-            <button className="nijmegen-header-item" aria-label="Zoeken">
-              {search()}
-              zoeken
-            </button>
-            <button className="nijmegen-header-item" aria-label="Taal wijzigen, huidige taal is Nederlands">
-              NL
-              {chevron()}
-            </button>
-            <button className="nijmegen-header-item" aria-label="Mijn Nijmegen">
-              {user()}
-              Mijn Nijmegen
-            </button>
-          </div>
+          <button className="nijmegen-header-item" aria-label="Taal wijzigen, huidige taal is Nederlands">
+            Nederlands
+            {chevron()}
+          </button>
+          <button className="nijmegen-header-item" aria-label="Mijn Nijmegen">
+            {user()}
+            Mijn Nijmegen
+          </button>
         </div>
       </div>
     </header>

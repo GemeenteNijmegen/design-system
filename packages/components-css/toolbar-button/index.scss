@@ -1,0 +1,28 @@
+@import "~@utrecht/button-css/src/mixin";
+@import "~@utrecht/focus-ring-css/src/mixin";
+.nijmegen-toolbar-button {
+  @include utrecht-button;
+  @include utrecht-button-appearance-properties("utrecht-button", "subtle");
+
+  column-gap: var(--nijmegen-toolbar-button-column-gap);
+  padding-block-end: var(--nijmegen-toolbar-button-padding-block-end);
+  padding-block-start: var(--nijmegen-toolbar-button-padding-block-start);
+  padding-inline-end: var(--nijmegen-toolbar-button-padding-inline-end);
+  padding-inline-start: var(--nijmegen-toolbar-button-padding-inline-start);
+
+  &:focus-visible,
+  &.nijmegen-toolbar-button--focus-visible {
+    @include utrecht-button--focus;
+    @include utrecht-button--focus-visible;
+  }
+
+  &:active:not(:disabled, [aria-disabled="true"]),
+  &.nijmegen-toolbar-button--active {
+    @include utrecht-button--active;
+  }
+
+  &:hover:not(:disabled, [aria-disabled="true"]),
+  &.nijmegen-toolbar-button--hover {
+    @include utrecht-button--hover;
+  }
+}
