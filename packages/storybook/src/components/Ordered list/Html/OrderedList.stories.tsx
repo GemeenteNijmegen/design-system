@@ -5,6 +5,7 @@ import prettierBabel from 'prettier/parser-babel';
 import * as prettier from 'prettier/standalone';
 import * as ReactDOMServer from 'react-dom/server';
 import { argTypes } from '../_OrderedList';
+import '@gemeentenijmegen/components-css';
 
 const meta = {
   title: 'Components/Ordered list/Html Implementation',

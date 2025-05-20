@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { OrderedList, OrderedListItem } from '@utrecht/component-library-react/dist/css-module';
 import { argTypes } from '../_OrderedList';
+import '@gemeentenijmegen/components-css';
 
 const meta = {
   title: 'Components/Ordered list/React Implementation',
