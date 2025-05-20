@@ -91,7 +91,29 @@ importers:
         specifier: 5.3.3
         version: 5.3.3
 
-  packages/components-css: {}
+  packages/components-css:
+    devDependencies:
+      '@gemeentenijmegen/layout-css':
+        specifier: workspace:*
+        version: link:../layout-css
+      '@utrecht/focus-ring-css':
+        specifier: 2.3.1
+        version: 2.3.1
+      '@utrecht/link-css':
+        specifier: 1.6.0
+        version: 1.6.0
+      '@utrecht/unordered-list-css':
+        specifier: 1.5.1
+        version: 1.5.1
+      postcss-discard-duplicates:
+        specifier: 7.0.1
+        version: 7.0.1(postcss@8.4.35)
+      rollup:
+        specifier: 4.12.1
+        version: 4.12.1
+      rollup-plugin-postcss:
+        specifier: 4.0.2
+        version: 4.0.2(postcss@8.4.35)
 
   packages/components-react:
     dependencies:
@@ -7102,6 +7124,18 @@ packages:
     resolution: {integrity: sha512-GjLDze/ypv7kSxirMtd4KchaB4CwhELvvHzt+9FiVvI27VHEoBnTWgtSc71oZtIAfJECFJqzyYYDPeAmY2JGdQ==}
     dependencies:
       clsx: 1.2.1
+    dev: true
+
+  /@utrecht/focus-ring-css@2.3.1:
+    resolution: {integrity: sha512-mmZeNnp2VeYVrnG0uhgkLcX2nVuMW0+oZjJ7lCI1FFODpj3ORmtTi7N5UNjhM3Pyppg5LdDwqMM6jF9clPg5Yg==}
+    dev: true
+
+  /@utrecht/link-css@1.6.0:
+    resolution: {integrity: sha512-fdLo+YYwHA0Y2r5kww0EhoJnLKI1WMPYW9SjJT0asHzYBVWo2YuGqhlp4YlG4uHJPC1KyF201znOx4Pa7YF4Uw==}
+    dev: true
+
+  /@utrecht/unordered-list-css@1.5.1:
+    resolution: {integrity: sha512-BvpymaFp0CKdcqApqdj4nKhn/99MJ2i+ilYvPS2cgyYJCEZk8eH4GXiHZBX7YzwzLhV95oURnG3DM6RsZ9Ixmg==}
     dev: true
 
   /@vitejs/plugin-react@3.1.0(vite@5.1.5):
