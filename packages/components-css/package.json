@@ -17,6 +17,7 @@
   "private": true,
   "devDependencies": {
     "@gemeentenijmegen/layout-css": "workspace:0.0.1-alpha.0",
+    "@rollup/plugin-terser": "0.4.4",
     "@utrecht/button-css": "2.3.1",
     "@utrecht/focus-ring-css": "2.3.1",
     "postcss-discard-duplicates": "7.0.1",

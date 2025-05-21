@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import type { StoryContext } from '@storybook/types';
-import { Link } from '@utrecht/component-library-react/dist/css-module';
 import prettierBabel from 'prettier/parser-babel';
 import * as prettier from 'prettier/standalone';
 import * as ReactDOMServer from 'react-dom/server';
@@ -38,7 +37,7 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof Link>;
+} satisfies Meta<typeof HeaderStory>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

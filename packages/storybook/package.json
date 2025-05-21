@@ -30,6 +30,7 @@
     "@gemeentenijmegen/design-tokens-dark": "workspace:*",
     "@gemeentenijmegen/font": "workspace:*",
     "@gemeentenijmegen/layout-css": "workspace:*",
+    "@gemeentenijmegen/web-components": "workspace:*",
     "@gemeentenijmegen/web-components-react": "workspace:*",
     "@gemeentenijmegen/web-components-stencil": "workspace:*",
     "@mdx-js/react": "3.0.1",
