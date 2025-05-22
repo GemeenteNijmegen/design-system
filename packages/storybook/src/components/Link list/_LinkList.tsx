@@ -1,1 +1,1 @@
-export const argtypes = {};
+export const argTypes = {};
