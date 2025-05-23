@@ -46,7 +46,7 @@ export const Default: Story = {
   name: 'Card news',
   args: {
     title: 'Ondernemers opgelet',
-    text: 'Ondernemers en bedrijven uit Nijmegen opgelet! ',
+    text: 'Ondernemers en bedrijven uit Nijmegen opgelet!',
     image: 'https://picsum.photos/640/360/',
     image_alt: 'Image description',
     date: '7 februari 2024',
@@ -79,5 +79,15 @@ export const Persona: Story = {
     text: 'Burgemeester',
     image: 'https://picsum.photos/640/360/',
     image_alt: 'Image description',
+  },
+};
+
+export const NoImage: Story = {
+  name: 'Card no image',
+  args: {
+    title: 'Ondernemers opgelet',
+    text: 'Ondernemers en bedrijven uit Nijmegen opgelet!',
+    image: '',
+    image_alt: '',
   },
 };
