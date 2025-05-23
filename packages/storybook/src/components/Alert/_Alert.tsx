@@ -1,5 +1,5 @@
 import { IconAlertCircle, IconAlertTriangle, IconCircleCheck, IconInfoCircle } from '@tabler/icons-react';
-import { Alert, Heading6, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { Alert, Heading4, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 
 export const argTypes = {
   title: {
@@ -67,7 +67,7 @@ export const AlertStory = ({ title = defaultArgs.title, text = defaultArgs.text,
 
   return (
     <Alert icon={icon} type={type}>
-      <Heading6>{title}</Heading6>
+      <Heading4>{title}</Heading4>
       <Paragraph>{text}</Paragraph>
     </Alert>
   );
