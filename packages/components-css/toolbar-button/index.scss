@@ -12,7 +12,7 @@
   padding-inline-end: var(--nijmegen-toolbar-button-padding-inline-end);
   padding-inline-start: var(--nijmegen-toolbar-button-padding-inline-start);
 
-  &.nijmegen-toolbar-button__icon {
+  &.nijmegen-toolbar-button--icon {
     &-menu {
       &::before {
         mask-image: var(

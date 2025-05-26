@@ -20,7 +20,7 @@ class NijmegenToolbarButton extends HTMLElement {
   }
 
   connectedCallback() {
-    let typedButton = this.shadowRoot.querySelector('[class*="nijmegen-toolbar-button__icon"]');
+    let typedButton = this.shadowRoot.querySelector('[class*="nijmegen-toolbar-button--icon"]');
     if (typedButton) {
       typedButton.addEventListener('click', (event) => {
         let target = event.target;
@@ -39,19 +39,19 @@ class NijmegenToolbarButton extends HTMLElement {
   #handleType(type) {
     const button = this.shadowRoot.querySelector('.nijmegen-toolbar-button');
     if (type === 'menu') {
-      button.classList.add('nijmegen-toolbar-button__icon-menu');
-      button.classList.remove('nijmegen-toolbar-button__icon-search');
+      button.classList.add('nijmegen-toolbar-button--icon-menu');
+      button.classList.remove('nijmegen-toolbar-button--icon-search');
       button.ariaExpanded = 'false';
       button.ariaLabel = 'Menu openen';
     } else if (type === 'search') {
-      button.classList.add('nijmegen-toolbar-button__icon-search');
-      button.classList.remove('nijmegen-toolbar-button__icon-menu');
+      button.classList.add('nijmegen-toolbar-button--icon-search');
+      button.classList.remove('nijmegen-toolbar-button--icon-menu');
     } else {
-      if (button.classList.contains('nijmegen-toolbar-button__icon-menu')) {
-        button.classList.remove('nijmegen-toolbar-button__icon-menu');
+      if (button.classList.contains('nijmegen-toolbar-button--icon-menu')) {
+        button.classList.remove('nijmegen-toolbar-button--icon-menu');
         button.ariaLabel = 'Menu sluiten';
-      } else if (button.classList.contains('nijmegen-toolbar-button__icon-search')) {
-        button.classList.remove('nijmegen-toolbar-button__icon-search');
+      } else if (button.classList.contains('nijmegen-toolbar-button--icon-search')) {
+        button.classList.remove('nijmegen-toolbar-button--icon-search');
         button.ariaLabel = 'Zoeken sluiten';
       }
     }

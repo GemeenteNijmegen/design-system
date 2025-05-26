@@ -1,5 +1,5 @@
 import '@gemeentenijmegen/components-css';
-import ToolbarButton from '@gemeentenijmegen/components-css/toolbar-button/index';
+import clsx from 'clsx';
 import { renderToStaticMarkup } from 'react-dom/server';
 
 const logoString = encodeURIComponent(
@@ -319,78 +319,18 @@ const logoMerkString = encodeURIComponent(
 
 const logoMerk = `data:image/svg+xml,${logoMerkString}`;
 
-const chevron = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M6 9l6 6l6 -6" />
-    </svg>
-  );
-};
-
-const search = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="icon icon-tabler icons-tabler-outline icon-tabler-search"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-      <path d="M21 21l-6 -6" />
-    </svg>
-  );
-};
-
-const user = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="icon icon-tabler icons-tabler-outline icon-tabler-user"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
-      <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-    </svg>
-  );
-};
-
-export const HeaderStory = () => {
+export const HeaderStory = ({ state = '', expanded = '' }) => {
   return (
     <header className="nijmegen-header">
-      <div className="nijmegen-header__content__small">
+      <div className="nijmegen-header__content--small">
         <button
-          className="nijmegen-toolbar-button nijmegen-toolbar-button__icon-menu"
-          onClick={ToolbarButton.toolbarButtonClickHandler}
+          className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu', {
+            'nijmegen-toolbar-button--active': state === 'active',
+            'nijmegen-toolbar-button--hover': state === 'hover',
+            'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+          })}
           type="button"
-          aria-controls="nijmegen-menu"
-          aria-expanded="false"
+          ariaExpanded={expanded}
           aria-label="Menu openen"
         >
           Menu
@@ -399,12 +339,14 @@ export const HeaderStory = () => {
           <img src={logoMerk} alt="Beeldmerk gemeente Nijmegen"></img>
         </div>
         <button
-          className="nijmegen-toolbar-button nijmegen-toolbar-button__icon-search"
-          onClick={ToolbarButton.toolbarButtonClickHandler}
+          className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-search', {
+            'nijmegen-toolbar-button--active': state === 'active',
+            'nijmegen-toolbar-button--hover': state === 'hover',
+            'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+          })}
           type="button"
-          aria-controls="nijmegen-search"
-          aria-expanded="false"
-          aria-label="Zoeken"
+          aria-expanded={expanded}
+          aria-label="Menu openen"
         >
           Zoeken
         </button>
@@ -415,38 +357,81 @@ export const HeaderStory = () => {
         </div>
         <nav>
           <ul className="nijmegen-header__navigation">
-            <li className="nijmegen-header__navigation-item nijmegen-header__navigation-item--has-children">
-              <button className="nijmegen-header-item" aria-expanded="false" aria-label="Onderwerpen">
+            <li className="nijmegen-header__navigation__item nijmegen-header__navigation__item--has-children">
+              <button
+                className={clsx('nijmegen-header-item', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-expanded={expanded}
+                aria-label="Onderwerpen"
+              >
                 Onderwerpen
-                {chevron()}
               </button>
             </li>
-            <li className="nijmegen-header__navigation-item nijmegen-header__navigation-item--has-children">
-              <button className="nijmegen-header-item" aria-expanded="false" aria-label="Over de gemeente">
+            <li className="nijmegen-header__navigation__item nijmegen-header__navigation__item--has-children">
+              <button
+                className={clsx('nijmegen-header-item', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-expanded={expanded}
+                aria-label="Over de gemeente"
+              >
                 Over de gemeente
-                {chevron()}
               </button>
             </li>
-            <li className="nijmegen-header__navigation-item">
-              <a href="#" className="nijmegen-header-item" aria-label="Contact">
+            <li className="nijmegen-header__navigation__item">
+              <a
+                href="#"
+                className={clsx('nijmegen-header-item', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-label="Contact"
+              >
                 Contact
               </a>
             </li>
           </ul>
         </nav>
         <div className="nijmegen-header__actions">
-          <button className="nijmegen-header-item" aria-label="Zoeken">
-            {search()}
+          <button
+            className={clsx('nijmegen-header-item nijmegen-header-item--icon-search', {
+              'nijmegen-header-item--active': state === 'active',
+              'nijmegen-header-item--hover': state === 'hover',
+              'nijmegen-header-item--focus-visible': state === 'focus-visible',
+            })}
+            aria-expanded={expanded}
+            aria-label="Zoeken"
+          >
             Zoeken
           </button>
-          <button className="nijmegen-header-item" aria-label="Taal wijzigen, huidige taal is Nederlands">
+          <button
+            className={clsx('nijmegen-header-item', {
+              'nijmegen-header-item--active': state === 'active',
+              'nijmegen-header-item--hover': state === 'hover',
+              'nijmegen-header-item--focus-visible': state === 'focus-visible',
+            })}
+            aria-expanded={expanded}
+            aria-label="Taal wijzigen, huidige taal is Nederlands"
+          >
             Nederlands
-            {chevron()}
           </button>
-          <button className="nijmegen-header-item" aria-label="Mijn Nijmegen">
-            {user()}
+          <a
+            href="#"
+            className={clsx('nijmegen-header-item nijmegen-header-item--icon-user', {
+              'nijmegen-header-item--active': state === 'active',
+              'nijmegen-header-item--hover': state === 'hover',
+              'nijmegen-header-item--focus-visible': state === 'focus-visible',
+            })}
+            aria-label="Mijn Nijmegen"
+          >
             Mijn Nijmegen
-          </button>
+          </a>
         </div>
       </div>
     </header>

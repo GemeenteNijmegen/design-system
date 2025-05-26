@@ -11,3 +11,15 @@
   padding-inline-end: var(--nijmegen-header-content-padding-inline-end, 0);
   padding-inline-start: var(--nijmegen-header-content-padding-inline-start, 0);
 }
+
+@mixin nijmegen-header-icon-base {
+  background-color: var(--nijmegen-header-item-color, #000);
+  content: "";
+  display: inline-block;
+  /* stylelint-disable-next-line property-disallowed-list */
+  height: var(--nijmegen-header-item-icon-size, 1.5rem);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  width: var(--nijmegen-header-item-icon-size, 1.5rem); /* stylelint-disable-line property-disallowed-list */
+}
