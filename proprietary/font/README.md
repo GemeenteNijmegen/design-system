@@ -1,3 +1,3 @@
-# Assets
+# Nijmegen fonts
 
-Story any font files here, such as proprietary fonts.
+Fonts used by the Design System of the municipality Nijmegen.

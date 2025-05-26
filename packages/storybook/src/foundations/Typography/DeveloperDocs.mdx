@@ -1,0 +1,31 @@
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="foundations/typography/Developer documentation"/>
+# Fonts
+---
+
+<div style={{display: "grid", gridTemplateColumns: "1fr 1fr"}}>
+    <div>
+        ### Headings
+        <div className="nijmegen-theme utrecht-html">
+        <span style={{fontFamily: "var(--nijmegen-typography-font-family-primary)", fontSize: "var( --nijmegen-typography-font-size-3xl)", color: "var(--nijmegen-color-grijs-800)", fontWeight: "var(--nijmegen-typography-font-weight-bold)" }}>Oranda BT</span>
+
+        <span style={{fontFamily: "var(--nijmegen-typography-font-family-primary)", fontSize: "var( --nijmegen-typography-font-size-md)", color: "var(--nijmegen-color-grijs-800)", fontWeight: "var(--nijmegen-typography-font-weight-bold)"  }}>abcdefghijklmnopqrstuvwxyz (&*%$!?”)</span>\
+        <span style={{fontFamily: "var(--nijmegen-typography-font-family-primary)", fontSize: "var( --nijmegen-typography-font-size-md)", color: "var(--nijmegen-color-grijs-800)", fontWeight: "var(--nijmegen-typography-font-weight-bold)"  }}>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+
+        <span style={{fontFamily: "var(--nijmegen-typography-font-family-primary)", fontSize: "var( --nijmegen-typography-font-size-md)", color: "var(--nijmegen-color-grijs-800)", fontWeight: "var(--nijmegen-typography-font-weight-bold)"  }}>1234567890 (&*%$!?”)</span>
+        </div>
+    </div>
+    <div>
+        ### Subheadings and content 
+        <div className="nijmegen-theme">
+        <span style={{fontFamily: "var(--nijmegen-typography-font-family-secondary)", fontSize: "var( --nijmegen-typography-font-size-3xl)", color: "var(--nijmegen-color-grijs-800)", fontWeight: "var(--nijmegen-typography-font-weight-bold)" }}>Source Sans Pro</span>
+
+        <span style={{fontFamily: "var(--nijmegen-typography-font-family-secondary)", fontSize: "var( --nijmegen-typography-font-size-md)", color: "var(--nijmegen-color-grijs-800)", fontWeight: "var(--nijmegen-typography-font-weight-bold)"  }}>abcdefghijklmnopqrstuvwxyz (&*%$!?”)</span>\
+        <span style={{fontFamily: "var(--nijmegen-typography-font-family-secondary)", fontSize: "var( --nijmegen-typography-font-size-md)", color: "var(--nijmegen-color-grijs-800)", fontWeight: "var(--nijmegen-typography-font-weight-bold)"  }}>ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
+
+        <span style={{fontFamily: "var(--nijmegen-typography-font-family-secondary)", fontSize: "var( --nijmegen-typography-font-size-md)", color: "var(--nijmegen-color-grijs-800)", fontWeight: "var(--nijmegen-typography-font-weight-bold)"  }}>1234567890 (&*%$!?”)</span>
+        </div>
+    </div>
+</div>
+All fonts are loaded via the `@gemeentenijmegen/font` package.
