@@ -10,22 +10,6 @@ const config: StorybookConfig = {
     name: '@storybook/react-vite',
     options: {},
   },
-  refs: (config, { configType }) => {
-    if (configType === 'DEVELOPMENT') {
-      return {
-        'web-components': {
-          title: 'Web Components',
-          url: 'http://localhost:6012',
-        },
-      };
-    }
-    return {
-      'web-components': {
-        title: 'Web Components',
-        url: 'dist/web-components',
-      },
-    };
-  },
   addons: [
     '@storybook/addon-a11y',
     '@storybook/addon-viewport',

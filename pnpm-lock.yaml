@@ -471,7 +471,7 @@ importers:
         specifier: 7.6.20
         version: 7.6.20(lit@3.3.0)(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)(vite@5.1.5)
       lit:
-        specifier: ^3.3.0
+        specifier: 3.3.0
         version: 3.3.0
       react:
         specifier: 18.2.0

@@ -49,14 +49,4 @@ config.push({
   ],
 });
 
-config.push({
-  input: "index.js",
-  output: {
-    file: "dist/index.min.js",
-    sourcemap: false,
-    format: "esm",
-    plugins: [terser()],
-  },
-});
-
 export default config;

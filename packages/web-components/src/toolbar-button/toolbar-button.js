@@ -2,7 +2,6 @@ import style from '@gemeentenijmegen/components-css/dist/index.min.css?raw';
 import html from './template.html?raw';
 
 class NijmegenToolbarButton extends HTMLElement {
-  #type;
   constructor() {
     super();
     const template = document.createElement('template');
@@ -37,21 +36,24 @@ class NijmegenToolbarButton extends HTMLElement {
       this.#handleType(newValue);
     }
   }
-
   #handleType(type) {
+    const button = this.shadowRoot.querySelector('.nijmegen-toolbar-button');
     if (type === 'menu') {
-      this.shadowRoot.querySelector('.nijmegen-toolbar-button').classList.add('nijmegen-toolbar-button__icon-menu');
-      this.shadowRoot
-        .querySelector('.nijmegen-toolbar-button')
-        .classList.remove('nijmegen-toolbar-button__icon-search');
+      button.classList.add('nijmegen-toolbar-button__icon-menu');
+      button.classList.remove('nijmegen-toolbar-button__icon-search');
+      button.ariaExpanded = 'false';
+      button.ariaLabel = 'Menu openen';
     } else if (type === 'search') {
-      this.shadowRoot.querySelector('.nijmegen-toolbar-button').classList.add('nijmegen-toolbar-button__icon-search');
-      this.shadowRoot.querySelector('.nijmegen-toolbar-button').classList.remove('nijmegen-toolbar-button__icon-menu');
+      button.classList.add('nijmegen-toolbar-button__icon-search');
+      button.classList.remove('nijmegen-toolbar-button__icon-menu');
     } else {
-      this.shadowRoot.querySelector('.nijmegen-toolbar-button').classList.remove('nijmegen-toolbar-button__icon-menu');
-      this.shadowRoot
-        .querySelector('.nijmegen-toolbar-button')
-        .classList.remove('nijmegen-toolbar-button__icon-search');
+      if (button.classList.contains('nijmegen-toolbar-button__icon-menu')) {
+        button.classList.remove('nijmegen-toolbar-button__icon-menu');
+        button.ariaLabel = 'Menu sluiten';
+      } else if (button.classList.contains('nijmegen-toolbar-button__icon-search')) {
+        button.classList.remove('nijmegen-toolbar-button__icon-search');
+        button.ariaLabel = 'Zoeken sluiten';
+      }
     }
   }
 }
