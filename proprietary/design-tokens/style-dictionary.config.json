@@ -54,7 +54,7 @@
           "destination": "index.css",
           "format": "css/variables",
           "options": {
-            "selector": ".nijmegen-theme",
+            "selector": ".nijmegen-theme, .nijmegen-html",
             "outputReferences": false
           }
         }
