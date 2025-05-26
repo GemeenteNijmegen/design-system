@@ -48,7 +48,8 @@
   &[aria-expanded]::after {
     @include nijmegen-header-icon-base;
   }
-  &[aria-expanded="true"] {
+  &[aria-expanded="true"],
+  &--active {
     font-weight: var(--nijmegen-header-item-current-font-weight, 700);
   }
   &[aria-expanded="false"]::after {

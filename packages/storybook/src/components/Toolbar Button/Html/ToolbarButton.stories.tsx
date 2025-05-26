@@ -1,10 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import type { StoryContext } from '@storybook/types';
 import clsx from 'clsx';
-import prettierBabel from 'prettier/parser-babel';
-import * as prettier from 'prettier/standalone';
-import * as ReactDOMServer from 'react-dom/server';
 import '@gemeentenijmegen/components-css';
+import HtmlTransformer from '../../../../scripts/HtmlTransformer';
 
 const icon = () => {
   return (
@@ -74,23 +71,7 @@ const meta = {
     },
     docs: {
       source: {
-        transform: (src: string, storyContext: StoryContext<any>): string => {
-          // Ensure valid HTML in the Preview source
-          const render =
-            typeof storyContext.component === 'function'
-              ? storyContext.component
-              : typeof storyContext.component?.render === 'function'
-                ? storyContext.component?.render
-                : null;
-
-          if (render) {
-            return prettier.format(ReactDOMServer.renderToStaticMarkup(render(storyContext.args)), {
-              parser: 'babel',
-              plugins: [prettierBabel],
-            });
-          }
-          return src;
-        },
+        transform: HtmlTransformer,
       },
     },
   },
