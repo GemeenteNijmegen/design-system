@@ -1,0 +1,120 @@
+{
+  "nijmegen": {
+    "card": {
+      "background-color": {
+        "value": "{utrecht.document.background-color}",
+        "type": "color"
+      },
+      "border-color": {
+        "value": "{nijmegen.color.border.subdued}",
+        "type": "color"
+      },
+      "color": {
+        "value": "{utrecht.document.color}",
+        "type": "color"
+      },
+      "padding-inline-start": {
+        "value": "{nijmegen.space.100}",
+        "type": "spacing"
+      },
+      "padding-inline-end": {
+        "value": "{nijmegen.space.100}",
+        "type": "spacing"
+      },
+      "padding-block-end": {
+        "value": "{nijmegen.space.150}",
+        "type": "spacing"
+      },
+      "padding-block-start": {
+        "value": "{nijmegen.space.150}",
+        "type": "spacing"
+      },
+      "icon": {
+        "size": {
+          "value": "{nijmegen.icon.functional.size}",
+          "type": "sizing"
+        }
+      },
+      "content": {
+        "row-gap": {
+          "value": "{nijmegen.space.100}",
+          "type": "spacing"
+        }
+      },
+      "metadata": {
+        "column-gap": {
+          "value": "{nijmegen.space.50}",
+          "type": "spacing"
+        }
+      },
+      "footer": {
+        "column-gap": {
+          "value": "{nijmegen.space.50}",
+          "type": "spacing"
+        }
+      },
+      "heading": {
+        "hover": {
+          "color": {
+            "value": "{nijmegen.interaction.hover.color}",
+            "type": "color"
+          },
+          "text-decoration": {
+            "value": "underline",
+            "type": "textDecoration"
+          }
+        },
+        "active": {
+          "color": {
+            "value": "{nijmegen.interaction.active.color}",
+            "type": "color"
+          },
+          "text-decoration": {
+            "value": "underline",
+            "type": "textDecoration"
+          }
+        },
+        "focus-visible": {
+          "color": {
+            "value": "{nijmegen.focus.color}",
+            "type": "color"
+          },
+          "text-decoration": {
+            "value": "None",
+            "type": "textDecoration"
+          }
+        },
+        "text-decoration": {
+          "value": "None",
+          "type": "textDecoration"
+        }
+      },
+      "focus-visible": {
+        "color": {
+          "value": "{nijmegen.focus.color}",
+          "type": "color"
+        },
+        "background-color": {
+          "value": "{nijmegen.focus.background-color}",
+          "type": "color"
+        }
+      },
+      "border-width": {
+        "value": "{nijmegen.border-width.sm}",
+        "type": "borderWidth"
+      },
+      "border-radius": {
+        "value": "{nijmegen.border-radius.sm}",
+        "type": "borderRadius"
+      },
+      "action": {
+        "icon": {
+          "color": {
+            "value": "{nijmegen.interaction.color}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,18 +1,66 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import type { StoryContext } from '@storybook/types';
-import { IconChevronRight } from '@tabler/icons-react';
-import { LinkList } from '@utrecht/component-library-react/dist/css-module';
+import clsx from 'clsx';
 import prettierBabel from 'prettier/parser-babel';
 import * as prettier from 'prettier/standalone';
 import * as ReactDOMServer from 'react-dom/server';
-import { argTypes } from '../_LinkList';
+import '@gemeentenijmegen/components-css';
+
+const LinkList = ({ links = [{ children: '', href: '' }], state = '' }) => {
+  return (
+    <ul className="nijmegen-link-list">
+      {links.map((link, index) => (
+        <li key={index} className="nijmegen-link-list__item">
+          <a
+            className={clsx('nijmegen-link-list__link', {
+              'nijmegen-link-list__link--active': state === 'active',
+              'nijmegen-link-list__link--hover': state === 'hover',
+              'nijmegen-link-list__link--focus': state === 'focus',
+              'nijmegen-link-list__link--focus-visible': state === 'focus-visible',
+              'nijmegen-link-list__link--visited': state === 'visited',
+            })}
+            href={link.href}
+          >
+            {link.children}
+          </a>
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+const argTypes = {
+  links: {
+    name: 'Links',
+    description: 'Array of links to be displayed in the list',
+    control: { type: 'object' },
+    table: {
+      type: {
+        summary: 'Array<{ children: string, href: string }>',
+      },
+    },
+  },
+  state: {
+    name: 'State',
+    description:
+      'State of the link list, in the example code a state class is set for simulating the state appearance. When implementing this component it is not needed to set a state class, the state will be set by the browser and the styles will automatic apply.',
+    control: { type: 'select' },
+    options: ['default', 'active', 'hover', 'focus', 'focus-visible', 'visited'],
+  },
+};
 
 const meta = {
   title: 'Components/Link list/Html Implementation',
-  id: 'html-link-list',
+  id: 'html-link-list-custom',
   component: LinkList,
   argTypes: argTypes,
-  args: {},
+  args: {
+    links: [
+      { children: 'Link 1', href: '#' },
+      { children: 'Link 2', href: '#' },
+      { children: 'Link 3', href: '#' },
+    ],
+  },
   parameters: {
     status: {
       type: 'BETA',
@@ -44,17 +92,4 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
-  args: {
-    icon: () => (
-      <span className="utrecht-icon">
-        <IconChevronRight />
-      </span>
-    ),
-    links: [
-      { children: 'Link 1', href: '#' },
-      { children: 'Link 2', href: '#' },
-      { children: 'Link 3', href: '#' },
-    ],
-  },
-};
+export const Default: Story = {};
