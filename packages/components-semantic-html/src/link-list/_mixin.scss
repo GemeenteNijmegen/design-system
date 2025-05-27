@@ -38,6 +38,9 @@
 
           padding-inline-end: 0;
         }
+        a {
+          @include nijmegen-link-list__link;
+        }
       }
     }
   }
