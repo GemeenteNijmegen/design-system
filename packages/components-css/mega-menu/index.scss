@@ -3,7 +3,7 @@
 .nijmegen-mega-menu {
   background-color: var(--nijmegen-mega-menu-background-color, #fff);
   border: 0 solid var(--nijmegen-mega-menu-border-color, transparent);
-  border-block-end-width: var(--nijmegen-mega-menu-border-block-end-width, 0);
+  border-block-end-width: var(--nijmegen-mega-menu-border-block-end-width, 1px);
   writing-mode: horizontal-tb;
 }
 
@@ -30,5 +30,11 @@
     @media (width >=$nijmegen-breakpoint-lg) {
       flex-basis: calc((100% - (var(--nijmegen-mega-menu-content-column-gap, 0) * 2)) / 3);
     }
+  }
+  ul {
+    padding-block-start: 1rem;
+
+    // row-gap: var(--nijmegen-mega-menu-content-row-gap, 0); todo if token is updated
+    row-gap: 1rem;
   }
 }

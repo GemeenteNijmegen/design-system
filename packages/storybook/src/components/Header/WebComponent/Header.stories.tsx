@@ -1,11 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { HeaderStoryHtml } from './Header';
 import HtmlTransformer from '../../../../scripts/HtmlTransformer';
+import { HeaderStoryWebComponent } from '../Html/Header';
 
+/**
+ * When an `aria-expanded` attribute is set on the header items, the web component will automatically toggle the `expanded` state of the header items on click. So if you have a header item with a following mega-menu make sure you set the `aria-expanded="false"` attribute on the button and make sure that a div with the `nijmegen-header__panel` class is the next sibling of the button.
+ */
 const meta = {
-  title: 'Components/Header/Html Implementation',
-  id: 'html-header',
-  component: HeaderStoryHtml,
+  title: 'Components/Header/Web Component Implementation',
+  id: 'web-component-header',
+  component: HeaderStoryWebComponent,
   argTypes: {
     state: {
       name: 'State',
@@ -13,16 +16,9 @@ const meta = {
       control: { type: 'select' },
       options: ['default', 'active', 'hover', 'focus-visible'],
     },
-    expanded: {
-      name: 'Aria expanded',
-      description: 'Simulation of the aria-expanded attribute of all items in the header which can expand.',
-      control: { type: 'select' },
-      options: ['false', 'true'],
-    },
   },
   args: {
     state: 'default',
-    expanded: 'false',
   },
   parameters: {
     status: {
@@ -34,15 +30,10 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof HeaderStoryHtml>;
+} satisfies Meta<typeof HeaderStoryWebComponent>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   name: 'Header',
-  //   args: {
-  //     href: 'https://example.com',
-  //     title: 'Link',
-  //     children: 'Link',
-  //   },
 };
