@@ -2,6 +2,7 @@ import postcss from "rollup-plugin-postcss";
 import discardDuplicates from "postcss-discard-duplicates";
 import { cwd } from "node:process";
 import { basename } from "node:path";
+import terser from "@rollup/plugin-terser";
 
 let components = [
   {

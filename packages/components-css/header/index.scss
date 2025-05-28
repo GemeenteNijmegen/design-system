@@ -1,5 +1,6 @@
 @import "~@gemeentenijmegen/layout-css/src/variables";
 @import "./mixin";
+
 .nijmegen-header {
   background-color: var(--nijmegen-header-background-color, #fff);
   border: 0 solid var(--nijmegen-header-border-color, transparent);
@@ -9,14 +10,16 @@
 
 .nijmegen-header__content {
   @include nijmegen-header-content;
-  @media (max-width: $nijmegen-breakpoint-lg) {
+
+  @media (width <=1100px) {
     display: none;
   }
 }
 
-.nijmegen-header__content__small {
+.nijmegen-header__content--small {
   @include nijmegen-header-content;
-  @media (min-width: $nijmegen-breakpoint-lg) {
+
+  @media (width >=1100px) {
     display: none;
   }
 }
@@ -27,6 +30,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.nijmegen-header__panel {
+  display: none;
+  left: 0; /* stylelint-disable-line property-disallowed-list */
+  padding-block-start: 1.5rem;
+  position: absolute;
+  width: 100%; /* stylelint-disable-line property-disallowed-list */
 }
 
 .nijmegen-header-item {
@@ -43,26 +56,85 @@
   justify-content: space-between;
   line-height: var(--nijmegen-header-item-line-height, 1.5);
   text-decoration: none;
-  &:hover {
+
+  &[aria-expanded]::after {
+    @include nijmegen-header-icon-base;
+  }
+
+  &--active &[aria-expanded="true"] {
+    font-weight: var(--nijmegen-header-item-current-font-weight, 700);
+    & + .nijmegen-header__panel {
+      display: block;
+    }
+  }
+
+  &[aria-expanded="false"]::after {
+    mask-image: var(
+      --nijmegen-header-item-open-icon-image,
+      url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>')
+    );
+  }
+
+  &[aria-expanded="true"]::after {
+    mask-image: var(
+      --nijmegen-header-item-open-icon-image,
+      url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-up"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 15l6 -6l6 6" /></svg>')
+    );
+  }
+
+  &[class*="nijmegen-header-item--icon-"] {
+    &::before {
+      @include nijmegen-header-icon-base;
+    }
+
+    &[aria-expanded]::after {
+      all: unset;
+    }
+
+    &[aria-expanded="true"]::before {
+      mask-image: var(
+        --nijmegen-header-item-close-icon-image,
+        url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>')
+      );
+    }
+  }
+
+  &--icon-search {
+    &::before {
+      mask-image: var(
+        --nijmegen-header-item-search-icon-image,
+        url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>')
+      );
+    }
+  }
+
+  &--icon-user {
+    &::before {
+      mask-image: var(
+        --nijmegen-header-item-search-icon-image,
+        url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>')
+      );
+    }
+  }
+
+  &:hover,
+  &--hover {
     color: var(--nijmegen-header-item-hover-color, #000);
     text-decoration: var(--nijmegen-header-item-hover-text-decoration, none);
   }
-  &:active {
+
+  &:active,
+  &--active {
     color: var(--nijmegen-header-item-active-color, #000);
     text-decoration: var(--nijmegen-header-item-active-text-decoration, none);
   }
-  &:focus-visible {
+
+  &:focus-visible,
+  &--focus-visible {
     background-color: var(--nijmegen-header-item-focus-visible-background-color, #fff);
     border: var(--nijmegen-header-item-focus-visible-border-line-width, 1px)
       var(--nijmegen-header-item-focus-visible-border-line-style, dashed)
       var(--nijmegen-header-item-focus-visible-border-color, #082d26);
     color: var(--nijmegen-header-item-focus-visible-color, #000);
-  }
-}
-
-.nijmegen-header-item__icon {
-  svg {
-    height: var(--nijmegen-header-item-icon-size, 1rem); /* stylelint-disable-line property-disallowed-list */
-    width: var(--nijmegen-header-item-icon-size, 1rem); /* stylelint-disable-line property-disallowed-list */
   }
 }

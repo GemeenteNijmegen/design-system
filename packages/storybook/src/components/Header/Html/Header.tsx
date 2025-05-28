@@ -1,76 +1,13 @@
 import '@gemeentenijmegen/components-css';
+import clsx from 'clsx';
+import { renderToStaticMarkup } from 'react-dom/server';
+import '@gemeentenijmegen/web-components/src/header/header.js';
 
-// export const argTypes = {
-//   children: {
-//     control: { type: 'object' },
-//     name: 'Content',
-//     description: 'Button text',
-//   },
-//   appearance: {
-//     name: 'Variation',
-//     description: 'Button variations',
-//     control: { type: 'select' },
-//     options: ['Default', 'Primary', 'Secondary', 'Subtle'],
-//     table: {
-//       type: {
-//         summary: ['string'],
-//       },
-//     },
-//   },
-//   state: {
-//     name: 'State',
-//     description: 'Button states',
-//     control: { type: 'select' },
-//     options: ['Default', 'Active', 'Hover', 'Hover + focus-visible', 'Focus', 'Focus-visible'],
-//   },
-//   disabled: {
-//     name: 'Disabled',
-//     description: 'Disable the button',
-//     control: { type: 'boolean' },
-//     table: {
-//       type: {
-//         summary: ['boolean'],
-//       },
-//     },
-//   },
-//   iconBeginning: {
-//     name: 'Icon beginning',
-//     description: 'Icon at the beginning of the button',
-//     control: { type: 'select' },
-//     options: ['None', 'Tabler example', 'OpenGemeente example'],
-//     table: {
-//       type: {
-//         summary: ['string'],
-//       },
-//     },
-//   },
-//   iconEnding: {
-//     name: 'Icon ending',
-//     description: 'Icon at the ending of the button',
-//     control: { type: 'select' },
-//     options: ['None', 'Tabler example', 'OpenGemeente example'],
-//     table: {
-//       type: {
-//         summary: ['string'],
-//       },
-//     },
-//   },
-// };
-
-// export const defaultArgs = {
-//   children: 'Button text',
-//   appearance: 'Default',
-//   state: 'Default',
-//   disabled: false,
-//   iconBeginning: 'None',
-//   iconEnding: 'None',
-// };
-
-const logo = () => {
-  return (
+const logoString = encodeURIComponent(
+  renderToStaticMarkup(
     <svg xmlns="http://www.w3.org/2000/svg" width="136" height="46" viewBox="0 0 136 46" fill="none">
       {' '}
-      <g clip-path="url(#clip0_4256_17746)">
+      <g clipPath="url(#clip0_4256_17746)">
         {' '}
         <path
           d="M45.2831 35.4443L45.4476 34.2622L47.2638 33.7754L49.0253 20.8273L47.3392 20.3405L47.49 19.1583H51.3693L56.7084 31.9465L58.2162 20.8203L56.5302 20.3335L56.681 19.1514H61.8556L61.6774 20.3335L59.8543 20.8203L57.8872 35.4374H56.1875L50.5537 21.8495L48.9156 33.7754L50.5537 34.2622L50.3755 35.4443H45.2762H45.2831Z"
@@ -240,12 +177,14 @@ const logo = () => {
           <rect width="136" height="46" fill="white" />{' '}
         </clipPath>{' '}
       </defs>{' '}
-    </svg>
-  );
-};
+    </svg>,
+  ),
+);
 
-const logoMerk = () => {
-  return (
+const logo = `data:image/svg+xml,${logoString}`;
+
+const logoMerkString = encodeURIComponent(
+  renderToStaticMarkup(
     <svg width="35" height="44" viewBox="0 0 35 44" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M22.4476 37.2354C23.5052 37.4482 24.0076 37.6611 24.0076 37.6611C24.6818 36.4438 24.8603 35.5259 24.5695 34.7609C24.1993 33.7964 23.1813 33.384 22.2824 33.0248C21.7404 32.8053 21.1851 32.5858 20.7753 32.2599C20.5704 32.1003 20.1011 31.5083 20.1407 29.5527C20.1672 28.362 20.3787 27.2911 20.3787 27.2778L20.5043 26.6592C19.9953 26.7856 19.4401 26.8787 18.8452 26.9452C18.8386 26.9918 18.6006 28.1957 18.5675 29.5061C18.5213 31.4151 18.9245 32.7189 19.7507 33.384C20.339 33.8496 21.0397 34.1357 21.6544 34.3818C22.3485 34.6612 22.9434 34.9006 23.0822 35.2598C23.1747 35.4926 22.9963 36.2443 22.441 37.242L22.4476 37.2354Z"
@@ -375,137 +314,424 @@ const logoMerk = () => {
         d="M5.8563 22.6546C6.49086 20.7323 7.19153 18.5971 9.10844 17.0605C9.63063 17.3798 10.2123 17.6592 10.8733 17.8854C8.79116 19.1093 8.13676 21.0915 7.44932 23.1801C6.78832 25.1822 6.11409 27.2443 4.05176 28.2952L3.29822 26.792C4.73921 26.0603 5.2614 24.4772 5.86291 22.6546H5.8563Z"
         fill="#A90A2E"
       />
-    </svg>
+    </svg>,
+  ),
+);
+
+const logoMerk = `data:image/svg+xml,${logoMerkString}`;
+
+export const HeaderStoryWebComponent = ({ state = '' }) => {
+  const expanded = 'false';
+  return (
+    <nijmegen-header>
+      <div className="nijmegen-header__content--small">
+        <button
+          className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu', {
+            'nijmegen-toolbar-button--active': state === 'active',
+            'nijmegen-toolbar-button--hover': state === 'hover',
+            'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+          })}
+          type="button"
+          aria-expanded={expanded}
+          aria-label="Menu openen"
+        >
+          Menu
+        </button>
+        <div>
+          <img src={logoMerk} alt="Beeldmerk gemeente Nijmegen"></img>
+        </div>
+        <button
+          className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-search', {
+            'nijmegen-toolbar-button--active': state === 'active',
+            'nijmegen-toolbar-button--hover': state === 'hover',
+            'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+          })}
+          type="button"
+          aria-expanded={expanded}
+          aria-label="Menu openen"
+        >
+          Zoeken
+        </button>
+      </div>
+      <div className="nijmegen-header__content">
+        <div>
+          <img src={logo} alt="Logo gemeente Nijmegen"></img>
+        </div>
+        <nav>
+          <ul className="nijmegen-header__navigation">
+            <li className="nijmegen-header__navigation__item nijmegen-header__navigation__item--has-children">
+              <button
+                className={clsx('nijmegen-header-item', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-expanded={expanded}
+                aria-controls="mega-1"
+                aria-label="Onderwerpen"
+              >
+                Onderwerpen
+              </button>
+              <div id="mega-1" className="nijmegen-header__panel">
+                <div className="nijmegen-mega-menu">
+                  <div className="nijmegen-mega-menu__container">
+                    <div className="nijmegen-mega-menu__content">
+                      <div>
+                        <h4 className="utrecht-heading-4">Heading onderwerpen</h4>
+                        <ul className="nijmegen-link-list">
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 1
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 2
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="utrecht-heading-4">Heading</h4>
+                        <ul className="nijmegen-link-list">
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 1
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 2
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="utrecht-heading-4">Heading</h4>
+                        <ul className="nijmegen-link-list">
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 1
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 2
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="utrecht-heading-4">Heading</h4>
+                        <ul className="nijmegen-link-list">
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 1
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 2
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="utrecht-heading-4">Heading</h4>
+                        <ul className="nijmegen-link-list">
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 1
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 2
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li className="nijmegen-header__navigation__item nijmegen-header__navigation__item--has-children">
+              <button
+                className={clsx('nijmegen-header-item', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-expanded={expanded}
+                aria-controls="mega-2"
+                aria-label="Over de gemeente"
+              >
+                Over de gemeente
+              </button>
+              <div id="mega-2" className="nijmegen-header__panel">
+                <div className="nijmegen-mega-menu">
+                  <div className="nijmegen-mega-menu__container">
+                    <div className="nijmegen-mega-menu__content">
+                      <div>
+                        <h4 className="utrecht-heading-4">Heading over de gemeente</h4>
+                        <ul className="nijmegen-link-list">
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 1
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 2
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="utrecht-heading-4">Heading</h4>
+                        <ul className="nijmegen-link-list">
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 1
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 2
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="utrecht-heading-4">Heading</h4>
+                        <ul className="nijmegen-link-list">
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 1
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 2
+                            </a>
+                          </li>
+                          <li className="nijmegen-link-list__item">
+                            <a className="nijmegen-link-list__link" href="#">
+                              Link 3
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li className="nijmegen-header__navigation__item">
+              <a
+                href="#"
+                className={clsx('nijmegen-header-item', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-label="Contact"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div className="nijmegen-header__actions">
+          <button
+            className={clsx('nijmegen-header-item nijmegen-header-item--icon-search', {
+              'nijmegen-header-item--active': state === 'active',
+              'nijmegen-header-item--hover': state === 'hover',
+              'nijmegen-header-item--focus-visible': state === 'focus-visible',
+            })}
+            aria-expanded={expanded}
+            aria-label="Zoeken"
+          >
+            Zoeken
+          </button>
+          <button
+            className={clsx('nijmegen-header-item', {
+              'nijmegen-header-item--active': state === 'active',
+              'nijmegen-header-item--hover': state === 'hover',
+              'nijmegen-header-item--focus-visible': state === 'focus-visible',
+            })}
+            aria-expanded={expanded}
+            aria-label="Taal wijzigen, huidige taal is Nederlands"
+          >
+            Nederlands
+          </button>
+          <a
+            href="#"
+            className={clsx('nijmegen-header-item nijmegen-header-item--icon-user', {
+              'nijmegen-header-item--active': state === 'active',
+              'nijmegen-header-item--hover': state === 'hover',
+              'nijmegen-header-item--focus-visible': state === 'focus-visible',
+            })}
+            aria-label="Mijn Nijmegen"
+          >
+            Mijn Nijmegen
+          </a>
+        </div>
+      </div>
+    </nijmegen-header>
   );
 };
 
-const chevron = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      className="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M6 9l6 6l6 -6" />
-    </svg>
-  );
-};
-
-const search = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      className="icon icon-tabler icons-tabler-outline icon-tabler-search"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-      <path d="M21 21l-6 -6" />
-    </svg>
-  );
-};
-
-const user = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      className="icon icon-tabler icons-tabler-outline icon-tabler-user"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
-      <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-    </svg>
-  );
-};
-
-const menu = () => {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      className="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
-    >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M4 6l16 0" />
-      <path d="M4 12l16 0" />
-      <path d="M4 18l16 0" />
-    </svg>
-  );
-};
-export const HeaderStory = () => {
+export const HeaderStoryHtml = ({ state = '', expanded = '' }) => {
   return (
     <header className="nijmegen-header">
-      <div className="nijmegen-container">
-        <div className="nijmegen-header__content__small">
-          <button className="nijmegen-header-item" aria-expanded="false" aria-label="Menu openen">
-            {menu()}
-            Menu
-          </button>
-          <div>{logoMerk()}</div>
-          <button className="nijmegen-header-item" aria-label="Zoeken">
-            {search()}
-            zoeken
-          </button>
+      <div className="nijmegen-header__content--small">
+        <button
+          className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu', {
+            'nijmegen-toolbar-button--active': state === 'active',
+            'nijmegen-toolbar-button--hover': state === 'hover',
+            'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+          })}
+          type="button"
+          aria-expanded={expanded}
+          aria-label="Menu openen"
+        >
+          Menu
+        </button>
+        <div>
+          <img src={logoMerk} alt="Beeldmerk gemeente Nijmegen"></img>
         </div>
-        <div className="nijmegen-header__content">
-          <div>{logo()}</div>
-          <nav className="nijmegen-header__navigation">
-            <button className="nijmegen-header-item" aria-expanded="false" aria-label="Onderwerpen">
-              Onderwerpen
-              {chevron()}
-            </button>
-            <button className="nijmegen-header-item" aria-expanded="false" aria-label="Over de gemeente">
-              Over de gemeente
-              {chevron()}
-            </button>
-            <a href="#" className="nijmegen-header-item" aria-label="Contact">
-              Contact
-            </a>
-          </nav>
-          <div className="nijmegen-header__actions">
-            <button className="nijmegen-header-item" aria-label="Zoeken">
-              {search()}
-              zoeken
-            </button>
-            <button className="nijmegen-header-item" aria-label="Taal wijzigen, huidige taal is Nederlands">
-              NL
-              {chevron()}
-            </button>
-            <button className="nijmegen-header-item" aria-label="Mijn Nijmegen">
-              {user()}
-              Mijn Nijmegen
-            </button>
-          </div>
+        <button
+          className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-search', {
+            'nijmegen-toolbar-button--active': state === 'active',
+            'nijmegen-toolbar-button--hover': state === 'hover',
+            'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+          })}
+          type="button"
+          aria-expanded={expanded}
+          aria-label="Menu openen"
+        >
+          Zoeken
+        </button>
+      </div>
+      <div className="nijmegen-header__content">
+        <div>
+          <img src={logo} alt="Logo gemeente Nijmegen"></img>
+        </div>
+        <nav>
+          <ul className="nijmegen-header__navigation">
+            <li className="nijmegen-header__navigation__item nijmegen-header__navigation__item--has-children">
+              <button
+                className={clsx('nijmegen-header-item', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-expanded={expanded}
+                aria-label="Onderwerpen"
+              >
+                Onderwerpen
+              </button>
+            </li>
+            <li className="nijmegen-header__navigation__item nijmegen-header__navigation__item--has-children">
+              <button
+                className={clsx('nijmegen-header-item', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-expanded={expanded}
+                aria-controls="mega-2"
+                aria-label="Over de gemeente"
+              >
+                Over de gemeente
+              </button>
+            </li>
+            <li className="nijmegen-header__navigation__item">
+              <a
+                href="#"
+                className={clsx('nijmegen-header-item', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-label="Contact"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div className="nijmegen-header__actions">
+          <button
+            className={clsx('nijmegen-header-item nijmegen-header-item--icon-search', {
+              'nijmegen-header-item--active': state === 'active',
+              'nijmegen-header-item--hover': state === 'hover',
+              'nijmegen-header-item--focus-visible': state === 'focus-visible',
+            })}
+            aria-expanded={expanded}
+            aria-label="Zoeken"
+          >
+            Zoeken
+          </button>
+          <button
+            className={clsx('nijmegen-header-item', {
+              'nijmegen-header-item--active': state === 'active',
+              'nijmegen-header-item--hover': state === 'hover',
+              'nijmegen-header-item--focus-visible': state === 'focus-visible',
+            })}
+            aria-expanded={expanded}
+            aria-label="Taal wijzigen, huidige taal is Nederlands"
+          >
+            Nederlands
+          </button>
+          <a
+            href="#"
+            className={clsx('nijmegen-header-item nijmegen-header-item--icon-user', {
+              'nijmegen-header-item--active': state === 'active',
+              'nijmegen-header-item--hover': state === 'hover',
+              'nijmegen-header-item--focus-visible': state === 'focus-visible',
+            })}
+            aria-label="Mijn Nijmegen"
+          >
+            Mijn Nijmegen
+          </a>
         </div>
       </div>
     </header>
