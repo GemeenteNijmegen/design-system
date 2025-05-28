@@ -61,7 +61,8 @@
     @include nijmegen-header-icon-base;
   }
 
-  &--active &[aria-expanded="true"] {
+  &--active,
+  &[aria-expanded="true"] {
     font-weight: var(--nijmegen-header-item-current-font-weight, 700);
     & + .nijmegen-header__panel {
       display: block;
