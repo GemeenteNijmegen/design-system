@@ -32,6 +32,7 @@
     "@gemeentenijmegen/layout-css": "workspace:*",
     "@gemeentenijmegen/web-components-react": "workspace:*",
     "@gemeentenijmegen/web-components-stencil": "workspace:*",
+    "@gemeentenijmegen/semantic-html": "workspace:*",
     "@mdx-js/react": "3.0.1",
     "@storybook/addon-a11y": "7.6.17",
     "@storybook/addon-actions": "7.6.17",
