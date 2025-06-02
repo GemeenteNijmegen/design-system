@@ -27,10 +27,27 @@
 
   > * {
     flex-basis: 100%;
-    @media (width >=$nijmegen-breakpoint-lg) {
+    @media (width >= $nijmegen-breakpoint-md) {
+      &:only-child {
+        flex-basis: 100%;
+      }
+
       flex-basis: calc((100% - (var(--nijmegen-mega-menu-content-column-gap, 0) * 2)) / 3);
     }
+    @media (width >=$nijmegen-breakpoint-lg) {
+      &:only-child {
+        flex-basis: 100%;
+      }
+
+      flex-basis: calc((100% - (var(--nijmegen-mega-menu-content-column-gap, 0) * 3)) / 4);
+    }
   }
+  &.nijmegen-mega-menu__content--full-width {
+    > * {
+      flex-basis: 100%;
+    }
+  }
+
   ul {
     padding-block-start: 1rem;
 
