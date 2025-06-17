@@ -13,7 +13,14 @@
     "clean": "rimraf dist"
   },
   "main": "dist/index.min.css",
-  "private": true,
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:GemeenteNijmegen/design-system.git"
+  },
   "devDependencies": {
     "@gemeentenijmegen/layout-css": "workspace:*",
     "@utrecht/focus-ring-css": "2.3.1",
