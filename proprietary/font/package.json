@@ -17,7 +17,8 @@
     "access": "public"
   },
   "files": [
-    "src"
+    "src",
+    "ordana"
   ],
   "repository": {
     "type": "git+ssh",
