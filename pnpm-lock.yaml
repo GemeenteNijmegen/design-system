@@ -434,6 +434,24 @@ importers:
       '@utrecht/components':
         specifier: 3.0.1-alpha.27
         version: 3.0.1-alpha.27
+      '@utrecht/heading-1-css':
+        specifier: 1.5.0
+        version: 1.5.0
+      '@utrecht/heading-2-css':
+        specifier: 1.5.0
+        version: 1.5.0
+      '@utrecht/heading-3-css':
+        specifier: 1.5.0
+        version: 1.5.0
+      '@utrecht/heading-4-css':
+        specifier: 1.5.0
+        version: 1.5.0
+      '@utrecht/heading-5-css':
+        specifier: 1.5.0
+        version: 1.5.0
+      '@utrecht/heading-6-css':
+        specifier: 1.5.0
+        version: 1.5.0
       '@vitejs/plugin-react':
         specifier: 4.2.1
         version: 4.2.1(vite@5.1.5)
