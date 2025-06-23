@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.4",
   "author": "Community for NL Design System",
   "description": "CSS Components for a design system based on the NL Design System architecture",
   "license": "EUPL-1.2",
@@ -25,5 +25,12 @@
     "postcss-discard-duplicates": "7.0.1",
     "rollup": "4.12.1",
     "rollup-plugin-postcss": "4.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:GemeenteNijmegen/design-system.git"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.8",
   "author": "gemeente Nijmegen",
   "description": "Font package for the Municipality of Nijmegen",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -17,7 +17,8 @@
     "access": "public"
   },
   "files": [
-    "src"
+    "src",
+    "ordana"
   ],
   "repository": {
     "type": "git+ssh",
