@@ -4,5 +4,5 @@
  */
 
 .utrecht-ordered-list {
-  line-height: var(--utrecht-unordered-list-line-height, var(--utrecht-document-line-height, inherit));
+  line-height: var(--utrecht-unordered-list-line-height, var(--utrecht-document-line-height, inherit)) !important;
 }
