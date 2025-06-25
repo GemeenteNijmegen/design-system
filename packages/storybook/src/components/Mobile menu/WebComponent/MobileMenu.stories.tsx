@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import HtmlTransformer from '../../../../scripts/HtmlTransformer';
-import { MobileMenuStoryHtml } from '../MobileMenu';
+import { MobileMenuStoryWebComponent } from '../MobileMenu';
 
 const meta = {
-  title: 'Components/Mobile Menu/Html Implementation',
-  id: 'html-mobile-menu',
-  component: MobileMenuStoryHtml,
+  title: 'Components/Mobile Menu/Web Component Implementation',
+  id: 'web-component-mobile-menu',
+  component: MobileMenuStoryWebComponent,
   argTypes: {},
   args: {},
   parameters: {
@@ -18,7 +18,7 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof MobileMenuStoryHtml>;
+} satisfies Meta<typeof MobileMenuStoryWebComponent>;
 export default meta;
 type Story = StoryObj<typeof meta>;
 

@@ -79,7 +79,8 @@
     }
   }
 
-  &--expanded {
+  &--expanded,
+  &[aria-expanded="true"] {
     background-color: var(--nijmegen-menu-link-expanded-background-color);
     color: var(--nijmegen-menu-link-expanded-color);
     font-weight: var(--nijmegen-menu-link-expanded-font-weight, 600);
