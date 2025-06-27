@@ -1,11 +1,4 @@
-import {
-  IconArrowRight,
-  IconChevronDown,
-  IconChevronLeft,
-  IconExternalLink,
-  IconUser,
-  IconWorld,
-} from '@tabler/icons-react';
+import { IconExternalLink, IconUser, IconWorld } from '@tabler/icons-react';
 import '@gemeentenijmegen/components-css';
 import '@gemeentenijmegen/web-components/src/mobile-menu/mobile-menu.js';
 
@@ -24,19 +17,20 @@ export const MobileMenuStoryWebComponent = () => {
         </li>
         <li>
           <div className="nijmegen-mobile-menu__details">
-            <button aria-expanded="false" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--strong">
-              <span>Onderwerpen</span> <IconChevronDown />
+            <button
+              aria-expanded="false"
+              className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--chevron nijmegen-mobile-menu__link--strong"
+            >
+              <span>Onderwerpen</span>
             </button>
             <ul className="nijmegen-mobile-menu__list">
               <li>
-                <button className="nijmegen-mobile-menu__link" data-panel>
-                  <span>Identiteit</span> <IconArrowRight />
+                <button className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow" data-panel>
+                  <span>Identiteit</span>
                 </button>
                 <div className="nijmegen-mobile-menu__panel">
                   <button className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--back" data-panel>
-                    <span>
-                      <IconChevronLeft /> Identiteit
-                    </span>
+                    <span>Identiteit</span>
                   </button>
                   <ul className="nijmegen-mobile-menu__list">
                     <li>
@@ -63,14 +57,12 @@ export const MobileMenuStoryWebComponent = () => {
                 </div>
               </li>
               <li>
-                <button className="nijmegen-mobile-menu__link" data-panel>
-                  <span>Wonen</span> <IconArrowRight />
+                <button className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow" data-panel>
+                  <span>Wonen</span>
                 </button>
                 <div className="nijmegen-mobile-menu__panel">
                   <button className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--back" data-panel>
-                    <span>
-                      <IconChevronLeft /> Wonen
-                    </span>
+                    <span>Wonen</span>
                   </button>
                   <ul className="nijmegen-mobile-menu__list">
                     <li>
@@ -114,12 +106,11 @@ export const MobileMenuStoryWebComponent = () => {
           <div className="nijmegen-mobile-menu__details">
             <button
               aria-expanded="false"
-              className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--strong nijmegen-mobile-menu__link--small"
+              className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--chevron nijmegen-mobile-menu__link--strong nijmegen-mobile-menu__link--small"
             >
               <span>
                 <IconWorld /> Nederlands
               </span>{' '}
-              <IconChevronDown />
             </button>
             <ul className="nijmegen-mobile-menu__list">
               <li>
@@ -182,19 +173,20 @@ export const MobileMenuStoryHtml = () => {
         </li>
         <li>
           <div className="nijmegen-mobile-menu__details">
-            <button aria-expanded="false" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--strong">
-              <span>Onderwerpen</span> <IconChevronDown />
+            <button
+              aria-expanded="false"
+              className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--chevron nijmegen-mobile-menu__link--strong"
+            >
+              <span>Onderwerpen</span>
             </button>
             <ul className="nijmegen-mobile-menu__list">
               <li>
-                <button className="nijmegen-mobile-menu__link" data-panel>
-                  <span>Identiteit</span> <IconArrowRight />
+                <button className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow" data-panel>
+                  <span>Identiteit</span>
                 </button>
                 <div className="nijmegen-mobile-menu__panel">
                   <button className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--back" data-panel>
-                    <span>
-                      <IconChevronLeft /> Identiteit
-                    </span>
+                    <span>Identiteit</span>
                   </button>
                   <ul className="nijmegen-mobile-menu__list">
                     <li>
@@ -221,14 +213,12 @@ export const MobileMenuStoryHtml = () => {
                 </div>
               </li>
               <li>
-                <button className="nijmegen-mobile-menu__link" data-panel>
-                  <span>Wonen</span> <IconArrowRight />
+                <button className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow" data-panel>
+                  <span>Wonen</span>
                 </button>
                 <div className="nijmegen-mobile-menu__panel">
                   <button className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--back" data-panel>
-                    <span>
-                      <IconChevronLeft /> Wonen
-                    </span>
+                    <span>Wonen</span>
                   </button>
                   <ul className="nijmegen-mobile-menu__list">
                     <li>
@@ -272,12 +262,11 @@ export const MobileMenuStoryHtml = () => {
           <div className="nijmegen-mobile-menu__details">
             <button
               aria-expanded="false"
-              className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--strong nijmegen-mobile-menu__link--small"
+              className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--chevron nijmegen-mobile-menu__link--strong nijmegen-mobile-menu__link--small"
             >
               <span>
                 <IconWorld /> Nederlands
               </span>{' '}
-              <IconChevronDown />
             </button>
             <ul className="nijmegen-mobile-menu__list">
               <li>
