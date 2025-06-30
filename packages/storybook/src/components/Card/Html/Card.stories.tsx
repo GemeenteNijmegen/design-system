@@ -43,7 +43,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 export const Default: Story = {
-  name: 'Card news',
+  name: 'Card',
   args: {
     title: 'Ondernemers opgelet',
     text: 'Ondernemers en bedrijven uit Nijmegen opgelet!',
@@ -58,10 +58,22 @@ export const Default: Story = {
   },
 };
 
+export const News: Story = {
+  name: 'Card news',
+  args: {
+    title: 'Ondernemers opgelet',
+    text: 'Ondernemers en bedrijven uit Nijmegen opgelet!',
+    image: 'https://picsum.photos/640/360/',
+    image_alt: 'Image description',
+    date: '7 februari 2024',
+  },
+};
+
 export const Event: Story = {
   name: 'Card event',
   args: {
     title: 'Bevrijdingsdag 2025',
+    text: 'Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod',
     image: 'https://picsum.photos/640/360/',
     image_alt: 'Image description',
     meta: [
@@ -89,5 +101,6 @@ export const NoImage: Story = {
     text: 'Ondernemers en bedrijven uit Nijmegen opgelet!',
     image: '',
     image_alt: '',
+    date: '7 februari 2024',
   },
 };

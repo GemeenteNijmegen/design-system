@@ -58,7 +58,7 @@ export const argTypes = {
 export const CardStory = ({
   title = '',
   text = '',
-  meta = [{ children: '', icon: null as any }],
+  meta = [] as { children: string; icon: any }[],
   image = '',
   image_alt = '',
   date = '',
@@ -80,18 +80,23 @@ export const CardStory = ({
               {title}
             </a>
           </Heading4>
-          {text && <Paragraph>{text}</Paragraph>}
+          {/* If no meta is set (or meta is empty), put paragraph here */}
+          {(!meta || meta.length === 0) && text && <Paragraph>{text}</Paragraph>}
         </div>
 
         {meta.length > 0 && (
-          <ul className="nijmegen-card__meta">
-            {meta.map((item, index) => (
-              <li key={index} className="nijmegen-card__meta-item">
-                {item.icon}
-                {item.children}
-              </li>
-            ))}
-          </ul>
+          <>
+            <ul className="nijmegen-card__meta">
+              {meta.map((item, index) => (
+                <li key={index} className="nijmegen-card__meta-item">
+                  {item.icon}
+                  {item.children}
+                </li>
+              ))}
+            </ul>
+            {/* If meta is set, put paragraph here */}
+            {text && <Paragraph>{text}</Paragraph>}
+          </>
         )}
       </div>
 
