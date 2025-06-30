@@ -1,4 +1,5 @@
 @import "~@gemeentenijmegen/layout-css/src/variables";
+@import "./mixin";
 
 .nijmegen-mobile-menu {
   background-color: var(--nijmegen-menu-background-color);
@@ -33,6 +34,7 @@
   width: 100%; /* stylelint-disable-line property-disallowed-list */
 
   span {
+    align-items: center;
     display: inline-flex;
     gap: var(--nijmegen-menu-link-column-gap);
   }
@@ -63,6 +65,15 @@
     padding-block-start: var(--nijmegen-menu-button-padding-block-start);
     padding-inline-end: var(--nijmegen-menu-button-padding-inline-end);
     padding-inline-start: var(--nijmegen-menu-button-padding-inline-start);
+
+    span::before {
+      @include nijmegen-mobile-menu-icon-base;
+
+      mask-image: var(
+        --nijmegen-header-item-open-icon-image,
+        url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>')
+      );
+    }
   }
 
   &--current {
@@ -85,9 +96,28 @@
     color: var(--nijmegen-menu-link-expanded-color);
     font-weight: var(--nijmegen-menu-link-expanded-font-weight, 600);
 
-    svg {
+    svg,
+    &::after {
       transform: scaleY(-1);
     }
+  }
+
+  &--chevron::after {
+    @include nijmegen-mobile-menu-icon-base;
+
+    mask-image: var(
+      --nijmegen-header-item-open-icon-image,
+      url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>')
+    );
+  }
+
+  &--arrow::after {
+    @include nijmegen-mobile-menu-icon-base;
+
+    mask-image: var(
+      --nijmegen-header-item-open-icon-image,
+      url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>')
+    );
   }
 
   &:is(button) {
