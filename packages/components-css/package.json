@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "build": "rollup -c ./rollup.config.mjs",
+    "watch": "rollup -c ./rollup.config.mjs --watch",
     "clean": "rimraf dist"
   },
   "main": "dist/index.min.css",
