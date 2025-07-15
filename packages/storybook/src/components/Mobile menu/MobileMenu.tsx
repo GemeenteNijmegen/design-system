@@ -1,4 +1,5 @@
 import { IconExternalLink, IconUser, IconWorld } from '@tabler/icons-react';
+import { Separator } from '@utrecht/component-library-react/dist/css-module';
 import '@gemeentenijmegen/components-css';
 import '@gemeentenijmegen/web-components/src/mobile-menu/mobile-menu.js';
 
@@ -54,6 +55,9 @@ export const MobileMenuStoryWebComponent = () => {
                       </a>
                     </li>
                   </ul>
+                  <div className="nijmegen-mobile-menu__separator">
+                    <Separator />
+                  </div>
                 </div>
               </li>
               <li>
@@ -86,6 +90,9 @@ export const MobileMenuStoryWebComponent = () => {
                       </a>
                     </li>
                   </ul>
+                  <div className="nijmegen-mobile-menu__separator">
+                    <Separator />
+                  </div>
                 </div>
               </li>
             </ul>
@@ -94,12 +101,20 @@ export const MobileMenuStoryWebComponent = () => {
 
         <li>
           <a href="/" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--strong">
-            Over de gemeente
+            Nieuws
+          </a>
+        </li>
+
+        <li>
+          <a href="/" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--strong">
+            Contact
           </a>
         </li>
       </ul>
 
-      <hr></hr>
+      <div className="nijmegen-mobile-menu__separator">
+        <Separator />
+      </div>
 
       <ul className="nijmegen-mobile-menu__list">
         <li>
@@ -210,6 +225,9 @@ export const MobileMenuStoryHtml = () => {
                       </a>
                     </li>
                   </ul>
+                  <div className="nijmegen-mobile-menu__separator">
+                    <Separator />
+                  </div>
                 </div>
               </li>
               <li>
@@ -242,6 +260,9 @@ export const MobileMenuStoryHtml = () => {
                       </a>
                     </li>
                   </ul>
+                  <div className="nijmegen-mobile-menu__separator">
+                    <Separator />
+                  </div>
                 </div>
               </li>
             </ul>
@@ -250,12 +271,19 @@ export const MobileMenuStoryHtml = () => {
 
         <li>
           <a href="/" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--strong">
-            Over de gemeente
+            Nieuws
+          </a>
+        </li>
+        <li>
+          <a href="/" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--strong">
+            Contact
           </a>
         </li>
       </ul>
 
-      <hr></hr>
+      <div className="nijmegen-mobile-menu__separator">
+        <Separator />
+      </div>
 
       <ul className="nijmegen-mobile-menu__list">
         <li>

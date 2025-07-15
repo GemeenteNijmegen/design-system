@@ -20,9 +20,6 @@ class NijmegenMobileMenu extends HTMLElement {
       const expandableElements = child.querySelectorAll('[aria-expanded]');
       const panelElements = child.querySelectorAll('[data-panel]');
 
-      console.log('expandableElements ' + expandableElements.length);
-      console.log('panelElements ' + panelElements.length);
-
       // Expandable elements
       expandableElements.forEach((element) => {
         element.addEventListener('click', (event) => {
