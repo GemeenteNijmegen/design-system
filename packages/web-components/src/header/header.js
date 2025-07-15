@@ -17,7 +17,7 @@ class NijmegenHeader extends HTMLElement {
 
   connectedCallback() {
     Array.from(this.children).forEach((child) => {
-      const expandableElements = child.querySelectorAll('[aria-expanded]');
+      const expandableElements = child.querySelectorAll('[aria-expanded]:not(.nijmegen-mobile-menu__link)');
       expandableElements.forEach((element) => {
         element.addEventListener('click', (event) => {
           let target = event.target;
