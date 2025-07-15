@@ -1,6 +1,7 @@
 import '@gemeentenijmegen/components-css';
 import clsx from 'clsx';
 import { renderToStaticMarkup } from 'react-dom/server';
+import { MobileMenuStoryHtml, MobileMenuStoryWebComponent } from '../../Mobile menu/MobileMenu';
 import '@gemeentenijmegen/web-components/src/header/header.js';
 
 const logoString = encodeURIComponent(
@@ -325,33 +326,40 @@ export const HeaderStoryWebComponent = ({ state = '' }) => {
   return (
     <nijmegen-header>
       <div className="nijmegen-header__content--small">
-        <button
-          className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu', {
-            'nijmegen-toolbar-button--active': state === 'active',
-            'nijmegen-toolbar-button--hover': state === 'hover',
-            'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-          })}
-          type="button"
-          aria-expanded={expanded}
-          aria-label="Menu openen"
-        >
-          Menu
-        </button>
-        <div>
-          <img src={logoMerk} alt="Beeldmerk gemeente Nijmegen"></img>
+        <div className="nijmegen-header__content--small--inner">
+          <button
+            className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu', {
+              'nijmegen-toolbar-button--active': state === 'active',
+              'nijmegen-toolbar-button--hover': state === 'hover',
+              'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+            })}
+            type="button"
+            aria-expanded={expanded}
+            aria-controls="mobile-menu"
+            aria-label="Menu openen"
+          >
+            Menu
+          </button>
+          <div>
+            <img src={logoMerk} alt="Beeldmerk gemeente Nijmegen"></img>
+          </div>
+          <button
+            className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-search', {
+              'nijmegen-toolbar-button--active': state === 'active',
+              'nijmegen-toolbar-button--hover': state === 'hover',
+              'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+            })}
+            type="button"
+            aria-expanded={expanded}
+            aria-label="Menu openen"
+          >
+            Zoeken
+          </button>
         </div>
-        <button
-          className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-search', {
-            'nijmegen-toolbar-button--active': state === 'active',
-            'nijmegen-toolbar-button--hover': state === 'hover',
-            'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-          })}
-          type="button"
-          aria-expanded={expanded}
-          aria-label="Menu openen"
-        >
-          Zoeken
-        </button>
+
+        <div id="mobile-menu" className="nijmegen-header__mobile-menu">
+          <MobileMenuStoryWebComponent />
+        </div>
       </div>
       <div className="nijmegen-header__content">
         <div>
@@ -622,33 +630,39 @@ export const HeaderStoryHtml = ({ state = '', expanded = '' }) => {
   return (
     <header className="nijmegen-header">
       <div className="nijmegen-header__content--small">
-        <button
-          className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu', {
-            'nijmegen-toolbar-button--active': state === 'active',
-            'nijmegen-toolbar-button--hover': state === 'hover',
-            'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-          })}
-          type="button"
-          aria-expanded={expanded}
-          aria-label="Menu openen"
-        >
-          Menu
-        </button>
-        <div>
-          <img src={logoMerk} alt="Beeldmerk gemeente Nijmegen"></img>
+        <div className="nijmegen-header__content--small--inner">
+          <button
+            className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu', {
+              'nijmegen-toolbar-button--active': state === 'active',
+              'nijmegen-toolbar-button--hover': state === 'hover',
+              'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+            })}
+            type="button"
+            aria-expanded={expanded}
+            aria-label="Menu openen"
+          >
+            Menu
+          </button>
+          <div>
+            <img src={logoMerk} alt="Beeldmerk gemeente Nijmegen"></img>
+          </div>
+          <button
+            className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-search', {
+              'nijmegen-toolbar-button--active': state === 'active',
+              'nijmegen-toolbar-button--hover': state === 'hover',
+              'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+            })}
+            type="button"
+            aria-expanded={expanded}
+            aria-label="Menu openen"
+          >
+            Zoeken
+          </button>
         </div>
-        <button
-          className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-search', {
-            'nijmegen-toolbar-button--active': state === 'active',
-            'nijmegen-toolbar-button--hover': state === 'hover',
-            'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-          })}
-          type="button"
-          aria-expanded={expanded}
-          aria-label="Menu openen"
-        >
-          Zoeken
-        </button>
+
+        <div className="nijmegen-header__mobile-menu">
+          <MobileMenuStoryHtml />
+        </div>
       </div>
       <div className="nijmegen-header__content">
         <div>

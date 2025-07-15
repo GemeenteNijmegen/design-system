@@ -3,8 +3,6 @@
 
 .nijmegen-header {
   background-color: var(--nijmegen-header-background-color, #fff);
-  border: 0 solid var(--nijmegen-header-border-color, transparent);
-  border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
   writing-mode: horizontal-tb;
 }
 
@@ -17,10 +15,20 @@
 }
 
 .nijmegen-header__content--small {
-  @include nijmegen-header-content;
+  &--inner {
+    @include nijmegen-header-content;
+  }
 
   @media (width >=1024px) {
     display: none;
+  }
+}
+
+.nijmegen-header__mobile-menu {
+  display: none;
+
+  &--visible {
+    display: block;
   }
 }
 

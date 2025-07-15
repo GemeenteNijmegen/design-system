@@ -31,10 +31,20 @@ class NijmegenHeader extends HTMLElement {
     expandableElements.forEach((element) => {
       if (element !== target) {
         element.ariaExpanded = 'false';
+        this.#handleMobileMenu(element);
       } else {
         element.ariaExpanded = element.ariaExpanded === 'true' ? 'false' : 'true';
+        this.#handleMobileMenu(target);
       }
     });
+  }
+
+  #handleMobileMenu(button) {
+    if (button.getAttribute('aria-controls') !== 'mobile-menu') return;
+
+    const mobileMenu = document.getElementById('mobile-menu');
+    const visibleClass = 'nijmegen-header__mobile-menu--visible';
+    mobileMenu.classList.toggle(visibleClass, button.getAttribute('aria-expanded') === 'true');
   }
 }
 
