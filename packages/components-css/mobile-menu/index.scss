@@ -3,7 +3,6 @@
 
 .nijmegen-mobile-menu {
   background-color: var(--nijmegen-menu-background-color);
-  max-width: var(--nijmegen-menu-max-width, 360px); /* stylelint-disable-line property-disallowed-list */
   position: relative;
 }
 
@@ -140,6 +139,11 @@
       display: block;
     }
   }
+}
+
+.nijmegen-mobile-menu__separator {
+  padding-inline-end: var(--nijmegen-menu-link-padding-inline-end);
+  padding-inline-start: var(--nijmegen-menu-link-padding-inline-start);
 }
 
 .nijmegen-mobile-menu__panel {
