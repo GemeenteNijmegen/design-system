@@ -610,7 +610,7 @@ export const HeaderStoryWebComponent = ({ state = '' }) => {
             })}
             aria-label="Mijn Nijmegen"
           >
-            Mijn Nijmegen
+            <span>Mijn Nijmegen</span>
           </a>
         </div>
       </div>
@@ -730,7 +730,7 @@ export const HeaderStoryHtml = ({ state = '', expanded = '' }) => {
             })}
             aria-label="Mijn Nijmegen"
           >
-            Mijn Nijmegen
+            <span>Mijn Nijmegen</span>
           </a>
         </div>
       </div>

@@ -11,7 +11,7 @@
 .nijmegen-header__content {
   @include nijmegen-header-content;
 
-  @media (width <1280px) {
+  @media (width <1024px) {
     display: none;
   }
 }
@@ -19,7 +19,7 @@
 .nijmegen-header__content--small {
   @include nijmegen-header-content;
 
-  @media (width >=1280px) {
+  @media (width >=1024px) {
     display: none;
   }
 }
@@ -110,6 +110,12 @@
   }
 
   &--icon-user {
+    span {
+      @media (width <1280px) {
+        display: none;
+      }
+    }
+
     &::before {
       mask-image: var(
         --nijmegen-header-item-search-icon-image,
