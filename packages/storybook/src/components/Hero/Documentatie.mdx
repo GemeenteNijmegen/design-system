@@ -1,5 +1,5 @@
 import { Canvas } from '@storybook/addon-docs';
-import { Unstyled } from "@storybook/blocks";
+import * as HeroStories from './Html/Hero.stories';
 
 # Documentatie hero component
 
@@ -10,3 +10,11 @@ Dit component is op maat ontwikkeld op basis van het ontwerp voor de Gemeente Ni
 | Link                                                                                                                                           | Omschrijving                                                    |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
 | [Figma gemeente Nijmegen](https://www.figma.com/design/g3AieWAFD3NtkbDDTTFC30/Novio---Nijmegen-Design-System?node-id=1259-2043) | Design documentatie van dit component.                           |
+
+### Homepage
+
+<Canvas of={HeroStories.Default} sourceState="none" />
+
+### Catogory
+
+<Canvas of={HeroStories.Category} sourceState="none" />
