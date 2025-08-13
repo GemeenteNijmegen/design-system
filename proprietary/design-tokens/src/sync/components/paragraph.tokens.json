@@ -64,6 +64,16 @@
           "value": "{utrecht.document.line-height}",
           "type": "lineHeights"
         }
+      },
+      "margin-block-end": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing",
+        "description": "code-only"
+      },
+      "margin-block-start": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing",
+        "description": "code-only"
       }
     }
   }
