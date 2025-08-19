@@ -18,7 +18,8 @@
   },
   "files": [
     "src",
-    "ordana"
+    "ordana",
+    "source-sans-pro"
   ],
   "repository": {
     "type": "git+ssh",
