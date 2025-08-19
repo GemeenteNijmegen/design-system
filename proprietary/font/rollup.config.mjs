@@ -1,6 +1,5 @@
 import postcss from "rollup-plugin-postcss";
 import discardDuplicates from "postcss-discard-duplicates";
-import copy from 'rollup-plugin-copy'
 
 export default [
   {
@@ -17,13 +16,6 @@ export default [
         plugins: [discardDuplicates()],
         extract: true,
       }),
-      copy({
-        targets: [
-           { src: 'node_modules/@fontsource/source-sans-pro/400.css', dest: 'dist/@fontsource/source-sans-pro' },
-           { src: 'node_modules/@fontsource/source-sans-pro/600.css', dest: 'dist/@fontsource/source-sans-pro' },
-           { src: 'node_modules/@fontsource/source-sans-pro/700.css', dest: 'dist/@fontsource/source-sans-pro' },
-        ]
-      })
     ],
   },
   {
