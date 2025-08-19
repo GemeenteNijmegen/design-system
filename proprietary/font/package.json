@@ -30,7 +30,6 @@
   "devDependencies": {
     "postcss-discard-duplicates": "7.0.1",
     "rollup": "4.12.1",
-    "rollup-plugin-copy": "3.4.0",
     "rollup-plugin-postcss": "4.0.2"
   }
 }
