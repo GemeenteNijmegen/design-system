@@ -110,7 +110,7 @@ export const CardStory = ({
         <IconArrowRight />
         {date && (
           <div className="nijmegen-card__meta-item">
-            <IconCalendarEvent />
+            <IconCalendarEvent aria-label="Datum: " />
             <span>{date}</span>
           </div>
         )}
