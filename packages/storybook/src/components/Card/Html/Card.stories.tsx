@@ -51,9 +51,9 @@ export const Default: Story = {
     image_alt: 'Image description',
     date: '7 februari 2024',
     meta: [
-      { children: 'Meta 1', icon: <IconCalendarEvent /> },
-      { children: 'Meta 2', icon: <IconClock /> },
-      { children: 'Meta 3', icon: <IconMapPin /> },
+      { children: 'Meta 1', icon: <IconCalendarEvent aria-label="Datum: " /> },
+      { children: 'Meta 2', icon: <IconClock aria-label="Tijd: " /> },
+      { children: 'Meta 3', icon: <IconMapPin aria-label="Locatie: " /> },
     ] as Array<{ children: string; icon: any }>,
   },
 };
@@ -77,9 +77,9 @@ export const Event: Story = {
     image: 'https://picsum.photos/640/360/',
     image_alt: 'Image description',
     meta: [
-      { children: 'Meta 1', icon: <IconCalendarEvent /> },
-      { children: 'Meta 2', icon: <IconClock /> },
-      { children: 'Meta 3', icon: <IconMapPin /> },
+      { children: 'Meta 1', icon: <IconCalendarEvent aria-label="Datum: " /> },
+      { children: 'Meta 2', icon: <IconClock aria-label="Tijd: " /> },
+      { children: 'Meta 3', icon: <IconMapPin aria-label="Locatie: " /> },
     ] as Array<{ children: string; icon: any }>,
   },
 };
