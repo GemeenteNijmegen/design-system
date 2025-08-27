@@ -1,4 +1,4 @@
-import { Heading1, Heading2, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { Heading1, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import '@gemeentenijmegen/components-css';
 import clsx from 'clsx';
 
@@ -49,7 +49,7 @@ export const HeroStory = ({ title = '', text = '', image = '', image_alt = '', t
         <div className="nijmegen-hero__content">
           <div className="nijmegen-hero__content--heading">
             {title && <Heading1>{title}</Heading1>}
-            {text && type === 'home' && <Heading2>{text}</Heading2>}
+            {text && type === 'home' && <p className="utrecht-heading-2">{text}</p>}
           </div>
           {text && type === 'category' && <Paragraph>{text}</Paragraph>}
         </div>
