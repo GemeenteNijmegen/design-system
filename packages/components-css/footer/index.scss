@@ -11,6 +11,11 @@
     color: inherit;
     text-decoration-color: inherit;
 
+    &:any-link {
+      color: inherit;
+      text-decoration-color: inherit;
+    }
+
     &:focus {
       color: var(--nijmegen-link-list-item-focus-color, #000);
       text-decoration: var(--nijmegen-link-list-item-focus-text-decoration, none);
