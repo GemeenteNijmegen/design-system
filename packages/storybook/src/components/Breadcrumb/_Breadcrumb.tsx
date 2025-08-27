@@ -14,7 +14,7 @@ export const argTypes = {
 
 export const BreadcrumbStory = ({ current = true }) => {
   return (
-    <nav aria-label="Breadcrumb" className="nijmegen-breadcrumb">
+    <nav aria-label="Broodkruimelnavigatie" className="nijmegen-breadcrumb">
       <a className="nijmegen-breadcrumb__link nijmegen-breadcrumb__link--mobile" href="https://nijmegen.nl/afval">
         <span itemProp="name" className="nijmegen-breadcrumb__text">
           Fruit
