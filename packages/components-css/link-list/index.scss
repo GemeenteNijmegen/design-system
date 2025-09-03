@@ -9,4 +9,7 @@
 
 .nijmegen-link-list__link:any-link {
   @include nijmegen-link-list__link;
+  &::before {
+    @include nijmegen-link-list__link-before;
+  }
 }

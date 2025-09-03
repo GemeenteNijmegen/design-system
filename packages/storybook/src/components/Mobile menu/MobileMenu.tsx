@@ -12,6 +12,7 @@ export const MobileMenuStoryWebComponent = () => {
             href="/"
             target="_self"
             className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--strong nijmegen-mobile-menu__link--current"
+            tabIndex="0"
           >
             Home
           </a>
@@ -26,7 +27,12 @@ export const MobileMenuStoryWebComponent = () => {
             </button>
             <ul className="nijmegen-mobile-menu__list">
               <li>
-                <button className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow" data-panel>
+                <button
+                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                  aria-expanded="false"
+                  tabIndex="0"
+                  data-panel
+                >
                   <span>Identiteit</span>
                 </button>
                 <div className="nijmegen-mobile-menu__panel">
@@ -61,7 +67,12 @@ export const MobileMenuStoryWebComponent = () => {
                 </div>
               </li>
               <li>
-                <button className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow" data-panel>
+                <button
+                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                  aria-expanded="false"
+                  tabIndex="0"
+                  data-panel
+                >
                   <span>Wonen</span>
                 </button>
                 <div className="nijmegen-mobile-menu__panel">
