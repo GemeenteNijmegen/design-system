@@ -12,23 +12,24 @@
   list-style: none;
 }
 
+@mixin nijmegen-link-list__link-before {
+  background-color: var(--utrecht-link-color);
+  content: "";
+  display: inline-block;
+  height: var(--nijmegen-icon-functional-size-height, 0.875rem); /* stylelint-disable-line property-disallowed-list */
+  mask-image: var(
+    --nijmegen-link-list-icon,
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></svg>')
+  );
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  width: var(--nijmegen-icon-functional-size-width, 1.5rem); /* stylelint-disable-line property-disallowed-list */
+}
+
 @mixin nijmegen-link-list__link {
   color: var(--utrecht-link-color);
   text-decoration: var(--nijmegen-link-list-item-text-decoration, none);
-  &::before {
-    background-color: var(--utrecht-link-color);
-    content: "";
-    display: inline-block;
-    height: var(--nijmegen-icon-functional-size-height, 0.875rem); /* stylelint-disable-line property-disallowed-list */
-    mask-image: var(
-      --nijmegen-link-list-icon,
-      url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></svg>')
-    );
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: 100%;
-    width: var(--nijmegen-icon-functional-size-width, 1.5rem); /* stylelint-disable-line property-disallowed-list */
-  }
   &:active,
   &.nijmegen-link-list__link--active {
     @include utrecht-link--active;

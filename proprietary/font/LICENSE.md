@@ -1,7 +1,5 @@
 # License
 
-Copyright (c) {year} {author}. All rights reserved.
-
-The open source license does NOT apply to files in this directory.
-
-These are properietary assets to {author}.
+Code: EUPL v1.2
+Source Sans Pro font: [SIL Open Font License, Version 1.1](https://openfontlicense.org/open-font-license-official-text/)
+Oranda BT font: Copyright Bitstream, @todo add license
