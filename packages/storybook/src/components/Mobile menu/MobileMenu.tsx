@@ -12,7 +12,6 @@ export const MobileMenuStoryWebComponent = () => {
             href="/"
             target="_self"
             className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--strong nijmegen-mobile-menu__link--current"
-            tabIndex="0"
           >
             Home
           </a>

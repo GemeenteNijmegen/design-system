@@ -351,7 +351,7 @@ export const HeaderStoryWebComponent = ({ state = '' }) => {
             })}
             type="button"
             aria-expanded={expanded}
-            aria-label="Menu openen"
+            aria-label="Zoeken"
           >
             Zoeken
           </button>
