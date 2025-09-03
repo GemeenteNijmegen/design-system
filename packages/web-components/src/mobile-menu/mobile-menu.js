@@ -17,53 +17,87 @@ class NijmegenMobileMenu extends HTMLElement {
 
   connectedCallback() {
     Array.from(this.children).forEach((child) => {
-      const expandableElements = child.querySelectorAll('[aria-expanded]');
-      const panelElements = child.querySelectorAll('[data-panel]');
-
-      // Expandable elements
-      expandableElements.forEach((element) => {
-        element.addEventListener('click', (event) => {
-          let target = event.target.closest('[aria-expanded]');
-          if (target) {
-            this.#handleExpandableClick(target, expandableElements);
-          }
-        });
-      });
-
-      // Sub menu
-      panelElements.forEach((element) => {
-        element.addEventListener('click', (event) => {
-          let target = event.target.closest('[data-panel]');
-          if (target) {
-            this.#handlePanelClick(target, panelElements);
-          }
-        });
-      });
-    });
-  }
-
-  #handleExpandableClick(target, elements) {
-    elements.forEach((element) => {
-      if (element === target) {
-        if (element.ariaExpanded === 'true') {
-          element.ariaExpanded = 'false';
-          element.parentElement.classList.remove('nijmegen-mobile-menu__details--open');
-        } else {
-          element.ariaExpanded = 'true';
-          element.parentElement.classList.add('nijmegen-mobile-menu__details--open');
+      child.addEventListener('click', (event) => {
+        const expandableTarget = event.target.closest('[aria-expanded]');
+        if (expandableTarget && !expandableTarget.hasAttribute('data-panel')) {
+          this.#handleExpandableClick(expandableTarget);
+          return;
         }
-      }
+
+        const panelTarget = event.target.closest('[data-panel]');
+        if (panelTarget) {
+          this.#handlePanelClick(panelTarget, false);
+        }
+      });
+
+      child.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          const panelTarget = event.target.closest('[data-panel]');
+          if (panelTarget) {
+            event.preventDefault();
+            this.#handlePanelClick(panelTarget, true);
+          }
+        }
+      });
+
+      child.addEventListener('focusout', (event) => {
+        // Timeout is needed to allow the new focus to be set
+        setTimeout(() => {
+          this.#handleFocusOut(event.target);
+        }, 0);
+      });
     });
   }
 
-  #handlePanelClick(target, elements) {
-    elements.forEach((element) => {
-      if (element === target) {
-        const liParent = element.closest('li');
-        const panel = liParent.querySelector('.nijmegen-mobile-menu__panel');
-        panel.classList.toggle('nijmegen-mobile-menu__panel--active');
+  #handleFocusOut(formerFocusedElement) {
+    const panel = formerFocusedElement.closest('.nijmegen-mobile-menu__panel');
+    if (!panel) return;
+
+    const currentFocusedElement = document.activeElement;
+    const inPanel = currentFocusedElement && panel.contains(currentFocusedElement);
+
+    if (!inPanel) {
+      this.#closeSubmenu(panel);
+    }
+  }
+
+  #closeSubmenu(panel) {
+    const li = panel.closest('li');
+    const button = li?.querySelector('[aria-expanded]');
+
+    if (button && button.ariaExpanded === 'true') {
+      button.ariaExpanded = 'false';
+      panel.classList.remove('nijmegen-mobile-menu__panel--active');
+    }
+  }
+
+  #handleExpandableClick(target) {
+    const isExpanded = target.ariaExpanded === 'true';
+    const parentElement = target.parentElement;
+
+    target.ariaExpanded = isExpanded ? 'false' : 'true';
+    parentElement.classList.toggle('nijmegen-mobile-menu__details--open', !isExpanded);
+  }
+
+  #handlePanelClick(target, isKeyboard) {
+    const li = target.closest('li');
+    const button = li?.querySelector('[aria-expanded]');
+    const panel = li?.querySelector('.nijmegen-mobile-menu__panel');
+
+    if (!button || !panel) return;
+
+    const isExpanded = button.ariaExpanded === 'true';
+    button.ariaExpanded = isExpanded ? 'false' : 'true';
+    panel.classList.toggle('nijmegen-mobile-menu__panel--active', !isExpanded);
+
+    if (isKeyboard) {
+      if (!isExpanded) {
+        const firstSubItem = panel.querySelector('a, button, [tabindex="0"]');
+        firstSubItem?.focus();
+      } else {
+        button.focus();
       }
-    });
+    }
   }
 }
 

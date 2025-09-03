@@ -1,4 +1,6 @@
 @import "~@gemeentenijmegen/layout-css/src/variables";
+@import "~@utrecht/link-css/src/mixin";
+@import "~@utrecht/focus-ring-css/src/mixin";
 @import "./mixin";
 
 .nijmegen-mobile-menu {
@@ -31,6 +33,22 @@
   position: relative;
   text-decoration: none;
   width: 100%; /* stylelint-disable-line property-disallowed-list */
+
+  &:is(button) {
+    appearance: none;
+    border: 0;
+  }
+
+  &:focus,
+  &.nijmegen-mobile-menu__link--focus {
+    @include utrecht-link--focus;
+  }
+
+  &:focus-visible,
+  &.nijmegen-mobile-menu__link--focus-visible {
+    @include utrecht-link--focus;
+    @include utrecht-link--focus-visible;
+  }
 
   span {
     align-items: center;
@@ -79,7 +97,7 @@
     color: var(--nijmegen-menu-link-current-color);
     font-weight: var(--nijmegen-menu-link-current-font-weight, 600);
 
-    &::before {
+    &::after {
       border-inline-start-color: var(--nijmegen-menu-link-current-border-color);
       border-inline-start-style: solid;
       border-inline-start-width: var(--nijmegen-menu-link-current-border-width, 4px);
@@ -117,11 +135,6 @@
       --nijmegen-header-item-open-icon-image,
       url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>')
     );
-  }
-
-  &:is(button) {
-    appearance: none;
-    border: 0;
   }
 }
 
