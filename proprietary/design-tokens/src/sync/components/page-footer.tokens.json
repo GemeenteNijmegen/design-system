@@ -26,7 +26,7 @@
         }
       },
       "background-color": {
-        "value": "{nijmegen.color.primary.rood}",
+        "value": "{nijmegen.color.grijs.900}",
         "type": "color"
       },
       "sub-footer": {
@@ -67,7 +67,7 @@
           "type": "borderWidth"
         },
         "border-color": {
-          "value": "{nijmegen.color.rood.400}",
+          "value": "{nijmegen.color.grijs.600}",
           "type": "color"
         }
       },
