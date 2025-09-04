@@ -29,7 +29,7 @@ export const MobileMenuStoryWebComponent = () => {
                 <button
                   className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
                   aria-expanded="false"
-                  tabIndex="0"
+                  aria-haspopup="menu"
                   data-panel
                 >
                   <span>Identiteit</span>
@@ -69,7 +69,7 @@ export const MobileMenuStoryWebComponent = () => {
                 <button
                   className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
                   aria-expanded="false"
-                  tabIndex="0"
+                  aria-haspopup="menu"
                   data-panel
                 >
                   <span>Wonen</span>
