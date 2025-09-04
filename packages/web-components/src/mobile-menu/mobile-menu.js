@@ -92,7 +92,7 @@ class NijmegenMobileMenu extends HTMLElement {
 
     if (isKeyboard) {
       if (!isExpanded) {
-        const firstSubItem = panel.querySelector('a, button, [tabindex="0"]');
+        const firstSubItem = panel.querySelector('a, button');
         firstSubItem?.focus();
       } else {
         button.focus();
