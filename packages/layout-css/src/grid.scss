@@ -1,6 +1,7 @@
 @import "breakpoints";
 
 @mixin make-cssgrid($columns: $nijmegen-grid-columns, $breakpoints: $nijmegen-grid-breakpoints) {
+  /* stylelint-disable-next-line scss/no-global-function-names */
   @each $breakpoint in map-keys($breakpoints) {
     $nijmegen-infix: breakpoint-infix($breakpoint, $breakpoints); // stylelint-disable-line scss/dollar-variable-default
 
