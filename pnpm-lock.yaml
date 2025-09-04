@@ -359,6 +359,11 @@ importers:
       '@gemeentenijmegen/layout-css':
         specifier: workspace:*
         version: link:../layout-css
+<<<<<<< HEAD
+      '@gemeentenijmegen/web-components':
+        specifier: workspace:*
+        version: link:../web-components
+=======
       '@gemeentenijmegen/semantic-html':
         specifier: workspace:*
         version: link:../components-semantic-html
@@ -7200,6 +7205,10 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
+<<<<<<< HEAD
+  /@utrecht/button-css@2.3.1:
+    resolution: {integrity: sha512-gjCVKTzsV/2TOTrYANHFP1f9RqXc/6lY+gC37q9KaEJZ55+37mVKeNubCO1ntFRJeGY+4oCT5ti2rtX4jqDjqg==}
+=======
   /@utrecht/button-css@2.3.0:
     resolution: {integrity: sha512-3RYtaqzG3ZvOH5RcGXbKLv3HizTacYXd4BPolzDKYMbw/1J/x6/A6wRovzsUoOIhoIIZp0S25/OpxdPnwt3QQw==}
     dev: true
@@ -7242,6 +7251,8 @@ packages:
       clsx: 1.2.1
     dev: true
 
+<<<<<<< HEAD
+=======
   /@utrecht/document-css@1.5.0:
     resolution: {integrity: sha512-BULQJRt7KUjsOuh6uol89AN3LjghH4U1m7C4OWTcqyGIXCltCPRKjzhuiUc/qe6twIPNhl72BDZaFV3I8Bbwng==}
     dev: true
@@ -7250,10 +7261,13 @@ packages:
     resolution: {integrity: sha512-HYsULqosoFp9zMypvGuEaGpsl01cW6qKGIYGQa9FZCcCtwXcS0dqFEcjeZJ1yue0RJsk0QuGVBrQOXjsNPNkBg==}
     dev: true
 
+>>>>>>> main
   /@utrecht/focus-ring-css@2.3.1:
     resolution: {integrity: sha512-mmZeNnp2VeYVrnG0uhgkLcX2nVuMW0+oZjJ7lCI1FFODpj3ORmtTi7N5UNjhM3Pyppg5LdDwqMM6jF9clPg5Yg==}
     dev: true
 
+<<<<<<< HEAD
+=======
   /@utrecht/heading-1-css@1.5.0:
     resolution: {integrity: sha512-gDdpZvtTQzY2h4iFOFxOM5Te94/R/uAHTqZbt7Vk34nKhxSe379sKAP5RbScNeWVtR1WfOnLwHPhYfd8t4LLbg==}
     dev: true
@@ -7282,18 +7296,18 @@ packages:
     resolution: {integrity: sha512-wx+Y3b5mnoXxlIpLYCY4pOuLSuazylWSI7T0sRVUEWouEBRq05r7VtGeaard99oDqjwYalFsycnO5GNhH9nVbg==}
     dev: true
 
+>>>>>>> main
   /@utrecht/link-css@1.6.0:
     resolution: {integrity: sha512-fdLo+YYwHA0Y2r5kww0EhoJnLKI1WMPYW9SjJT0asHzYBVWo2YuGqhlp4YlG4uHJPC1KyF201znOx4Pa7YF4Uw==}
     dev: true
 
+<<<<<<< HEAD
+=======
   /@utrecht/paragraph-css@2.3.0:
     resolution: {integrity: sha512-Qo6iX7a0T1xVSxwtmtqdhv30kTNNTLz45OGrdkXMms4IiiXMMsYJ83K43aCY/d89GlH5lwKfyPb9CU64fzfCIQ==}
     dev: true
 
-  /@utrecht/unordered-list-css@1.5.1:
-    resolution: {integrity: sha512-BvpymaFp0CKdcqApqdj4nKhn/99MJ2i+ilYvPS2cgyYJCEZk8eH4GXiHZBX7YzwzLhV95oURnG3DM6RsZ9Ixmg==}
-    dev: true
-
+>>>>>>> main
   /@vitejs/plugin-react@3.1.0(vite@5.1.5):
     resolution: {integrity: sha512-AfgcRL8ZBhAlc3BFdigClmTUMISmmzHn7sB2h9U1odvc5U/MjWXsAaz18b/WoppUTDBzxOJwo2VdClfUcItu9g==}
     engines: {node: ^14.18.0 || >=16.0.0}
