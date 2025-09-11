@@ -25,6 +25,10 @@
   padding-inline-start: var(--nijmegen-mega-menu-content-padding-inline-start, 0);
   row-gap: var(--nijmegen-mega-menu-content-row-gap, 0);
 
+  .utrecht-heading-4 {
+    font-size: 1.25rem;
+  }
+
   > * {
     flex-basis: 100%;
     @media (width >= $nijmegen-breakpoint-md) {
