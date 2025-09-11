@@ -64,6 +64,7 @@
   justify-content: space-between;
   line-height: var(--nijmegen-header-item-line-height, 1.5);
   text-decoration: none;
+  user-select: none;
 
   &[aria-expanded]::after {
     @include nijmegen-header-icon-base;
