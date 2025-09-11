@@ -71,7 +71,7 @@
 
   &--active,
   &[aria-expanded="true"] {
-    font-weight: var(--nijmegen-header-item-current-font-weight, 700);
+    -webkit-text-stroke-width: 1px; // Instead of bold, to prevent text shifting
     & + .nijmegen-header__panel {
       display: block;
     }
