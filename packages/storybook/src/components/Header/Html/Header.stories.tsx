@@ -19,10 +19,22 @@ const meta = {
       control: { type: 'select' },
       options: ['false', 'true'],
     },
+    variant: {
+      name: 'Variant',
+      control: { type: 'select' },
+      options: ['default', 'funnel', 'account'],
+      table: { disable: true },
+    },
+    account: {
+      name: 'Account',
+      control: { type: 'boolean' },
+      table: { disable: true },
+    },
   },
   args: {
     state: 'default',
     expanded: 'false',
+    variant: '',
   },
   parameters: {
     status: {
@@ -40,9 +52,31 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   name: 'Header',
-  //   args: {
-  //     href: 'https://example.com',
-  //     title: 'Link',
-  //     children: 'Link',
-  //   },
+  args: {
+    variant: 'default',
+  },
+};
+
+export const Funnel: Story = {
+  name: 'Funnel',
+  args: {
+    variant: 'funnel',
+    account: false,
+  },
+};
+
+export const FunnelAccount: Story = {
+  name: 'Funnel ingelogd',
+  args: {
+    variant: 'funnel',
+    account: true,
+  },
+};
+
+export const Account: Story = {
+  name: 'Mijn omgeving',
+  args: {
+    variant: 'account',
+    account: true,
+  },
 };
