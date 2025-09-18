@@ -48,15 +48,29 @@ export const Default: Story = {
     text: 'Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod',
     image: 'https://picsum.photos/640/360/',
     image_alt: 'Image description',
+    button_group: false,
     type: 'home',
   },
 };
 
 export const Category: Story = {
-  name: 'Hero category',
+  name: 'Hero category, without Image',
   args: {
     title: 'Heading',
     text: 'Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod',
+    button_group: false,
     type: 'category',
+  },
+};
+
+export const BackgroundImage: Story = {
+  name: 'Hero category, with Image',
+  args: {
+    title: 'Heading',
+    text: 'Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod',
+    image: 'https://picsum.photos/640/360/',
+    image_alt: 'Image description',
+    button_group: true,
+    type: 'image',
   },
 };
