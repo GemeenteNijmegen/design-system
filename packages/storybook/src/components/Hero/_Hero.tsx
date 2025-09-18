@@ -31,18 +31,23 @@ export const argTypes = {
       defaultValue: '',
     },
   },
+  button_group: {
+    name: 'Show button group',
+    control: { type: 'boolean' },
+  },
   type: {
     name: 'Type',
     control: { type: 'select' },
-    options: ['home', 'category'],
+    options: ['home', 'category', 'image'],
   },
 };
 
-export const HeroStory = ({ title = '', text = '', image = '', image_alt = '', type = '' }) => {
+export const HeroStory = ({ title = '', text = '', image = '', image_alt = '', type = '', button_group = false }) => {
   return (
     <section
       className={clsx('nijmegen-hero', {
         'nijmegen-hero--home': type === 'home',
+        'nijmegen-hero--background-image': type === 'image',
       })}
     >
       <div className="nijmegen-hero__container">
@@ -51,10 +56,23 @@ export const HeroStory = ({ title = '', text = '', image = '', image_alt = '', t
             {title && <Heading1>{title}</Heading1>}
             {text && type === 'home' && <p className="utrecht-heading-2">{text}</p>}
           </div>
-          {text && type === 'category' && <Paragraph>{text}</Paragraph>}
+          {text && type !== 'home' && <Paragraph>{text}</Paragraph>}
+
+          {button_group === true && (
+            <p role="group" className="utrecht-button-group">
+              <button className="utrecht-button utrecht-button--primary-action" type="button">
+                Button
+              </button>
+              <button className="utrecht-button utrecht-button--secondary-action" type="button">
+                Button
+              </button>
+            </p>
+          )}
         </div>
       </div>
-      {image && type === 'home' && <img className="nijmegen-hero__image" src={image} alt={image_alt} />}
+      {image && (type === 'home' || type === 'image') && (
+        <img className="nijmegen-hero__image" src={image} alt={image_alt} />
+      )}
     </section>
   );
 };
