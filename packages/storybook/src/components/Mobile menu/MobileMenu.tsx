@@ -60,9 +60,6 @@ export const MobileMenuStoryWebComponent = () => {
                       </a>
                     </li>
                   </ul>
-                  <div className="nijmegen-mobile-menu__separator">
-                    <Separator />
-                  </div>
                 </div>
               </li>
               <li>
@@ -100,9 +97,6 @@ export const MobileMenuStoryWebComponent = () => {
                       </a>
                     </li>
                   </ul>
-                  <div className="nijmegen-mobile-menu__separator">
-                    <Separator />
-                  </div>
                 </div>
               </li>
             </ul>
@@ -206,7 +200,12 @@ export const MobileMenuStoryHtml = () => {
             </button>
             <ul className="nijmegen-mobile-menu__list">
               <li>
-                <button className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow" data-panel>
+                <button
+                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                  aria-expanded="false"
+                  aria-haspopup="menu"
+                  data-panel
+                >
                   <span>Identiteit</span>
                 </button>
                 <div className="nijmegen-mobile-menu__panel">
@@ -235,13 +234,15 @@ export const MobileMenuStoryHtml = () => {
                       </a>
                     </li>
                   </ul>
-                  <div className="nijmegen-mobile-menu__separator">
-                    <Separator />
-                  </div>
                 </div>
               </li>
               <li>
-                <button className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow" data-panel>
+                <button
+                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                  aria-expanded="false"
+                  aria-haspopup="menu"
+                  data-panel
+                >
                   <span>Wonen</span>
                 </button>
                 <div className="nijmegen-mobile-menu__panel">
@@ -270,9 +271,6 @@ export const MobileMenuStoryHtml = () => {
                       </a>
                     </li>
                   </ul>
-                  <div className="nijmegen-mobile-menu__separator">
-                    <Separator />
-                  </div>
                 </div>
               </li>
             </ul>
@@ -284,6 +282,7 @@ export const MobileMenuStoryHtml = () => {
             Nieuws
           </a>
         </li>
+
         <li>
           <a href="/" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--strong">
             Contact
