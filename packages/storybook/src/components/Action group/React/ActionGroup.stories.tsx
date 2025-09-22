@@ -3,11 +3,11 @@ import '@utrecht/button-group-css';
 import { IconExternalLink } from '@tabler/icons-react';
 import { Button } from '@utrecht/component-library-react';
 import { ButtonGroup } from '@utrecht/component-library-react/dist/css-module';
-import { argTypes } from '../_ButtonGroup';
+import { argTypes } from '../_ActionGroup';
 
 const meta = {
-  title: 'Components/Button Group/React Implementation',
-  id: 'react-button-group',
+  title: 'Components/Action Group/React Implementation',
+  id: 'react-action-group',
   component: ButtonGroup,
   argTypes: argTypes,
   args: {},
