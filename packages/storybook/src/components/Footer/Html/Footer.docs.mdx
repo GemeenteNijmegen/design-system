@@ -1,6 +1,7 @@
 {/* Footer.docs.mdx */}
-import { Controls, Meta, Primary } from '@storybook/addon-docs';
+import { Controls, Meta, Primary, Source } from '@storybook/addon-docs';
 import * as Footer from './Footer.stories';
+import example from './example.html?raw';
 
 <Meta of={Footer} />
 
@@ -10,3 +11,6 @@ import * as Footer from './Footer.stories';
 
 <Primary />
 <Controls />
+
+## Example implementation
+<Source language="html" code={example} />

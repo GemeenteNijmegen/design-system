@@ -7,7 +7,7 @@ import {
   IconPhone,
   IconSend,
 } from '@tabler/icons-react';
-import { Heading6, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { Heading, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import '@gemeentenijmegen/components-css';
 
 export const argTypes = {};
@@ -19,7 +19,9 @@ export const FooterStory = () => {
         <div className="nijmegen-footer__main">
           <div className="nijmegen-footer__col">
             <div className="nijmegen-footer__block">
-              <Heading6>Meer weten</Heading6>
+              <Heading appearance="utrecht-heading-4" level={2}>
+                Meer weten
+              </Heading>
               <ul className="nijmegen-link-list">
                 <li className="nijmegen-link-list__item">
                   <a className="nijmegen-link-list__link" href="#">
@@ -47,7 +49,9 @@ export const FooterStory = () => {
 
           <div className="nijmegen-footer__col">
             <div className="nijmegen-footer__block">
-              <Heading6>Contact</Heading6>
+              <Heading appearance="utrecht-heading-4" level={2}>
+                Contact
+              </Heading>
               <Paragraph>
                 Heeft u een vraag en vindt u het antwoord niet op onze website? Neem dan gerust contact met ons op.
               </Paragraph>
@@ -76,7 +80,9 @@ export const FooterStory = () => {
 
           <div className="nijmegen-footer__col">
             <div className="nijmegen-footer__block">
-              <Heading6>Nieuwsbrief</Heading6>
+              <Heading appearance="utrecht-heading-4" level={2}>
+                Nieuwsbrief
+              </Heading>
               <ul className="nijmegen-link-list">
                 <li className="nijmegen-link-list__item">
                   <a className="nijmegen-link-list__link" href="#">
@@ -86,7 +92,9 @@ export const FooterStory = () => {
               </ul>
             </div>
             <div className="nijmegen-footer__block">
-              <Heading6>Volg gemeente Nijmegen</Heading6>
+              <Heading appearance="utrecht-heading-4" level={2}>
+                Volg gemeente Nijmegen
+              </Heading>
               <ul className="nijmegen-link-list">
                 <li className="nijmegen-link-list__item">
                   <a className="nijmegen-link-list__link nijmegen-link-list__link--no-chevron" href="#">
