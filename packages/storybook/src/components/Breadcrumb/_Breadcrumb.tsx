@@ -21,12 +21,12 @@ export const BreadcrumbStory = ({ current = true }) => {
         </span>
       </a>
 
-      <ol itemScope="" itemType="https://schema.org/BreadcrumbList" class="nijmegen-breadcrumb__list">
+      <ol itemScope itemType="https://schema.org/BreadcrumbList" className="nijmegen-breadcrumb__list">
         <li
           itemProp="itemListElement"
-          itemScope=""
+          itemScope
           itemType="https://schema.org/ListItem"
-          class="nijmegen-breadcrumb__item"
+          className="nijmegen-breadcrumb__item"
         >
           <a className="nijmegen-breadcrumb__link" href="https://nijmegen.nl">
             <span itemProp="name" className="nijmegen-breadcrumb__text">
@@ -37,9 +37,9 @@ export const BreadcrumbStory = ({ current = true }) => {
         </li>
         <li
           itemProp="itemListElement"
-          itemScope=""
+          itemScope
           itemType="https://schema.org/ListItem"
-          class="nijmegen-breadcrumb__item"
+          className="nijmegen-breadcrumb__item"
         >
           <a className="nijmegen-breadcrumb__link" href="https://nijmegen.nl/afval">
             <span itemProp="name" className="nijmegen-breadcrumb__text">
@@ -50,9 +50,9 @@ export const BreadcrumbStory = ({ current = true }) => {
         </li>
         <li
           itemProp="itemListElement"
-          itemScope=""
+          itemScope
           itemType="https://schema.org/ListItem"
-          class="nijmegen-breadcrumb__item"
+          className="nijmegen-breadcrumb__item"
         >
           <a className="nijmegen-breadcrumb__link" href="https://nijmegen.nl/afval">
             <span itemProp="name" className="nijmegen-breadcrumb__text">
@@ -63,9 +63,9 @@ export const BreadcrumbStory = ({ current = true }) => {
         </li>
         <li
           itemProp="itemListElement"
-          itemScope=""
+          itemScope
           itemType="https://schema.org/ListItem"
-          class="nijmegen-breadcrumb__item"
+          className="nijmegen-breadcrumb__item"
         >
           <a className="nijmegen-breadcrumb__link" href="https://nijmegen.nl/afval">
             <span itemProp="name" className="nijmegen-breadcrumb__text">
@@ -76,9 +76,9 @@ export const BreadcrumbStory = ({ current = true }) => {
         </li>
         <li
           itemProp="itemListElement"
-          itemScope=""
+          itemScope
           itemType="https://schema.org/ListItem"
-          class="nijmegen-breadcrumb__item"
+          className="nijmegen-breadcrumb__item"
         >
           <a
             aria-current="page"
