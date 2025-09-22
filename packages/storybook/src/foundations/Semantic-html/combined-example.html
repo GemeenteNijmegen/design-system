@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <title>Combined example</title>
+    <!-- global -->
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/document-css@1.5.0/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/design-tokens@latest/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/font@latest/dist/index.css" />
+    <!-- component specific -->
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/heading-1-css@1.5.0/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/paragraph-css@2.3.1/dist/index.min.css" />
+
+    <!-- Semantic HTML specific -->
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/semantic-html@latest/dist/index.css" />
+  </head>
+  <body class="utrecht-document nijmegen-theme">
+        <h1 class="utrecht-heading-1">Heading as component</h1>
+        <p class="utrecht-paragraph">Paragraph as component</p>
+        <hr>
+        <h1>Only document styling is applied to this heading</h1>
+        <p>Only document styling is applied to this paragraph</p>
+        <!-- wrap content comming from a WYSIWYG editor with an element with a "nijmegen-html" class -->
+        <div class="nijmegen-html">
+            <h1>Heading styling is applied</h1>
+            <p>Paragraph styling is applied</p>
+        </div>
+  </body>
+</html>

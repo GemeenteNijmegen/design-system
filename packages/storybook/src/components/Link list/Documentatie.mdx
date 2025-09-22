@@ -1,7 +1,6 @@
 import { Canvas } from '@storybook/addon-docs';
 import { Unstyled } from "@storybook/blocks";
-import { IconChevronRight } from '@tabler/icons-react';
-import * as LinkList from './React/LinkList.stories';
+import * as LinkList from './Html/LinkList.stories';
 
 # Documentatie link list component
 
@@ -11,13 +10,12 @@ Het Link List-component biedt een gestructureerde manier om meerdere links te pr
 
 ## Component
 
-Dit component is een implementatie van het `utrecht-link-list` component.
+Dit component is een Nijmegen uitwerking
 
 | Link                                                                                                                                           | Omschrijving                                                    |
 | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| [NPM Utrecht link list css](https://www.npmjs.com/package/@utrecht/link-list-css) OF [NPM Utrecht Components](https://www.npmjs.com/package/@utrecht/components)                                                                    | Het huidige component vereist het `@utrecht/link-list-css` pakket voor een specifieke link list implementatie of het `@utrecht/link-list-css` pakket indien er meerdere componenten geimplementeerd worden. |
-| [NPM Utrecht Component Library React](https://www.npmjs.com/package/@utrecht/component-library-react)                                                                    | Voor de React implementatie is dit pakket vereist. |
-| [Figma gemeente Nijmegen](https://www.figma.com/design/g3AieWAFD3NtkbDDTTFC30/Novio---Nijmegen-Design-System?node-id=3985-17445) | Design documentatie van dit component.    
+| [NPM Nijmegen link list css](@gemeentenijmegen/components-css)                                                                   | Het huidige component vereist het `@gemeentenijmegen/components-css` pakket. |
+| [Figma gemeente Nijmegen](https://www.figma.com/design/g3AieWAFD3NtkbDDTTFC30/Novio---Nijmegen-Design-System?node-id=6576-18099&p=f&t=IzuR7vN65ir1rBNy-0) | Design documentatie van dit component.    
 
 ## Principes
 
@@ -31,32 +29,42 @@ De standaardweergave zonder interactie.
 - Gebruik: Wanneer de link niet geselecteerd of geactiveerd is.
 <Canvas of={LinkList.Default} sourceState="none" />
 
+### Active 
+<Unstyled>
+<div className="utrecht-document nijmegen-theme">
+    <div className="preview-canvas">
+    <ul className="nijmegen-link-list">
+        <li className="nijmegen-link-list__item">
+            <a href="#" className="nijmegen-link-list__link nijmegen-link-list__link--active">Link 1</a>
+        </li>
+        <li className="nijmegen-link-list__item">
+            <a href="#" className="nijmegen-link-list__link nijmegen-link-list__link--active">Link 2</a>
+        </li>
+        <li className="nijmegen-link-list__item">
+            <a href="#" className="nijmegen-link-list__link nijmegen-link-list__link--active">Link 3</a>
+        </li>
+    </ul>
+    </div>
+</div>
+</Unstyled>
+
 ### Hover  
 De toestand wanneer de gebruiker met de muis over de link beweegt.
 - Gebruik: Om visuele feedback te geven dat de link interactief is.
 <Unstyled>
 <div className="utrecht-document nijmegen-theme">
     <div className="preview-canvas">
-        <ul role="list" class="utrecht-link-list utrecht-link-list--html-ul">
-            <li class="utrecht-link-list__item">
-                <a href="#"class="utrecht-link utrecht-link--hover utrecht-link--html-a utrecht-link-list__link ">
-                    <span class='utrecht-icon'><IconChevronRight /></span>
-                    <span class="utrecht-link-list__link-text">Link 1</span>
-                </a>
-            </li>
-            <li class="utrecht-link-list__item">
-                <a href="#"class="utrecht-link utrecht-link--hover utrecht-link--html-a utrecht-link-list__link">
-                    <span class='utrecht-icon'><IconChevronRight stroke={2} /></span>
-                    <span class="utrecht-link-list__link-text">Link 2</span>
-                </a>
-            </li>
-            <li class="utrecht-link-list__item">
-                <a href="#"class="utrecht-link utrecht-link--hover utrecht-link--html-a utrecht-link-list__link">
-                    <span class='utrecht-icon'><IconChevronRight stroke={2} /></span>
-                    <span class="utrecht-link-list__link-text">Link 3</span>
-                </a>
-            </li>
-        </ul>
+    <ul className="nijmegen-link-list">
+        <li className="nijmegen-link-list__item">
+            <a href="#" className="nijmegen-link-list__link nijmegen-link-list__link--hover">Link 1</a>
+        </li>
+        <li className="nijmegen-link-list__item">
+            <a href="#" className="nijmegen-link-list__link nijmegen-link-list__link--hover">Link 2</a>
+        </li>
+        <li className="nijmegen-link-list__item">
+            <a href="#" className="nijmegen-link-list__link nijmegen-link-list__link--hover">Link 3</a>
+        </li>
+    </ul>
     </div>
 </div>
 </Unstyled>
@@ -65,28 +73,19 @@ De toestand wanneer de gebruiker met de muis over de link beweegt.
 De toestand wanneer de link via het toetsenbord of andere hulpmiddelen wordt geselecteerd.
 - Gebruik: Toegankelijkheidsoptie voor gebruikers die navigeren zonder muis.
 <Unstyled>
-<div className="utrecht-document nijmegen-theme ">
+<div className="utrecht-document nijmegen-theme">
     <div className="preview-canvas">
-        <ul role="list" class="utrecht-link-list utrecht-link-list--html-ul">
-            <li class="utrecht-link-list__item">
-                <a href="#"class="utrecht-link utrecht-link--focus utrecht-link--html-a utrecht-link-list__link ">
-                    <span class='utrecht-icon'><IconChevronRight stroke={2} /></span>
-                    <span class="utrecht-link-list__link-text">Link 1</span>
-                </a>
-            </li>
-            <li class="utrecht-link-list__item">
-                <a href="#"class="utrecht-link utrecht-link--focus utrecht-link--html-a utrecht-link-list__link">
-                    <span class='utrecht-icon'><IconChevronRight stroke={2} /></span>
-                    <span class="utrecht-link-list__link-text">Link 2</span>
-                </a>
-            </li>
-            <li class="utrecht-link-list__item">
-                <a href="#"class="utrecht-link utrecht-link--focus utrecht-link--html-a utrecht-link-list__link">
-                    <span class='utrecht-icon'><IconChevronRight stroke={2} /></span>
-                    <span class="utrecht-link-list__link-text">Link 3</span>
-                </a>
-            </li>
-        </ul>
+    <ul className="nijmegen-link-list">
+        <li className="nijmegen-link-list__item">
+            <a href="#" className="nijmegen-link-list__link nijmegen-link-list__link--focus">Link 1</a>
+        </li>
+        <li className="nijmegen-link-list__item">
+            <a href="#" className="nijmegen-link-list__link nijmegen-link-list__link--focus">Link 2</a>
+        </li>
+        <li className="nijmegen-link-list__item">
+            <a href="#" className="nijmegen-link-list__link nijmegen-link-list__link--focus">Link 3</a>
+        </li>
+    </ul>
     </div>
 </div>
 </Unstyled>
@@ -95,28 +94,38 @@ De toestand wanneer de link via het toetsenbord of andere hulpmiddelen wordt ges
 Een specifieke focusstaat die alleen zichtbaar is bij toetsenbordgebruik.
 - Gebruik: Helpt gebruikers die afhankelijk zijn van toetsenbordnavigatie.
 <Unstyled>
-<div className="utrecht-document nijmegen-theme ">
+<div className="utrecht-document nijmegen-theme">
     <div className="preview-canvas">
-        <ul role="list" class="utrecht-link-list utrecht-link-list--html-ul">
-            <li class="utrecht-link-list__item">
-                <a href="#"class="utrecht-link utrecht-link--focus utrecht-link--focus-visible utrecht-link--visible utrecht-link--html-a utrecht-link-list__link">
-                    <span class='utrecht-icon'><IconChevronRight stroke={2} /></span>
-                    <span class="utrecht-link-list__link-text">Link 1</span>
-                </a>
-            </li>
-            <li class="utrecht-link-list__item">
-                <a href="#"class="utrecht-link utrecht-link--focus utrecht-link--focus-visible utrecht-link--visible utrecht-link--html-a utrecht-link-list__link">
-                    <span class='utrecht-icon'><IconChevronRight stroke={2} /></span>
-                    <span class="utrecht-link-list__link-text">Link 2</span>
-                </a>
-            </li>
-            <li class="utrecht-link-list__item">
-                <a href="#"class="utrecht-link utrecht-link--focus utrecht-link--focus-visible utrecht-link--visible utrecht-link--html-a utrecht-link-list__link">
-                    <span class='utrecht-icon'><IconChevronRight stroke={2} /></span>
-                    <span class="utrecht-link-list__link-text">Link 3</span>
-                </a>
-            </li>
-        </ul>
+    <ul className="nijmegen-link-list">
+        <li className="nijmegen-link-list__item">
+            <a href="#" className="nijmegen-link-list__link nijmegen-link-list__link--focus-visible">Link 1</a>
+        </li>
+        <li className="nijmegen-link-list__item">
+            <a href="#" className="nijmegen-link-list__link nijmegen-link-list__link--focus-visible">Link 2</a>
+        </li>
+        <li className="nijmegen-link-list__item">
+            <a href="#" className="nijmegen-link-list__link nijmegen-link-list__link--focus-visible">Link 3</a>
+        </li>
+    </ul>
+    </div>
+</div>
+</Unstyled>
+
+### Visited
+<Unstyled>
+<div className="utrecht-document nijmegen-theme">
+    <div className="preview-canvas">
+    <ul className="nijmegen-link-list">
+        <li className="nijmegen-link-list__item">
+            <a href="#" className="nijmegen-link-list__link nijmegen-link-list__link--visited">Link 1</a>
+        </li>
+        <li className="nijmegen-link-list__item">
+            <a href="#" className="nijmegen-link-list__link nijmegen-link-list__link--visited">Link 2</a>
+        </li>
+        <li className="nijmegen-link-list__item">
+            <a href="#" className="nijmegen-link-list__link nijmegen-link-list__link--visited">Link 3</a>
+        </li>
+    </ul>
     </div>
 </div>
 </Unstyled>
