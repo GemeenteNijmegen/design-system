@@ -7,11 +7,11 @@ import { ButtonGroup } from '@utrecht/component-library-react/dist/css-module';
 import prettierBabel from 'prettier/parser-babel';
 import * as prettier from 'prettier/standalone';
 import * as ReactDOMServer from 'react-dom/server';
-import { argTypes } from '../_ButtonGroup';
+import { argTypes } from '../_ActionGroup';
 
 const meta = {
-  title: 'Components/Button Group/Html Implementation',
-  id: 'css-button-group',
+  title: 'Components/Action Group/Html Implementation',
+  id: 'css-action-group',
   component: ButtonGroup,
   argTypes: argTypes,
   args: {},
