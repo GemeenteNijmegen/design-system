@@ -11,7 +11,7 @@
           "type": "fontWeights"
         },
         "line-height": {
-          "value": "{nijmegen.typography.line-height.sm}",
+          "value": "{nijmegen.typography.line-height.md}",
           "type": "lineHeights"
         },
         "font-size": {
@@ -40,11 +40,11 @@
         "type": "spacing"
       },
       "padding-inline-end": {
-        "value": "{nijmegen.space.75}",
+        "value": "{nijmegen.space.100}",
         "type": "spacing"
       },
       "padding-inline-start": {
-        "value": "{nijmegen.space.75}",
+        "value": "{nijmegen.space.100}",
         "type": "spacing"
       },
       "info": {
@@ -69,7 +69,7 @@
           }
         },
         "inset-block-start": {
-          "value": "{nijmegen.space.25}",
+          "value": "{nijmegen.space.50}",
           "type": "spacing"
         },
         "ok": {
@@ -143,7 +143,7 @@
       },
       "message": {
         "row-gap": {
-          "value": "{nijmegen.space.50}",
+          "value": "{nijmegen.space.25}",
           "type": "spacing"
         }
       },

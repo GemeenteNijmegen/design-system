@@ -1,25 +1,36 @@
 {
-  "version": "0.0.1",
+  "version": "0.0.2-alpha.17",
   "author": "gemeente Nijmegen",
-  "description": "Font assets",
+  "description": "Font package for the Municipality of Nijmegen",
   "license": "SEE LICENSE IN LICENSE.md",
   "name": "@gemeentenijmegen/font",
   "main": "dist/index.css",
   "keywords": [
     "nl-design-system"
   ],
-  "private": true,
+  "scripts": {
+    "build": "rollup -c ./rollup.config.mjs",
+    "clean": "rimraf dist"
+  },
+  "private": false,
   "publishConfig": {
     "access": "public"
   },
   "files": [
-    "src"
+    "src",
+    "ordana",
+    "source-sans-pro"
   ],
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/example.git"
+    "url": "git@github.com:GemeenteNijmegen/design-system.git"
   },
   "dependencies": {
     "@fontsource/source-sans-pro": "5.0.8"
+  },
+  "devDependencies": {
+    "postcss-discard-duplicates": "7.0.1",
+    "rollup": "4.12.1",
+    "rollup-plugin-postcss": "4.0.2"
   }
 }

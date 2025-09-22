@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.26",
   "author": "Gemeente Nijmegen",
   "description": "CSS layout for a design system based on the NL Design System architecture",
   "license": "EUPL-1.2",
@@ -9,11 +9,18 @@
     "css-layout",
     "gemeente-nijmegen"
   ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:GemeenteNijmegen/design-system.git"
+  },
   "scripts": {
     "build": "rollup -c ./rollup.config.mjs",
     "clean": "rimraf dist"
   },
-  "private": true,
   "devDependencies": {
     "bootstrap": "v5.3.3",
     "postcss-discard-duplicates": "7.0.1",
