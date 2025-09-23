@@ -137,6 +137,11 @@
   &--hover {
     color: var(--nijmegen-header-item-hover-color, #000);
     text-decoration: var(--nijmegen-header-item-hover-text-decoration, none);
+
+    &::before,
+    &::after {
+      background-color: var(--nijmegen-header-item-hover-color, #000);
+    }
   }
 
   &:active,
