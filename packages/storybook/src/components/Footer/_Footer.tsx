@@ -57,17 +57,17 @@ export const FooterStory = () => {
               </Paragraph>
               <ul className="nijmegen-link-list">
                 <li className="nijmegen-link-list__item">
-                  <a className="nijmegen-link-list__link nijmegen-link-list__link--no-chevron" href="#">
-                    <IconPhone></IconPhone>
-                    <span>Bel 14 024</span>
-                  </a>
-                </li>
-                <li className="nijmegen-link-list__item">
                   <a
                     className="nijmegen-link-list__link nijmegen-link-list__link--no-chevron"
                     href="#"
                     title="Telefoonnummer Gemeente Nijmegen"
                   >
+                    <IconPhone></IconPhone>
+                    <span>Bel 14 024</span>
+                  </a>
+                </li>
+                <li className="nijmegen-link-list__item">
+                  <a className="nijmegen-link-list__link nijmegen-link-list__link--no-chevron" href="#">
                     <IconSend></IconSend>
                     <span>Contactformulier</span>
                   </a>
