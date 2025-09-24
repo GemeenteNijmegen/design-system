@@ -1,6 +1,6 @@
 export const argTypes = {
   direction: {
-    description: 'Layout of the button group',
+    description: 'Layout of the action group',
     control: 'select',
     options: {
       '': undefined,
