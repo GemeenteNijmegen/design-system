@@ -26,12 +26,7 @@ export const MobileMenuStoryWebComponent = () => {
             </button>
             <ul className="nijmegen-mobile-menu__list">
               <li>
-                <button
-                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
-                  aria-expanded="false"
-                  aria-haspopup="menu"
-                  data-panel
-                >
+                <button className="nijmegen-mobile-menu__link" aria-expanded="false" aria-haspopup="menu" data-panel>
                   <span>Identiteit</span>
                 </button>
                 <div className="nijmegen-mobile-menu__panel">
@@ -40,22 +35,38 @@ export const MobileMenuStoryWebComponent = () => {
                   </button>
                   <ul className="nijmegen-mobile-menu__list">
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Paspoort en identiteitskaart
                       </a>
                     </li>
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Uittreksels, verklaringen & bewijzen
                       </a>
                     </li>
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Geboorte en overlijden
                       </a>
                     </li>
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Trouwen en scheiden
                       </a>
                     </li>
@@ -63,12 +74,7 @@ export const MobileMenuStoryWebComponent = () => {
                 </div>
               </li>
               <li>
-                <button
-                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
-                  aria-expanded="false"
-                  aria-haspopup="menu"
-                  data-panel
-                >
+                <button className="nijmegen-mobile-menu__link" aria-expanded="false" aria-haspopup="menu" data-panel>
                   <span>Wonen</span>
                 </button>
                 <div className="nijmegen-mobile-menu__panel">
@@ -77,22 +83,38 @@ export const MobileMenuStoryWebComponent = () => {
                   </button>
                   <ul className="nijmegen-mobile-menu__list">
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Verhuizen en migratie
                       </a>
                     </li>
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Belastingen
                       </a>
                     </li>
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Erfpacht
                       </a>
                     </li>
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Verbouwen en wonen
                       </a>
                     </li>
@@ -200,12 +222,7 @@ export const MobileMenuStoryHtml = () => {
             </button>
             <ul className="nijmegen-mobile-menu__list">
               <li>
-                <button
-                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
-                  aria-expanded="false"
-                  aria-haspopup="menu"
-                  data-panel
-                >
+                <button className="nijmegen-mobile-menu__link" aria-expanded="false" aria-haspopup="menu" data-panel>
                   <span>Identiteit</span>
                 </button>
                 <div className="nijmegen-mobile-menu__panel">
@@ -214,22 +231,38 @@ export const MobileMenuStoryHtml = () => {
                   </button>
                   <ul className="nijmegen-mobile-menu__list">
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Paspoort en identiteitskaart
                       </a>
                     </li>
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Uittreksels, verklaringen & bewijzen
                       </a>
                     </li>
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Geboorte en overlijden
                       </a>
                     </li>
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Trouwen en scheiden
                       </a>
                     </li>
@@ -237,12 +270,7 @@ export const MobileMenuStoryHtml = () => {
                 </div>
               </li>
               <li>
-                <button
-                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
-                  aria-expanded="false"
-                  aria-haspopup="menu"
-                  data-panel
-                >
+                <button className="nijmegen-mobile-menu__link" aria-expanded="false" aria-haspopup="menu" data-panel>
                   <span>Wonen</span>
                 </button>
                 <div className="nijmegen-mobile-menu__panel">
@@ -251,22 +279,38 @@ export const MobileMenuStoryHtml = () => {
                   </button>
                   <ul className="nijmegen-mobile-menu__list">
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Verhuizen en migratie
                       </a>
                     </li>
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Belastingen
                       </a>
                     </li>
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Erfpacht
                       </a>
                     </li>
                     <li>
-                      <a href="/" target="_self" className="nijmegen-mobile-menu__link">
+                      <a
+                        href="/"
+                        target="_self"
+                        className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--arrow"
+                      >
                         Verbouwen en wonen
                       </a>
                     </li>
