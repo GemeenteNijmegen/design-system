@@ -39,7 +39,7 @@
     "@storybook/addon-controls": "7.6.20",
     "@storybook/addon-docs": "7.6.17",
     "@storybook/addon-essentials": "7.6.17",
-    "@storybook/addon-interactions": "7.6.17",
+    "@storybook/addon-interactions": "8.6.14",
     "@storybook/addon-links": "7.6.17",
     "@storybook/addon-themes": "7.6.16",
     "@storybook/addon-viewport": "7.6.17",
