@@ -8,7 +8,7 @@
 }
 
 @mixin nijmegen-link-list__item {
-  display: inline-block;
+  display: inline-flex;
   list-style: none;
 }
 
@@ -28,7 +28,10 @@
 }
 
 @mixin nijmegen-link-list__link {
+  align-items: center;
   color: var(--utrecht-link-color);
+  display: inline-flex;
+  gap: var(--todo-link-list-item-column-gap); /* stylelint-disable-line custom-property-pattern */
   text-decoration: var(--nijmegen-link-list-item-text-decoration, none);
   &:active,
   &.nijmegen-link-list__link--active {

@@ -1,0 +1,115 @@
+.nijmegen-footer {
+  background-color: var(--nijmegen-page-footer-background-color);
+  color: var(--nijmegen-page-footer-color);
+
+  .utrecht-heading-4,
+  .utrecht-paragraph {
+    color: inherit;
+  }
+
+  .utrecht-link {
+    color: inherit;
+    text-decoration-color: inherit;
+
+    &:any-link {
+      color: inherit;
+      text-decoration-color: inherit;
+    }
+
+    &:focus {
+      color: var(--nijmegen-link-list-item-focus-color, #000);
+      text-decoration: var(--nijmegen-link-list-item-focus-text-decoration, none);
+    }
+
+    &:focus-visible {
+      color: var(--nijmegen-link-list-item-focus-visible-color, #000);
+    }
+  }
+
+  .nijmegen-link-list__link {
+    color: inherit;
+
+    &::before {
+      background-color: var(--nijmegen-page-footer-color);
+    }
+
+    &:hover,
+    &.nijmegen-link-list__link--hover {
+      color: inherit;
+
+      &::before {
+        background-color: var(--nijmegen-page-footer-color);
+      }
+    }
+  }
+}
+
+.nijmegen-footer__container {
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  max-width: var(--nijmegen-page-footer-content-max-inline-size); /* stylelint-disable-line property-disallowed-list */
+  width: 100%; /* stylelint-disable-line property-disallowed-list */
+}
+
+.nijmegen-footer__main {
+  gap: var(--nijmegen-page-footer-content-column-gap);
+  padding-block-end: var(--nijmegen-page-footer-main-footer-content-padding-block-end);
+  padding-block-start: var(--nijmegen-page-footer-main-footer-content-padding-block-start);
+  padding-inline-end: var(--nijmegen-page-footer-main-footer-content-padding-inline-end);
+  padding-inline-start: var(--nijmegen-page-footer-main-footer-content-padding-inline-start);
+
+  @media (width <1024px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (width >=1024px) {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.nijmegen-footer__sub {
+  /* stylelint-disable property-disallowed-list */
+  border-top: var(--nijmegen-page-footer-sub-footer-border-width, 1px);
+  border-top-color: var(--nijmegen-page-footer-sub-footer-border-color, #6d6d6d);
+  border-top-style: var(--nijmegen-page-footer-sub-footer-border-style, solid);
+  /* stylelint-enable property-disallowed-list */
+  display: flex;
+  justify-content: space-between;
+  padding-block-end: var(--nijmegen-page-footer-sub-footer-content-padding-block-end);
+  padding-block-start: var(--nijmegen-page-footer-sub-footer-content-padding-block-start);
+  padding-inline-end: var(--nijmegen-page-footer-sub-footer-content-padding-inline-end);
+  padding-inline-start: var(--nijmegen-page-footer-sub-footer-content-padding-inline-start);
+
+  @media (width <1024px) {
+    flex-direction: column-reverse;
+    gap: var(--nijmegen-page-footer-content-row-gap);
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--nijmegen-page-footer-sub-footer-content-gap, 1rem);
+    list-style: none;
+    margin: 0; /* stylelint-disable-line property-disallowed-list */
+    padding: 0; /* stylelint-disable-line property-disallowed-list */
+
+    li {
+      display: inline-flex;
+    }
+  }
+}
+
+.nijmegen-footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nijmegen-page-footer-content-row-gap);
+}
+
+.nijmegen-footer__block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nijmegen-page-footer-footer-block-column-gap);
+}
