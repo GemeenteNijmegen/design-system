@@ -43,4 +43,24 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   name: 'Footer',
+  args: {
+    show_main: true,
+    show_sub: true,
+  },
+};
+
+export const Main: Story = {
+  name: 'Main footer',
+  args: {
+    show_main: true,
+    show_sub: false,
+  },
+};
+
+export const Sub: Story = {
+  name: 'Sub footer',
+  args: {
+    show_main: false,
+    show_sub: true,
+  },
 };
