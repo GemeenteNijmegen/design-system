@@ -11,7 +11,8 @@ interface SeparatorStoryProps {
   element?: 'div' | 'separator';
 }
 
-const SeparatorStory = ({ element }: SeparatorStoryProps) => (element === 'div' ? <SeparatorDiv /> : <Separator />);
+const SeparatorStory = ({ element }: SeparatorStoryProps) =>
+  element === 'div' ? <SeparatorDiv /> : <Separator aria-hidden="true" />;
 
 const meta = {
   title: 'Components/Separator/Html Implementation',
