@@ -37,28 +37,28 @@ export const AlertStory = ({ title = defaultArgs.title, text = defaultArgs.text,
   switch (type) {
     case 'error':
       icon = (
-        <span className="utrecht-icon">
+        <span className="utrecht-icon" role="img" aria-label="Alert type: error">
           <IconAlertCircle />
         </span>
       );
       break;
     case 'info':
       icon = (
-        <span className="utrecht-icon">
+        <span className="utrecht-icon" role="img" aria-label="Alert type: informatie">
           <IconInfoCircle />
         </span>
       );
       break;
     case 'ok':
       icon = (
-        <span className="utrecht-icon">
+        <span className="utrecht-icon" role="img" aria-label="Alert type: oké">
           <IconCircleCheck />
         </span>
       );
       break;
     case 'warning':
       icon = (
-        <span className="utrecht-icon">
+        <span className="utrecht-icon" role="img" aria-label="Alert type: waarschuwing">
           <IconAlertTriangle />
         </span>
       );
