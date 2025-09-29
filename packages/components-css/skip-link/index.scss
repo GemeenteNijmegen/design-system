@@ -1,0 +1,39 @@
+@import "~@utrecht/link-css/src/mixin";
+@import "~@utrecht/focus-ring-css/src/mixin";
+
+.nijmegen-skip-link {
+  @include utrecht-link;
+
+  background-color: var(--nijmegen-focus-background-color);
+  box-sizing: border-box;
+  color: var(--nijmegen-focus-color);
+  display: inline-block;
+  font-size: var(--utrecht-document-font-size);
+  line-height: var(--utrecht-document-line-height);
+  min-block-size: var(--utrecht-pointer-target-min-size);
+  min-inline-size: var(--utrecht-pointer-target-min-size);
+  padding-block: var(--nijmegen-space-75);
+  padding-inline: var(--nijmegen-space-100);
+  text-align: center;
+
+  &:not(:active, :focus, .nijmegen-skip-link--focus) {
+    block-size: 1px;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    inline-size: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+  }
+
+  &:focus,
+  &.nijmegen-skip-link--focus {
+    @include utrecht-link--focus;
+  }
+
+  &:focus-visible,
+  &.nijmegen-skip-link--focus-visible {
+    @include utrecht-link--focus;
+    @include utrecht-link--focus-visible;
+  }
+}
