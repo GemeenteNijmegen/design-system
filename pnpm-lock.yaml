@@ -102,6 +102,9 @@ importers:
       '@utrecht/link-css':
         specifier: 1.6.0
         version: 1.6.0
+      '@utrecht/unordered-list-css':
+        specifier: 1.5.1
+        version: 1.5.1
       postcss-discard-duplicates:
         specifier: 7.0.1
         version: 7.0.1(postcss@8.4.35)
@@ -7251,6 +7254,10 @@ packages:
 
   /@utrecht/paragraph-css@2.3.0:
     resolution: {integrity: sha512-Qo6iX7a0T1xVSxwtmtqdhv30kTNNTLz45OGrdkXMms4IiiXMMsYJ83K43aCY/d89GlH5lwKfyPb9CU64fzfCIQ==}
+    dev: true
+
+  /@utrecht/unordered-list-css@1.5.1:
+    resolution: {integrity: sha512-BvpymaFp0CKdcqApqdj4nKhn/99MJ2i+ilYvPS2cgyYJCEZk8eH4GXiHZBX7YzwzLhV95oURnG3DM6RsZ9Ixmg==}
     dev: true
 
   /@vitejs/plugin-react@3.1.0(vite@5.1.5):
