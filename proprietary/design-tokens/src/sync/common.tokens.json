@@ -28,7 +28,7 @@
         "type": "fontFamilies"
       },
       "font-weight": {
-        "value": "{nijmegen.typography.font-weight.semibold}",
+        "value": "{nijmegen.typography.font-weight.bold}",
         "type": "fontWeights"
       }
     },
