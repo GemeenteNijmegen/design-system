@@ -29,6 +29,7 @@
   &:focus,
   &.nijmegen-skip-link--focus {
     @include utrecht-link--focus;
+    @include utrecht-link--focus-visible;
   }
 
   &:focus-visible,

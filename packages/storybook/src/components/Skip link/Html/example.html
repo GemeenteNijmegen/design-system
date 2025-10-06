@@ -11,6 +11,16 @@
   </head>
 
   <body class="utrecht-document nijmegen-theme">
-    <a href="#main" class="nijmegen-skip-link">Ga naar hoofdinhoud</a>;
+    <!-- Single skip link -->
+    <a href="#main" aria-label="Skip link" class="nijmegen-skip-link">Ga naar hoofdinhoud</a>
+
+    <!-- Multiple skip links -->
+    <nav aria-label="Skip links">
+      <ul>
+        <li><a href="#main" class="nijmegen-skip-link">Ga direct naar: hoofdinhoud</a></li>
+        <li><a href="#diensten" class="nijmegen-skip-link">Ga direct naar: diensten</a></li>
+        <li><a href="#nieuws" class="nijmegen-skip-link">Ga direct naar: nieuws</a></li>
+      </ul>
+    </nav>
   </body>
 </html>
