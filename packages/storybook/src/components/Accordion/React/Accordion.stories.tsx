@@ -3,7 +3,6 @@ import { IconChevronDown } from '@tabler/icons-react';
 import { AccordionProvider, AccordionSectionProps } from '@utrecht/component-library-react/dist/css-module';
 import { ReactNode } from 'react';
 import { accordionData, argTypes } from '../_Accordion';
-import '@gemeentenijmegen/components-css';
 
 interface AccordionStoryProps {
   label: string;
