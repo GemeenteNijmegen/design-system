@@ -1,25 +1,14 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { IconChevronDown } from '@tabler/icons-react';
-import { AccordionProvider, AccordionSectionProps } from '@utrecht/component-library-react/dist/css-module';
-import { ReactNode } from 'react';
-import { accordionData, argTypes } from '../_Accordion';
-
-interface AccordionStoryProps {
-  label: string;
-  body: ReactNode;
-  expanded?: boolean;
-  expandedAccordion?: boolean;
-  icon?: ReactNode;
-  sections?: AccordionSectionProps[];
-}
-
-const AccordionStory = ({ expanded, label, body, icon, sections }: AccordionStoryProps) => (
-  <AccordionProvider icon={icon} sections={sections || [{ expanded, label, body }]} />
-);
+import HtmlTransformer from '../../../../scripts/HtmlTransformer';
+import { accordionData, AccordionStoryWebComponent, argTypes } from '../_Accordion';
+import '@utrecht/component-library-react/dist/css-module';
+import '@gemeentenijmegen/web-components/src/accordion/accordion.js';
 
 const meta = {
-  title: 'Components/Accordion/React Implementation',
-  id: 'react-accordion',
+  title: 'Components/Accordion/Web Component Implementation',
+  id: 'web-component-accordion',
+  component: AccordionStoryWebComponent,
   argTypes: argTypes,
   args: {
     label: '',
@@ -34,10 +23,13 @@ const meta = {
     status: {
       type: 'BETA',
     },
+    docs: {
+      source: {
+        transform: HtmlTransformer,
+      },
+    },
   },
-  render: AccordionStory,
-} satisfies Meta<AccordionStoryProps>;
-
+} satisfies Meta<typeof AccordionStoryWebComponent>;
 export default meta;
 type Story = StoryObj<typeof meta>;
 
@@ -51,8 +43,8 @@ export const Default: Story = {
 };
 
 export const AccordionWithSections: Story = {
+  name: 'Accordion with sections',
   args: {
     sections: accordionData,
   },
-  name: 'Accordion with sections',
 };
