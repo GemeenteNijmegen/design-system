@@ -4,7 +4,6 @@ import HtmlTransformer from '../../../../scripts/HtmlTransformer';
 import { accordionData, AccordionStoryWebComponent, argTypes } from '../_Accordion';
 import '@utrecht/component-library-react/dist/css-module';
 import '@gemeentenijmegen/web-components/src/accordion/accordion.js';
-import '@gemeentenijmegen/components-css';
 
 const meta = {
   title: 'Components/Accordion/Web Component Implementation',
