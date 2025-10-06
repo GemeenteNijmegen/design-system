@@ -21,6 +21,6 @@
 }
 
 // Remove margin from list when a text is directly above
-.sbdocs p + ul {
+.sbdocs > p + ul {
   margin-top: -16px !important;
 }
