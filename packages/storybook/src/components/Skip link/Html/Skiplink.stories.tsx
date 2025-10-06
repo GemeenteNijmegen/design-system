@@ -46,17 +46,6 @@ export const Default: Story = {
     href: '#main',
     children: 'Ga naar hoofdinhoud',
     visibilty: true,
-    focusVisible: false,
-  },
-};
-
-export const Focus: Story = {
-  name: 'Default focus',
-  args: {
-    href: '#main',
-    children: 'Ga naar hoofdinhoud',
-    visibilty: true,
-    focusVisible: true,
   },
 };
 
@@ -66,6 +55,5 @@ export const VisibleOnFocus: Story = {
     href: '#main',
     children: 'Ga naar hoofdinhoud',
     visibilty: false,
-    focusVisible: false,
   },
 };
