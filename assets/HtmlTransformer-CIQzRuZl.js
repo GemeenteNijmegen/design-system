@@ -1,0 +1,1 @@
+import{s as p,r as t,p as c}from"./server.browser-rAMDWieH.js";const s=(o,r)=>{var e,a;const n=typeof r.component=="function"?r.component:typeof((e=r.component)==null?void 0:e.render)=="function"?(a=r.component)==null?void 0:a.render:null;return n?p.format(t(n(r.args)),{parser:"babel",plugins:[c]}):o};export{s as H};

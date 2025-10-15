@@ -1,0 +1,1 @@
+const o={direction:{description:"Layout of the action group",control:"select",options:{"":void 0,column:"column",row:"row"},children:{name:"Content",description:"Button text",defaultValue:""}}};export{o as a};
