@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <title>Card example</title>
+    <!-- global -->
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/document-css@1.5.0/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/design-tokens@latest/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/font@latest/dist/index.css" />
+    <!-- component specific -->
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/components-css@latest/dist/index.min.css" />
+  </head>
+
+  <body class="utrecht-document nijmegen-theme">
+    <nav class="nijmegen-pagination">
+      <span
+        class="nijmegen-pagination__relative-link nijmegen-pagination__relative-link--prev nijmegen-pagination__relative-link--disabled"
+        rel="prev"
+      >
+        <span>Vorige</span>
+      </span>
+      <span role="group" class="nijmegen-pagination__pages">
+        <a
+          class="nijmegen-pagination__page-link nijmegen-pagination__page-link--current"
+          aria-current="true"
+          href="./1"
+        >
+          1
+        </a>
+        <a class="nijmegen-pagination__page-link" href="./2" rel="next"> 2 </a>
+        <a class="nijmegen-pagination__page-link" href="./3"> 3 </a>
+        <a class="nijmegen-pagination__page-link" href="./4"> 4 </a>
+        <a class="nijmegen-pagination__page-link" href="./5"> 5 </a>
+      </span>
+      <a href="" class="nijmegen-pagination__relative-link nijmegen-pagination__relative-link--next" rel="next">
+        <span>Volgende</span>
+      </a>
+    </nav>
+  </body>
+</html>

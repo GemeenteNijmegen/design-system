@@ -104,6 +104,12 @@
   padding-inline-start: var(--nijmegen-pagination-relative-link-padding-inline-start);
   text-decoration: var(--nijmegen-pagination-relative-link-text-decoration);
 
+  @media (width <576px) {
+    span {
+      display: none;
+    }
+  }
+
   &.nijmegen-pagination__relative-link--disabled {
     background-color: var(--nijmegen-pagination-relative-link-disabled-background-color);
     border-color: var(--nijmegen-pagination-relative-link-disabled-border-color);
@@ -111,8 +117,10 @@
   }
 
   &.nijmegen-pagination__relative-link--prev {
-    &:has(span) {
-      margin-inline-end: var(--nijmegen-space-100);
+    @media (width >=576px) {
+      &:has(span) {
+        margin-inline-end: var(--nijmegen-space-100);
+      }
     }
 
     &::before {
@@ -123,8 +131,10 @@
   }
 
   &.nijmegen-pagination__relative-link--next {
-    &:has(span) {
-      margin-inline-start: var(--nijmegen-space-100);
+    @media (width >=576px) {
+      &:has(span) {
+        margin-inline-start: var(--nijmegen-space-100);
+      }
     }
 
     &::after {
