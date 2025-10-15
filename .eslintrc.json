@@ -5,7 +5,7 @@
     "node": false
   },
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": 13,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
@@ -39,7 +39,12 @@
         "./.eslintrc.js.json",
         "./.eslintrc.react.json"
       ],
-      "files": ["*.js", "*.jsx"],
+      "files": ["*.jsx"],
+      "plugins": ["import"]
+    },
+    {
+      "extends": ["eslint-config-prettier", "./.eslintrc.js.json"],
+      "files": ["*.js"],
       "plugins": ["import"]
     },
     {
