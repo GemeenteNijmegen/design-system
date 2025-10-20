@@ -1,0 +1,43 @@
+.nijmegen-table {
+  font-family: var(--nijmegen-table-font-family);
+  font-size: var(--nijmegen-table-font-size, 1.125rem);
+  line-height: var(--nijmegen-table-line-height, 150%);
+
+  // text-align: left;
+}
+
+.nijmegen-table__caption {
+  color: var(--nijmegen-table-caption-color);
+  font-family: var(--nijmegen-table-caption-font-family);
+  font-size: var(--nijmegen-table-caption-font-size);
+  font-weight: var(--nijmegen-table-caption-font-weight);
+  line-height: var(--nijmegen-table-caption-line-height);
+  margin-block-end: var(--nijmegen-table-caption-margin-block-end);
+}
+
+.nijmegen-table__header {
+  background-color: var(--nijmegen-table-header-background-color);
+  border-block-end-color: var(--nijmegen-table-header-border-block-end-color);
+  border-block-end-width: var(--nijmegen-table-header-border-block-end-width);
+  color: var(--nijmegen-table-header-color);
+  font-weight: var(--nijmegen-table-header-cell-font-weight);
+}
+
+.nijmegen-table__row {
+  border-block-end-color: var(--nijmegen-table-row-border-block-end-color);
+  border-block-end-width: var(--nijmegen-table-row-border-block-end-width);
+  color: var(--nijmegen-table-row-border-block-end-color);
+  padding-block-end: var(--nijmegen-table-data-cell-padding-block-end);
+  padding-block-start: var(--nijmegen-table-data-cell-padding-block-start);
+  padding-inline-end: var(--nijmegen-table-data-cell-padding-inline-end);
+  padding-inline-start: var(--nijmegen-table-data-cell-padding-inline-start);
+}
+
+.nijmegen-table__header-cell {
+  padding-block-end: var(--nijmegen-table-header-cell-padding-block-end);
+  padding-block-start: var(--nijmegen-table-header-cell-padding-block-start);
+  padding-inline-end: var(-nijmegen-table-header-cell-padding-inline-end);
+  padding-inline-start: var(--nijmegen-table-header-cell-padding-inline-start);
+
+  // TODO: large vw
+}
