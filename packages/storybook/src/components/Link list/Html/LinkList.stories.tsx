@@ -6,7 +6,7 @@ import * as prettier from 'prettier/standalone';
 import * as ReactDOMServer from 'react-dom/server';
 import '@gemeentenijmegen/components-css';
 
-const LinkList = ({ links = [{ children: '', href: '' }], state = '' }) => {
+const LinkList = ({ links = [{ children: '', href: '' }], state = '', chevron = false }) => {
   return (
     <ul className="nijmegen-link-list">
       {links.map((link, index) => (
@@ -18,10 +18,11 @@ const LinkList = ({ links = [{ children: '', href: '' }], state = '' }) => {
               'nijmegen-link-list__link--focus': state === 'focus',
               'nijmegen-link-list__link--focus-visible': state === 'focus-visible',
               'nijmegen-link-list__link--visited': state === 'visited',
+              'nijmegen-link-list__link--no-chevron': chevron,
             })}
             href={link.href}
           >
-            {link.children}
+            <span>{link.children}</span>
           </a>
         </li>
       ))}
@@ -46,6 +47,16 @@ const argTypes = {
       'State of the link list, in the example code a state class is set for simulating the state appearance. When implementing this component it is not needed to set a state class, the state will be set by the browser and the styles will automatic apply.',
     control: { type: 'select' },
     options: ['default', 'active', 'hover', 'focus', 'focus-visible', 'visited'],
+  },
+  chevron: {
+    name: 'Hide chevron',
+    description: 'This hides the default chevron. Used to show custom icons.',
+    control: { type: 'boolean' },
+    table: {
+      type: {
+        summary: ['boolean'],
+      },
+    },
   },
 };
 

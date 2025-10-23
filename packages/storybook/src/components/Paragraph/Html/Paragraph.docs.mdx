@@ -1,6 +1,7 @@
 {/* Paragraph.docs.mdx */}
-import { Controls, Meta, Primary } from '@storybook/addon-docs';
+import { Controls, Meta, Primary, Source } from '@storybook/addon-docs';
 import * as ParagraphStories from './Paragraph.stories';
+import example from './example.html?raw';
 
 <Meta of={ParagraphStories} />
 
@@ -9,3 +10,6 @@ import * as ParagraphStories from './Paragraph.stories';
 ## Component suported arguments
 <Primary />
 <Controls />
+
+## Example implementation
+<Source language="html" code={example} />
