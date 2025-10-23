@@ -43,5 +43,77 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   name: 'Table',
-  args: {},
+  args: {
+    fullTable: true,
+    columns: [
+      {
+        title: 'Wijk',
+        alignEnd: false,
+        children: ['Nijmegen-Oost', 'Dukenburg', 'Lindenholt', 'Nijmegen-Noord'],
+      },
+      {
+        title: 'Afvalsoort',
+        alignEnd: false,
+        children: ['Restafval', 'Papier & karton', 'GFT', 'Grofvuil'],
+      },
+      {
+        title: 'Ophaaldag',
+        alignEnd: false,
+        children: ['Maandag', 'Woensdag', 'Donderdag', 'Maandag'],
+      },
+    ],
+  },
+};
+
+export const Content: Story = {
+  name: 'Table content',
+  args: {
+    fullTable: true,
+    columns: [
+      {
+        title: 'Wijk',
+        alignEnd: false,
+        children: [
+          '<a href="/" class="utrecht-link utrecht-link--html-a" title="link">Nijmegen-Oost</a>',
+          '<a href="/" class="utrecht-link utrecht-link--html-a" title="link">Dukenburg</a>',
+          '<a href="/" class="utrecht-link utrecht-link--html-a" title="link">Lindenholt</a>',
+          '<a href="/" class="utrecht-link utrecht-link--html-a" title="link">Nijmegen-Noord</a>',
+        ],
+      },
+      {
+        title: 'Afvalsoort',
+        alignEnd: false,
+        children: ['Restafval', 'Papier & karton', 'GFT', 'Grofvuil'],
+      },
+      {
+        title: 'Ophaaldag',
+        alignEnd: false,
+        children: ['Maandag', 'Woensdag', 'Donderdag', 'Maandag'],
+      },
+    ],
+  },
+};
+
+export const End: Story = {
+  name: 'Table alignment',
+  args: {
+    fullTable: true,
+    columns: [
+      {
+        title: 'Wijk',
+        alignEnd: false,
+        children: ['Nijmegen-Oost', 'Dukenburg', 'Lindenholt', 'Nijmegen-Noord'],
+      },
+      {
+        title: 'Afvalsoort',
+        alignEnd: false,
+        children: ['Restafval', 'Papier & karton', 'GFT', 'Grofvuil'],
+      },
+      {
+        title: 'Ophaaldag',
+        alignEnd: true,
+        children: ['Maandag', 'Woensdag', 'Donderdag', 'Maandag'],
+      },
+    ],
+  },
 };

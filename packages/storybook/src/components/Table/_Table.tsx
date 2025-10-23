@@ -1,70 +1,52 @@
 import '@gemeentenijmegen/components-css';
-// import clsx from 'clsx';
+import '@utrecht/components/link/css/index.scss';
+import clsx from 'clsx';
 
-export const argTypes = {};
+export const argTypes = {
+  fullTable: {
+    control: 'boolean',
+  },
+  columns: {
+    control: 'object',
+  },
+};
 
-export const TableStory = () => {
+export const TableStory = ({
+  fullTable,
+  columns,
+}: {
+  fullTable: boolean;
+  columns: Array<{ title: string; alignEnd: boolean; children: string[] }>;
+}) => {
   return (
-    <table className="nijmegen-table">
-      <caption className="nijmegen-table__caption">Caption</caption>
+    <table className={clsx('nijmegen-table', fullTable && 'nijmegen-table-full-width')}>
+      <caption className="nijmegen-table__caption">Afval ophaaldagen</caption>
       <thead className="nijmegen-table__header">
         <tr className="nijmegen-table__row">
-          <th scope="col" className="nijmegen-table__header-cell">
-            Wijk
-          </th>
-          <th scope="col" className="nijmegen-table__header-cell">
-            Afvalsoort
-          </th>
-          <th scope="col" className="nijmegen-table__header-cell">
-            Ophaaldag
-          </th>
+          {columns.map((column, index) => (
+            <th
+              key={index}
+              scope="col"
+              className={clsx('nijmegen-table__header-cell', column.alignEnd && 'nijmegen-table__header-cell-end')}
+            >
+              {column.title}
+            </th>
+          ))}
         </tr>
       </thead>
       <tbody className="nijmegen-table__body">
-        <tr className="nijmegen-table__row">
-          <td className="nijmegen-table__cell" data-label="Wijk">
-            Nijmegen-Oost
-          </td>
-          <td className="nijmegen-table__cell" data-label="Afvalsoort">
-            Restafval
-          </td>
-          <td className="nijmegen-table__cell" data-label="Ophaaldag">
-            Maandag
-          </td>
-        </tr>
-        <tr className="nijmegen-table__row">
-          <td className="nijmegen-table__cell" data-label="Wijk">
-            Dukenburg
-          </td>
-          <td className="nijmegen-table__cell" data-label="Afvalsoort">
-            Papier & karton
-          </td>
-          <td className="nijmegen-table__cell" data-label="Ophaaldag">
-            Woensdag
-          </td>
-        </tr>
-        <tr className="nijmegen-table__row">
-          <td className="nijmegen-table__cell" data-label="Wijk">
-            Lindenholt
-          </td>
-          <td className="nijmegen-table__cell" data-label="Afvalsoort">
-            GFT
-          </td>
-          <td className="nijmegen-table__cell" data-label="Ophaaldag">
-            Donderdag
-          </td>
-        </tr>
-        <tr className="nijmegen-table__row">
-          <td className="nijmegen-table__cell" data-label="Wijk">
-            Nijmegen-Noord
-          </td>
-          <td className="nijmegen-table__cell" data-label="Afvalsoort">
-            Grofvuil
-          </td>
-          <td className="nijmegen-table__cell" data-label="Ophaaldag">
-            Maandag
-          </td>
-        </tr>
+        {Array.from({ length: Math.max(...columns.map((col) => col.children.length)) }).map((_, rowIndex) => (
+          <tr key={rowIndex} className="nijmegen-table__row">
+            {columns.map((column, colIndex) => (
+              <td
+                key={colIndex}
+                className={clsx('nijmegen-table__data-cell', column.alignEnd && 'nijmegen-table__data-cell-end')}
+                data-label={column.title}
+                dangerouslySetInnerHTML={{ __html: column.children[rowIndex] || '' }}
+              />
+            ))}
+          </tr>
+        ))}
       </tbody>
     </table>
   );
