@@ -14,7 +14,8 @@
     "access": "public"
   },
   "files": [
-    "src"
+    "src",
+    "dist"
   ],
   "repository": {
     "type": "git+ssh",
