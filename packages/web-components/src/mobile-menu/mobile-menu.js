@@ -1,5 +1,5 @@
-import style from '@gemeentenijmegen/components-css/dist/index.min.css?raw';
-import html from './template.html?raw';
+import style from '@gemeentenijmegen/components-css/mobile-menu/index.scss';
+import html from './template.html';
 
 class NijmegenMobileMenu extends HTMLElement {
   constructor() {

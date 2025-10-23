@@ -1,7 +1,6 @@
 import { IconExternalLink, IconUser, IconWorld } from '@tabler/icons-react';
 import { Separator } from '@utrecht/component-library-react/dist/css-module';
-import '@gemeentenijmegen/components-css';
-import '@gemeentenijmegen/web-components/src/mobile-menu/mobile-menu.js';
+import '@gemeentenijmegen/web-components/dist/nijmegen-mobile-menu.js';
 
 export const MobileMenuStoryWebComponent = () => {
   return (
