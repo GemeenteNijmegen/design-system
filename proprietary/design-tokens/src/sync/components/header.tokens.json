@@ -71,7 +71,7 @@
       },
       "content": {
         "padding-inline-start": {
-          "value": "{nijmegen.space.50}",
+          "value": "{nijmegen.space.100}",
           "type": "spacing"
         },
         "padding-block-start": {
@@ -83,7 +83,7 @@
           "type": "spacing"
         },
         "padding-inline-end": {
-          "value": "{nijmegen.space.50}",
+          "value": "{nijmegen.space.100}",
           "type": "spacing"
         },
         "max-inline-size": {

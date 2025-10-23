@@ -3,6 +3,10 @@
 
 .nijmegen-header {
   background-color: var(--nijmegen-header-background-color, #fff);
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  max-width: var(--nijmegen-header-content-max-inline-size, 100%); /* stylelint-disable-line property-disallowed-list */
+  width: 100%; /* stylelint-disable-line property-disallowed-list */
   writing-mode: horizontal-tb;
 }
 
