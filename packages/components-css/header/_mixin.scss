@@ -7,10 +7,16 @@
   flex-direction: row;
   justify-content: space-between;
   margin-inline: auto;
-  padding-block-end: var(--nijmegen-header-content-padding-block-end, 0);
-  padding-block-start: var(--nijmegen-header-content-padding-block-start, 0);
-  padding-inline-end: var(--nijmegen-header-content-padding-inline-end, 0);
-  padding-inline-start: var(--nijmegen-header-content-padding-inline-start, 0);
+  padding-block-end: var(--nijmegen-header-content-large-vw-padding-block-end, 0);
+  padding-block-start: var(--nijmegen-header-content-large-vw-padding-block-start, 0);
+  padding-inline-end: var(--nijmegen-header-content-large-vw-padding-inline-end, 0);
+  padding-inline-start: var(--nijmegen-header-content-large-vw-padding-inline-start, 0);
+  @media (width <1024px) {
+    padding-block-end: var(--nijmegen-header-content-padding-block-end, 0);
+    padding-block-start: var(--nijmegen-header-content-padding-block-start, 0);
+    padding-inline-end: var(--nijmegen-header-content-padding-inline-end, 0);
+    padding-inline-start: var(--nijmegen-header-content-padding-inline-start, 0);
+  }
 }
 
 @mixin nijmegen-header-icon-base {
