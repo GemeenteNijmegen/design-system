@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1-alpha.16",
+  "version": "0.0.1-alpha.25",
   "author": "Community for NL Design System",
   "description": "CSS Components for a design system based on the NL Design System architecture",
   "license": "EUPL-1.2",
@@ -24,6 +24,8 @@
   },
   "devDependencies": {
     "@gemeentenijmegen/layout-css": "workspace:*",
+    "@rollup/plugin-terser": "0.4.4",
+    "@utrecht/button-css": "2.3.1",
     "@utrecht/focus-ring-css": "2.3.1",
     "@utrecht/link-css": "1.6.0",
     "@utrecht/unordered-list-css": "1.5.1",
