@@ -55,7 +55,7 @@
     "lint:package-lock": "pnpm ls --recursive",
     "lint-fix": "npm-run-all --continue-on-error lint-fix:** prettier",
     "lint-fix:css": "stylelint --fix '**/*.{css,scss}'",
-    "lint-fix:js": "eslint --ext .js,.cjs,.json,.jsx,.mdx,.ts,.tsx --fix --report-unused-disable-directives .",
+    "lint-fix:js": "eslint --ext .cjs,.json,.jsx,.mdx,.ts,.tsx --fix --report-unused-disable-directives .",
     "lint-fix:md": "markdownlint --fix '**/*.md'",
     "lint-workspaces": "lerna run --no-bail lint",
     "lint-build": "lerna run --no-bail lint-build",
@@ -71,7 +71,7 @@
     "update-patch": "npm-check-updates --configFileName .ncurc.patch.cjs",
     "update-minor": "npm-check-updates --configFileName .ncurc.minor.cjs",
     "update-major": "npm-check-updates --configFileName .ncurc.major.cjs",
-    "watch:storybook": "lerna run build:stencil && lerna run build:style-dictionary && pnpm --filter ./packages/storybook run storybook",
+    "watch:storybook": "lerna run build:stencil && lerna run build:style-dictionary && pnpm --filter './packages/storybook*' run storybook",
     "watch:style-dictionary": "lerna run watch:style-dictionary"
   },
   "dependencies": {

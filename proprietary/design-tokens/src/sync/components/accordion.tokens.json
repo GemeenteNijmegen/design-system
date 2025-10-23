@@ -1,56 +1,32 @@
 {
-  "todo": {
+  "utrecht": {
     "accordion": {
-      "border-radius": {
-        "value": "{nijmegen.border-radius.none}",
-        "type": "borderRadius"
-      },
       "section": {
-        "border-block-end-width": {
+        "border-width": {
           "value": "{nijmegen.border-width.sm}",
           "type": "borderWidth"
         },
         "border-color": {
           "value": "{nijmegen.color.border.subdued}",
           "type": "color"
-        }
-      },
-      "button": {
-        "font-size": {
-          "value": "{utrecht.document.font-size}",
-          "type": "fontSizes"
         },
-        "line-height": {
-          "value": "{nijmegen.typography.line-height.sm}",
-          "type": "lineHeights"
-        },
-        "expanded": {
-          "background-color": {
-            "value": "{nijmegen.color.background.default}",
-            "type": "color"
-          },
+        "hover": {
           "border-color": {
-            "value": "transparent",
-            "type": "color"
-          },
-          "color": {
-            "value": "{nijmegen.interaction.color}",
+            "value": "{nijmegen.color.border.subdued}",
             "type": "color"
           }
         },
-        "font-family": {
-          "value": "{utrecht.document.font-family}",
-          "type": "fontFamilies"
+        "margin-block-end": {
+          "value": "{nijmegen.space.0}",
+          "type": "spacing",
+          "description": "[code-only]"
         },
-        "font-weight": {
-          "value": "{nijmegen.typography.font-weight.semibold}",
-          "type": "fontWeights"
+        "margin-block-start": {
+          "value": "{nijmegen.space.0}",
+          "type": "spacing",
+          "description": "[code-only]"
         }
-      }
-    }
-  },
-  "utrecht": {
-    "accordion": {
+      },
       "panel": {
         "border-color": {
           "value": "transparent",
@@ -130,7 +106,7 @@
           "value": "{nijmegen.interaction.color}",
           "type": "color"
         },
-        "focus": {
+        "focus-visible": {
           "background-color": {
             "value": "{nijmegen.focus.background-color}",
             "type": "color"
@@ -142,6 +118,10 @@
           "color": {
             "value": "{nijmegen.focus.color}",
             "type": "color"
+          },
+          "border-width": {
+            "value": "{nijmegen.border-width.sm}",
+            "type": "borderWidth"
           }
         },
         "active": {
@@ -165,6 +145,42 @@
         "border-radius": {
           "value": "{nijmegen.border-radius.none}",
           "type": "borderRadius"
+        }
+      },
+      "margin-block-end": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing",
+        "description": "[code-only]"
+      },
+      "margin-block-start": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing",
+        "description": "[code-only]"
+      },
+      "row-gap": {
+        "value": "1px",
+        "type": "spacing"
+      }
+    }
+  },
+  "todo": {
+    "accordion": {
+      "button": {
+        "font-size": {
+          "value": "{utrecht.document.font-size}",
+          "type": "fontSizes"
+        },
+        "line-height": {
+          "value": "{nijmegen.typography.line-height.sm}",
+          "type": "lineHeights"
+        },
+        "font-family": {
+          "value": "{utrecht.document.font-family}",
+          "type": "fontFamilies"
+        },
+        "font-weight": {
+          "value": "{nijmegen.typography.font-weight.semibold}",
+          "type": "fontWeights"
         }
       }
     }
