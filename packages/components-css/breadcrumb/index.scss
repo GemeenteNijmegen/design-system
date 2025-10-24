@@ -4,7 +4,10 @@
 @import "~@utrecht/focus-ring-css/src/mixin";
 
 .nijmegen-breadcrumb {
-  background-color: var(--nijmegen-breadcrumb-navigation-background-color);
+  @media (width >=576px) {
+    background-color: var(--nijmegen-breadcrumb-navigation-background-color);
+  }
+
   font-family: var(--nijmegen-breadcrumb-navigation-font-family);
   font-size: var(--nijmegen-breadcrumb-navigation-font-size);
   font-weight: var(--nijmegen-breadcrumb-navigation-font-weight);
