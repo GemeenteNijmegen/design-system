@@ -4,18 +4,23 @@
 @import "~@utrecht/focus-ring-css/src/mixin";
 
 .nijmegen-breadcrumb {
-  font-family: var(--nijmegen-breadcrumb-nav-font-family);
-  font-size: var(--nijmegen-breadcrumb-nav-font-size);
-  font-weight: var(--nijmegen-breadcrumb-nav-font-weight);
-  line-height: var(--nijmegen-breadcrumb-nav-line-height);
+  background-color: var(--nijmegen-breadcrumb-navigation-background-color);
+  font-family: var(--nijmegen-breadcrumb-navigation-font-family);
+  font-size: var(--nijmegen-breadcrumb-navigation-font-size);
+  font-weight: var(--nijmegen-breadcrumb-navigation-font-weight);
+  line-height: var(--nijmegen-breadcrumb-navigation-line-height);
 }
 
 .nijmegen-breadcrumb__list {
   block-size: 100%;
   display: flex;
-  gap: var(--nijmegen-breadcrumb-nav-column-gap);
+  gap: var(--nijmegen-breadcrumb-navigation-list-column-gap);
   margin-block-end: 0;
   margin-block-start: 0;
+  margin-inline: auto;
+  max-inline-size: var(--nijmegen-breadcrumb-navigation-list-max-inline-size);
+  padding-inline-end: var(--nijmegen-breadcrumb-navigation-list-padding-inline-end);
+  padding-inline-start: var(--nijmegen-breadcrumb-navigation-list-padding-inline-start);
 
   @media (width <=576px) {
     display: none;
@@ -24,7 +29,6 @@
 
 ol.nijmegen-breadcrumb__list {
   list-style: none;
-  padding-inline-start: 0;
 }
 
 .nijmegen-breadcrumb__item {
@@ -33,11 +37,12 @@ ol.nijmegen-breadcrumb__list {
 
   &:not(:last-child) {
     &::after {
-      background-color: var(--nijmegen-breadcrumb-nav-separator-color);
+      background-color: var(--nijmegen-breadcrumb-navigation-separator-color);
       content: "";
       display: inline-block;
-      height: var(--nijmegen-breadcrumb-nav-separator-size); /* stylelint-disable-line property-disallowed-list */
-      margin-inline-start: var(--nijmegen-breadcrumb-nav-column-gap);
+      /* stylelint-disable-next-line property-disallowed-list */
+      height: var(--nijmegen-breadcrumb-navigation-separator-size);
+      margin-inline-start: var(--nijmegen-breadcrumb-navigation-list-column-gap);
       mask-image: var(
         --nijmegen-header-item-open-icon-image,
         url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>')
@@ -45,7 +50,7 @@ ol.nijmegen-breadcrumb__list {
       mask-position: center;
       mask-repeat: no-repeat;
       mask-size: 100%;
-      width: var(--nijmegen-breadcrumb-nav-separator-size); /* stylelint-disable-line property-disallowed-list */
+      width: var(--nijmegen-breadcrumb-navigation-separator-size); /* stylelint-disable-line property-disallowed-list */
     }
   }
 }
@@ -53,16 +58,16 @@ ol.nijmegen-breadcrumb__list {
 .nijmegen-breadcrumb__link {
   @include utrecht-link;
 
-  padding-block-end: var(--nijmegen-breadcrumb-nav-link-padding-block-end);
-  padding-block-start: var(--nijmegen-breadcrumb-nav-link-padding-block-start);
-  padding-inline-end: var(--nijmegen-breadcrumb-nav-link-padding-inline-end);
-  padding-inline-start: var(--nijmegen-breadcrumb-nav-link-padding-inline-start);
-  text-decoration: var(--nijmegen-breadcrumb-nav-link-text-decoration);
+  padding-block-end: var(--nijmegen-breadcrumb-navigation-link-padding-block-end);
+  padding-block-start: var(--nijmegen-breadcrumb-navigation-link-padding-block-start);
+  padding-inline-end: var(--nijmegen-breadcrumb-navigation-link-padding-inline-end);
+  padding-inline-start: var(--nijmegen-breadcrumb-navigation-link-padding-inline-start);
+  text-decoration: var(--nijmegen-breadcrumb-navigation-link-text-decoration);
 }
 
 .nijmegen-breadcrumb__link--mobile {
   display: inline-flex;
-  gap: var(--nijmegen-breadcrumb-nav-link-icon-column-gap);
+  gap: var(--nijmegen-breadcrumb-navigation-link-icon-column-gap);
 
   @media (width >=576px) {
     display: none;
@@ -73,34 +78,35 @@ ol.nijmegen-breadcrumb__list {
     content: "";
     display: inline-block;
     /* stylelint-disable-next-line property-disallowed-list */
-    height: var(--nijmegen-breadcrumb-nav-link-icon-size, 1.5rem);
+    height: var(--nijmegen-breadcrumb-navigation-link-icon-size, 1.5rem);
     mask-image: var(
-      --nijmegen-breadcrumb-nav-link-icon-image,
+      --nijmegen-breadcrumb-navigation-link-icon-image,
       url('data:image/svg+xml, <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M5 12l6 6" /><path d="M5 12l6 -6" /></svg>')
     );
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: 100%;
-    width: var(--nijmegen-breadcrumb-nav-link-icon-size, 1.5rem); /* stylelint-disable-line property-disallowed-list */
+    /* stylelint-disable-next-line property-disallowed-list */
+    width: var(--nijmegen-breadcrumb-navigation-link-icon-size, 1.5rem);
   }
 }
 
 .nijmegen-breadcrumb__link--disabled {
-  color: var(--nijmegen-breadcrumb-nav-link-current-color);
+  color: var(--nijmegen-breadcrumb-navigation-link-current-color);
   cursor: none;
   pointer-events: none;
 }
 
 .nijmegen-breadcrumb__link--active,
 .nijmegen-breadcrumb__link:active {
-  color: var(--nijmegen-breadcrumb-nav-link-active-color);
-  text-decoration: var(--nijmegen-breadcrumb-nav-link-active-text-decoration);
+  color: var(--nijmegen-breadcrumb-navigation-link-active-color);
+  text-decoration: var(--nijmegen-breadcrumb-navigation-link-active-text-decoration);
 }
 
 .nijmegen-breadcrumb__link--hover,
 .nijmegen-breadcrumb__link:hover {
-  color: var(--nijmegen-breadcrumb-nav-link-hover-color);
-  text-decoration: var(--nijmegen-breadcrumb-nav-link-hover-text-decoration);
+  color: var(--nijmegen-breadcrumb-navigation-link-hover-color);
+  text-decoration: var(--nijmegen-breadcrumb-navigation-link-hover-text-decoration);
 }
 
 .nijmegen-breadcrumb__link--focus,
