@@ -42,6 +42,7 @@
     "components/pagination.tokens",
     "components/paragraph.tokens",
     "components/radio.tokens",
+    "components/rich-text.tokens",
     "components/search.tokens",
     "components/select.tokens",
     "components/separator.tokens",
