@@ -18,5 +18,5 @@ if (document.readyState === 'loading') {
   responsiveTables();
 }
 
-// Just add this one line for Storybook
+// Small delay for environments like Storybook
 setTimeout(responsiveTables, 100);
