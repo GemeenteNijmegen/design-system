@@ -5,10 +5,19 @@
 @import "./mixin";
 
 .nijmegen-pagination {
-  display: flex;
   font-family: var(--nijmegen-pagination-font-family);
   font-size: var(--nijmegen-pagination-font-size, 1.125rem);
   line-height: var(--nijmegen-pagination-line-height, 150%);
+
+  .nijmegen-sr-only {
+    @include invisible-but-accessible;
+  }
+}
+
+.nijmegen-pagination-list {
+  all: unset;
+  display: flex;
+  list-style: none;
 }
 
 .nijmegen-pagination__ellipses {
@@ -40,14 +49,6 @@
   padding-inline-end: var(--nijmegen-pagination-page-link-padding-inline-end);
   padding-inline-start: var(--nijmegen-pagination-page-link-padding-inline-start);
   text-decoration: var(--nijmegen-pagination-page-link-text-decoration);
-
-  &.nijmegen-pagination__page-link--current {
-    background-color: var(--nijmegen-pagination-page-link-current-background-color);
-    border-color: var(--nijmegen-pagination-page-link-current-border-color);
-    color: var(--nijmegen-pagination-page-link-current-color);
-    font-weight: var(--nijmegen-pagination-page-link-current-font-weight);
-    text-decoration: var(--nijmegen-pagination-page-link-current-text-decoration);
-  }
 
   &:hover,
   &.nijmegen-pagination__page-link--hover {
@@ -82,6 +83,14 @@
     background-color: var(--nijmegen-pagination-page-link-focus-visible-background-color);
     color: var(--nijmegen-pagination-page-link-focus-visible-color);
     text-decoration: var(--nijmegen-pagination-page-link-focus-visible-text-decoration);
+  }
+
+  &.nijmegen-pagination__page-link--current {
+    background-color: var(--nijmegen-pagination-page-link-current-background-color);
+    border-color: var(--nijmegen-pagination-page-link-current-border-color);
+    color: var(--nijmegen-pagination-page-link-current-color);
+    font-weight: var(--nijmegen-pagination-page-link-current-font-weight);
+    text-decoration: var(--nijmegen-pagination-page-link-current-text-decoration);
   }
 }
 

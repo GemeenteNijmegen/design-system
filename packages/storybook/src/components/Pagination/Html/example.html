@@ -11,29 +11,38 @@
   </head>
 
   <body class="utrecht-document nijmegen-theme">
-    <nav class="nijmegen-pagination">
-      <span
-        class="nijmegen-pagination__relative-link nijmegen-pagination__relative-link--prev nijmegen-pagination__relative-link--disabled"
-        rel="prev"
-      >
-        <span>Vorige</span>
-      </span>
-      <span role="group" class="nijmegen-pagination__pages">
-        <a
-          class="nijmegen-pagination__page-link nijmegen-pagination__page-link--current"
-          aria-current="true"
-          href="./1"
-        >
-          1
-        </a>
-        <a class="nijmegen-pagination__page-link" href="./2" rel="next"> 2 </a>
-        <a class="nijmegen-pagination__page-link" href="./3"> 3 </a>
-        <a class="nijmegen-pagination__page-link" href="./4"> 4 </a>
-        <a class="nijmegen-pagination__page-link" href="./5"> 5 </a>
-      </span>
-      <a href="" class="nijmegen-pagination__relative-link nijmegen-pagination__relative-link--next" rel="next">
-        <span>Volgende</span>
-      </a>
+    <nav class="nijmegen-pagination" aria-label="Pagina navigation">
+      <ul class="nijmegen-pagination-list">
+        <li>
+          <span class="nijmegen-sr-only">Vorige is niet mogelijk</span>
+        </li>
+        <li>
+          <a
+            class="nijmegen-pagination__page-link nijmegen-pagination__page-link--current"
+            aria-current="true"
+            href="./1"
+          >
+            1<span class="nijmegen-sr-only">(huidig)</span>
+          </a>
+        </li>
+        <li>
+          <a class="nijmegen-pagination__page-link" href="./2" rel="next"> 2 </a>
+        </li>
+        <li>
+          <a class="nijmegen-pagination__page-link" href="./3"> 3 </a>
+        </li>
+        <li>
+          <a class="nijmegen-pagination__page-link" href="./4"> 4 </a>
+        </li>
+        <li>
+          <a class="nijmegen-pagination__page-link" href="./5"> 5 </a>
+        </li>
+        <li>
+          <a href="" class="nijmegen-pagination__relative-link nijmegen-pagination__relative-link--next" rel="next">
+            <span>Volgende</span>
+          </a>
+        </li>
+      </ul>
     </nav>
   </body>
 </html>
