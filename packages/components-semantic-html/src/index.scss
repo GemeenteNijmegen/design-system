@@ -9,6 +9,7 @@
 @import "~@utrecht/link-css/src/html/mixin";
 @import "~@utrecht/button-css/src/html/mixin";
 @import "link-list/mixin";
+@import "table/mixin";
 
 .nijmegen-html {
   @include utrecht-document;
@@ -26,4 +27,5 @@
   @include utrecht-html-h6;
   @include utrecht-html-a;
   @include nijmegen-html-unordered-list;
+  @include nijmegen-html-table;
 }

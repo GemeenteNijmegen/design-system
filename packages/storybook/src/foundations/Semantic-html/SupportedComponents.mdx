@@ -1,6 +1,7 @@
 import { Meta, Source } from '@storybook/addon-docs';
 import { Unstyled } from "@storybook/blocks";
 import "@gemeentenijmegen/semantic-html/dist/index.css"
+import "@gemeentenijmegen/semantic-html/dist/index.js"
 
 <Meta title="foundations/Semantic HTML/Supported semantic elements"/>
 # Supported semantic HTML elements
@@ -106,4 +107,68 @@ import "@gemeentenijmegen/semantic-html/dist/index.css"
 
 <Source language="html" code={`
 <button>Lorem ipsum dolor sit amet</button>
+`} />
+
+## Table
+
+<Unstyled>
+<div className="nijmegen-html">
+    <table>
+        <caption>Afval ophaaldagen</caption>
+        <thead>
+            <tr>
+                <th>Wijk</th>
+                <th>Afvalsoort</th>
+                <th>Ophaaldag</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nijmegen-Oost</td>
+                <td>Restafval</td>
+                <td>Maandag</td>
+            </tr>
+            <tr>
+                <td>Dukenburg</td>
+                <td>Papier & karton</td>
+                <td>Woensdag</td>
+            </tr>
+            <tr>
+                <td>Lindenholt</td>
+                <td>PGFT</td>
+                <td>Donderdag</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</Unstyled>
+
+<Source language="html" code={`
+<table>
+    <caption>Afval ophaaldagen</caption>
+    <thead>
+        <tr>
+            <th>Wijk</th>
+            <th>Afvalsoort</th>
+            <th>Ophaaldag</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Nijmegen-Oost</td>
+            <td>Restafval</td>
+            <td>Maandag</td>
+        </tr>
+        <tr>
+            <td>Dukenburg</td>
+            <td>Papier & karton</td>
+            <td>Woensdag</td>
+        </tr>
+        <tr>
+            <td>Lindenholt</td>
+            <td>PGFT</td>
+            <td>Donderdag</td>
+        </tr>
+    </tbody>
+</table>
 `} />
