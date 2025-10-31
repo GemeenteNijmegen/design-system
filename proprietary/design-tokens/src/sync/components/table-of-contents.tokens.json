@@ -1,0 +1,56 @@
+{
+  "nijmegen": {
+    "table-of-contents": {
+      "padding-inline-start": {
+        "value": "{nijmegen.space.100}",
+        "type": "spacing"
+      },
+      "padding-inline-end": {
+        "value": "{nijmegen.space.100}",
+        "type": "spacing"
+      },
+      "padding-block-end": {
+        "value": "{nijmegen.space.125}",
+        "type": "spacing"
+      },
+      "padding-block-start": {
+        "value": "{nijmegen.space.100}",
+        "type": "spacing"
+      },
+      "background-color": {
+        "value": "{nijmegen.color.grijs.100}",
+        "type": "color"
+      },
+      "border-color": {
+        "value": "{nijmegen.color.border.subdued}",
+        "type": "color"
+      },
+      "row-gap": {
+        "value": "{nijmegen.space.100}",
+        "type": "spacing"
+      },
+      "border-inline-start-width": {
+        "value": "{nijmegen.border-width.lg}",
+        "type": "borderWidth"
+      },
+      "large-vw": {
+        "padding-inline-start": {
+          "value": "{nijmegen.space.150}",
+          "type": "spacing"
+        },
+        "padding-inline-end": {
+          "value": "{nijmegen.space.150}",
+          "type": "spacing"
+        },
+        "padding-block-end": {
+          "value": "{nijmegen.space.200}",
+          "type": "spacing"
+        },
+        "padding-block-start": {
+          "value": "{nijmegen.space.150}",
+          "type": "spacing"
+        }
+      }
+    }
+  }
+}
