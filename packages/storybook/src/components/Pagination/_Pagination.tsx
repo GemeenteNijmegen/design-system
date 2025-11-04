@@ -22,7 +22,7 @@ export const PaginationStory = ({
   ellipses = false,
 }) => {
   return (
-    <nav className="nijmegen-pagination" aria-label="Pagina navigation">
+    <nav className="nijmegen-pagination" aria-label="Pagina-navigatie">
       <ul className="nijmegen-pagination-list">
         {prev.disabled ? (
           <li>
