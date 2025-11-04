@@ -52,6 +52,7 @@
     "components/sidenav.tokens",
     "components/skip-link.tokens",
     "components/table.tokens",
+    "components/table-of-contents.tokens",
     "components/textarea.tokens",
     "components/textbox.tokens",
     "components/toolbar-button.tokens",
