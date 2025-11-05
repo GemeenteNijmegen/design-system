@@ -1,0 +1,27 @@
+import { Canvas } from '@storybook/addon-docs';
+import * as SearchStories from './Html/Search.stories';
+
+# Documentatie search component
+
+## Component
+
+Dit component is op maat ontwikkeld op basis van het ontwerp voor de Gemeente Nijmegen.
+
+| Link                                                                                                                                           | Omschrijving                                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| [Figma gemeente Nijmegen](https://www.figma.com/design/g3AieWAFD3NtkbDDTTFC30/Novio---Nijmegen-Design-System?node-id=6801-18826) | Design documentatie van dit component.                           |
+
+
+## Variaties
+
+<Canvas of={SearchStories.Default} sourceState="none" />
+
+### Disabled
+<Canvas of={SearchStories.Disabled} sourceState="none" />
+
+### ReadOnly
+<Canvas of={SearchStories.ReadOnly} sourceState="none" />
+
+### Dark mode
+Search kan worden toegepast op achtergronden met een lichte of donkere kleur. Doordat de Button een witte border-color heeft, voldoet deze aan het contrast.
+<Canvas of={SearchStories.Dark} sourceState="none" />

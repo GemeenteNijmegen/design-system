@@ -1,0 +1,100 @@
+@import "~@utrecht/focus-ring-css/src/mixin";
+@import "~@utrecht/textbox-css/src/mixin";
+
+.nijmegen-search {
+  display: flex;
+  gap: var(--nijmegen-search-column-gap);
+  width: 100%; /* stylelint-disable-line property-disallowed-list */
+}
+
+.nijmegen-search__input-holder {
+  flex: 1;
+  max-inline-size: var(--nijmegen-search-max-inline-size);
+  position: relative;
+}
+
+.nijmegen-search__search-button {
+  .nijmegen-search--dark & {
+    border-color: var(--nijmegen-search-button-border-color) !important;
+  }
+
+  @media (width <576px) {
+    svg {
+      display: none;
+    }
+  }
+}
+
+.nijmegen-search__clear-button {
+  background-color: transparent;
+  border: 0;
+  display: none;
+
+  svg {
+    stroke: var(--nijmegen-interaction-color);
+  }
+}
+
+.nijmegen-search__input {
+  background-color: var(--nijmegen-search-background-color);
+  border-block-end-width: var(--nijmegen-search-border-block-end-width);
+  border-color: var(--nijmegen-search-border-color);
+  border-radius: var(--nijmegen-search-input-border-radius);
+  border-width: var(--nijmegen-search-border-width);
+  box-sizing: border-box;
+  color: var(--nijmegen-search-color);
+  font-family: var(--nijmegen-search-input-font-family);
+  font-size: var(--nijmegen-search-input-font-size);
+  font-weight: var(--nijmegen-search-input-font-weight);
+  line-height: var(--nijmegen-search-input-line-height);
+  min-block-size: var(--nijmegen-search-min-block-size);
+  padding-block-end: var(--nijmegen-search-padding-block-end);
+  padding-block-start: var(--nijmegen-search-padding-block-start);
+  padding-inline-end: var(--nijmegen-search-padding-inline-end);
+  padding-inline-start: var(--nijmegen-search-padding-inline-start);
+  width: 100%; /* stylelint-disable-line property-disallowed-list */
+
+  &:hover,
+  &.nijmegen-search__input--hover {
+    background-color: var(--nijmegen-search-hover-background-color);
+    border-color: var(--nijmegen-search-hover-border-color);
+    color: var(--nijmegen-search-hover-color);
+  }
+
+  &:focus,
+  &.nijmegen-search__input--focus {
+    @include utrecht-focus;
+
+    background-color: var(--nijmegen-search-focus-background-color);
+    border-color: var(--nijmegen-search-focus-border-color);
+    color: var(--nijmegen-search-focus-color);
+  }
+
+  &:focus-visible,
+  &.nijmegen-search__input--focus {
+    @include utrecht-focus;
+    @include utrecht-focus-ring;
+
+    background-color: var(--nijmegen-search-focus-background-color);
+    border-color: var(--nijmegen-search-focus-border-color);
+    color: var(--nijmegen-search-focus-color);
+  }
+
+  &:read-only,
+  &.nijmegen-search__input-read-only {
+    background-color: var(--nijmegen-search-read-only-background-color);
+    border-color: var(--nijmegen-search-read-only-border-color);
+    color: var(--nijmegen-search-read-only-color);
+  }
+
+  &.nijmegen-search__input--disabled {
+    background-color: var(--nijmegen-search-disabled-background-color);
+    border-color: var(--nijmegen-search-disabled-border-color);
+    color: var(--nijmegen-search-disabled-color);
+    cursor: var(--utrecht-action-disabled-cursor, not-allowed);
+  }
+
+  &::placeholder {
+    color: var(--nijmegen-search-placeholder-color);
+  }
+}
