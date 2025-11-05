@@ -1,6 +1,7 @@
 import '@gemeentenijmegen/components-css';
 import '@utrecht/components/button/css/index.scss';
 import { IconSearch, IconX } from '@tabler/icons-react';
+import '@gemeentenijmegen/web-components/dist/nijmegen-search.js';
 import clsx from 'clsx';
 
 export const argTypes = {
@@ -29,7 +30,7 @@ export const argTypes = {
   },
 };
 
-export const SearchStory = ({
+export const SearchStoryWebComponent = ({
   icon = true,
   disabled = false,
   readOnly = false,
@@ -37,7 +38,7 @@ export const SearchStory = ({
   placeholder = 'Zoeken',
 }) => {
   return (
-    <form className={clsx('nijmegen-search', dark && 'nijmegen-search--dark')} method="GET" action="" role="search">
+    <nijmegen-search>
       <div className="nijmegen-search__input-holder">
         <input
           className={clsx('nijmegen-search__input', disabled && 'nijmegen-search__input--disabled')}
@@ -52,15 +53,63 @@ export const SearchStory = ({
           aria-describedby="autocomplete-help-text"
         />
         <button
-          className="nijmegen-search__clear-button nijmegen-search__button--hide"
+          className="nijmegen-search__clear-button nijmegen-search__clear-button--hide"
           aria-label="Invoer wissen"
           title="Invoer wissen"
+          tabIndex="-1"
         >
           <IconX />
         </button>
       </div>
       <button
-        className="utrecht-button utrecht-button--primary-action nijmegen-search__search-button"
+        className={clsx(
+          'utrecht-button utrecht-button--primary-action nijmegen-search__search-button',
+          dark && 'nijmegen-search__search-button--dark',
+        )}
+        aria-label="Zoekknop"
+      >
+        {icon && <IconSearch />} Zoeken
+      </button>
+    </nijmegen-search>
+  );
+};
+
+export const SearchStory = ({
+  icon = true,
+  disabled = false,
+  readOnly = false,
+  dark = false,
+  placeholder = 'Zoeken',
+}) => {
+  return (
+    <form className="nijmegen-search" method="GET" action="" role="search">
+      <div className="nijmegen-search__input-holder">
+        <input
+          className={clsx('nijmegen-search__input', disabled && 'nijmegen-search__input--disabled')}
+          disabled={disabled}
+          readOnly={readOnly}
+          id="search"
+          type="text"
+          placeholder={placeholder}
+          aria-controls="autocomplete-results"
+          aria-autocomplete="both"
+          aria-label="Zoekveld"
+          aria-describedby="autocomplete-help-text"
+        />
+        <button
+          className="nijmegen-search__clear-button nijmegen-search__clear-button--hide"
+          aria-label="Invoer wissen"
+          title="Invoer wissen"
+          tabIndex="-1"
+        >
+          <IconX />
+        </button>
+      </div>
+      <button
+        className={clsx(
+          'utrecht-button utrecht-button--primary-action nijmegen-search__search-button',
+          dark && 'nijmegen-search__search-button--dark',
+        )}
         aria-label="Zoekknop"
       >
         {icon && <IconSearch />} Zoeken
