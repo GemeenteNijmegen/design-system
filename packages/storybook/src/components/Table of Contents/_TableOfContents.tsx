@@ -1,12 +1,20 @@
 import '@gemeentenijmegen/components-css';
 import '@utrecht/heading-4-css';
 
-export const argTypes = {};
+export const argTypes = {
+  title: {
+    name: 'Title',
+    control: 'text',
+    table: {
+      defaultValue: '',
+    },
+  },
+};
 
-export const TableOfContentsStory = () => {
+export const TableOfContentsStory = ({ title = '' }) => {
   return (
     <div className="nijmegen-table-of-contents">
-      <h4 className="utrecht-heading-4">Op deze pagina</h4>
+      <h4 className="utrecht-heading-4">{title}</h4>
       <ul className="nijmegen-link-list">
         <li className="nijmegen-link-list__item">
           <a className="nijmegen-link-list__link" href="#">

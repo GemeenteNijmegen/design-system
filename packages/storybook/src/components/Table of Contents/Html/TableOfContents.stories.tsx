@@ -43,4 +43,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   name: 'Table of contents',
+  args: {
+    title: 'Op deze pagina',
+  },
 };

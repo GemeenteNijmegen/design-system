@@ -1,6 +1,7 @@
 .nijmegen-table-of-contents {
   background-color: var(--nijmegen-table-of-contents-background-color);
   border-color: var(--nijmegen-table-of-contents-border-color);
+  border-inline-start-style: solid;
   border-inline-start-width: var(--nijmegen-table-of-contents-border-inline-start-width);
   display: flex;
   flex-direction: column;
