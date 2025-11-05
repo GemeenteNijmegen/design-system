@@ -1,6 +1,7 @@
 {/* Search.docs.mdx */}
 import { Controls, Meta, Primary, Source } from '@storybook/addon-docs';
 import * as Search from './Search.stories';
+import example from './example.html?raw';
 
 <Meta of={Search} />
 
@@ -9,3 +10,6 @@ import * as Search from './Search.stories';
 ## Component suported arguments
 <Primary />
 <Controls />
+
+## Example implementation
+<Source language="html" code={example} />
