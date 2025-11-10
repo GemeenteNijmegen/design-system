@@ -11,7 +11,8 @@
   "scripts": {
     "build": "rollup -c ./rollup.config.mjs",
     "watch": "rollup -c ./rollup.config.mjs --watch",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "generate:spacing": "node ./spacing/getSpacing.mjs"
   },
   "main": "dist/index.min.css",
   "private": false,

@@ -1,0 +1,38 @@
+@import "./mixin";
+
+.nijmegen-spacing {
+  --utrecht-space-around: 1;
+  @include spacing-utrecht-heading-1;
+  @include spacing-utrecht-heading-2;
+  @include spacing-utrecht-heading-3;
+  @include spacing-utrecht-heading-4;
+  @include spacing-utrecht-heading-5;
+  @include spacing-utrecht-heading-6;
+  @include spacing-utrecht-accordion;
+  @include spacing-utrecht-alert;
+  @include spacing-utrecht-badge-list;
+  @include spacing-utrecht-blockquote;
+  @include spacing-utrecht-breadcrumb-nav;
+  @include spacing-utrecht-button;
+  @include spacing-utrecht-button-group;
+  @include spacing-utrecht-action-group;
+  @include spacing-utrecht-data-list;
+  @include spacing-utrecht-figure;
+  @include spacing-utrecht-form-field;
+  @include spacing-utrecht-form-field-description;
+  @include spacing-utrecht-form-field-error-message;
+  @include spacing-utrecht-form-label;
+  @include spacing-utrecht-img;
+  @include spacing-utrecht-link;
+  @include spacing-utrecht-ordered-list;
+  @include spacing-utrecht-pagination;
+  @include spacing-utrecht-paragraph;
+  @include spacing-utrecht-select;
+  @include spacing-utrecht-separator;
+  @include spacing-utrecht-sidenav;
+  @include spacing-utrecht-badge-status;
+  @include spacing-utrecht-table;
+  @include spacing-utrecht-textarea;
+  @include spacing-utrecht-textbox;
+  @include spacing-utrecht-unordered-list;
+}
