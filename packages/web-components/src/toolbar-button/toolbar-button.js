@@ -1,5 +1,5 @@
-import style from '@gemeentenijmegen/components-css/dist/index.min.css?raw';
-import html from './template.html?raw';
+import style from '@gemeentenijmegen/components-css/toolbar-button/index.scss';
+import html from './template.html';
 
 class NijmegenToolbarButton extends HTMLElement {
   constructor() {
@@ -16,7 +16,7 @@ class NijmegenToolbarButton extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ['type'];
+    return ['type', 'aria-controls'];
   }
 
   connectedCallback() {
@@ -28,12 +28,28 @@ class NijmegenToolbarButton extends HTMLElement {
           target = event.target.parentElement;
         }
         target.ariaExpanded = target.ariaExpanded === 'true' ? 'false' : 'true';
+
+        // control mobile menu visibility
+        if (target.getAttribute('aria-controls')) {
+          const elementId = target.getAttribute('aria-controls');
+          if (elementId === 'mobile-menu') {
+            const mobileMenu = document.getElementById(elementId);
+            const visibleClass = 'nijmegen-header__mobile-menu--visible';
+            const isExpanded = target.getAttribute('aria-expanded') === 'true';
+
+            // Toggle menu visibility
+            mobileMenu.classList.toggle(visibleClass, isExpanded);
+          }
+        }
       });
     }
   }
   attributeChangedCallback(name, oldValue, newValue) {
     if (name === 'type') {
       this.#handleType(newValue);
+    } else if (name === 'aria-controls') {
+      const button = this.shadowRoot.querySelector('.nijmegen-toolbar-button');
+      button.setAttribute('aria-controls', newValue);
     }
   }
   #handleType(type) {

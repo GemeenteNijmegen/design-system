@@ -2,7 +2,7 @@ import '@gemeentenijmegen/components-css';
 import clsx from 'clsx';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { MobileMenuStoryHtml, MobileMenuStoryWebComponent } from '../../Mobile menu/MobileMenu';
-import '@gemeentenijmegen/web-components/src/header/header.js';
+import '@gemeentenijmegen/web-components/dist/nijmegen-header.js';
 
 const logoString = encodeURIComponent(
   renderToStaticMarkup(

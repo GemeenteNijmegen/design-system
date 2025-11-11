@@ -1,9 +1,13 @@
 {/* Header.docs.mdx */}
-import { Controls, Meta, Primary } from '@storybook/addon-docs';
+import { Controls, Meta, Primary, Source } from '@storybook/addon-docs';
 import * as Header from './Header.stories';
+import example from './example.html?raw';
 
 <Meta of={Header} />
 
 # Header Component implementation in HTML/CSS
 <Primary />
 <Controls />
+
+## Example implementation
+<Source language="html" code={example} />

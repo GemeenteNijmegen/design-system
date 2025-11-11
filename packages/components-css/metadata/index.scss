@@ -1,0 +1,31 @@
+/* stylelint-disable no-descending-specificity */
+
+@import "~@utrecht/unordered-list-css/src/mixin";
+
+.nijmegen-metadata {
+  @include utrecht-unordered-list;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--nijmegen-space-50);
+  padding-inline-start: 0;
+
+  &.nijmegen-metadata__horizontal {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .nijmegen-metadata__item {
+      padding-inline-end: var(--nijmegen-space-50);
+    }
+  }
+}
+
+.nijmegen-metadata__item {
+  align-items: center;
+  display: flex;
+  gap: var(--nijmegen-space-50);
+
+  svg {
+    block-size: var(--nijmegen-icon-functional-size);
+  }
+}
