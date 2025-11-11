@@ -1,0 +1,5 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2020-2024 Frameless B.V.
+ * Copyright (c) 2021-2024 Gemeente Utrecht
+ */.utrecht-heading-4{break-inside:avoid-column;page-break-inside:avoid;color:var(--utrecht-heading-4-color, var(--utrecht-heading-color, var(--utrecht-document-color, inherit)));font-family:var(--utrecht-heading-4-font-family, var(--utrecht-heading-font-family, var(--utrecht-document-font-family)));font-size:var(--utrecht-heading-4-font-size, revert);font-weight:var(--utrecht-heading-4-font-weight, var(--utrecht-heading-font-weight, bold));line-height:var(--utrecht-heading-4-line-height);margin-block-end:calc(var(--utrecht-space-around, 0) * var(--utrecht-heading-4-margin-block-end, 0));margin-block-start:calc(var(--utrecht-space-around, 0) * var(--utrecht-heading-4-margin-block-start, 0));page-break-after:avoid}.utrecht-heading-4--distanced{--utrecht-space-around: 1}
