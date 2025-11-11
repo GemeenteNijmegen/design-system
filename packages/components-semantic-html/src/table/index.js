@@ -17,6 +17,3 @@ if (document.readyState === 'loading') {
 } else {
   responsiveTables();
 }
-
-// Small delay for environments like Storybook
-setTimeout(responsiveTables, 100);
