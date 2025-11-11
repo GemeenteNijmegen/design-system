@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const accordionData = [
   {
     label: 'Title 1',
@@ -29,6 +31,7 @@ interface AccordionSectionProps {
   body?: string;
   sections?: AccordionItem[];
   icon?: any;
+  headingLevel?: 'h2' | 'h3' | 'h4';
 }
 
 export const argTypes = {
@@ -60,16 +63,30 @@ export const argTypes = {
       disable: true,
     },
   },
+  headingLevel: {
+    name: 'headingLevel',
+    control: {
+      type: 'select',
+      options: ['h2', 'h3', 'h4'],
+    },
+  },
 };
 
-export const AccordionStoryWebComponent = ({ label = '', body = '', sections, icon = {} }: AccordionSectionProps) => {
+export const AccordionStoryWebComponent = ({
+  label = '',
+  body = '',
+  sections,
+  icon = {},
+  headingLevel = 'h2',
+}: AccordionSectionProps) => {
   const items = sections ? sections : [{ label, body }];
+  const HeaderTag = headingLevel as keyof React.JSX.IntrinsicElements;
 
   return (
     <nijmegen-accordion>
       {items.map((item, index) => (
         <div key={index} className="utrecht-accordion__section">
-          <h1 className="utrecht-accordion__header">
+          <HeaderTag className="utrecht-accordion__header">
             <button
               className="utrecht-button utrecht-button--subtle utrecht-accordion__button"
               type="button"
@@ -80,7 +97,7 @@ export const AccordionStoryWebComponent = ({ label = '', body = '', sections, ic
               <span className="utrecht-accordion__button-icon">{icon}</span>
               <span className="utrecht-accordion__button-label">{item.label}</span>
             </button>
-          </h1>
+          </HeaderTag>
           <div
             id={`utrecht-accordion:r${index + 1}:-panel`}
             className="utrecht-accordion__panel"

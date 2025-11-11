@@ -36,6 +36,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
+    headingLevel: 'h2',
     label: 'Title',
     body: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -46,6 +47,7 @@ export const Default: Story = {
 export const AccordionWithSections: Story = {
   name: 'Accordion with sections',
   args: {
+    headingLevel: 'h2',
     sections: accordionData,
   },
 };
