@@ -50,12 +50,19 @@ const getSpacingMixinsSemantic = (components) =>
     var componentName = mixinGroup[0].component;
     componentName = componentName.replace(/^\./, "");
 
-    const mixins = mixinGroup.map(
-      ({ component, sibling, spacing }) =>
-        `${component}:has(+ ${sibling}) {
-    margin-block-end: var(--utrecht-rich-text-${spacing}-margin-block-end);
-}`,
-    );
+    const mixins = mixinGroup.map(({ component, sibling, spacing }) => {
+      let resp = `${component}:has(+ ${sibling}) {
+    margin-block-end: var(--utrecht-rich-text-${spacing}-margin-block-end);`;
+      if (component == "button" && component == sibling) {
+        resp += `
+    margin-inline-end: var(--utrecht-rich-text-${spacing}-margin-block-end);
+    }`;
+      } else {
+        resp += `
+  }`;
+      }
+      return resp;
+    });
     return `@mixin spacing-${componentName} {
   ${componentName}:first-child {
     --${componentName}-margin-block-start: 0;
