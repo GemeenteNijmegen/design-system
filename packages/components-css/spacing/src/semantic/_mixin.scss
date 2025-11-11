@@ -154,6 +154,7 @@
   }
   button:has(+ button) {
     margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+    margin-inline-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
   button:has(+ p) {
     margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);

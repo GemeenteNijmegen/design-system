@@ -1,0 +1,40 @@
+@use "~@utrecht/button-css/src/mixin";
+
+@mixin component-library-class-mapping-button {
+  .btn {
+    @include utrecht-button;
+
+    box-shadow: none;
+    letter-spacing: normal;
+    width: initial;
+
+    &:disabled {
+      @include utrecht-button--disabled;
+    }
+
+    &:focus:not(:disabled, [aria-disabled="true"]) {
+      @include utrecht-button--focus;
+    }
+
+    &:focus-visible {
+      @include utrecht-button--focus;
+      @include utrecht-button--focus-visible;
+    }
+
+    &:hover:not(:disabled, [aria-disabled="true"]) {
+      @include utrecht-button--hover;
+    }
+
+    &:active:not(:disabled, [aria-disabled="true"]) {
+      @include utrecht-button--active;
+    }
+
+    &.btn-primary {
+      @include utrecht-button-appearance-properties("utrecht-button", "primary-action");
+    }
+
+    &.btn-secondary {
+      @include utrecht-button-appearance-properties("utrecht-button", "secondary-action");
+    }
+  }
+}
