@@ -1,21 +1,27 @@
 import '@gemeentenijmegen/components-css';
 import '@utrecht/component-library-react/dist/css-module';
 
-export const argTypes = {};
+export const argTypes = {
+  items: {
+    control: 'object',
+  },
+};
 
-export const ListboxStory = () => {
+export const ListboxStory = ({
+  items = [{ text: 'Placeholder', href: '#' }],
+}: {
+  items?: { text: string; href: string }[];
+}) => {
   return (
-    <div className="nijmegen-listbox" role="listbox" tabindex="0">
-      <ul className="nijmegen-listbox__list" role="none">
-        <li className="nijmegen-listbox__item" role="option">
-          Option #1
-        </li>
-        <li className="nijmegen-listbox__item" role="option">
-          Option #2
-        </li>
-        <li className="nijmegen-listbox__item" role="option">
-          Option #3
-        </li>
+    <div className="nijmegen-listbox" role="listbox">
+      <ul className="nijmegen-listbox__list" role="list">
+        {items.map((item, index) => (
+          <li key={index}>
+            <a href={item.href} className="nijmegen-listbox__item">
+              {item.text}
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );

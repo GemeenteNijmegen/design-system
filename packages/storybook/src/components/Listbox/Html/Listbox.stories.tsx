@@ -42,5 +42,11 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 export const Default: Story = {
-  args: {},
+  args: {
+    items: [
+      { text: 'Option #1', href: '#' },
+      { text: 'Option #2', href: '#' },
+      { text: 'Option #3', href: '#' },
+    ],
+  },
 };

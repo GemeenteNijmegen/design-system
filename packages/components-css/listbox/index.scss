@@ -17,6 +17,7 @@
 .nijmegen-listbox__list {
   @include utrecht-unordered-list;
 
+  list-style: none;
   padding-inline-start: 0;
 }
 
@@ -36,6 +37,7 @@
   padding-block-start: var(--nijmegen-listbox-item-padding-block-start);
   padding-inline-end: var(--nijmegen-listbox-item-padding-inline-end);
   padding-inline-start: var(--nijmegen-listbox-item-padding-inline-start);
+  text-decoration: none;
 
   &::before {
     background-color: currentColor;
