@@ -129,15 +129,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#868686"
+            "$value": "#5E5E5E"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#7C7C7C"
+            "$value": "#4E4E4E"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#727272"
+            "$value": "#404040"
           },
           "color-default": {
             "$type": "color",
@@ -187,15 +187,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#C9687E"
+            "$value": "#B93955"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#C45971"
+            "$value": "#B22645"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#BF4A64"
+            "$value": "#9D092A"
           },
           "color-default": {
             "$type": "color",
@@ -361,15 +361,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#409484"
+            "$value": "#147562"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#2E8A78"
+            "$value": "#126A59"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#1C806D"
+            "$value": "#0F584A"
           },
           "color-default": {
             "$type": "color",
@@ -535,15 +535,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#3489DD"
+            "$value": "#0066CB"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#207ED9"
+            "$value": "#005DB8"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#0B71D6"
+            "$value": "#004D98"
           },
           "color-default": {
             "$type": "color",
@@ -593,15 +593,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#DB5E62"
+            "$value": "#B91D22"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#D74C51"
+            "$value": "#99181C"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#D2373C"
+            "$value": "#7F1418"
           },
           "color-default": {
             "$type": "color",
@@ -651,15 +651,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#48965E"
+            "$value": "#1C7836"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#378C4F"
+            "$value": "#196C31"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#268240"
+            "$value": "#155928"
           },
           "color-default": {
             "$type": "color",
@@ -709,15 +709,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#D06A20"
+            "$value": "#914C1B"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#C0631F"
+            "$value": "#773F19"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#B05B1E"
+            "$value": "#613516"
           },
           "color-default": {
             "$type": "color",
@@ -767,15 +767,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#9E8418"
+            "$value": "#6F5D17"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#927A18"
+            "$value": "#5B4C16"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#867018"
+            "$value": "#4B3F15"
           },
           "color-default": {
             "$type": "color",
@@ -883,15 +883,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#C9C9C9"
+            "$value": "#FFFFFF"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#D4D4D4"
+            "$value": "#FFFFFF"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#E0E0E0"
+            "$value": "#FFFFFF"
           },
           "color-default": {
             "$type": "color",
@@ -941,15 +941,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#E8BFC8"
+            "$value": "#FFFFFF"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#EDCCD3"
+            "$value": "#FFFFFF"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#F2DADF"
+            "$value": "#FFFFFF"
           },
           "color-default": {
             "$type": "color",
@@ -1115,15 +1115,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#ACD1CA"
+            "$value": "#FFFFFF"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#BEDAD5"
+            "$value": "#FFFFFF"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#CFE4E0"
+            "$value": "#FFFFFF"
           },
           "color-default": {
             "$type": "color",
@@ -1289,15 +1289,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#A9CDF1"
+            "$value": "#FFFFFF"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#BBD8F4"
+            "$value": "#FFFFFF"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#CDE2F7"
+            "$value": "#FFFFFF"
           },
           "color-default": {
             "$type": "color",
@@ -1347,15 +1347,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#F0BDBE"
+            "$value": "#FFFFFF"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#F3CBCC"
+            "$value": "#FFFFFF"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#F6D9DA"
+            "$value": "#FFFFFF"
           },
           "color-default": {
             "$type": "color",
@@ -1405,15 +1405,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#B0D1B9"
+            "$value": "#FFFFFF"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#C0DBC8"
+            "$value": "#FFFFFF"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#D1E4D6"
+            "$value": "#FFFFFF"
           },
           "color-default": {
             "$type": "color",
@@ -1463,15 +1463,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#FFBB8A"
+            "$value": "#FFFFFF"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#FFCAA3"
+            "$value": "#FFFFFF"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#FFD8BC"
+            "$value": "#FFFFFF"
           },
           "color-default": {
             "$type": "color",
@@ -1521,15 +1521,15 @@
           },
           "border-default": {
             "$type": "color",
-            "$value": "#ECC609"
+            "$value": "#FFFFFF"
           },
           "border-hover": {
             "$type": "color",
-            "$value": "#F9D103"
+            "$value": "#FFFFFF"
           },
           "border-active": {
             "$type": "color",
-            "$value": "#FFDE56"
+            "$value": "#FFFFFF"
           },
           "color-default": {
             "$type": "color",
