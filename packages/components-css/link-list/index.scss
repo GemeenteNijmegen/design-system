@@ -1,0 +1,20 @@
+@import "./mixin";
+.nijmegen-link-list {
+  @include nijmegen-link-list;
+}
+
+.nijmegen-link-list__item {
+  @include nijmegen-link-list__item;
+}
+
+.nijmegen-link-list__link {
+  &:any-link {
+    @include nijmegen-link-list__link;
+  }
+
+  &:not(.nijmegen-link-list__link--no-chevron) {
+    &::before {
+      @include nijmegen-link-list__link-before;
+    }
+  }
+}

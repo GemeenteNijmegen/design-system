@@ -161,6 +161,10 @@
         "size": {
           "value": "{nijmegen.icon.functional.size}",
           "type": "sizing"
+        },
+        "gap": {
+          "value": "{nijmegen.space.25}",
+          "type": "spacing"
         }
       },
       "column-gap": {
@@ -348,16 +352,6 @@
       "min-inline-size": {
         "value": "{utrecht.pointer-target.min-size}",
         "type": "sizing"
-      }
-    }
-  },
-  "todo": {
-    "button": {
-      "hover": {
-        "text-decoration": {
-          "value": "{nijmegen.hover.text-decoration}",
-          "type": "textDecoration"
-        }
       }
     }
   }

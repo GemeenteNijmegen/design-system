@@ -1,0 +1,84 @@
+@import "~@utrecht/link-css/src/mixin";
+@import "~@utrecht/focus-ring-css/src/mixin";
+@mixin nijmegen-link-list {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--nijmegen-link-list-row-gap, 0.5rem);
+}
+
+@mixin nijmegen-link-list__item {
+  display: inline-flex;
+  list-style: none;
+}
+
+@mixin nijmegen-link-list__link-before {
+  background-color: var(--utrecht-link-color);
+  content: "";
+  display: inline-block;
+  height: var(--nijmegen-icon-functional-size-height, 0.875rem); /* stylelint-disable-line property-disallowed-list */
+  mask-image: var(
+    --nijmegen-link-list-icon,
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></svg>')
+  );
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  width: var(--nijmegen-icon-functional-size-width, 1.5rem); /* stylelint-disable-line property-disallowed-list */
+}
+
+@mixin nijmegen-link-list__link {
+  align-items: center;
+  color: var(--utrecht-link-color);
+  display: inline-flex;
+  gap: var(--todo-link-list-item-column-gap); /* stylelint-disable-line custom-property-pattern */
+  text-decoration: var(--nijmegen-link-list-item-text-decoration, none);
+  &:active,
+  &.nijmegen-link-list__link--active {
+    @include utrecht-link--active;
+
+    color: var(--nijmegen-link-list-item-active-color, #0c483d);
+    text-decoration: var(--nijmegen-link-list-item-active-text-decoration, underline);
+    &::before {
+      background-color: var(--nijmegen-link-list-item-active-color, #0c483d);
+    }
+  }
+
+  &:hover,
+  &.nijmegen-link-list__link--hover {
+    @include utrecht-link--hover;
+
+    color: var(--nijmegen-link-list-item-hover-color, #116253);
+    text-decoration: var(--nijmegen-link-list-item-hover-text-decoration, underline);
+    &::before {
+      background-color: var(--nijmegen-link-list-item-hover-color, #116253);
+    }
+  }
+
+  &:focus,
+  &.nijmegen-link-list__link--focus {
+    @include utrecht-link--focus;
+
+    color: var(--nijmegen-link-list-item-focus-color, #000);
+    text-decoration: var(--nijmegen-link-list-item-focus-text-decoration, none);
+    &::before {
+      background-color: var(--nijmegen-link-list-item-focus-color, #000);
+    }
+  }
+
+  &:focus-visible,
+  &.nijmegen-link-list__link--focus-visible {
+    @include utrecht-link--focus;
+    @include utrecht-link--focus-visible;
+
+    color: var(--nijmegen-link-list-item-focus-visible-color, #000);
+    &::before {
+      background-color: var(--nijmegen-link-list-item-focus-visible-color, #000);
+    }
+  }
+
+  &:visited,
+  &.nijmegen-link-list__link--visited {
+    @include utrecht-link--visited;
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "nijmegen": {
+    "breakpoint": {
+      "xs": {
+        "value": "0",
+        "type": "dimension"
+      },
+      "sm": {
+        "value": "576px",
+        "type": "dimension"
+      },
+      "md": {
+        "value": "768px",
+        "type": "dimension"
+      },
+      "lg": {
+        "value": "992px",
+        "type": "dimension"
+      },
+      "xl": {
+        "value": "1200px",
+        "type": "dimension"
+      },
+      "xxl": {
+        "value": "1400px",
+        "type": "dimension"
+      }
+    },
+    "container": {
+      "max-width": {
+        "sm": {
+          "value": "540px",
+          "type": "dimension"
+        },
+        "md": {
+          "value": "720px",
+          "type": "dimension"
+        },
+        "lg": {
+          "value": "960px",
+          "type": "dimension"
+        },
+        "xl": {
+          "value": "1140px",
+          "type": "dimension"
+        },
+        "xxl": {
+          "value": "1320px",
+          "type": "dimension"
+        }
+      },
+      "padding-inline": {
+        "start": {
+          "value": "{nijmegen.space.25}",
+          "type": "spacing"
+        },
+        "end": {
+          "value": "{nijmegen.space.25}",
+          "type": "spacing"
+        }
+      }
+    },
+    "grid": {
+      "columns": {
+        "value": "12",
+        "type": "other"
+      },
+      "gap": {
+        "value": "24px",
+        "type": "spacing"
+      },
+      "rows": {
+        "value": "1",
+        "type": "other"
+      }
+    },
+    "enable-important-utilities-on-spacing": {
+      "value": "true",
+      "type": "other"
+    }
+  }
+}

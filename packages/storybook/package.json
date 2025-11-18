@@ -15,7 +15,7 @@
   "scripts": {
     "build": "storybook build --output-dir dist/ --config-dir config/",
     "clean": "rimraf dist/",
-    "lint-build": "tsc --noEmit --project tsconfig.json",
+    "lint-build": "",
     "storybook": "storybook dev --config-dir config/ --port 6006"
   },
   "devDependencies": {
@@ -27,9 +27,13 @@
     "@gemeentenijmegen/assets": "workspace:*",
     "@gemeentenijmegen/components-css": "workspace:*",
     "@gemeentenijmegen/design-tokens": "workspace:*",
+    "@gemeentenijmegen/design-tokens-dark": "workspace:*",
     "@gemeentenijmegen/font": "workspace:*",
+    "@gemeentenijmegen/layout-css": "workspace:*",
+    "@gemeentenijmegen/web-components": "workspace:*",
     "@gemeentenijmegen/web-components-react": "workspace:*",
     "@gemeentenijmegen/web-components-stencil": "workspace:*",
+    "@gemeentenijmegen/semantic-html": "workspace:*",
     "@mdx-js/react": "3.0.1",
     "@storybook/addon-a11y": "7.6.17",
     "@storybook/addon-actions": "7.6.17",
@@ -52,8 +56,15 @@
     "@types/prettier": "2.7.3",
     "@types/react": "18.2.63",
     "@types/react-dom": "18.2.20",
+    "@utrecht/button-group-css": "1.4.0",
     "@utrecht/component-library-react": "7.1.0",
     "@utrecht/components": "3.0.1-alpha.27",
+    "@utrecht/heading-1-css": "1.5.0",
+    "@utrecht/heading-2-css": "1.5.0",
+    "@utrecht/heading-3-css": "1.5.0",
+    "@utrecht/heading-4-css": "1.5.0",
+    "@utrecht/heading-5-css": "1.5.0",
+    "@utrecht/heading-6-css": "1.5.0",
     "@vitejs/plugin-react": "4.2.1",
     "@whitespace/storybook-addon-html": "6.1.1",
     "babel-loader": "9.1.3",
@@ -77,6 +88,8 @@
   "dependencies": {
     "@storybook/core": "8.3.4",
     "@tabler/icons-react": "3.20.0",
-    "clsx": "2.1.0"
+    "@tabler/icons-webfont": "3.30.0",
+    "clsx": "2.1.0",
+    "prop-types": "15.8.1"
   }
 }

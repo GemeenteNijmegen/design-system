@@ -1,0 +1,41 @@
+{
+  "utrecht": {
+    "rich-text": {
+      "stranger": {
+        "margin-block-end": {
+          "value": "{nijmegen.space.200}",
+          "type": "dimension",
+          "description": "[code-only]"
+        }
+      },
+      "acquaintance": {
+        "margin-block-end": {
+          "value": "{nijmegen.space.150}",
+          "type": "dimension",
+          "description": "[code-only]"
+        }
+      },
+      "friend": {
+        "margin-block-end": {
+          "value": "{nijmegen.space.100}",
+          "type": "dimension",
+          "description": "[code-only]"
+        }
+      },
+      "best-friend": {
+        "margin-block-end": {
+          "value": "{nijmegen.space.50}",
+          "type": "dimension",
+          "description": "[code-only]"
+        }
+      },
+      "confidant": {
+        "margin-block-end": {
+          "value": "{nijmegen.space.0}",
+          "type": "dimension",
+          "description": "[code-only]"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import "~@utrecht/paragraph-css/src/html/mixin";
+@import "~@utrecht/heading-1-css/src/html/mixin";
+@import "~@utrecht/heading-2-css/src/html/mixin";
+@import "~@utrecht/heading-3-css/src/html/mixin";
+@import "~@utrecht/heading-4-css/src/html/mixin";
+@import "~@utrecht/heading-5-css/src/html/mixin";
+@import "~@utrecht/heading-6-css/src/html/mixin";
+@import "~@utrecht/document-css/src/html/mixin";
+@import "~@utrecht/link-css/src/html/mixin";
+@import "~@utrecht/button-css/src/html/mixin";
+@import "link-list/mixin";
+@import "component-library-class-mapping/mixin";
+@import "~@gemeentenijmegen/components-css/spacing/src/semantic/mixin";
+
+.nijmegen-html {
+  writing-mode: horizontal-tb;
+  @include utrecht-document;
+  @include utrecht-html-button;
+  @include utrecht-html-p;
+  /* stylelint-disable-next-line */
+  p.lead {
+    @include utrecht-paragraph--lead;
+  }
+  @include utrecht-html-h1;
+  @include utrecht-html-h2;
+  @include utrecht-html-h3;
+  @include utrecht-html-h4;
+  @include utrecht-html-h5;
+  @include utrecht-html-h6;
+  @include utrecht-html-a;
+  @include nijmegen-html-unordered-list;
+
+  @include spacing-h1;
+  @include spacing-h2;
+  @include spacing-h3;
+  @include spacing-h4;
+  @include spacing-h5;
+  @include spacing-h6;
+  @include spacing-button;
+  @include spacing-p;
+  @include spacing-ul;
+  @include spacing-nijmegen-html-linklist;
+  @include spacing-a;
+}
+
+.nijmegen-component-library-mapping {
+  writing-mode: horizontal-tb;
+  @include component-library-class-mapping-button;
+}

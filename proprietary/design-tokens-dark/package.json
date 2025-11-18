@@ -1,0 +1,32 @@
+{
+  "version": "0.0.2-alpha.59",
+  "author": "Community for NL Design System",
+  "description": "Dark theme design tokens for the Municipality of Nijmegen",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "name": "@gemeentenijmegen/design-tokens-dark",
+  "keywords": [
+    "nl-design-system",
+    "GemeenteNijmegen/"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:GemeenteNijmegen/design-system.git"
+  },
+  "scripts": {
+    "clean": "rimraf dist/",
+    "build": "npm-run-all clean build:**",
+    "build:style-dictionary": "style-dictionary build --config ./style-dictionary.config.json",
+    "watch": "npm-run-all watch:**",
+    "watch:style-dictionary": "chokidar --follow-symlinks --initial --command 'pnpm run build' 'src/**/*.tokens.json'"
+  },
+  "devDependencies": {
+    "chokidar-cli": "3.0.0",
+    "npm-run-all": "4.1.5",
+    "rimraf": "5.0.5",
+    "style-dictionary": "3.9.2"
+  }
+}

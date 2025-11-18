@@ -1,0 +1,25 @@
+@import "./mixin";
+
+.nijmegen-spacing {
+  --utrecht-space-around: 1;
+  @include spacing-utrecht-heading-1;
+  @include spacing-utrecht-heading-2;
+  @include spacing-utrecht-heading-3;
+  @include spacing-utrecht-heading-4;
+  @include spacing-utrecht-heading-5;
+  @include spacing-utrecht-heading-6;
+  @include spacing-utrecht-accordion;
+  @include spacing-utrecht-alert;
+  @include spacing-nijmegen-breadcrumb;
+  @include spacing-utrecht-button;
+  @include spacing-utrecht-action-group;
+  @include spacing-utrecht-img;
+  @include spacing-nijmegen-hero;
+  @include spacing-utrecht-link;
+  @include spacing-utrecht-ordered-list;
+  @include spacing-nijmegen-pagination;
+  @include spacing-utrecht-paragraph;
+  @include spacing-utrecht-separator;
+  @include spacing-nijmegen-table;
+  @include spacing-utrecht-unordered-list;
+}

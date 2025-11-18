@@ -1,0 +1,11 @@
+@mixin nijmegen-mobile-menu-icon-base {
+  background-color: currentColor;
+  content: "";
+  display: inline-block;
+  /* stylelint-disable-next-line property-disallowed-list */
+  height: var(--nijmegen-header-item-icon-size, 1.5rem);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  width: var(--nijmegen-header-item-icon-size, 1.5rem); /* stylelint-disable-line property-disallowed-list */
+}

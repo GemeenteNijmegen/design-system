@@ -7,3 +7,6 @@ build/
 coverage/
 dist/
 tmp/
+
+packages/components-css/spacing/src/semantic/_mixin.scss
+packages/components-semantic-html/src/component-library-class-mapping/

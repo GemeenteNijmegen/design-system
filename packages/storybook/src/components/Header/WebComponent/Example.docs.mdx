@@ -1,0 +1,13 @@
+{/* Header.docs.mdx */}
+import { Meta, Primary, Source } from '@storybook/addon-docs';
+import * as Header from './Header.stories';
+import example from './example.html?raw';
+
+<Meta of={Header} />
+
+# Header Component implementation as Web Component
+<Primary />
+
+## Example implementation
+This html example is a full implementation of the header including mega menu, mobile menu and the toolbar button. Component styles do not need to be loaded because they are automatically rendered in the shadow-dom of the components.
+<Source language="html" code={example} />
