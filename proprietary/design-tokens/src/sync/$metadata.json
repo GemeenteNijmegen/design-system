@@ -47,6 +47,7 @@
     "components/radio.tokens",
     "components/rich-text.tokens",
     "components/search.tokens",
+    "components/search-result.tokens",
     "components/select.tokens",
     "components/separator.tokens",
     "components/sidenav.tokens",
