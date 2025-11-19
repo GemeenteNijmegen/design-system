@@ -7,7 +7,7 @@ import terser from "@rollup/plugin-terser";
 
 export default [
   {
-    input: "src/index.js", 
+    input: "src/index.js",
     output: [
       {
         file: "dist/index.js",
@@ -19,14 +19,14 @@ export default [
         format: "esm",
         sourcemap: true,
         plugins: [terser()],
-      }
+      },
     ],
     plugins: [
       nodeResolve(),
       commonjs(),
       babel({
-        babelHelpers: 'bundled',
-        exclude: 'node_modules/**'
+        babelHelpers: "bundled",
+        exclude: "node_modules/**",
       }),
     ],
   },

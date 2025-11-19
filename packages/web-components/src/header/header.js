@@ -1,5 +1,5 @@
-import style from '@gemeentenijmegen/components-css/dist/index.min.css?raw';
-import html from './template.html?raw';
+import style from '@gemeentenijmegen/components-css/menu.scss';
+import html from './template.html';
 
 class NijmegenHeader extends HTMLElement {
   constructor() {

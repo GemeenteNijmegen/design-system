@@ -1,0 +1,20 @@
+.nijmegen-table-of-contents {
+  background-color: var(--nijmegen-table-of-contents-background-color);
+  border-color: var(--nijmegen-table-of-contents-border-color);
+  border-inline-start-style: solid;
+  border-inline-start-width: var(--nijmegen-table-of-contents-border-inline-start-width);
+  display: flex;
+  flex-direction: column;
+  gap: var(--nijmegen-table-of-contents-row-gap);
+  padding-block-end: var(--nijmegen-table-of-contents-padding-block-start);
+  padding-block-start: var(--nijmegen-table-of-contents-padding-block-end);
+  padding-inline-end: var(--nijmegen-table-of-contents-padding-inline-end);
+  padding-inline-start: var(--nijmegen-table-of-contents-padding-inline-start);
+
+  @media (width >=576px) {
+    padding-block-end: var(--nijmegen-table-of-contents-large-vw-padding-block-start);
+    padding-block-start: var(--nijmegen-table-of-contents-large-vw-padding-block-end);
+    padding-inline-end: var(--nijmegen-table-of-contents-large-vw-padding-inline-end);
+    padding-inline-start: var(--nijmegen-table-of-contents-large-vw-padding-inline-start);
+  }
+}

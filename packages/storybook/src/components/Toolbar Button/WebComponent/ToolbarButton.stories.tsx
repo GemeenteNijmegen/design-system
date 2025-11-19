@@ -3,7 +3,7 @@ import type { StoryContext } from '@storybook/types';
 import prettierBabel from 'prettier/parser-babel';
 import * as prettier from 'prettier/standalone';
 import * as ReactDOMServer from 'react-dom/server';
-import '@gemeentenijmegen/web-components/src/toolbar-button/toolbar-button.js';
+import '@gemeentenijmegen/web-components/dist/nijmegen-toolbar-button.js';
 
 const ToolbarButton = ({ label = '', type = '' }) => {
   return <nijmegen-toolbar-button type={type}>{label}</nijmegen-toolbar-button>;
