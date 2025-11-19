@@ -1,0 +1,31 @@
+import { Canvas } from '@storybook/addon-docs';
+import * as ButtonGroupStories from './React/ActionGroup.stories';
+
+# Documentatie Action group component
+
+Action-group is ontworpen om acties voor gebruikers eenvoudig zichtbaar en begrijpelijk te maken. In het Nijmegen Design Systeem zijn er verschillende typen knoppen die aansluiten op uiteenlopende behoeften en situaties.
+
+## Component
+
+Dit component is een implementatie van het `utrecht-button-group` component.
+
+| Link                                                                                                                                           | Omschrijving                                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| [NPM Utrecht button group css](https://www.npmjs.com/package/@utrecht/button-group-css) OF [NPM Utrecht Components](https://www.npmjs.com/package/@utrecht/components)                                                                    | Het huidige component vereist het `@utrecht/button-group-css` pakket voor een specifieke button group implementatie of het `@utrecht/button-group-css` pakket indien er meerdere componenten geimplementeerd worden. |
+| [NPM Utrecht Component Library React](https://www.npmjs.com/package/@utrecht/component-library-react)                                                                    | Voor de React implementatie is dit pakket vereist. |
+| [Figma gemeente Nijmegen](https://www.figma.com/design/g3AieWAFD3NtkbDDTTFC30/Novio---Nijmegen-Design-System?node-id=5067-4060) | Design documentatie van dit component.                           |
+
+
+## Variaties
+
+### Primaire en Secundaire
+
+Bij gebruik van een primaire en secundaire knop samen, is het belangrijk om een duidelijke volgorde te hebben. De primaire knop is voor de belangrijkste actie en trekt de meeste aandacht. De secundaire knop ondersteunt met een minder dringende actie.
+
+<Canvas of={ButtonGroupStories.Default} sourceState="none" />
+
+### Primaire en aanvullende 
+
+De combinatie van een primaire en een aanvullende knop biedt gebruikers duidelijke keuzes, waarbij de nadruk ligt op één belangrijke actie. De primaire knop is bedoeld voor de hoofdactie en trekt de meeste aandacht. De aanvullende knop ondersteunt met een actie die minder belangrijk of optioneel is.
+
+<Canvas of={ButtonGroupStories.DefaultVariant} sourceState="none" />

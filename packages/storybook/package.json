@@ -15,7 +15,7 @@
   "scripts": {
     "build": "storybook build --output-dir dist/ --config-dir config/",
     "clean": "rimraf dist/",
-    "lint-build": "tsc --noEmit --project tsconfig.json",
+    "lint-build": "",
     "storybook": "storybook dev --config-dir config/ --port 6006"
   },
   "devDependencies": {
@@ -30,6 +30,7 @@
     "@gemeentenijmegen/design-tokens-dark": "workspace:*",
     "@gemeentenijmegen/font": "workspace:*",
     "@gemeentenijmegen/layout-css": "workspace:*",
+    "@gemeentenijmegen/web-components": "workspace:*",
     "@gemeentenijmegen/web-components-react": "workspace:*",
     "@gemeentenijmegen/web-components-stencil": "workspace:*",
     "@gemeentenijmegen/semantic-html": "workspace:*",

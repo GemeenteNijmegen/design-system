@@ -1,9 +1,27 @@
 {
   "nijmegen": {
-    "breadcrumb-nav": {
-      "column-gap": {
-        "type": "spacing",
-        "value": "{nijmegen.space.50}"
+    "breadcrumb-navigation": {
+      "list": {
+        "column-gap": {
+          "type": "spacing",
+          "value": "{nijmegen.space.50}"
+        },
+        "padding-inline-start": {
+          "value": "{nijmegen.space.100}",
+          "type": "spacing"
+        },
+        "padding-inline-end": {
+          "value": "{nijmegen.space.100}",
+          "type": "spacing"
+        },
+        "max-inline-size": {
+          "value": "992px",
+          "type": "sizing"
+        }
+      },
+      "background-color": {
+        "value": "{nijmegen.color.grijs.100}",
+        "type": "color"
       },
       "font-family": {
         "type": "fontFamilies",
@@ -22,16 +40,6 @@
         "value": "{utrecht.document.line-height}"
       },
       "link": {
-        "icon": {
-          "column-gap": {
-            "type": "spacing",
-            "value": "{nijmegen.space.25}"
-          },
-          "size": {
-            "type": "sizing",
-            "value": "{nijmegen.icon.functional.size}"
-          }
-        },
         "padding-block-end": {
           "type": "spacing",
           "value": "{nijmegen.space.75}"
@@ -60,6 +68,16 @@
           "text-decoration": {
             "type": "textDecoration",
             "value": "underline"
+          }
+        },
+        "icon": {
+          "column-gap": {
+            "type": "spacing",
+            "value": "{nijmegen.space.25}"
+          },
+          "size": {
+            "type": "sizing",
+            "value": "{nijmegen.icon.functional.size}"
           }
         },
         "focus-visible": {
