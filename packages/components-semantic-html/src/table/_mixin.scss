@@ -1,0 +1,31 @@
+@import "~@gemeentenijmegen/components-css/table/mixin";
+@mixin nijmegen-html-table {
+  table {
+    @include nijmegen-table;
+
+    width: 100%; /* stylelint-disable-line property-disallowed-list */
+
+    caption {
+      @include nijmegen-table__caption;
+    }
+
+    tr {
+      @include nijmegen-table__row;
+    }
+
+    thead {
+      @include nijmegen-table__header;
+
+      th {
+        @include nijmegen-table__header-cell;
+      }
+    }
+
+    tbody,
+    tfoot {
+      td {
+        @include nijmegen-table__data-cell;
+      }
+    }
+  }
+}
