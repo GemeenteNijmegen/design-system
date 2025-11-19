@@ -1,0 +1,33 @@
+@import "./mixin";
+
+.nijmegen-table {
+  @include nijmegen-table;
+
+  &.nijmegen-table-full-width {
+    width: 100%; /* stylelint-disable-line property-disallowed-list */
+  }
+
+  @media (width <576px) {
+    width: 100%; /* stylelint-disable-line property-disallowed-list */
+  }
+}
+
+.nijmegen-table__caption {
+  @include nijmegen-table__caption;
+}
+
+.nijmegen-table__header {
+  @include nijmegen-table__header;
+}
+
+.nijmegen-table__row {
+  @include nijmegen-table__row;
+}
+
+.nijmegen-table__header-cell {
+  @include nijmegen-table__header-cell;
+}
+
+.nijmegen-table__data-cell {
+  @include nijmegen-table__data-cell;
+}
