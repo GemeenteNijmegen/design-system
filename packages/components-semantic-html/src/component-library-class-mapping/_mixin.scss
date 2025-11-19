@@ -4,6 +4,7 @@
   .btn {
     @include utrecht-button;
 
+    text-decoration: none;
     box-shadow: none;
     letter-spacing: normal;
     width: initial;
