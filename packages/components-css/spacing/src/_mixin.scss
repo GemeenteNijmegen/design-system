@@ -41,6 +41,21 @@
   .utrecht-heading-1:has(+ .utrecht-unordered-list) {
     --utrecht-heading-1-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
   }
+  .utrecht-heading-1:has(+ .nijmegen-card) {
+    --utrecht-heading-1-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .utrecht-heading-1:has(+ .nijmegen-link-list) {
+    --utrecht-heading-1-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .utrecht-heading-1:has(+ .nijmegen-metadata) {
+    --utrecht-heading-1-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .utrecht-heading-1:has(+ .nijmegen-search) {
+    --utrecht-heading-1-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .utrecht-heading-1:has(+ .nijmegen-table-of-contents) {
+    --utrecht-heading-1-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-heading-2 {
   .utrecht-heading-2:first-child {
@@ -83,6 +98,18 @@
     --utrecht-heading-2-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
   .utrecht-heading-2:has(+ .utrecht-unordered-list) {
+    --utrecht-heading-2-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-2:has(+ .nijmegen-card) {
+    --utrecht-heading-2-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .utrecht-heading-2:has(+ .nijmegen-link-list) {
+    --utrecht-heading-2-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-2:has(+ .nijmegen-metadata) {
+    --utrecht-heading-2-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-2:has(+ .nijmegen-search) {
     --utrecht-heading-2-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
 }
@@ -129,6 +156,18 @@
   .utrecht-heading-3:has(+ .utrecht-unordered-list) {
     --utrecht-heading-3-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .utrecht-heading-3:has(+ .nijmegen-card) {
+    --utrecht-heading-3-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .utrecht-heading-3:has(+ .nijmegen-link-list) {
+    --utrecht-heading-3-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-3:has(+ .nijmegen-metadata) {
+    --utrecht-heading-3-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-3:has(+ .nijmegen-search) {
+    --utrecht-heading-3-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-heading-4 {
   .utrecht-heading-4:first-child {
@@ -171,6 +210,18 @@
     --utrecht-heading-4-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
   .utrecht-heading-4:has(+ .utrecht-unordered-list) {
+    --utrecht-heading-4-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-4:has(+ .nijmegen-card) {
+    --utrecht-heading-4-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .utrecht-heading-4:has(+ .nijmegen-link-list) {
+    --utrecht-heading-4-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-4:has(+ .nijmegen-metadata) {
+    --utrecht-heading-4-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-4:has(+ .nijmegen-search) {
     --utrecht-heading-4-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
 }
@@ -217,6 +268,18 @@
   .utrecht-heading-5:has(+ .utrecht-unordered-list) {
     --utrecht-heading-5-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .utrecht-heading-5:has(+ .nijmegen-card) {
+    --utrecht-heading-5-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .utrecht-heading-5:has(+ .nijmegen-link-list) {
+    --utrecht-heading-5-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-5:has(+ .nijmegen-metadata) {
+    --utrecht-heading-5-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-5:has(+ .nijmegen-search) {
+    --utrecht-heading-5-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-heading-6 {
   .utrecht-heading-6:first-child {
@@ -256,6 +319,18 @@
     --utrecht-heading-6-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
   .utrecht-heading-6:has(+ .utrecht-unordered-list) {
+    --utrecht-heading-6-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-6:has(+ .nijmegen-card) {
+    --utrecht-heading-6-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .utrecht-heading-6:has(+ .nijmegen-link-list) {
+    --utrecht-heading-6-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-6:has(+ .nijmegen-metadata) {
+    --utrecht-heading-6-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-6:has(+ .nijmegen-search) {
     --utrecht-heading-6-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
 }
@@ -309,6 +384,15 @@
     --utrecht-accordion-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
   .utrecht-accordion:has(+ .utrecht-unordered-list) {
+    --utrecht-accordion-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-accordion:has(+ .nijmegen-card) {
+    --utrecht-accordion-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-accordion:has(+ .nijmegen-link-list) {
+    --utrecht-accordion-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-accordion:has(+ .nijmegen-metadata) {
     --utrecht-accordion-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
 }
@@ -373,6 +457,21 @@
   .utrecht-alert:has(+ .utrecht-unordered-list) {
     --utrecht-alert-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
+  .utrecht-alert:has(+ .nijmegen-card) {
+    --utrecht-alert-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .utrecht-alert:has(+ .nijmegen-link-list) {
+    --utrecht-alert-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .utrecht-alert:has(+ .nijmegen-metadata) {
+    --utrecht-alert-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .utrecht-alert:has(+ .nijmegen-search) {
+    --utrecht-alert-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .utrecht-alert:has(+ .nijmegen-table-of-contents) {
+    --utrecht-alert-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
 }
 @mixin spacing-nijmegen-breadcrumb {
   .nijmegen-breadcrumb:first-child {
@@ -435,6 +534,24 @@
   .nijmegen-breadcrumb:has(+ .utrecht-unordered-list) {
     --nijmegen-breadcrumb-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
+  .nijmegen-breadcrumb:has(+ .nijmegen-card) {
+    --nijmegen-breadcrumb-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-breadcrumb:has(+ .nijmegen-link-list) {
+    --nijmegen-breadcrumb-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-breadcrumb:has(+ .nijmegen-metadata) {
+    --nijmegen-breadcrumb-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-breadcrumb:has(+ .nijmegen-search) {
+    --nijmegen-breadcrumb-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-breadcrumb:has(+ .nijmegen-table-of-contents) {
+    --nijmegen-breadcrumb-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-breadcrumb:has(+ .utrecht-page-body) {
+    --nijmegen-breadcrumb-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-button {
   .utrecht-button:first-child {
@@ -488,6 +605,21 @@
   .utrecht-button:has(+ .utrecht-unordered-list) {
     --utrecht-button-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .utrecht-button:has(+ .nijmegen-card) {
+    --utrecht-button-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-button:has(+ .nijmegen-link-list) {
+    --utrecht-button-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-button:has(+ .nijmegen-metadata) {
+    --utrecht-button-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-button:has(+ .nijmegen-search) {
+    --utrecht-button-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-button:has(+ .nijmegen-table-of-contents) {
+    --utrecht-button-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-action-group {
   .utrecht-action-group:first-child {
@@ -540,6 +672,21 @@
   }
   .utrecht-action-group:has(+ .utrecht-unordered-list) {
     --utrecht-action-group-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-action-group:has(+ .nijmegen-card) {
+    --utrecht-action-group-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-action-group:has(+ .nijmegen-link-list) {
+    --utrecht-action-group-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-action-group:has(+ .nijmegen-metadata) {
+    --utrecht-action-group-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-action-group:has(+ .nijmegen-search) {
+    --utrecht-action-group-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-action-group:has(+ .nijmegen-table-of-contents) {
+    --utrecht-action-group-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
 }
 @mixin spacing-utrecht-img {
@@ -597,6 +744,18 @@
   .utrecht-img:has(+ .utrecht-unordered-list) {
     --utrecht-img-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .utrecht-img:has(+ .nijmegen-card) {
+    --utrecht-img-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-img:has(+ .nijmegen-link-list) {
+    --utrecht-img-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-img:has(+ .nijmegen-metadata) {
+    --utrecht-img-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-img:has(+ .nijmegen-search) {
+    --utrecht-img-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
 }
 @mixin spacing-nijmegen-hero {
   .nijmegen-hero:first-child {
@@ -643,6 +802,21 @@
   }
   .nijmegen-hero:has(+ .utrecht-unordered-list) {
     --nijmegen-hero-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-hero:has(+ .nijmegen-card) {
+    --nijmegen-hero-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-hero:has(+ .nijmegen-link-list) {
+    --nijmegen-hero-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-hero:has(+ .nijmegen-metadata) {
+    --nijmegen-hero-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-hero:has(+ .nijmegen-search) {
+    --nijmegen-hero-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-hero:has(+ .nijmegen-table-of-contents) {
+    --nijmegen-hero-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
 }
 @mixin spacing-utrecht-link {
@@ -700,6 +874,21 @@
   .utrecht-link:has(+ .utrecht-unordered-list) {
     --utrecht-link-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .utrecht-link:has(+ .nijmegen-card) {
+    --utrecht-link-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-link:has(+ .nijmegen-link-list) {
+    --utrecht-link-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-link:has(+ .nijmegen-metadata) {
+    --utrecht-link-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-link:has(+ .nijmegen-search) {
+    --utrecht-link-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-link:has(+ .nijmegen-table-of-contents) {
+    --utrecht-link-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-ordered-list {
   .utrecht-ordered-list:first-child {
@@ -756,6 +945,18 @@
   .utrecht-ordered-list:has(+ .utrecht-unordered-list) {
     --utrecht-ordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .utrecht-ordered-list:has(+ .nijmegen-card) {
+    --utrecht-ordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-ordered-list:has(+ .nijmegen-link-list) {
+    --utrecht-ordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-ordered-list:has(+ .nijmegen-metadata) {
+    --utrecht-ordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-ordered-list:has(+ .nijmegen-search) {
+    --utrecht-ordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
 }
 @mixin spacing-nijmegen-pagination {
   .nijmegen-pagination:first-child {
@@ -807,6 +1008,18 @@
     --nijmegen-pagination-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
   }
   .nijmegen-pagination:has(+ .utrecht-unordered-list) {
+    --nijmegen-pagination-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-pagination:has(+ .nijmegen-card) {
+    --nijmegen-pagination-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-pagination:has(+ .nijmegen-link-list) {
+    --nijmegen-pagination-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-pagination:has(+ .nijmegen-metadata) {
+    --nijmegen-pagination-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-pagination:has(+ .nijmegen-search) {
     --nijmegen-pagination-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
   }
 }
@@ -864,6 +1077,21 @@
   }
   .utrecht-paragraph:has(+ .utrecht-unordered-list) {
     --utrecht-paragraph-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-paragraph:has(+ .nijmegen-card) {
+    --utrecht-paragraph-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-paragraph:has(+ .nijmegen-link-list) {
+    --utrecht-paragraph-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-paragraph:has(+ .nijmegen-metadata) {
+    --utrecht-paragraph-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-paragraph:has(+ .nijmegen-search) {
+    --utrecht-paragraph-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-paragraph:has(+ .nijmegen-table-of-contents) {
+    --utrecht-paragraph-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
 }
 @mixin spacing-utrecht-separator {
@@ -924,6 +1152,26 @@
   .utrecht-separator:has(+ .utrecht-unordered-list) {
     --utrecht-separator-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
+  .utrecht-separator:has(+ .nijmegen-card) {
+    --utrecht-separator-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .utrecht-separator:has(+ .nijmegen-link-list) {
+    --utrecht-separator-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .utrecht-separator:has(+ .nijmegen-metadata) {
+    --utrecht-separator-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .utrecht-separator:has(+ .nijmegen-search) {
+    --utrecht-separator-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+}
+@mixin spacing-nijmegen-skip-link {
+  .nijmegen-skip-link:first-child {
+    --nijmegen-skip-link-margin-block-start: 0;
+  }
+  .nijmegen-skip-link:has(+ .nijmegen-header) {
+    --nijmegen-skip-link-margin-block-end: var(--utrecht-rich-text-confidant-margin-block-end);
+  }
 }
 @mixin spacing-nijmegen-table {
   .nijmegen-table:first-child {
@@ -980,6 +1228,18 @@
   .nijmegen-table:has(+ .utrecht-unordered-list) {
     --nijmegen-table-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .nijmegen-table:has(+ .nijmegen-card) {
+    --nijmegen-table-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-table:has(+ .nijmegen-link-list) {
+    --nijmegen-table-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-table:has(+ .nijmegen-metadata) {
+    --nijmegen-table-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-table:has(+ .nijmegen-search) {
+    --nijmegen-table-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-unordered-list {
   .utrecht-unordered-list:first-child {
@@ -1004,7 +1264,7 @@
     --utrecht-unordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
   .utrecht-unordered-list:has(+ .utrecht-alert) {
-    --utrecht-unordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+    --utrecht-unordered-list-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
   .utrecht-unordered-list:has(+ .utrecht-button) {
     --utrecht-unordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
@@ -1035,5 +1295,367 @@
   }
   .utrecht-unordered-list:has(+ .utrecht-unordered-list) {
     --utrecht-unordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-unordered-list:has(+ .nijmegen-card) {
+    --utrecht-unordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-unordered-list:has(+ .nijmegen-link-list) {
+    --utrecht-unordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-unordered-list:has(+ .nijmegen-metadata) {
+    --utrecht-unordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-unordered-list:has(+ .nijmegen-search) {
+    --utrecht-unordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+}
+@mixin spacing-nijmegen-card {
+  .nijmegen-card:first-child {
+    --nijmegen-card-margin-block-start: 0;
+  }
+  .nijmegen-card:has(+ .utrecht-heading-2) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-card:has(+ .utrecht-heading-3) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-card:has(+ .utrecht-heading-4) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-card:has(+ .utrecht-heading-5) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-card:has(+ .utrecht-heading-6) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-card:has(+ .utrecht-accordion) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-card:has(+ .utrecht-alert) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-card:has(+ .utrecht-button) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-card:has(+ .utrecht-action-group) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-card:has(+ .utrecht-img) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-card:has(+ .utrecht-link) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-card:has(+ .utrecht-ordered-list) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-card:has(+ .nijmegen-pagination) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-card:has(+ .utrecht-paragraph) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-card:has(+ .utrecht-separator) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-card:has(+ .nijmegen-table) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-card:has(+ .utrecht-unordered-list) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-card:has(+ .nijmegen-card) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-card:has(+ .nijmegen-link-list) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-card:has(+ .nijmegen-metadata) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+}
+@mixin spacing-nijmegen-header {
+  .nijmegen-header:first-child {
+    --nijmegen-header-margin-block-start: 0;
+  }
+  .nijmegen-header:has(+ .utrecht-heading-1) {
+    --nijmegen-header-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-header:has(+ .nijmegen-breadcrumb) {
+    --nijmegen-header-margin-block-end: var(--utrecht-rich-text-confidant-margin-block-end);
+  }
+  .nijmegen-header:has(+ .utrecht-page-body) {
+    --nijmegen-header-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+}
+@mixin spacing-nijmegen-link-list {
+  .nijmegen-link-list:first-child {
+    --nijmegen-link-list-margin-block-start: 0;
+  }
+  .nijmegen-link-list:has(+ .utrecht-heading-2) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .utrecht-heading-3) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .utrecht-heading-4) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .utrecht-heading-5) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .utrecht-heading-6) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .utrecht-accordion) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .utrecht-alert) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .utrecht-button) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .utrecht-action-group) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .utrecht-img) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .utrecht-link) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .utrecht-ordered-list) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .nijmegen-pagination) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .utrecht-paragraph) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .utrecht-separator) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .nijmegen-table) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .utrecht-unordered-list) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .nijmegen-card) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .nijmegen-link-list) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .nijmegen-metadata) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .nijmegen-search) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-link-list:has(+ .nijmegen-table-of-contents) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+}
+@mixin spacing-nijmegen-metadata {
+  .nijmegen-metadata:first-child {
+    --nijmegen-metadata-margin-block-start: 0;
+  }
+  .nijmegen-metadata:has(+ .utrecht-heading-2) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .utrecht-heading-3) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .utrecht-heading-4) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .utrecht-heading-5) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .utrecht-heading-6) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .utrecht-accordion) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .utrecht-alert) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .utrecht-button) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .utrecht-action-group) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .utrecht-img) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .utrecht-link) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .utrecht-ordered-list) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .nijmegen-pagination) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .utrecht-paragraph) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .utrecht-separator) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .nijmegen-table) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .utrecht-unordered-list) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .nijmegen-card) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .nijmegen-link-list) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .nijmegen-search) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-metadata:has(+ .nijmegen-table-of-contents) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+}
+@mixin spacing-nijmegen-search {
+  .nijmegen-search:first-child {
+    --nijmegen-search-margin-block-start: 0;
+  }
+  .nijmegen-search:has(+ .utrecht-heading-2) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-search:has(+ .utrecht-heading-3) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-search:has(+ .utrecht-heading-4) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-search:has(+ .utrecht-heading-5) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-search:has(+ .utrecht-heading-6) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-search:has(+ .utrecht-accordion) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-search:has(+ .utrecht-alert) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-search:has(+ .utrecht-img) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-search:has(+ .utrecht-link) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-search:has(+ .utrecht-ordered-list) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-search:has(+ .nijmegen-pagination) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-search:has(+ .utrecht-paragraph) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-search:has(+ .utrecht-separator) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-search:has(+ .nijmegen-table) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-search:has(+ .utrecht-unordered-list) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-search:has(+ .nijmegen-card) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-search:has(+ .nijmegen-link-list) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-search:has(+ .nijmegen-metadata) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+}
+@mixin spacing-nijmegen-table-of-contents {
+  .nijmegen-table-of-contents:first-child {
+    --nijmegen-table-of-contents-margin-block-start: 0;
+  }
+  .nijmegen-table-of-contents:has(+ .utrecht-heading-2) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .utrecht-heading-3) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .utrecht-heading-4) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .utrecht-heading-5) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .utrecht-heading-6) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .utrecht-accordion) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .utrecht-alert) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .utrecht-button) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .utrecht-action-group) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .utrecht-img) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .utrecht-link) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .utrecht-ordered-list) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .utrecht-paragraph) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .utrecht-separator) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .nijmegen-table) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .utrecht-unordered-list) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .nijmegen-card) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .nijmegen-link-list) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .nijmegen-metadata) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-table-of-contents:has(+ .nijmegen-search) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+}
+@mixin spacing-utrecht-page-body {
+  .utrecht-page-body:first-child {
+    --utrecht-page-body-margin-block-start: 0;
+  }
+  .utrecht-page-body:has(+ .nijmegen-header) {
+    --utrecht-page-body-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
 }
