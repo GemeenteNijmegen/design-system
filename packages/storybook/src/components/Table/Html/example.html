@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <title>Table example</title>
+    <!-- global -->
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/document-css@1.5.0/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/design-tokens@latest/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/font@latest/dist/index.css" />
+    <!-- component specific -->
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/components-css@latest/dist/index.min.css" />
+  </head>
+
+  <body class="utrecht-document nijmegen-theme">
+    <table class="nijmegen-table nijmegen-table-full-width">
+      <caption class="nijmegen-table__caption">
+        Afval ophaaldagen
+      </caption>
+      <thead class="nijmegen-table__header">
+        <tr class="nijmegen-table__row">
+          <th scope="col" class="nijmegen-table__header-cell">Wijk</th>
+          <th scope="col" class="nijmegen-table__header-cell">Afvalsoort</th>
+          <th scope="col" class="nijmegen-table__header-cell">Ophaaldag</th>
+        </tr>
+      </thead>
+      <tbody class="nijmegen-table__body">
+        <tr class="nijmegen-table__row">
+          <td class="nijmegen-table__data-cell" data-label="Wijk">Nijmegen-Oost</td>
+          <td class="nijmegen-table__data-cell" data-label="Afvalsoort">Restafval</td>
+          <td class="nijmegen-table__data-cell" data-label="Ophaaldag">Maandag</td>
+        </tr>
+        <tr class="nijmegen-table__row">
+          <td class="nijmegen-table__data-cell" data-label="Wijk">Dukenburg</td>
+          <td class="nijmegen-table__data-cell" data-label="Afvalsoort">Papier & karton</td>
+          <td class="nijmegen-table__data-cell" data-label="Ophaaldag">Woensdag</td>
+        </tr>
+        <tr class="nijmegen-table__row">
+          <td class="nijmegen-table__data-cell" data-label="Wijk">Lindenholt</td>
+          <td class="nijmegen-table__data-cell" data-label="Afvalsoort">GFT</td>
+          <td class="nijmegen-table__data-cell" data-label="Ophaaldag">Donderdag</td>
+        </tr>
+        <tr class="nijmegen-table__row">
+          <td class="nijmegen-table__data-cell" data-label="Wijk">Nijmegen-Noord</td>
+          <td class="nijmegen-table__data-cell" data-label="Afvalsoort">Grofvuil</td>
+          <td class="nijmegen-table__data-cell" data-label="Ophaaldag">Maandag</td>
+        </tr>
+      </tbody>
+    </table>
+    ;
+  </body>
+</html>

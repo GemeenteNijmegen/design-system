@@ -9,6 +9,7 @@
 @import "~@utrecht/link-css/src/html/mixin";
 @import "~@utrecht/button-css/src/html/mixin";
 @import "link-list/mixin";
+@import "table/mixin";
 @import "component-library-class-mapping/mixin";
 @import "~@gemeentenijmegen/components-css/spacing/src/semantic/mixin";
 
@@ -29,6 +30,7 @@
   @include utrecht-html-h6;
   @include utrecht-html-a;
   @include nijmegen-html-unordered-list;
+  @include nijmegen-html-table;
 
   @include spacing-h1;
   @include spacing-h2;
