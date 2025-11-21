@@ -3,6 +3,7 @@
     "brand.tokens",
     "common.tokens",
     "components/accordion.tokens",
+    "components/action-card.tokens",
     "components/alert.tokens",
     "components/avatar.tokens",
     "components/badge.tokens",
