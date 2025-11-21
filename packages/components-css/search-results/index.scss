@@ -3,8 +3,8 @@
 
 .nijmegen-search-results {
   border-block-color: var(--nijmegen-search-result-border-color);
-  border-block-end: var(--nijmegen-search-result-border-block-end-width);
-  border-block-style: solid;
+  border-block-end-style: solid;
+  border-block-end-width: var(--nijmegen-search-result-border-block-end-width, 1px);
   display: flex;
   flex-direction: column;
   gap: var(--nijmegen-search-result-row-gap);
