@@ -1,0 +1,10 @@
+.nijmegen-theme {
+  .utrecht-accordion__button {
+    align-items: flex-start;
+
+    .utrecht-accordion__button-icon {
+      position: relative;
+      top: 1px; /* stylelint-disable-line property-disallowed-list */
+    }
+  }
+}
