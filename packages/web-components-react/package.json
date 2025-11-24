@@ -30,9 +30,9 @@
   "devDependencies": {
     "@gemeentenijmegen/web-components-stencil": "workspace:*",
     "@types/node": "20.11.24",
-    "@types/react": "18.2.63",
+    "@types/react": "19.1.8",
     "@types/react-dom": "18.2.20",
-    "react": "18.2.0",
+    "react": "19.1.0",
     "react-dom": "18.2.0",
     "rimraf": "5.0.5",
     "typescript": "5.3.3"
