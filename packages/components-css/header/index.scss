@@ -20,6 +20,7 @@
 
 .nijmegen-header__content--small {
   &--inner {
+    border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
     @include nijmegen-header-content;
   }
 
@@ -52,6 +53,7 @@
   padding-block-start: 1.5rem;
   position: absolute;
   width: 100%; /* stylelint-disable-line property-disallowed-list */
+  z-index: 1;
 }
 
 .nijmegen-header-item {
