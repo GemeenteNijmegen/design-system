@@ -64,14 +64,16 @@ export const SearchResultsStory = ({
 
       <div className="nijmegen-search-results__content">
         <div className="nijmegen-search-results__summary">
-          <ul className={clsx('nijmegen-metadata', layout === 'horizontal' && 'nijmegen-metadata__horizontal')}>
-            {meta.map((item, index) => (
-              <li key={index} className="nijmegen-metadata__item">
-                {item.icon}
-                {item.children}
-              </li>
-            ))}
-          </ul>
+          {meta.length > 0 && (
+            <ul className={clsx('nijmegen-metadata', layout === 'horizontal' && 'nijmegen-metadata__horizontal')}>
+              {meta.map((item, index) => (
+                <li key={index} className="nijmegen-metadata__item">
+                  {item.icon}
+                  {item.children}
+                </li>
+              ))}
+            </ul>
+          )}
           <Paragraph>{text}</Paragraph>
         </div>
 

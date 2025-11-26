@@ -57,3 +57,14 @@ export const Default: Story = {
     ] as Array<{ children: string; icon: any }>,
   },
 };
+
+export const NoMeta: Story = {
+  name: 'Search results - no metadata',
+  args: {
+    title: 'Heading',
+    text: 'Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod',
+    link: 'Text',
+    url: '#',
+    layout: 'horizontal',
+  },
+};
