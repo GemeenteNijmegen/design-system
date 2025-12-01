@@ -39,6 +39,7 @@
     "components/listbox.tokens",
     "components/mega-menu.tokens",
     "components/menu.tokens",
+    "components/note.tokens",
     "components/ordered-list.tokens",
     "components/page-body.tokens",
     "components/page-content.tokens",
