@@ -48,3 +48,19 @@ export const Default: Story = {
     text: 'Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod',
   },
 };
+
+export const Info: Story = {
+  args: { ...Default.args, type: 'info' },
+};
+
+export const Negative: Story = {
+  args: { ...Default.args, type: 'error' },
+};
+
+export const Positive: Story = {
+  args: { ...Default.args, type: 'ok' },
+};
+
+export const Warning: Story = {
+  args: { ...Default.args, type: 'warning' },
+};
