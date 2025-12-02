@@ -24,5 +24,5 @@ export const argTypes = {
 export const ImageStory = (args: any) => {
   const className = args.aspectRatio ? `nijmegen-image ${args.aspectRatio}` : 'nijmegen-image';
 
-  return <img className={className} src={args.src} alt={args.alt} width="640" />;
+  return <img className={className} src={args.src} alt={args.alt} width="640" loading="lazy" />;
 };
