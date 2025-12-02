@@ -1,4 +1,3 @@
-import '@gemeentenijmegen/components-css';
 import { Heading4, Paragraph } from '@utrecht/component-library-react/dist/css-module';
 import clsx from 'clsx';
 
