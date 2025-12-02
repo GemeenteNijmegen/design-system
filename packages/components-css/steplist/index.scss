@@ -11,24 +11,24 @@
   position: relative;
 
   &::after {
-    background-color: var(--nijmegen-step-list-connector-border-color, #282828);
+    background-color: var(--nijmegen-step-list-connector-border-color);
     content: "";
     height: 100%; /* stylelint-disable-line property-disallowed-list */
     inset-block-start: 0;
-    inset-inline-start: var(--nijmegen-step-list-connector-padding-inline-start, 19px);
+    inset-inline-start: var(--nijmegen-step-list-connector-padding-inline-start);
     position: absolute;
     width: var(--nijmegen-step-list-connector-width, 2px); /* stylelint-disable-line property-disallowed-list */
     z-index: -1;
   }
 
   &:not(:first-child) {
-    padding-block-start: var(--nijmegen-step-list-step-marker-nested-padding-block-start, 40px);
+    padding-block-start: var(--nijmegen-step-list-step-padding-block-start);
   }
 
   &:last-child {
     &::after {
       /* stylelint-disable-next-line property-disallowed-list */
-      height: var(--nijmegen-step-list-step-marker-nested-padding-block-start, 40px);
+      height: var(--nijmegen-step-list-step-padding-block-start);
     }
   }
 }
@@ -42,18 +42,18 @@ ol.nijmegen-step-list {
     &::before {
       align-items: center;
       background-color: var(--nijmegen-step-list-connector-border-color, #282828);
-      border-radius: var(--nijmegen-step-list-step-marker-border-radius, 40px);
+      border-radius: var(--nijmegen-step-list-step-marker-border-radius);
       color: var(--nijmegen-step-list-step-marker-color, white);
       content: counter(nijmegen-counter);
       display: flex;
       font-family: var(--nijmegen-step-list-step-marker-font-family);
       font-size: var(--nijmegen-step-list-step-marker-font-size);
       font-weight: var(--nijmegen-step-list-step-marker-font-weight);
-      height: var(--nijmegen-step-list-step-marker-size, 40px); /* stylelint-disable-line property-disallowed-list */
+      height: var(--nijmegen-step-list-step-marker-size); /* stylelint-disable-line property-disallowed-list */
       justify-content: space-around;
       line-height: var(--nijmegen-step-list-step-marker-line-height);
       position: absolute;
-      width: var(--nijmegen-step-list-step-marker-size, 40px); /* stylelint-disable-line property-disallowed-list */
+      width: var(--nijmegen-step-list-step-marker-size); /* stylelint-disable-line property-disallowed-list */
     }
   }
 }
@@ -61,10 +61,10 @@ ol.nijmegen-step-list {
 ul.nijmegen-step-list {
   .nijmegen-step-list__item {
     &::before {
-      background-color: var(--nijmegen-step-list-step-marker-color, white);
+      background-color: var(--nijmegen-step-list-step-marker-color);
       border: 2px solid #282828;
-      border-color: var(--nijmegen-step-list-connector-border-color, #282828);
-      border-radius: var(--nijmegen-step-list-step-marker-border-radius, 40px);
+      border-color: var(--nijmegen-step-list-connector-border-color);
+      border-radius: var(--nijmegen-step-list-step-marker-border-radius);
       border-width: var(--nijmegen-step-list-connector-width, 2px);
       content: "";
       /* stylelint-disable-next-line property-disallowed-list */
@@ -97,12 +97,12 @@ ul.nijmegen-step-list {
 
 .nijmegen-step-list__header {
   padding-block-start: var(--nijmegen-step-list-step-heading-padding-block-start, 4px);
-  padding-inline-start: var(--nijmegen-step-list-connector-padding-inline-start, 56px);
+  padding-inline-start: 56px;
 }
 
 .nijmegen-step-list__body {
   display: flex;
   flex-direction: column;
   gap: var(--nijmegen-step-list-step-body-content-row-gap);
-  padding-inline-start: var(--nijmegen-step-list-connector-padding-inline-start, 56px);
+  padding-inline-start: 56px;
 }
