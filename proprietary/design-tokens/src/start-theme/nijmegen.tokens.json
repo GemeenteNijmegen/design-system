@@ -2797,6 +2797,68 @@
       }
     }
   },
+  "components/action-card": {
+    "nijmegen": {
+      "action-card": {
+        "background-color": {
+          "$type": "color",
+          "$value": "{basis.color.default.bg-document}"
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{basis.color.default.border-subtle}"
+        },
+        "border-width": {
+          "$type": "dimension",
+          "$value": "{basis.border-width.sm}"
+        },
+        "padding-block-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.2xl}"
+        },
+        "padding-block-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.block.xl}"
+        },
+        "padding-inline-end": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "padding-inline-start": {
+          "$type": "dimension",
+          "$value": "{basis.space.inline.xl}"
+        },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.3xl}"
+        },
+        "content": {
+          "row-gap": {
+            "$type": "dimension",
+            "$value": "{basis.space.row.md}"
+          }
+        },
+        "large-vw": {
+          "padding-block-end": {
+            "$type": "dimension",
+            "$value": "{ {basis.space.block.4xl}"
+          },
+          "padding-block-start": {
+            "$type": "dimension",
+            "$value": "{{basis.space.block.3xl}"
+          },
+          "padding-inline-end": {
+            "$type": "dimension",
+            "$value": "{{basis.space.inline.3xl}"
+          },
+          "padding-inline-start": {
+            "$type": "dimension",
+            "$value": "{{basis.space.inline.3xl}"
+          }
+        }
+      }
+    }
+  },
   "components/action-group": {
     "utrecht": {
       "button-group": {
@@ -12017,6 +12079,7 @@
       "brand",
       "common",
       "components/accordion",
+      "components/action-card",
       "components/action-group",
       "components/alert",
       "components/avatar",
