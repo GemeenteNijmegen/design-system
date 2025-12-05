@@ -7,11 +7,11 @@
       },
       "border-color": {
         "type": "color",
-        "value": "{nijmegen.color.none}"
+        "value": "{nijmegen.color.grijs.800}"
       },
       "border-width": {
         "type": "borderWidth",
-        "value": "0px"
+        "value": "{nijmegen.border-width.sm}"
       },
       "border-radius": {
         "type": "borderRadius",
@@ -58,7 +58,7 @@
         },
         "border-color": {
           "type": "color",
-          "value": "{nijmegen.color.none}"
+          "value": "{nijmegen.color.feedback.info.default}"
         },
         "color": {
           "type": "color",
@@ -82,7 +82,7 @@
         },
         "border-color": {
           "type": "color",
-          "value": "{nijmegen.color.none}"
+          "value": "{nijmegen.color.feedback.error.default}"
         },
         "color": {
           "type": "color",
@@ -106,7 +106,7 @@
         },
         "border-color": {
           "type": "color",
-          "value": "{nijmegen.color.none}"
+          "value": "{nijmegen.color.feedback.success.default}"
         },
         "color": {
           "type": "color",
@@ -130,7 +130,7 @@
         },
         "border-color": {
           "type": "color",
-          "value": "{nijmegen.color.none}"
+          "value": "{nijmegen.color.feedback.warning.default}"
         },
         "color": {
           "type": "color",
