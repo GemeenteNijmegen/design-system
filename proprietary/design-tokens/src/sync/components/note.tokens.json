@@ -1,0 +1,156 @@
+{
+  "utrecht": {
+    "spotlight-section": {
+      "background-color": {
+        "type": "color",
+        "value": "{nijmegen.color.grijs.200}"
+      },
+      "border-color": {
+        "type": "color",
+        "value": "{nijmegen.color.grijs.800}"
+      },
+      "border-width": {
+        "type": "borderWidth",
+        "value": "{nijmegen.border-width.sm}"
+      },
+      "border-radius": {
+        "type": "borderRadius",
+        "value": "0px"
+      },
+      "color": {
+        "type": "color",
+        "value": "{utrecht.document.color}"
+      },
+      "margin-block-end": {
+        "type": "spacing",
+        "value": "0px",
+        "description": "[code-only]"
+      },
+      "margin-block-start": {
+        "type": "spacing",
+        "value": "0px",
+        "description": "[code-only]"
+      },
+      "padding-block-end": {
+        "type": "spacing",
+        "value": "{nijmegen.space.125}"
+      },
+      "padding-block-start": {
+        "type": "spacing",
+        "value": "{nijmegen.space.100}"
+      },
+      "padding-inline-end": {
+        "type": "spacing",
+        "value": "{nijmegen.space.100}"
+      },
+      "padding-inline-start": {
+        "type": "spacing",
+        "value": "{nijmegen.space.100}"
+      },
+      "info": {
+        "border-width": {
+          "type": "borderWidth",
+          "value": "{utrecht.spotlight-section.border-width}"
+        },
+        "background-color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.info.subdued}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.info.default}"
+        },
+        "color": {
+          "type": "color",
+          "value": "{utrecht.document.color}"
+        },
+        "icon": {
+          "color": {
+            "type": "color",
+            "value": "{nijmegen.color.feedback.info.subdued}"
+          }
+        }
+      },
+      "error": {
+        "border-width": {
+          "type": "borderWidth",
+          "value": "{utrecht.spotlight-section.border-width}"
+        },
+        "background-color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.error.subdued}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.error.default}"
+        },
+        "color": {
+          "type": "color",
+          "value": "{utrecht.document.color}"
+        },
+        "icon": {
+          "color": {
+            "type": "color",
+            "value": "{utrecht.document.color}"
+          }
+        }
+      },
+      "ok": {
+        "border-width": {
+          "type": "borderWidth",
+          "value": "{utrecht.spotlight-section.border-width}"
+        },
+        "background-color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.success.subdued}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.success.default}"
+        },
+        "color": {
+          "type": "color",
+          "value": "{utrecht.document.color}"
+        },
+        "icon": {
+          "color": {
+            "type": "color",
+            "value": "{utrecht.document.color}"
+          }
+        }
+      },
+      "warning": {
+        "border-width": {
+          "type": "borderWidth",
+          "value": "{utrecht.spotlight-section.border-width}"
+        },
+        "background-color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.warning.subdued}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.warning.default}"
+        },
+        "color": {
+          "type": "color",
+          "value": "{utrecht.document.color}"
+        },
+        "icon": {
+          "color": {
+            "type": "color",
+            "value": "{utrecht.document.color}"
+          }
+        }
+      }
+    }
+  },
+  "todo": {
+    "spotlight-section": {
+      "row-gap": {
+        "type": "spacing",
+        "value": "{nijmegen.space.50}"
+      }
+    }
+  }
+}
