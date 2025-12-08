@@ -44,7 +44,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   name: 'Image',
   args: {
-    src: 'https://picsum.photos/640/360/',
+    src: 'https://picsum.photos/1200/675/',
     alt: 'Example image description',
   },
 };
@@ -52,7 +52,7 @@ export const Default: Story = {
 export const Aspect_16_9: Story = {
   name: 'Image aspect ratio 16:9',
   args: {
-    src: 'https://picsum.photos/640/360/',
+    src: 'https://picsum.photos/1200/675/',
     alt: 'Example image description',
     aspectRatio: 'nijmegen-image--aspect-16-9',
   },
@@ -61,7 +61,7 @@ export const Aspect_16_9: Story = {
 export const Aspect_1_1: Story = {
   name: 'Image aspect ratio 1:1',
   args: {
-    src: 'https://picsum.photos/640/360/',
+    src: 'https://picsum.photos/1200/675/',
     alt: 'Example image description',
     aspectRatio: 'nijmegen-image--aspect-1-1',
   },
@@ -70,7 +70,7 @@ export const Aspect_1_1: Story = {
 export const Aspect_4_3: Story = {
   name: 'Image aspect ratio 4:3',
   args: {
-    src: 'https://picsum.photos/640/360/',
+    src: 'https://picsum.photos/1200/675/',
     alt: 'Example image description',
     aspectRatio: 'nijmegen-image--aspect-4-3',
   },
