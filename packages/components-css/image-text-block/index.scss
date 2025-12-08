@@ -1,6 +1,12 @@
 .nijmegen-image-text-block {
   display: flex;
 
+  /* stylelint-disable */
+  #storybook-root & {
+    max-width: 1000px;
+  }
+  /* stylelint-enable */
+
   @media (width <992px) {
     flex: 1;
     flex-direction: column-reverse;
