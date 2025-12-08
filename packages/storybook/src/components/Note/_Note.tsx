@@ -34,8 +34,19 @@ export const NoteStory = ({ title = '', text = '', type = 'default' }) => {
     'utrecht-spotlight-section--warning': type === 'warning',
   });
 
+  const ariaLabel =
+    type === 'info'
+      ? 'Notitie type Informatie'
+      : type === 'error'
+        ? 'Notitie type Foutmelding'
+        : type === 'ok'
+          ? 'Notitie type Succes'
+          : type === 'warning'
+            ? 'Notitie type Waarschuwing'
+            : 'Notitie';
+
   return (
-    <div className={className}>
+    <div className={className} aria-label={ariaLabel}>
       <Heading4>{title}</Heading4>
       <Paragraph>{text}</Paragraph>
     </div>
