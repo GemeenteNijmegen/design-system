@@ -51,7 +51,7 @@ export const Default: Story = {
       <Button key="1" appearance="primary-action-button">
         Text
       </Button>,
-      <Button key="2" appearance="subtle-button">
+      <Button key="2" appearance="secondary-action-button">
         Text
       </Button>,
     ],

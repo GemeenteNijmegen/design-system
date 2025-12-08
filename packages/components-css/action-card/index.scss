@@ -17,6 +17,17 @@
     padding-inline-end: var(--nijmegen-action-card-large-vw-padding-inline-end);
     padding-inline-start: var(--nijmegen-action-card-large-vw-padding-inline-start);
   }
+
+  @media (width <576px) {
+    .utrecht-button-group {
+      flex-direction: column;
+
+      .utrecht-button {
+        inline-size: 100%;
+        max-inline-size: 100%;
+      }
+    }
+  }
 }
 
 .nijmegen-action-card__content {
