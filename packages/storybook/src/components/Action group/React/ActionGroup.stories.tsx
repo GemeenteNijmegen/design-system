@@ -3,6 +3,7 @@ import '@utrecht/button-group-css';
 import { IconExternalLink } from '@tabler/icons-react';
 import { Button } from '@utrecht/component-library-react';
 import { ButtonGroup } from '@utrecht/component-library-react/dist/css-module';
+import '@gemeentenijmegen/components-css';
 import { argTypes } from '../_ActionGroup';
 
 const meta = {

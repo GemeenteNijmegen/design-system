@@ -4,6 +4,7 @@ import type { StoryContext } from '@storybook/types';
 import { IconExternalLink } from '@tabler/icons-react';
 import { Button } from '@utrecht/component-library-react';
 import { ButtonGroup } from '@utrecht/component-library-react/dist/css-module';
+import '@gemeentenijmegen/components-css';
 import prettierBabel from 'prettier/parser-babel';
 import * as prettier from 'prettier/standalone';
 import * as ReactDOMServer from 'react-dom/server';
