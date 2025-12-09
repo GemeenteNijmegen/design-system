@@ -24,9 +24,10 @@
           aria-describedby="autocomplete-help-text"
         />
         <button
-          class="nijmegen-search__clear-button nijmegen-search__button--hide"
+          class="nijmegen-search__clear-button nijmegen-search__clear-button--hide"
           aria-label="Invoer wissen"
           title="Invoer wissen"
+          tabindex="-1"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -65,6 +66,11 @@
           <path d="M21 21l-6 -6"></path></svg
         >{" "} Zoeken
       </button>
+      <div class="nijmegen-search__autocomplete-results">
+        <div class="nijmegen-listbox" role="listbox">
+          <ul class="nijmegen-listbox__list" role="list"></ul>
+        </div>
+      </div>
     </form>
   </body>
 </html>

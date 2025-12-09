@@ -49,6 +49,7 @@ export const Default: Story = {
     disabled: false,
     dark: false,
     readOnly: false,
+    autocomplete: true,
   },
 };
 
@@ -60,6 +61,7 @@ export const Disabled: Story = {
     disabled: true,
     dark: false,
     readOnly: false,
+    autocomplete: true,
   },
 };
 
@@ -71,6 +73,7 @@ export const ReadOnly: Story = {
     disabled: false,
     dark: false,
     readOnly: true,
+    autocomplete: true,
   },
 };
 
@@ -82,5 +85,6 @@ export const Dark: Story = {
     disabled: false,
     dark: true,
     readOnly: false,
+    autocomplete: true,
   },
 };

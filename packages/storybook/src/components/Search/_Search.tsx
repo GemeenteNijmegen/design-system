@@ -28,6 +28,13 @@ export const argTypes = {
     name: 'Dark mode',
     control: 'boolean',
   },
+  autocomplete: {
+    name: 'Autocomplete',
+    control: 'boolean',
+    table: {
+      disable: true,
+    },
+  },
 };
 
 export const SearchStoryWebComponent = ({
@@ -35,6 +42,7 @@ export const SearchStoryWebComponent = ({
   disabled = false,
   readOnly = false,
   dark = false,
+  autocomplete = false,
   placeholder = 'Zoeken',
 }) => {
   return (
@@ -70,6 +78,17 @@ export const SearchStoryWebComponent = ({
       >
         {icon && <IconSearch />} Zoeken
       </button>
+
+      <div
+        className={clsx(
+          'nijmegen-search__autocomplete-results',
+          autocomplete && 'nijmegen-search__autocomplete-results--example',
+        )}
+      >
+        <div className="nijmegen-listbox" role="listbox">
+          <ul className="nijmegen-listbox__list" role="list"></ul>
+        </div>
+      </div>
     </nijmegen-search>
   );
 };
@@ -79,6 +98,7 @@ export const SearchStory = ({
   disabled = false,
   readOnly = false,
   dark = false,
+  autocomplete = false,
   placeholder = 'Zoeken',
 }) => {
   return (
@@ -114,6 +134,17 @@ export const SearchStory = ({
       >
         {icon && <IconSearch />} Zoeken
       </button>
+
+      <div
+        className={clsx(
+          'nijmegen-search__autocomplete-results',
+          autocomplete && 'nijmegen-search__autocomplete-results--example',
+        )}
+      >
+        <div className="nijmegen-listbox" role="listbox">
+          <ul className="nijmegen-listbox__list" role="list"></ul>
+        </div>
+      </div>
     </form>
   );
 };

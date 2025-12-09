@@ -4,12 +4,13 @@
 .nijmegen-search {
   display: flex;
   gap: var(--nijmegen-search-input-column-gap);
-  width: 100%; /* stylelint-disable-line property-disallowed-list */
+  inline-size: var(--nijmegen-search-input-max-inline-size);
+  max-inline-size: 100%;
+  position: relative;
 }
 
 .nijmegen-search__input-holder {
   flex: 1;
-  max-inline-size: var(--nijmegen-search-input-max-inline-size);
   position: relative;
 }
 
@@ -107,5 +108,17 @@
 
   &::placeholder {
     color: var(--nijmegen-search-input-placeholder-color);
+  }
+}
+
+.nijmegen-search__autocomplete-results {
+  display: none;
+  margin-block-start: var(--nijmegen-search-input-autocomplete-offset, 8px);
+  position: absolute;
+  top: var(--nijmegen-search-input-min-block-size); /* stylelint-disable-line property-disallowed-list */
+  width: 100%; /* stylelint-disable-line property-disallowed-list */
+
+  &--show-results {
+    display: block;
   }
 }
