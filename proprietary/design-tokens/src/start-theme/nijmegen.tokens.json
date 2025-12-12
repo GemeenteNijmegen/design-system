@@ -3133,10 +3133,6 @@
   "components/blockquote": {
     "nijmegen": {
       "blockquote": {
-        "background-color": {
-          "$type": "color",
-          "$value": "{basis.color.transparent}"
-        },
         "padding-block-end": {
           "$type": "dimension",
           "$value": "{basis.space.block.lg}"
@@ -3153,11 +3149,11 @@
           "$type": "dimension",
           "$value": "0px"
         },
+        "row-gap": {
+          "$type": "dimension",
+          "$value": "{basis.space.row.xl}"
+        },
         "attribution": {
-          "font-size": {
-            "$type": "fontSizes",
-            "$value": "{basis.text.font-size.md}"
-          },
           "color": {
             "$type": "color",
             "$value": "{basis.color.default.color-subtle}"
@@ -3166,20 +3162,20 @@
             "$type": "fontFamilies",
             "$value": "{basis.text.font-family.default}"
           },
-          "line-height": {
-            "$type": "lineHeights",
-            "$value": "{basis.text.line-height.xl}"
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{basis.text.font-size.sm}"
           },
           "font-weight": {
             "$type": "fontWeights",
             "$value": "{basis.text.font-weight.default}"
+          },
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": "{basis.text.line-height.sm}"
           }
         },
         "content": {
-          "font-size": {
-            "$type": "fontSizes",
-            "$value": "{basis.text.font-size.xl}"
-          },
           "color": {
             "$type": "color",
             "$value": "{basis.color.default.color-document}"
@@ -3188,18 +3184,32 @@
             "$type": "fontFamilies",
             "$value": "{basis.text.font-family.default}"
           },
-          "line-height": {
-            "$type": "lineHeights",
-            "$value": "{basis.text.line-height.md}"
+          "font-size": {
+            "$type": "fontSizes",
+            "$value": "{basis.text.font-size.xl}"
           },
           "font-weight": {
             "$type": "fontWeights",
             "$value": "{basis.text.font-weight.semibold}"
+          },
+          "line-height": {
+            "$type": "lineHeights",
+            "$value": "{basis.text.line-height.xl}"
+          },
+          "row-gap": {
+            "$type": "dimension",
+            "$value": "{basis.space.row.sm}"
           }
         },
-        "row-gap": {
-          "$type": "dimension",
-          "$value": "{basis.space.row.xl}"
+        "icon": {
+          "color": {
+            "$type": "color",
+            "$value": "{basis.color.accent-1.color-default}"
+          },
+          "size": {
+            "$type": "dimension",
+            "$value": "{basis.size.icon.xl}"
+          }
         }
       }
     }
