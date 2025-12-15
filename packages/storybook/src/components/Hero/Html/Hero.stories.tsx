@@ -49,6 +49,20 @@ export const Default: Story = {
     image: 'https://picsum.photos/640/360/',
     image_alt: 'Image description',
     button_group: false,
+    autocomplete: false,
+    type: 'home',
+  },
+};
+
+export const Autocomplete: Story = {
+  name: 'Hero homepage, autocomplete example',
+  args: {
+    title: 'Heading',
+    text: 'Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod',
+    image: 'https://picsum.photos/640/360/',
+    image_alt: 'Image description',
+    button_group: false,
+    autocomplete: true,
     type: 'home',
   },
 };
