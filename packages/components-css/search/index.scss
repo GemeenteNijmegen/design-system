@@ -7,6 +7,11 @@
   inline-size: var(--nijmegen-search-input-max-inline-size);
   max-inline-size: 100%;
   position: relative;
+
+  .utrecht-button {
+    max-block-size: 51px;
+    min-block-size: 51px;
+  }
 }
 
 .nijmegen-search__input-holder {
