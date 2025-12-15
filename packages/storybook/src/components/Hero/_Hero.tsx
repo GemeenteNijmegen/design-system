@@ -1,6 +1,7 @@
 import { Heading1, Paragraph } from '@utrecht/component-library-react/dist/css-module';
-import '@gemeentenijmegen/components-css';
 import clsx from 'clsx';
+import { SearchStory } from '../Search/_Search';
+import '@gemeentenijmegen/components-css';
 
 export const argTypes = {
   title: {
@@ -57,6 +58,7 @@ export const HeroStory = ({ title = '', text = '', image = '', image_alt = '', t
             {text && type === 'home' && <p className="utrecht-heading-2">{text}</p>}
           </div>
           {text && type !== 'home' && <Paragraph>{text}</Paragraph>}
+          {type === 'home' && <SearchStory dark={true}></SearchStory>}
 
           {button_group === true && (
             <p role="group" className="utrecht-button-group">
