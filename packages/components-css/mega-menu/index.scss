@@ -27,6 +27,7 @@
 
   .utrecht-heading-4 {
     font-size: 1.25rem;
+    padding-block-end: 1rem;
   }
 
   > * {
@@ -53,8 +54,6 @@
   }
 
   ul {
-    padding-block-start: 1rem;
-
     // row-gap: var(--nijmegen-mega-menu-content-row-gap, 0); todo if token is updated
     row-gap: 1rem;
   }

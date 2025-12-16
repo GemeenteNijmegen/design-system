@@ -355,6 +355,7 @@ export const HeaderStoryWebComponent = ({ state = '', variant = '', account = fa
               })}
               type="button"
               aria-expanded={expanded}
+              aria-controls="search-container"
               aria-label="Zoeken"
             >
               Zoeken
@@ -377,9 +378,14 @@ export const HeaderStoryWebComponent = ({ state = '', variant = '', account = fa
         </div>
 
         {variant === 'default' && (
-          <div id="mobile-menu" className="nijmegen-header__mobile-menu">
-            <MobileMenuStoryWebComponent />
-          </div>
+          <>
+            <div id="mobile-menu" className="nijmegen-header__mobile-menu">
+              <MobileMenuStoryWebComponent />
+            </div>
+            <div id="search-container" className="nijmegen-header__mobile-menu">
+              <SearchStoryWebComponent />
+            </div>
+          </>
         )}
       </div>
       <div className="nijmegen-header__content">
@@ -623,11 +629,14 @@ export const HeaderStoryWebComponent = ({ state = '', variant = '', account = fa
               >
                 Zoeken
               </button>
-              <div className="nijmegen-header__panel nijmegen-header__panel--small">
+              <div className="nijmegen-header__panel">
                 <div className="nijmegen-mega-menu">
                   <div className="nijmegen-mega-menu__container">
-                    <div className="nijmegen-header-action--content">
-                      <SearchStoryWebComponent icon={false} autocomplete={true} />
+                    <div className="nijmegen-mega-menu__content">
+                      <div>
+                        <h4 className="utrecht-heading-4">Zoeken</h4>
+                        <SearchStoryWebComponent icon={false} autocomplete={true} />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -739,9 +748,14 @@ export const HeaderStoryHtml = ({ state = '', expanded = '', variant = '', accou
         </div>
 
         {variant === 'default' && (
-          <div id="mobile-menu" className="nijmegen-header__mobile-menu">
-            <MobileMenuStoryHtml />
-          </div>
+          <>
+            <div id="mobile-menu" className="nijmegen-header__mobile-menu">
+              <MobileMenuStoryHtml />
+            </div>
+            <div id="search-container" className="nijmegen-header__mobile-menu">
+              <SearchStory />
+            </div>
+          </>
         )}
       </div>
       <div className="nijmegen-header__content">
@@ -985,7 +999,7 @@ export const HeaderStoryHtml = ({ state = '', expanded = '', variant = '', accou
               >
                 Zoeken
               </button>
-              <div className="nijmegen-header__panel nijmegen-header__panel--small">
+              <div className="nijmegen-header__panel">
                 <div className="nijmegen-mega-menu">
                   <div className="nijmegen-mega-menu__container">
                     <div className="nijmegen-header-action--content">
