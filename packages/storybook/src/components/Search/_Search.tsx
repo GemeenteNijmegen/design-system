@@ -28,6 +28,10 @@ export const argTypes = {
     name: 'Dark mode',
     control: 'boolean',
   },
+  full: {
+    name: 'Full width',
+    control: 'boolean',
+  },
   autocomplete: {
     name: 'Autocomplete',
     control: 'boolean',
@@ -42,51 +46,54 @@ export const SearchStoryWebComponent = ({
   disabled = false,
   readOnly = false,
   dark = false,
+  full = false,
   autocomplete = false,
   placeholder = 'Zoeken',
 }) => {
   return (
     <nijmegen-search>
-      <div className="nijmegen-search__input-holder">
-        <input
-          className={clsx('nijmegen-search__input', disabled && 'nijmegen-search__input--disabled')}
-          disabled={disabled}
-          readOnly={readOnly}
-          id="search"
-          type="text"
-          placeholder={placeholder}
-          aria-controls="autocomplete-results"
-          aria-autocomplete="both"
-          aria-label="Zoekveld"
-          aria-describedby="autocomplete-help-text"
-        />
+      <div className={clsx('nijmegen-search__container', full && 'nijmegen-search__container--full-width')}>
+        <div className="nijmegen-search__input-holder">
+          <input
+            className={clsx('nijmegen-search__input', disabled && 'nijmegen-search__input--disabled')}
+            disabled={disabled}
+            readOnly={readOnly}
+            id="search"
+            type="text"
+            placeholder={placeholder}
+            aria-controls="autocomplete-results"
+            aria-autocomplete="both"
+            aria-label="Zoekveld"
+            aria-describedby="autocomplete-help-text"
+          />
+          <button
+            className="nijmegen-search__clear-button nijmegen-search__clear-button--hide"
+            aria-label="Invoer wissen"
+            title="Invoer wissen"
+            tabIndex="-1"
+          >
+            <IconX />
+          </button>
+        </div>
         <button
-          className="nijmegen-search__clear-button nijmegen-search__clear-button--hide"
-          aria-label="Invoer wissen"
-          title="Invoer wissen"
-          tabIndex="-1"
+          className={clsx(
+            'utrecht-button utrecht-button--primary-action nijmegen-search__search-button',
+            dark && 'nijmegen-search__search-button--dark',
+          )}
+          aria-label="Zoekknop"
         >
-          <IconX />
+          {icon && <IconSearch />} Zoeken
         </button>
-      </div>
-      <button
-        className={clsx(
-          'utrecht-button utrecht-button--primary-action nijmegen-search__search-button',
-          dark && 'nijmegen-search__search-button--dark',
-        )}
-        aria-label="Zoekknop"
-      >
-        {icon && <IconSearch />} Zoeken
-      </button>
 
-      <div
-        className={clsx(
-          'nijmegen-search__autocomplete-results',
-          autocomplete && 'nijmegen-search__autocomplete-results--example',
-        )}
-      >
-        <div className="nijmegen-listbox" role="listbox">
-          <ul className="nijmegen-listbox__list" role="list"></ul>
+        <div
+          className={clsx(
+            'nijmegen-search__autocomplete-results',
+            autocomplete && 'nijmegen-search__autocomplete-results--example',
+          )}
+        >
+          <div className="nijmegen-listbox" role="listbox">
+            <ul className="nijmegen-listbox__list" role="list"></ul>
+          </div>
         </div>
       </div>
     </nijmegen-search>
@@ -98,51 +105,54 @@ export const SearchStory = ({
   disabled = false,
   readOnly = false,
   dark = false,
+  full = false,
   autocomplete = false,
   placeholder = 'Zoeken',
 }) => {
   return (
     <form className="nijmegen-search" method="GET" action="" role="search">
-      <div className="nijmegen-search__input-holder">
-        <input
-          className={clsx('nijmegen-search__input', disabled && 'nijmegen-search__input--disabled')}
-          disabled={disabled}
-          readOnly={readOnly}
-          id="search"
-          type="text"
-          placeholder={placeholder}
-          aria-controls="autocomplete-results"
-          aria-autocomplete="both"
-          aria-label="Zoekveld"
-          aria-describedby="autocomplete-help-text"
-        />
+      <div className={clsx('nijmegen-search__container', full && 'nijmegen-search__container--full-width')}>
+        <div className="nijmegen-search__input-holder">
+          <input
+            className={clsx('nijmegen-search__input', disabled && 'nijmegen-search__input--disabled')}
+            disabled={disabled}
+            readOnly={readOnly}
+            id="search"
+            type="text"
+            placeholder={placeholder}
+            aria-controls="autocomplete-results"
+            aria-autocomplete="both"
+            aria-label="Zoekveld"
+            aria-describedby="autocomplete-help-text"
+          />
+          <button
+            className="nijmegen-search__clear-button nijmegen-search__clear-button--hide"
+            aria-label="Invoer wissen"
+            title="Invoer wissen"
+            tabIndex="-1"
+          >
+            <IconX />
+          </button>
+        </div>
         <button
-          className="nijmegen-search__clear-button nijmegen-search__clear-button--hide"
-          aria-label="Invoer wissen"
-          title="Invoer wissen"
-          tabIndex="-1"
+          className={clsx(
+            'utrecht-button utrecht-button--primary-action nijmegen-search__search-button',
+            dark && 'nijmegen-search__search-button--dark',
+          )}
+          aria-label="Zoekknop"
         >
-          <IconX />
+          {icon && <IconSearch />} Zoeken
         </button>
-      </div>
-      <button
-        className={clsx(
-          'utrecht-button utrecht-button--primary-action nijmegen-search__search-button',
-          dark && 'nijmegen-search__search-button--dark',
-        )}
-        aria-label="Zoekknop"
-      >
-        {icon && <IconSearch />} Zoeken
-      </button>
 
-      <div
-        className={clsx(
-          'nijmegen-search__autocomplete-results',
-          autocomplete && 'nijmegen-search__autocomplete-results--example',
-        )}
-      >
-        <div className="nijmegen-listbox" role="listbox">
-          <ul className="nijmegen-listbox__list" role="list"></ul>
+        <div
+          className={clsx(
+            'nijmegen-search__autocomplete-results',
+            autocomplete && 'nijmegen-search__autocomplete-results--example',
+          )}
+        >
+          <div className="nijmegen-listbox" role="listbox">
+            <ul className="nijmegen-listbox__list" role="list"></ul>
+          </div>
         </div>
       </div>
     </form>

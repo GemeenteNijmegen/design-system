@@ -48,6 +48,7 @@ export const Default: Story = {
     icon: true,
     disabled: false,
     dark: false,
+    full: false,
     readOnly: false,
   },
 };
@@ -59,6 +60,7 @@ export const Disabled: Story = {
     icon: true,
     disabled: true,
     dark: false,
+    full: false,
     readOnly: false,
   },
 };
@@ -70,6 +72,7 @@ export const ReadOnly: Story = {
     icon: true,
     disabled: false,
     dark: false,
+    full: false,
     readOnly: true,
   },
 };
@@ -81,6 +84,7 @@ export const Dark: Story = {
     icon: true,
     disabled: false,
     dark: true,
+    full: false,
     readOnly: false,
   },
 };
