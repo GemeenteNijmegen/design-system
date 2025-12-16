@@ -383,7 +383,7 @@ export const HeaderStoryWebComponent = ({ state = '', variant = '', account = fa
               <MobileMenuStoryWebComponent />
             </div>
             <div id="search-container" className="nijmegen-header__mobile-menu">
-              <SearchStoryWebComponent />
+              <SearchStoryWebComponent full={true} />
             </div>
           </>
         )}
@@ -635,7 +635,7 @@ export const HeaderStoryWebComponent = ({ state = '', variant = '', account = fa
                     <div className="nijmegen-mega-menu__content">
                       <div>
                         <h4 className="utrecht-heading-4">Zoeken</h4>
-                        <SearchStoryWebComponent icon={false} autocomplete={true} />
+                        <SearchStoryWebComponent icon={false} placeholder={''} full={true} autocomplete={true} />
                       </div>
                     </div>
                   </div>
@@ -753,7 +753,7 @@ export const HeaderStoryHtml = ({ state = '', expanded = '', variant = '', accou
               <MobileMenuStoryHtml />
             </div>
             <div id="search-container" className="nijmegen-header__mobile-menu">
-              <SearchStory />
+              <SearchStory full={true} />
             </div>
           </>
         )}
@@ -1003,7 +1003,7 @@ export const HeaderStoryHtml = ({ state = '', expanded = '', variant = '', accou
                 <div className="nijmegen-mega-menu">
                   <div className="nijmegen-mega-menu__container">
                     <div className="nijmegen-header-action--content">
-                      <SearchStory icon={false} />
+                      <SearchStory full={true} placeholder={''} icon={false} />
                     </div>
                   </div>
                 </div>
