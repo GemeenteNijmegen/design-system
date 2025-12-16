@@ -44,10 +44,30 @@
 
 .nijmegen-header__panel {
   display: none;
-  left: 0; /* stylelint-disable-line property-disallowed-list */
   padding-block-start: 1.5rem;
   position: absolute;
-  width: 100%; /* stylelint-disable-line property-disallowed-list */
+  z-index: 1;
+
+  &:not(.nijmegen-header__panel--small) {
+    left: 0; /* stylelint-disable-line property-disallowed-list */
+    width: 100%; /* stylelint-disable-line property-disallowed-list */
+  }
+
+  &.nijmegen-header__panel--small {
+    right: 0; /* stylelint-disable-line property-disallowed-list */
+    width: var(--nijmegen-header-small-panel-width, 376px); /* stylelint-disable-line property-disallowed-list */
+  }
+}
+
+.nijmegen-header__actions {
+  position: relative;
+}
+
+.nijmegen-header-action--content {
+  padding-block-end: var(--nijmegen-mega-menu-content-padding-block-end, 0);
+  padding-block-start: var(--nijmegen-mega-menu-content-padding-block-start, 0);
+  padding-inline-end: var(--nijmegen-mega-menu-content-padding-inline-end, 0);
+  padding-inline-start: var(--nijmegen-mega-menu-content-padding-inline-start, 0);
 }
 
 .nijmegen-header-item {
