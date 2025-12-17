@@ -80,7 +80,6 @@ export const SearchStoryWebComponent = ({
             'utrecht-button utrecht-button--primary-action nijmegen-search__search-button',
             dark && 'nijmegen-search__search-button--dark',
           )}
-          aria-label="Zoekknop"
         >
           {icon && <IconSearch />} Zoeken
         </button>
@@ -123,7 +122,6 @@ export const SearchStory = ({
             aria-controls="autocomplete-results"
             aria-autocomplete="both"
             aria-label="Zoekveld"
-            aria-describedby="autocomplete-help-text"
           />
           <button
             className="nijmegen-search__clear-button nijmegen-search__clear-button--hide"
@@ -139,7 +137,6 @@ export const SearchStory = ({
             'utrecht-button utrecht-button--primary-action nijmegen-search__search-button',
             dark && 'nijmegen-search__search-button--dark',
           )}
-          aria-label="Zoekknop"
         >
           {icon && <IconSearch />} Zoeken
         </button>
