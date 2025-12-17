@@ -20,8 +20,9 @@
 
 .nijmegen-header__content--small {
   &--inner {
-    border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
     @include nijmegen-header-content;
+
+    border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
   }
 
   @media (width >=1024px) {
