@@ -62,6 +62,7 @@ export const HeroStory = ({
         'nijmegen-hero--home': type === 'home',
         'nijmegen-hero--background-image': type === 'image',
       })}
+      role="region"
     >
       <div className="nijmegen-hero__container">
         <div className="nijmegen-hero__content">
