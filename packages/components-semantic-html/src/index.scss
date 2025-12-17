@@ -14,6 +14,7 @@
 @import "~@gemeentenijmegen/components-css/spacing/src/semantic/mixin";
 
 .nijmegen-html {
+  margin-block-end: var(--nijmegen-html-margin-block-end);
   writing-mode: horizontal-tb;
   @include utrecht-document;
   @include utrecht-html-button;

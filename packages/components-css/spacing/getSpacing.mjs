@@ -77,7 +77,8 @@ const getRichTextStyles = (components, parentclass = "nijmegen-spacing") => `
 .${parentclass} {
   --utrecht-space-around: 1;
   ${components.map((mixinGroup) => `@include spacing-${mixinGroup[0].component}`).join(";\n")}
-}`;
+}
+ @import "./nested";`;
 
 const spacings = getSpacings(spacingMatrix);
 const semanticSpacings = getSpacings(semanticSpacingMatrix);
