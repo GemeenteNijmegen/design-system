@@ -1,0 +1,1053 @@
+var M=(n,i,o)=>{if(!i.has(n))throw TypeError("Cannot "+o)};var g=(n,i,o)=>{if(i.has(n))throw TypeError("Cannot add the same private member more than once");i instanceof WeakSet?i.add(n):i.set(n,o)};var d=(n,i,o)=>(M(n,i,"access private method"),o);import{j as e}from"./jsx-runtime-CKrituN3.js";/* empty css                  */import{c as l}from"./clsx-B-dksMZM.js";import{r as y}from"./server.browser-rAMDWieH.js";import{a as E,M as Z}from"./MobileMenu-Cu6i95wf.js";(function(){var b,N,m,_,h,f,u,C;function n(j,v){v===void 0&&(v={});var r=v.insertAt;if(!(!j||typeof document>"u")){var a=document.head||document.getElementsByTagName("head")[0],t=document.createElement("style");t.type="text/css",r==="top"&&a.firstChild?a.insertBefore(t,a.firstChild):a.appendChild(t),t.styleSheet?t.styleSheet.cssText=j:t.appendChild(document.createTextNode(j))}}var i=`/* stylelint-disable order/properties-alphabetical-order */
+.nijmegen-header {
+  background-color: var(--nijmegen-header-background-color, #fff);
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  max-width: var(--nijmegen-header-content-max-inline-size, 100%); /* stylelint-disable-line property-disallowed-list */
+  width: 100%; /* stylelint-disable-line property-disallowed-list */
+  writing-mode: horizontal-tb;
+}
+
+.nijmegen-header__content {
+  align-items: center;
+  align-self: center;
+  border: 0 solid var(--nijmegen-header-border-color, transparent);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-inline: auto;
+  padding-block-end: var(--nijmegen-header-content-large-vw-padding-block-end, 0);
+  padding-block-start: var(--nijmegen-header-content-large-vw-padding-block-start, 0);
+  padding-inline-end: var(--nijmegen-header-content-large-vw-padding-inline-end, 0);
+  padding-inline-start: var(--nijmegen-header-content-large-vw-padding-inline-start, 0);
+}
+@media (width < 1024px) {
+  .nijmegen-header__content {
+    padding-block-end: var(--nijmegen-header-content-padding-block-end, 0);
+    padding-block-start: var(--nijmegen-header-content-padding-block-start, 0);
+    padding-inline-end: var(--nijmegen-header-content-padding-inline-end, 0);
+    padding-inline-start: var(--nijmegen-header-content-padding-inline-start, 0);
+  }
+}
+@media (width < 1024px) {
+  .nijmegen-header__content {
+    display: none;
+  }
+}
+
+.nijmegen-header__content--small--inner {
+  border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
+  align-items: center;
+  align-self: center;
+  border: 0 solid var(--nijmegen-header-border-color, transparent);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-inline: auto;
+  padding-block-end: var(--nijmegen-header-content-large-vw-padding-block-end, 0);
+  padding-block-start: var(--nijmegen-header-content-large-vw-padding-block-start, 0);
+  padding-inline-end: var(--nijmegen-header-content-large-vw-padding-inline-end, 0);
+  padding-inline-start: var(--nijmegen-header-content-large-vw-padding-inline-start, 0);
+}
+@media (width < 1024px) {
+  .nijmegen-header__content--small--inner {
+    padding-block-end: var(--nijmegen-header-content-padding-block-end, 0);
+    padding-block-start: var(--nijmegen-header-content-padding-block-start, 0);
+    padding-inline-end: var(--nijmegen-header-content-padding-inline-end, 0);
+    padding-inline-start: var(--nijmegen-header-content-padding-inline-start, 0);
+  }
+}
+@media (width >= 1024px) {
+  .nijmegen-header__content--small {
+    display: none;
+  }
+}
+
+.nijmegen-header__mobile-menu {
+  display: none;
+}
+.nijmegen-header__mobile-menu--visible {
+  display: block;
+}
+
+.nijmegen-header__navigation,
+.nijmegen-header__actions {
+  column-gap: var(--nijmegen-header-content-column-gap, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.nijmegen-header__panel {
+  display: none;
+  left: 0; /* stylelint-disable-line property-disallowed-list */
+  padding-block-start: 1.5rem;
+  position: absolute;
+  width: 100%; /* stylelint-disable-line property-disallowed-list */
+  z-index: 1;
+}
+
+.nijmegen-header-item {
+  all: unset;
+  align-items: end;
+  color: var(--nijmegen-header-item-color, #000);
+  column-gap: var(--nijmegen-header-item-column-gap, 0);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  font-family: var(--nijmegen-header-item-font-family, inherit);
+  font-size: var(--nijmegen-header-item-font-size, 1rem);
+  font-weight: var(--nijmegen-header-item-font-weight, 400);
+  justify-content: space-between;
+  line-height: var(--nijmegen-header-item-line-height, 1.5);
+  text-decoration: none;
+  user-select: none;
+}
+.nijmegen-header-item[aria-expanded]::after {
+  background-color: var(--nijmegen-header-item-color, #000);
+  content: "";
+  display: inline-block;
+  /* stylelint-disable-next-line property-disallowed-list */
+  height: var(--nijmegen-header-item-icon-size, 1.5rem);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  width: var(--nijmegen-header-item-icon-size, 1.5rem); /* stylelint-disable-line property-disallowed-list */
+}
+.nijmegen-header-item--active, .nijmegen-header-item[aria-expanded=true] {
+  -webkit-text-stroke-width: 1px;
+}
+.nijmegen-header-item--active + .nijmegen-header__panel, .nijmegen-header-item[aria-expanded=true] + .nijmegen-header__panel {
+  display: block;
+}
+.nijmegen-header-item[aria-expanded=false]::after {
+  mask-image: var(--nijmegen-header-item-open-icon-image, url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>'));
+}
+.nijmegen-header-item[aria-expanded=true]::after {
+  mask-image: var(--nijmegen-header-item-open-icon-image, url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-up"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 15l6 -6l6 6" /></svg>'));
+}
+.nijmegen-header-item[class*=nijmegen-header-item--icon-]::before {
+  background-color: var(--nijmegen-header-item-color, #000);
+  content: "";
+  display: inline-block;
+  /* stylelint-disable-next-line property-disallowed-list */
+  height: var(--nijmegen-header-item-icon-size, 1.5rem);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  width: var(--nijmegen-header-item-icon-size, 1.5rem); /* stylelint-disable-line property-disallowed-list */
+}
+.nijmegen-header-item[class*=nijmegen-header-item--icon-][aria-expanded]::after {
+  all: unset;
+}
+.nijmegen-header-item[class*=nijmegen-header-item--icon-][aria-expanded=true]::before {
+  mask-image: var(--nijmegen-header-item-close-icon-image, url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>'));
+}
+.nijmegen-header-item--icon-search::before {
+  mask-image: var(--nijmegen-header-item-search-icon-image, url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>'));
+}
+@media (width < 1280px) {
+  .nijmegen-header-item--icon-user span {
+    display: none;
+  }
+}
+.nijmegen-header-item--icon-user::before {
+  mask-image: var(--nijmegen-header-item-search-icon-image, url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>'));
+}
+.nijmegen-header-item:hover, .nijmegen-header-item--hover {
+  color: var(--nijmegen-header-item-hover-color, #000);
+  text-decoration: var(--nijmegen-header-item-hover-text-decoration, none);
+}
+.nijmegen-header-item:hover::before, .nijmegen-header-item:hover::after, .nijmegen-header-item--hover::before, .nijmegen-header-item--hover::after {
+  background-color: var(--nijmegen-header-item-hover-color, #000);
+}
+.nijmegen-header-item:active, .nijmegen-header-item--active {
+  color: var(--nijmegen-header-item-active-color, #000);
+  text-decoration: var(--nijmegen-header-item-active-text-decoration, none);
+}
+.nijmegen-header-item:focus-visible, .nijmegen-header-item--focus-visible {
+  background-color: var(--nijmegen-header-item-focus-visible-background-color, #fff);
+  border: var(--nijmegen-header-item-focus-visible-border-line-width, 1px) var(--nijmegen-header-item-focus-visible-border-line-style, dashed) var(--nijmegen-header-item-focus-visible-border-color, #082d26);
+  color: var(--nijmegen-header-item-focus-visible-color, #000);
+}
+
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2020-2024 Frameless B.V.
+ * Copyright (c) 2021-2024 Gemeente Utrecht
+ */
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2020-2024 Frameless B.V.
+ * Copyright (c) 2021-2024 Gemeente Utrecht
+ */
+/* stylelint-disable-next-line block-no-empty */
+/* stylelint-disable-next-line block-no-empty */
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2020-2024 Frameless B.V.
+ * Copyright (c) 2021-2024 Gemeente Utrecht
+ */
+/* stylelint-disable-next-line block-no-empty */
+.nijmegen-toolbar-button {
+  /*
+  \`--_utrecht-button-hint\` is the internal prefix for the applied optional hint, it is not an API.
+  The hint color takes priority over the appearance color.
+
+  \`--_utrecht-button-appearance\` is the internal prefix for the appearance
+  (primary-action, secondary-action or subtle), it is not an API.
+  */
+  --_utrecht-button-background-color: var(
+    --_utrecht-button-hint-background-color,
+    var(--_utrecht-button-appearance-background-color, var(--utrecht-button-background-color))
+  );
+  --_utrecht-button-color: var(
+    --_utrecht-button-hint-color,
+    var(--_utrecht-button-appearance-color, var(--utrecht-button-color))
+  );
+  --_utrecht-button-border-color: var(
+    --_utrecht-button-hint-border-color,
+    var(--_utrecht-button-appearance-border-color, var(--utrecht-button-border-color, transparent))
+  );
+  --_utrecht-button-border-bottom-color: var(
+    --_utrecht-button-hint-border-bottom-color,
+    var(
+      --_utrecht-button-hint-border-color,
+      var(
+        --_utrecht-button-appearance-border-bottom-color,
+        var(
+          --_utrecht-button-appearance-border-color,
+          var(--utrecht-button-border-bottom-color, var(--utrecht-button-border-color, transparent))
+        )
+      )
+    )
+  );
+  --_utrecht-button-disabled-background-color: var(
+    --_utrecht-button-hint-disabled-background-color,
+    var(
+      --_utrecht-button-appearance-disabled-background-color,
+      var(--utrecht-button-disabled-background-color, var(--utrecht-button-background-color))
+    )
+  );
+  --_utrecht-button-disabled-border-color: var(
+    --_utrecht-button-hint-disabled-border-color,
+    var(
+      --_utrecht-button-appearance-disabled-border-color,
+      var(--utrecht-button-disabled-border-color, var(--utrecht-button-border-color))
+    )
+  );
+  --_utrecht-button-disabled-color: var(
+    --_utrecht-button-hint-disabled-color,
+    var(--_utrecht-button-appearance-disabled-color, var(--utrecht-button-disabled-color, var(--utrecht-button-color)))
+  );
+  --_utrecht-button-pressed-background-color: var(
+    --_utrecht-button-hint-pressed-background-color,
+    var(
+      --_utrecht-button-hint-background-color,
+      var(
+        --_utrecht-button-appearance-pressed-background-color,
+        var(
+          --_utrecht-button-appearance-background-color,
+          var(--utrecht-button-pressed-background-color, var(--utrecht-button-background-color))
+        )
+      )
+    )
+  );
+  --_utrecht-button-pressed-border-color: var(
+    --_utrecht-button-hint-pressed-border-color,
+    var(
+      --_utrecht-button-hint-border-color,
+      var(
+        --_utrecht-button-appearance-pressed-border-color,
+        var(
+          --_utrecht-button-appearance-border-color,
+          var(--utrecht-button-pressed-border-color, var(--utrecht-button-border-color))
+        )
+      )
+    )
+  );
+  --_utrecht-button-pressed-color: var(
+    --_utrecht-button-hint-pressed-color,
+    var(
+      --_utrecht-button-hint-color,
+      var(
+        --_utrecht-button-appearance-pressed-color,
+        var(--_utrecht-button-appearance-color, var(--utrecht-button-pressed-color, var(--utrecht-button-color)))
+      )
+    )
+  );
+  --_utrecht-button-focus-background-color: var(
+    --_utrecht-button-hint-focus-background-color,
+    var(
+      --_utrecht-button-hint-background-color,
+      var(
+        --_utrecht-button-appearance-focus-background-color,
+        var(
+          --_utrecht-button-appearance-background-color,
+          var(--utrecht-button-focus-background-color, var(--utrecht-button-background-color))
+        )
+      )
+    )
+  );
+  --_utrecht-button-focus-border-color: var(
+    --_utrecht-button-hint-focus-border-color,
+    var(
+      --_utrecht-button-hint-border-color,
+      var(
+        --_utrecht-button-appearance-focus-border-color,
+        var(
+          --_utrecht-button-appearance-border-color,
+          var(--utrecht-button-focus-border-color, var(--utrecht-button-border-color))
+        )
+      )
+    )
+  );
+  --_utrecht-button-focus-color: var(
+    --_utrecht-button-hint-focus-color,
+    var(
+      --_utrecht-button-hint-color,
+      var(
+        --_utrecht-button-appearance-focus-color,
+        var(--_utrecht-button-appearance-color, var(--utrecht-button-focus-color, var(--utrecht-button-color)))
+      )
+    )
+  );
+  --_utrecht-button-hover-background-color: var(
+    --_utrecht-button-hint-hover-background-color,
+    var(
+      --_utrecht-button-hint-background-color,
+      var(
+        --_utrecht-button-appearance-hover-background-color,
+        var(
+          --_utrecht-button-appearance-background-color,
+          var(--utrecht-button-hover-background-color, var(--utrecht-button-background-color))
+        )
+      )
+    )
+  );
+  --_utrecht-button-hover-border-color: var(
+    --_utrecht-button-hint-hover-border-color,
+    var(
+      --_utrecht-button-hint-border-color,
+      var(
+        --_utrecht-button-appearance-hover-border-color,
+        var(
+          --_utrecht-button-appearance-border-color,
+          var(--utrecht-button-hover-border-color, var(--utrecht-button-border-color))
+        )
+      )
+    )
+  );
+  --_utrecht-button-hover-color: var(
+    --_utrecht-button-hint-hover-color,
+    var(
+      --_utrecht-button-hint-color,
+      var(
+        --_utrecht-button-appearance-hover-color,
+        var(--_utrecht-button-appearance-color, var(--utrecht-button-hover-color, var(--utrecht-button-color)))
+      )
+    )
+  );
+  --_utrecht-button-active-background-color: var(
+    --_utrecht-button-hint-active-background-color,
+    var(
+      --_utrecht-button-hint-background-color,
+      var(
+        --_utrecht-button-appearance-active-background-color,
+        var(
+          --_utrecht-button-appearance-background-color,
+          var(--utrecht-button-active-background-color, var(--utrecht-button-background-color))
+        )
+      )
+    )
+  );
+  --_utrecht-button-active-border-color: var(
+    --_utrecht-button-hint-active-border-color,
+    var(
+      --_utrecht-button-hint-border-color,
+      var(
+        --_utrecht-button-appearance-active-border-color,
+        var(
+          --_utrecht-button-appearance-border-color,
+          var(--utrecht-button-active-border-color, var(--utrecht-button-border-color))
+        )
+      )
+    )
+  );
+  --_utrecht-button-active-color: var(
+    --_utrecht-button-hint-active-color,
+    var(
+      --_utrecht-button-hint-color,
+      var(
+        --_utrecht-button-appearance-active-color,
+        var(--_utrecht-button-appearance-color, var(--utrecht-button-active-color, var(--utrecht-button-color)))
+      )
+    )
+  );
+  --_utrecht-button-border-width: var(--_utrecht-button-appearance-border-width, var(--utrecht-button-border-width, 0));
+  --_utrecht-button-border-block-end-width: var(
+    --utrecht-button-border-bottom-width,
+    var(--_utrecht-button-border-width, 0)
+  );
+  --_utrecht-button-font-size: var(--_utrecht-button-appearance-font-size, var(--utrecht-button-font-size));
+  --_utrecht-button-line-height: var(--_utrecht-button-appearance-line-height, var(--utrecht-button-line-height));
+  --utrecht-icon-size: var(--utrecht-button-icon-size, 1em);
+  align-items: center;
+  background-color: var(--_utrecht-button-background-color);
+  block-size: fit-content;
+  border-block-end-color: var(--_utrecht-button-border-bottom-color);
+  border-block-end-width: var(--_utrecht-button-border-block-end-width);
+  border-color: var(--_utrecht-button-border-color);
+  border-radius: var(--utrecht-button-border-radius);
+  border-style: solid;
+  border-width: var(--_utrecht-button-border-width);
+  box-sizing: border-box;
+  color: var(--_utrecht-button-color);
+  column-gap: var(--utrecht-button-column-gap);
+  cursor: var(--utrecht-action-activate-cursor, revert);
+  display: inline-flex;
+  font-family: var(--utrecht-button-font-family, var(--utrecht-document-font-family));
+  font-size: var(--_utrecht-button-font-size, var(--utrecht-document-font-family, inherit));
+  font-weight: var(--_utrecht-button-appearance-font-weight, var(--utrecht-button-font-weight));
+  inline-size: var(--utrecht-button-inline-size, auto);
+  justify-content: center;
+  line-height: var(--_utrecht-button-line-height);
+  max-inline-size: var(--utrecht-button-max-inline-size, fit-content);
+  min-block-size: var(--utrecht-button-min-block-size, 44px);
+  min-inline-size: var(--utrecht-button-min-inline-size, 44px);
+  padding-block-end: var(--utrecht-button-padding-block-end);
+  padding-block-start: var(--utrecht-button-padding-block-start);
+  padding-inline-end: var(--utrecht-button-padding-inline-end);
+  padding-inline-start: var(--utrecht-button-padding-inline-start);
+  scale: 1;
+  text-transform: var(--utrecht-button-text-transform);
+  -webkit-user-select: none;
+  user-select: none;
+  --_utrecht-button-appearance-active-background-color: var(--utrecht-button-subtle-active-background-color);
+  --_utrecht-button-appearance-active-border-color: var(--utrecht-button-subtle-active-border-color);
+  --_utrecht-button-appearance-active-color: var(--utrecht-button-subtle-active-color);
+  --_utrecht-button-appearance-background-color: var(--utrecht-button-subtle-background-color);
+  --_utrecht-button-appearance-border-color: var(--utrecht-button-subtle-border-color);
+  --_utrecht-button-appearance-border-width: var(--utrecht-button-subtle-border-width);
+  --_utrecht-button-appearance-color: var(--utrecht-button-subtle-color);
+  --_utrecht-button-appearance-font-size: var(--utrecht-button-subtle-font-size);
+  --_utrecht-button-appearance-font-weight: var(--utrecht-button-subtle-font-weight);
+  --_utrecht-button-appearance-line-height: var(--utrecht-button-subtle-line-height);
+  --_utrecht-button-appearance-disabled-background-color: var(--utrecht-button-subtle-disabled-background-color);
+  --_utrecht-button-appearance-disabled-border-color: var(--utrecht-button-subtle-disabled-border-color);
+  --_utrecht-button-appearance-disabled-color: var(--utrecht-button-subtle-disabled-color);
+  --_utrecht-button-appearance-focus-background-color: var(--utrecht-button-subtle-focus-background-color);
+  --_utrecht-button-appearance-focus-border-color: var(--utrecht-button-subtle-focus-border-color);
+  --_utrecht-button-appearance-focus-color: var(--utrecht-button-subtle-focus-color);
+  --_utrecht-button-appearance-hover-background-color: var(--utrecht-button-subtle-hover-background-color);
+  --_utrecht-button-appearance-hover-border-color: var(--utrecht-button-subtle-hover-border-color);
+  --_utrecht-button-appearance-hover-color: var(--utrecht-button-subtle-hover-color);
+  --_utrecht-button-appearance-pressed-background-color: var(--utrecht-button-subtle-pressed-background-color);
+  --_utrecht-button-appearance-pressed-border-color: var(--utrecht-button-subtle-pressed-border-color);
+  --_utrecht-button-appearance-pressed-color: var(--utrecht-button-subtle-pressed-color);
+  column-gap: var(--nijmegen-toolbar-button-column-gap);
+  cursor: pointer;
+  padding-block-end: var(--nijmegen-toolbar-button-padding-block-end);
+  padding-block-start: var(--nijmegen-toolbar-button-padding-block-start);
+  padding-inline-end: var(--nijmegen-toolbar-button-padding-inline-end);
+  padding-inline-start: var(--nijmegen-toolbar-button-padding-inline-start);
+}
+.nijmegen-toolbar-button.nijmegen-toolbar-button--icon-menu::before {
+  mask-image: var(--nijmegen-toolbar-button-menu-icon-image, url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-menu-2" > <path stroke="none" d="M0 0h24v24H0z" fill="none" /> <path d="M4 6l16 0" /> <path d="M4 12l16 0" /> <path d="M4 18l16 0" /> </svg>'));
+}
+.nijmegen-toolbar-button.nijmegen-toolbar-button--icon-menu::before {
+  background-color: var(--_utrecht-button-appearance-color);
+  content: "";
+  display: inline-block;
+  flex-shrink: 0;
+  /* stylelint-disable-next-line property-disallowed-list */
+  height: var(--nijmegen-toobar-button-menu-icon-height, 1.5rem);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  width: var(--nijmegen-toobar-button-menu-icon-width, 1.5rem); /* stylelint-disable-line property-disallowed-list */
+}
+.nijmegen-toolbar-button.nijmegen-toolbar-button--icon-menu[aria-expanded=true]::before {
+  mask-image: var(--nijmegen-toolbar-button-close-icon-image, url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>'));
+}
+.nijmegen-toolbar-button.nijmegen-toolbar-button--icon-search::before {
+  mask-image: var(--nijmegen-toolbar-button-search-icon-image, url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>'));
+}
+.nijmegen-toolbar-button.nijmegen-toolbar-button--icon-search::before {
+  background-color: var(--_utrecht-button-appearance-color);
+  content: "";
+  display: inline-block;
+  flex-shrink: 0;
+  /* stylelint-disable-next-line property-disallowed-list */
+  height: var(--nijmegen-toobar-button-menu-icon-height, 1.5rem);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  width: var(--nijmegen-toobar-button-menu-icon-width, 1.5rem); /* stylelint-disable-line property-disallowed-list */
+}
+.nijmegen-toolbar-button.nijmegen-toolbar-button--icon-search[aria-expanded=true]::before {
+  mask-image: var(--nijmegen-toolbar-button-close-icon-image, url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>'));
+}
+.nijmegen-toolbar-button:focus-visible, .nijmegen-toolbar-button.nijmegen-toolbar-button--focus-visible {
+  background-color: var(--_utrecht-button-focus-background-color);
+  border-color: var(--_utrecht-button-focus-border-color);
+  color: var(--_utrecht-button-focus-color);
+  scale: var(--utrecht-button-focus-scale, 1);
+  /* the pseudo-class for \`:focus-visible\` is implemented via the mixin */
+  /* - The browser default focus ring should apply when these CSS custom properties are not set.
+   * - Make the \`box-shadow\` value available, so components that have their own \`box-shadow\`
+   *   can combine it with the focus ring box shadow.
+   */
+  --_utrecht-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
+    var(--utrecht-focus-inverse-outline-color, transparent);
+  box-shadow: var(--_utrecht-focus-ring-box-shadow);
+  outline-color: var(--utrecht-focus-outline-color, revert);
+  outline-offset: var(--utrecht-focus-outline-offset, revert);
+  outline-style: var(--utrecht-focus-outline-style, revert);
+  outline-width: var(--utrecht-focus-outline-width, revert);
+  z-index: 1;
+}
+.nijmegen-toolbar-button:active:not(:disabled, [aria-disabled=true]), .nijmegen-toolbar-button.nijmegen-toolbar-button--active {
+  background-color: var(--_utrecht-button-active-background-color);
+  border-color: var(--_utrecht-button-active-border-color);
+  color: var(--_utrecht-button-active-color);
+}
+.nijmegen-toolbar-button:hover:not(:disabled, [aria-disabled=true]), .nijmegen-toolbar-button.nijmegen-toolbar-button--hover {
+  background-color: var(--_utrecht-button-hover-background-color);
+  border-color: var(--_utrecht-button-hover-border-color);
+  color: var(--_utrecht-button-hover-color);
+  scale: var(--utrecht-button-hover-scale, 1);
+}
+
+.nijmegen-mega-menu {
+  background-color: var(--nijmegen-mega-menu-background-color, #fff);
+  border: 0 solid var(--nijmegen-mega-menu-border-color, transparent);
+  border-block-end-width: var(--nijmegen-mega-menu-border-block-end-width, 1px);
+  writing-mode: horizontal-tb;
+}
+
+.nijmegen-mega-menu__container {
+  margin-inline: auto;
+  max-inline-size: var(--nijmegen-header-content-max-inline-size, 100%);
+}
+
+.nijmegen-mega-menu__content {
+  column-gap: var(--nijmegen-mega-menu-content-column-gap, 0);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-inline: auto;
+  padding-block-end: var(--nijmegen-mega-menu-content-padding-block-end, 0);
+  padding-block-start: var(--nijmegen-mega-menu-content-padding-block-start, 0);
+  padding-inline-end: var(--nijmegen-mega-menu-content-padding-inline-end, 0);
+  padding-inline-start: var(--nijmegen-mega-menu-content-padding-inline-start, 0);
+  row-gap: var(--nijmegen-mega-menu-content-row-gap, 0);
+}
+.nijmegen-mega-menu__content .utrecht-heading-4 {
+  font-size: 1.25rem;
+}
+.nijmegen-mega-menu__content > * {
+  flex-basis: 100%;
+}
+@media (width >= 768px) {
+  .nijmegen-mega-menu__content > * {
+    flex-basis: calc((100% - var(--nijmegen-mega-menu-content-column-gap, 0) * 2) / 3);
+  }
+  .nijmegen-mega-menu__content > *:only-child {
+    flex-basis: 100%;
+  }
+}
+@media (width >= 992px) {
+  .nijmegen-mega-menu__content > * {
+    flex-basis: calc((100% - var(--nijmegen-mega-menu-content-column-gap, 0) * 3) / 4);
+  }
+  .nijmegen-mega-menu__content > *:only-child {
+    flex-basis: 100%;
+  }
+}
+.nijmegen-mega-menu__content.nijmegen-mega-menu__content--full-width > * {
+  flex-basis: 100%;
+}
+.nijmegen-mega-menu__content ul {
+  padding-block-start: 1rem;
+  row-gap: 1rem;
+}
+
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2020-2024 Frameless B.V.
+ * Copyright (c) 2021-2024 Gemeente Utrecht
+ */
+/* stylelint-disable scss/no-global-function-names */
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2020-2024 Frameless B.V.
+ * Copyright (c) 2021-2024 Gemeente Utrecht
+ */
+/* stylelint-disable-next-line block-no-empty */
+/*
+
+# CSS implementation
+
+## \`text-decoration-skip\`
+
+\`text-decoration-skip\` can be helpful to avoid making some texts unreadable.
+For example by obscuring Arabic diacritics.
+
+However, the combination of a greater thickness and skipping this thick underline
+leads to a very unappealing rendering of the underline. To avoid this,
+\`text-decoration-skip\` is disabled for interactive states.
+
+For design token configurations that have identical thickness for normal and interactive
+states, this will lead to the (undesirable) effect that the focus/hover effect is switching
+from an interrupted to an uninterrupted underline (for some texts).
+
+Apart from making \`skip-ink\` configurable for normal/focus/hover, there is no good solution yet.
+
+---
+
+Disabling \`text-decoration-skip\` for interactive states obscures some texts, and we assume for now
+that moving the pointer away from a link or having focus elsewhere first is simple enough to
+not make this too inconvenient.
+
+---
+
+Some folks implement the underline of links using \`border-bottom\` or even using a finely crafted
+\`linear-gradient()\` with a solid color at the bottom and transparent behind the text. These approaches
+would unfortunately not be able to provide the improved readability of \`text-decoration-skip\`.
+
+## \`text-decoration-thickness\`
+
+Varying \`text-decoration-thickness\` can be used to distinguish interactive states.
+
+---
+
+\`text-decoration-thickness\` appears to have rendering differences between Chrome and Safari.
+In Safari the line becomes thicker with extra pixels added to the bottom, while in Chrome
+the underline offset also seems to increase along with the thickness, which effectively means
+the underline is closer to the next line than in Safari.
+
+---
+
+It might be nice to use font-relative units for \`text-decoration-thickness\`, and that is why we
+use the \`max()\` function to ensure the underline remains visible for every font size.
+
+## \`transition\`
+
+\`text-decoration-thickness\` could be a candidate for animating between interactive states,
+however browsers don't seem to have implemented great looking supixel tweening yet.
+
+\`text-decoration-skip\` also makes the transition more challenging to implement.
+
+*/
+/**
+ * Simulate forced-colors mode.
+ */
+/* stylelint-disable-next-line block-no-empty */
+/* stylelint-disable-next-line block-no-empty */
+/* stylelint-disable-next-line block-no-empty */
+/* stylelint-disable-next-line block-no-empty */
+/**
+ * Link for elements such as \`<img>\` or \`<article>\`, that are not inline elements or plain text.
+ * 
+ * Changing \`display: inline\` to \`inline-block\` ensures the focus outline is rendered around the entire box.
+ */
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2020-2024 Frameless B.V.
+ * Copyright (c) 2021-2024 Gemeente Utrecht
+ */
+/* stylelint-disable-next-line block-no-empty */
+.nijmegen-mobile-menu {
+  background-color: var(--nijmegen-menu-background-color);
+  position: relative;
+}
+
+.nijmegen-mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  line-height: var(--nijmegen-menu-link-line-height);
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.nijmegen-mobile-menu__link {
+  background-color: var(--nijmegen-menu-background-color);
+  box-sizing: border-box;
+  color: var(--nijmegen-menu-link-color);
+  cursor: pointer;
+  display: flex;
+  font-family: var(--nijmegen-menu-link-font-family);
+  font-size: var(--nijmegen-menu-link-font-size);
+  font-weight: var(--nijmegen-menu-link-font-weight);
+  justify-content: space-between;
+  padding-block-end: var(--nijmegen-menu-link-padding-block-end);
+  padding-block-start: var(--nijmegen-menu-link-padding-block-start);
+  padding-inline-end: var(--nijmegen-menu-link-padding-inline-end);
+  padding-inline-start: var(--nijmegen-menu-link-padding-inline-start);
+  position: relative;
+  text-decoration: none;
+  width: 100%; /* stylelint-disable-line property-disallowed-list */
+}
+.nijmegen-mobile-menu__link:is(button) {
+  appearance: none;
+  border: 0;
+}
+.nijmegen-mobile-menu__link:focus, .nijmegen-mobile-menu__link.nijmegen-mobile-menu__link--focus {
+  --_utrecht-link-state-color: var(--utrecht-link-focus-color);
+  background-color: var(--utrecht-link-focus-background-color, transparent);
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
+}
+.nijmegen-mobile-menu__link:focus-visible, .nijmegen-mobile-menu__link.nijmegen-mobile-menu__link--focus-visible {
+  --_utrecht-link-state-color: var(--utrecht-link-focus-color);
+  background-color: var(--utrecht-link-focus-background-color, transparent);
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
+  /*
+   * WCAG SC 2.4.12: Focus Not Obscured
+   * Use \`z-index\` to ensure the focus ring is stacked above adjecent elements with a \`background\`
+   */
+  /* - The browser default focus ring should apply when these CSS custom properties are not set.
+   * - Make the \`box-shadow\` value available, so components that have their own \`box-shadow\`
+   *   can combine it with the focus ring box shadow.
+   */
+  --_utrecht-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
+    var(--utrecht-focus-inverse-outline-color, transparent);
+  box-shadow: var(--_utrecht-focus-ring-box-shadow);
+  outline-color: var(--utrecht-focus-outline-color, revert);
+  outline-offset: var(--utrecht-focus-outline-offset, revert);
+  outline-style: var(--utrecht-focus-outline-style, revert);
+  outline-width: var(--utrecht-focus-outline-width, revert);
+  z-index: 1;
+  /*
+   * The following tokens are deprecated, but we keep them for backwards compatibility for now:
+   * 
+   * \`--utrecht-link-focus-text-decoration\`
+   * \`--utrecht-link-focus-text-decoration-thickness\`
+   */
+  --_utrecht-link-state-text-decoration: var(
+    --utrecht-link-focus-visible-text-decoration,
+    var(--utrecht-link-focus-text-decoration)
+  );
+  --_utrecht-link-state-text-decoration-thickness: var(
+    --utrecht-link-focus-visible-text-decoration-thickness,
+    var(--utrecht-link-focus-text-decoration-thickness)
+  );
+  z-index: var(--utrecht-stack-focus-z-index, 1);
+}
+.nijmegen-mobile-menu__link span {
+  align-items: center;
+  display: inline-flex;
+  gap: var(--nijmegen-menu-link-column-gap);
+}
+.nijmegen-mobile-menu__link svg {
+  stroke: currentColor;
+}
+.nijmegen-mobile-menu__link--small {
+  font-size: var(--nijmegen-menu-link-small-font-size);
+  padding-block-end: var(--nijmegen-menu-link-small-padding-block-end);
+  padding-block-start: var(--nijmegen-menu-link-small-padding-block-start);
+  padding-inline-end: var(--nijmegen-menu-link-small-padding-inline-end);
+  padding-inline-start: var(--nijmegen-menu-link-small-padding-inline-start);
+}
+.nijmegen-mobile-menu__link--small span {
+  gap: var(--nijmegen-menu-link-small-column-gap);
+}
+.nijmegen-mobile-menu__link--strong {
+  font-weight: var(--nijmegen-menu-link-level-1-font-weight);
+}
+.nijmegen-mobile-menu__link--back {
+  font-weight: var(--nijmegen-menu-link-level-1-font-weight);
+  padding-block-end: var(--nijmegen-menu-button-padding-block-end);
+  padding-block-start: var(--nijmegen-menu-button-padding-block-start);
+  padding-inline-end: var(--nijmegen-menu-button-padding-inline-end);
+  padding-inline-start: var(--nijmegen-menu-button-padding-inline-start);
+}
+.nijmegen-mobile-menu__link--back span::before {
+  background-color: currentColor;
+  content: "";
+  display: inline-block;
+  /* stylelint-disable-next-line property-disallowed-list */
+  height: var(--nijmegen-header-item-icon-size, 1.5rem);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  width: var(--nijmegen-header-item-icon-size, 1.5rem); /* stylelint-disable-line property-disallowed-list */
+  mask-image: var(--nijmegen-header-item-open-icon-image, url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>'));
+}
+.nijmegen-mobile-menu__link--current {
+  color: var(--nijmegen-menu-link-current-color);
+  font-weight: var(--nijmegen-menu-link-current-font-weight, 600);
+}
+.nijmegen-mobile-menu__link--current::after {
+  border-inline-start-color: var(--nijmegen-menu-link-current-border-color);
+  border-inline-start-style: solid;
+  border-inline-start-width: var(--nijmegen-menu-link-current-border-width, 4px);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+.nijmegen-mobile-menu__link--expanded, .nijmegen-mobile-menu__link[aria-expanded=true] {
+  background-color: var(--nijmegen-menu-link-expanded-background-color);
+  color: var(--nijmegen-menu-link-expanded-color);
+  font-weight: var(--nijmegen-menu-link-expanded-font-weight, 600);
+}
+.nijmegen-mobile-menu__link--expanded svg, .nijmegen-mobile-menu__link--expanded::after, .nijmegen-mobile-menu__link[aria-expanded=true] svg, .nijmegen-mobile-menu__link[aria-expanded=true]::after {
+  transform: scaleY(-1);
+}
+.nijmegen-mobile-menu__link--chevron::after {
+  background-color: currentColor;
+  content: "";
+  display: inline-block;
+  /* stylelint-disable-next-line property-disallowed-list */
+  height: var(--nijmegen-header-item-icon-size, 1.5rem);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  width: var(--nijmegen-header-item-icon-size, 1.5rem); /* stylelint-disable-line property-disallowed-list */
+  mask-image: var(--nijmegen-header-item-open-icon-image, url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>'));
+}
+.nijmegen-mobile-menu__link--arrow::after {
+  background-color: currentColor;
+  content: "";
+  display: inline-block;
+  /* stylelint-disable-next-line property-disallowed-list */
+  height: var(--nijmegen-header-item-icon-size, 1.5rem);
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  width: var(--nijmegen-header-item-icon-size, 1.5rem); /* stylelint-disable-line property-disallowed-list */
+  mask-image: var(--nijmegen-header-item-open-icon-image, url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>'));
+}
+
+.nijmegen-mobile-menu__details-content {
+  display: none;
+}
+
+.nijmegen-mobile-menu__details .nijmegen-mobile-menu__list {
+  display: none;
+}
+.nijmegen-mobile-menu__details--open .nijmegen-mobile-menu__list {
+  display: block;
+}
+
+.nijmegen-mobile-menu__separator {
+  padding-inline-end: var(--nijmegen-menu-link-padding-inline-end);
+  padding-inline-start: var(--nijmegen-menu-link-padding-inline-start);
+}
+
+.nijmegen-mobile-menu__panel {
+  background-color: var(--nijmegen-menu-background-color);
+  display: none;
+  flex-direction: column;
+  gap: var(--nijmegen-menu-link-column-gap);
+  inset: 0;
+  min-height: 100%; /* stylelint-disable-line property-disallowed-list */
+  position: absolute;
+  width: 100%; /* stylelint-disable-line property-disallowed-list */
+  z-index: 10;
+}
+.nijmegen-mobile-menu__panel--active {
+  display: flex;
+}
+
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2020-2024 Frameless B.V.
+ * Copyright (c) 2021-2024 Gemeente Utrecht
+ */
+/* stylelint-disable scss/no-global-function-names */
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2020-2024 Frameless B.V.
+ * Copyright (c) 2021-2024 Gemeente Utrecht
+ */
+/* stylelint-disable-next-line block-no-empty */
+/*
+
+# CSS implementation
+
+## \`text-decoration-skip\`
+
+\`text-decoration-skip\` can be helpful to avoid making some texts unreadable.
+For example by obscuring Arabic diacritics.
+
+However, the combination of a greater thickness and skipping this thick underline
+leads to a very unappealing rendering of the underline. To avoid this,
+\`text-decoration-skip\` is disabled for interactive states.
+
+For design token configurations that have identical thickness for normal and interactive
+states, this will lead to the (undesirable) effect that the focus/hover effect is switching
+from an interrupted to an uninterrupted underline (for some texts).
+
+Apart from making \`skip-ink\` configurable for normal/focus/hover, there is no good solution yet.
+
+---
+
+Disabling \`text-decoration-skip\` for interactive states obscures some texts, and we assume for now
+that moving the pointer away from a link or having focus elsewhere first is simple enough to
+not make this too inconvenient.
+
+---
+
+Some folks implement the underline of links using \`border-bottom\` or even using a finely crafted
+\`linear-gradient()\` with a solid color at the bottom and transparent behind the text. These approaches
+would unfortunately not be able to provide the improved readability of \`text-decoration-skip\`.
+
+## \`text-decoration-thickness\`
+
+Varying \`text-decoration-thickness\` can be used to distinguish interactive states.
+
+---
+
+\`text-decoration-thickness\` appears to have rendering differences between Chrome and Safari.
+In Safari the line becomes thicker with extra pixels added to the bottom, while in Chrome
+the underline offset also seems to increase along with the thickness, which effectively means
+the underline is closer to the next line than in Safari.
+
+---
+
+It might be nice to use font-relative units for \`text-decoration-thickness\`, and that is why we
+use the \`max()\` function to ensure the underline remains visible for every font size.
+
+## \`transition\`
+
+\`text-decoration-thickness\` could be a candidate for animating between interactive states,
+however browsers don't seem to have implemented great looking supixel tweening yet.
+
+\`text-decoration-skip\` also makes the transition more challenging to implement.
+
+*/
+/**
+ * Simulate forced-colors mode.
+ */
+/* stylelint-disable-next-line block-no-empty */
+/* stylelint-disable-next-line block-no-empty */
+/* stylelint-disable-next-line block-no-empty */
+/* stylelint-disable-next-line block-no-empty */
+/**
+ * Link for elements such as \`<img>\` or \`<article>\`, that are not inline elements or plain text.
+ * 
+ * Changing \`display: inline\` to \`inline-block\` ensures the focus outline is rendered around the entire box.
+ */
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2020-2024 Frameless B.V.
+ * Copyright (c) 2021-2024 Gemeente Utrecht
+ */
+/* stylelint-disable-next-line block-no-empty */
+.nijmegen-link-list {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--nijmegen-link-list-row-gap, 0.5rem);
+}
+
+.nijmegen-link-list__item {
+  display: inline-flex;
+  list-style: none;
+}
+
+.nijmegen-link-list__link:any-link {
+  align-items: center;
+  color: var(--utrecht-link-color);
+  display: inline-flex;
+  gap: var(--todo-link-list-item-column-gap); /* stylelint-disable-line custom-property-pattern */
+  text-decoration: var(--nijmegen-link-list-item-text-decoration, none);
+}
+.nijmegen-link-list__link:any-link:active, .nijmegen-link-list__link:any-link.nijmegen-link-list__link--active {
+  --_utrecht-link-forced-colors-color: activetext;
+  --_utrecht-link-state-color: var(--utrecht-link-active-color);
+  color: var(--nijmegen-link-list-item-active-color, #0c483d);
+  text-decoration: var(--nijmegen-link-list-item-active-text-decoration, underline);
+}
+.nijmegen-link-list__link:any-link:active::before, .nijmegen-link-list__link:any-link.nijmegen-link-list__link--active::before {
+  background-color: var(--nijmegen-link-list-item-active-color, #0c483d);
+}
+.nijmegen-link-list__link:any-link:hover, .nijmegen-link-list__link:any-link.nijmegen-link-list__link--hover {
+  --_utrecht-link-forced-colors-color: linktext;
+  --_utrecht-link-state-color: var(--utrecht-link-hover-color);
+  --_utrecht-link-state-text-decoration: var(--utrecht-link-hover-text-decoration);
+  --_utrecht-link-state-text-decoration-thickness: var(--utrecht-link-hover-text-decoration-thickness);
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
+  color: var(--nijmegen-link-list-item-hover-color, #116253);
+  text-decoration: var(--nijmegen-link-list-item-hover-text-decoration, underline);
+}
+.nijmegen-link-list__link:any-link:hover::before, .nijmegen-link-list__link:any-link.nijmegen-link-list__link--hover::before {
+  background-color: var(--nijmegen-link-list-item-hover-color, #116253);
+}
+.nijmegen-link-list__link:any-link:focus, .nijmegen-link-list__link:any-link.nijmegen-link-list__link--focus {
+  --_utrecht-link-state-color: var(--utrecht-link-focus-color);
+  background-color: var(--utrecht-link-focus-background-color, transparent);
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
+  color: var(--nijmegen-link-list-item-focus-color, #000);
+  text-decoration: var(--nijmegen-link-list-item-focus-text-decoration, none);
+}
+.nijmegen-link-list__link:any-link:focus::before, .nijmegen-link-list__link:any-link.nijmegen-link-list__link--focus::before {
+  background-color: var(--nijmegen-link-list-item-focus-color, #000);
+}
+.nijmegen-link-list__link:any-link:focus-visible, .nijmegen-link-list__link:any-link.nijmegen-link-list__link--focus-visible {
+  --_utrecht-link-state-color: var(--utrecht-link-focus-color);
+  background-color: var(--utrecht-link-focus-background-color, transparent);
+  text-decoration-skip: none;
+  text-decoration-skip-ink: none;
+  /*
+   * WCAG SC 2.4.12: Focus Not Obscured
+   * Use \`z-index\` to ensure the focus ring is stacked above adjecent elements with a \`background\`
+   */
+  /* - The browser default focus ring should apply when these CSS custom properties are not set.
+   * - Make the \`box-shadow\` value available, so components that have their own \`box-shadow\`
+   *   can combine it with the focus ring box shadow.
+   */
+  --_utrecht-focus-ring-box-shadow: 0 0 0 var(--utrecht-focus-outline-width, 0)
+    var(--utrecht-focus-inverse-outline-color, transparent);
+  box-shadow: var(--_utrecht-focus-ring-box-shadow);
+  outline-color: var(--utrecht-focus-outline-color, revert);
+  outline-offset: var(--utrecht-focus-outline-offset, revert);
+  outline-style: var(--utrecht-focus-outline-style, revert);
+  outline-width: var(--utrecht-focus-outline-width, revert);
+  z-index: 1;
+  /*
+   * The following tokens are deprecated, but we keep them for backwards compatibility for now:
+   * 
+   * \`--utrecht-link-focus-text-decoration\`
+   * \`--utrecht-link-focus-text-decoration-thickness\`
+   */
+  --_utrecht-link-state-text-decoration: var(
+    --utrecht-link-focus-visible-text-decoration,
+    var(--utrecht-link-focus-text-decoration)
+  );
+  --_utrecht-link-state-text-decoration-thickness: var(
+    --utrecht-link-focus-visible-text-decoration-thickness,
+    var(--utrecht-link-focus-text-decoration-thickness)
+  );
+  z-index: var(--utrecht-stack-focus-z-index, 1);
+  color: var(--nijmegen-link-list-item-focus-visible-color, #000);
+}
+.nijmegen-link-list__link:any-link:focus-visible::before, .nijmegen-link-list__link:any-link.nijmegen-link-list__link--focus-visible::before {
+  background-color: var(--nijmegen-link-list-item-focus-visible-color, #000);
+}
+.nijmegen-link-list__link:any-link:visited, .nijmegen-link-list__link:any-link.nijmegen-link-list__link--visited {
+  --_utrecht-link-forced-colors-color: visitedtext;
+  --_utrecht-link-state-color: var(--utrecht-link-visited-color);
+}
+.nijmegen-link-list__link:not(.nijmegen-link-list__link--no-chevron)::before {
+  background-color: var(--utrecht-link-color);
+  content: "";
+  display: inline-block;
+  height: var(--nijmegen-icon-functional-size-height, 0.875rem); /* stylelint-disable-line property-disallowed-list */
+  mask-image: var(--nijmegen-link-list-icon, url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></svg>'));
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  width: var(--nijmegen-icon-functional-size-width, 1.5rem); /* stylelint-disable-line property-disallowed-list */
+}`;n(i);var o=`<header class="nijmegen-header">
+  <slot></slot>
+</header>
+`;class s extends HTMLElement{constructor(){super();g(this,b);g(this,m);g(this,h);g(this,u);const r=document.createElement("template");r.innerHTML=o;const a=this.attachShadow({mode:"open"});a.appendChild(r.content.cloneNode(!0));const t=new CSSStyleSheet;t.replaceSync(i),a.adoptedStyleSheets=[t]}connectedCallback(){Array.from(this.children).forEach(r=>{const a=r.querySelectorAll("[aria-expanded]:not(.nijmegen-mobile-menu__link)");a.forEach(t=>{t.addEventListener("click",c=>{let p=c.target;d(this,b,N).call(this,p,a)})})})}}b=new WeakSet,N=function(r,a){a.forEach(t=>{t!==r?(t.ariaExpanded="false",d(this,m,_).call(this,t),d(this,u,C).call(this,t),d(this,h,f).call(this,t)):(t.ariaExpanded=t.ariaExpanded==="true"?"false":"true",d(this,m,_).call(this,r),d(this,u,C).call(this,t),d(this,h,f).call(this,t))})},m=new WeakSet,_=function(r){if(r.getAttribute("aria-controls")!=="mobile-menu")return;const a=document.getElementById("mobile-menu"),t="nijmegen-header__mobile-menu--visible",c=r.getAttribute("aria-expanded")==="true";a.classList.toggle(t,c)},h=new WeakSet,f=function(r){const a=r.getAttribute("aria-expanded")==="true";if(r.classList.contains("nijmegen-toolbar-button--icon-menu")){const c=this.querySelector(".nijmegen-toolbar-button--icon-search"),p=document.getElementById("mobile-menu"),k=p?p.querySelector("a, button"):null;a?(c&&(c.tabIndex=-1),k&&(k.tabIndex=0)):(c&&(c.tabIndex=0),k&&(k.tabIndex=-1))}},u=new WeakSet,C=function(r){const a=r.getAttribute("aria-expanded")==="true",t=r.classList.contains("nijmegen-toolbar-button--icon-menu"),c=r.classList.contains("nijmegen-toolbar-button--icon-search");t?r.ariaLabel=a?"Menu sluiten":"Menu openen":c&&(r.ariaLabel=a?"Zoeken sluiten":"Zoeken")},customElements.define("nijmegen-header",s)})();const H=encodeURIComponent(y(e.jsxs("svg",{xmlns:"http://www.w3.org/2000/svg",width:"136",height:"46",viewBox:"0 0 136 46",fill:"none",children:[" ",e.jsxs("g",{clipPath:"url(#clip0_4256_17746)",children:[" ",e.jsx("path",{d:"M45.2831 35.4443L45.4476 34.2622L47.2638 33.7754L49.0253 20.8273L47.3392 20.3405L47.49 19.1583H51.3693L56.7084 31.9465L58.2162 20.8203L56.5302 20.3335L56.681 19.1514H61.8556L61.6774 20.3335L59.8543 20.8203L57.8872 35.4374H56.1875L50.5537 21.8495L48.9156 33.7754L50.5537 34.2622L50.3755 35.4443H45.2762H45.2831Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M64.2749 33.6779H66.2557L66.0638 34.8045L64.4052 35.3399C64.1379 35.4303 63.8911 35.4929 63.6855 35.5346C63.4731 35.5763 63.2949 35.5972 63.1372 35.5972C62.8219 35.5972 62.5958 35.5207 62.445 35.3747C62.2942 35.2286 62.2257 34.9992 62.2257 34.6932C62.2257 34.6028 62.2325 34.4846 62.2531 34.3385C62.2668 34.1925 62.2873 34.0326 62.3011 33.8657L63.7335 24.7213L61.9172 24.3389L62.068 23.2888L65.9884 22.7534L64.2749 33.671V33.6779ZM65.2893 20.8897C64.9603 20.8897 64.6999 20.7993 64.508 20.6116C64.3161 20.4238 64.2201 20.1735 64.2201 19.8397C64.2201 19.3251 64.3366 18.9079 64.5765 18.5949C64.8164 18.282 65.1248 18.1221 65.5155 18.1221C65.8376 18.1221 66.0912 18.2055 66.2763 18.3794C66.4613 18.5532 66.5573 18.7896 66.5573 19.0956C66.5573 19.6311 66.4408 20.0622 66.2077 20.396C65.9747 20.7298 65.6663 20.8967 65.2893 20.8967V20.8897Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M70.8752 34.6446C70.512 37.3288 69.9568 39.109 69.2166 39.9852C68.4764 40.8614 67.3524 41.2995 65.8514 41.2995C65.4607 41.2995 65.1043 41.2647 64.7753 41.1952C64.4463 41.1257 64.1379 41.0214 63.8638 40.8823L64.2202 38.511H65.5018L65.9679 39.9435C66.8383 39.9087 67.4757 39.5749 67.887 38.9491C68.2982 38.3163 68.6409 36.9047 68.9219 34.7142L70.2172 24.7423L68.401 24.3598L68.5518 23.3098L72.4173 22.7743L70.8684 34.6585L70.8752 34.6446ZM71.8759 20.8829C71.5469 20.8829 71.2864 20.7925 71.0945 20.6047C70.9026 20.4239 70.8067 20.1666 70.8067 19.8328C70.8067 19.3252 70.93 18.9149 71.1836 18.5951C71.4304 18.2752 71.7525 18.1152 72.1432 18.1152C72.4584 18.1152 72.7052 18.1987 72.8834 18.3725C73.0684 18.5464 73.1575 18.7828 73.1575 19.0888C73.1575 19.6242 73.041 20.0554 72.8011 20.3892C72.5612 20.7229 72.2528 20.8898 71.8759 20.8898V20.8829Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M82.4786 26.2237C82.4924 26.0915 82.5129 25.9594 82.5266 25.8203C82.5403 25.6882 82.554 25.57 82.554 25.4726C82.554 25.1806 82.4855 24.972 82.3553 24.8329C82.2251 24.6938 82.0194 24.6243 81.7384 24.6243C81.3341 24.6243 80.8132 24.7494 80.1826 24.9928C79.5521 25.2362 78.8393 25.5978 78.0442 26.0707L76.5981 35.4515H74.6448L76.2828 24.7355L74.4186 24.3531L74.5694 23.303L78.5377 22.7676L78.2567 24.7355C79.038 24.0819 79.7645 23.5951 80.4568 23.2891C81.149 22.9762 81.8275 22.8232 82.4924 22.8232C83.1572 22.8232 83.6644 22.9901 84.0345 23.3308C84.4046 23.6646 84.5828 24.1375 84.5828 24.7425C85.3847 24.0958 86.1454 23.616 86.8514 23.2961C87.5642 22.9831 88.2564 22.8232 88.9281 22.8232C89.5997 22.8232 90.1001 22.9971 90.4496 23.3447C90.7992 23.6924 90.9705 24.2001 90.9705 24.8746C90.9705 25.0206 90.9568 25.2014 90.9362 25.417C90.9157 25.6326 90.8814 25.8899 90.8403 26.1819L89.6957 33.6852H91.6764L91.512 34.8117L89.8259 35.3472C89.5449 35.4376 89.2913 35.5071 89.0514 35.5558C88.8116 35.6045 88.6334 35.6323 88.5031 35.6323C88.2153 35.6323 88.0028 35.5558 87.8589 35.3958C87.715 35.2359 87.6464 35.0064 87.6464 34.7005C87.6464 34.6101 87.6464 34.4988 87.667 34.3667C87.6807 34.2345 87.7012 34.0676 87.7218 33.8729L88.887 26.2376C88.9144 26.1263 88.9281 26.015 88.9349 25.9038C88.9418 25.7925 88.9486 25.6534 88.9486 25.4796C88.9486 25.1806 88.887 24.965 88.7567 24.8329C88.6334 24.7008 88.4346 24.6312 88.1605 24.6312C87.7355 24.6312 87.1941 24.7633 86.5361 25.0276C85.8781 25.2918 85.179 25.6604 84.4457 26.1263L82.9995 35.4515H81.0188L82.4512 26.2306L82.4786 26.2237Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M101.018 33.6504C100.436 34.3249 99.7845 34.8395 99.0648 35.2081C98.3452 35.5697 97.6118 35.7505 96.8716 35.7505C95.7545 35.7505 94.9046 35.375 94.3152 34.6309C93.7257 33.8799 93.431 32.7951 93.431 31.3695C93.431 28.8244 93.9862 26.7452 95.0897 25.1319C96.2 23.5186 97.6118 22.7119 99.3253 22.7119C100.23 22.7119 100.922 22.9553 101.402 23.4351C101.882 23.9149 102.122 24.6103 102.122 25.5074C102.122 26.7521 101.621 27.7257 100.628 28.428C99.6337 29.1304 98.2424 29.485 96.4673 29.485C96.2205 29.485 96.0355 29.485 95.9052 29.485C95.775 29.485 95.6517 29.485 95.5283 29.485C95.494 29.8118 95.4666 30.1039 95.4529 30.3681C95.4323 30.6324 95.4255 30.8549 95.4255 31.0288C95.4255 32.0023 95.6037 32.7325 95.9532 33.2332C96.3028 33.7338 96.8237 33.9842 97.509 33.9842C97.9203 33.9842 98.3658 33.8799 98.8318 33.6712C99.2979 33.4626 99.8051 33.1358 100.333 32.6977L101.004 33.6712L101.018 33.6504ZM95.7545 28.0595C95.8504 28.0664 95.9395 28.0734 96.0423 28.0803C96.1451 28.0873 96.2822 28.0803 96.481 28.0803C97.7489 28.0803 98.6948 27.8717 99.3184 27.4545C99.9421 27.0372 100.251 26.4044 100.251 25.5421C100.251 25.111 100.127 24.7772 99.8736 24.5269C99.6269 24.2765 99.2773 24.1514 98.8387 24.1514C98.0848 24.1514 97.4405 24.4852 96.9059 25.1597C96.3713 25.8342 95.9875 26.7939 95.7613 28.0456L95.7545 28.0595Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M106.371 30.7224C105.576 30.4582 104.959 30.0201 104.521 29.4012C104.082 28.7823 103.863 28.0452 103.863 27.1899C103.863 25.8756 104.281 24.8047 105.11 23.9772C105.946 23.1497 107.022 22.7324 108.352 22.7324C108.886 22.7324 109.38 22.8159 109.832 22.9828C110.291 23.1497 110.751 23.4139 111.23 23.7825C111.744 23.4417 112.258 23.1914 112.759 23.0314C113.259 22.8715 113.787 22.7881 114.328 22.7881C114.52 22.7881 114.801 22.8159 115.164 22.8785C115.212 22.8854 115.26 22.8993 115.288 22.9063L115.021 24.6795H111.799C111.977 24.9577 112.108 25.2706 112.19 25.6113C112.272 25.9521 112.313 26.3206 112.313 26.71C112.313 27.9548 111.909 28.9701 111.107 29.7559C110.305 30.5416 109.256 30.938 107.975 30.938C107.851 30.938 107.749 30.938 107.68 30.938C107.612 30.938 107.55 30.9241 107.488 30.9172C107.207 31.2301 107.002 31.5221 106.858 31.7933C106.721 32.0645 106.645 32.301 106.645 32.5026C106.645 32.9477 107.235 33.2745 108.407 33.4831C108.722 33.5457 108.962 33.5944 109.126 33.6292C110.874 33.963 112.012 34.3315 112.533 34.7348C113.053 35.1382 113.314 35.7223 113.314 36.4733C113.314 37.8015 112.704 38.9419 111.491 39.8807C110.271 40.8264 108.763 41.2993 106.954 41.2993C105.507 41.2993 104.322 40.9794 103.39 40.3466C102.458 39.7138 101.991 38.9211 101.991 37.9754C101.991 37.3008 102.231 36.6889 102.711 36.1465C103.191 35.5971 103.972 35.0478 105.055 34.4984C104.808 34.3315 104.637 34.1577 104.534 33.9769C104.431 33.7961 104.383 33.5735 104.383 33.3162C104.383 32.8295 104.534 32.3775 104.849 31.9672C105.158 31.5569 105.658 31.1397 106.35 30.7224H106.371ZM106.042 34.8322C105.295 35.4372 104.774 35.9587 104.473 36.3968C104.171 36.8349 104.013 37.273 104.013 37.7111C104.013 38.3787 104.294 38.9072 104.849 39.2966C105.405 39.693 106.165 39.8877 107.132 39.8877C108.304 39.8877 109.291 39.6165 110.086 39.081C110.881 38.5456 111.278 37.8989 111.278 37.1478C111.278 36.3968 110.579 35.8196 109.188 35.5206C109.106 35.4998 109.037 35.4928 108.996 35.4789L106.042 34.8391V34.8322ZM105.953 27.4472C105.953 28.1495 106.117 28.678 106.453 29.0466C106.789 29.4151 107.269 29.5959 107.906 29.5959C108.619 29.5959 109.174 29.3039 109.579 28.7197C109.983 28.1356 110.189 27.322 110.189 26.2928C110.189 25.5905 110.031 25.062 109.709 24.6934C109.387 24.3249 108.928 24.1441 108.324 24.1441C107.591 24.1441 107.008 24.4361 106.583 25.0133C106.159 25.5974 105.946 26.4041 105.946 27.4472H105.953Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M122.793 33.6504C122.21 34.3249 121.559 34.8395 120.839 35.2081C120.12 35.5697 119.386 35.7505 118.646 35.7505C117.529 35.7505 116.679 35.375 116.09 34.6309C115.5 33.8799 115.206 32.7951 115.206 31.3695C115.206 28.8244 115.761 26.7452 116.864 25.1319C117.975 23.5186 119.386 22.7119 121.1 22.7119C122.005 22.7119 122.697 22.9553 123.177 23.4351C123.656 23.9149 123.896 24.6103 123.896 25.5074C123.896 26.7521 123.396 27.7257 122.402 28.428C121.408 29.1304 120.017 29.485 118.242 29.485C117.995 29.485 117.81 29.485 117.68 29.485C117.55 29.485 117.426 29.485 117.303 29.485C117.269 29.8118 117.241 30.1039 117.227 30.3681C117.207 30.6324 117.2 30.8549 117.2 31.0288C117.2 32.0023 117.378 32.7325 117.728 33.2332C118.077 33.7338 118.598 33.9842 119.284 33.9842C119.695 33.9842 120.14 33.8799 120.606 33.6712C121.072 33.4626 121.58 33.1358 122.107 32.6977L122.779 33.6712L122.793 33.6504ZM117.529 28.0595C117.625 28.0664 117.714 28.0734 117.817 28.0803C117.92 28.0873 118.057 28.0803 118.256 28.0803C119.523 28.0803 120.469 27.8717 121.093 27.4545C121.717 27.0372 122.025 26.4044 122.025 25.5421C122.025 25.111 121.902 24.7772 121.648 24.5269C121.401 24.2765 121.052 24.1514 120.613 24.1514C119.859 24.1514 119.215 24.4852 118.68 25.1597C118.146 25.8342 117.762 26.7939 117.536 28.0456L117.529 28.0595Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M127.268 35.4445H125.315L126.953 24.7286L125.137 24.4017L125.288 23.303L129.208 22.7676L128.879 24.812C129.688 24.1305 130.455 23.6299 131.168 23.303C131.881 22.9762 132.58 22.8163 133.265 22.8163C133.951 22.8163 134.43 22.9901 134.78 23.3447C135.13 23.6994 135.308 24.207 135.308 24.8607C135.308 24.9998 135.301 25.1667 135.28 25.3683C135.26 25.563 135.232 25.8273 135.178 26.1611L134.012 33.6782H135.993L135.829 34.8048L134.143 35.3402C133.862 35.4306 133.608 35.4932 133.382 35.5349C133.156 35.5766 132.977 35.5975 132.847 35.5975C132.553 35.5975 132.326 35.521 132.182 35.375C132.032 35.2289 131.963 34.9995 131.963 34.6935C131.963 34.6031 131.963 34.4918 131.984 34.3597C131.997 34.2276 132.018 34.0607 132.038 33.866L133.217 26.2167C133.231 26.1124 133.245 26.0081 133.258 25.8968C133.265 25.7856 133.272 25.6465 133.272 25.4726C133.272 25.1806 133.204 24.972 133.073 24.8329C132.943 24.6938 132.738 24.6243 132.457 24.6243C132.121 24.6243 131.682 24.7286 131.141 24.9302C130.606 25.1389 129.784 25.5213 128.687 26.0915L127.268 35.4445Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M23.2824 38.9278C24.379 39.1503 24.8999 39.3728 24.8999 39.3728C25.599 38.1003 25.784 37.1406 25.4825 36.3409C25.0986 35.3326 24.0432 34.9015 23.111 34.526C22.549 34.2965 21.9733 34.067 21.5484 33.7263C21.3359 33.5594 20.8493 32.9405 20.8904 30.896C20.9178 29.6513 21.1371 28.5317 21.1371 28.5178L21.2674 27.8711C20.7396 28.0032 20.1639 28.1006 19.5471 28.1701C19.5402 28.2188 19.2935 29.4774 19.2592 30.8474C19.2112 32.8431 19.6293 34.2061 20.486 34.9015C21.096 35.3882 21.8225 35.6873 22.4599 35.9446C23.1796 36.2366 23.7964 36.487 23.9403 36.8625C24.0363 37.1059 23.8512 37.8917 23.2755 38.9347L23.2824 38.9278Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M18.985 11.4045C19.0124 8.08746 19.3208 5.54234 19.9171 3.83863C20.3352 2.62866 20.8972 1.86373 21.5277 1.6273C22.549 1.24483 23.8649 2.25315 24.283 2.67038L24.5708 2.96244L24.9889 2.90681C26.908 2.64952 27.2781 3.05284 27.3123 3.10152C27.4426 3.27537 27.3123 3.68565 27.2164 3.86645L28.6557 4.59661C28.7311 4.45753 29.3959 3.22669 28.6557 2.21838C28.08 1.43954 26.9285 1.14748 25.1603 1.32828C24.9272 1.13357 24.5708 0.862368 24.139 0.618982C23.015 -0.0207763 21.9047 -0.166808 20.9383 0.194794C19.6704 0.660705 18.7451 1.93327 18.1557 4.0403C17.5662 1.93327 16.641 0.660705 15.373 0.194794C14.4066 -0.159854 13.2963 -0.0138224 12.1723 0.618982C11.7405 0.862368 11.3841 1.13357 11.1511 1.32828C9.37594 1.14748 8.23136 1.43954 7.65564 2.21838C6.90857 3.22669 7.57339 4.45753 7.65564 4.59661L9.09494 3.86645C8.99213 3.68565 8.86876 3.27537 8.99898 3.10152C9.03325 3.05284 9.40336 2.64256 11.3224 2.90681L11.7405 2.96244L12.0284 2.67038C12.0284 2.67038 12.4327 2.26705 13.0085 1.94022C13.6938 1.5508 14.2901 1.4465 14.7767 1.6273C15.4141 1.86373 15.9693 2.6217 16.3874 3.83168C16.9837 5.53538 17.2921 8.08746 17.3195 11.4045V15.4725H18.985V11.4045Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M14.9482 6.33502C14.7083 5.06941 14.2217 4.44356 14.1737 4.37402L12.8715 5.29889C12.8715 5.29889 13.2073 5.75785 13.3718 6.73139C13.6528 8.40033 13.221 10.2431 12.8098 11.4948L14.3656 11.9468C15.0579 9.82588 15.2566 7.93442 14.9482 6.32807V6.33502Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M23.5497 11.5016C22.1378 7.19023 23.4743 5.31963 23.488 5.30573L22.1858 4.38086C22.131 4.4504 21.6512 5.07625 21.4113 6.34186C21.1029 7.94821 21.3017 9.83966 21.9939 11.9606L23.5497 11.5086V11.5016Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M19.6909 39.4355C19.5401 40.4717 19.2591 41.9459 18.5052 42.8499C18.375 43.0098 18.2585 43.1489 18.1557 43.2741C18.0529 43.1489 17.9364 43.0098 17.8061 42.8499C17.0522 41.9459 16.7712 40.4717 16.6204 39.4355L15.0029 39.6442C15.1743 40.8541 15.5238 42.6065 16.5245 43.8026C17.1824 44.5884 17.4086 44.9013 17.4772 44.9987C17.6485 45.249 18.1557 46 18.1557 46C18.1557 46 18.6629 45.242 18.8342 44.9987C18.9027 44.9013 19.1289 44.5953 19.7869 43.8026C20.2667 43.2324 20.9452 42.1754 21.3084 39.6442L19.6909 39.4355Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M7.90247 29.0951L8.46448 30.5415C10.0271 29.9991 11.3773 28.8934 12.3643 27.899C11.6241 29.2481 10.9113 30.9448 10.9524 32.5581L12.5836 32.5164C12.5356 30.8753 13.5843 28.9282 14.3656 27.6626C13.3924 27.3844 12.3643 26.9672 11.5693 26.4248C10.7057 27.3775 9.38289 28.5805 7.90247 29.0951Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M6.37403 32.5646C6.19583 32.2934 5.88056 31.8623 5.44191 31.4868C4.41384 30.6106 3.21443 30.4228 2.06299 30.9583L2.78264 32.3421C3.14589 32.1752 3.65307 32.0501 4.32474 32.6064C4.5989 32.8358 4.80451 33.1001 4.93473 33.2879C5.27057 32.8498 5.79146 32.5646 6.38088 32.5646H6.37403Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M8.10123 33.8164L10.2191 31.9458L9.0402 30.8818L7.01147 32.6829C7.52551 32.8776 7.92988 33.2948 8.10808 33.8164H8.10123Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M8.18344 34.665C8.40961 34.7972 8.77286 35.0475 9.06758 35.4369C9.49251 36.0002 9.86947 36.9459 9.25948 38.2811L7.76535 37.6691C8.01209 37.1337 8.01209 36.7095 7.77221 36.3687C7.63513 36.174 7.45008 36.0419 7.35413 35.9863C7.79962 35.7012 8.1149 35.2214 8.19029 34.665H8.18344Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M6.25748 37.1965C6.25748 36.7445 6.49051 36.2646 6.49051 36.2646C6.45624 36.2646 6.41512 36.2646 6.37399 36.2646C5.82569 36.2646 5.33222 36.0213 4.99638 35.6318C4.99638 35.6318 4.60571 36.3272 4.60571 37.2521C4.60571 38.177 5.04436 39.686 7.12791 40.5482L7.75846 39.0184C6.36029 38.4134 6.25748 37.6554 6.25748 37.2034V37.1965Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M4.71542 35.1932C4.60576 34.9567 4.55093 34.6925 4.55093 34.4213C4.55093 34.1501 4.61261 33.8858 4.71542 33.6494C4.71542 33.6494 1.98761 33.7537 1.35706 36.4518C1.35706 36.4518 1.66548 36.9247 2.17266 37.4671C2.51535 37.8287 3.03624 38.2738 3.03624 38.2738C2.3303 35.4018 4.71542 35.1932 4.71542 35.1932Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M28.4364 29.0951L27.8744 30.5415C26.3117 29.9991 24.9615 28.8934 23.9746 27.899C24.7148 29.2481 25.4276 30.9448 25.3865 32.5581L23.7553 32.5164C23.8032 30.8753 22.7546 28.9282 21.9733 27.6626C22.9465 27.3844 23.9746 26.9672 24.7696 26.4248C25.6332 27.3775 26.956 28.5805 28.4364 29.0951Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M29.958 32.5646C30.1362 32.2934 30.4515 31.8623 30.8901 31.4868C31.9182 30.6106 33.1176 30.4228 34.2691 30.9583L33.5494 32.3421C33.1862 32.1752 32.679 32.0501 32.0073 32.6064C31.7332 32.8358 31.5275 33.1001 31.3973 33.2879C31.0615 32.8498 30.5406 32.5646 29.9512 32.5646H29.958Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M28.2377 33.8164L26.1199 31.9458L27.2987 30.8818L29.3275 32.6829C28.8134 32.8776 28.409 33.2948 28.2308 33.8164H28.2377Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M28.1554 34.665C27.9293 34.7972 27.566 35.0475 27.2713 35.4369C26.8464 36.0002 26.4694 36.9459 27.0794 38.2811L28.5735 37.6691C28.3268 37.1337 28.3268 36.7095 28.5667 36.3687C28.7038 36.174 28.8888 36.0419 28.9848 35.9863C28.5393 35.7012 28.224 35.2214 28.1486 34.665H28.1554Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M31.3356 35.632C30.9997 36.0214 30.5063 36.2648 29.958 36.2648C29.9168 36.2648 29.8826 36.2648 29.8414 36.2648C29.8414 36.2648 30.0745 36.7515 30.0745 37.1966C30.0745 37.6416 29.9717 38.4066 28.5735 39.0115L29.204 40.5414C31.2876 39.6791 31.7262 38.1701 31.7262 37.2453C31.7262 36.3204 31.3356 35.625 31.3356 35.625V35.632Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M31.6166 33.6426C31.7262 33.879 31.7811 34.1363 31.7811 34.4145C31.7811 34.6926 31.7194 34.9499 31.6166 35.1863C31.6166 35.1863 34.0017 35.395 33.2958 38.2669C33.2958 38.2669 33.8166 37.8219 34.1593 37.4603C34.6665 36.9179 34.9749 36.445 34.9749 36.445C34.3512 33.7469 31.6166 33.6426 31.6166 33.6426Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M13.0496 38.9278C11.953 39.1503 11.4321 39.3728 11.4321 39.3728C10.7331 38.1003 10.548 37.1406 10.8496 36.3409C11.2334 35.3326 12.2889 34.9015 13.221 34.526C13.783 34.2965 14.3587 34.067 14.7836 33.7263C14.9961 33.5594 15.4827 32.9405 15.4416 30.896C15.4142 29.6513 15.1949 28.5317 15.1949 28.5178L15.0647 27.8711C15.5924 28.0032 16.1681 28.1006 16.785 28.1701C16.7918 28.2188 17.0385 29.4774 17.0728 30.8474C17.1208 32.8431 16.7027 34.2061 15.846 34.9015C15.236 35.3882 14.5095 35.6873 13.8721 35.9446C13.1524 36.2366 12.5356 36.487 12.3917 36.8625C12.2957 37.1059 12.4808 37.8917 13.0565 38.9347L13.0496 38.9278Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M32.8229 21.4251C31.6509 18.7131 29.7113 16.8842 28.8683 16.168C28.4776 16.613 28.039 17.0094 27.566 17.371C28.0938 17.7952 30.1019 19.5197 31.2328 22.1344C32.1512 24.2553 33.5494 26.6962 36.2772 27.3637V25.5349C34.8928 25.0272 33.8236 23.7408 32.8298 21.4251H32.8229Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M30.3486 13.9082C30.1019 14.4506 29.8003 14.9582 29.4576 15.4381C30.1841 15.9666 30.8215 16.5924 31.4795 17.2391C32.7886 18.5325 34.1388 19.8607 36.2703 20.5074V18.6438C34.8105 18.0736 33.803 17.0722 32.6926 15.9735C31.973 15.2642 31.2328 14.5341 30.3486 13.9082Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M30.7051 13.0038C31.6852 13.6018 33.474 14.3946 36.2704 14.6241V12.8578C33.1519 12.5727 31.5687 11.5226 31.1232 11.168C31.0478 11.8008 30.9038 12.4197 30.7051 13.0038Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M31.1848 10.2849C32.0141 10.2223 33.7755 9.95111 36.2703 8.88717V6.96094C33.611 8.19178 31.7742 8.46993 31.0546 8.52556C31.1368 9.01929 31.1916 9.52692 31.1916 10.0485C31.1916 10.125 31.1848 10.2015 31.1779 10.2849H31.1848Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M33.7549 2.448C32.2334 3.38678 30.5062 4.45072 28.594 7.79554C26.065 12.2182 23.4948 13.3726 22.5833 13.6577C22.7752 14.1792 22.9876 14.7216 23.2275 15.2988C24.5846 14.8398 27.4152 13.3726 30.095 8.68564C31.7879 5.73024 33.2478 4.82623 34.6528 3.957C35.1942 3.62321 35.7494 3.28247 36.2977 2.83742V0.389648C35.4821 1.37015 34.6734 1.87778 33.7481 2.448H33.7549Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M11.0826 24.2897C11.4184 22.3495 11.6651 20.9449 14.53 20.9449V19.3594C10.3561 19.3594 9.88999 22.0505 9.5473 24.0185C9.49247 24.3175 9.4445 24.6026 9.38281 24.8738C9.66382 25.1172 10.1162 25.4927 10.7262 25.903C10.8906 25.3814 10.9935 24.8321 11.0826 24.2897Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M3.4819 21.4251C4.6539 18.7131 6.59353 16.8842 7.43655 16.168C7.82722 16.613 8.26586 17.0094 8.73877 17.371C8.21103 17.7952 6.20286 19.5197 5.07199 22.1344C4.15358 24.2553 2.7554 26.6962 0.0275879 27.3637V25.5349C1.41206 25.0272 2.48125 23.7408 3.47505 21.4251H3.4819Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M5.96282 13.9082C6.20956 14.4506 6.51113 14.9582 6.85382 15.4381C6.12731 15.9666 5.48991 16.5924 4.83195 17.2391C3.52287 18.5325 2.17267 19.8607 0.0411377 20.5074V18.6438C1.501 18.0736 2.50851 17.0722 3.61882 15.9735C4.33847 15.2642 5.07868 14.5341 5.96282 13.9082Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M5.59959 13.0038C4.6195 13.6018 2.83065 14.3946 0.0343018 14.6241V12.8578C3.15278 12.5727 4.73601 11.5226 5.18151 11.168C5.2569 11.8008 5.40083 12.4197 5.59959 13.0038Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M5.11982 10.2849C4.29051 10.2223 2.52909 9.95111 0.0343018 8.88717V6.96094C2.69358 8.19178 4.5304 8.46993 5.25005 8.52556C5.1678 9.01929 5.11297 9.52692 5.11297 10.0485C5.11297 10.125 5.11982 10.2015 5.12668 10.2849H5.11982Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M2.54972 2.448C4.07126 3.38678 5.79842 4.45072 7.71063 7.79554C10.2397 12.2182 12.8099 13.3726 13.7214 13.6577C13.5295 14.1792 13.317 14.7216 13.0772 15.2988C11.7201 14.8398 8.88949 13.3726 6.20965 8.68564C4.51676 5.73024 3.0569 4.82623 1.65187 3.957C1.11042 3.62321 0.555262 3.28247 0.00695801 2.83742V0.389648C0.815707 1.37015 1.62446 1.87778 2.54972 2.448Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M25.222 24.2897C24.8862 22.3495 24.6394 20.9449 21.7745 20.9449V19.3594C25.9485 19.3594 26.4146 22.0505 26.7573 24.0185C26.8121 24.3175 26.8601 24.6026 26.9217 24.8738C26.6407 25.1172 26.1884 25.4927 25.5784 25.903C25.4139 25.3814 25.3111 24.8321 25.222 24.2897Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M30.2527 23.6851C29.5947 21.6755 28.8682 19.4433 26.8806 17.8369C26.3392 18.1707 25.736 18.4628 25.0507 18.6992C27.2096 19.9787 27.8881 22.051 28.6009 24.2345C29.2863 26.3276 29.9854 28.4833 32.1238 29.582L32.9051 28.0105C31.411 27.2455 30.8695 25.5905 30.2458 23.6851H30.2527Z",fill:"#A90A2E"})," ",e.jsx("path",{d:"M6.0793 23.6851C6.73727 21.6755 7.46377 19.4433 9.45137 17.8369C9.99282 18.1707 10.596 18.4628 11.2813 18.6992C9.12239 19.9787 8.44386 22.051 7.73107 24.2345C7.04569 26.3276 6.3466 28.4833 4.20821 29.582L3.42688 28.0105C4.92101 27.2455 5.46246 25.5905 6.08616 23.6851H6.0793Z",fill:"#A90A2E"})," "]})," ",e.jsxs("defs",{children:[" ",e.jsxs("clipPath",{id:"clip0_4256_17746",children:[" ",e.jsx("rect",{width:"136",height:"46",fill:"white"})," "]})," "]})," "]}))),L=`data:image/svg+xml,${H}`,z=encodeURIComponent(y(e.jsxs("svg",{width:"35",height:"44",viewBox:"0 0 35 44",fill:"none",xmlns:"http://www.w3.org/2000/svg",children:[e.jsx("path",{d:"M22.4476 37.2354C23.5052 37.4482 24.0076 37.6611 24.0076 37.6611C24.6818 36.4438 24.8603 35.5259 24.5695 34.7609C24.1993 33.7964 23.1813 33.384 22.2824 33.0248C21.7404 32.8053 21.1851 32.5858 20.7753 32.2599C20.5704 32.1003 20.1011 31.5083 20.1407 29.5527C20.1672 28.362 20.3787 27.2911 20.3787 27.2778L20.5043 26.6592C19.9953 26.7856 19.4401 26.8787 18.8452 26.9452C18.8386 26.9918 18.6006 28.1957 18.5675 29.5061C18.5213 31.4151 18.9245 32.7189 19.7507 33.384C20.339 33.8496 21.0397 34.1357 21.6544 34.3818C22.3485 34.6612 22.9434 34.9006 23.0822 35.2598C23.1747 35.4926 22.9963 36.2443 22.441 37.242L22.4476 37.2354Z",fill:"#A90A2E"}),e.jsx("path",{d:"M18.3029 10.9079C18.3294 7.73505 18.6268 5.30054 19.2019 3.67088C19.6051 2.51348 20.1471 1.7818 20.7553 1.55564C21.7402 1.1898 23.0093 2.15429 23.4125 2.55339L23.6901 2.83276L24.0933 2.77955C25.9441 2.53344 26.3011 2.91924 26.3341 2.9658C26.4597 3.13209 26.3341 3.52454 26.2416 3.69748L27.6297 4.39591C27.7024 4.26288 28.3436 3.08553 27.6297 2.12103C27.0745 1.37605 25.964 1.09668 24.2586 1.26962C24.0338 1.08337 23.6901 0.823956 23.2737 0.591147C22.1896 -0.0208075 21.1188 -0.160493 20.1868 0.185395C18.9639 0.631057 18.0716 1.84832 17.5031 3.86377C16.9347 1.84832 16.0423 0.631057 14.8194 0.185395C13.8874 -0.153841 12.8166 -0.0141558 11.7326 0.591147C11.3161 0.823956 10.9724 1.08337 10.7477 1.26962C9.03567 1.09668 7.93179 1.37605 7.37655 2.12103C6.65606 3.08553 7.29723 4.26288 7.37655 4.39591L8.76466 3.69748C8.66551 3.52454 8.54653 3.13209 8.67212 2.9658C8.70517 2.91924 9.06211 2.52679 10.9129 2.77955L11.3161 2.83276L11.5938 2.55339C11.5938 2.55339 11.9837 2.1676 12.539 1.85497C13.2 1.48247 13.7751 1.3827 14.2444 1.55564C14.8591 1.7818 15.3945 2.50683 15.7977 3.66422C16.3728 5.29389 16.6703 7.73505 16.6967 10.9079V14.7991H18.3029V10.9079Z",fill:"#A90A2E"}),e.jsx("path",{d:"M14.4099 6.05839C14.1785 4.84778 13.7092 4.24913 13.6629 4.18262L12.407 5.06729C12.407 5.06729 12.7309 5.5063 12.8896 6.43754C13.1606 8.03394 12.7441 9.79664 12.3475 10.9939L13.848 11.4263C14.5156 9.39753 14.7073 7.58828 14.4099 6.05174V6.05839Z",fill:"#A90A2E"}),e.jsx("path",{d:"M22.7053 11.0008C21.3437 6.87673 22.6326 5.08743 22.6458 5.07413L21.3899 4.18945C21.337 4.25597 20.8743 4.85462 20.643 6.06523C20.3455 7.60177 20.5372 9.41102 21.2048 11.4398L22.7053 11.0074V11.0008Z",fill:"#A90A2E"}),e.jsx("path",{d:"M18.9839 37.7207C18.8385 38.7118 18.5675 40.122 17.8404 40.9867C17.7148 41.1397 17.6024 41.2727 17.5033 41.3924C17.4041 41.2727 17.2917 41.1397 17.1661 40.9867C16.439 40.122 16.168 38.7118 16.0226 37.7207L14.4626 37.9203C14.6279 39.0776 14.965 40.7539 15.9301 41.898C16.5646 42.6496 16.7828 42.9489 16.8489 43.042C17.0141 43.2815 17.5033 43.9999 17.5033 43.9999C17.5033 43.9999 17.9924 43.2749 18.1577 43.042C18.2238 42.9489 18.4419 42.6563 19.0764 41.898C19.5392 41.3525 20.1935 40.3415 20.5439 37.9203L18.9839 37.7207Z",fill:"#A90A2E"}),e.jsx("path",{d:"M7.61462 27.8296L8.15665 29.2132C9.66374 28.6944 10.9659 27.6367 11.9178 26.6855C11.2039 27.976 10.5164 29.599 10.5561 31.1422L12.1293 31.1023C12.083 29.5325 13.0943 27.67 13.8479 26.4594C12.9093 26.1933 11.9178 25.7942 11.151 25.2754C10.3181 26.1867 9.04239 27.3374 7.61462 27.8296Z",fill:"#A90A2E"}),e.jsx("path",{d:"M6.14062 31.1488C5.96876 30.8894 5.6647 30.477 5.24166 30.1178C4.25015 29.2797 3.0934 29.1001 1.98291 29.6123L2.67696 30.936C3.0273 30.7763 3.51644 30.6566 4.16422 31.1887C4.42862 31.4082 4.62692 31.661 4.75251 31.8406C5.07641 31.4215 5.57877 31.1488 6.14723 31.1488H6.14062Z",fill:"#A90A2E"}),e.jsx("path",{d:"M7.80637 32.3461L9.84887 30.5568L8.71194 29.5391L6.75537 31.2618C7.25112 31.4481 7.64112 31.8472 7.81298 32.3461H7.80637Z",fill:"#A90A2E"}),e.jsx("path",{d:"M7.88563 33.1582C8.10376 33.2846 8.45409 33.524 8.73832 33.8965C9.14815 34.4353 9.5117 35.34 8.92341 36.6171L7.48242 36.0317C7.72038 35.5195 7.72038 35.1138 7.48903 34.7879C7.35683 34.6016 7.17836 34.4752 7.08582 34.422C7.51547 34.1493 7.81953 33.6903 7.89224 33.1582H7.88563Z",fill:"#A90A2E"}),e.jsx("path",{d:"M6.0282 35.5787C6.0282 35.1463 6.25294 34.6873 6.25294 34.6873C6.21989 34.6873 6.18023 34.6873 6.14057 34.6873C5.61177 34.6873 5.13584 34.4545 4.81195 34.082C4.81195 34.082 4.43518 34.7472 4.43518 35.6319C4.43518 36.5165 4.85822 37.96 6.86767 38.7848L7.4758 37.3214C6.12735 36.7427 6.0282 36.0177 6.0282 35.5853V35.5787Z",fill:"#A90A2E"}),e.jsx("path",{d:"M4.54104 33.6632C4.43528 33.437 4.3824 33.1843 4.3824 32.9249C4.3824 32.6654 4.44189 32.4127 4.54104 32.1865C4.54104 32.1865 1.91025 32.2863 1.30212 34.8672C1.30212 34.8672 1.59958 35.3195 2.08872 35.8383C2.41922 36.1842 2.92158 36.6099 2.92158 36.6099C2.24075 33.8627 4.54104 33.6632 4.54104 33.6632Z",fill:"#A90A2E"}),e.jsx("path",{d:"M27.4183 27.8296L26.8763 29.2132C25.3692 28.6944 24.067 27.6367 23.1152 26.6855C23.8291 27.976 24.5165 29.599 24.4769 31.1422L22.9037 31.1023C22.9499 29.5325 21.9386 27.67 21.1851 26.4594C22.1237 26.1933 23.1152 25.7942 23.882 25.2754C24.7148 26.1867 25.9906 27.3374 27.4183 27.8296Z",fill:"#A90A2E"}),e.jsx("path",{d:"M28.8858 31.1488C29.0576 30.8894 29.3617 30.477 29.7847 30.1178C30.7762 29.2797 31.933 29.1001 33.0435 29.6123L32.3494 30.936C31.9991 30.7763 31.5099 30.6566 30.8622 31.1887C30.5978 31.4082 30.3995 31.661 30.2739 31.8406C29.95 31.4215 29.4476 31.1488 28.8792 31.1488H28.8858Z",fill:"#A90A2E"}),e.jsx("path",{d:"M27.2267 32.3461L25.1842 30.5568L26.3211 29.5391L28.2777 31.2618C27.7819 31.4481 27.392 31.8472 27.2201 32.3461H27.2267Z",fill:"#A90A2E"}),e.jsx("path",{d:"M27.1473 33.1582C26.9292 33.2846 26.5789 33.524 26.2946 33.8965C25.8848 34.4353 25.5212 35.34 26.1095 36.6171L27.5505 36.0317C27.3126 35.5195 27.3126 35.1138 27.5439 34.7879C27.6761 34.6016 27.8546 34.4752 27.9471 34.422C27.5175 34.1493 27.2134 33.6903 27.1407 33.1582H27.1473Z",fill:"#A90A2E"}),e.jsx("path",{d:"M30.2143 34.0828C29.8904 34.4553 29.4144 34.6881 28.8856 34.6881C28.846 34.6881 28.8129 34.6881 28.7733 34.6881C28.7733 34.6881 28.998 35.1537 28.998 35.5795C28.998 36.0052 28.8989 36.7368 27.5504 37.3155L28.1585 38.7789C30.168 37.9541 30.591 36.5107 30.591 35.626C30.591 34.7413 30.2143 34.0762 30.2143 34.0762V34.0828Z",fill:"#A90A2E"}),e.jsx("path",{d:"M30.4854 32.1797C30.5911 32.4058 30.644 32.652 30.644 32.918C30.644 33.1841 30.5845 33.4302 30.4854 33.6564C30.4854 33.6564 32.7856 33.8559 32.1048 36.6031C32.1048 36.6031 32.6072 36.1773 32.9377 35.8315C33.4268 35.3126 33.7243 34.8603 33.7243 34.8603C33.1228 32.2795 30.4854 32.1797 30.4854 32.1797Z",fill:"#A90A2E"}),e.jsx("path",{d:"M12.5787 37.2354C11.5211 37.4482 11.0188 37.6611 11.0188 37.6611C10.3445 36.4438 10.1661 35.5259 10.4569 34.7609C10.8271 33.7964 11.845 33.384 12.744 33.0248C13.286 32.8053 13.8413 32.5858 14.2511 32.2599C14.456 32.1003 14.9253 31.5083 14.8856 29.5527C14.8592 28.362 14.6477 27.2911 14.6477 27.2778L14.5221 26.6592C15.0311 26.7856 15.5863 26.8787 16.1812 26.9452C16.1878 26.9918 16.4258 28.1957 16.4588 29.5061C16.5051 31.4151 16.1019 32.7189 15.2756 33.384C14.6873 33.8496 13.9867 34.1357 13.3719 34.3818C12.6779 34.6612 12.083 34.9006 11.9442 35.2598C11.8516 35.4926 12.0301 36.2443 12.5853 37.242L12.5787 37.2354Z",fill:"#A90A2E"}),e.jsx("path",{d:"M31.6488 20.4925C30.5184 17.8984 28.6478 16.149 27.8348 15.4639C27.458 15.8896 27.0349 16.2687 26.5789 16.6146C27.0878 17.0204 29.0246 18.67 30.1152 21.171C31.001 23.1998 32.3494 25.5345 34.9802 26.1731V24.4237C33.645 23.9381 32.6138 22.7075 31.6554 20.4925H31.6488Z",fill:"#A90A2E"}),e.jsx("path",{d:"M29.2625 13.3027C29.0245 13.8216 28.7337 14.3071 28.4032 14.7661C29.1039 15.2716 29.7186 15.8703 30.3532 16.4889C31.6157 17.7261 32.9178 18.9966 34.9736 19.6152V17.8325C33.5656 17.2871 32.594 16.3292 31.5231 15.2783C30.8291 14.5998 30.1152 13.9014 29.2625 13.3027Z",fill:"#A90A2E"}),e.jsx("path",{d:"M29.6062 12.4377C30.5514 13.0097 32.2767 13.768 34.9735 13.9875V12.298C31.966 12.0253 30.4391 11.0209 30.0094 10.6816C29.9367 11.2869 29.7979 11.8789 29.6062 12.4377Z",fill:"#A90A2E"}),e.jsx("path",{d:"M30.0689 9.83673C30.8688 9.77686 32.5675 9.51745 34.9736 8.49974V6.65723C32.4089 7.83457 30.6374 8.10064 29.9434 8.15385C30.0227 8.62612 30.0756 9.1117 30.0756 9.61057C30.0756 9.68374 30.069 9.75691 30.0623 9.83673H30.0689Z",fill:"#A90A2E"}),e.jsx("path",{d:"M32.5477 2.34097C31.0802 3.23895 29.4145 4.25665 27.5703 7.45611C25.1312 11.6866 22.6524 12.7908 21.7733 13.0635C21.9584 13.5624 22.1633 14.0812 22.3947 14.6333C23.7034 14.1943 26.4334 12.7908 29.0179 8.30753C30.6506 5.48056 32.0585 4.61584 33.4136 3.78438C33.9358 3.4651 34.4712 3.13917 35 2.71346V0.37207C34.2134 1.30996 33.4334 1.79553 32.5411 2.34097H32.5477Z",fill:"#A90A2E"}),e.jsx("path",{d:"M10.6816 23.2336C11.0055 21.3778 11.2435 20.0342 14.0065 20.0342V18.5176C9.98098 18.5176 9.5315 21.0918 9.201 22.9742C9.14812 23.2602 9.10185 23.5329 9.04236 23.7924C9.31337 24.0252 9.74963 24.3844 10.3379 24.7768C10.4966 24.2779 10.5957 23.7525 10.6816 23.2336Z",fill:"#A90A2E"}),e.jsx("path",{d:"M3.35135 20.4925C4.48167 17.8984 6.35231 16.149 7.16534 15.4639C7.54212 15.8896 7.96516 16.2687 8.42125 16.6146C7.91228 17.0204 5.97554 18.67 4.88488 21.171C3.99914 23.1998 2.65069 25.5345 0.0198975 26.1731V24.4237C1.35512 23.9381 2.38629 22.7075 3.34474 20.4925H3.35135Z",fill:"#A90A2E"}),e.jsx("path",{d:"M5.74415 13.3027C5.98211 13.8216 6.27295 14.3071 6.60346 14.7661C5.90279 15.2716 5.28806 15.8703 4.6535 16.4889C3.39098 17.7261 2.0888 18.9966 0.0330811 19.6152V17.8325C1.44102 17.2871 2.41269 16.3292 3.48352 15.2783C4.17757 14.5998 4.89146 13.9014 5.74415 13.3027Z",fill:"#A90A2E"}),e.jsx("path",{d:"M5.39384 12.4377C4.4486 13.0097 2.72338 13.768 0.0264893 13.9875V12.298C3.03405 12.0253 4.56097 11.0209 4.99062 10.6816C5.06333 11.2869 5.20215 11.8789 5.39384 12.4377Z",fill:"#A90A2E"}),e.jsx("path",{d:"M4.93113 9.83673C4.13132 9.77686 2.43254 9.51745 0.0264893 8.49974V6.65723C2.59118 7.83457 4.36267 8.10064 5.05673 8.15385C4.9774 8.62612 4.92452 9.1117 4.92452 9.61057C4.92452 9.68374 4.93113 9.75691 4.93774 9.83673H4.93113Z",fill:"#A90A2E"}),e.jsx("path",{d:"M2.45232 2.34097C3.91975 3.23895 5.58548 4.25665 7.42968 7.45611C9.86878 11.6866 12.3475 12.7908 13.2267 13.0635C13.0416 13.5624 12.8367 14.0812 12.6053 14.6333C11.2965 14.1943 8.5666 12.7908 5.98208 8.30753C4.3494 5.48056 2.94147 4.61584 1.58641 3.78438C1.06422 3.4651 0.528803 3.13917 0 2.71346V0.37207C0.779984 1.30996 1.55997 1.79553 2.45232 2.34097Z",fill:"#A90A2E"}),e.jsx("path",{d:"M24.3181 23.2336C23.9942 21.3778 23.7563 20.0342 20.9933 20.0342V18.5176C25.0188 18.5176 25.4683 21.0918 25.7988 22.9742C25.8517 23.2602 25.8979 23.5329 25.9574 23.7924C25.6864 24.0252 25.2501 24.3844 24.6619 24.7768C24.5032 24.2779 24.4041 23.7525 24.3181 23.2336Z",fill:"#A90A2E"}),e.jsx("path",{d:"M29.17 22.6546C28.5354 20.7323 27.8347 18.5971 25.9178 17.0605C25.3956 17.3798 24.814 17.6592 24.153 17.8854C26.2351 19.1093 26.8895 21.0915 27.577 23.1801C28.238 25.1822 28.9122 27.2443 30.9745 28.2952L31.7281 26.792C30.2871 26.0603 29.7649 24.4772 29.1634 22.6546H29.17Z",fill:"#A90A2E"}),e.jsx("path",{d:"M5.8563 22.6546C6.49086 20.7323 7.19153 18.5971 9.10844 17.0605C9.63063 17.3798 10.2123 17.6592 10.8733 17.8854C8.79116 19.1093 8.13676 21.0915 7.44932 23.1801C6.78832 25.1822 6.11409 27.2443 4.05176 28.2952L3.29822 26.792C4.73921 26.0603 5.2614 24.4772 5.86291 22.6546H5.8563Z",fill:"#A90A2E"})]}))),A=`data:image/svg+xml,${z}`,x=({state:n="",variant:i="",account:o=!1})=>{const s="false";return e.jsxs("nijmegen-header",{children:[e.jsxs("div",{className:"nijmegen-header__content--small",children:[e.jsxs("div",{className:"nijmegen-header__content--small--inner",children:[i!=="funnel"&&e.jsx("button",{className:l("nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu",{"nijmegen-toolbar-button--active":n==="active","nijmegen-toolbar-button--hover":n==="hover","nijmegen-toolbar-button--focus-visible":n==="focus-visible"}),type:"button","aria-expanded":s,"aria-controls":"mobile-menu","aria-label":"Menu openen",children:"Menu"}),e.jsx("div",{children:e.jsx("img",{src:A,alt:"Beeldmerk gemeente Nijmegen"})}),i!=="funnel"&&e.jsx("button",{className:l("nijmegen-toolbar-button nijmegen-toolbar-button--icon-search",{"nijmegen-toolbar-button--active":n==="active","nijmegen-toolbar-button--hover":n==="hover","nijmegen-toolbar-button--focus-visible":n==="focus-visible"}),type:"button","aria-expanded":s,"aria-label":"Zoeken",children:"Zoeken"}),i==="funnel"&&o===!0&&e.jsx("button",{className:l("nijmegen-toolbar-button",{"nijmegen-toolbar-button--active":n==="active","nijmegen-toolbar-button--hover":n==="hover","nijmegen-toolbar-button--focus-visible":n==="focus-visible"}),type:"button","aria-expanded":s,"aria-label":"Account",children:"A. van der Klap"})]}),i==="default"&&e.jsx("div",{id:"mobile-menu",className:"nijmegen-header__mobile-menu",children:e.jsx(E,{})})]}),e.jsxs("div",{className:"nijmegen-header__content",children:[e.jsx("div",{children:e.jsx("img",{src:L,alt:"Logo gemeente Nijmegen"})}),e.jsx("nav",{children:i==="default"&&e.jsxs("ul",{className:"nijmegen-header__navigation",children:[e.jsxs("li",{className:"nijmegen-header__navigation__item nijmegen-header__navigation__item--has-children",children:[e.jsx("button",{className:l("nijmegen-header-item",{"nijmegen-header-item--active":n==="active","nijmegen-header-item--hover":n==="hover","nijmegen-header-item--focus-visible":n==="focus-visible"}),"aria-expanded":s,"aria-controls":"mega-1","aria-label":"Onderwerpen",children:"Onderwerpen"}),e.jsx("div",{id:"mega-1",className:"nijmegen-header__panel",children:e.jsx("div",{className:"nijmegen-mega-menu",children:e.jsx("div",{className:"nijmegen-mega-menu__container",children:e.jsxs("div",{className:"nijmegen-mega-menu__content",children:[e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading onderwerpen"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]}),e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]}),e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]}),e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]}),e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]})]})})})})]}),e.jsxs("li",{className:"nijmegen-header__navigation__item nijmegen-header__navigation__item--has-children",children:[e.jsx("button",{className:l("nijmegen-header-item",{"nijmegen-header-item--active":n==="active","nijmegen-header-item--hover":n==="hover","nijmegen-header-item--focus-visible":n==="focus-visible"}),"aria-expanded":s,"aria-controls":"mega-2","aria-label":"Over de gemeente",children:"Over de gemeente"}),e.jsx("div",{id:"mega-2",className:"nijmegen-header__panel",children:e.jsx("div",{className:"nijmegen-mega-menu",children:e.jsx("div",{className:"nijmegen-mega-menu__container",children:e.jsxs("div",{className:"nijmegen-mega-menu__content",children:[e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading over de gemeente"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]}),e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]}),e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]})]})})})})]}),e.jsx("li",{className:"nijmegen-header__navigation__item",children:e.jsx("a",{href:"#",className:l("nijmegen-header-item",{"nijmegen-header-item--active":n==="active","nijmegen-header-item--hover":n==="hover","nijmegen-header-item--focus-visible":n==="focus-visible"}),"aria-label":"Contact",children:"Contact"})})]})}),e.jsxs("div",{className:"nijmegen-header__actions",children:[i!=="funnel"&&e.jsx("button",{className:l("nijmegen-header-item nijmegen-header-item--icon-search",{"nijmegen-header-item--active":n==="active","nijmegen-header-item--hover":n==="hover","nijmegen-header-item--focus-visible":n==="focus-visible"}),"aria-expanded":s,"aria-label":"Zoeken",children:"Zoeken"}),i==="default"&&e.jsx("button",{className:l("nijmegen-header-item",{"nijmegen-header-item--active":n==="active","nijmegen-header-item--hover":n==="hover","nijmegen-header-item--focus-visible":n==="focus-visible"}),"aria-expanded":s,"aria-label":"Taal wijzigen, huidige taal is Nederlands",children:"Nederlands"}),i!=="default"&&o===!0&&e.jsx("button",{className:l("nijmegen-header-item",{"nijmegen-header-item--active":n==="active","nijmegen-header-item--hover":n==="hover","nijmegen-header-item--focus-visible":n==="focus-visible"}),"aria-expanded":s,"aria-label":"Account",children:"A. van der Klap"}),i==="default"&&e.jsx("a",{href:"#",className:l("nijmegen-header-item nijmegen-header-item--icon-user",{"nijmegen-header-item--active":n==="active","nijmegen-header-item--hover":n==="hover","nijmegen-header-item--focus-visible":n==="focus-visible"}),"aria-label":"Mijn Nijmegen",children:e.jsx("span",{children:"Mijn Nijmegen"})})]})]})]})},w=({state:n="",expanded:i="",variant:o="",account:s=!1})=>e.jsxs("header",{className:"nijmegen-header",children:[e.jsxs("div",{className:"nijmegen-header__content--small",children:[e.jsxs("div",{className:"nijmegen-header__content--small--inner",children:[o!=="funnel"&&e.jsx("button",{className:l("nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu",{"nijmegen-toolbar-button--active":n==="active","nijmegen-toolbar-button--hover":n==="hover","nijmegen-toolbar-button--focus-visible":n==="focus-visible"}),type:"button","aria-expanded":i,"aria-controls":"mobile-menu","aria-label":"Menu openen",children:"Menu"}),e.jsx("div",{children:e.jsx("img",{src:A,alt:"Beeldmerk gemeente Nijmegen"})}),o!=="funnel"&&e.jsx("button",{className:l("nijmegen-toolbar-button nijmegen-toolbar-button--icon-search",{"nijmegen-toolbar-button--active":n==="active","nijmegen-toolbar-button--hover":n==="hover","nijmegen-toolbar-button--focus-visible":n==="focus-visible"}),type:"button","aria-expanded":i,"aria-label":"Zoeken",children:"Zoeken"}),o==="funnel"&&s===!0&&e.jsx("button",{className:l("nijmegen-toolbar-button",{"nijmegen-toolbar-button--active":n==="active","nijmegen-toolbar-button--hover":n==="hover","nijmegen-toolbar-button--focus-visible":n==="focus-visible"}),type:"button","aria-expanded":i,"aria-label":"Account",children:"A. van der Klap"})]}),o==="default"&&e.jsx("div",{id:"mobile-menu",className:"nijmegen-header__mobile-menu",children:e.jsx(Z,{})})]}),e.jsxs("div",{className:"nijmegen-header__content",children:[e.jsx("div",{children:e.jsx("img",{src:L,alt:"Logo gemeente Nijmegen"})}),e.jsx("nav",{children:o==="default"&&e.jsxs("ul",{className:"nijmegen-header__navigation",children:[e.jsxs("li",{className:"nijmegen-header__navigation__item nijmegen-header__navigation__item--has-children",children:[e.jsx("button",{className:l("nijmegen-header-item",{"nijmegen-header-item--active":n==="active","nijmegen-header-item--hover":n==="hover","nijmegen-header-item--focus-visible":n==="focus-visible"}),"aria-expanded":i,"aria-controls":"mega-1","aria-label":"Onderwerpen",children:"Onderwerpen"}),e.jsx("div",{id:"mega-1",className:"nijmegen-header__panel",children:e.jsx("div",{className:"nijmegen-mega-menu",children:e.jsx("div",{className:"nijmegen-mega-menu__container",children:e.jsxs("div",{className:"nijmegen-mega-menu__content",children:[e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading onderwerpen"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]}),e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]}),e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]}),e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]}),e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]})]})})})})]}),e.jsxs("li",{className:"nijmegen-header__navigation__item nijmegen-header__navigation__item--has-children",children:[e.jsx("button",{className:l("nijmegen-header-item",{"nijmegen-header-item--active":n==="active","nijmegen-header-item--hover":n==="hover","nijmegen-header-item--focus-visible":n==="focus-visible"}),"aria-expanded":i,"aria-controls":"mega-2","aria-label":"Over de gemeente",children:"Over de gemeente"}),e.jsx("div",{id:"mega-2",className:"nijmegen-header__panel",children:e.jsx("div",{className:"nijmegen-mega-menu",children:e.jsx("div",{className:"nijmegen-mega-menu__container",children:e.jsxs("div",{className:"nijmegen-mega-menu__content",children:[e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading over de gemeente"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]}),e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]}),e.jsxs("div",{children:[e.jsx("h4",{className:"utrecht-heading-4",children:"Heading"}),e.jsxs("ul",{className:"nijmegen-link-list",children:[e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 1"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 2"})}),e.jsx("li",{className:"nijmegen-link-list__item",children:e.jsx("a",{className:"nijmegen-link-list__link",href:"#",children:"Link 3"})})]})]})]})})})})]}),e.jsx("li",{className:"nijmegen-header__navigation__item",children:e.jsx("a",{href:"#",className:l("nijmegen-header-item",{"nijmegen-header-item--active":n==="active","nijmegen-header-item--hover":n==="hover","nijmegen-header-item--focus-visible":n==="focus-visible"}),"aria-label":"Contact",children:"Contact"})})]})}),e.jsxs("div",{className:"nijmegen-header__actions",children:[o!=="funnel"&&e.jsx("button",{className:l("nijmegen-header-item nijmegen-header-item--icon-search",{"nijmegen-header-item--active":n==="active","nijmegen-header-item--hover":n==="hover","nijmegen-header-item--focus-visible":n==="focus-visible"}),"aria-expanded":i,"aria-label":"Zoeken",children:"Zoeken"}),o==="default"&&e.jsx("button",{className:l("nijmegen-header-item",{"nijmegen-header-item--active":n==="active","nijmegen-header-item--hover":n==="hover","nijmegen-header-item--focus-visible":n==="focus-visible"}),"aria-expanded":i,"aria-label":"Taal wijzigen, huidige taal is Nederlands",children:"Nederlands"}),o!=="default"&&s===!0&&e.jsx("button",{className:l("nijmegen-header-item",{"nijmegen-header-item--active":n==="active","nijmegen-header-item--hover":n==="hover","nijmegen-header-item--focus-visible":n==="focus-visible"}),"aria-expanded":i,"aria-label":"Account",children:"A. van der Klap"}),o==="default"&&e.jsx("a",{href:"#",className:l("nijmegen-header-item nijmegen-header-item--icon-user",{"nijmegen-header-item--active":n==="active","nijmegen-header-item--hover":n==="hover","nijmegen-header-item--focus-visible":n==="focus-visible"}),"aria-label":"Mijn Nijmegen",children:e.jsx("span",{children:"Mijn Nijmegen"})})]})]})]});try{x.displayName="HeaderStoryWebComponent",x.__docgenInfo={description:"",displayName:"HeaderStoryWebComponent",props:{state:{defaultValue:{value:""},description:"",name:"state",required:!1,type:{name:"string"}},variant:{defaultValue:{value:""},description:"",name:"variant",required:!1,type:{name:"string"}},account:{defaultValue:{value:"false"},description:"",name:"account",required:!1,type:{name:"boolean"}}}}}catch{}try{w.displayName="HeaderStoryHtml",w.__docgenInfo={description:"",displayName:"HeaderStoryHtml",props:{state:{defaultValue:{value:""},description:"",name:"state",required:!1,type:{name:"string"}},expanded:{defaultValue:{value:""},description:"",name:"expanded",required:!1,type:{name:"string"}},variant:{defaultValue:{value:""},description:"",name:"variant",required:!1,type:{name:"string"}},account:{defaultValue:{value:"false"},description:"",name:"account",required:!1,type:{name:"boolean"}}}}}catch{}export{w as H,x as a};
