@@ -51,9 +51,9 @@ export const Default: Story = {
     url: '#',
     layout: 'horizontal',
     meta: [
-      { children: 'Metadata', icon: <IconCalendarEvent aria-label="Metadata: " /> },
-      { children: 'Metadata', icon: <IconCalendarEvent aria-label="Metadata: " /> },
-      { children: 'Metadata', icon: <IconCalendarEvent aria-label="Metadata: " /> },
+      { children: 'Metadata', icon: <IconCalendarEvent /> },
+      { children: 'Metadata', icon: <IconCalendarEvent /> },
+      { children: 'Metadata', icon: <IconCalendarEvent /> },
     ] as Array<{ children: string; icon: any }>,
   },
 };
