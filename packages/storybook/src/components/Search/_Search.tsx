@@ -64,7 +64,6 @@ export const SearchStoryWebComponent = ({
             aria-controls="autocomplete-results"
             aria-autocomplete="both"
             aria-label="Zoekveld"
-            aria-describedby="autocomplete-help-text"
           />
           <button
             className="nijmegen-search__clear-button nijmegen-search__clear-button--hide"
