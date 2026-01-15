@@ -2841,19 +2841,19 @@
         "large-vw": {
           "padding-block-end": {
             "$type": "dimension",
-            "$value": "{ {basis.space.block.4xl}"
+            "$value": "{basis.space.block.4xl}"
           },
           "padding-block-start": {
             "$type": "dimension",
-            "$value": "{{basis.space.block.3xl}"
+            "$value": "{basis.space.block.3xl}"
           },
           "padding-inline-end": {
             "$type": "dimension",
-            "$value": "{{basis.space.inline.3xl}"
+            "$value": "{basis.space.inline.3xl}"
           },
           "padding-inline-start": {
             "$type": "dimension",
-            "$value": "{{basis.space.inline.3xl}"
+            "$value": "{basis.space.inline.3xl}"
           }
         }
       }
