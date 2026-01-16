@@ -1,0 +1,123 @@
+{
+  "ams": {
+    "time-input": {
+      "background-color": {
+        "type": "color",
+        "value": "{nijmegen.form-control.background-color}"
+      },
+      "border-color": {
+        "type": "color",
+        "value": "{nijmegen.form-control.border-color}"
+      },
+      "border-style": {
+        "description": "[code-only]",
+        "type": "other",
+        "value": "solid"
+      },
+      "border-width": {
+        "type": "borderWidth",
+        "value": "{nijmegen.form-control.border-width}"
+      },
+      "color": {
+        "type": "color",
+        "value": "{nijmegen.form-control.color}"
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "{nijmegen.form-control.font-size}"
+      },
+      "font-family": {
+        "type": "fontFamilies",
+        "value": "{nijmegen.form-control.font-family}"
+      },
+      "font-weight": {
+        "type": "fontWeights",
+        "value": "{nijmegen.form-control.font-weight}"
+      },
+      "line-height": {
+        "type": "lineHeights",
+        "value": "{nijmegen.form-control.line-height}"
+      },
+      "min-block-size": {
+        "type": "sizing",
+        "value": "{utrecht.pointer-target.min-size}"
+      },
+      "min-inline-size": {
+        "type": "sizing",
+        "value": "{nijmegen.size.750}"
+      },
+      "outline-offset": {
+        "description": "[code-only]",
+        "type": "other",
+        "value": "auto"
+      },
+      "padding-block": {
+        "type": "spacing",
+        "value": "{nijmegen.space.75}"
+      },
+      "padding-inline": {
+        "type": "spacing",
+        "value": "{nijmegen.space.75}"
+      },
+      "calendar-picker-indicator": {
+        "background-image": {
+          "description": "[code-only]",
+          "type": "other",
+          "value": "url(\\\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23004699'><path d='M16 0C7.163 0 0 7.163 0 16s7.163 16 16 16 16-7.163 16-16A16 16 0 0 0 16 0zm.9 28v-2h-2v1.9A11.8 11.8 0 0 1 4.1 17H6v-2H4.1A11.8 11.8 0 0 1 15 4.1V6h2V4.1A11.8 11.8 0 0 1 27.9 15H26v2h1.9a11.9 11.9 0 0 1-11 11zm.1-13h4v2h-6V9h2v6z'/></svg>\\\")"
+        },
+        "cursor": {
+          "description": "[code-only]",
+          "type": "other",
+          "value": "default"
+        }
+      },
+      "invalid": {
+        "border-color": {
+          "type": "color",
+          "value": "{nijmegen.form-control.invalid.border-color}"
+        },
+        "hover": {
+          "border-color": {
+            "type": "color",
+            "value": "{nijmegen.color.rood.700}"
+          },
+          "box-shadow": {
+            "type": "boxShadow",
+            "value": "None"
+          }
+        }
+      },
+      "disabled": {
+        "color": {
+          "type": "color",
+          "value": "{nijmegen.form-control.disabled.color}"
+        },
+        "cursor": {
+          "type": "other",
+          "value": "disabled",
+          "description": "[code-only]"
+        },
+        "calendar-picker-indicator": {
+          "background-image": {
+            "description": "[code-only]",
+            "type": "other",
+            "value": "url(\\\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23767676'><path d='M16 0C7.163 0 0 7.163 0 16s7.163 16 16 16 16-7.163 16-16A16 16 0 0 0 16 0zm.9 28v-2h-2v1.9A11.8 11.8 0 0 1 4.1 17H6v-2H4.1A11.8 11.8 0 0 1 15 4.1V6h2V4.1A11.8 11.8 0 0 1 27.9 15H26v2h1.9a11.9 11.9 0 0 1-11 11zm.1-13h4v2h-6V9h2v6z'/></svg>\\\")"
+          }
+        }
+      },
+      "hover": {
+        "box-shadow": {
+          "type": "boxShadow",
+          "value": "None"
+        },
+        "calendar-picker-indicator": {
+          "background-image": {
+            "description": "[code-only]\n",
+            "type": "other",
+            "value": "url(\\\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23003677'><path d='M16 0C7.163 0 0 7.163 0 16s7.163 16 16 16 16-7.163 16-16A16 16 0 0 0 16 0zm.9 28v-2h-2v1.9A11.8 11.8 0 0 1 4.1 17H6v-2H4.1A11.8 11.8 0 0 1 15 4.1V6h2V4.1A11.8 11.8 0 0 1 27.9 15H26v2h1.9a11.9 11.9 0 0 1-11 11zm.1-13h4v2h-6V9h2v6z'/></svg>\\\")"
+          }
+        }
+      }
+    }
+  }
+}
