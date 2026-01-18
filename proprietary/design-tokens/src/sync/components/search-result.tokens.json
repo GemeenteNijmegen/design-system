@@ -1,0 +1,88 @@
+{
+  "nijmegen": {
+    "search-result": {
+      "background-color": {
+        "value": "{nijmegen.color.background.default}",
+        "type": "color"
+      },
+      "border-color": {
+        "value": "{nijmegen.color.grijs.300}",
+        "type": "color"
+      },
+      "padding-inline-start": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing"
+      },
+      "padding-inline-end": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing"
+      },
+      "padding-block-end": {
+        "value": "{nijmegen.space.150}",
+        "type": "spacing"
+      },
+      "padding-block-start": {
+        "value": "{nijmegen.space.150}",
+        "type": "spacing"
+      },
+      "row-gap": {
+        "value": "{nijmegen.space.150}",
+        "type": "spacing"
+      },
+      "content": {
+        "row-gap": {
+          "value": "{nijmegen.space.100}",
+          "type": "spacing"
+        },
+        "focus-visible": {
+          "background-color": {
+            "value": "{nijmegen.focus.background-color}",
+            "type": "color"
+          },
+          "color": {
+            "value": "{nijmegen.focus.color}",
+            "type": "color"
+          }
+        },
+        "heading": {
+          "active": {
+            "text-decoration": {
+              "value": "underline",
+              "type": "textDecoration"
+            }
+          },
+          "hover": {
+            "text-decoration": {
+              "value": "underline",
+              "type": "textDecoration"
+            }
+          }
+        },
+        "border-block-end-width": {
+          "value": "{nijmegen.border-width.sm}",
+          "type": "borderWidth"
+        }
+      },
+      "summary": {
+        "row-gap": {
+          "value": "{nijmegen.space.150}",
+          "type": "spacing"
+        }
+      },
+      "heading": {
+        "active": {
+          "color": {
+            "value": "{nijmegen.interaction.active.color}",
+            "type": "color"
+          }
+        },
+        "hover": {
+          "color": {
+            "value": "{nijmegen.interaction.hover.color}",
+            "type": "color"
+          }
+        }
+      }
+    }
+  }
+}
