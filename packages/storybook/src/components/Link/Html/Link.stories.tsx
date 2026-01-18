@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import type { StoryContext } from '@storybook/types';
 import { IconArrowRight, IconCalendarEvent } from '@tabler/icons-react';
 import { Link } from '@utrecht/component-library-react/dist/css-module';
+import '@gemeentenijmegen/components-css';
 import prettierBabel from 'prettier/parser-babel';
 import * as prettier from 'prettier/standalone';
 import * as ReactDOMServer from 'react-dom/server';

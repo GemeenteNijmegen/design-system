@@ -455,6 +455,10 @@
         "value": "2rem",
         "type": "sizing"
       },
+      "250": {
+        "value": "2.5rem",
+        "type": "sizing"
+      },
       "300": {
         "value": "3rem",
         "type": "sizing"
