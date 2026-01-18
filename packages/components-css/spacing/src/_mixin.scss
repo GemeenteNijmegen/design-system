@@ -59,6 +59,9 @@
   .utrecht-heading-1:has(+ .nijmegen-html) {
     --utrecht-heading-1-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
   }
+  .utrecht-heading-1:has(+ .nijmegen-step-list) {
+    --utrecht-heading-1-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-heading-2 {
   .utrecht-heading-2:first-child {
@@ -116,6 +119,9 @@
     --utrecht-heading-2-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
   .utrecht-heading-2:has(+ .nijmegen-html) {
+    --utrecht-heading-2-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-2:has(+ .nijmegen-step-list) {
     --utrecht-heading-2-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
 }
@@ -177,6 +183,9 @@
   .utrecht-heading-3:has(+ .nijmegen-html) {
     --utrecht-heading-3-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .utrecht-heading-3:has(+ .nijmegen-step-list) {
+    --utrecht-heading-3-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-heading-4 {
   .utrecht-heading-4:first-child {
@@ -234,6 +243,9 @@
     --utrecht-heading-4-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
   .utrecht-heading-4:has(+ .nijmegen-html) {
+    --utrecht-heading-4-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-4:has(+ .nijmegen-step-list) {
     --utrecht-heading-4-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
 }
@@ -295,6 +307,9 @@
   .utrecht-heading-5:has(+ .nijmegen-html) {
     --utrecht-heading-5-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .utrecht-heading-5:has(+ .nijmegen-step-list) {
+    --utrecht-heading-5-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-heading-6 {
   .utrecht-heading-6:first-child {
@@ -349,6 +364,9 @@
     --utrecht-heading-6-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
   .utrecht-heading-6:has(+ .nijmegen-html) {
+    --utrecht-heading-6-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-heading-6:has(+ .nijmegen-step-list) {
     --utrecht-heading-6-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
 }
@@ -414,6 +432,9 @@
     --utrecht-accordion-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
   .utrecht-accordion:has(+ .nijmegen-html) {
+    --utrecht-accordion-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-accordion:has(+ .nijmegen-step-list) {
     --utrecht-accordion-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
 }
@@ -494,6 +515,9 @@
     --utrecht-alert-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
   .utrecht-alert:has(+ .nijmegen-html) {
+    --utrecht-alert-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .utrecht-alert:has(+ .nijmegen-step-list) {
     --utrecht-alert-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
 }
@@ -579,6 +603,9 @@
   .nijmegen-breadcrumb:has(+ .nijmegen-html) {
     --nijmegen-breadcrumb-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
+  .nijmegen-breadcrumb:has(+ .nijmegen-step-list) {
+    --nijmegen-breadcrumb-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-button {
   .utrecht-button:first-child {
@@ -648,6 +675,9 @@
     --utrecht-button-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
   .utrecht-button:has(+ .nijmegen-html) {
+    --utrecht-button-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .utrecht-button:has(+ .nijmegen-step-list) {
     --utrecht-button-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
 }
@@ -721,6 +751,9 @@
   .utrecht-action-group:has(+ .nijmegen-html) {
     --utrecht-action-group-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .utrecht-action-group:has(+ .nijmegen-step-list) {
+    --utrecht-action-group-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-img {
   .utrecht-img:first-child {
@@ -792,6 +825,9 @@
   .utrecht-img:has(+ .nijmegen-html) {
     --utrecht-img-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .utrecht-img:has(+ .nijmegen-step-list) {
+    --utrecht-img-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
 }
 @mixin spacing-nijmegen-hero {
   .nijmegen-hero:first-child {
@@ -855,6 +891,9 @@
     --nijmegen-hero-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
   .nijmegen-hero:has(+ .nijmegen-html) {
+    --nijmegen-hero-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-hero:has(+ .nijmegen-step-list) {
     --nijmegen-hero-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
   }
 }
@@ -931,6 +970,9 @@
   .utrecht-link:has(+ .nijmegen-html) {
     --utrecht-link-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
   }
+  .utrecht-link:has(+ .nijmegen-step-list) {
+    --utrecht-link-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-ordered-list {
   .utrecht-ordered-list:first-child {
@@ -1002,6 +1044,9 @@
   .utrecht-ordered-list:has(+ .nijmegen-html) {
     --utrecht-ordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .utrecht-ordered-list:has(+ .nijmegen-step-list) {
+    --utrecht-ordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
 }
 @mixin spacing-nijmegen-pagination {
   .nijmegen-pagination:first-child {
@@ -1068,6 +1113,9 @@
     --nijmegen-pagination-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
   }
   .nijmegen-pagination:has(+ .nijmegen-html) {
+    --nijmegen-pagination-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-pagination:has(+ .nijmegen-step-list) {
     --nijmegen-pagination-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
   }
 }
@@ -1144,6 +1192,9 @@
   .utrecht-paragraph:has(+ .nijmegen-html) {
     --utrecht-paragraph-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .utrecht-paragraph:has(+ .nijmegen-step-list) {
+    --utrecht-paragraph-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-separator {
   .utrecht-separator:first-child {
@@ -1216,6 +1267,9 @@
     --utrecht-separator-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
   .utrecht-separator:has(+ .nijmegen-html) {
+    --utrecht-separator-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .utrecht-separator:has(+ .nijmegen-step-list) {
     --utrecht-separator-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
 }
@@ -1297,6 +1351,9 @@
   .nijmegen-table:has(+ .nijmegen-html) {
     --nijmegen-table-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .nijmegen-table:has(+ .nijmegen-step-list) {
+    --nijmegen-table-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-unordered-list {
   .utrecht-unordered-list:first-child {
@@ -1368,6 +1425,9 @@
   .utrecht-unordered-list:has(+ .nijmegen-html) {
     --utrecht-unordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .utrecht-unordered-list:has(+ .nijmegen-step-list) {
+    --utrecht-unordered-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
 }
 @mixin spacing-nijmegen-card {
   .nijmegen-card:first-child {
@@ -1434,6 +1494,9 @@
     --nijmegen-card-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
   .nijmegen-card:has(+ .nijmegen-html) {
+    --nijmegen-card-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-card:has(+ .nijmegen-step-list) {
     --nijmegen-card-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
 }
@@ -1524,6 +1587,9 @@
   .nijmegen-link-list:has(+ .nijmegen-html) {
     --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .nijmegen-link-list:has(+ .nijmegen-step-list) {
+    --nijmegen-link-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
 }
 @mixin spacing-nijmegen-metadata {
   .nijmegen-metadata:first-child {
@@ -1595,6 +1661,9 @@
   .nijmegen-metadata:has(+ .nijmegen-html) {
     --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
+  .nijmegen-metadata:has(+ .nijmegen-step-list) {
+    --nijmegen-metadata-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
 }
 @mixin spacing-nijmegen-search {
   .nijmegen-search:first-child {
@@ -1655,6 +1724,9 @@
     --nijmegen-search-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
   .nijmegen-search:has(+ .nijmegen-html) {
+    --nijmegen-search-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-search:has(+ .nijmegen-step-list) {
     --nijmegen-search-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
 }
@@ -1725,10 +1797,16 @@
   .nijmegen-table-of-contents:has(+ .nijmegen-html) {
     --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
   }
+  .nijmegen-table-of-contents:has(+ .nijmegen-step-list) {
+    --nijmegen-table-of-contents-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
 }
 @mixin spacing-utrecht-page-body {
   .utrecht-page-body:first-child {
     --utrecht-page-body-margin-block-start: 0;
+  }
+  .utrecht-page-body:has(+ .nijmegen-footer) {
+    --utrecht-page-body-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
   }
   .utrecht-page-body:has(+ .nijmegen-header) {
     --utrecht-page-body-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
@@ -1806,5 +1884,85 @@
   }
   .nijmegen-html:has(+ .nijmegen-html) {
     --nijmegen-html-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-html:has(+ .nijmegen-step-list) {
+    --nijmegen-html-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+}
+@mixin spacing-nijmegen-step-list {
+  .nijmegen-step-list:first-child {
+    --nijmegen-step-list-margin-block-start: 0;
+  }
+  .nijmegen-step-list:has(+ .utrecht-heading-2) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .utrecht-heading-3) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .utrecht-heading-4) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .utrecht-heading-5) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .utrecht-heading-6) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .utrecht-accordion) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .utrecht-alert) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .utrecht-button) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .utrecht-action-group) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .utrecht-img) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .utrecht-link) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .utrecht-ordered-list) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .nijmegen-pagination) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .utrecht-paragraph) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .utrecht-separator) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .nijmegen-table) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .utrecht-unordered-list) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .nijmegen-card) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .nijmegen-link-list) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .nijmegen-metadata) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .nijmegen-search) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .nijmegen-table-of-contents) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .nijmegen-html) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-step-list:has(+ .nijmegen-step-list) {
+    --nijmegen-step-list-margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
   }
 }
