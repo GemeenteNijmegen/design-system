@@ -1,0 +1,145 @@
+/* stylelint-disable no-descending-specificity */
+
+@import "~@utrecht/link-css/src/mixin";
+@import "~@utrecht/focus-ring-css/src/mixin";
+@import "~@utrecht/unordered-list-css/src/mixin";
+
+.nijmegen-card {
+  background-color: var(--nijmegen-card-background-color);
+  border-color: var(--nijmegen-card-border-color);
+  border-radius: var(--nijmegen-card-border-radius);
+  border-style: solid;
+  border-width: var(--nijmegen-card-border-width);
+  color: var(--nijmegen-card-color);
+  display: flex;
+  flex-direction: column;
+  max-width: var(--nijmegen-card-max-width, 328px); /* stylelint-disable-line property-disallowed-list */
+  position: relative;
+}
+
+.nijmegen-card__link {
+  color: inherit;
+  text-decoration: var(--nijmegen-card-heading-text-decoration);
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &::after {
+    content: "";
+    inset: 0;
+    position: absolute;
+  }
+}
+
+.nijmegen-card__figure {
+  aspect-ratio: 12 / 9;
+  border-radius: var(--nijmegen-card-border-radius) var(--nijmegen-card-border-radius) 0 0;
+  display: inline-flex;
+  margin: 0; /* stylelint-disable-line property-disallowed-list */
+  order: -1;
+  overflow: hidden;
+
+  img {
+    height: 100%; /* stylelint-disable-line property-disallowed-list */
+    object-fit: cover;
+    object-position: center center;
+    width: 100%; /* stylelint-disable-line property-disallowed-list */
+  }
+}
+
+.nijmegen-card__inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nijmegen-card-content-row-gap);
+  padding-block-end: var(--nijmegen-card-padding-block-end);
+  padding-block-start: var(--nijmegen-card-padding-block-start);
+  padding-inline-end: var(--nijmegen-card-padding-inline-end);
+  padding-inline-start: var(--nijmegen-card-padding-inline-start);
+
+  ul {
+    @include utrecht-unordered-list;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--nijmegen-card-metadata-column-gap);
+    padding-inline-start: 0;
+  }
+}
+
+.nijmegen-card__meta-item {
+  align-items: center;
+  display: flex;
+  gap: var(--nijmegen-card-metadata-column-gap);
+
+  svg {
+    block-size: var(--nijmegen-card-icon-size);
+  }
+}
+
+.nijmegen-card__footer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-block-start: auto;
+  padding-block-end: var(--nijmegen-card-padding-block-end);
+  padding-inline-end: var(--nijmegen-card-padding-inline-end);
+  padding-inline-start: var(--nijmegen-card-padding-inline-start);
+  > svg {
+    stroke: var(--nijmegen-card-action-icon-color);
+  }
+}
+
+.nijmegen-card--hover,
+.nijmegen-card:hover {
+  .nijmegen-card__link {
+    @include utrecht-link--hover;
+
+    color: var(--nijmegen-card-heading-hover-color);
+    text-decoration: var(--nijmegen-card-heading-hover-text-decoration);
+  }
+}
+
+.nijmegen-card--active,
+.nijmegen-card:active {
+  .nijmegen-card__link {
+    @include utrecht-link--active;
+
+    color: var(--nijmegen-card-heading-active-color);
+    text-decoration: var(--nijmegen-card-heading-active-text-decoration);
+  }
+}
+
+.nijmegen-card--focus,
+.nijmegen-card:has(:focus) {
+  @include utrecht-link--focus;
+
+  .nijmegen-card__link {
+    color: var(--nijmegen-card-heading-focus-visible-color);
+    text-decoration: var(--nijmegen-card-heading-focus-visible-text-decoration);
+  }
+}
+
+.nijmegen-card--focus-visible,
+.nijmegen-card:has(:focus-visible) {
+  @include utrecht-link--focus;
+
+  .nijmegen-card__footer > svg {
+    stroke: var(--nijmegen-card-color);
+  }
+
+  .nijmegen-card__figure img {
+    border-radius: var(--nijmegen-card-border-radius) var(--nijmegen-card-border-radius) 0 0;
+  }
+
+  .nijmegen-card__link {
+    color: var(--nijmegen-card-heading-focus-visible-color);
+    text-decoration: var(--nijmegen-card-heading-focus-visible-text-decoration);
+
+    &::after {
+      @include utrecht-focus-ring;
+
+      border-radius: var(--nijmegen-card-border-radius);
+    }
+  }
+}

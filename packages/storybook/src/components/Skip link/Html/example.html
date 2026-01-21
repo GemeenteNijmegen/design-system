@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <title>Skip link example</title>
+    <!-- global -->
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/document-css@1.5.0/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/design-tokens@latest/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/font@latest/dist/index.css" />
+    <!-- component specific -->
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/components-css@latest/dist/index.min.css" />
+  </head>
+
+  <body class="utrecht-document nijmegen-theme">
+    <!-- Single skip link -->
+    <a href="#main" aria-label="Skip link" class="nijmegen-skip-link">Ga naar hoofdinhoud</a>
+
+    <!-- Multiple skip links -->
+    <nav aria-label="Skip links">
+      <ul>
+        <li><a href="#main" class="nijmegen-skip-link">Ga direct naar: hoofdinhoud</a></li>
+        <li><a href="#diensten" class="nijmegen-skip-link">Ga direct naar: diensten</a></li>
+        <li><a href="#nieuws" class="nijmegen-skip-link">Ga direct naar: nieuws</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

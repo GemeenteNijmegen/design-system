@@ -1,0 +1,52 @@
+{
+  "utrecht": {
+    "page-body": {
+      "padding-block-start": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing"
+      },
+      "padding-block-end": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing"
+      },
+      "padding-inline-start": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing"
+      },
+      "padding-inline-end": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing"
+      },
+      "content": {
+        "padding-block-start": {
+          "value": "{nijmegen.space.0}",
+          "type": "spacing"
+        },
+        "padding-block-end": {
+          "value": "{nijmegen.space.0}",
+          "type": "spacing"
+        },
+        "padding-inline-start": {
+          "value": "{nijmegen.space.100}",
+          "type": "spacing"
+        },
+        "padding-inline-end": {
+          "value": "{nijmegen.space.100}",
+          "type": "spacing"
+        },
+        "background-color": {
+          "value": "transparent",
+          "type": "color"
+        },
+        "color": {
+          "value": "{nijmegen.color.foreground.default}",
+          "type": "color"
+        },
+        "max-inline-size": {
+          "value": "1024px",
+          "type": "sizing"
+        }
+      }
+    }
+  }
+}

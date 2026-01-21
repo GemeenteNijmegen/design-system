@@ -1,0 +1,311 @@
+@mixin spacing-h1 {
+  h1:first-child {
+    --h1-margin-block-start: 0;
+  }
+  h1:has(+ h2) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  h1:has(+ button) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  h1:has(+ p) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  h1:has(+ ul) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  h1:has(+ .nijmegen-html-linklist) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  h1:has(+ a) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+}
+@mixin spacing-h2 {
+  h2:first-child {
+    --h2-margin-block-start: 0;
+  }
+  h2:has(+ h3) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  h2:has(+ button) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h2:has(+ p) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h2:has(+ ul) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h2:has(+ .nijmegen-html-linklist) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h2:has(+ a) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+}
+@mixin spacing-h3 {
+  h3:first-child {
+    --h3-margin-block-start: 0;
+  }
+  h3:has(+ h4) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  h3:has(+ button) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h3:has(+ p) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h3:has(+ ul) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h3:has(+ .nijmegen-html-linklist) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h3:has(+ a) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+}
+@mixin spacing-h4 {
+  h4:first-child {
+    --h4-margin-block-start: 0;
+  }
+  h4:has(+ h5) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  h4:has(+ button) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h4:has(+ p) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h4:has(+ ul) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h4:has(+ .nijmegen-html-linklist) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h4:has(+ a) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+}
+@mixin spacing-h5 {
+  h5:first-child {
+    --h5-margin-block-start: 0;
+  }
+  h5:has(+ h6) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  h5:has(+ button) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h5:has(+ p) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h5:has(+ ul) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h5:has(+ .nijmegen-html-linklist) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h5:has(+ a) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+}
+@mixin spacing-h6 {
+  h6:first-child {
+    --h6-margin-block-start: 0;
+  }
+  h6:has(+ button) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h6:has(+ p) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h6:has(+ ul) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h6:has(+ .nijmegen-html-linklist) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  h6:has(+ a) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+}
+@mixin spacing-button {
+  button:first-child {
+    --button-margin-block-start: 0;
+  }
+  button:has(+ h2) {
+    margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  button:has(+ h3) {
+    margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  button:has(+ h4) {
+    margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  button:has(+ h5) {
+    margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  button:has(+ h6) {
+    margin-block-end: var(--utrecht-rich-text-stranger-margin-block-end);
+  }
+  button:has(+ button) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+    margin-inline-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  button:has(+ p) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  button:has(+ ul) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  button:has(+ .nijmegen-html-linklist) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  button:has(+ a) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+}
+@mixin spacing-p {
+  p:first-child {
+    --p-margin-block-start: 0;
+  }
+  p:has(+ h2) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  p:has(+ h3) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  p:has(+ h4) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  p:has(+ h5) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  p:has(+ h6) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  p:has(+ button) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  p:has(+ p) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  p:has(+ ul) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  p:has(+ .nijmegen-html-linklist) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  p:has(+ a) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+}
+@mixin spacing-ul {
+  ul:first-child {
+    --ul-margin-block-start: 0;
+  }
+  ul:has(+ h2) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  ul:has(+ h3) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  ul:has(+ h4) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  ul:has(+ h5) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  ul:has(+ h6) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  ul:has(+ button) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  ul:has(+ p) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  ul:has(+ ul) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  ul:has(+ .nijmegen-html-linklist) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  ul:has(+ a) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+}
+@mixin spacing-nijmegen-html-linklist {
+  nijmegen-html-linklist:first-child {
+    --nijmegen-html-linklist-margin-block-start: 0;
+  }
+  .nijmegen-html-linklist:has(+ h2) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-html-linklist:has(+ h3) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-html-linklist:has(+ h4) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-html-linklist:has(+ h5) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-html-linklist:has(+ h6) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  .nijmegen-html-linklist:has(+ button) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-html-linklist:has(+ p) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-html-linklist:has(+ ul) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-html-linklist:has(+ .nijmegen-html-linklist) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  .nijmegen-html-linklist:has(+ a) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+}
+@mixin spacing-a {
+  a:first-child {
+    --a-margin-block-start: 0;
+  }
+  a:has(+ h2) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  a:has(+ h3) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  a:has(+ h4) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  a:has(+ h5) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  a:has(+ h6) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  a:has(+ button) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  a:has(+ p) {
+    margin-block-end: var(--utrecht-rich-text-acquaintance-margin-block-end);
+  }
+  a:has(+ ul) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  a:has(+ .nijmegen-html-linklist) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+  a:has(+ a) {
+    margin-block-end: var(--utrecht-rich-text-friend-margin-block-end);
+  }
+}

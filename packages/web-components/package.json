@@ -1,0 +1,36 @@
+{
+  "version": "0.0.2-alpha.41",
+  "author": "gemeente Nijmegen",
+  "description": "Web components for the gemeente Nijmegen design system",
+  "license": "EUPL-1.2",
+  "name": "@gemeentenijmegen/web-components",
+  "keywords": [
+    "nl-design-system",
+    "gemeente-nijmegen",
+    "web-components"
+  ],
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:GemeenteNijmegen/design-system.git"
+  },
+  "scripts": {
+    "build": "rollup -c ./rollup.config.mjs",
+    "clean": "rimraf dist"
+  },
+  "devDependencies": {
+    "@gemeentenijmegen/components-css": "workspace:*",
+    "postcss-discard-duplicates": "7.0.1",
+    "rollup": "4.12.1",
+    "rollup-plugin-html": "0.2.1",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-postcss": "4.0.2"
+  }
+}

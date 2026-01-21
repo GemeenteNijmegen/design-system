@@ -1,0 +1,14 @@
+{
+  "utrecht": {
+    "page-content": {
+      "padding-block-end": {
+        "value": "{nijmegen.space.100}",
+        "type": "spacing"
+      },
+      "padding-inline-end": {
+        "value": "{nijmegen.space.100}",
+        "type": "spacing"
+      }
+    }
+  }
+}

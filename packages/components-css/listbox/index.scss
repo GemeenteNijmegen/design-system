@@ -1,0 +1,81 @@
+@import "~@utrecht/link-css/src/mixin";
+@import "~@utrecht/focus-ring-css/src/mixin";
+@import "~@utrecht/unordered-list-css/src/mixin";
+
+.nijmegen-listbox {
+  background-color: var(--nijmegen-listbox-background-color);
+  border-color: var(--nijmegen-listbox-border-color);
+  border-radius: var(--nijmegen-listbox-border-radius);
+  border-style: solid;
+  border-width: var(--nijmegen-listbox-border-width);
+  box-sizing: border-box;
+  color: var(--nijmegen-listbox-color);
+  margin-block-end: var(--nijmegen-listbox-margin-block-end);
+  max-block-size: var(--nijmegen-listbox-max-block-size);
+  min-inline-size: var(--nijmegen-listbox-min-inline-size);
+}
+
+.nijmegen-listbox__list {
+  @include utrecht-unordered-list;
+
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.nijmegen-listbox__item {
+  align-items: center;
+  background-color: var(--nijmegen-listbox-item-background-color);
+  box-sizing: border-box;
+  color: var(--nijmegen-listbox-item-color);
+  display: flex;
+  font-family: var(--nijmegen-listbox-item-font-family);
+  font-size: var(--nijmegen-listbox-item-font-size);
+  font-weight: var(--nijmegen-listbox-item-font-weight);
+  gap: var(--nijmegen-listbox-item-column-gap);
+  line-height: var(--nijmegen-listbox-item-line-height);
+  min-block-size: var(--nijmegen-listbox-item-min-block-size);
+  padding-block-end: var(--nijmegen-listbox-item-padding-block-end);
+  padding-block-start: var(--nijmegen-listbox-item-padding-block-start);
+  padding-inline-end: var(--nijmegen-listbox-item-padding-inline-end);
+  padding-inline-start: var(--nijmegen-listbox-item-padding-inline-start);
+  text-decoration: none;
+
+  &::before {
+    background-color: currentColor;
+    content: "";
+    display: inline-block;
+    height: var(--nijmegen-icon-functional-size-height, 0.875rem); /* stylelint-disable-line property-disallowed-list */
+    mask-image: var(
+      --nijmegen-link-list-icon,
+      url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6l-6 6"></path></svg>')
+    );
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+    width: var(--nijmegen-icon-functional-size-width, 1.5rem); /* stylelint-disable-line property-disallowed-list */
+  }
+
+  &:active,
+  &.nijmegen-listbox__item--active {
+    background-color: var(--nijmegen-listbox-item-active-background-color);
+    color: var(--nijmegen-listbox-item-active-color);
+  }
+
+  &:hover,
+  &.nijmegen-listbox__item--hover {
+    @include utrecht-link--hover;
+
+    background-color: var(--nijmegen-listbox-item-hover-background-color);
+    color: var(--nijmegen-listbox-item-hover-color);
+    cursor: pointer;
+  }
+
+  &:focus-visible,
+  &.nijmegen-listbox__item--focus-visible {
+    @include utrecht-link--focus;
+    @include utrecht-link--focus-visible;
+
+    background-color: var(--nijmegen-listbox-item-focus-visible-background-color);
+    color: var(--nijmegen-listbox-item-focus-visible-color);
+  }
+}

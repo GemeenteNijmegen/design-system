@@ -1,0 +1,17 @@
+@import "./mixin";
+
+.nijmegen-html {
+  --utrecht-space-around: 1;
+  @include spacing-h1;
+  @include spacing-h2;
+  @include spacing-h3;
+  @include spacing-h4;
+  @include spacing-h5;
+  @include spacing-h6;
+  @include spacing-button;
+  @include spacing-p;
+  @include spacing-ul;
+  @include spacing-.nijmegen-html-linklist;
+  @include spacing-a;
+}
+@import "./nested";
