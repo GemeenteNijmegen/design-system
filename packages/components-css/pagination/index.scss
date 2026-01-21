@@ -8,6 +8,7 @@
   font-family: var(--nijmegen-pagination-font-family);
   font-size: var(--nijmegen-pagination-font-size, 1.125rem);
   line-height: var(--nijmegen-pagination-line-height, 150%);
+  margin-block-end: var(--nijmegen-pagination-margin-block-end);
 
   .nijmegen-sr-only {
     @include invisible-but-accessible;

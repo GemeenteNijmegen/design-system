@@ -9,6 +9,7 @@
   font-family: var(--nijmegen-table-font-family);
   font-size: var(--nijmegen-table-font-size, 1.125rem);
   line-height: var(--nijmegen-table-line-height, 150%);
+  margin-block-end: var(--nijmegen-table-margin-block-end);
 }
 
 @mixin nijmegen-table__caption {

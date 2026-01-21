@@ -4,6 +4,7 @@
   @include utrecht-unordered-list;
 
   list-style: none;
+  margin-block-end: var(--nijmegen-step-list-margin-block-end);
   padding-inline-start: 0;
 }
 
