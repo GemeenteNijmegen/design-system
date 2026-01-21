@@ -18,6 +18,10 @@ let components = [
     input: "src/toolbar-button/toolbar-button.js",
     output: "dist/nijmegen-toolbar-button.js",
   },
+  {
+    input: "src/search/search.js",
+    output: "dist/nijmegen-search.js",
+  },
 ];
 
 let config = [];
