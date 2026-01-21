@@ -1,6 +1,7 @@
 .nijmegen-footer {
   background-color: var(--nijmegen-page-footer-background-color);
   color: var(--nijmegen-page-footer-color);
+  margin-block-end: var(--nijmegen-footer-margin-block-end);
 
   .utrecht-heading-4,
   .utrecht-paragraph {
@@ -26,7 +27,7 @@
     }
   }
 
-  .nijmegen-link-list__link {
+  .nijmegen-link-list__link:any-link {
     color: inherit;
 
     &::before {
