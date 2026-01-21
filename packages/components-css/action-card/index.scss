@@ -1,0 +1,37 @@
+.nijmegen-action-card {
+  background-color: var(--nijmegen-action-card-background-color);
+  border-color: var(--nijmegen-action-card-border-color);
+  border-style: solid;
+  border-width: var(--nijmegen-action-card-border-width);
+  display: flex;
+  flex-direction: column;
+  gap: var(--nijmegen-action-card-row-gap);
+  padding-block-end: var(--nijmegen-action-card-padding-block-end);
+  padding-block-start: var(--nijmegen-action-card-padding-block-start);
+  padding-inline-end: var(--nijmegen-action-card-padding-inline-end);
+  padding-inline-start: var(--nijmegen-action-card-padding-inline-start);
+
+  @media (width >=1024px) {
+    padding-block-end: var(--nijmegen-action-card-large-vw-padding-block-end);
+    padding-block-start: var(--nijmegen-action-card-large-vw-padding-block-start);
+    padding-inline-end: var(--nijmegen-action-card-large-vw-padding-inline-end);
+    padding-inline-start: var(--nijmegen-action-card-large-vw-padding-inline-start);
+  }
+
+  @media (width <576px) {
+    .utrecht-button-group {
+      flex-direction: column;
+
+      .utrecht-button {
+        inline-size: 100%;
+        max-inline-size: 100%;
+      }
+    }
+  }
+}
+
+.nijmegen-action-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nijmegen-action-card-conten-row-gap);
+}
