@@ -1,0 +1,11 @@
+import{j as t}from"./jsx-runtime-CKrituN3.js";import"./index-S9DfXEnO.js";import{s as m,r as u,p as f}from"./server.browser-rAMDWieH.js";/* empty css                  */import{H as g,P as x}from"./index-Cr_ziExY.js";import{B as c}from"./index-7bwtWdbn.js";const y={title:{name:"Title",control:"text",table:{defaultValue:""}},text:{name:"Text",control:"text",table:{defaultValue:""}},children:{name:"Buttons",defaultValue:""}},o=({title:a="",text:e="",children:n})=>t.jsxs("div",{className:"nijmegen-action-card",children:[t.jsxs("div",{className:"nijmegen-action-card__content",children:[t.jsx(g,{children:a}),t.jsx(x,{children:e})]}),t.jsx("p",{role:"group",className:"utrecht-button-group",children:n})]});try{o.displayName="ActioncardStory",o.__docgenInfo={description:"",displayName:"ActioncardStory",props:{title:{defaultValue:{value:""},description:"",name:"title",required:!1,type:{name:"string"}},text:{defaultValue:{value:""},description:"",name:"text",required:!1,type:{name:"string"}}}}}catch{}const _={title:"Components/Action Card/Html Implementation",id:"css-action-card",component:o,argTypes:y,args:{},parameters:{status:{type:"BETA"},docs:{source:{transform:(a,e)=>{var s,i;const n=typeof e.component=="function"?e.component:typeof((s=e.component)==null?void 0:s.render)=="function"?(i=e.component)==null?void 0:i.render:null;return n?m.format(u(n(e.args)),{parser:"babel",plugins:[f]}):a}}}}},r={args:{title:"Heading",text:"Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod",children:[t.jsx(c,{appearance:"primary-action-button",children:"Text"},"1"),t.jsx(c,{appearance:"secondary-action-button",children:"Text"},"2")]}};var d,l,p;r.parameters={...r.parameters,docs:{...(d=r.parameters)==null?void 0:d.docs,source:{originalSource:`{
+  args: {
+    title: 'Heading',
+    text: 'Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod',
+    children: [<Button key="1" appearance="primary-action-button">
+        Text
+      </Button>, <Button key="2" appearance="secondary-action-button">
+        Text
+      </Button>]
+  }
+}`,...(p=(l=r.parameters)==null?void 0:l.docs)==null?void 0:p.source}}};const b=["Default"],v=Object.freeze(Object.defineProperty({__proto__:null,Default:r,__namedExportsOrder:b,default:_},Symbol.toStringTag,{value:"Module"}));export{v as A,r as D};
