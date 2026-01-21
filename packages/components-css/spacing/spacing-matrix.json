@@ -29,7 +29,9 @@
     "nijmegen-metadata": "Kennissen",
     "nijmegen-search": "Kennissen",
     "nijmegen-table-of-contents": "Kennissen",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Kennissen",
+    "nijmegen-step-list": "Kennissen"
   },
   {
     "component": "utrecht-heading-2",
@@ -61,7 +63,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Vrienden",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "utrecht-heading-3",
@@ -93,7 +97,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Vrienden",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "utrecht-heading-4",
@@ -125,7 +131,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Vrienden",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "utrecht-heading-5",
@@ -157,7 +165,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Vrienden",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "utrecht-heading-6",
@@ -189,7 +199,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Vrienden",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "utrecht-accordion",
@@ -221,7 +233,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Kan niet",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "utrecht-alert",
@@ -253,7 +267,9 @@
     "nijmegen-metadata": "Onbekenden",
     "nijmegen-search": "Onbekenden",
     "nijmegen-table-of-contents": "Onbekenden",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Onbekenden",
+    "nijmegen-step-list": "Onbekenden"
   },
   {
     "component": "nijmegen-breadcrumb",
@@ -285,7 +301,9 @@
     "nijmegen-metadata": "Onbekenden",
     "nijmegen-search": "Onbekenden",
     "nijmegen-table-of-contents": "Onbekenden",
-    "utrecht-page-body": "Onbekenden"
+    "utrecht-page-body": "Onbekenden",
+    "nijmegen-html": "Onbekenden",
+    "nijmegen-step-list": "Onbekenden"
   },
   {
     "component": "utrecht-button",
@@ -317,7 +335,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Vrienden",
     "nijmegen-table-of-contents": "Onbekenden",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "utrecht-action-group",
@@ -349,7 +369,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Vrienden",
     "nijmegen-table-of-contents": "Onbekenden",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "utrecht-img",
@@ -381,7 +403,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Vrienden",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "nijmegen-hero",
@@ -413,7 +437,9 @@
     "nijmegen-metadata": "Kennissen",
     "nijmegen-search": "Kennissen",
     "nijmegen-table-of-contents": "Onbekenden",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Kennissen",
+    "nijmegen-step-list": "Kennissen"
   },
   {
     "component": "utrecht-link",
@@ -445,7 +471,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Vrienden",
     "nijmegen-table-of-contents": "Onbekenden",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Kennissen",
+    "nijmegen-step-list": "Kennissen"
   },
   {
     "component": "utrecht-ordered-list",
@@ -477,7 +505,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Vrienden",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "nijmegen-pagination",
@@ -509,7 +539,9 @@
     "nijmegen-metadata": "Kennissen",
     "nijmegen-search": "Kennissen",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Kennissen",
+    "nijmegen-step-list": "Kennissen"
   },
   {
     "component": "utrecht-paragraph",
@@ -541,7 +573,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Vrienden",
     "nijmegen-table-of-contents": "Onbekenden",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "utrecht-separator",
@@ -573,7 +607,9 @@
     "nijmegen-metadata": "Onbekenden",
     "nijmegen-search": "Onbekenden",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Onbekenden",
+    "nijmegen-step-list": "Onbekenden"
   },
   {
     "component": "nijmegen-skip-link",
@@ -605,7 +641,9 @@
     "nijmegen-metadata": "Kan niet",
     "nijmegen-search": "Kan niet",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Kan niet",
+    "nijmegen-step-list": "Kan niet"
   },
   {
     "component": "nijmegen-table",
@@ -637,7 +675,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Kennissen",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "utrecht-unordered-list",
@@ -669,7 +709,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Vrienden",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "nijmegen-card",
@@ -701,7 +743,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Kan niet",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "nijmegen-footer",
@@ -733,7 +777,9 @@
     "nijmegen-metadata": "Kan niet",
     "nijmegen-search": "Kan niet",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Kan niet",
+    "nijmegen-step-list": "Kan niet"
   },
   {
     "component": "nijmegen-header",
@@ -765,7 +811,9 @@
     "nijmegen-metadata": "Kan niet",
     "nijmegen-search": "Kan niet",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Onbekenden"
+    "utrecht-page-body": "Onbekenden",
+    "nijmegen-html": "Kan niet",
+    "nijmegen-step-list": "Kan niet"
   },
   {
     "component": "nijmegen-link-list",
@@ -797,7 +845,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Vrienden",
     "nijmegen-table-of-contents": "Onbekenden",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "nijmegen-metadata",
@@ -829,7 +879,9 @@
     "nijmegen-metadata": "Kan niet",
     "nijmegen-search": "Vrienden",
     "nijmegen-table-of-contents": "Onbekenden",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "nijmegen-search",
@@ -861,7 +913,9 @@
     "nijmegen-metadata": "Vrienden",
     "nijmegen-search": "Kan niet",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   },
   {
     "component": "nijmegen-table-of-contents",
@@ -893,7 +947,9 @@
     "nijmegen-metadata": "Kennissen",
     "nijmegen-search": "Kennissen",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Kennissen",
+    "nijmegen-step-list": "Kennissen"
   },
   {
     "component": "utrecht-page-body",
@@ -919,12 +975,82 @@
     "nijmegen-table": "Kan niet",
     "utrecht-unordered-list": "Kan niet",
     "nijmegen-card": "Kan niet",
-    "nijmegen-footer": "Kan niet",
+    "nijmegen-footer": "Onbekenden",
     "nijmegen-header": "Onbekenden",
     "nijmegen-link-list": "Kan niet",
     "nijmegen-metadata": "Kan niet",
     "nijmegen-search": "Kan niet",
     "nijmegen-table-of-contents": "Kan niet",
-    "utrecht-page-body": "Kan niet"
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Kan niet",
+    "nijmegen-step-list": "Kan niet"
+  },
+  {
+    "component": "nijmegen-html",
+    "utrecht-heading-1": "Kan niet",
+    "utrecht-heading-2": "Kennissen",
+    "utrecht-heading-3": "Kennissen",
+    "utrecht-heading-4": "Kennissen",
+    "utrecht-heading-5": "Kennissen",
+    "utrecht-heading-6": "Kennissen",
+    "utrecht-accordion": "Vrienden",
+    "utrecht-alert": "Onbekenden",
+    "nijmegen-breadcrumb": "Kan niet",
+    "utrecht-button": "Vrienden",
+    "utrecht-action-group": "Vrienden",
+    "utrecht-img": "Kennissen",
+    "nijmegen-hero": "Kan niet",
+    "utrecht-link": "Vrienden",
+    "utrecht-ordered-list": "Vrienden",
+    "nijmegen-pagination": "Kennissen",
+    "utrecht-paragraph": "Vrienden",
+    "utrecht-separator": "Onbekenden",
+    "nijmegen-skip-link": "Kan niet",
+    "nijmegen-table": "Vrienden",
+    "utrecht-unordered-list": "Vrienden",
+    "nijmegen-card": "Vrienden",
+    "nijmegen-footer": "Kan niet",
+    "nijmegen-header": "Kan niet",
+    "nijmegen-link-list": "Vrienden",
+    "nijmegen-metadata": "Vrienden",
+    "nijmegen-search": "Vrienden",
+    "nijmegen-table-of-contents": "Onbekenden",
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
+  },
+  {
+    "component": "nijmegen-step-list",
+    "utrecht-heading-1": "Kan niet",
+    "utrecht-heading-2": "Kennissen",
+    "utrecht-heading-3": "Kennissen",
+    "utrecht-heading-4": "Kennissen",
+    "utrecht-heading-5": "Kennissen",
+    "utrecht-heading-6": "Kennissen",
+    "utrecht-accordion": "Vrienden",
+    "utrecht-alert": "Onbekenden",
+    "nijmegen-breadcrumb": "Kan niet",
+    "utrecht-button": "Vrienden",
+    "utrecht-action-group": "Vrienden",
+    "utrecht-img": "Kennissen",
+    "nijmegen-hero": "Kan niet",
+    "utrecht-link": "Vrienden",
+    "utrecht-ordered-list": "Vrienden",
+    "nijmegen-pagination": "Kennissen",
+    "utrecht-paragraph": "Vrienden",
+    "utrecht-separator": "Onbekenden",
+    "nijmegen-skip-link": "Kan niet",
+    "nijmegen-table": "Vrienden",
+    "utrecht-unordered-list": "Vrienden",
+    "nijmegen-card": "Vrienden",
+    "nijmegen-footer": "Kan niet",
+    "nijmegen-header": "Kan niet",
+    "nijmegen-link-list": "Vrienden",
+    "nijmegen-metadata": "Vrienden",
+    "nijmegen-search": "Vrienden",
+    "nijmegen-table-of-contents": "Onbekenden",
+    "utrecht-page-body": "Kan niet",
+    "nijmegen-html": "Vrienden",
+    "nijmegen-step-list": "Vrienden"
   }
 ]

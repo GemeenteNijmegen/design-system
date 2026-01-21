@@ -10,6 +10,7 @@
   border-width: var(--nijmegen-listbox-border-width);
   box-sizing: border-box;
   color: var(--nijmegen-listbox-color);
+  margin-block-end: var(--nijmegen-listbox-margin-block-end);
   max-block-size: var(--nijmegen-listbox-max-block-size);
   min-inline-size: var(--nijmegen-listbox-min-inline-size);
 }
