@@ -4,6 +4,7 @@
   all: unset;
   display: flex;
   flex-direction: column;
+  margin-block-end: var(--nijmegen-link-list-margin-block-end);
   row-gap: var(--nijmegen-link-list-row-gap, 0.5rem);
 }
 

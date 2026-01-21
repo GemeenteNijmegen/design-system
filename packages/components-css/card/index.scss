@@ -81,10 +81,10 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  margin-block-start: auto;
   padding-block-end: var(--nijmegen-card-padding-block-end);
   padding-inline-end: var(--nijmegen-card-padding-inline-end);
   padding-inline-start: var(--nijmegen-card-padding-inline-start);
-
   > svg {
     stroke: var(--nijmegen-card-action-icon-color);
   }
