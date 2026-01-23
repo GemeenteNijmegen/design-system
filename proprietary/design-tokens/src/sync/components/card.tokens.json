@@ -104,7 +104,7 @@
         "type": "borderWidth"
       },
       "border-radius": {
-        "value": "{nijmegen.border-radius.sm}",
+        "value": "{nijmegen.border-radius.none}",
         "type": "borderRadius"
       },
       "action": {
