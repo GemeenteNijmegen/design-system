@@ -39,6 +39,10 @@ export const argTypes = {
       disable: true,
     },
   },
+  staticAutocomplete: {
+    name: 'Static autocomplete',
+    control: 'boolean',
+  },
 };
 
 export const SearchStoryWebComponent = ({
@@ -48,6 +52,7 @@ export const SearchStoryWebComponent = ({
   dark = false,
   full = false,
   autocomplete = false,
+  staticAutocomplete = false,
   placeholder = 'Zoeken',
 }) => {
   return (
@@ -82,16 +87,17 @@ export const SearchStoryWebComponent = ({
         >
           {icon && <IconSearch />} Zoeken
         </button>
+      </div>
 
-        <div
-          className={clsx(
-            'nijmegen-search__autocomplete-results',
-            autocomplete && 'nijmegen-search__autocomplete-results--example',
-          )}
-        >
-          <div className="nijmegen-listbox" role="listbox">
-            <ul className="nijmegen-listbox__list" role="list"></ul>
-          </div>
+      <div
+        className={clsx(
+          'nijmegen-search__autocomplete-results',
+          autocomplete && 'nijmegen-search__autocomplete-results--example',
+          staticAutocomplete && 'nijmegen-search__autocomplete-results--static',
+        )}
+      >
+        <div className="nijmegen-listbox" role="listbox">
+          <ul className="nijmegen-listbox__list" role="list"></ul>
         </div>
       </div>
     </nijmegen-search>
@@ -105,6 +111,7 @@ export const SearchStory = ({
   dark = false,
   full = false,
   autocomplete = false,
+  staticAutocomplete = false,
   placeholder = 'Zoeken',
 }) => {
   return (
@@ -139,16 +146,17 @@ export const SearchStory = ({
         >
           {icon && <IconSearch />} Zoeken
         </button>
+      </div>
 
-        <div
-          className={clsx(
-            'nijmegen-search__autocomplete-results',
-            autocomplete && 'nijmegen-search__autocomplete-results--example',
-          )}
-        >
-          <div className="nijmegen-listbox" role="listbox">
-            <ul className="nijmegen-listbox__list" role="list"></ul>
-          </div>
+      <div
+        className={clsx(
+          'nijmegen-search__autocomplete-results',
+          autocomplete && 'nijmegen-search__autocomplete-results--example',
+          staticAutocomplete && 'nijmegen-search__autocomplete-results--static',
+        )}
+      >
+        <div className="nijmegen-listbox" role="listbox">
+          <ul className="nijmegen-listbox__list" role="list"></ul>
         </div>
       </div>
     </form>
