@@ -2,6 +2,10 @@ import style from '@gemeentenijmegen/components-css/search/index.scss';
 import html from './template.html';
 
 class NijmegenSearch extends HTMLElement {
+  static get observedAttributes() {
+    return ['full'];
+  }
+
   constructor() {
     super();
     const template = document.createElement('template');
@@ -21,9 +25,28 @@ class NijmegenSearch extends HTMLElement {
     const resultsList = this.querySelector('.nijmegen-listbox__list');
     const resultsContainer = this.querySelector('.nijmegen-search__autocomplete-results');
 
+    this.#updateFullWidth();
+
     this.#initializeSearch(input, clearButton);
     if (resultsContainer && resultsContainer.classList.contains('nijmegen-search__autocomplete-results--example')) {
       this.#initializeAutocomplete(input, clearButton, resultsList, resultsContainer);
+    }
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === 'full' && oldValue !== newValue) {
+      this.#updateFullWidth();
+    }
+  }
+
+  #updateFullWidth() {
+    const form = this.shadowRoot.querySelector('.nijmegen-search');
+    if (form) {
+      if (this.hasAttribute('full')) {
+        form.classList.add('nijmegen-search--full-width');
+      } else {
+        form.classList.remove('nijmegen-search--full-width');
+      }
     }
   }
 

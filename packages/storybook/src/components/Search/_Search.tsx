@@ -56,8 +56,8 @@ export const SearchStoryWebComponent = ({
   placeholder = 'Zoeken',
 }) => {
   return (
-    <nijmegen-search>
-      <div className={clsx('nijmegen-search__container', full && 'nijmegen-search__container--full-width')}>
+    <nijmegen-search {...(full && { full: '' })}>
+      <div className="nijmegen-search__container">
         <div className="nijmegen-search__input-holder">
           <input
             className={clsx('nijmegen-search__input', disabled && 'nijmegen-search__input--disabled')}
@@ -115,8 +115,13 @@ export const SearchStory = ({
   placeholder = 'Zoeken',
 }) => {
   return (
-    <form className="nijmegen-search" method="GET" action="" role="search">
-      <div className={clsx('nijmegen-search__container', full && 'nijmegen-search__container--full-width')}>
+    <form
+      className={clsx('nijmegen-search', full && 'nijmegen-search--full-width')}
+      method="GET"
+      action=""
+      role="search"
+    >
+      <div className="nijmegen-search__container">
         <div className="nijmegen-search__input-holder">
           <input
             className={clsx('nijmegen-search__input', disabled && 'nijmegen-search__input--disabled')}
