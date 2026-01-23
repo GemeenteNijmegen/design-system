@@ -383,7 +383,7 @@ export const HeaderStoryWebComponent = ({ state = '', variant = '', account = fa
               <MobileMenuStoryWebComponent />
             </div>
             <div id="search-container" className="nijmegen-header__mobile-menu">
-              <SearchStoryWebComponent full={true} />
+              <SearchStoryWebComponent full={true} staticAutocomplete={true} />
             </div>
           </>
         )}
@@ -635,7 +635,13 @@ export const HeaderStoryWebComponent = ({ state = '', variant = '', account = fa
                     <div className="nijmegen-mega-menu__content">
                       <div>
                         <h4 className="utrecht-heading-4">Zoeken</h4>
-                        <SearchStoryWebComponent icon={false} placeholder={''} full={true} autocomplete={true} />
+                        <SearchStoryWebComponent
+                          icon={false}
+                          placeholder={''}
+                          full={true}
+                          autocomplete={true}
+                          staticAutocomplete={true}
+                        />
                       </div>
                     </div>
                   </div>
@@ -753,7 +759,7 @@ export const HeaderStoryHtml = ({ state = '', expanded = '', variant = '', accou
               <MobileMenuStoryHtml />
             </div>
             <div id="search-container" className="nijmegen-header__mobile-menu">
-              <SearchStory full={true} />
+              <SearchStory full={true} staticAutocomplete={true} />
             </div>
           </>
         )}
@@ -1003,7 +1009,7 @@ export const HeaderStoryHtml = ({ state = '', expanded = '', variant = '', accou
                 <div className="nijmegen-mega-menu">
                   <div className="nijmegen-mega-menu__container">
                     <div className="nijmegen-header-action--content">
-                      <SearchStory full={true} placeholder={''} icon={false} />
+                      <SearchStory full={true} placeholder={''} icon={false} staticAutocomplete={true} />
                     </div>
                   </div>
                 </div>
