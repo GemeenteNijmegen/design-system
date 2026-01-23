@@ -13,8 +13,14 @@
   color: var(--nijmegen-card-color);
   display: flex;
   flex-direction: column;
-  max-width: var(--nijmegen-card-max-width, 328px); /* stylelint-disable-line property-disallowed-list */
   position: relative;
+
+  /* stylelint-disable */
+  #storybook-root &,
+  #storybook-docs & {
+    max-width: var(--nijmegen-card-max-width, 328px);
+  }
+  /* stylelint-enable */
 }
 
 .nijmegen-card__link {
