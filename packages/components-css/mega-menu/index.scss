@@ -4,6 +4,7 @@
   background-color: var(--nijmegen-mega-menu-background-color, #fff);
   border: 0 solid var(--nijmegen-mega-menu-border-color, transparent);
   border-block-end-width: var(--nijmegen-mega-menu-border-block-end-width, 1px);
+  margin-block-end: var(--nijmegen-mega-menu-margin-block-end);
   writing-mode: horizontal-tb;
 }
 

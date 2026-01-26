@@ -35,7 +35,7 @@
           "type": "spacing"
         },
         "background-color": {
-          "value": "{nijmegen.color.background.default}",
+          "value": "transparent",
           "type": "color"
         },
         "color": {
