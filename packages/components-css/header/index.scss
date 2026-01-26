@@ -1,15 +1,14 @@
-/* stylelint-disable order/properties-alphabetical-order */
-
 @import "~@gemeentenijmegen/layout-css/src/variables";
 @import "./mixin";
 
 .nijmegen-header {
   background-color: var(--nijmegen-header-background-color, #fff);
-  margin-inline-end: auto;
-  margin-inline-start: auto;
-  max-width: var(--nijmegen-header-content-max-inline-size, 100%); /* stylelint-disable-line property-disallowed-list */
-  width: 100%; /* stylelint-disable-line property-disallowed-list */
   writing-mode: horizontal-tb;
+
+  .nijmegen-search {
+    background-color: red;
+    inline-size: 100%;
+  }
 }
 
 .nijmegen-header__content {
@@ -22,7 +21,6 @@
 
 .nijmegen-header__content--small {
   &--inner {
-    border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
     @include nijmegen-header-content;
   }
 
@@ -56,11 +54,26 @@
   position: absolute;
   width: 100%; /* stylelint-disable-line property-disallowed-list */
   z-index: 1;
+
+  &--small {
+    width: auto; /* stylelint-disable-line property-disallowed-list */
+  }
+}
+
+.nijmegen-header-action {
+  &--relative {
+    position: relative;
+
+    .nijmegen-header__panel {
+      left: auto; /* stylelint-disable-line property-disallowed-list */
+      right: 0; /* stylelint-disable-line property-disallowed-list */
+    }
+  }
 }
 
 .nijmegen-header-item {
-  all: unset;
   align-items: end;
+  all: unset;
   color: var(--nijmegen-header-item-color, #000);
   column-gap: var(--nijmegen-header-item-column-gap, 0);
   cursor: pointer;

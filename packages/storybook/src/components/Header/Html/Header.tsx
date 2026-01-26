@@ -1,7 +1,9 @@
 import '@gemeentenijmegen/components-css';
 import clsx from 'clsx';
 import { renderToStaticMarkup } from 'react-dom/server';
+import { ListboxStory } from '../../Listbox/_Listbox';
 import { MobileMenuStoryHtml, MobileMenuStoryWebComponent } from '../../Mobile menu/MobileMenu';
+import { SearchStory, SearchStoryWebComponent } from '../../Search/_Search';
 import '@gemeentenijmegen/web-components/dist/nijmegen-header.js';
 
 const logoString = encodeURIComponent(
@@ -354,6 +356,7 @@ export const HeaderStoryWebComponent = ({ state = '', variant = '', account = fa
               })}
               type="button"
               aria-expanded={expanded}
+              aria-controls="search-container"
               aria-label="Zoeken"
             >
               Zoeken
@@ -376,9 +379,14 @@ export const HeaderStoryWebComponent = ({ state = '', variant = '', account = fa
         </div>
 
         {variant === 'default' && (
-          <div id="mobile-menu" className="nijmegen-header__mobile-menu">
-            <MobileMenuStoryWebComponent />
-          </div>
+          <>
+            <div id="mobile-menu" className="nijmegen-header__mobile-menu">
+              <MobileMenuStoryWebComponent />
+            </div>
+            <div id="search-container" className="nijmegen-header__mobile-menu">
+              <SearchStoryWebComponent full={true} staticAutocomplete={true} />
+            </div>
+          </>
         )}
       </div>
       <div className="nijmegen-header__content">
@@ -608,60 +616,98 @@ export const HeaderStoryWebComponent = ({ state = '', variant = '', account = fa
             </ul>
           )}
         </nav>
-        <div className="nijmegen-header__actions">
+        <ul className="nijmegen-header__actions">
           {variant !== 'funnel' && (
-            <button
-              className={clsx('nijmegen-header-item nijmegen-header-item--icon-search', {
-                'nijmegen-header-item--active': state === 'active',
-                'nijmegen-header-item--hover': state === 'hover',
-                'nijmegen-header-item--focus-visible': state === 'focus-visible',
-              })}
-              aria-expanded={expanded}
-              aria-label="Zoeken"
-            >
-              Zoeken
-            </button>
+            <li className="nijmegen-header-action">
+              <button
+                className={clsx('nijmegen-header-item nijmegen-header-item--icon-search', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-expanded={expanded}
+                aria-label="Zoeken"
+              >
+                Zoeken
+              </button>
+              <div className="nijmegen-header__panel">
+                <div className="nijmegen-mega-menu">
+                  <div className="nijmegen-mega-menu__container">
+                    <div className="nijmegen-mega-menu__content">
+                      <div>
+                        <h4 className="utrecht-heading-4">Zoeken</h4>
+                        <SearchStoryWebComponent
+                          icon={false}
+                          placeholder={''}
+                          full={true}
+                          autocomplete={true}
+                          staticAutocomplete={true}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
           )}
           {variant === 'default' && (
-            <button
-              className={clsx('nijmegen-header-item', {
-                'nijmegen-header-item--active': state === 'active',
-                'nijmegen-header-item--hover': state === 'hover',
-                'nijmegen-header-item--focus-visible': state === 'focus-visible',
-              })}
-              aria-expanded={expanded}
-              aria-label="Taal wijzigen, huidige taal is Nederlands"
-            >
-              Nederlands
-            </button>
+            <li className="nijmegen-header-action nijmegen-header-action--relative">
+              <button
+                className={clsx('nijmegen-header-item', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-expanded={expanded}
+                aria-label="Taal wijzigen, huidige taal is Nederlands"
+              >
+                Nederlands
+              </button>
+
+              <div className="nijmegen-header__panel nijmegen-header__panel--small">
+                <ListboxStory
+                  items={[
+                    { text: 'English (Engels)', href: '#' },
+                    { text: 'Deutsch (Duits)', href: '#' },
+                    { text: 'Français (Frans)', href: '#' },
+                    { text: 'Türkçe (Turks)', href: '#' },
+                    { text: 'العربية (Arabisch)', href: '#' },
+                  ]}
+                />
+              </div>
+            </li>
           )}
           {variant !== 'default' && account === true && (
-            <button
-              className={clsx('nijmegen-header-item', {
-                'nijmegen-header-item--active': state === 'active',
-                'nijmegen-header-item--hover': state === 'hover',
-                'nijmegen-header-item--focus-visible': state === 'focus-visible',
-              })}
-              aria-expanded={expanded}
-              aria-label="Account"
-            >
-              A. van der Klap
-            </button>
+            <li className="nijmegen-header-action">
+              <button
+                className={clsx('nijmegen-header-item', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-expanded={expanded}
+                aria-label="Account"
+              >
+                A. van der Klap
+              </button>
+            </li>
           )}
           {variant === 'default' && (
-            <a
-              href="#"
-              className={clsx('nijmegen-header-item nijmegen-header-item--icon-user', {
-                'nijmegen-header-item--active': state === 'active',
-                'nijmegen-header-item--hover': state === 'hover',
-                'nijmegen-header-item--focus-visible': state === 'focus-visible',
-              })}
-              aria-label="Mijn Nijmegen"
-            >
-              <span>Mijn Nijmegen</span>
-            </a>
+            <li className="nijmegen-header-action">
+              <a
+                href="#"
+                className={clsx('nijmegen-header-item nijmegen-header-item--icon-user', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-label="Mijn Nijmegen"
+              >
+                <span>Mijn Nijmegen</span>
+              </a>
+            </li>
           )}
-        </div>
+        </ul>
       </div>
     </nijmegen-header>
   );
@@ -721,9 +767,14 @@ export const HeaderStoryHtml = ({ state = '', expanded = '', variant = '', accou
         </div>
 
         {variant === 'default' && (
-          <div id="mobile-menu" className="nijmegen-header__mobile-menu">
-            <MobileMenuStoryHtml />
-          </div>
+          <>
+            <div id="mobile-menu" className="nijmegen-header__mobile-menu">
+              <MobileMenuStoryHtml />
+            </div>
+            <div id="search-container" className="nijmegen-header__mobile-menu">
+              <SearchStory full={true} staticAutocomplete={true} />
+            </div>
+          </>
         )}
       </div>
       <div className="nijmegen-header__content">
@@ -953,60 +1004,89 @@ export const HeaderStoryHtml = ({ state = '', expanded = '', variant = '', accou
             </ul>
           )}
         </nav>
-        <div className="nijmegen-header__actions">
+        <ul className="nijmegen-header__actions">
           {variant !== 'funnel' && (
-            <button
-              className={clsx('nijmegen-header-item nijmegen-header-item--icon-search', {
-                'nijmegen-header-item--active': state === 'active',
-                'nijmegen-header-item--hover': state === 'hover',
-                'nijmegen-header-item--focus-visible': state === 'focus-visible',
-              })}
-              aria-expanded={expanded}
-              aria-label="Zoeken"
-            >
-              Zoeken
-            </button>
+            <li className="nijmegen-header-action">
+              <button
+                className={clsx('nijmegen-header-item nijmegen-header-item--icon-search', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-expanded={expanded}
+                aria-label="Zoeken"
+              >
+                Zoeken
+              </button>
+              <div className="nijmegen-header__panel">
+                <div className="nijmegen-mega-menu">
+                  <div className="nijmegen-mega-menu__container">
+                    <div className="nijmegen-header-action--content">
+                      <SearchStory full={true} placeholder={''} icon={false} staticAutocomplete={true} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
           )}
           {variant === 'default' && (
-            <button
-              className={clsx('nijmegen-header-item', {
-                'nijmegen-header-item--active': state === 'active',
-                'nijmegen-header-item--hover': state === 'hover',
-                'nijmegen-header-item--focus-visible': state === 'focus-visible',
-              })}
-              aria-expanded={expanded}
-              aria-label="Taal wijzigen, huidige taal is Nederlands"
-            >
-              Nederlands
-            </button>
+            <li className="nijmegen-header-action nijmegen-header-action--relative">
+              <button
+                className={clsx('nijmegen-header-item', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-expanded={expanded}
+                aria-label="Taal wijzigen, huidige taal is Nederlands"
+              >
+                Nederlands
+              </button>
+
+              <div className="nijmegen-header__panel nijmegen-header__panel--small">
+                <ListboxStory
+                  items={[
+                    { text: 'English (Engels)', href: '#' },
+                    { text: 'Deutsch (Duits)', href: '#' },
+                    { text: 'Français (Frans)', href: '#' },
+                    { text: 'Türkçe (Turks)', href: '#' },
+                    { text: 'العربية (Arabisch)', href: '#' },
+                  ]}
+                />
+              </div>
+            </li>
           )}
           {variant !== 'default' && account === true && (
-            <button
-              className={clsx('nijmegen-header-item', {
-                'nijmegen-header-item--active': state === 'active',
-                'nijmegen-header-item--hover': state === 'hover',
-                'nijmegen-header-item--focus-visible': state === 'focus-visible',
-              })}
-              aria-expanded={expanded}
-              aria-label="Account"
-            >
-              A. van der Klap
-            </button>
+            <li className="nijmegen-header-action">
+              <button
+                className={clsx('nijmegen-header-item', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-expanded={expanded}
+                aria-label="Account"
+              >
+                A. van der Klap
+              </button>
+            </li>
           )}
           {variant === 'default' && (
-            <a
-              href="#"
-              className={clsx('nijmegen-header-item nijmegen-header-item--icon-user', {
-                'nijmegen-header-item--active': state === 'active',
-                'nijmegen-header-item--hover': state === 'hover',
-                'nijmegen-header-item--focus-visible': state === 'focus-visible',
-              })}
-              aria-label="Mijn Nijmegen"
-            >
-              <span>Mijn Nijmegen</span>
-            </a>
+            <li className="nijmegen-header-action">
+              <a
+                href="#"
+                className={clsx('nijmegen-header-item nijmegen-header-item--icon-user', {
+                  'nijmegen-header-item--active': state === 'active',
+                  'nijmegen-header-item--hover': state === 'hover',
+                  'nijmegen-header-item--focus-visible': state === 'focus-visible',
+                })}
+                aria-label="Mijn Nijmegen"
+              >
+                <span>Mijn Nijmegen</span>
+              </a>
+            </li>
           )}
-        </div>
+        </ul>
       </div>
     </header>
   );
