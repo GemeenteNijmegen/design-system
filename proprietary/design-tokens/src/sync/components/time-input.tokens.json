@@ -22,13 +22,13 @@
         "type": "color",
         "value": "{nijmegen.form-control.color}"
       },
-      "font-size": {
-        "type": "fontSizes",
-        "value": "{nijmegen.form-control.font-size}"
-      },
       "font-family": {
         "type": "fontFamilies",
         "value": "{nijmegen.form-control.font-family}"
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "{nijmegen.form-control.font-size}"
       },
       "font-weight": {
         "type": "fontWeights",
@@ -79,11 +79,18 @@
         "hover": {
           "border-color": {
             "type": "color",
-            "value": "{nijmegen.color.rood.700}"
+            "value": "{nijmegen.form-control.invalid.border-color}"
           },
           "box-shadow": {
             "type": "boxShadow",
-            "value": "None"
+            "value": {
+              "x": "0",
+              "y": "0",
+              "blur": "0",
+              "spread": "{nijmegen.form-control.hover.border-width}",
+              "color": "{nijmegen.form-control.invalid.border-color}",
+              "type": "innerShadow"
+            }
           }
         }
       },
@@ -93,9 +100,9 @@
           "value": "{nijmegen.form-control.disabled.color}"
         },
         "cursor": {
+          "description": "[code-only]",
           "type": "other",
-          "value": "disabled",
-          "description": "[code-only]"
+          "value": "disabled"
         },
         "calendar-picker-indicator": {
           "background-image": {
@@ -108,7 +115,14 @@
       "hover": {
         "box-shadow": {
           "type": "boxShadow",
-          "value": "None"
+          "value": {
+            "x": "0",
+            "y": "0",
+            "blur": "0",
+            "spread": "{nijmegen.form-control.hover.border-width}",
+            "color": "{nijmegen.form-control.border-color}",
+            "type": "innerShadow"
+          }
         },
         "calendar-picker-indicator": {
           "background-image": {
