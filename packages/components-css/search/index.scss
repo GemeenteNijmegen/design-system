@@ -1,20 +1,23 @@
 @import "~@utrecht/focus-ring-css/src/mixin";
 @import "~@utrecht/textbox-css/src/mixin";
 
-.nijmegen-search__container {
-  display: flex;
-  gap: var(--nijmegen-search-input-column-gap);
+.nijmegen-search {
   inline-size: var(--nijmegen-search-input-max-inline-size);
   max-inline-size: 100%;
   position: relative;
 
+  &.nijmegen-search--full-width {
+    inline-size: 100%;
+  }
+}
+
+.nijmegen-search__container {
+  display: flex;
+  gap: var(--nijmegen-search-input-column-gap);
+
   .utrecht-button {
     max-block-size: 51px;
     min-block-size: 51px;
-  }
-
-  &.nijmegen-search__container--full-width {
-    inline-size: 100%;
   }
 }
 
@@ -129,5 +132,9 @@
 
   &--show-results {
     display: block;
+  }
+
+  &--static {
+    position: static;
   }
 }
