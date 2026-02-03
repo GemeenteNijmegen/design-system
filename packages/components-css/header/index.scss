@@ -1,4 +1,5 @@
 @import "~@gemeentenijmegen/layout-css/src/variables";
+@import "~@utrecht/focus-ring-css/src/mixin";
 @import "./mixin";
 
 .nijmegen-header {
@@ -173,6 +174,8 @@
 
   &:focus-visible,
   &--focus-visible {
+    @include utrecht-focus-ring;
+
     background-color: var(--nijmegen-header-item-focus-visible-background-color, #fff);
     border: var(--nijmegen-header-item-focus-visible-border-line-width, 1px)
       var(--nijmegen-header-item-focus-visible-border-line-style, dashed)
