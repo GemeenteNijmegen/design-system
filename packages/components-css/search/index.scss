@@ -1,0 +1,133 @@
+@import "~@utrecht/focus-ring-css/src/mixin";
+@import "~@utrecht/textbox-css/src/mixin";
+
+.nijmegen-search__container {
+  display: flex;
+  gap: var(--nijmegen-search-input-column-gap);
+  inline-size: var(--nijmegen-search-input-max-inline-size);
+  max-inline-size: 100%;
+  position: relative;
+
+  .utrecht-button {
+    max-block-size: 51px;
+    min-block-size: 51px;
+  }
+
+  &.nijmegen-search__container--full-width {
+    inline-size: 100%;
+  }
+}
+
+.nijmegen-search__input-holder {
+  flex: 1;
+  position: relative;
+}
+
+.nijmegen-search__search-button {
+  &.nijmegen-search__search-button--dark {
+    border-color: var(--nijmegen-search-input-button-border-color) !important;
+  }
+
+  @media (width <576px) {
+    svg {
+      display: none;
+    }
+  }
+}
+
+.nijmegen-search__clear-button {
+  align-items: center;
+  aspect-ratio: 1/1;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  height: 100%; /* stylelint-disable-line property-disallowed-list */
+  justify-content: center;
+  position: absolute;
+  right: 0; /* stylelint-disable-line property-disallowed-list */
+  top: 0; /* stylelint-disable-line property-disallowed-list */
+
+  &.nijmegen-search__clear-button--hide {
+    display: none;
+  }
+
+  svg {
+    stroke: var(--nijmegen-interaction-color);
+  }
+}
+
+.nijmegen-search__input {
+  background-color: var(--nijmegen-search-input-background-color);
+  border-color: var(--nijmegen-search-input-border-color);
+  border-radius: var(--nijmegen-search-input-border-radius);
+  border-width: var(--nijmegen-search-input-border-width);
+  box-sizing: border-box;
+  color: var(--nijmegen-search-input-color);
+  font-family: var(--nijmegen-search-input-font-family);
+  font-size: var(--nijmegen-search-input-font-size);
+  font-weight: var(--nijmegen-search-input-font-weight);
+  line-height: var(--nijmegen-search-input-line-height);
+  min-block-size: var(--nijmegen-search-input-min-block-size);
+  padding-block-end: var(--nijmegen-search-input-padding-block-end);
+  padding-block-start: var(--nijmegen-search-input-padding-block-start);
+  padding-inline-end: var(--nijmegen-search-input-padding-inline-end);
+  padding-inline-start: var(--nijmegen-search-input-padding-inline-start);
+  width: 100%; /* stylelint-disable-line property-disallowed-list */
+
+  &:hover,
+  &.nijmegen-search__input--hover {
+    background-color: var(--nijmegen-search-input-hover-background-color);
+    border-color: var(--nijmegen-search-input-hover-border-color);
+    color: var(--nijmegen-search-input-hover-color);
+  }
+
+  &:focus,
+  &.nijmegen-search__input--focus {
+    @include utrecht-focus;
+
+    background-color: var(--nijmegen-search-input-focus-background-color);
+    border-color: var(--nijmegen-search-input-focus-border-color);
+    color: var(--nijmegen-search-input-focus-color);
+  }
+
+  &:focus-visible,
+  &.nijmegen-search__input--focus {
+    @include utrecht-focus;
+    @include utrecht-focus-ring;
+
+    background-color: var(--nijmegen-search-input-focus-background-color);
+    border-color: var(--nijmegen-search-input-focus-border-color);
+    color: var(--nijmegen-search-input-focus-color);
+  }
+
+  &:read-only,
+  &.nijmegen-search__input-read-only {
+    background-color: var(--nijmegen-search-input-read-only-background-color);
+    border-color: var(--nijmegen-search-input-read-only-border-color);
+    color: var(--nijmegen-search-input-read-only-color);
+  }
+
+  &.nijmegen-search__input--disabled {
+    background-color: var(--nijmegen-search-input-disabled-background-color);
+    border-color: var(--nijmegen-search-input-disabled-border-color);
+    color: var(--nijmegen-search-input-disabled-color);
+    cursor: var(--utrecht-action-disabled-cursor, not-allowed);
+  }
+
+  &::placeholder {
+    color: var(--nijmegen-search-input-placeholder-color);
+  }
+}
+
+.nijmegen-search__autocomplete-results {
+  display: none;
+  margin-block-start: var(--nijmegen-search-input-autocomplete-offset, 8px);
+  position: absolute;
+  top: var(--nijmegen-search-input-min-block-size); /* stylelint-disable-line property-disallowed-list */
+  width: 100%; /* stylelint-disable-line property-disallowed-list */
+
+  &--show-results {
+    display: block;
+  }
+}

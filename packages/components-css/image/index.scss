@@ -1,0 +1,17 @@
+.nijmegen-image {
+  max-height: 100%; /* stylelint-disable-line property-disallowed-list */
+  max-width: 100%; /* stylelint-disable-line property-disallowed-list */
+  object-fit: cover;
+
+  &.nijmegen-image--aspect-16-9 {
+    aspect-ratio: 16/9;
+  }
+
+  &.nijmegen-image--aspect-1-1 {
+    aspect-ratio: 1/1;
+  }
+
+  &.nijmegen-image--aspect-4-3 {
+    aspect-ratio: 4/3;
+  }
+}

@@ -108,6 +108,9 @@ importers:
       '@utrecht/link-css':
         specifier: 1.6.0
         version: 1.6.0
+      '@utrecht/textbox-css':
+        specifier: 3.0.1
+        version: 3.0.1
       '@utrecht/unordered-list-css':
         specifier: 1.5.1
         version: 1.5.1
@@ -8016,6 +8019,10 @@ packages:
 
   /@utrecht/textbox-css@1.7.1:
     resolution: {integrity: sha512-MBM/NfMgdMSsaVJvE1Yk48Z0aAby2Bz4Vyt9CSFV38UZQU3C/kPwuQde3oJePCBnVJPx+K1YM8WhGcHF+c0Y4g==}
+    dev: true
+
+  /@utrecht/textbox-css@3.0.1:
+    resolution: {integrity: sha512-SP3CFpTd/6CffvSBcpBQ+uKzYusgDB/ri0vmEA/uYfWnRyen1ETQkeCoDJeSUR/D8g24NMdFu7xmOniiwGpRQg==}
     dev: true
 
   /@utrecht/textbox-react@1.0.8(@babel/runtime@7.24.0)(react-dom@18.2.0)(react@18.2.0):
