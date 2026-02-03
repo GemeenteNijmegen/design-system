@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <title>Image text block example</title>
+    <!-- global -->
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/document-css@1.5.0/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/design-tokens@latest/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/font@latest/dist/index.css" />
+    <!-- component specific -->
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/components-css@latest/dist/index.min.css" />
+  </head>
+
+  <body class="utrecht-document nijmegen-theme">
+    <div class="nijmegen-image-text-block">
+      <div class="nijmegen-image-text-block__content">
+        <div class="nijmegen-image-text-block__message">
+          <h3 class="utrecht-heading-3">Heading</h3>
+          <p class="utrecht-paragraph">Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod</p>
+        </div>
+        <p role="group" class="utrecht-button-group">
+          <button class="utrecht-button utrecht-button--primary-action" type="button">Text</button>
+          <button class="utrecht-button utrecht-button--secondary-action" type="button">Text</button>
+        </p>
+      </div>
+      <div class="nijmegen-image-text-block__image">
+        <img
+          class="nijmegen-image nijmegen-image--aspect-4-3"
+          src="https://picsum.photos/640/360/"
+          alt="Example image description"
+          width="640"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </body>
+</html>
