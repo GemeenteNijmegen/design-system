@@ -74,7 +74,6 @@ export const SearchStoryWebComponent = ({
             className="nijmegen-search__clear-button nijmegen-search__clear-button--hide"
             aria-label="Invoer wissen"
             title="Invoer wissen"
-            tabIndex="-1"
           >
             <IconX />
           </button>

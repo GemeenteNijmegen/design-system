@@ -45,11 +45,17 @@
   border: 0;
   cursor: pointer;
   display: flex;
-  height: 100%; /* stylelint-disable-line property-disallowed-list */
+  height: calc(100% - 1rem); /* stylelint-disable-line property-disallowed-list */
   justify-content: center;
   position: absolute;
-  right: 0; /* stylelint-disable-line property-disallowed-list */
-  top: 0; /* stylelint-disable-line property-disallowed-list */
+  right: 0.5rem; /* stylelint-disable-line property-disallowed-list */
+  top: 0.5rem; /* stylelint-disable-line property-disallowed-list */
+
+  &:focus-visible,
+  &.nijmegen-search__clear-button--focus-visible {
+    @include utrecht-focus;
+    @include utrecht-focus-ring;
+  }
 
   &.nijmegen-search__clear-button--hide {
     display: none;
