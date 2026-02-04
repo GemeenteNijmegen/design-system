@@ -68,13 +68,17 @@
     .nijmegen-header__panel {
       left: auto; /* stylelint-disable-line property-disallowed-list */
       right: 0; /* stylelint-disable-line property-disallowed-list */
+
+      .nijmegen-listbox {
+        min-inline-size: 240px;
+      }
     }
   }
 }
 
 .nijmegen-header-item {
-  align-items: end;
-  all: unset;
+  all: unset; /* stylelint-disable-line order/properties-alphabetical-order */
+  align-items: end; /* stylelint-disable-line order/properties-alphabetical-order */
   color: var(--nijmegen-header-item-color, #000);
   column-gap: var(--nijmegen-header-item-column-gap, 0);
   cursor: pointer;
@@ -177,9 +181,6 @@
     @include utrecht-focus-ring;
 
     background-color: var(--nijmegen-header-item-focus-visible-background-color, #fff);
-    border: var(--nijmegen-header-item-focus-visible-border-line-width, 1px)
-      var(--nijmegen-header-item-focus-visible-border-line-style, dashed)
-      var(--nijmegen-header-item-focus-visible-border-color, #082d26);
     color: var(--nijmegen-header-item-focus-visible-color, #000);
   }
 }
