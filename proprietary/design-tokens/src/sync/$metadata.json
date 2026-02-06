@@ -49,6 +49,7 @@
     "components/page-footer.tokens",
     "components/pagination.tokens",
     "components/paragraph.tokens",
+    "components/pre-heading.tokens",
     "components/radio.tokens",
     "components/rich-text.tokens",
     "components/search.tokens",
@@ -64,6 +65,7 @@
     "components/textbox.tokens",
     "components/time-input.tokens",
     "components/toolbar-button.tokens",
+    "components/top-task-card.tokens",
     "components/unordered-list.tokens",
     "components/breadcrumb.tokens",
     "layout.tokens"
