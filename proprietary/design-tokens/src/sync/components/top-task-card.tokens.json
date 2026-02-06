@@ -77,5 +77,13 @@
         }
       }
     }
+  },
+  "todo": {
+    "toptask-link": {
+      "border-radius": {
+        "value": "{nijmegen.border-radius.xs}",
+        "type": "borderRadius"
+      }
+    }
   }
 }
