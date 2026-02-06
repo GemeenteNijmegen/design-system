@@ -64,6 +64,7 @@
     "components/textbox.tokens",
     "components/time-input.tokens",
     "components/toolbar-button.tokens",
+    "components/top-task-card.tokens",
     "components/unordered-list.tokens",
     "components/breadcrumb.tokens",
     "layout.tokens"
