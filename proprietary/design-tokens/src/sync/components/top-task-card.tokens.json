@@ -83,6 +83,14 @@
       "border-radius": {
         "value": "{nijmegen.border-radius.xs}",
         "type": "borderRadius"
+      },
+      "font-family": {
+        "value": "{nijmegen.typography.font-family.secondary}",
+        "type": "fontFamilies"
+      },
+      "font-weight": {
+        "value": "{nijmegen.typography.font-weight.bold}",
+        "type": "fontWeights"
       }
     }
   }
