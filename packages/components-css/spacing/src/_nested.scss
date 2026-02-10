@@ -12,22 +12,14 @@
   background-color: var(--nijmegen-color-grijs-100);
 }
 .utrecht-page-body__content {
-  > :last-child {
-    margin-block-end: 4rem;
-  }
-
   .nijmegen-card {
     height: 100%;
   }
 
-  .utrecht-paragraph:not(.nijmegen-card *) {
-    max-inline-size: 50%;
-    @media (width <1024px) {
-      max-inline-size: 100%;
-    }
-  }
   .nijmegen-html {
-    p {
+    p,
+    ul,
+    ol {
       max-inline-size: 50%;
       @media (width <1024px) {
         max-inline-size: 100%;
