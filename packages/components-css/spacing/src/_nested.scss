@@ -16,16 +16,17 @@
     height: 100%;
   }
 
+  .utrecht-paragraph {
+    max-inline-size: 65ch;
+  }
+
   .nijmegen-html {
     p,
     ul,
     ol {
-      max-inline-size: 50%;
-      @media (width <1024px) {
-        max-inline-size: 100%;
-      }
+      max-inline-size: 65ch;
     }
-    p.lead,
+
     h2,
     h3,
     h4,
@@ -34,13 +35,6 @@
       @media (width <1024px) {
         max-inline-size: 100%;
       }
-    }
-  }
-
-  .utrecht-paragraph--lead {
-    max-inline-size: 70%;
-    @media (width <1024px) {
-      max-inline-size: 100%;
     }
   }
 }
