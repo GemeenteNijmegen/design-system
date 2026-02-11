@@ -7,6 +7,10 @@ import { basename } from "node:path";
 
 let components = [
   {
+    input: "src/accordion/accordion.js",
+    output: "dist/nijmegen-accordion.js",
+  },
+  {
     input: "src/header/header.js",
     output: "dist/nijmegen-header.js",
   },
