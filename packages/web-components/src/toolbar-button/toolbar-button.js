@@ -1,5 +1,5 @@
 import style from '@gemeentenijmegen/components-css/toolbar-button/index.scss';
-import html from './template.html';
+import html from './template.html?raw';
 
 class NijmegenToolbarButton extends HTMLElement {
   constructor() {
