@@ -1,5 +1,5 @@
 import style from '@gemeentenijmegen/components-css/accordion/index.scss';
-import html from './template.html';
+import html from './template.html?raw';
 
 class NijmegenAccordion extends HTMLElement {
   constructor() {
