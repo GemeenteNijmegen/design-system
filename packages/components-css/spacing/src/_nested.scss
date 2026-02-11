@@ -11,15 +11,12 @@
 .utrecht-page-body--grijs-100 {
   background-color: var(--nijmegen-color-grijs-100);
 }
+
+.utrecht-paragraph {
+  max-inline-size: 65ch;
+}
+
 .utrecht-page-body__content {
-  .nijmegen-card {
-    height: 100%;
-  }
-
-  .utrecht-paragraph {
-    max-inline-size: 65ch;
-  }
-
   .nijmegen-html {
     p,
     ul,
@@ -32,7 +29,7 @@
     h4,
     h5 {
       max-inline-size: 70%;
-      @media (width <1024px) {
+      @media (width <992px) {
         max-inline-size: 100%;
       }
     }

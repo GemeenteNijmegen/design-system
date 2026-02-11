@@ -74,7 +74,7 @@ const getSpacingMixinsSemantic = (components) =>
 const getRichTextStyles = (components, parentclass = "nijmegen-spacing") => `
 @import "./mixin";
 
-.${parentclass} {
+.${parentclass} .utrecht-page-body__content {
   --utrecht-space-around: 1;
   ${components.map((mixinGroup) => `@include spacing-${mixinGroup[0].component}`).join(";\n")}
 }
