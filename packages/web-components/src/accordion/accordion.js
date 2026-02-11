@@ -1,4 +1,5 @@
-import html from './template.html?raw';
+import style from '@gemeentenijmegen/components-css/accordion/index.scss';
+import html from './template.html';
 
 class NijmegenAccordion extends HTMLElement {
   constructor() {
@@ -8,6 +9,10 @@ class NijmegenAccordion extends HTMLElement {
 
     const shadowRoot = this.attachShadow({ mode: 'open' });
     shadowRoot.appendChild(template.content.cloneNode(true));
+
+    const stylesheet = new CSSStyleSheet();
+    stylesheet.replaceSync(style);
+    shadowRoot.adoptedStyleSheets = [stylesheet];
   }
 
   connectedCallback() {
