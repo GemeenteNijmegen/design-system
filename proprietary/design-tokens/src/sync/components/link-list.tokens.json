@@ -21,7 +21,7 @@
     "link-list": {
       "item": {
         "column-gap": {
-          "value": "{nijmegen.space.50}",
+          "value": "{nijmegen.space.25}",
           "type": "spacing"
         },
         "text-decoration": {
