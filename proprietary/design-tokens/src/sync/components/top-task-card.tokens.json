@@ -1,0 +1,26 @@
+{
+  "utrecht": {
+    "pre-heading": {
+      "color": {
+        "type": "color",
+        "value": "{utrecht.document.color}"
+      },
+      "font-family": {
+        "type": "fontFamilies",
+        "value": "{nijmegen.heading.font-family}"
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "{nijmegen.typography.font-size.sm}"
+      },
+      "font-weight": {
+        "type": "fontWeights",
+        "value": "{nijmegen.heading.font-weight}"
+      },
+      "line-height": {
+        "type": "lineHeights",
+        "value": "{nijmegen.typography.line-height.sm}"
+      }
+    }
+  }
+}
