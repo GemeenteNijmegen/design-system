@@ -20,7 +20,7 @@
     },
     "heading": {
       "color": {
-        "value": "{nijmegen.color.zwart}",
+        "value": "{nijmegen.color.grijs.900}",
         "type": "color"
       },
       "font-family": {
