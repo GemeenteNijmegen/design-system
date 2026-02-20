@@ -39,6 +39,10 @@ export const argTypes = {
       disable: true,
     },
   },
+  staticAutocomplete: {
+    name: 'Static autocomplete',
+    control: 'boolean',
+  },
 };
 
 export const SearchStoryWebComponent = ({
@@ -48,11 +52,12 @@ export const SearchStoryWebComponent = ({
   dark = false,
   full = false,
   autocomplete = false,
+  staticAutocomplete = false,
   placeholder = 'Zoeken',
 }) => {
   return (
-    <nijmegen-search>
-      <div className={clsx('nijmegen-search__container', full && 'nijmegen-search__container--full-width')}>
+    <nijmegen-search {...(full && { full: '' })}>
+      <div className="nijmegen-search__container">
         <div className="nijmegen-search__input-holder">
           <input
             className={clsx('nijmegen-search__input', disabled && 'nijmegen-search__input--disabled')}
@@ -82,16 +87,17 @@ export const SearchStoryWebComponent = ({
         >
           {icon && <IconSearch />} Zoeken
         </button>
+      </div>
 
-        <div
-          className={clsx(
-            'nijmegen-search__autocomplete-results',
-            autocomplete && 'nijmegen-search__autocomplete-results--example',
-          )}
-        >
-          <div className="nijmegen-listbox" role="listbox">
-            <ul className="nijmegen-listbox__list" role="list"></ul>
-          </div>
+      <div
+        className={clsx(
+          'nijmegen-search__autocomplete-results',
+          autocomplete && 'nijmegen-search__autocomplete-results--example',
+          staticAutocomplete && 'nijmegen-search__autocomplete-results--static',
+        )}
+      >
+        <div className="nijmegen-listbox" role="listbox">
+          <ul className="nijmegen-listbox__list" role="list"></ul>
         </div>
       </div>
     </nijmegen-search>
@@ -105,11 +111,17 @@ export const SearchStory = ({
   dark = false,
   full = false,
   autocomplete = false,
+  staticAutocomplete = false,
   placeholder = 'Zoeken',
 }) => {
   return (
-    <form className="nijmegen-search" method="GET" action="" role="search">
-      <div className={clsx('nijmegen-search__container', full && 'nijmegen-search__container--full-width')}>
+    <form
+      className={clsx('nijmegen-search', full && 'nijmegen-search--full-width')}
+      method="GET"
+      action=""
+      role="search"
+    >
+      <div className="nijmegen-search__container">
         <div className="nijmegen-search__input-holder">
           <input
             className={clsx('nijmegen-search__input', disabled && 'nijmegen-search__input--disabled')}
@@ -139,16 +151,17 @@ export const SearchStory = ({
         >
           {icon && <IconSearch />} Zoeken
         </button>
+      </div>
 
-        <div
-          className={clsx(
-            'nijmegen-search__autocomplete-results',
-            autocomplete && 'nijmegen-search__autocomplete-results--example',
-          )}
-        >
-          <div className="nijmegen-listbox" role="listbox">
-            <ul className="nijmegen-listbox__list" role="list"></ul>
-          </div>
+      <div
+        className={clsx(
+          'nijmegen-search__autocomplete-results',
+          autocomplete && 'nijmegen-search__autocomplete-results--example',
+          staticAutocomplete && 'nijmegen-search__autocomplete-results--static',
+        )}
+      >
+        <div className="nijmegen-listbox" role="listbox">
+          <ul className="nijmegen-listbox__list" role="list"></ul>
         </div>
       </div>
     </form>

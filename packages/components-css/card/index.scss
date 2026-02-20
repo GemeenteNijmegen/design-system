@@ -13,6 +13,7 @@
   color: var(--nijmegen-card-color);
   display: flex;
   flex-direction: column;
+  height: 100%; /* stylelint-disable-line property-disallowed-list */
   position: relative;
 
   /* stylelint-disable */
