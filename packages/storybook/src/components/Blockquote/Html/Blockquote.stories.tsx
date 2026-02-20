@@ -45,5 +45,6 @@ export const Default: Story = {
   name: 'Blockquote',
   args: {
     text: 'Ondernemers en bedrijven uit Nijmegen opgelet!',
+    caption: '— L. Ipsum',
   },
 };

@@ -1,3 +1,54 @@
-.utrecht-blockquote {
-  background-color: var(--nijmegen-blockquote-background-color);
+.nijmegen-blockquote {
+  background-color: var(--utrecht-blockquote-background-color);
+  border-color: var(--utrecht-blockquote-border-color);
+  border-inline-end-width: var(--utrecht-blockquote-border-inline-start-width);
+  border-radius: var(--utrecht-blockquote-border-radius);
+  border-style: solid;
+  border-width: var(--utrecht-blockquote-border-width);
+  color: var(--utrecht-blockquote-color);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--utrecht-document-font-family);
+  font-size: var(--utrecht-blockquote-font-size);
+  gap: var(--utrecht-blockquote-row-gap);
+  margin-block-end: var(--utrecht-blockquote-margin-block-end, 0);
+  margin-block-start: var(--utrecht-blockquote-margin-block-start, 0);
+  margin-inline-end: var(--utrecht-blockquote-margin-inline-end);
+  margin-inline-start: var(--utrecht-blockquote-margin-inline-start);
+  padding-block-end: var(--utrecht-blockquote-padding-block-end);
+  padding-block-start: var(--utrecht-blockquote-padding-block-start);
+  padding-inline-end: var(--utrecht-blockquote-padding-inline-end);
+  padding-inline-start: var(--utrecht-blockquote-padding-inline-start);
+}
+
+.nijmegen-blockquote__quote {
+  all: unset;
+  color: var(--utrecht-blockquote-content-color);
+  font-size: var(--utrecht-blockquote-content-font-size);
+  font-weight: var(--utrecht-blockquote-content-font-weight, 600);
+
+  .nijmegen-paragraph {
+    margin: 0; /* stylelint-disable-line property-disallowed-list */
+  }
+
+  &::before {
+    aspect-ratio: 1/1;
+    background-color: var(--todo-blockquote-icon-color); /* stylelint-disable-line */
+    content: "";
+    display: block;
+    mask-image: var(
+      --utrecht-blockquote-icon,
+      url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAyOCI+PHBhdGggZD0iTTIyIDI4Yy0xLjEgMC0yLjEtLjQtMi44LTEuMkMxOC40IDI2IDE4IDI1IDE4IDI0VjEyYzAtNi4zIDMuMy0xMC40IDkuNS0xMmguOGMuMyAwIC41LjEuNy4zLjIuMS40LjMuNi41LjIuMi4zLjUuMy43di44YzAgLjMtLjEuNS0uMy43LS4xLjItLjMuNC0uNS42LS4yLjItLjUuMy0uNy4zLTQuNSAxLjEtNi41IDMuNy02LjUgOC4xdjJoNmMxIDAgMiAuNCAyLjcgMS4xczEuMiAxLjYgMS4zIDIuNlYyNGMwIDEuMS0uNCAyLjEtMS4yIDIuOC0uOC44LTEuOCAxLjItMi44IDEuMmgtNloiLz48cGF0aCBkPSJNNCAyOGMtMS4xIDAtMi4xLS40LTIuOC0xLjJDLjQgMjYuMSAwIDI1LjEgMCAyNFYxMkMwIDUuNyAzLjMgMS42IDkuNSAwaC44Yy4zIDAgLjUuMS43LjNzLjQuMy42LjVjLjIuMi4zLjUuMy43di44YzAgLjMtLjEuNS0uMy43LS4xLjItLjMuNC0uNS42LS4yLjItLjUuMy0uNy4zQzUuOSA1IDMuOSA3LjYgMy45IDEydjJoNmMxIDAgMiAuNCAyLjcgMS4xczEuMiAxLjYgMS4zIDIuNlYyNGMwIDEuMS0uNCAyLjEtMS4yIDIuOC0uOC44LTEuOCAxLjItMi44IDEuMmgtNloiLz48L3N2Zz4=")
+    );
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: calc(var(--todo-blockquote-icon-size) - 1rem); /* stylelint-disable-line */
+    width: var(--todo-blockquote-icon-size); /* stylelint-disable-line */
+  }
+}
+
+.nijmegen-blockquote__caption {
+  color: var(--utrecht-blockquote-attribution-color);
+  font-size: var(--utrecht-blockquote-attribution-font-size);
+  font-weight: var(--utrecht-blockquote-attribution-font-weight);
 }

@@ -8,15 +8,22 @@ export const argTypes = {
       defaultValue: '',
     },
   },
+  caption: {
+    name: 'Text',
+    control: 'text',
+    table: {
+      defaultValue: '',
+    },
+  },
 };
 
-export const BlockquoteStory = ({ text = '' }) => {
+export const BlockquoteStory = ({ text = '', caption = '' }) => {
   return (
-    <figure className="utrecht-blockquote">
-      <blockquote className="utrecht-blockquote__quote">
-        <p className="utrecht-paragraph">{text}</p>
+    <figure className="nijmegen-blockquote">
+      <blockquote className="nijmegen-blockquote__quote">
+        <p className="nijmegen-paragraph">{text}</p>
       </blockquote>
-      <figcaption className="utrecht-blockquote__caption">L. Ipsum</figcaption>
+      <figcaption className="nijmegen-blockquote__caption">{caption}</figcaption>
     </figure>
   );
 };
