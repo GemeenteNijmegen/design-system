@@ -1,6 +1,6 @@
 @import "./mixin";
 
-.nijmegen-spacing {
+.nijmegen-spacing .utrecht-page-body__content {
   --utrecht-space-around: 1;
   @include spacing-utrecht-heading-1;
   @include spacing-utrecht-heading-2;

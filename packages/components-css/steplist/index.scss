@@ -106,4 +106,9 @@ ul.nijmegen-step-list {
   flex-direction: column;
   gap: var(--nijmegen-step-list-step-body-content-row-gap);
   padding-inline-start: 56px;
+
+  > * {
+    align-self: flex-start;
+    margin: 0 !important; /* stylelint-disable-line property-disallowed-list */
+  }
 }

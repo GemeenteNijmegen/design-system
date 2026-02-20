@@ -67,11 +67,14 @@ ol.nijmegen-breadcrumb__list {
   padding-inline-end: var(--nijmegen-breadcrumb-navigation-link-padding-inline-end);
   padding-inline-start: var(--nijmegen-breadcrumb-navigation-link-padding-inline-start);
   text-decoration: var(--nijmegen-breadcrumb-navigation-link-text-decoration);
+  white-space: nowrap;
 }
 
 .nijmegen-breadcrumb__link--mobile {
   display: inline-flex;
   gap: var(--nijmegen-breadcrumb-navigation-link-icon-column-gap);
+  padding-inline-end: var(--nijmegen-breadcrumb-navigation-list-padding-inline-end);
+  padding-inline-start: var(--nijmegen-breadcrumb-navigation-list-padding-inline-start);
 
   @media (width >=576px) {
     display: none;

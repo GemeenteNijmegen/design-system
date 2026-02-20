@@ -11,44 +11,27 @@
 .utrecht-page-body--grijs-100 {
   background-color: var(--nijmegen-color-grijs-100);
 }
+
+.utrecht-paragraph {
+  max-inline-size: 65ch;
+}
+
 .utrecht-page-body__content {
-  > :last-child {
-    margin-block-end: 4rem;
-  }
-
-  .nijmegen-card {
-    height: 100%;
-  }
-
-  .utrecht-paragraph:not(.nijmegen-card *) {
-    max-inline-size: 50%;
-    @media (width <1024px) {
-      max-inline-size: 100%;
-    }
-  }
   .nijmegen-html {
-    p {
-      max-inline-size: 50%;
-      @media (width <1024px) {
-        max-inline-size: 100%;
-      }
+    p,
+    ul,
+    ol {
+      max-inline-size: 65ch;
     }
-    p.lead,
+
     h2,
     h3,
     h4,
     h5 {
       max-inline-size: 70%;
-      @media (width <1024px) {
+      @media (width <992px) {
         max-inline-size: 100%;
       }
-    }
-  }
-
-  .utrecht-paragraph--lead {
-    max-inline-size: 70%;
-    @media (width <1024px) {
-      max-inline-size: 100%;
     }
   }
 }
