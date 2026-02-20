@@ -12,6 +12,14 @@
     @include nijmegen-link-list__link;
   }
 
+  &.nijmegen-link-list__link--no-chevron {
+    align-items: center;
+
+    svg {
+      flex-shrink: 0;
+    }
+  }
+
   &:not(.nijmegen-link-list__link--no-chevron) {
     &::before {
       @include nijmegen-link-list__link-before;
