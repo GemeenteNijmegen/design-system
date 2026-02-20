@@ -18,6 +18,7 @@ npm install --save-dev --save-exact @gemeentenijmegen/semantic-html
     <link rel="stylesheet" href="node_modules/@gemeentenijmegen/design-tokens/dist/index.css'" />
     <link rel="stylesheet" href="node_modules/@gemeentenijmegen/font/dist/index.css'" />
     <link rel="stylesheet" href="node_modules/@gemeentenijmegen/semantic-html/dist/index.css" />
+    <script src="node_modules/@gemeentenijmegen/semantic-html/dist/index.js"></script>
   </head>
   <body class="nijmegen-html">
     <h1>Home</h1>

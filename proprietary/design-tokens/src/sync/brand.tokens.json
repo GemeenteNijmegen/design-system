@@ -23,10 +23,6 @@
           "type": "fontSizes"
         },
         "3xl": {
-          "value": "2.5rem",
-          "type": "fontSizes"
-        },
-        "4xl": {
           "value": "3rem",
           "type": "fontSizes"
         }
@@ -453,6 +449,10 @@
       },
       "200": {
         "value": "2rem",
+        "type": "sizing"
+      },
+      "250": {
+        "value": "2.5rem",
         "type": "sizing"
       },
       "300": {

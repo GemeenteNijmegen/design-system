@@ -1,0 +1,79 @@
+import { Meta, Source } from '@storybook/addon-docs';
+import { Unstyled } from "@storybook/blocks";
+import "@gemeentenijmegen/semantic-html/dist/index.css"
+
+<Meta title="foundations/Semantic HTML/Component Library class mapping"/>
+# Component Library class mapping
+For users of the [previous design system](https://componenten.nijmegen.nl) we support some class mapping of old Bootstrap-based classes. We will only support some base classes for HTML coming from a WYSIWYG editor; therefore, this mapping is placed under the semantic HTML section. This HTML is hard to change on existing websites. The purpose of this mapping is to support a smooth transmission from the component library to the Nijmegen NL Design System. 
+
+## Example usage
+For using the component library class mapping you need to use the `nijmegen-component-library-mapping` class next to the `nijmegen-html` class. 
+<Source language="html" code={`
+<!doctype html>
+<html lang="nl">
+  <head>
+    <title>Component library class mapping example</title>
+    <!-- global -->
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/document-css@1.5.0/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/design-tokens@latest/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/font@latest/dist/index.css" />
+    <!-- Semantic HTML specific -->
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/semantic-html@latest/dist/index.css" />
+  </head>
+
+  <body class="nijmegen-html nijmegen-component-library-mapping">
+    <!-- Regular sematnic support -->
+    <h2>Lorem ipsum dolor sit amet</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <!-- Bootstrap btn class mapping support -->
+    <button class="btn">button</button>
+    <button class="btn btn-primary">button primary</button>
+    <button class="btn btn-secondary">button secondary</button>
+
+    <button>Semantic button</button>
+
+  </body>
+</html>
+`} />
+
+# Supported class mappings
+
+## Button classes
+For the button class mapping we also support the `disabled`, `focus`, `focus-visible`, `hover` and `active` states.
+<Unstyled>
+<div className="nijmegen-html nijmegen-component-library-mapping">
+    <button class="btn">button</button>
+    <button class="btn btn-primary">button primary</button>
+    <button class="btn btn-secondary">button secondary</button>
+</div>
+</Unstyled>
+
+<Source language="html" code={`
+<div className="nijmegen-html nijmegen-component-library-mapping">
+    <button class="btn">button</button>
+    <button class="btn btn-primary">button primary</button>
+    <button class="btn btn-secondary">button secondary</button>
+</div>
+`} />
+
+### As link
+<Unstyled>
+<div className="nijmegen-html nijmegen-component-library-mapping">
+    <a href="#" class="btn">button</a>&nbsp;
+    <a href="#" class="btn btn-primary">button primary</a>&nbsp;
+    <a href="#" class="btn btn-secondary">button secondary</a>
+</div>
+</Unstyled>
+
+<Source language="html" code={`
+<div className="nijmegen-html nijmegen-component-library-mapping">
+    <a href="#" class="btn">button</a>&nbsp;
+    <a href="#" class="btn btn-primary">button primary</a>&nbsp;
+    <a href="#" class="btn btn-secondary">button secondary</a>
+</div>
+`} />

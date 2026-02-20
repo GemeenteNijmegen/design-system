@@ -14,7 +14,7 @@
         "type": "fontWeights"
       },
       "font-size": {
-        "value": "{nijmegen.typography.font-size.3xl}",
+        "value": "{nijmegen.typography.font-size.2xl}",
         "type": "fontSizes"
       },
       "line-height": {

@@ -1,5 +1,5 @@
 {
-  "version": "0.0.2-alpha.17",
+  "version": "0.0.2-alpha.91",
   "author": "gemeente Nijmegen",
   "description": "Default html element styling for the gemeente Nijmegen design system",
   "license": "EUPL-1.2",
@@ -24,7 +24,13 @@
     "clean": "rimraf dist"
   },
   "devDependencies": {
+    "@babel/core": "7.24.0",
+    "@babel/preset-env": "7.24.0",
     "@gemeentenijmegen/components-css": "workspace:*",
+    "@rollup/plugin-babel": "6.0.4",
+    "@rollup/plugin-commonjs": "25.0.7",
+    "@rollup/plugin-node-resolve": "15.2.3",
+    "@rollup/plugin-terser": "0.4.4",
     "@utrecht/button-css": "2.3.0",
     "@utrecht/document-css": "1.5.0",
     "@utrecht/focus-ring-css": "2.3.0",

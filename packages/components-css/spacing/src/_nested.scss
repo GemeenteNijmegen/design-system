@@ -1,0 +1,47 @@
+// fixes nested issues
+/* stylelint-disable */
+/* prettier-ignore */
+
+.nijmegen-table-of-contents {
+  .utrecht-heading-4 {
+    margin-block-end: 0;
+  }
+}
+
+.utrecht-page-body--grijs-100 {
+  background-color: var(--nijmegen-color-grijs-100);
+}
+
+.utrecht-paragraph {
+  max-inline-size: 65ch;
+}
+
+.utrecht-page-body__content {
+  .nijmegen-html {
+    p,
+    ul,
+    ol {
+      max-inline-size: 65ch;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5 {
+      max-inline-size: 70%;
+      @media (width <992px) {
+        max-inline-size: 100%;
+      }
+    }
+  }
+}
+
+.nijmegen-topic-block {
+  background-color: var(--nijmegen-color-wit);
+  box-sizing: border-box;
+  height: 100%;
+  padding-block-end: 2rem;
+  padding-block-start: 2rem;
+  padding-inline-end: 1.5rem;
+  padding-inline-start: 1.5rem;
+}
