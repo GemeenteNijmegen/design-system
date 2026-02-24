@@ -13,6 +13,7 @@
   font-weight: var(--nijmegen-breadcrumb-navigation-font-weight);
   line-height: var(--nijmegen-breadcrumb-navigation-line-height);
   margin-block-end: var(--nijmegen-breadcrumb-margin-block-end);
+  overflow: hidden;
 }
 
 .nijmegen-breadcrumb__list {
