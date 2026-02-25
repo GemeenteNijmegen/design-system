@@ -1,27 +1,9 @@
 {
   "nijmegen": {
     "breadcrumb-navigation": {
-      "list": {
-        "column-gap": {
-          "type": "spacing",
-          "value": "{nijmegen.space.50}"
-        },
-        "padding-inline-start": {
-          "value": "{nijmegen.space.100}",
-          "type": "spacing"
-        },
-        "padding-inline-end": {
-          "value": "{nijmegen.space.100}",
-          "type": "spacing"
-        },
-        "max-inline-size": {
-          "value": "992px",
-          "type": "sizing"
-        }
-      },
       "background-color": {
-        "value": "{nijmegen.color.grijs.100}",
-        "type": "color"
+        "type": "color",
+        "value": "{nijmegen.color.grijs.100}"
       },
       "font-family": {
         "type": "fontFamilies",
@@ -39,7 +21,63 @@
         "type": "lineHeights",
         "value": "{utrecht.document.line-height}"
       },
+      "text-decoration-offset": {
+        "type": "other",
+        "value": "18%",
+        "description": "[code-only]"
+      },
+      "text-decoration-thickness": {
+        "type": "other",
+        "value": "auto",
+        "description": "[code-only]"
+      },
+      "list": {
+        "column-gap": {
+          "type": "spacing",
+          "value": "{nijmegen.space.50}"
+        },
+        "max-inline-size": {
+          "type": "sizing",
+          "value": "992px"
+        },
+        "padding-inline-end": {
+          "type": "spacing",
+          "value": "{nijmegen.space.100}"
+        },
+        "padding-inline-start": {
+          "type": "spacing",
+          "value": "{nijmegen.space.100}"
+        }
+      },
+      "separator": {
+        "color": {
+          "type": "color",
+          "value": "{nijmegen.color.foreground.subdued}"
+        },
+        "size": {
+          "type": "sizing",
+          "value": "{nijmegen.size.100}"
+        }
+      },
+      "hover": {
+        "text-decoration-thickness": {
+          "type": "other",
+          "value": "10%",
+          "description": "[code-only]"
+        }
+      },
+      "focus-visible": {
+        "text-decoration-thickness": {
+          "type": "other",
+          "value": "auto",
+          "description": "[code-only]"
+        }
+      },
       "link": {
+        "color": {
+          "type": "color",
+          "value": "{nijmegen.interaction.color}"
+        },
         "padding-block-end": {
           "type": "spacing",
           "value": "{nijmegen.space.75}"
@@ -56,9 +94,25 @@
           "type": "spacing",
           "value": "{nijmegen.space.0}"
         },
-        "color": {
-          "type": "color",
-          "value": "{nijmegen.interaction.color}"
+        "text-decoration": {
+          "type": "textDecoration",
+          "value": "None"
+        },
+        "current": {
+          "color": {
+            "type": "color",
+            "value": "{nijmegen.color.foreground.subdued}"
+          }
+        },
+        "icon": {
+          "column-gap": {
+            "type": "spacing",
+            "value": "{nijmegen.space.25}"
+          },
+          "size": {
+            "type": "sizing",
+            "value": "{nijmegen.icon.functional.size}"
+          }
         },
         "active": {
           "color": {
@@ -70,14 +124,14 @@
             "value": "underline"
           }
         },
-        "icon": {
-          "column-gap": {
-            "type": "spacing",
-            "value": "{nijmegen.space.25}"
+        "hover": {
+          "color": {
+            "type": "color",
+            "value": "{nijmegen.interaction.hover.color}"
           },
-          "size": {
-            "type": "sizing",
-            "value": "{nijmegen.icon.functional.size}"
+          "text-decoration": {
+            "type": "textDecoration",
+            "value": "underline"
           }
         },
         "focus-visible": {
@@ -93,36 +147,6 @@
             "type": "textDecoration",
             "value": "None"
           }
-        },
-        "hover": {
-          "color": {
-            "type": "color",
-            "value": "{nijmegen.interaction.hover.color}"
-          },
-          "text-decoration": {
-            "type": "textDecoration",
-            "value": "underline"
-          }
-        },
-        "current": {
-          "color": {
-            "type": "color",
-            "value": "{nijmegen.color.foreground.subdued}"
-          }
-        },
-        "text-decoration": {
-          "type": "textDecoration",
-          "value": "None"
-        }
-      },
-      "separator": {
-        "color": {
-          "type": "color",
-          "value": "{nijmegen.color.foreground.subdued}"
-        },
-        "size": {
-          "type": "sizing",
-          "value": "{nijmegen.size.100}"
         }
       }
     }
