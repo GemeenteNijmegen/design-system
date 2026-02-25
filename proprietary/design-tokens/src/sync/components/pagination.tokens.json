@@ -103,14 +103,14 @@
           "value": "None"
         },
         "text-decoration-offset": {
-          "description": "[code-only]",
           "type": "other",
-          "value": "auto"
+          "value": "18%",
+          "description": "[code-only]"
         },
         "text-decoration-thickness": {
-          "description": "[code-only]",
           "type": "other",
-          "value": "10%"
+          "value": "auto",
+          "description": "[code-only]"
         },
         "current": {
           "background-color": {
@@ -249,14 +249,14 @@
           "value": "None"
         },
         "text-decoration-offset": {
-          "description": "[code-only]",
           "type": "other",
-          "value": "auto"
+          "value": "18%",
+          "description": "[code-only]"
         },
         "text-decoration-thickness": {
-          "description": "[code-only]",
           "type": "other",
-          "value": "10%"
+          "value": "auto",
+          "description": "[code-only]"
         },
         "icon": {
           "margin-inline": {
