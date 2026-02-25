@@ -3,8 +3,13 @@
   color: var(--utrecht-toptask-link-color);
   display: flex;
   flex-direction: column;
+
+  font-family: var(--todo-toptask-link-font-family); /* stylelint-disable-line */
   font-size: var(--utrecht-toptask-link-font-size);
+  font-weight: var(--todo-toptask-link-font-weight); /* stylelint-disable-line */
   line-height: var(--utrecht-toptask-link-line-height);
+
+  border-radius: var(--todo-toptask-link-border-radius); /* stylelint-disable-line */
   max-inline-size: var(--utrecht-toptask-link-max-inline-size);
   min-block-size: var(--utrecht-toptask-link-min-block-size);
   min-inline-size: var(--utrecht-toptask-link-min-inline-size);
@@ -44,6 +49,9 @@
 
 .nijmegen-toptask-card__icon {
   display: block;
-  padding-block-end: var(--utrecht-space-block-xs);
-  padding-inline-end: var(--utrecht-space-inline-md);
+  width: var(--utrecht-toptask-link-icon-size); /* stylelint-disable-line property-disallowed-list */
+
+  svg {
+    fill: currentColor;
+  }
 }
