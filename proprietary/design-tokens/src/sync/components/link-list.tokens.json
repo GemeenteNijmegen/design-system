@@ -1,6 +1,16 @@
 {
   "utrecht": {
     "link-list": {
+      "margin-block-end": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing",
+        "description": "[code-only]"
+      },
+      "margin-block-start": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing",
+        "description": "[code-only]"
+      },
       "row-gap": {
         "value": "{nijmegen.space.50}",
         "type": "spacing"
@@ -14,32 +24,26 @@
           "value": "{nijmegen.icon.functional.size}",
           "type": "sizing"
         }
+      },
+      "link": {
+        "column-gap": {
+          "value": "{nijmegen.space.25}",
+          "type": "spacing"
+        },
+        "font-weight": {
+          "value": "{nijmegen.typography.font-weight.regular}",
+          "type": "fontWeights"
+        },
+        "text-decoration": {
+          "value": "None",
+          "type": "textDecoration"
+        }
       }
     }
   },
   "todo": {
     "link-list": {
-      "item": {
-        "column-gap": {
-          "value": "{nijmegen.space.25}",
-          "type": "spacing"
-        },
-        "text-decoration": {
-          "value": "None",
-          "type": "textDecoration"
-        },
-        "active": {
-          "text-decoration": {
-            "value": "underline",
-            "type": "textDecoration"
-          }
-        },
-        "focus": {
-          "text-decoration": {
-            "value": "None",
-            "type": "textDecoration"
-          }
-        },
+      "link": {
         "hover": {
           "text-decoration": {
             "value": "underline",
