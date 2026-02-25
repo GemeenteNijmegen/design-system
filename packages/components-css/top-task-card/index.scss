@@ -1,0 +1,49 @@
+.nijmegen-toptask-card {
+  background-color: var(--utrecht-toptask-link-background-color);
+  color: var(--utrecht-toptask-link-color);
+  display: flex;
+  flex-direction: column;
+  font-size: var(--utrecht-toptask-link-font-size);
+  line-height: var(--utrecht-toptask-link-line-height);
+  max-inline-size: var(--utrecht-toptask-link-max-inline-size);
+  min-block-size: var(--utrecht-toptask-link-min-block-size);
+  min-inline-size: var(--utrecht-toptask-link-min-inline-size);
+  padding-block-end: var(--utrecht-toptask-link-padding-block-end);
+  padding-block-start: var(--utrecht-toptask-link-padding-block-start);
+  padding-inline-end: var(--utrecht-toptask-link-padding-inline-end);
+  padding-inline-start: var(--utrecht-toptask-link-padding-inline-start);
+  text-decoration: none;
+}
+
+.nijmegen-toptask-card--hover,
+.nijmegen-toptask-card:hover {
+  background-color: var(--utrecht-toptask-link-hover-background-color, var(--utrecht-toptask-link-background-color));
+  color: var(--utrecht-toptask-link-hover-color, var(--utrecht-toptask-link-color));
+  transform: var(--utrecht-toptask-link-hover-transform-scale, 1);
+}
+
+.nijmegen-toptask-card--focus-visible,
+.nijmegen-toptask-card:focus-visible {
+  box-shadow: var(--_utrecht-focus-ring-box-shadow);
+  outline-color: var(--utrecht-focus-outline-color, revert);
+  outline-offset: var(--utrecht-focus-outline-offset, revert);
+  outline-style: var(--utrecht-focus-outline-style, revert);
+  outline-width: var(--utrecht-focus-outline-width, revert);
+  z-index: 1;
+}
+
+.nijmegen-toptask-card--focus,
+.nijmegen-toptask-card:focus {
+  background-color: var(--utrecht-toptask-link-focus-background-color, var(--utrecht-toptask-link-background-color));
+  color: var(--utrecht-toptask-link-focus-color, var(--utrecht-toptask-link-color));
+}
+
+.nijmegen-toptask-card__title {
+  display: block;
+}
+
+.nijmegen-toptask-card__icon {
+  display: block;
+  padding-block-end: var(--utrecht-space-block-xs);
+  padding-inline-end: var(--utrecht-space-inline-md);
+}
