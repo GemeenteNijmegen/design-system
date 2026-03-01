@@ -1,10 +1,9 @@
-.nijmegen-theme {
-  .utrecht-accordion__button {
-    align-items: flex-start;
+/* Nijmegen overrides */
+.utrecht-accordion__button {
+  align-items: flex-start; /* Nijmegen override */
 
-    .utrecht-accordion__button-icon {
-      position: relative;
-      top: 1px; /* stylelint-disable-line property-disallowed-list */
-    }
+  .utrecht-accordion__button-icon {
+    position: relative;
+    top: 1px; /* stylelint-disable-line property-disallowed-list */ /* Nijmegen override */
   }
 }

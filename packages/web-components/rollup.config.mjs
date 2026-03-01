@@ -22,6 +22,10 @@ let components = [
     input: "src/search/search.js",
     output: "dist/nijmegen-search.js",
   },
+  {
+    input: "src/accordion/accordion.js",
+    output: "dist/nijmegen-accordion.js",
+  },
 ];
 
 let config = [];
@@ -33,6 +37,20 @@ components.forEach((component) => {
       format: "iife",
     },
     plugins: [
+      {
+        name: "vite-compat",
+        async resolveId(source, importer, options) {
+          // Strip ?raw and ?inline suffix for compatibility with Vite imports
+          if (source.includes("?raw") || source.includes("?inline")) {
+            const cleanSource = source.replace(/\?(raw|inline)$/, "");
+            return this.resolve(cleanSource, importer, {
+              ...options,
+              skipSelf: true,
+            });
+          }
+          return null;
+        },
+      },
       resolve({ browser: true }),
       html({
         include: "**/*.html",
