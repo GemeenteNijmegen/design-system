@@ -8,11 +8,18 @@ export const argTypes = {
       defaultValue: '',
     },
   },
+  ariaLabel: {
+    name: 'Aria label',
+    control: 'text',
+    table: {
+      defaultValue: '',
+    },
+  },
 };
 
-export const TopTaskCardStory = ({ title = '' }) => {
+export const TopTaskCardStory = ({ title = '', ariaLabel = '' }) => {
   return (
-    <a href="#" className="nijmegen-toptask-card">
+    <a href="#" className="nijmegen-toptask-card" aria-label={ariaLabel}>
       <span className="nijmegen-toptask-card__title">
         <span className="nijmegen-toptask-card__icon">
           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 48 48">

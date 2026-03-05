@@ -45,5 +45,6 @@ export const Default: Story = {
   name: 'Top task card',
   args: {
     title: 'Afval',
+    ariaLabel: 'Ga naar pagina over afval',
   },
 };
