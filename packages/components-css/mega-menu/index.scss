@@ -30,6 +30,12 @@
     font-size: 1.25rem;
   }
 
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--nijmegen-mega-menu-list-row-gap);
+  }
+
   > * {
     flex-basis: 100%;
     @media (width >= $nijmegen-breakpoint-md) {
@@ -51,12 +57,5 @@
     > * {
       flex-basis: 100%;
     }
-  }
-
-  ul {
-    padding-block-start: 1rem;
-
-    // row-gap: var(--nijmegen-mega-menu-content-row-gap, 0); todo if token is updated
-    row-gap: 1rem;
   }
 }
