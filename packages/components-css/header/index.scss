@@ -15,12 +15,16 @@
 .nijmegen-header__content {
   @include nijmegen-header-content;
 
+  border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
+
   @media (width <1024px) {
     display: none;
   }
 }
 
 .nijmegen-header__content--small {
+  position: relative;
+
   &--inner {
     @include nijmegen-header-content;
 
@@ -33,7 +37,13 @@
 }
 
 .nijmegen-header__mobile-menu {
+  background-color: var(--nijmegen-menu-background-color);
   display: none;
+  padding-block-end: var(--nijmegen-menu-padding-block-end);
+  padding-block-start: var(--nijmegen-menu-padding-block-start);
+  position: absolute;
+  width: 100%; /* stylelint-disable-line property-disallowed-list */
+  z-index: 10;
 
   &--visible {
     display: block;

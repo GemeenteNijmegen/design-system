@@ -5,7 +5,9 @@
 
 .nijmegen-mobile-menu {
   background-color: var(--nijmegen-menu-background-color);
-  margin-block-end: var(--nijmegen-mobile-menu-margin-block-end);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   position: relative;
 }
 
@@ -14,6 +16,7 @@
   flex-direction: column;
   line-height: var(--nijmegen-menu-link-line-height);
   list-style: none;
+  margin: 0; /* stylelint-disable-line property-disallowed-list */
   padding-inline-start: 0;
 }
 
