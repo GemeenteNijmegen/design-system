@@ -85,14 +85,14 @@
           "value": "None"
         },
         "text-decoration-thickness": {
-          "description": "[code-only]",
           "type": "other",
-          "value": "auto"
+          "value": "auto",
+          "description": "[code-only]"
         },
-        "text-decoration-thickness-offset": {
-          "description": "[code-only]",
+        "text-underline-offset": {
           "type": "other",
-          "value": "18%"
+          "value": "18%",
+          "description": "[code-only]"
         },
         "active": {
           "color": {
