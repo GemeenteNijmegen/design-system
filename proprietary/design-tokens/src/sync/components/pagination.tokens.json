@@ -102,7 +102,7 @@
           "type": "textDecoration",
           "value": "None"
         },
-        "text-decoration-offset": {
+        "text-underline-offset": {
           "type": "other",
           "value": "18%",
           "description": "[code-only]"
@@ -248,7 +248,7 @@
           "type": "textDecoration",
           "value": "None"
         },
-        "text-decoration-offset": {
+        "text-underline-offset": {
           "type": "other",
           "value": "18%",
           "description": "[code-only]"

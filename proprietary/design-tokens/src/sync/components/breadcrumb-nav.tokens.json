@@ -21,7 +21,7 @@
         "type": "lineHeights",
         "value": "{utrecht.document.line-height}"
       },
-      "text-decoration-offset": {
+      "text-underline-offset": {
         "type": "other",
         "value": "18%",
         "description": "[code-only]"
