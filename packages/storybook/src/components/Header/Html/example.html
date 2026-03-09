@@ -279,6 +279,67 @@
             </ul>
           </nav>
         </div>
+        <div id="search-container" class="nijmegen-header__mobile-menu">
+          <form class="nijmegen-search nijmegen-search--full-width" method="GET" action="" role="search">
+            <div class="nijmegen-search__container">
+              <div class="nijmegen-search__input-holder">
+                <input
+                  class="nijmegen-search__input"
+                  id="search"
+                  type="text"
+                  placeholder="Zoeken"
+                  aria-controls="autocomplete-results"
+                  aria-autocomplete="both"
+                  aria-label="Zoekveld"
+                />
+                <button
+                  class="nijmegen-search__clear-button nijmegen-search__clear-button--hide"
+                  aria-label="Invoer wissen"
+                  title="Invoer wissen"
+                  tabindex="-1"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-x"
+                  >
+                    <path d="M18 6l-12 12"></path>
+                    <path d="M6 6l12 12"></path>
+                  </svg>
+                </button>
+              </div>
+              <button class="utrecht-button utrecht-button--primary-action nijmegen-search__search-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="tabler-icon tabler-icon-search"
+                >
+                  <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                  <path d="M21 21l-6 -6"></path></svg
+                >{" "} Zoeken
+              </button>
+            </div>
+            <div class="nijmegen-search__autocomplete-results nijmegen-search__autocomplete-results--static">
+              <div class="nijmegen-listbox" role="listbox">
+                <ul class="nijmegen-listbox__list" role="list"></ul>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
       <div class="nijmegen-header__content">
         <div>
@@ -442,25 +503,105 @@
             </li>
           </ul>
         </nav>
-        <div class="nijmegen-header__actions">
-          <button
-            class="nijmegen-header-item nijmegen-header-item--icon-search"
-            aria-expanded="false"
-            aria-label="Zoeken"
-          >
-            Zoeken
-          </button>
-          <button
-            class="nijmegen-header-item"
-            aria-expanded="false"
-            aria-label="Taal wijzigen, huidige taal is Nederlands"
-          >
-            Nederlands
-          </button>
-          <a href="#" class="nijmegen-header-item nijmegen-header-item--icon-user" aria-label="Mijn Nijmegen">
-            <span>Mijn Nijmegen</span>
-          </a>
-        </div>
+        <ul class="nijmegen-header__actions">
+          <li class="nijmegen-header-action">
+            <button
+              class="nijmegen-header-item nijmegen-header-item--icon-search"
+              aria-expanded="false"
+              aria-label="Zoeken"
+            >
+              Zoeken
+            </button>
+            <div class="nijmegen-header__panel">
+              <div class="nijmegen-mega-menu">
+                <div class="nijmegen-mega-menu__container">
+                  <div class="nijmegen-header-action--content">
+                    <form class="nijmegen-search nijmegen-search--full-width" method="GET" action="" role="search">
+                      <div class="nijmegen-search__container">
+                        <div class="nijmegen-search__input-holder">
+                          <input
+                            class="nijmegen-search__input"
+                            id="search"
+                            type="text"
+                            placeholder=""
+                            aria-controls="autocomplete-results"
+                            aria-autocomplete="both"
+                            aria-label="Zoekveld"
+                          />
+                          <button
+                            class="nijmegen-search__clear-button nijmegen-search__clear-button--hide"
+                            aria-label="Invoer wissen"
+                            title="Invoer wissen"
+                            tabindex="-1"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              stroke="currentColor"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              class="tabler-icon tabler-icon-x"
+                            >
+                              <path d="M18 6l-12 12"></path>
+                              <path d="M6 6l12 12"></path>
+                            </svg>
+                          </button>
+                        </div>
+                        <button class="utrecht-button utrecht-button--primary-action nijmegen-search__search-button">
+                          {" "} Zoeken
+                        </button>
+                      </div>
+                      <div class="nijmegen-search__autocomplete-results nijmegen-search__autocomplete-results--static">
+                        <div class="nijmegen-listbox" role="listbox">
+                          <ul class="nijmegen-listbox__list" role="list"></ul>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nijmegen-header-action nijmegen-header-action--relative">
+            <button
+              class="nijmegen-header-item"
+              aria-expanded="false"
+              aria-label="Taal wijzigen, huidige taal is Nederlands"
+            >
+              Nederlands
+            </button>
+            <div class="nijmegen-header__panel nijmegen-header__panel--small">
+              <div class="nijmegen-listbox" role="listbox">
+                <ul class="nijmegen-listbox__list" role="list">
+                  <li>
+                    <a href="#" class="nijmegen-listbox__item"> English (Engels) </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nijmegen-listbox__item"> Deutsch (Duits) </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nijmegen-listbox__item"> Français (Frans) </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nijmegen-listbox__item"> Türkçe (Turks) </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nijmegen-listbox__item"> العربية (Arabisch) </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nijmegen-header-action">
+            <a href="#" class="nijmegen-header-item nijmegen-header-item--icon-user" aria-label="Mijn Nijmegen">
+              <span>Mijn Nijmegen</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
   </body>
