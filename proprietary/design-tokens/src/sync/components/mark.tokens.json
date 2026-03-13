@@ -1,0 +1,14 @@
+{
+  "nl": {
+    "mark": {
+      "background-color": {
+        "type": "color",
+        "value": "{nijmegen.color.geel.300}"
+      },
+      "color": {
+        "type": "color",
+        "value": "{utrecht.document.color}"
+      }
+    }
+  }
+}
