@@ -6,6 +6,7 @@
     "components/action-card.tokens",
     "components/alert.tokens",
     "components/avatar.tokens",
+    "components/backdrop.tokens",
     "components/badge.tokens",
     "components/blockquote.tokens",
     "components/breadcrumb-nav.tokens",
