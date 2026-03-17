@@ -154,28 +154,53 @@ export const MobileMenuStoryWebComponent = () => {
             </button>
             <ul className="nijmegen-mobile-menu__list">
               <li>
-                <a href="/" target="_self" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small">
+                <a
+                  href="/"
+                  target="_self"
+                  lang="en"
+                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small"
+                >
                   English (Engels)
                 </a>
               </li>
               <li>
-                <a href="/" target="_self" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small">
+                <a
+                  href="/"
+                  target="_self"
+                  lang="de"
+                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small"
+                >
                   Deutsch (Duits)
                 </a>
               </li>
               <li>
-                <a href="/" target="_self" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small">
+                <a
+                  href="/"
+                  target="_self"
+                  lang="fr"
+                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small"
+                >
                   Français (Frans)
                 </a>
               </li>
               <li>
-                <a href="/" target="_self" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small">
+                <a
+                  href="/"
+                  target="_self"
+                  lang="tr"
+                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small"
+                >
                   Türkçe (Turks)
                 </a>
               </li>
               <li>
-                <a href="/" target="_self" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small">
-                  العربية (Arabisch){' '}
+                <a
+                  href="/"
+                  target="_self"
+                  lang="ar"
+                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small"
+                >
+                  العربية (Arabisch)
                 </a>
               </li>
             </ul>
@@ -350,28 +375,53 @@ export const MobileMenuStoryHtml = () => {
             </button>
             <ul className="nijmegen-mobile-menu__list">
               <li>
-                <a href="/" target="_self" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small">
+                <a
+                  href="/"
+                  target="_self"
+                  lang="en"
+                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small"
+                >
                   English (Engels)
                 </a>
               </li>
               <li>
-                <a href="/" target="_self" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small">
+                <a
+                  href="/"
+                  target="_self"
+                  lang="de"
+                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small"
+                >
                   Deutsch (Duits)
                 </a>
               </li>
               <li>
-                <a href="/" target="_self" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small">
+                <a
+                  href="/"
+                  target="_self"
+                  lang="fr"
+                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small"
+                >
                   Français (Frans)
                 </a>
               </li>
               <li>
-                <a href="/" target="_self" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small">
+                <a
+                  href="/"
+                  target="_self"
+                  lang="tr"
+                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small"
+                >
                   Türkçe (Turks)
                 </a>
               </li>
               <li>
-                <a href="/" target="_self" className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small">
-                  العربية (Arabisch){' '}
+                <a
+                  href="/"
+                  target="_self"
+                  lang="ar"
+                  className="nijmegen-mobile-menu__link nijmegen-mobile-menu__link--small"
+                >
+                  العربية (Arabisch)
                 </a>
               </li>
             </ul>

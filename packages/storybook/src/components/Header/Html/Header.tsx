@@ -1,7 +1,7 @@
 import '@gemeentenijmegen/components-css';
 import clsx from 'clsx';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { ListboxStory } from '../../Listbox/_Listbox';
+import { DropdownMenuStory } from '../../Dropdown menu/_DropdownMenu';
 import { MobileMenuStoryHtml, MobileMenuStoryWebComponent } from '../../Mobile menu/MobileMenu';
 import { SearchStory, SearchStoryWebComponent } from '../../Search/_Search';
 import '@gemeentenijmegen/web-components/dist/nijmegen-header.js';
@@ -665,13 +665,13 @@ export const HeaderStoryWebComponent = ({ state = '', variant = '', account = fa
               </button>
 
               <div className="nijmegen-header__panel nijmegen-header__panel--small">
-                <ListboxStory
+                <DropdownMenuStory
                   items={[
-                    { text: 'English (Engels)', href: '#' },
-                    { text: 'Deutsch (Duits)', href: '#' },
-                    { text: 'Français (Frans)', href: '#' },
-                    { text: 'Türkçe (Turks)', href: '#' },
-                    { text: 'العربية (Arabisch)', href: '#' },
+                    { text: 'English (Engels)', href: '#', lang: 'en' },
+                    { text: 'Deutsch (Duits)', href: '#', lang: 'de' },
+                    { text: 'Français (Frans)', href: '#', lang: 'fr' },
+                    { text: 'Türkçe (Turks)', href: '#', lang: 'tr' },
+                    { text: 'العربية (Arabisch)', href: '#', lang: 'ar' },
                   ]}
                 />
               </div>
@@ -1044,13 +1044,13 @@ export const HeaderStoryHtml = ({ state = '', expanded = '', variant = '', accou
               </button>
 
               <div className="nijmegen-header__panel nijmegen-header__panel--small">
-                <ListboxStory
+                <DropdownMenuStory
                   items={[
-                    { text: 'English (Engels)', href: '#' },
-                    { text: 'Deutsch (Duits)', href: '#' },
-                    { text: 'Français (Frans)', href: '#' },
-                    { text: 'Türkçe (Turks)', href: '#' },
-                    { text: 'العربية (Arabisch)', href: '#' },
+                    { text: 'English (Engels)', href: '#', lang: 'en' },
+                    { text: 'Deutsch (Duits)', href: '#', lang: 'de' },
+                    { text: 'Français (Frans)', href: '#', lang: 'fr' },
+                    { text: 'Türkçe (Turks)', href: '#', lang: 'tr' },
+                    { text: 'العربية (Arabisch)', href: '#', lang: 'ar' },
                   ]}
                 />
               </div>

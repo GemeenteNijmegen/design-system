@@ -4,6 +4,8 @@
 
 .nijmegen-header {
   background-color: var(--nijmegen-header-background-color, #fff);
+  border: 0 solid var(--nijmegen-header-border-color, transparent);
+  border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
   writing-mode: horizontal-tb;
 
   .nijmegen-search {
@@ -14,8 +16,6 @@
 
 .nijmegen-header__content {
   @include nijmegen-header-content;
-
-  border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
 
   @media (width <1024px) {
     display: none;
@@ -38,6 +38,8 @@
 
 .nijmegen-header__mobile-menu {
   background-color: var(--nijmegen-menu-background-color);
+  border: 0 solid var(--nijmegen-header-border-color, transparent);
+  border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
   display: none;
   padding-block-end: var(--nijmegen-menu-padding-block-end);
   padding-block-start: var(--nijmegen-menu-padding-block-start);
