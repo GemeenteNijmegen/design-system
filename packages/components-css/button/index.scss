@@ -1,0 +1,8 @@
+.utrecht-button {
+  &.utrecht-button--icon-only {
+    padding-block-end: var(--nijmegen-icon-only-button-padding-block-end);
+    padding-block-start: var(--nijmegen-icon-only-button-padding-block-start);
+    padding-inline-end: var(--nijmegen-icon-only-button-padding-inline-end);
+    padding-inline-start: var(--nijmegen-icon-only-button-padding-inline-start);
+  }
+}
