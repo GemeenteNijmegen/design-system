@@ -45,9 +45,9 @@ export const Default: Story = {
   name: 'Dropdown menu',
   args: {
     items: [
-      { text: 'Option #1', href: '#' },
-      { text: 'Option #2', href: '#' },
-      { text: 'Option #3', href: '#' },
+      { text: 'English (Engels)', href: '#', lang: 'en' },
+      { text: 'Deutsch (Duits)', href: '#', lang: 'de' },
+      { text: 'Français (Frans)', href: '#', lang: 'fr' },
     ],
   },
 };
