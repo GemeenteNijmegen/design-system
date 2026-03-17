@@ -1,4 +1,4 @@
-import style from '@gemeentenijmegen/components-css/menu.scss';
+import style from '@gemeentenijmegen/components-css/header/index.scss';
 import html from './template.html';
 
 class NijmegenHeader extends HTMLElement {
@@ -31,27 +31,53 @@ class NijmegenHeader extends HTMLElement {
     expandableElements.forEach((element) => {
       if (element !== target) {
         element.ariaExpanded = 'false';
-        this.#handleMobileMenu(element);
-        this.#updateAriaLabel(element);
-        this.#updateTabOrder(element);
       } else {
         element.ariaExpanded = element.ariaExpanded === 'true' ? 'false' : 'true';
-        this.#handleMobileMenu(target);
-        this.#updateAriaLabel(element);
-        this.#updateTabOrder(element);
       }
+
+      this.#handleContainerToggle(element);
+      this.#updateAriaLabel(element);
+      this.#updateTabOrder(element);
     });
   }
 
-  #handleMobileMenu(button) {
-    if (button.getAttribute('aria-controls') !== 'mobile-menu') return;
+  #handleContainerToggle(button) {
+    const controlsId = button.getAttribute('aria-controls');
+    if (!controlsId) return;
 
-    const mobileMenu = document.getElementById('mobile-menu');
-    const visibleClass = 'nijmegen-header__mobile-menu--visible';
     const isExpanded = button.getAttribute('aria-expanded') === 'true';
 
-    // Toggle menu visibility
-    mobileMenu.classList.toggle(visibleClass, isExpanded);
+    const containers = {
+      'mobile-menu': {
+        element: document.getElementById('mobile-menu'),
+        visibleClass: 'nijmegen-header__mobile-menu--visible',
+        buttonClass: 'nijmegen-toolbar-button--icon-menu',
+      },
+      'search-container': {
+        element: document.getElementById('search-container'),
+        visibleClass: 'nijmegen-header__mobile-menu--visible',
+        buttonClass: 'nijmegen-toolbar-button--icon-search',
+      },
+    };
+
+    const currentContainer = containers[controlsId];
+    if (!currentContainer?.element) return;
+
+    currentContainer.element.classList.toggle(currentContainer.visibleClass, isExpanded);
+
+    if (isExpanded) {
+      Object.entries(containers).forEach(([id, config]) => {
+        if (id !== controlsId && config.element) {
+          config.element.classList.remove(config.visibleClass);
+
+          const otherButton = this.querySelector(`.${config.buttonClass}`);
+          if (otherButton) {
+            otherButton.ariaExpanded = 'false';
+            this.#updateAriaLabel(otherButton);
+          }
+        }
+      });
+    }
   }
 
   #updateTabOrder(button) {

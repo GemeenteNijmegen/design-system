@@ -44,6 +44,13 @@ const config: StorybookConfig = {
     const { mergeConfig } = await import('vite');
     return mergeConfig(config, {
       define: { 'process.env': {} },
+      css: {
+        preprocessorOptions: {
+          scss: {
+            includePaths: ['node_modules'],
+          },
+        },
+      },
     });
   },
 };

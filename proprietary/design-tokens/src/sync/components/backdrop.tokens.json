@@ -1,0 +1,37 @@
+{
+  "utrecht": {
+    "backdrop": {
+      "background-color": {
+        "type": "color",
+        "value": "{nijmegen.document.inverse.background-color}"
+      },
+      "color": {
+        "type": "color",
+        "value": "{nijmegen.document.inverse.color}"
+      },
+      "opacity": {
+        "type": "opacity",
+        "value": "0.3"
+      },
+      "z-index": {
+        "type": "other",
+        "value": "auto",
+        "description": "[code-only]"
+      },
+      "fade-in": {
+        "animation-duration": {
+          "type": "other",
+          "value": "0.4s",
+          "description": "[code-only]"
+        }
+      },
+      "reduced-transparency": {
+        "opacity": {
+          "type": "opacity",
+          "value": "0.98",
+          "description": "[code-only]"
+        }
+      }
+    }
+  }
+}

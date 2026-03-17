@@ -1,0 +1,54 @@
+{
+  "nl": {
+    "number-badge": {
+      "background-color": {
+        "type": "color",
+        "value": "{nijmegen.color.grijs.100}"
+      },
+      "color": {
+        "type": "color",
+        "value": "{utrecht.document.color}"
+      },
+      "border-color": {
+        "type": "color",
+        "value": "{nijmegen.color.none}"
+      },
+      "border-radius": {
+        "type": "borderRadius",
+        "value": "{nijmegen.border-radius.circle}"
+      },
+      "border-width": {
+        "type": "borderWidth",
+        "value": "{nijmegen.border-width.sm}"
+      },
+      "font-family": {
+        "type": "fontFamilies",
+        "value": "{utrecht.document.font-family}"
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "{nijmegen.typography.font-size.sm}"
+      },
+      "font-weight": {
+        "type": "fontWeights",
+        "value": "{nijmegen.typography.font-weight.bold}"
+      },
+      "min-block-size": {
+        "type": "sizing",
+        "value": "{nijmegen.size.150}"
+      },
+      "min-inline-size": {
+        "type": "sizing",
+        "value": "{nijmegen.size.150}"
+      },
+      "padding-block": {
+        "type": "spacing",
+        "value": "{nijmegen.space.25}"
+      },
+      "padding-inline": {
+        "type": "spacing",
+        "value": "{nijmegen.space.25}"
+      }
+    }
+  }
+}
