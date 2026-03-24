@@ -48,6 +48,7 @@
 @mixin nijmegen-table__header-cell {
   @include table-cell;
 
+  font-weight: var(--nijmegen-table-header-cell-large-vw-font-weight);
   padding-block-end: var(--nijmegen-table-header-cell-large-vw-padding-block-end);
   padding-block-start: var(--nijmegen-table-header-cell-large-vw-padding-block-start);
   padding-inline-end: var(--nijmegen-table-header-cell-large-vw-padding-inline-end);
