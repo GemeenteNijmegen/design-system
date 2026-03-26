@@ -37,6 +37,7 @@ const meta = {
     variant: '',
   },
   parameters: {
+    layout: 'fullscreen',
     status: {
       type: 'BETA',
     },
