@@ -3,19 +3,39 @@
 @import "./mixin";
 
 .nijmegen-header {
-  background-color: var(--nijmegen-header-background-color, #fff);
-  border: 0 solid var(--nijmegen-header-border-color, transparent);
-  border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
+  position: relative;
   writing-mode: horizontal-tb;
 
   .nijmegen-search {
-    background-color: red;
     inline-size: 100%;
   }
 }
 
+.nijmegen-header__backdrop {
+  background-color: var(--utrecht-backdrop-background-color);
+  display: none;
+  height: 100vh; /* stylelint-disable-line property-disallowed-list */
+  opacity: var(--utrecht-backdrop-opacity);
+  position: fixed;
+  top: 0; /* stylelint-disable-line property-disallowed-list */
+  width: 100%; /* stylelint-disable-line property-disallowed-list */
+  z-index: 100;
+
+  &--visible {
+    display: block;
+  }
+}
+
 .nijmegen-header__content {
-  @include nijmegen-header-content;
+  background-color: var(--nijmegen-header-background-color, #fff);
+  border: 0 solid var(--nijmegen-header-border-color, transparent);
+  border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
+  position: relative;
+  z-index: 101;
+
+  .nijmegen-header__content--inner {
+    @include nijmegen-header-content;
+  }
 
   @media (width <1024px) {
     display: none;
@@ -23,12 +43,14 @@
 }
 
 .nijmegen-header__content--small {
+  background-color: var(--nijmegen-header-background-color, #fff);
+  border: 0 solid var(--nijmegen-header-border-color, transparent);
+  border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
   position: relative;
+  z-index: 101;
 
   &--inner {
     @include nijmegen-header-content;
-
-    border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
   }
 
   @media (width >=1024px) {
@@ -39,7 +61,7 @@
 .nijmegen-header__mobile-menu {
   background-color: var(--nijmegen-menu-background-color);
   border: 0 solid var(--nijmegen-header-border-color, transparent);
-  border-block-end-width: var(--nijmegen-header-border-block-end-width, 0);
+  border-block-start-width: var(--nijmegen-header-border-block-end-width, 0);
   display: none;
   padding-block-end: var(--nijmegen-menu-padding-block-end);
   padding-block-start: var(--nijmegen-menu-padding-block-start);
@@ -78,7 +100,7 @@
 .nijmegen-header__panel {
   display: none;
   left: 0; /* stylelint-disable-line property-disallowed-list */
-  padding-block-start: 1.5rem;
+  padding-block-start: calc(1.5rem + 2px);
   position: absolute;
   width: 100%; /* stylelint-disable-line property-disallowed-list */
   z-index: 10;
