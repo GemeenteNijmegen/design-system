@@ -62,7 +62,7 @@
     "prepare": "husky",
     "prettier": "prettier --write .",
     "publish": "lerna publish from-package --yes",
-    "release": "lerna version --conventional-commits --no-changelog --no-private --yes",
+    "release": "lerna version --conventional-commits --no-private --yes",
     "start": "node_modules/http-server/bin packages/storybook/dist/",
     "storybook": "npm-run-all --parallel watch:**",
     "test": "pnpm run test-workspaces",
