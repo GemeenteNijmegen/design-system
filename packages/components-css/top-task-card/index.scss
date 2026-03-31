@@ -1,14 +1,13 @@
 .nijmegen-toptask-card {
   background-color: var(--utrecht-toptask-link-background-color);
+  box-sizing: border-box;
   color: var(--utrecht-toptask-link-color);
   display: flex;
   flex-direction: column;
-
   font-family: var(--todo-toptask-link-font-family); /* stylelint-disable-line */
   font-size: var(--utrecht-toptask-link-font-size);
   font-weight: var(--todo-toptask-link-font-weight); /* stylelint-disable-line */
   line-height: var(--utrecht-toptask-link-line-height);
-
   border-radius: var(--todo-toptask-link-border-radius); /* stylelint-disable-line */
   max-inline-size: var(--utrecht-toptask-link-max-inline-size);
   min-block-size: var(--utrecht-toptask-link-min-block-size);
