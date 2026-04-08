@@ -1,5 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import type { StoryContext } from '@storybook/types';
+import {
+  IconArchive,
+  IconBuildingCommunity,
+  IconCurrencyEuro,
+  IconHome,
+  IconInbox,
+  IconLayoutGrid,
+  IconParking,
+  IconUser,
+} from '@tabler/icons-react';
 import prettierBabel from 'prettier/parser-babel';
 import * as prettier from 'prettier/standalone';
 import * as ReactDOMServer from 'react-dom/server';
@@ -18,7 +28,6 @@ const meta = {
     docs: {
       source: {
         transform: (src: string, storyContext: StoryContext<any>): string => {
-          // Ensure valid HTML in the Preview source
           const render =
             typeof storyContext.component === 'function'
               ? storyContext.component
@@ -41,12 +50,49 @@ const meta = {
 
 export default meta;
 type Story = StoryObj<typeof meta>;
+
 export const Default: Story = {
   args: {
-    items: [
-      { text: 'Option #1', href: '#' },
-      { text: 'Option #2', href: '#' },
-      { text: 'Option #3', href: '#' },
+    lists: [
+      {
+        items: [
+          { text: 'Overzicht', href: '#', icon: <IconLayoutGrid />, current: true },
+          { text: 'Berichten', href: '#', icon: <IconInbox />, badge: 9 },
+          { text: 'Lopende zaken', href: '#', icon: <IconArchive /> },
+          { text: 'Belastingzaken', href: '#', icon: <IconCurrencyEuro /> },
+          { text: 'WOZ', href: '#', icon: <IconHome /> },
+          { text: 'Parkeren', href: '#', icon: <IconParking /> },
+          { text: 'Erfpacht', href: '#', icon: <IconBuildingCommunity /> },
+          { text: 'Gegevens', href: '#', icon: <IconUser /> },
+        ],
+      },
+    ],
+  },
+};
+
+export const Grouped: Story = {
+  args: {
+    lists: [
+      {
+        items: [{ text: 'Overzicht', href: '#', icon: <IconLayoutGrid />, current: true }],
+      },
+      {
+        items: [
+          { text: 'Berichten', href: '#', icon: <IconInbox />, badge: 9 },
+          { text: 'Lopende zaken', href: '#', icon: <IconArchive /> },
+        ],
+      },
+      {
+        items: [
+          { text: 'Belastingzaken', href: '#', icon: <IconCurrencyEuro /> },
+          { text: 'WOZ', href: '#', icon: <IconHome /> },
+          { text: 'Parkeren', href: '#', icon: <IconParking /> },
+          { text: 'Erfpacht', href: '#', icon: <IconBuildingCommunity /> },
+        ],
+      },
+      {
+        items: [{ text: 'Gegevens', href: '#', icon: <IconUser /> }],
+      },
     ],
   },
 };

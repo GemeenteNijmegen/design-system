@@ -1,49 +1,50 @@
 import '@gemeentenijmegen/components-css';
-import { IconArchive, IconInbox, IconLayoutGrid, IconUser } from '@tabler/icons-react';
+import { ReactNode } from 'react';
+
+export interface SideNavigationItem {
+  text: string;
+  href: string;
+  icon?: ReactNode;
+  current?: boolean;
+  badge?: number;
+}
+
+export interface SideNavigationList {
+  items: SideNavigationItem[];
+}
+
+export interface SideNavigationProps {
+  lists: SideNavigationList[];
+}
 
 export const argTypes = {
-  items: {
+  lists: {
     control: 'object',
   },
 };
 
-export const SideNavigationStory = () => {
+export const SideNavigationStory = ({ lists }: SideNavigationProps) => {
   return (
     <nav className="nijmegen-side-navigation">
-      <ul className="nijmegen-side-navigation__list">
-        <li className="nijmegen-side-navigation__item">
-          <a
-            aria-current="page"
-            className="nijmegen-side-navigation__link nijmegen-side-navigation__link--current"
-            href="#"
-          >
-            <IconLayoutGrid></IconLayoutGrid>
-            Overzicht
-          </a>
-        </li>
-      </ul>
-      <ul className="nijmegen-side-navigation__list">
-        <li className="nijmegen-side-navigation__item">
-          <a className="nijmegen-side-navigation__link" href="#">
-            <IconInbox></IconInbox>
-            Berichten
-          </a>
-        </li>
-        <li className="nijmegen-side-navigation__item">
-          <a className="nijmegen-side-navigation__link" href="#">
-            <IconArchive></IconArchive>
-            Lopende zaken
-          </a>
-        </li>
-      </ul>
-      <ul className="nijmegen-side-navigation__list">
-        <li className="nijmegen-side-navigation__item">
-          <a className="nijmegen-side-navigation__link" href="#">
-            <IconUser></IconUser>
-            Gegevens
-          </a>
-        </li>
-      </ul>
+      {lists?.map((list, listIndex) => (
+        <ul key={listIndex} className="nijmegen-side-navigation__list">
+          {list.items?.map((item, itemIndex) => (
+            <li key={itemIndex} className="nijmegen-side-navigation__item">
+              <a
+                {...(item.current && { 'aria-current': 'page' })}
+                className={`nijmegen-side-navigation__link${
+                  item.current ? ' nijmegen-side-navigation__link--current' : ''
+                }`}
+                href={item.href}
+              >
+                {item.icon}
+                <span className="nijmegen-side-navigation__link-label">{item.text}</span>
+                {item.badge !== undefined && <span className="nijmegen-number-badge">{item.badge}</span>}
+              </a>
+            </li>
+          ))}
+        </ul>
+      ))}
     </nav>
   );
 };
