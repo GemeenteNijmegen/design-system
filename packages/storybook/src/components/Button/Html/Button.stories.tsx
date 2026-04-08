@@ -77,3 +77,19 @@ export const Subtle: Story = {
     },
   },
 };
+
+export const IconOnly: Story = {
+  args: {
+    children: '',
+    appearance: 'Primary',
+    iconBeginning: 'Tabler example',
+    iconOnly: true,
+  },
+  argTypes: {
+    appearance: {
+      table: {
+        disable: true,
+      },
+    },
+  },
+};
