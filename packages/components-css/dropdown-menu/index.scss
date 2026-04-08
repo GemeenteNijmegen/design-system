@@ -1,0 +1,65 @@
+@import "~@utrecht/link-css/src/mixin";
+@import "~@utrecht/focus-ring-css/src/mixin";
+@import "~@utrecht/unordered-list-css/src/mixin";
+
+.nijmegen-dropdown-menu {
+  background-color: var(--nijmegen-dropdown-menu-background-color);
+  border-color: var(--nijmegen-dropdown-menu-border-color);
+  border-radius: var(--nijmegen-dropdown-menu-border-radius);
+  border-style: solid;
+  border-width: var(--nijmegen-dropdown-menu-border-width);
+  box-sizing: border-box;
+  color: var(--nijmegen-dropdown-menu-color);
+  margin-block-end: var(--nijmegen-dropdown-menu-margin-block-end);
+  max-block-size: var(--nijmegen-dropdown-menu-max-block-size);
+  min-inline-size: var(--nijmegen-dropdown-menu-min-inline-size);
+}
+
+.nijmegen-dropdown-menu__list {
+  @include utrecht-unordered-list;
+
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.nijmegen-dropdown-menu__item {
+  align-items: center;
+  background-color: var(--nijmegen-dropdown-menu-item-background-color);
+  box-sizing: border-box;
+  color: var(--nijmegen-dropdown-menu-item-color);
+  display: flex;
+  font-family: var(--nijmegen-dropdown-menu-item-font-family);
+  font-size: var(--nijmegen-dropdown-menu-item-font-size);
+  font-weight: var(--nijmegen-dropdown-menu-item-font-weight);
+  line-height: var(--nijmegen-dropdown-menu-item-line-height);
+  min-block-size: var(--nijmegen-dropdown-menu-item-min-block-size);
+  padding-block-end: var(--nijmegen-dropdown-menu-item-padding-block-end);
+  padding-block-start: var(--nijmegen-dropdown-menu-item-padding-block-start);
+  padding-inline-end: var(--nijmegen-dropdown-menu-item-padding-inline-end);
+  padding-inline-start: var(--nijmegen-dropdown-menu-item-padding-inline-start);
+  text-decoration: none;
+
+  &:active,
+  &.nijmegen-dropdown-menu__item--active {
+    background-color: var(--nijmegen-dropdown-menu-item-active-background-color);
+    color: var(--nijmegen-dropdown-menu-item-active-color);
+  }
+
+  &:hover,
+  &.nijmegen-dropdown-menu__item--hover {
+    @include utrecht-link--hover;
+
+    background-color: var(--nijmegen-dropdown-menu-item-hover-background-color);
+    color: var(--nijmegen-dropdown-menu-item-hover-color);
+    cursor: pointer;
+  }
+
+  &:focus-visible,
+  &.nijmegen-dropdown-menu__item--focus-visible {
+    @include utrecht-link--focus;
+    @include utrecht-link--focus-visible;
+
+    background-color: var(--nijmegen-dropdown-menu-item-focus-visible-background-color);
+    color: var(--nijmegen-dropdown-menu-item-focus-visible-color);
+  }
+}

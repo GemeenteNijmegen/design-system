@@ -55,6 +55,13 @@ export const argTypes = {
       },
     },
   },
+  iconOnly: {
+    name: 'Icon only',
+    control: 'boolean',
+    table: {
+      disable: true,
+    },
+  },
 };
 
 export const defaultArgs = {
@@ -64,6 +71,7 @@ export const defaultArgs = {
   disabled: false,
   iconBeginning: 'None',
   iconEnding: 'None',
+  iconOnly: false,
 };
 
 export const ButtonStory = ({
@@ -73,6 +81,7 @@ export const ButtonStory = ({
   disabled = defaultArgs.disabled,
   iconBeginning = defaultArgs.iconBeginning,
   iconEnding = defaultArgs.iconEnding,
+  iconOnly = false,
 }) => {
   return (
     <button
@@ -85,6 +94,7 @@ export const ButtonStory = ({
         'utrecht-button--hover utrecht-button--focus utrecht-button--focus-visible': state === 'Hover + focus-visible',
         'utrecht-button--focus': state === 'Focus',
         'utrecht-button--focus utrecht-button--focus-visible': state === 'Focus-visible',
+        'utrecht-button--icon-only': iconOnly === true,
       })}
       disabled={disabled}
       type="button"

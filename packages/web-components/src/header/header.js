@@ -25,6 +25,14 @@ class NijmegenHeader extends HTMLElement {
         });
       });
     });
+
+    // Add backdrop click handler
+    const backdrop = this.querySelector('.nijmegen-header__backdrop');
+    if (backdrop) {
+      backdrop.addEventListener('click', () => {
+        this.#closeAllMenus();
+      });
+    }
   }
 
   #handleClick(target, expandableElements) {
@@ -39,6 +47,9 @@ class NijmegenHeader extends HTMLElement {
       this.#updateAriaLabel(element);
       this.#updateTabOrder(element);
     });
+
+    // Handle backdrop visibility
+    this.#updateBackdrop();
   }
 
   #handleContainerToggle(button) {
@@ -109,6 +120,50 @@ class NijmegenHeader extends HTMLElement {
     } else if (isSearchButton) {
       button.ariaLabel = isExpanded ? 'Zoeken sluiten' : 'Zoeken';
     }
+  }
+
+  #hasSmallPanel(button) {
+    // Check if the button's next sibling is a small panel
+    const panel = button.nextElementSibling;
+    if (panel && panel.classList.contains('nijmegen-header__panel--small')) {
+      return true;
+    }
+
+    return false;
+  }
+
+  #updateBackdrop() {
+    const backdrop = this.querySelector('.nijmegen-header__backdrop');
+    if (!backdrop) return;
+
+    // Check ALL expandable elements in the component
+    const allExpandableElements = this.querySelectorAll('[aria-expanded]:not(.nijmegen-mobile-menu__link)');
+
+    const anyExpanded = Array.from(allExpandableElements).some((element) => {
+      const isExpanded = element.getAttribute('aria-expanded') === 'true';
+
+      // Ignore small panels
+      if (this.#hasSmallPanel(element)) {
+        return false;
+      }
+
+      return isExpanded;
+    });
+
+    backdrop.classList.toggle('nijmegen-header__backdrop--visible', anyExpanded);
+  }
+
+  #closeAllMenus() {
+    const expandableElements = this.querySelectorAll('[aria-expanded="true"]:not(.nijmegen-mobile-menu__link)');
+
+    expandableElements.forEach((element) => {
+      element.ariaExpanded = 'false';
+      this.#handleContainerToggle(element);
+      this.#updateAriaLabel(element);
+      this.#updateTabOrder(element);
+    });
+
+    this.#updateBackdrop();
   }
 }
 

@@ -32,6 +32,7 @@ const meta = {
     state: 'default',
   },
   parameters: {
+    layout: 'fullscreen',
     status: {
       type: 'BETA',
     },
