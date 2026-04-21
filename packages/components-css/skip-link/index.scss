@@ -10,6 +10,7 @@
   display: inline-block;
   font-size: var(--utrecht-document-font-size);
   line-height: var(--utrecht-document-line-height);
+  margin: 0.5rem; /* stylelint-disable-line property-disallowed-list */
   margin-block-end: var(--nijmegen-skip-link-margin-block-end);
   min-block-size: var(--utrecht-pointer-target-min-size);
   min-inline-size: var(--utrecht-pointer-target-min-size);

@@ -14,6 +14,8 @@
   line-height: var(--nijmegen-breadcrumb-navigation-line-height);
   margin-block-end: var(--nijmegen-breadcrumb-margin-block-end);
   overflow: hidden;
+  padding-block-end: 0.25rem; // For the focus border
+  padding-block-start: 0.25rem; // For the focus border
 }
 
 .nijmegen-breadcrumb__list {
