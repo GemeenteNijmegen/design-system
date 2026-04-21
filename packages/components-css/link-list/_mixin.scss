@@ -35,8 +35,8 @@
   align-items: baseline;
   color: var(--utrecht-link-color);
   display: inline-flex;
-  gap: var(--todo-link-list-item-column-gap); /* stylelint-disable-line custom-property-pattern */
-  text-decoration: var(--nijmegen-link-list-item-text-decoration, none);
+  gap: var(--utrecht-link-list-link-column-gap); /* stylelint-disable-line custom-property-pattern */
+  text-decoration: var(--utrecht-link-list-link-text-decoration, none);
   &:active,
   &.nijmegen-link-list__link--active {
     @include utrecht-link--active;
