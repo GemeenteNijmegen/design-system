@@ -7,5 +7,9 @@ export const argTypes = {
 };
 
 export const NumberBadgeStory = ({ number = 0 }) => {
-  return <span className="nijmegen-number-badge">{number}</span>;
+  return (
+    <span className="nijmegen-number-badge" role="status">
+      {number}
+    </span>
+  );
 };
