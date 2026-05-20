@@ -34,9 +34,7 @@ export const DataSummaryStory = ({
             ))}
             {item.link && (
               <dd className="nijmegen-description-list__detail">
-                <Link href={item.link.href} title={item.link.title}>
-                  {item.link.text}
-                </Link>
+                <Link href={item.link.href}>{item.link.text}</Link>
               </dd>
             )}
           </div>
