@@ -23,6 +23,7 @@
     "components/data-summary.tokens",
     "components/dropdown-menu.tokens",
     "components/email-input.tokens",
+    "components/fieldset.tokens",
     "components/form-field.tokens",
     "components/form-field-description.tokens",
     "components/form-field-error-message.tokens",
