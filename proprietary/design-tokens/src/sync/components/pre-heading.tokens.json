@@ -11,7 +11,7 @@
       },
       "font-size": {
         "type": "fontSizes",
-        "value": "{utrecht.document.font-size}"
+        "value": "{nijmegen.typography.font-size.sm}"
       },
       "font-weight": {
         "type": "fontWeights",
