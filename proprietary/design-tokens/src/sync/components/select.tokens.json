@@ -27,19 +27,19 @@
       },
       "font-family": {
         "type": "fontFamilies",
-        "value": "{basis.form-control.font-family}"
+        "value": "{nijmegen.badge.font-family}"
       },
       "font-size": {
         "type": "fontSizes",
-        "value": "{basis.form-control.font-size}"
+        "value": "{nijmegen.form-control.font-size}"
       },
       "font-weight": {
         "type": "fontWeights",
-        "value": "{basis.form-control.font-weight}"
+        "value": "{nijmegen.form-control.font-weight}"
       },
       "line-height": {
         "type": "lineHeights",
-        "value": "{basis.form-control.line-height}"
+        "value": "{nijmegen.form-control.line-height}"
       },
       "max-inline-size": {
         "type": "sizing",
