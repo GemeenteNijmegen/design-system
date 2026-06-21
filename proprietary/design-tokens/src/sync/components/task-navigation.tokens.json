@@ -1,0 +1,42 @@
+{
+  "denhaag": {
+    "action": {
+      "single": {
+        "padding-block-end": {
+          "type": "spacing",
+          "value": "{nijmegen.space.75}"
+        },
+        "padding-block-start": {
+          "type": "spacing",
+          "value": "{nijmegen.space.75}"
+        },
+        "padding-inline-end": {
+          "type": "spacing",
+          "value": "{nijmegen.space.100}"
+        },
+        "padding-inline-start": {
+          "type": "spacing",
+          "value": "{nijmegen.space.100}"
+        },
+        "details": {
+          "gap": {
+            "type": "other",
+            "value": "{nijmegen.space.50}"
+          },
+          "lg": {
+            "gap": {
+              "type": "other",
+              "value": "{nijmegen.space.50}"
+            }
+          }
+        },
+        "hover": {
+          "background-color": {
+            "type": "color",
+            "value": "{nijmegen.color.background.hover}"
+          }
+        }
+      }
+    }
+  }
+}
