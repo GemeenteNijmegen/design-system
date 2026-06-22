@@ -1,6 +1,16 @@
 {
   "utrecht": {
     "form-field": {
+      "margin-block-end": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing",
+        "description": "[code-only]"
+      },
+      "margin-block-start": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing",
+        "description": "[code-only]"
+      },
       "invalid": {
         "border-inline-start-color": {
           "type": "color",
