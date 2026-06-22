@@ -52,6 +52,7 @@
     "components/page-footer.tokens",
     "components/pagination.tokens",
     "components/paragraph.tokens",
+    "components/progress-list.tokens",
     "components/radio.tokens",
     "components/rich-text.tokens",
     "components/search.tokens",
