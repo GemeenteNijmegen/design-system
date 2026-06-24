@@ -1,5 +1,5 @@
 import { Canvas } from '@storybook/addon-docs';
-import * as ProgressListStories from './Html/ProgressList.stories';
+import * as ProgressListStories from './WebComponent/ProgressList.stories';
 
 # Documentatie Progress list component
 
@@ -15,3 +15,7 @@ Dit component is op maat ontwikkeld op basis van het ontwerp voor de Gemeente Ni
 ## Variaties
 
 <Canvas of={ProgressListStories.Default} sourceState="none" />
+
+<Canvas of={ProgressListStories.Warning} sourceState="none" />
+
+<Canvas of={ProgressListStories.Error} sourceState="none" />

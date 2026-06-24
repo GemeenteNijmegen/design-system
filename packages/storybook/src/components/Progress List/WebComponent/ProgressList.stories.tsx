@@ -3,13 +3,13 @@ import type { StoryContext } from '@storybook/types';
 import prettierBabel from 'prettier/parser-babel';
 import * as prettier from 'prettier/standalone';
 import * as ReactDOMServer from 'react-dom/server';
-import { argTypes, ProgressListStory } from '../_ProgressList';
+import { argTypes, ProgressListStoryWebComponent } from '../_ProgressList';
 
 const meta = {
-  title: 'Components/Progress list/Html Implementation',
-  id: 'html-progresslist',
+  title: 'Components/Progress list/Web Component Implementation',
+  id: 'web-component-progresslist',
   argTypes: argTypes,
-  component: ProgressListStory,
+  component: ProgressListStoryWebComponent,
   args: {},
   parameters: {
     status: {
@@ -37,7 +37,7 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof ProgressListStory>;
+} satisfies Meta<typeof ProgressListStoryWebComponent>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
