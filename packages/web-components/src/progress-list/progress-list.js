@@ -32,15 +32,22 @@ class NijmegenProgressList extends HTMLElement {
 
   #handleToggle(button) {
     const isExpanded = button.getAttribute('aria-expanded') === 'true';
-    const controlsId = button.getAttribute('aria-controls');
+    const step = button.closest('.nijmegen-progress-list__step');
 
     button.setAttribute('aria-expanded', String(!isExpanded));
     this.#updateAriaLabel(button, !isExpanded);
 
-    if (controlsId) {
-      const details = this.querySelector(`#${controlsId}`);
+    if (step) {
+      step.classList.toggle('nijmegen-progress-list__step--active', !isExpanded);
+
+      const meta = step.querySelector('.nijmegen-progress-list__meta');
+      if (meta) {
+        meta.hidden = isExpanded;
+      }
+
+      const details = step.querySelector('.nijmegen-progress-list__details');
       if (details) {
-        details.classList.toggle('nijmegen-progress-list__details--active', !isExpanded);
+        details.hidden = isExpanded;
       }
     }
   }

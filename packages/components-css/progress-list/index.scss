@@ -12,10 +12,6 @@ nijmegen-progress-list {
   counter-reset: nijmegen-counter;
   list-style: none;
   padding-inline-start: 0;
-
-  .utrecht-paragraph {
-    margin: 0; /* stylelint-disable-line property-disallowed-list */
-  }
 }
 
 .nijmegen-progress-list__header {
@@ -25,9 +21,9 @@ nijmegen-progress-list {
   position: relative;
 
   span {
-    font-family: var(--utrecht-button-font-family, var(--utrecht-document-font-family));
-    font-size: var(--utrecht-button-font-size, var(--utrecht-document-font-family, inherit));
-    font-weight: var(--_utrecht-button-appearance-font-weight, var(--utrecht-button-font-weight));
+    font-family: var(--nijmegen-progress-list-step-marker-font-family);
+    font-size: var(--nijmegen-progress-list-step-marker-font-size);
+    font-weight: var(--nijmegen-progress-list-step-marker-font-weight);
 
     &.nijmegen-sr-only {
       clip: rect(0, 0, 0, 0);
@@ -48,9 +44,9 @@ nijmegen-progress-list {
   border-width: var(--nijmegen-progress-list-button-border-width);
   cursor: pointer;
   display: inline-flex;
-  font-family: var(--utrecht-button-font-family, var(--utrecht-document-font-family));
-  font-size: var(--utrecht-button-font-size, var(--utrecht-document-font-family, inherit));
-  font-weight: var(--_utrecht-button-appearance-font-weight, var(--utrecht-button-font-weight));
+  font-family: var(--nijmegen-progress-list-step-marker-font-family);
+  font-size: var(--nijmegen-progress-list-step-marker-font-size);
+  font-weight: var(--nijmegen-progress-list-step-marker-font-weight);
   gap: var(--nijmegen-progress-list-button-column-gap);
   min-block-size: var(--nijmegen-progress-list-button-min-block-size);
   min-inline-size: var(--nijmegen-progress-list-button-min-inline-size);
@@ -280,13 +276,39 @@ nijmegen-progress-list {
   }
 }
 
-.nijmegen-progress-list__details {
-  all: unset;
-  display: none;
+.nijmegen-progress-list__meta {
+  display: flex;
   flex-direction: column;
   gap: var(--nijmegen-progress-list-step-body-row-gap);
 
-  &--active {
+  .utrecht-paragraph {
+    margin: 0; /* stylelint-disable-line property-disallowed-list */
+  }
+
+  .utrecht-paragraph--lead {
+    font-size: 1.25rem;
+  }
+
+  .nijmegen-progress-list__step--toggle & {
+    display: none;
+  }
+
+  .nijmegen-progress-list__step--active & {
+    display: flex;
+  }
+}
+
+.nijmegen-progress-list__details {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  gap: var(--nijmegen-progress-list-step-body-row-gap);
+
+  .nijmegen-progress-list__step--toggle & {
+    display: none;
+  }
+
+  .nijmegen-progress-list__step--active & {
     display: flex;
   }
 }

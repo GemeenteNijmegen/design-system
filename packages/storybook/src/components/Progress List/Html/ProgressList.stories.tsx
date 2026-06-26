@@ -47,6 +47,143 @@ export const Default: Story = {
       {
         heading: 'Component ontwerpen',
         status: 'checked',
+        enableToggle: true,
+        subSteps: [
+          {
+            text: 'Atomen van het component zijn geïdentificeerd.',
+            status: 'checked',
+          },
+          {
+            text: 'Stijlkenmerken van elk atoom zijn vastgesteld.',
+            status: 'checked',
+          },
+        ],
+      },
+      {
+        heading: 'Component opbouwen met design tokens',
+        status: 'checked',
+        enableToggle: true,
+        subSteps: [
+          {
+            text: 'Design tokens zijn aangemaakt.',
+            status: 'checked',
+          },
+          {
+            text: 'Design tokens zijn toegewezen aan de eigenschappen van elk atoom.',
+            status: 'checked',
+          },
+        ],
+      },
+      {
+        heading: 'Component documenteren',
+        status: 'current',
+      },
+      {
+        heading: 'Component beschikbaar stellen',
+        meta: 'Het component kan op dit punt worden gebruikt door andere ontwerpers.',
+        metaDate: 'Uiterlijk op 1 juni 2024',
+      },
+    ],
+  },
+};
+
+export const Warning: Story = {
+  name: 'Warning',
+  args: {
+    steps: [
+      {
+        heading: 'Component ontwerpen',
+        status: 'checked',
+        enableToggle: true,
+        subSteps: [
+          {
+            text: 'Atomen van het component zijn geïdentificeerd.',
+            status: 'checked',
+          },
+          {
+            text: 'Stijlkenmerken van elk atoom zijn vastgesteld.',
+            status: 'checked',
+          },
+        ],
+      },
+      {
+        heading: 'Component opbouwen met design tokens',
+        status: 'warning',
+        enableToggle: true,
+        subSteps: [
+          {
+            text: 'Design tokens zijn aangemaakt.',
+            status: 'warning',
+          },
+          {
+            text: 'Design tokens zijn toegewezen aan de eigenschappen van elk atoom.',
+          },
+        ],
+      },
+      {
+        heading: 'Component documenteren',
+      },
+      {
+        heading: 'Component beschikbaar stellen',
+        meta: 'Het component kan op dit punt worden gebruikt door andere ontwerpers.',
+        metaDate: 'Uiterlijk op 1 juni 2024',
+      },
+    ],
+  },
+};
+
+export const Error: Story = {
+  name: 'Error',
+  args: {
+    steps: [
+      {
+        heading: 'Component ontwerpen',
+        status: 'checked',
+        enableToggle: true,
+        subSteps: [
+          {
+            text: 'Atomen van het component zijn geïdentificeerd.',
+            status: 'checked',
+          },
+          {
+            text: 'Stijlkenmerken van elk atoom zijn vastgesteld.',
+            status: 'checked',
+          },
+        ],
+      },
+      {
+        heading: 'Component opbouwen met design tokens',
+        status: 'error',
+        enableToggle: true,
+        subSteps: [
+          {
+            text: 'Design tokens zijn aangemaakt.',
+            status: 'error',
+          },
+          {
+            text: 'Design tokens zijn toegewezen aan de eigenschappen van elk atoom.',
+          },
+        ],
+      },
+      {
+        heading: 'Component documenteren',
+      },
+      {
+        heading: 'Component beschikbaar stellen',
+        meta: 'Het component kan op dit punt worden gebruikt door andere ontwerpers.',
+        metaDate: 'Uiterlijk op 1 juni 2024',
+      },
+    ],
+  },
+};
+
+export const Open: Story = {
+  name: 'Alles geopend',
+  args: {
+    steps: [
+      {
+        heading: 'Component ontwerpen',
+        status: 'checked',
         subSteps: [
           {
             text: 'Atomen van het component zijn geïdentificeerd.',
@@ -78,19 +215,21 @@ export const Default: Story = {
       },
       {
         heading: 'Component beschikbaar stellen',
-        body: 'Het component kan op dit punt worden gebruikt door andere ontwerpers.',
+        meta: 'Het component kan op dit punt worden gebruikt door andere ontwerpers.',
+        metaDate: 'Uiterlijk op 1 juni 2024',
       },
     ],
   },
 };
 
-export const Warning: Story = {
-  name: 'Warning',
+export const Closed: Story = {
+  name: 'Alles gesloten',
   args: {
     steps: [
       {
         heading: 'Component ontwerpen',
         status: 'checked',
+        enableToggle: true,
         subSteps: [
           {
             text: 'Atomen van het component zijn geïdentificeerd.',
@@ -104,65 +243,29 @@ export const Warning: Story = {
       },
       {
         heading: 'Component opbouwen met design tokens',
-        status: 'warning',
-        subSteps: [
-          {
-            text: 'Design tokens zijn aangemaakt.',
-            status: 'warning',
-          },
-          {
-            text: 'Design tokens zijn toegewezen aan de eigenschappen van elk atoom.',
-          },
-        ],
-      },
-      {
-        heading: 'Component documenteren',
-      },
-      {
-        heading: 'Component beschikbaar stellen',
-        body: 'Het component kan op dit punt worden gebruikt door andere ontwerpers.',
-      },
-    ],
-  },
-};
-
-export const Error: Story = {
-  name: 'Error',
-  args: {
-    steps: [
-      {
-        heading: 'Component ontwerpen',
         status: 'checked',
-        subSteps: [
-          {
-            text: 'Atomen van het component zijn geïdentificeerd.',
-            status: 'checked',
-          },
-          {
-            text: 'Stijlkenmerken van elk atoom zijn vastgesteld.',
-            status: 'checked',
-          },
-        ],
-      },
-      {
-        heading: 'Component opbouwen met design tokens',
-        status: 'error',
+        enableToggle: true,
         subSteps: [
           {
             text: 'Design tokens zijn aangemaakt.',
-            status: 'error',
+            status: 'checked',
           },
           {
             text: 'Design tokens zijn toegewezen aan de eigenschappen van elk atoom.',
+            status: 'checked',
           },
         ],
       },
       {
         heading: 'Component documenteren',
+        status: 'current',
+        enableToggle: true,
       },
       {
         heading: 'Component beschikbaar stellen',
-        body: 'Het component kan op dit punt worden gebruikt door andere ontwerpers.',
+        enableToggle: true,
+        meta: 'Het component kan op dit punt worden gebruikt door andere ontwerpers.',
+        metaDate: 'Uiterlijk op 1 juni 2024',
       },
     ],
   },
