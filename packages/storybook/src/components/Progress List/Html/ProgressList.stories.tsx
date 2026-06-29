@@ -177,47 +177,30 @@ export const Error: Story = {
   },
 };
 
-export const Shecked: Story = {
-  name: 'Alles afgerond',
+export const Paragraph: Story = {
+  name: 'Zonder substeps',
   args: {
     steps: [
       {
         heading: 'Component ontwerpen',
         status: 'checked',
         enableToggle: true,
-        subSteps: [
-          {
-            text: 'Atomen van het component zijn geïdentificeerd.',
-            status: 'checked',
-          },
-          {
-            text: 'Stijlkenmerken van elk atoom zijn vastgesteld.',
-            status: 'checked',
-          },
-        ],
+        meta: 'Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod',
+        metaDate: 'Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod',
       },
       {
         heading: 'Component opbouwen met design tokens',
         status: 'checked',
         enableToggle: true,
-        subSteps: [
-          {
-            text: 'Design tokens zijn aangemaakt.',
-            status: 'checked',
-          },
-          {
-            text: 'Design tokens zijn toegewezen aan de eigenschappen van elk atoom.',
-            status: 'checked',
-          },
-        ],
+        meta: 'Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod',
+        metaDate: 'Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod',
       },
       {
         heading: 'Component documenteren',
-        status: 'checked',
+        status: 'current',
       },
       {
         heading: 'Component beschikbaar stellen',
-        status: 'checked',
         meta: 'Het component kan op dit punt worden gebruikt door andere ontwerpers.',
         metaDate: 'Uiterlijk op 1 juni 2024',
       },
