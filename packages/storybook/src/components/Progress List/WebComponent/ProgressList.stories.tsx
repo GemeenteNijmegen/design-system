@@ -177,6 +177,54 @@ export const Error: Story = {
   },
 };
 
+export const Checked: Story = {
+  name: 'Alles afgerond',
+  args: {
+    steps: [
+      {
+        heading: 'Component ontwerpen',
+        status: 'checked',
+        enableToggle: true,
+        subSteps: [
+          {
+            text: 'Atomen van het component zijn geïdentificeerd.',
+            status: 'checked',
+          },
+          {
+            text: 'Stijlkenmerken van elk atoom zijn vastgesteld.',
+            status: 'checked',
+          },
+        ],
+      },
+      {
+        heading: 'Component opbouwen met design tokens',
+        status: 'checked',
+        enableToggle: true,
+        subSteps: [
+          {
+            text: 'Design tokens zijn aangemaakt.',
+            status: 'checked',
+          },
+          {
+            text: 'Design tokens zijn toegewezen aan de eigenschappen van elk atoom.',
+            status: 'checked',
+          },
+        ],
+      },
+      {
+        heading: 'Component documenteren',
+        status: 'checked',
+      },
+      {
+        heading: 'Component beschikbaar stellen',
+        status: 'checked',
+        meta: 'Het component kan op dit punt worden gebruikt door andere ontwerpers.',
+        metaDate: 'Uiterlijk op 1 juni 2024',
+      },
+    ],
+  },
+};
+
 export const Open: Story = {
   name: 'Alles geopend',
   args: {
