@@ -1,0 +1,78 @@
+@mixin nijmegen-progress-list-marker {
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: var(--nijmegen-progress-list-step-marker-border-radius);
+  border-style: solid;
+  border-width: var(--nijmegen-progress-list-step-marker-border-width);
+  box-sizing: border-box;
+  display: flex;
+  font-family: var(--nijmegen-progress-list-step-marker-font-family);
+  font-size: var(--nijmegen-progress-list-step-marker-font-size);
+  font-weight: var(--nijmegen-progress-list-step-marker-font-weight);
+  height: var(--nijmegen-progress-list-step-marker-size); /* stylelint-disable-line property-disallowed-list */
+  justify-content: space-around;
+  line-height: var(--nijmegen-progress-list-step-marker-line-height);
+  position: absolute;
+  @include nijmegen-progress-list-marker-not-checked;
+}
+
+@mixin nijmegen-progress-list-marker-current {
+  background-color: var(--nijmegen-progress-list-step-marker-current-background-color);
+  border-color: var(--nijmegen-progress-list-step-marker-current-background-color);
+  color: var(--nijmegen-progress-list-step-marker-current-color);
+}
+
+@mixin nijmegen-progress-list-marker-not-checked {
+  background-color: var(--nijmegen-progress-list-step-marker-not-checked-background-color);
+  border-color: var(--nijmegen-progress-list-connector-not-checked-border-color);
+  color: var(--nijmegen-progress-list-step-marker-not-checked-color);
+}
+
+@mixin nijmegen-progress-list-marker-error {
+  background-color: var(--nijmegen-progress-list-step-marker-error-background-color);
+  border-color: var(--nijmegen-progress-list-step-marker-error-border-color);
+  color: var(--nijmegen-progress-list-step-marker-error-color);
+}
+
+@mixin nijmegen-progress-list-marker-warning {
+  background-color: var(--nijmegen-progress-list-step-marker-warning-background-color);
+  border-color: var(--nijmegen-progress-list-step-marker-warning-border-color);
+  color: var(--nijmegen-progress-list-step-marker-warning-color);
+}
+
+@mixin nijmegen-progress-list-marker-checked {
+  background-color: var(--nijmegen-progress-list-step-marker-checked-background-color);
+  border-color: var(--nijmegen-progress-list-step-marker-checked-border-color);
+  color: var(--nijmegen-progress-list-step-marker-checked-color);
+}
+
+@mixin nijmegen-progress-list-connector {
+  border-inline-start-width: var(--nijmegen-progress-list-connector-border-width);
+  content: "";
+  inset-block-start: 0;
+  inset-inline-start: var(--nijmegen-progress-list-connector-padding-inline-start);
+  position: absolute;
+  z-index: -1;
+  @include nijmegen-progress-list-connector-not-checked;
+}
+
+@mixin nijmegen-progress-list-connector-error {
+  border-color: var(--nijmegen-progress-list-connector-error-border-color);
+  border-inline-start-style: solid;
+}
+
+@mixin nijmegen-progress-list-connector-warning {
+  border-color: var(--nijmegen-progress-list-connector-warning-border-color);
+  border-inline-start-style: solid;
+}
+
+@mixin nijmegen-progress-list-connector-checked {
+  border-color: var(--nijmegen-progress-list-connector-checked-border-color);
+  border-inline-start-style: solid;
+}
+
+@mixin nijmegen-progress-list-connector-not-checked {
+  border-color: var(--nijmegen-progress-list-connector-not-checked-border-color);
+  border-inline-start-style: dashed;
+}
