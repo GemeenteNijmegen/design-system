@@ -13,6 +13,7 @@
     "components/button.tokens",
     "components/button-group.tokens",
     "components/card.tokens",
+    "components/case-card.tokens",
     "components/card-event.tokens",
     "components/cards-news.tokens",
     "components/card-persona.tokens",
@@ -53,6 +54,7 @@
     "components/page-footer.tokens",
     "components/pagination.tokens",
     "components/paragraph.tokens",
+    "components/pre-heading.tokens",
     "components/radio.tokens",
     "components/rich-text.tokens",
     "components/search.tokens",
@@ -71,6 +73,8 @@
     "components/top-task-card.tokens",
     "components/unordered-list.tokens",
     "components/breadcrumb.tokens",
+    "components/textarea.tokens",
+    "components/textbox.tokens",
     "layout.tokens"
   ]
 }

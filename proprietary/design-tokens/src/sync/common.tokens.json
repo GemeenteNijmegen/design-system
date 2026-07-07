@@ -93,7 +93,7 @@
           "type": "color"
         },
         "color": {
-          "value": "{nijmegen.color.grijs.500}",
+          "value": "{nijmegen.color.grijs.600}",
           "type": "color"
         }
       },
