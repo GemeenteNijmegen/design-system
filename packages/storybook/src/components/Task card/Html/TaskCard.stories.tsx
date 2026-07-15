@@ -56,7 +56,8 @@ export const Date: Story = {
     title: 'Task',
     link: 'Text',
     href: '#example',
-    date: '29-09-2023',
+    date: '29-09-2026',
+    dateTime: '2026-07-15T13:42:10.348Z',
   },
 };
 
@@ -66,7 +67,8 @@ export const DateReletave: Story = {
     title: 'Task',
     link: 'Text',
     href: '#example',
-    date: 'vóór 2 oktober 2023',
+    date: 'vóór 2 oktober 2026',
+    dateTime: '2026-07-15T13:42:10.348Z',
   },
 };
 
@@ -77,6 +79,7 @@ export const DateWarning: Story = {
     link: 'Text',
     href: '#example',
     date: 'nog 2 dagen',
+    dateTime: '2026-07-15T13:42:10.348Z',
     dateWarning: true,
   },
 };
