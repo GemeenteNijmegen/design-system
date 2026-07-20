@@ -2,12 +2,12 @@
 @import "~@utrecht/textbox-css/src/mixin";
 
 .nijmegen-search {
-  inline-size: var(--nijmegen-search-input-max-inline-size);
-  max-inline-size: 100%;
+  max-inline-size: var(--nijmegen-search-input-max-inline-size);
   position: relative;
 
   &.nijmegen-search--full-width {
     inline-size: 100%;
+    max-inline-size: 100%;
   }
 }
 

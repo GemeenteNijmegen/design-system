@@ -17,6 +17,19 @@
       text-decoration-color: inherit;
     }
 
+    &:focus:any-link {
+      color: var(--nijmegen-link-list-item-focus-color, #000);
+      text-decoration: var(--nijmegen-link-list-item-focus-text-decoration, none);
+    }
+
+    &:focus-visible:any-link {
+      color: var(--nijmegen-link-list-item-focus-visible-color, #000);
+    }
+  }
+
+  .nijmegen-link-list__link:any-link {
+    color: inherit;
+
     &:focus {
       color: var(--nijmegen-link-list-item-focus-color, #000);
       text-decoration: var(--nijmegen-link-list-item-focus-text-decoration, none);
@@ -25,22 +38,9 @@
     &:focus-visible {
       color: var(--nijmegen-link-list-item-focus-visible-color, #000);
     }
-  }
-
-  .nijmegen-link-list__link:any-link {
-    color: inherit;
 
     &::before {
-      background-color: var(--nijmegen-page-footer-color);
-    }
-
-    &:hover,
-    &.nijmegen-link-list__link--hover {
-      color: inherit;
-
-      &::before {
-        background-color: var(--nijmegen-page-footer-color);
-      }
+      background-color: currentColor;
     }
   }
 }
