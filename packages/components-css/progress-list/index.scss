@@ -1,0 +1,380 @@
+/* stylelint-disable no-descending-specificity */
+
+@import "~@utrecht/unordered-list-css/src/mixin";
+@import "~@utrecht/link-css/src/mixin";
+@import "~@utrecht/focus-ring-css/src/mixin";
+@import "./mixin";
+
+.nijmegen-progress-list,
+nijmegen-progress-list {
+  @include utrecht-unordered-list;
+
+  counter-reset: nijmegen-counter;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.nijmegen-progress-list__header {
+  height: 3rem; /* stylelint-disable-line property-disallowed-list */
+  padding-block-start: var(--nijmegen-progress-list-step-heading-padding-block-start);
+  padding-inline-start: var(--nijmegen-progress-list-step-meta-padding-inline-start);
+  position: relative;
+
+  span {
+    font-family: var(--nijmegen-progress-list-step-marker-font-family);
+    font-size: var(--nijmegen-progress-list-step-marker-font-size);
+    font-weight: var(--nijmegen-progress-list-step-marker-font-weight);
+
+    &.nijmegen-sr-only {
+      clip: rect(0, 0, 0, 0);
+      height: 1px; /* stylelint-disable-line property-disallowed-list */
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px; /* stylelint-disable-line property-disallowed-list */
+    }
+  }
+}
+
+.nijmegen-progress-list__button {
+  background-color: var(--nijmegen-progress-list-button-checked-background-color);
+  background-color: var(--nijmegen-progress-list-button-current-background-color);
+  border-color: var(--nijmegen-progress-list-button-current-border-color);
+  border-radius: var(--nijmegen-progress-list-button-border-radius);
+  border-width: var(--nijmegen-progress-list-button-border-width);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--nijmegen-progress-list-step-marker-font-family);
+  font-size: var(--nijmegen-progress-list-step-marker-font-size);
+  font-weight: var(--nijmegen-progress-list-step-marker-font-weight);
+  gap: var(--nijmegen-progress-list-button-column-gap);
+  min-block-size: var(--nijmegen-progress-list-button-min-block-size);
+  min-inline-size: var(--nijmegen-progress-list-button-min-inline-size);
+  padding: 0; /* stylelint-disable-line property-disallowed-list */
+  text-align: inherit;
+
+  &:hover {
+    background-color: var(--nijmegen-progress-list-button-current-hover-background-color);
+    border-color: var(--nijmegen-progress-list-button-current-hover-border-color);
+    color: var(--nijmegen-progress-list-button-current-hover-color);
+  }
+
+  &:active {
+    background-color: var(--nijmegen-progress-list-button-current-active-background-color);
+    border-color: var(--nijmegen-progress-list-button-current-active-border-color);
+    color: var(--nijmegen-progress-list-button-current-active-color);
+  }
+
+  &:focus-visible {
+    @include utrecht-link--focus;
+    @include utrecht-link--focus-visible;
+
+    background-color: var(--nijmegen-progress-list-button-current-focus-visible-background-color);
+    border-color: var(--nijmegen-progress-list-button-current-focus-visible-border-color);
+    color: var(--nijmegen-progress-list-button-current-focus-visible-color);
+  }
+
+  &[aria-expanded="true"] {
+    svg {
+      transform: scaleY(-1);
+    }
+  }
+}
+
+.nijmegen-progress-list__step {
+  counter-increment: nijmegen-counter;
+  position: relative;
+
+  &:last-child {
+    &:not(:has(.nijmegen-progress-list__details--active)) {
+      .nijmegen-progress-list__body {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    .nijmegen-progress-list__sub-step:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &::before {
+    @include nijmegen-progress-list-marker;
+
+    content: counter(nijmegen-counter);
+    width: var(--nijmegen-progress-list-step-marker-size); /* stylelint-disable-line property-disallowed-list */
+  }
+
+  &--current {
+    &::before {
+      @include nijmegen-progress-list-marker-current;
+    }
+  }
+
+  &--not-checked {
+    &::before {
+      @include nijmegen-progress-list-marker-not-checked;
+    }
+  }
+
+  &--error {
+    &::before {
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMiA0QzcuNTgxNzIgNCA0IDcuNTgxNzIgNCAxMkM0IDE2LjQxODMgNy41ODE3MiAyMCAxMiAyMEMxNi40MTgzIDIwIDIwIDE2LjQxODMgMjAgMTJDMjAgNy41ODE3MiAxNi40MTgzIDQgMTIgNFpNMiAxMkMyIDYuNDc3MTUgNi40NzcxNSAyIDEyIDJDMTcuNTIyOCAyIDIyIDYuNDc3MTUgMjIgMTJDMjIgMTcuNTIyOCAxNy41MjI4IDIyIDEyIDIyQzYuNDc3MTUgMjIgMiAxNy41MjI4IDIgMTJaTTEyIDdDMTIuNTUyMyA3IDEzIDcuNDQ3NzIgMTMgOFYxMkMxMyAxMi41NTIzIDEyLjU1MjMgMTMgMTIgMTNDMTEuNDQ3NyAxMyAxMSAxMi41NTIzIDExIDEyVjhDMTEgNy40NDc3MiAxMS40NDc3IDcgMTIgN1pNMTEgMTZDMTEgMTUuNDQ3NyAxMS40NDc3IDE1IDEyIDE1SDEyLjAxQzEyLjU2MjMgMTUgMTMuMDEgMTUuNDQ3NyAxMy4wMSAxNkMxMy4wMSAxNi41NTIzIDEyLjU2MjMgMTcgMTIuMDEgMTdIMTJDMTEuNDQ3NyAxNyAxMSAxNi41NTIzIDExIDE2WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
+      content: "";
+      @include nijmegen-progress-list-marker-error;
+    }
+
+    &:has(.nijmegen-progress-list__body) {
+      &::after,
+      .nijmegen-progress-list__body::after {
+        @include nijmegen-progress-list-connector-error;
+      }
+    }
+
+    &:has(.nijmegen-progress-list__details) .nijmegen-progress-list__header {
+      &::after {
+        @include nijmegen-progress-list-connector-error;
+      }
+    }
+
+    .nijmegen-progress-list__button {
+      background-color: var(--nijmegen-progress-list-button-error-background-color);
+      border-color: var(--nijmegen-progress-list-button-error-border-color);
+
+      &:hover {
+        background-color: var(--nijmegen-progress-list-button-error-hover-background-color);
+        border-color: var(--nijmegen-progress-list-button-error-hover-border-color);
+        color: var(--nijmegen-progress-list-button-error-hover-color);
+      }
+
+      &:active {
+        background-color: var(--nijmegen-progress-list-button-error-active-background-color);
+        border-color: var(--nijmegen-progress-list-button-error-active-border-color);
+        color: var(--nijmegen-progress-list-button-error-active-color);
+      }
+
+      &:focus-visible {
+        @include utrecht-link--focus;
+        @include utrecht-link--focus-visible;
+
+        background-color: var(--nijmegen-progress-list-button-error-focus-visible-background-color);
+        border-color: var(--nijmegen-progress-list-button-error-focus-visible-border-color);
+        color: var(--nijmegen-progress-list-button-error-focus-visible-color);
+      }
+    }
+  }
+
+  &--warning {
+    &::before {
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik05LjM3MDI4IDMuNTA1NzdDOS45MDAwNCAyLjU1NjQ0IDEwLjkwMjIgMS45Njc3MSAxMS45OSAxLjk2NzcxQzEzLjA3NzcgMS45Njc3MSAxNC4wNzk5IDIuNTU2NDMgMTQuNjA5NiAzLjUwNTc1TDIxLjcwNTEgMTUuNzQ4QzIxLjcyODcgMTUuNzg4NyAyMS43NDk0IDE1LjgzMDkgMjEuNzY3IDE1Ljg3NDRDMjIuMTM5NyAxNi43OTU3IDIyLjAzMTkgMTcuODQxOCAyMS40NzkzIDE4LjY2NzhDMjAuOTI2NiAxOS40OTM4IDIwLjAwMDggMTkuOTkyNSAxOS4wMDcgMTkuOTk5NEwxOSAxOS45OTk1SDQuOTk5OTVDNC45ODE2OCAxOS45OTk1IDQuOTYzNTEgMTkuOTk5IDQuOTQ1NDggMTkuOTk4QzQuOTEwMjIgMTkuOTk5OSA0Ljg3NDUyIDIwIDQuODM4NDcgMTkuOTk4MUMzLjg2ODc3IDE5Ljk0ODEgMi45ODMyNCAxOS40MzE5IDIuNDYxOTQgMTguNjEyN0MxLjk0MDY1IDE3Ljc5MzYgMS44NDgwNiAxNi43NzI3IDIuMjEzNDcgMTUuODczMUMyLjIzMDk3IDE1LjgzMDEgMi4yNTE0NSAxNS43ODgyIDIuMjc0NzcgMTUuNzQ4TDkuMzcwMjggMy41MDU3N1pNNC45NDQ3MSAxOC4wMDFDNC45NjMgMTggNC45ODE0MiAxNy45OTk1IDQuOTk5OTUgMTcuOTk5NUgxOC45OTU5QzE5LjMyNiAxNy45OTYyIDE5LjYzMzQgMTcuODMwMSAxOS44MTcgMTcuNTU1NkMxOS45OTA0IDE3LjI5NjYgMjAuMDMyNCAxNi45NzI2IDE5LjkzMzMgMTYuNjc5NEwxMi44NzQ4IDQuNTAwOTJMMTIuODY1IDQuNDgzNTlDMTIuNjg4OCA0LjE2NTI3IDEyLjM1MzcgMy45Njc3MSAxMS45OSAzLjk2NzcxQzExLjYyNjIgMy45Njc3MSAxMS4yOTExIDQuMTY1MjcgMTEuMTE1IDQuNDgzNTlMMTEuMTA1MSA0LjUwMDkyTDQuMDQ2MiAxNi42ODAxQzMuOTQ4ODUgMTYuOTY2MiAzLjk4NTkxIDE3LjI4MjMgNC4xNDkyNyAxNy41MzlDNC4zMjMwMyAxNy44MTIxIDQuNjE4MjEgMTcuOTg0MSA0Ljk0MTQ0IDE4LjAwMDhDNC45NDI1MyAxOC4wMDA5IDQuOTQzNjIgMTguMDAwOSA0Ljk0NDcxIDE4LjAwMVpNMTIgNy45OTk0N0MxMi41NTIyIDcuOTk5NDcgMTMgOC40NDcxOCAxMyA4Ljk5OTQ3VjEwLjk5OTVDMTMgMTEuNTUxOCAxMi41NTIyIDExLjk5OTUgMTIgMTEuOTk5NUMxMS40NDc3IDExLjk5OTUgMTEgMTEuNTUxOCAxMSAxMC45OTk1VjguOTk5NDdDMTEgOC40NDcxOCAxMS40NDc3IDcuOTk5NDcgMTIgNy45OTk0N1pNMTEgMTQuOTk5NUMxMSAxNC40NDcyIDExLjQ0NzcgMTMuOTk5NSAxMiAxMy45OTk1SDEyLjAxQzEyLjU2MjIgMTMuOTk5NSAxMy4wMSAxNC40NDcyIDEzLjAxIDE0Ljk5OTVDMTMuMDEgMTUuNTUxOCAxMi41NjIyIDE1Ljk5OTUgMTIuMDEgMTUuOTk5NUgxMkMxMS40NDc3IDE1Ljk5OTUgMTEgMTUuNTUxOCAxMSAxNC45OTk1WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
+      content: "";
+      @include nijmegen-progress-list-marker-warning;
+    }
+
+    &:has(.nijmegen-progress-list__body) {
+      &::after,
+      .nijmegen-progress-list__body::after {
+        @include nijmegen-progress-list-connector-warning;
+      }
+    }
+
+    &:has(.nijmegen-progress-list__details) .nijmegen-progress-list__header {
+      &::after {
+        @include nijmegen-progress-list-connector-warning;
+      }
+    }
+
+    .nijmegen-progress-list__button {
+      background-color: var(--nijmegen-progress-list-button-warning-background-color);
+      border-color: var(--nijmegen-progress-list-button-warning-border-color);
+
+      &:hover {
+        background-color: var(--nijmegen-progress-list-button-warning-hover-background-color);
+        border-color: var(--nijmegen-progress-list-button-warning-hover-border-color);
+        color: var(--nijmegen-progress-list-button-warning-hover-color);
+      }
+
+      &:active {
+        background-color: var(--nijmegen-progress-list-button-warning-active-background-color);
+        border-color: var(--nijmegen-progress-list-button-warning-active-border-color);
+        color: var(--nijmegen-progress-list-button-warning-active-color);
+      }
+
+      &:focus-visible {
+        @include utrecht-link--focus;
+        @include utrecht-link--focus-visible;
+
+        background-color: var(--nijmegen-progress-list-button-warning-focus-visible-background-color);
+        border-color: var(--nijmegen-progress-list-button-warning-focus-visible-border-color);
+        color: var(--nijmegen-progress-list-button-warning-focus-visible-color);
+      }
+    }
+  }
+
+  &--checked {
+    &::before {
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yMC43MDcxIDYuMjkyODlDMjEuMDk3NiA2LjY4MzQyIDIxLjA5NzYgNy4zMTY1OCAyMC43MDcxIDcuNzA3MTFMMTAuNzA3MSAxNy43MDcxQzEwLjMxNjYgMTguMDk3NiA5LjY4MzQyIDE4LjA5NzYgOS4yOTI4OSAxNy43MDcxTDQuMjkyODkgMTIuNzA3MUMzLjkwMjM3IDEyLjMxNjYgMy45MDIzNyAxMS42ODM0IDQuMjkyODkgMTEuMjkyOUM0LjY4MzQyIDEwLjkwMjQgNS4zMTY1OCAxMC45MDI0IDUuNzA3MTEgMTEuMjkyOUwxMCAxNS41ODU4TDE5LjI5MjkgNi4yOTI4OUMxOS42ODM0IDUuOTAyMzcgMjAuMzE2NiA1LjkwMjM3IDIwLjcwNzEgNi4yOTI4OVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=");
+      content: "";
+      @include nijmegen-progress-list-marker-checked;
+    }
+
+    &:has(.nijmegen-progress-list__body) {
+      &::after,
+      .nijmegen-progress-list__body::after {
+        @include nijmegen-progress-list-connector-checked;
+      }
+    }
+
+    &:has(.nijmegen-progress-list__details) .nijmegen-progress-list__header {
+      &::after {
+        @include nijmegen-progress-list-connector-checked;
+      }
+    }
+
+    .nijmegen-progress-list__button {
+      background-color: var(--nijmegen-progress-list-button-checked-background-color);
+      border-color: var(--nijmegen-progress-list-button-checked-border-color);
+
+      &:hover {
+        background-color: var(--nijmegen-progress-list-button-checked-hover-background-color);
+        border-color: var(--nijmegen-progress-list-button-checked-hover-border-color);
+        color: var(--nijmegen-progress-list-button-checked-hover-color);
+      }
+
+      &:active {
+        background-color: var(--nijmegen-progress-list-button-checked-active-background-color);
+        border-color: var(--nijmegen-progress-list-button-checked-active-border-color);
+        color: var(--nijmegen-progress-list-button-checked-active-color);
+      }
+
+      &:focus-visible {
+        @include utrecht-link--focus;
+        @include utrecht-link--focus-visible;
+
+        background-color: var(--nijmegen-progress-list-button-checked-focus-visible-background-color);
+        border-color: var(--nijmegen-progress-list-button-checked-focus-visible-border-color);
+        color: var(--nijmegen-progress-list-button-checked-focus-visible-color);
+      }
+    }
+  }
+}
+
+.nijmegen-progress-list__body {
+  margin-block-end: var(--nijmegen-progress-list-sub-step-margin-block-start);
+  padding-inline-start: var(--nijmegen-progress-list-step-meta-padding-inline-start);
+  position: relative;
+
+  &::after {
+    @include nijmegen-progress-list-connector;
+
+    /* stylelint-disable-next-line property-disallowed-list */
+    height: calc(100% + var(--nijmegen-progress-list-step-meta-padding-inline-start) + 0.5rem);
+    inset-block-start: calc(-1 * var(--nijmegen-progress-list-sub-step-margin-block-start));
+  }
+}
+
+.nijmegen-progress-list__meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nijmegen-progress-list-step-body-row-gap);
+
+  .utrecht-paragraph {
+    margin: 0; /* stylelint-disable-line property-disallowed-list */
+  }
+
+  .utrecht-paragraph--lead {
+    font-size: 1.25rem;
+  }
+
+  .nijmegen-progress-list__step--toggle & {
+    display: none;
+  }
+
+  .nijmegen-progress-list__step--active & {
+    display: flex;
+  }
+}
+
+.nijmegen-progress-list__details {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  gap: var(--nijmegen-progress-list-step-body-row-gap);
+
+  .nijmegen-progress-list__step--toggle & {
+    display: none;
+  }
+
+  .nijmegen-progress-list__step--active & {
+    display: flex;
+  }
+}
+
+.nijmegen-progress-list__sub-step {
+  margin-block-end: var(--nijmegen-progress-list-sub-step-margin-block-start);
+  padding-inline-start: var(--nijmegen-progress-list-step-meta-padding-inline-start);
+  position: relative;
+
+  &::before {
+    @include nijmegen-progress-list-marker;
+
+    content: "";
+    height: var(--nijmegen-progress-list-step-marker-nested-size); /* stylelint-disable-line property-disallowed-list */
+    inset-block-start: var(--nijmegen-progress-list-step-marker-nested-inset-block-start);
+    left: 0.55rem; /* stylelint-disable-line property-disallowed-list */
+    width: var(--nijmegen-progress-list-step-marker-nested-size); /* stylelint-disable-line property-disallowed-list */
+  }
+
+  &::after {
+    @include nijmegen-progress-list-connector;
+
+    /* stylelint-disable-next-line property-disallowed-list */
+    height: calc(100% + var(--nijmegen-progress-list-step-meta-padding-inline-start) - 0.5rem);
+    inset-block-start: 0.5rem;
+  }
+
+  &--current {
+    &::before {
+      @include nijmegen-progress-list-marker-current;
+    }
+  }
+
+  &--not-checked {
+    &::before {
+      @include nijmegen-progress-list-marker-not-checked;
+    }
+  }
+
+  &--error {
+    &::before {
+      @include nijmegen-progress-list-marker-error;
+    }
+
+    &::after {
+      @include nijmegen-progress-list-connector-error;
+    }
+  }
+
+  &--warning {
+    &::before {
+      @include nijmegen-progress-list-marker-warning;
+    }
+
+    &::after {
+      @include nijmegen-progress-list-connector-warning;
+    }
+  }
+
+  &--checked {
+    &::before {
+      @include nijmegen-progress-list-marker-checked;
+    }
+
+    &::after {
+      @include nijmegen-progress-list-connector-checked;
+    }
+  }
+}
