@@ -1,0 +1,76 @@
+{
+  "utrecht": {
+    "form-fieldset": {
+      "margin-block-end": {
+        "description": "[code-only]",
+        "type": "spacing",
+        "value": "{nijmegen.space.0}"
+      },
+      "margin-block-start": {
+        "description": "[code-only]",
+        "type": "spacing",
+        "value": "{nijmegen.space.0}"
+      },
+      "invalid": {
+        "border-inline-start-color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.error.default}"
+        },
+        "border-inline-start-width": {
+          "type": "borderWidth",
+          "value": "{nijmegen.border-width.md}"
+        },
+        "padding-inline-start": {
+          "type": "spacing",
+          "value": "{nijmegen.space.100}"
+        }
+      },
+      "section": {
+        "background-color": {
+          "type": "color",
+          "value": "{nijmegen.color.none}"
+        },
+        "color": {
+          "type": "color",
+          "value": "{nijmegen.form-control.color}"
+        }
+      },
+      "legend": {
+        "color": {
+          "type": "color",
+          "value": "{utrecht.document.color}"
+        },
+        "font-family": {
+          "type": "fontFamilies",
+          "value": "{nijmegen.form-control.font-family}"
+        },
+        "font-size": {
+          "type": "fontSizes",
+          "value": "{nijmegen.form-control.font-size}"
+        },
+        "font-weight": {
+          "type": "fontWeights",
+          "value": "{nijmegen.typography.font-weight.bold}"
+        },
+        "line-height": {
+          "type": "lineHeights",
+          "value": "{nijmegen.form-control.line-height}"
+        },
+        "margin-block-end": {
+          "type": "spacing",
+          "value": "{nijmegen.space.75}"
+        },
+        "margin-block-start": {
+          "type": "spacing",
+          "value": "{nijmegen.space.0}"
+        },
+        "disabled": {
+          "color": {
+            "type": "color",
+            "value": "{nijmegen.form-control.disabled.color}"
+          }
+        }
+      }
+    }
+  }
+}
