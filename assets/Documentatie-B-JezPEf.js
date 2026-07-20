@@ -1,0 +1,10 @@
+import{j as e}from"./jsx-runtime-CKrituN3.js";import{C as o}from"./chunk-HLWAVYOI-Bt-QMMY5.js";import{D as s,G as d}from"./SideNavigation.stories-CqtWatK3.js";import{useMDXComponents as r}from"./index-DI5IigMn.js";import"./index-CBqU2yxZ.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-BXSlEy2_.js";import"../sb-preview/runtime.js";import"./react-18-D8cruF67.js";import"./index-BtM5VmRH.js";import"./index-CnWNB3mc.js";import"./extends-CCbyfPlC.js";import"./_getPrototype-nBa_wnor.js";import"./index-ltOY3w3e.js";import"./server.browser-rAMDWieH.js";/* empty css                  */import"./createReactComponent-D_5DJZVZ.js";import"./IconUser-CHKGFGGR.js";function i(n){const t=Object.assign({h1:"h1",h2:"h2",p:"p",table:"table",thead:"thead",tr:"tr",th:"th",tbody:"tbody",td:"td",a:"a",h3:"h3"},r(),n.components);return e.jsxs(e.Fragment,{children:[e.jsx(t.h1,{id:"documentatie-side-navigation-component",children:"Documentatie Side navigation component"}),`
+`,e.jsx(t.h2,{id:"component",children:"Component"}),`
+`,e.jsx(t.p,{children:"Dit component is op maat ontwikkeld op basis van het ontwerp voor de Gemeente Nijmegen."}),`
+`,e.jsxs(t.table,{children:[e.jsx(t.thead,{children:e.jsxs(t.tr,{children:[e.jsx(t.th,{children:"Link"}),e.jsx(t.th,{children:"Omschrijving"})]})}),e.jsx(t.tbody,{children:e.jsxs(t.tr,{children:[e.jsx(t.td,{children:e.jsx(t.a,{href:"https://www.figma.com/design/g3AieWAFD3NtkbDDTTFC30/Novio---Nijmegen-Design-System?node-id=2789-10265",target:"_blank",rel:"nofollow noopener noreferrer",children:"Figma gemeente Nijmegen"})}),e.jsx(t.td,{children:"Design documentatie van dit component."})]})})]}),`
+`,e.jsx(t.h2,{id:"variaties",children:"Variaties"}),`
+`,e.jsx(t.h3,{id:"standaard",children:"Standaard"}),`
+`,e.jsx(o,{of:s,sourceState:"none"}),`
+`,e.jsx(t.h3,{id:"groeperen",children:"Groeperen"}),`
+`,e.jsx(t.p,{children:"Je kunt Sidenav Items groeperen zonder te detachen door items uit de 2e of 3e lijst te gebruiken."}),`
+`,e.jsx(o,{of:d,sourceState:"none"})]})}function y(n={}){const{wrapper:t}=Object.assign({},r(),n.components);return t?e.jsx(t,Object.assign({},n,{children:e.jsx(i,n)})):i(n)}export{y as default};
