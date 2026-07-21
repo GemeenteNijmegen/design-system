@@ -1,4 +1,5 @@
 import '@gemeentenijmegen/components-css';
+import '@utrecht/component-library-react/dist/css-module';
 
 export const argTypes = {
   title: {
@@ -22,7 +23,7 @@ export const argTypes = {
       defaultValue: '',
     },
   },
-  headingLevel: {
+  headingSize: {
     name: 'Heading size',
     control: 'select',
     options: ['default', '2', '3', '4', '5'],
