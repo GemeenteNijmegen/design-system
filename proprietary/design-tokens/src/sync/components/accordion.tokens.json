@@ -7,12 +7,12 @@
           "type": "borderWidth"
         },
         "border-color": {
-          "value": "{nijmegen.color.border.subdued}",
+          "value": "{nijmegen.color.border.default}",
           "type": "color"
         },
         "hover": {
           "border-color": {
-            "value": "{nijmegen.color.border.subdued}",
+            "value": "{nijmegen.color.border.default}",
             "type": "color"
           }
         },
