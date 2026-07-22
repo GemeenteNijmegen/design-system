@@ -3,7 +3,7 @@
     "description-list": {
       "border-color": {
         "type": "color",
-        "value": "{nijmegen.color.border.subdued}"
+        "value": "{nijmegen.color.border.default}"
       },
       "color": {
         "type": "color",
