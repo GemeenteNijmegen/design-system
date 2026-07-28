@@ -1,0 +1,37 @@
+import { Canvas } from '@storybook/addon-docs';
+import * as ProgressListStories from './WebComponent/ProgressList.stories';
+
+# Documentatie Progress list component
+
+## Component
+
+Dit component is op maat ontwikkeld op basis van het ontwerp voor de Gemeente Nijmegen.
+
+| Link                                                                                                                                           | Omschrijving                                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| [Figma gemeente Nijmegen](https://www.figma.com/design/g3AieWAFD3NtkbDDTTFC30/Novio---Nijmegen-Design-System?node-id=9923-136815) | Design documentatie van dit component.                           |
+
+
+## Variaties
+
+<Canvas of={ProgressListStories.Default} sourceState="none" />
+
+### Warning
+
+<Canvas of={ProgressListStories.Warning} sourceState="none" />
+
+### Error
+
+<Canvas of={ProgressListStories.Error} sourceState="none" />
+
+### Zonder substeps
+
+<Canvas of={ProgressListStories.Paragraph} sourceState="none" />
+
+### Alles geopend
+
+<Canvas of={ProgressListStories.Open} sourceState="none" />
+
+### Alles gesloten
+
+<Canvas of={ProgressListStories.Closed} sourceState="none" />

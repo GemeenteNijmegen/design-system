@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <title>Progress list example</title>
+    <!-- global -->
+    <link rel="stylesheet" href="https://unpkg.com/@utrecht/document-css@1.5.0/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/design-tokens@latest/dist/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/font@latest/dist/index.css" />
+    <!-- component specific -->
+    <link rel="stylesheet" href="https://unpkg.com/@gemeentenijmegen/components-css@latest/dist/index.min.css" />
+  </head>
+
+  <body class="utrecht-document nijmegen-theme">
+    <nijmegen-progress-list>
+      <li
+        class="nijmegen-progress-list__step nijmegen-progress-list__step--checked nijmegen-progress-list__step--toggle"
+      >
+        <div class="nijmegen-progress-list__header">
+          <button
+            class="nijmegen-progress-list__button"
+            aria-expanded="false"
+            aria-label="Stap 1 afgerond: Component ontwerpen"
+          >
+            Component ontwerpen
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="tabler-icon tabler-icon-chevron-down"
+            >
+              <path d="M6 9l6 6l6 -6"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="nijmegen-progress-list__body">
+          <div class="nijmegen-progress-list__meta" hidden=""></div>
+        </div>
+        <ul class="nijmegen-progress-list__details" hidden="">
+          <li class="nijmegen-progress-list__sub-step nijmegen-progress-list__sub-step--checked">
+            Atomen van het component zijn geïdentificeerd.
+          </li>
+          <li class="nijmegen-progress-list__sub-step nijmegen-progress-list__sub-step--checked">
+            Stijlkenmerken van elk atoom zijn vastgesteld.
+          </li>
+        </ul>
+      </li>
+      <li
+        class="nijmegen-progress-list__step nijmegen-progress-list__step--checked nijmegen-progress-list__step--toggle"
+      >
+        <div class="nijmegen-progress-list__header">
+          <button
+            class="nijmegen-progress-list__button"
+            aria-expanded="false"
+            aria-label="Stap 2 afgerond: Component opbouwen met design tokens"
+          >
+            Component opbouwen met design tokens
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="tabler-icon tabler-icon-chevron-down"
+            >
+              <path d="M6 9l6 6l6 -6"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="nijmegen-progress-list__body">
+          <div class="nijmegen-progress-list__meta" hidden=""></div>
+        </div>
+        <ul class="nijmegen-progress-list__details" hidden="">
+          <li class="nijmegen-progress-list__sub-step nijmegen-progress-list__sub-step--checked">
+            Design tokens zijn aangemaakt.
+          </li>
+          <li class="nijmegen-progress-list__sub-step nijmegen-progress-list__sub-step--checked">
+            Design tokens zijn toegewezen aan de eigenschappen van elk atoom.
+          </li>
+        </ul>
+      </li>
+      <li class="nijmegen-progress-list__step nijmegen-progress-list__step--current">
+        <div class="nijmegen-progress-list__header">
+          <span> <span class="nijmegen-sr-only">Stap 3 huidige stap: </span>Component documenteren </span>
+        </div>
+        <div class="nijmegen-progress-list__body">
+          <div class="nijmegen-progress-list__meta"></div>
+        </div>
+      </li>
+      <li class="nijmegen-progress-list__step">
+        <div class="nijmegen-progress-list__header">
+          <span> <span class="nijmegen-sr-only">Stap 4 nog niet gestart: </span>Component beschikbaar stellen </span>
+        </div>
+        <div class="nijmegen-progress-list__body">
+          <div class="nijmegen-progress-list__meta">
+            <p class="utrecht-paragraph">Het component kan op dit punt worden gebruikt door andere ontwerpers.</p>
+            <p class="utrecht-paragraph utrecht-paragraph--lead">Uiterlijk op 1 juni 2024</p>
+          </div>
+        </div>
+      </li>
+    </nijmegen-progress-list>
+  </body>
+</html>

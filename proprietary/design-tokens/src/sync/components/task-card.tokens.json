@@ -1,0 +1,148 @@
+{
+  "denhaag": {
+    "action": {
+      "background-color": {
+        "type": "color",
+        "value": "{utrecht.document.background-color}"
+      },
+      "border-color": {
+        "type": "color",
+        "value": "{nijmegen.color.border.subdued}"
+      },
+      "border-style": {
+        "type": "other",
+        "value": "solid"
+      },
+      "border-width": {
+        "type": "borderWidth",
+        "value": "{nijmegen.border-width.sm}"
+      },
+      "color": {
+        "type": "color",
+        "value": "{utrecht.document.color}"
+      },
+      "font-familiy": {
+        "type": "fontFamilies",
+        "value": "{utrecht.document.font-family}"
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "{utrecht.document.font-size}"
+      },
+      "font-weight": {
+        "type": "fontWeights",
+        "value": "{nijmegen.typography.font-weight.bold}"
+      },
+      "gap": {
+        "type": "spacing",
+        "value": "{nijmegen.space.50}"
+      },
+      "line-height": {
+        "type": "lineHeights",
+        "value": "{utrecht.document.line-height}"
+      },
+      "padding-block-end": {
+        "type": "spacing",
+        "value": "{nijmegen.space.100}"
+      },
+      "padding-block-start": {
+        "type": "spacing",
+        "value": "{nijmegen.space.100}"
+      },
+      "padding-inline-end": {
+        "type": "spacing",
+        "value": "{nijmegen.space.100}"
+      },
+      "padding-inline-start": {
+        "type": "spacing",
+        "value": "{nijmegen.space.100}"
+      },
+      "lg": {
+        "gap": {
+          "type": "other",
+          "value": "{nijmegen.space.100}"
+        },
+        "padding-block-end": {
+          "type": "spacing",
+          "value": "{nijmegen.space.100}"
+        },
+        "padding-block-start": {
+          "type": "spacing",
+          "value": "{nijmegen.space.100}"
+        }
+      },
+      "date": {
+        "color": {
+          "type": "color",
+          "value": "{utrecht.document.color}"
+        },
+        "font-weight": {
+          "type": "fontWeights",
+          "value": "{utrecht.document.font-weight}"
+        },
+        "gap": {
+          "type": "other",
+          "value": "{nijmegen.space.50}"
+        },
+        "warning": {
+          "color": {
+            "type": "color",
+            "value": "{nijmegen.color.feedback.warning.default}"
+          },
+          "font-weight": {
+            "type": "fontWeights",
+            "value": "{nijmegen.typography.font-weight.bold}"
+          },
+          "gap": {
+            "type": "other",
+            "value": "{nijmegen.space.50}"
+          }
+        }
+      },
+      "content": {
+        "bold": {
+          "font-weight": {
+            "type": "fontWeights",
+            "value": "{nijmegen.typography.font-weight.bold}"
+          }
+        }
+      },
+      "details": {
+        "gap": {
+          "type": "other",
+          "value": "{nijmegen.space.50}"
+        },
+        "lg": {
+          "gap": {
+            "type": "other",
+            "value": "{nijmegen.space.100}"
+          }
+        }
+      },
+      "link": {
+        "icon": {
+          "color": {
+            "type": "color",
+            "value": "{nijmegen.interaction.color}"
+          },
+          "width": {
+            "type": "sizing",
+            "value": "{nijmegen.icon.functional.size}"
+          }
+        }
+      },
+      "warning": {
+        "icon": {
+          "color": {
+            "type": "color",
+            "value": "{nijmegen.color.feedback.warning.default}"
+          },
+          "width": {
+            "type": "sizing",
+            "value": "{nijmegen.icon.functional.size}"
+          }
+        }
+      }
+    }
+  }
+}
