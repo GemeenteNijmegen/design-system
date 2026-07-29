@@ -1,0 +1,28 @@
+{
+  "extends": ["@commitlint/config-conventional"],
+  "rules": {
+    "scope-enum": [
+      2,
+      "always",
+      [
+        "assets",
+        "components-css",
+        "components-react",
+        "design-tokens",
+        "design-tokens-dark",
+        "font",
+        "layout-css",
+        "semantic-html",
+        "storybook",
+        "web-components",
+        "web-components-react",
+        "web-components-stencil",
+        "deps",
+        "ci",
+        "release",
+        "root"
+      ]
+    ],
+    "scope-empty": [1, "never"]
+  }
+}
