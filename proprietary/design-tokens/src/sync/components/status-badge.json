@@ -1,0 +1,106 @@
+{
+  "nijmegen": {
+    "status-badge": {
+      "background-color": {
+        "type": "color",
+        "value": "{nijmegen.color.grijs.100}"
+      },
+      "border-color": {
+        "type": "color",
+        "value": "transparent"
+      },
+      "border-radius": {
+        "type": "borderRadius",
+        "value": "{nijmegen.border-radius.xs}"
+      },
+      "border-width": {
+        "type": "borderWidth",
+        "value": "{nijmegen.border-width.sm}"
+      },
+      "color": {
+        "type": "color",
+        "value": "{utrecht.document.color}"
+      },
+      "font-family": {
+        "type": "fontFamilies",
+        "value": "{utrecht.document.font-family}"
+      },
+      "font-size": {
+        "type": "fontSizes",
+        "value": "{nijmegen.typography.font-size.sm}"
+      },
+      "font-weight": {
+        "type": "fontWeights",
+        "value": "{nijmegen.typography.font-weight.bold}"
+      },
+      "line-height": {
+        "type": "lineHeights",
+        "value": "{utrecht.document.line-height}"
+      },
+      "padding-block": {
+        "type": "spacing",
+        "value": "{nijmegen.space.12}"
+      },
+      "padding-inline": {
+        "type": "spacing",
+        "value": "{nijmegen.space.25}"
+      },
+      "informative": {
+        "background-color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.info.subdued}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "transparent"
+        },
+        "color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.info.default}"
+        }
+      },
+      "negative": {
+        "background-color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.error.subdued}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "transparent"
+        },
+        "color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.error.default}"
+        }
+      },
+      "positive": {
+        "background-color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.success.subdued}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "transparent"
+        },
+        "color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.success.default}"
+        }
+      },
+      "warning": {
+        "background-color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.warning.subdued}"
+        },
+        "border-color": {
+          "type": "color",
+          "value": "transparent"
+        },
+        "color": {
+          "type": "color",
+          "value": "{nijmegen.color.feedback.warning.default}"
+        }
+      }
+    }
+  }
+}
