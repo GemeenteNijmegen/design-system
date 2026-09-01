@@ -64,6 +64,7 @@
     "components/sidenav.tokens",
     "components/skip-link.tokens",
     "components/step-list.tokens",
+    "components/switch.tokens",
     "components/table.tokens",
     "components/table-of-contents.tokens",
     "components/text-area.tokens",
