@@ -86,7 +86,7 @@
         },
         "border-block-end-color": {
           "type": "color",
-          "value": "{nijmegen.color.border.subdued}"
+          "value": "{nijmegen.color.border.default}"
         },
         "border-block-end-width": {
           "type": "borderWidth",
@@ -100,7 +100,7 @@
       "row": {
         "border-block-end-color": {
           "type": "color",
-          "value": "{nijmegen.color.border.subdued}"
+          "value": "{nijmegen.color.border.default}"
         },
         "large-vw": {
           "border-block-end-width": {
@@ -110,7 +110,7 @@
         },
         "border-block-end-width": {
           "type": "borderWidth",
-          "value": "{nijmegen.border-width.md}"
+          "value": "{nijmegen.border-width.sm}"
         }
       },
       "data-cell": {
