@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v5.0.0
 
       - name: Install pnpm package manager
         uses: pnpm/action-setup@v4.0.0
