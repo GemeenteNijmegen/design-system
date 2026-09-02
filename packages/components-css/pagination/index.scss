@@ -1,5 +1,6 @@
 /* stylelint-disable no-descending-specificity */
 
+@import "~@gemeentenijmegen/layout-css/src/variables";
 @import "~@utrecht/link-css/src/mixin";
 @import "~@utrecht/focus-ring-css/src/mixin";
 @import "./mixin";
@@ -114,7 +115,7 @@
   padding-inline-start: var(--nijmegen-pagination-relative-link-padding-inline-start);
   text-decoration: var(--nijmegen-pagination-relative-link-text-decoration);
 
-  @media (width <576px) {
+  @media (width < $nijmegen-breakpoint-sm) {
     span {
       display: none;
     }
@@ -127,7 +128,7 @@
   }
 
   &.nijmegen-pagination__relative-link--prev {
-    @media (width >=576px) {
+    @media (width >= $nijmegen-breakpoint-sm) {
       &:has(span) {
         margin-inline-end: var(--nijmegen-space-100);
       }
@@ -141,7 +142,7 @@
   }
 
   &.nijmegen-pagination__relative-link--next {
-    @media (width >=576px) {
+    @media (width >= $nijmegen-breakpoint-sm) {
       &:has(span) {
         margin-inline-start: var(--nijmegen-space-100);
       }

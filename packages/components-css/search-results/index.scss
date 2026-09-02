@@ -1,5 +1,6 @@
 @import "~@utrecht/link-css/src/mixin";
 @import "~@utrecht/focus-ring-css/src/mixin";
+@import "~@gemeentenijmegen/layout-css/src/variables";
 
 .nijmegen-search-results {
   border-block-color: var(--nijmegen-search-result-border-color);
@@ -20,7 +21,7 @@
   flex-direction: column;
   gap: var(--nijmegen-search-result-content-row-gap);
 
-  @media (width < 576px) {
+  @media (width < $nijmegen-breakpoint-sm) {
     .nijmegen-metadata {
       flex-direction: column;
     }

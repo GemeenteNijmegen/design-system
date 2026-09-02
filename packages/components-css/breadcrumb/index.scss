@@ -2,9 +2,10 @@
 
 @import "~@utrecht/link-css/src/mixin";
 @import "~@utrecht/focus-ring-css/src/mixin";
+@import "~@gemeentenijmegen/layout-css/src/variables";
 
 .nijmegen-breadcrumb {
-  @media (width >=576px) {
+  @media (width >= $nijmegen-breakpoint-sm) {
     background-color: var(--nijmegen-breadcrumb-navigation-background-color);
   }
 
@@ -29,7 +30,7 @@
   padding-inline-end: var(--nijmegen-breadcrumb-navigation-list-padding-inline-end);
   padding-inline-start: var(--nijmegen-breadcrumb-navigation-list-padding-inline-start);
 
-  @media (width <=576px) {
+  @media (width <= $nijmegen-breakpoint-sm) {
     display: none;
   }
 }
@@ -79,7 +80,7 @@ ol.nijmegen-breadcrumb__list {
   padding-inline-end: var(--nijmegen-breadcrumb-navigation-list-padding-inline-end);
   padding-inline-start: var(--nijmegen-breadcrumb-navigation-list-padding-inline-start);
 
-  @media (width >=576px) {
+  @media (width >= $nijmegen-breakpoint-sm) {
     display: none;
   }
 

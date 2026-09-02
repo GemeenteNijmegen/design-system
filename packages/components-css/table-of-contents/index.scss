@@ -1,3 +1,5 @@
+@import "~@gemeentenijmegen/layout-css/src/variables";
+
 .nijmegen-table-of-contents {
   background-color: var(--nijmegen-table-of-contents-background-color);
   border-color: var(--nijmegen-table-of-contents-border-color);
@@ -12,7 +14,7 @@
   padding-inline-end: var(--nijmegen-table-of-contents-padding-inline-end);
   padding-inline-start: var(--nijmegen-table-of-contents-padding-inline-start);
 
-  @media (width >=576px) {
+  @media (width >= $nijmegen-breakpoint-sm) {
     padding-block-end: var(--nijmegen-table-of-contents-large-vw-padding-block-end);
     padding-block-start: var(--nijmegen-table-of-contents-large-vw-padding-block-start);
     padding-inline-end: var(--nijmegen-table-of-contents-large-vw-padding-inline-end);

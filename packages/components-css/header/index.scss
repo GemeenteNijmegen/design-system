@@ -37,7 +37,7 @@
     @include nijmegen-header-content;
   }
 
-  @media (width <1024px) {
+  @media (width < $nijmegen-breakpoint-lg) {
     display: none;
   }
 }
@@ -53,7 +53,7 @@
     @include nijmegen-header-content;
   }
 
-  @media (width >=1024px) {
+  @media (width >= $nijmegen-breakpoint-lg) {
     display: none;
   }
 }
@@ -195,7 +195,7 @@
 
   &--icon-user {
     span {
-      @media (width <1280px) {
+      @media (width < $nijmegen-breakpoint-xl) {
         display: none;
       }
     }

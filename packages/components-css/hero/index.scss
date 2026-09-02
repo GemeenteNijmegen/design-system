@@ -1,3 +1,5 @@
+@import "~@gemeentenijmegen/layout-css/src/variables";
+
 .nijmegen-hero {
   background-color: var(--nijmegen-hero-background-color, #a80a2d);
   color: var(--nijmegen-hero-color, white);
@@ -26,7 +28,7 @@
       z-index: 1; /* stylelint-disable-line property-disallowed-list */
     }
 
-    @media (width <1024px) {
+    @media (width < $nijmegen-breakpoint-lg) {
       &::before {
         background: var(
           --nijmegen-hero-background-mobile-gradient,
@@ -63,7 +65,7 @@
   position: relative;
   z-index: 2;
 
-  @media (width >=1024px) {
+  @media (width >= $nijmegen-breakpoint-lg) {
     padding-block-end: var(--nijmegen-hero-category-large-vw-padding-block-end, 4rem);
     padding-block-start: var(--nijmegen-hero-category-large-vw-padding-block-start, 3rem);
     padding-inline-end: var(--nijmegen-hero-category-large-vw-padding-inline-end, 1rem);
@@ -101,7 +103,7 @@
   .nijmegen-hero--home & {
     width: var(--nijmegen-hero-image-width, 50%); /* stylelint-disable-line property-disallowed-list */
 
-    @media (width <1024px) {
+    @media (width < $nijmegen-breakpoint-lg) {
       display: none;
     }
   }
