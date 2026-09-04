@@ -39,7 +39,7 @@ export const argTypes = {
   type: {
     name: 'Type',
     control: { type: 'select' },
-    options: ['home', 'category', 'image'],
+    options: ['home', 'category', 'image', 'background-image'],
   },
   autocomplete: {
     name: 'Autocomplete example',
@@ -60,7 +60,8 @@ export const HeroStory = ({
     <section
       className={clsx('nijmegen-hero', {
         'nijmegen-hero--home': type === 'home',
-        'nijmegen-hero--background-image': type === 'image',
+        'nijmegen-hero--background-image': type === 'background-image',
+        'nijmegen-hero--image': type === 'image',
       })}
       role="region"
     >
@@ -86,9 +87,7 @@ export const HeroStory = ({
           )}
         </div>
       </div>
-      {image && (type === 'home' || type === 'image') && (
-        <img className="nijmegen-hero__image" src={image} alt={image_alt} />
-      )}
+      {image && type !== 'category' && <img className="nijmegen-hero__image" src={image} alt={image_alt} />}
     </section>
   );
 };
