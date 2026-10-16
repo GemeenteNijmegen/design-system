@@ -1,0 +1,14 @@
+.nijmegen-list-of-links__item {
+  position: relative;
+
+  .nijmegen-list-of-links__item__link {
+    color: var(--_utrecht-link-state-color, var(--utrecht-link-color, var(--_utrecht-link-forced-colors-color)));
+
+    &::before {
+      content: "";
+      display: block;
+      inset: 0;
+      position: absolute;
+    }
+  }
+}
