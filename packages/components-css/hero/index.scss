@@ -5,6 +5,15 @@
   color: var(--nijmegen-hero-color, white);
   position: relative;
 
+  &--home {
+    @media (width >= $nijmegen-breakpoint-lg) {
+      display: flex;
+      /* stylelint-disable property-disallowed-list */
+      min-height: var(--nijmegen-hero-home-large-vw-min-block-size, 448px);
+      /* stylelint-enable property-disallowed-list */
+    }
+  }
+
   .utrecht-heading-1,
   .utrecht-heading-2,
   .utrecht-paragraph {
@@ -58,6 +67,7 @@
   gap: var(--nijmegen-hero-content-row-gap, 1.5rem);
   grid-column-end: 13;
   grid-column-start: 1;
+  justify-content: center;
   padding-block-end: var(--nijmegen-hero-content-padding-block-end, 2rem);
   padding-block-start: var(--nijmegen-hero-content-padding-block-start, 2rem);
   padding-inline-end: var(--nijmegen-hero-content-padding-inline-end, 1rem);
@@ -73,6 +83,16 @@
 
     .nijmegen-hero--home & {
       grid-column-end: 7;
+      padding-block-end: var(--nijmegen-hero-home-large-vw-padding-block-end, 4rem);
+      padding-block-start: var(--nijmegen-hero-home-large-vw-padding-block-start, 3rem);
+      padding-inline-end: var(--nijmegen-hero-home-large-vw-padding-inline-end, 4rem);
+      padding-inline-start: var(--nijmegen-hero-home-large-vw-padding-inline-start, 1rem);
+    }
+  }
+
+  @media (width >=768px) {
+    .nijmegen-hero--image & {
+      grid-column-end: 9;
       padding-block-end: var(--nijmegen-hero-home-large-vw-padding-block-end, 4rem);
       padding-block-start: var(--nijmegen-hero-home-large-vw-padding-block-start, 3rem);
       padding-inline-end: var(--nijmegen-hero-home-large-vw-padding-inline-end, 4rem);
@@ -98,6 +118,16 @@
 
   .nijmegen-hero--background-image & {
     width: 100%; /* stylelint-disable-line property-disallowed-list */
+  }
+
+  .nijmegen-hero--image & {
+    width: var(--nijmegen-hero-image-width, 33%); /* stylelint-disable-line property-disallowed-list */
+
+    @media (width <768px) {
+      display: block;
+      position: relative;
+      width: 100%; /* stylelint-disable-line property-disallowed-list */
+    }
   }
 
   .nijmegen-hero--home & {
