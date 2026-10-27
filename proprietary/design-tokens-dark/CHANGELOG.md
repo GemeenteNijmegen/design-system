@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.14 (2026-10-27)
+
+**Note:** Version bump only for package @gemeentenijmegen/design-tokens-dark
+
 ## 0.1.13 (2026-10-14)
 
 **Note:** Version bump only for package @gemeentenijmegen/design-tokens-dark
