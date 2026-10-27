@@ -95,7 +95,7 @@ export const Persona: Story = {
 };
 
 export const NoImage: Story = {
-  name: 'Card no image',
+  name: 'Card news no image',
   args: {
     title: 'Ondernemers opgelet',
     text: 'Ondernemers en bedrijven uit Nijmegen opgelet!',

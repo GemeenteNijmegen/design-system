@@ -26,6 +26,10 @@ let components = [
     input: "src/accordion/accordion.js",
     output: "dist/nijmegen-accordion.js",
   },
+  {
+    input: "src/progress-list/progress-list.js",
+    output: "dist/progress-list.js",
+  },
 ];
 
 let config = [];

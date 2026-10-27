@@ -1,3 +1,4 @@
+@import "~@gemeentenijmegen/layout-css/src/variables";
 @import "~@utrecht/focus-ring-css/src/mixin";
 @import "~@utrecht/textbox-css/src/mixin";
 
@@ -31,7 +32,7 @@
     border-color: var(--nijmegen-search-input-button-border-color) !important;
   }
 
-  @media (width <576px) {
+  @media (width < $nijmegen-breakpoint-sm) {
     svg {
       display: none;
     }

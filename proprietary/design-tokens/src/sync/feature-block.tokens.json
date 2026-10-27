@@ -1,0 +1,38 @@
+{
+  "nijmegen": {
+    "feature-block": {
+      "content": {
+        "padding-block-start": {
+          "value": "{nijmegen.space.200}",
+          "type": "spacing"
+        },
+        "padding-block-end": {
+          "value": "{nijmegen.space.200}",
+          "type": "spacing"
+        },
+        "padding-inline-start": {
+          "value": "{nijmegen.space.200}",
+          "type": "spacing"
+        },
+        "padding-inline-end": {
+          "value": "{nijmegen.space.200}",
+          "type": "spacing"
+        },
+        "row-gap": {
+          "value": "{nijmegen.space.150}",
+          "type": "spacing"
+        }
+      },
+      "large-vw": {
+        "padding-block-start": {
+          "value": "208px",
+          "type": "spacing"
+        },
+        "padding-inline-start": {
+          "value": "{nijmegen.space.500}",
+          "type": "spacing"
+        }
+      }
+    }
+  }
+}

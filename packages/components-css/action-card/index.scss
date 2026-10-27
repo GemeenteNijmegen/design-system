@@ -1,3 +1,5 @@
+@import "~@gemeentenijmegen/layout-css/src/variables";
+
 .nijmegen-action-card {
   background-color: var(--nijmegen-action-card-background-color);
   border-color: var(--nijmegen-action-card-border-color);
@@ -11,14 +13,14 @@
   padding-inline-end: var(--nijmegen-action-card-padding-inline-end);
   padding-inline-start: var(--nijmegen-action-card-padding-inline-start);
 
-  @media (width >=1024px) {
+  @media (width >= $nijmegen-breakpoint-lg) {
     padding-block-end: var(--nijmegen-action-card-large-vw-padding-block-end);
     padding-block-start: var(--nijmegen-action-card-large-vw-padding-block-start);
     padding-inline-end: var(--nijmegen-action-card-large-vw-padding-inline-end);
     padding-inline-start: var(--nijmegen-action-card-large-vw-padding-inline-start);
   }
 
-  @media (width <576px) {
+  @media (width < $nijmegen-breakpoint-sm) {
     .utrecht-button-group {
       flex-direction: column;
 

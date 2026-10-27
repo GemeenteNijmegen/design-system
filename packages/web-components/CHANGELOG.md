@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.13 (2026-10-14)
+
+**Note:** Version bump only for package @gemeentenijmegen/web-components
+
+## 0.1.12 (2026-09-02)
+
+**Note:** Version bump only for package @gemeentenijmegen/web-components
+
+## 0.1.11 (2026-09-02)
+
+**Note:** Version bump only for package @gemeentenijmegen/web-components
+
+## 0.1.10 (2026-09-02)
+
+**Note:** Version bump only for package @gemeentenijmegen/web-components
+
+## 0.1.9 (2026-07-28)
+
+**Note:** Version bump only for package @gemeentenijmegen/web-components
+
+## 0.1.8 (2026-07-20)
+
+**Note:** Version bump only for package @gemeentenijmegen/web-components
+
+## 0.1.7 (2026-07-20)
+
+**Note:** Version bump only for package @gemeentenijmegen/web-components
+
 ## 0.1.6 (2026-07-08)
 
 **Note:** Version bump only for package @gemeentenijmegen/web-components
