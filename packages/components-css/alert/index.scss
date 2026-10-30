@@ -1,0 +1,37 @@
+@use "./mixin" as *;
+
+.nijmegen-alert {
+  @include nijmegen-alert;
+}
+
+.nijmegen-alert__icon {
+  @include nijmegen-alert__icon;
+}
+
+.nijmegen-alert__close {
+  @include nijmegen-alert__close;
+}
+
+.nijmegen-alert__content {
+  @include nijmegen-alert__content;
+}
+
+.nijmegen-alert__message {
+  @include nijmegen-alert__message;
+}
+
+.nijmegen-alert--info {
+  @include nijmegen-alert-type("info");
+}
+
+.nijmegen-alert--ok {
+  @include nijmegen-alert-type("ok");
+}
+
+.nijmegen-alert--warning {
+  @include nijmegen-alert-type("warning");
+}
+
+.nijmegen-alert--error {
+  @include nijmegen-alert-type("error");
+}
