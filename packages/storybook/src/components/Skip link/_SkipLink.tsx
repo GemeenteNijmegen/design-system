@@ -21,11 +21,7 @@ export const argTypes = {
 
 export const SkipLinkStory = ({ children = '', href = '', visibilty = false }) => {
   return (
-    <a
-      href={href}
-      aria-label="Skip link"
-      className={clsx('nijmegen-skip-link', visibilty && 'nijmegen-skip-link--focus')}
-    >
+    <a href={href} className={clsx('nijmegen-skip-link', visibilty && 'nijmegen-skip-link--focus')}>
       {children}
     </a>
   );
