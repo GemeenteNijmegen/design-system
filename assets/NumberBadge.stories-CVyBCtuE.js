@@ -1,0 +1,6 @@
+import{s as c,r as d,p as l}from"./server.browser-rAMDWieH.js";import{j as i}from"./jsx-runtime-CKrituN3.js";/* empty css                  */const b={number:{control:"number"}},n=({number:a=0})=>i.jsx("span",{className:"nijmegen-number-badge",role:"status",children:a});try{n.displayName="NumberBadgeStory",n.__docgenInfo={description:"",displayName:"NumberBadgeStory",props:{number:{defaultValue:{value:"0"},description:"",name:"number",required:!1,type:{name:"number"}}}}}catch{}const g={title:"Components/Number badge/Html Implementation",id:"html-number-badge",argTypes:b,component:n,args:{},parameters:{status:{type:"BETA"},docs:{source:{transform:(a,e)=>{var o,s;const t=typeof e.component=="function"?e.component:typeof((o=e.component)==null?void 0:o.render)=="function"?(s=e.component)==null?void 0:s.render:null;return t?c.format(d(t(e.args)),{parser:"babel",plugins:[l]}):a}}}}},r={name:"Number badge",args:{number:9}};var m,u,p;r.parameters={...r.parameters,docs:{...(m=r.parameters)==null?void 0:m.docs,source:{originalSource:`{
+  name: 'Number badge',
+  args: {
+    number: 9
+  }
+}`,...(p=(u=r.parameters)==null?void 0:u.docs)==null?void 0:p.source}}};const f=["Default"],S=Object.freeze(Object.defineProperty({__proto__:null,Default:r,__namedExportsOrder:f,default:g},Symbol.toStringTag,{value:"Module"}));export{r as D,S as N};
