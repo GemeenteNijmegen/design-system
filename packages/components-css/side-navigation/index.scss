@@ -1,6 +1,7 @@
 /* stylelint-disable no-descending-specificity */
 
 @import "~@utrecht/focus-ring-css/src/mixin";
+@import "~@gemeentenijmegen/layout-css/src/variables";
 
 .nijmegen-side-navigation {
   display: var(--denhaag-side-navigation-display, flex);
@@ -8,7 +9,7 @@
   min-width: var(--denhaag-side-navigation-min-width); /* stylelint-disable-line property-disallowed-list */
   row-gap: var(--denhaag-side-navigation-row-gap);
 
-  @media (width <= 1023px) {
+  @media (width <= $nijmegen-breakpoint-xl) {
     display: var(--denhaag-side-navigation-mobile-display, flex);
   }
 }

@@ -2,6 +2,8 @@ import style from '@gemeentenijmegen/components-css/header/index.scss';
 import html from './template.html';
 
 class NijmegenHeader extends HTMLElement {
+  #onPageHide = () => this.#closeAllMenus();
+
   constructor() {
     super();
     const template = document.createElement('template');
@@ -33,6 +35,12 @@ class NijmegenHeader extends HTMLElement {
         this.#closeAllMenus();
       });
     }
+
+    window.addEventListener('pagehide', this.#onPageHide);
+  }
+
+  disconnectedCallback() {
+    window.removeEventListener('pagehide', this.#onPageHide);
   }
 
   #handleClick(target, expandableElements) {
@@ -123,7 +131,6 @@ class NijmegenHeader extends HTMLElement {
   }
 
   #hasSmallPanel(button) {
-    // Check if the button's next sibling is a small panel
     const panel = button.nextElementSibling;
     if (panel && panel.classList.contains('nijmegen-header__panel--small')) {
       return true;
@@ -136,13 +143,11 @@ class NijmegenHeader extends HTMLElement {
     const backdrop = this.querySelector('.nijmegen-header__backdrop');
     if (!backdrop) return;
 
-    // Check ALL expandable elements in the component
     const allExpandableElements = this.querySelectorAll('[aria-expanded]:not(.nijmegen-mobile-menu__link)');
 
     const anyExpanded = Array.from(allExpandableElements).some((element) => {
       const isExpanded = element.getAttribute('aria-expanded') === 'true';
 
-      // Ignore small panels
       if (this.#hasSmallPanel(element)) {
         return false;
       }

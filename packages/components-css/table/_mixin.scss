@@ -1,3 +1,5 @@
+@import "~@gemeentenijmegen/layout-css/src/variables";
+
 @mixin table-cell {
   text-align: start;
   vertical-align: top;
@@ -30,7 +32,7 @@
   color: var(--nijmegen-table-header-color);
   font-weight: var(--nijmegen-table-header-cell-font-weight);
 
-  @media (width <576px) {
+  @media (width < $nijmegen-breakpoint-sm) {
     display: none;
   }
 }
@@ -40,7 +42,7 @@
   border-block-end-style: solid;
   border-block-end-width: var(--nijmegen-table-row-large-vw-border-block-end-width);
 
-  @media (width <576px) {
+  @media (width < $nijmegen-breakpoint-sm) {
     border-block-end-width: var(--nijmegen-table-row-border-block-end-width);
   }
 }
@@ -54,7 +56,7 @@
   padding-inline-end: var(--nijmegen-table-header-cell-large-vw-padding-inline-end);
   padding-inline-start: var(--nijmegen-table-header-cell-large-vw-padding-inline-start);
 
-  @media (width >=576px) {
+  @media (width >= $nijmegen-breakpoint-sm) {
     &.nijmegen-table__header-cell-end {
       text-align: end;
     }
@@ -69,13 +71,13 @@
   padding-inline-end: var(--nijmegen-table-data-cell-large-vw-padding-inline-end);
   padding-inline-start: var(--nijmegen-table-data-cell-large-vw-padding-inline-start);
 
-  @media (width >=576px) {
+  @media (width >= $nijmegen-breakpoint-sm) {
     &.nijmegen-table__data-cell-end {
       text-align: end;
     }
   }
 
-  @media (width <576px) {
+  @media (width < $nijmegen-breakpoint-sm) {
     @include nijmegen-table__data-cell-responsive;
   }
 }

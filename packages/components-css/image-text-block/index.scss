@@ -1,3 +1,5 @@
+@import "~@gemeentenijmegen/layout-css/src/variables";
+
 .nijmegen-image-text-block {
   display: flex;
 
@@ -7,13 +9,13 @@
   }
   /* stylelint-enable */
 
-  @media (width <992px) {
+  @media (width < $nijmegen-breakpoint-lg) {
     flex: 1;
     flex-direction: column-reverse;
     gap: var(--nijmegen-image-text-block-row-gap);
   }
 
-  @media (width >=992px) {
+  @media (width >= $nijmegen-breakpoint-lg) {
     align-items: center;
     flex-direction: row-reverse;
     gap: var(--nijmegen-image-text-block-large-vw-column-gap);
@@ -21,7 +23,7 @@
 }
 
 .nijmegen-image-text-block--reverse {
-  @media (width >=992px) {
+  @media (width >= $nijmegen-breakpoint-lg) {
     flex-direction: row;
   }
 }
@@ -31,7 +33,7 @@
   flex-direction: column;
   gap: var(--nijmegen-image-text-block-content-row-gap);
 
-  @media (width >=992px) {
+  @media (width >= $nijmegen-breakpoint-lg) {
     flex-shrink: 0;
     width: 50%; /* stylelint-disable-line property-disallowed-list */
   }
