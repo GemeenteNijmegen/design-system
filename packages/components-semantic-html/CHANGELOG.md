@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.15 (2026-11-10)
+
+**Note:** Version bump only for package @gemeentenijmegen/semantic-html
+
 ## 0.1.14 (2026-10-27)
 
 **Note:** Version bump only for package @gemeentenijmegen/semantic-html
