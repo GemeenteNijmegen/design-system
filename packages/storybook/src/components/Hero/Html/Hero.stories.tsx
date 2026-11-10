@@ -67,6 +67,18 @@ export const Autocomplete: Story = {
   },
 };
 
+export const Image: Story = {
+  name: 'Hero category, with image',
+  args: {
+    title: 'Heading',
+    text: 'Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod',
+    image: 'https://picsum.photos/640/360/',
+    image_alt: 'Image description',
+    button_group: false,
+    type: 'image',
+  },
+};
+
 export const Category: Story = {
   name: 'Hero category, without Image',
   args: {
@@ -78,13 +90,13 @@ export const Category: Story = {
 };
 
 export const BackgroundImage: Story = {
-  name: 'Hero category, with Image',
+  name: 'Hero category, with background image',
   args: {
     title: 'Heading',
     text: 'Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod',
     image: 'https://picsum.photos/640/360/',
     image_alt: 'Image description',
     button_group: true,
-    type: 'image',
+    type: 'background-image',
   },
 };
