@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.21 (2026-11-11)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
 ## 0.1.20 (2026-11-10)
 
 **Note:** Version bump only for package @gemeentenijmegen/layout-css
