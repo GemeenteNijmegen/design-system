@@ -1,0 +1,12 @@
+import{j as e}from"./jsx-runtime-CKrituN3.js";import{C as n}from"./chunk-HLWAVYOI-BYB51Zr0.js";import{A as m,I as a,C as s,B as c}from"./Hero.stories-DNPOP6Mt.js";import{useMDXComponents as r}from"./index-DI5IigMn.js";import"./index-CBqU2yxZ.js";import"./_commonjsHelpers-BosuxZz1.js";import"./iframe-J-oxc55e.js";import"../sb-preview/runtime.js";import"./react-18-D8cruF67.js";import"./index-BtM5VmRH.js";import"./index-CnWNB3mc.js";import"./extends-CCbyfPlC.js";import"./_getPrototype-nBa_wnor.js";import"./index-ltOY3w3e.js";import"./server.browser-rAMDWieH.js";import"./index-CzVPJMJZ.js";import"./index-7bwtWdbn.js";import"./clsx-B-dksMZM.js";import"./_Search-Dhx-Vedu.js";/* empty css                  *//* empty css              */import"./IconX-uKCbV2yY.js";import"./createReactComponent-D_5DJZVZ.js";import"./IconSearch-BrE3VivA.js";function i(o){const t=Object.assign({h1:"h1",h2:"h2",p:"p",table:"table",thead:"thead",tr:"tr",th:"th",tbody:"tbody",td:"td",a:"a",h3:"h3"},r(),o.components);return e.jsxs(e.Fragment,{children:[e.jsx(t.h1,{id:"documentatie-hero-component",children:"Documentatie hero component"}),`
+`,e.jsx(t.h2,{id:"component",children:"Component"}),`
+`,e.jsx(t.p,{children:"Dit component is op maat ontwikkeld op basis van het ontwerp voor de Gemeente Nijmegen."}),`
+`,e.jsxs(t.table,{children:[e.jsx(t.thead,{children:e.jsxs(t.tr,{children:[e.jsx(t.th,{children:"Link"}),e.jsx(t.th,{children:"Omschrijving"})]})}),e.jsx(t.tbody,{children:e.jsxs(t.tr,{children:[e.jsx(t.td,{children:e.jsx(t.a,{href:"https://www.figma.com/design/g3AieWAFD3NtkbDDTTFC30/Novio---Nijmegen-Design-System?node-id=1259-2043",target:"_blank",rel:"nofollow noopener noreferrer",children:"Figma gemeente Nijmegen"})}),e.jsx(t.td,{children:"Design documentatie van dit component."})]})})]}),`
+`,e.jsx(t.h3,{id:"homepage",children:"Homepage"}),`
+`,e.jsx(n,{of:m,sourceState:"none"}),`
+`,e.jsx(t.h3,{id:"category-with-image",children:"Category with image"}),`
+`,e.jsx(n,{of:a,sourceState:"none"}),`
+`,e.jsx(t.h3,{id:"category-withoud-image",children:"Category withoud image"}),`
+`,e.jsx(n,{of:s,sourceState:"none"}),`
+`,e.jsx(t.h3,{id:"category-background-image",children:"Category background image"}),`
+`,e.jsx(n,{of:c,sourceState:"none"})]})}function _(o={}){const{wrapper:t}=Object.assign({},r(),o.components);return t?e.jsx(t,Object.assign({},o,{children:e.jsx(i,o)})):i(o)}export{_ as default};
