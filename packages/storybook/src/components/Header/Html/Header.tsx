@@ -329,53 +329,62 @@ export const HeaderStoryWebComponent = ({ state = '', variant = '', account = fa
     <nijmegen-header>
       <div className="nijmegen-header__content--small">
         <div className="nijmegen-header__content--small--inner">
-          {variant !== 'funnel' && (
-            <button
-              className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu', {
-                'nijmegen-toolbar-button--active': state === 'active',
-                'nijmegen-toolbar-button--hover': state === 'hover',
-                'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-              })}
-              type="button"
-              aria-expanded={expanded}
-              aria-controls="mobile-menu"
-              aria-label="Menu openen"
-            >
-              Menu
-            </button>
-          )}
+          <img src={logoMerk} alt="Beeldmerk gemeente Nijmegen"></img>
           <div>
-            <img src={logoMerk} alt="Beeldmerk gemeente Nijmegen"></img>
+            {variant !== 'funnel' && (
+              <button
+                className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-world', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-label="Translate"
+              ></button>
+            )}
+            {variant !== 'funnel' && (
+              <button
+                className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-search', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-expanded={expanded}
+                aria-controls="search-container"
+                aria-label="Zoeken"
+              ></button>
+            )}
+            {variant === 'funnel' && account === true && (
+              <button
+                className={clsx('nijmegen-toolbar-button', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-expanded={expanded}
+                aria-label="Account"
+              >
+                A. van der Klap
+              </button>
+            )}
+            {variant !== 'funnel' && (
+              <button
+                className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-expanded={expanded}
+                aria-controls="mobile-menu"
+                aria-label="Menu openen"
+              >
+                Menu
+              </button>
+            )}
           </div>
-          {variant !== 'funnel' && (
-            <button
-              className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-search', {
-                'nijmegen-toolbar-button--active': state === 'active',
-                'nijmegen-toolbar-button--hover': state === 'hover',
-                'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-              })}
-              type="button"
-              aria-expanded={expanded}
-              aria-controls="search-container"
-              aria-label="Zoeken"
-            >
-              Zoeken
-            </button>
-          )}
-          {variant === 'funnel' && account === true && (
-            <button
-              className={clsx('nijmegen-toolbar-button', {
-                'nijmegen-toolbar-button--active': state === 'active',
-                'nijmegen-toolbar-button--hover': state === 'hover',
-                'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-              })}
-              type="button"
-              aria-expanded={expanded}
-              aria-label="Account"
-            >
-              A. van der Klap
-            </button>
-          )}
         </div>
 
         {variant === 'default' && (
@@ -721,52 +730,62 @@ export const HeaderStoryHtml = ({ state = '', expanded = '', variant = '', accou
     <header className="nijmegen-header">
       <div className="nijmegen-header__content--small">
         <div className="nijmegen-header__content--small--inner">
-          {variant !== 'funnel' && (
-            <button
-              className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu', {
-                'nijmegen-toolbar-button--active': state === 'active',
-                'nijmegen-toolbar-button--hover': state === 'hover',
-                'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-              })}
-              type="button"
-              aria-expanded={expanded}
-              aria-controls="mobile-menu"
-              aria-label="Menu openen"
-            >
-              Menu
-            </button>
-          )}
+          <img src={logoMerk} alt="Beeldmerk gemeente Nijmegen"></img>
           <div>
-            <img src={logoMerk} alt="Beeldmerk gemeente Nijmegen"></img>
+            {variant !== 'funnel' && (
+              <button
+                className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-world', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-label="Translate"
+              ></button>
+            )}
+            {variant !== 'funnel' && (
+              <button
+                className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-search', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-expanded={expanded}
+                aria-controls="search-container"
+                aria-label="Zoeken"
+              ></button>
+            )}
+            {variant === 'funnel' && account === true && (
+              <button
+                className={clsx('nijmegen-toolbar-button', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-expanded={expanded}
+                aria-label="Account"
+              >
+                A. van der Klap
+              </button>
+            )}
+            {variant !== 'funnel' && (
+              <button
+                className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-expanded={expanded}
+                aria-controls="mobile-menu"
+                aria-label="Menu openen"
+              >
+                Menu
+              </button>
+            )}
           </div>
-          {variant !== 'funnel' && (
-            <button
-              className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-search', {
-                'nijmegen-toolbar-button--active': state === 'active',
-                'nijmegen-toolbar-button--hover': state === 'hover',
-                'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-              })}
-              type="button"
-              aria-expanded={expanded}
-              aria-label="Zoeken"
-            >
-              Zoeken
-            </button>
-          )}
-          {variant === 'funnel' && account === true && (
-            <button
-              className={clsx('nijmegen-toolbar-button', {
-                'nijmegen-toolbar-button--active': state === 'active',
-                'nijmegen-toolbar-button--hover': state === 'hover',
-                'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-              })}
-              type="button"
-              aria-expanded={expanded}
-              aria-label="Account"
-            >
-              A. van der Klap
-            </button>
-          )}
         </div>
 
         {variant === 'default' && (
