@@ -61,6 +61,10 @@ class NijmegenHeader extends HTMLElement {
   }
 
   #handleContainerToggle(button) {
+    if (button.classList.contains('nijmegen-header-item--icon-search')) {
+      this.#manageSearchFocus(button, button.nextElementSibling);
+    }
+
     const controlsId = button.getAttribute('aria-controls');
     if (!controlsId) return;
 
@@ -84,6 +88,10 @@ class NijmegenHeader extends HTMLElement {
 
     currentContainer.element.classList.toggle(currentContainer.visibleClass, isExpanded);
 
+    if (controlsId === 'search-container') {
+      this.#manageSearchFocus(button, currentContainer.element);
+    }
+
     if (isExpanded) {
       Object.entries(containers).forEach(([id, config]) => {
         if (id !== controlsId && config.element) {
@@ -96,6 +104,16 @@ class NijmegenHeader extends HTMLElement {
           }
         }
       });
+    }
+  }
+
+  #manageSearchFocus(button, panel) {
+    if (!panel) return;
+
+    if (button.getAttribute('aria-expanded') === 'true') {
+      panel.querySelector('input')?.focus();
+    } else if (panel.contains(document.activeElement)) {
+      button.focus();
     }
   }
 
