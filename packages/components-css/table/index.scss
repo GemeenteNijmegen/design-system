@@ -1,4 +1,5 @@
 @import "./mixin";
+@import "~@gemeentenijmegen/layout-css/src/variables";
 
 .nijmegen-table {
   @include nijmegen-table;
@@ -7,7 +8,7 @@
     width: 100%; /* stylelint-disable-line property-disallowed-list */
   }
 
-  @media (width <576px) {
+  @media (width < $nijmegen-breakpoint-sm) {
     width: 100%; /* stylelint-disable-line property-disallowed-list */
   }
 }

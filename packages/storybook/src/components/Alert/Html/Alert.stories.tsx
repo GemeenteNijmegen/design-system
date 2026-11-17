@@ -42,7 +42,9 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  args: { global: false },
+};
 
 export const Negative: Story = {
   args: { ...Default.args, type: 'error' },
@@ -54,4 +56,20 @@ export const Positive: Story = {
 
 export const Warning: Story = {
   args: { ...Default.args, type: 'warning' },
+};
+
+export const DefaultGlobal: Story = {
+  args: { global: true },
+};
+
+export const NegativeGlobal: Story = {
+  args: { ...Default.args, type: 'error', global: true },
+};
+
+export const PositiveGlobal: Story = {
+  args: { ...Default.args, type: 'ok', global: true },
+};
+
+export const WarningGlobal: Story = {
+  args: { ...Default.args, type: 'warning', global: true },
 };
