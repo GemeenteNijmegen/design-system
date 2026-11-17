@@ -120,6 +120,83 @@ Error: Input required and not supplied: token
 
 ---
 
+## Commit message convention
+
+This repository enforces the [Conventional Commits](https://www.conventionalcommits.org/) specification for all commit messages. This is required because [Lerna](https://lerna.js.org/) uses commit messages to automatically determine version bumps and generate changelogs.
+
+### Format
+
+```bash
+<type>(<scope>): <short description>
+```
+
+### Types
+
+| Type       | When to use                              | Appears in changelog |
+| ---------- | ---------------------------------------- | -------------------- |
+| `feat`     | A new feature or visible addition        | Yes (Features)       |
+| `fix`      | A bug fix                                | Yes (Bug Fixes)      |
+| `perf`     | A performance improvement                | Yes (Performance)    |
+| `refactor` | Code change that is not a fix or feature | No                   |
+| `style`    | Formatting, whitespace (no logic change) | No                   |
+| `docs`     | Documentation changes                    | No                   |
+| `test`     | Adding or updating tests                 | No                   |
+| `chore`    | Maintenance tasks, config changes        | No                   |
+| `ci`       | CI/CD pipeline changes                   | No                   |
+| `build`    | Build system or dependency changes       | No                   |
+
+Only `feat`, `fix`, and `perf` commits appear in the generated changelog. Use these intentionally to communicate meaningful changes to consumers of the packages.
+
+### Scopes
+
+A scope is required and must be one of the following package names or reserved scopes:
+
+| Scope                    | Package                                    |
+| ------------------------ | ------------------------------------------ |
+| `components-css`         | `@gemeentenijmegen/components-css`         |
+| `components-react`       | `@gemeentenijmegen/components-react`       |
+| `layout-css`             | `@gemeentenijmegen/layout-css`             |
+| `semantic-html`          | `@gemeentenijmegen/semantic-html`          |
+| `web-components`         | `@gemeentenijmegen/web-components`         |
+| `web-components-react`   | `@gemeentenijmegen/web-components-react`   |
+| `web-components-stencil` | `@gemeentenijmegen/web-components-stencil` |
+| `storybook`              | `@gemeentenijmegen/storybook`              |
+| `design-tokens`          | `@gemeentenijmegen/design-tokens`          |
+| `design-tokens-dark`     | `@gemeentenijmegen/design-tokens-dark`     |
+| `assets`                 | `@gemeentenijmegen/assets`                 |
+| `font`                   | `@gemeentenijmegen/font`                   |
+| `deps`                   | Dependency updates (not package-specific)  |
+| `ci`                     | CI/CD configuration                        |
+| `release`                | Release commits                            |
+| `root`                   | Root-level configuration changes           |
+
+### Examples
+
+```bash
+feat(components-css): add hover state to button component
+fix(design-tokens): correct contrast ratio for primary color
+perf(web-components): reduce bundle size by lazy loading icons
+chore(deps): update rollup to v4
+docs(storybook): add usage examples to accordion story
+ci(ci): add automated release workflow
+```
+
+### Breaking changes
+
+To signal a breaking change, add `!` after the type/scope or add a `BREAKING CHANGE:` footer. Breaking changes trigger a major version bump.
+
+```bash
+feat(design-tokens)!: rename all color tokens to use semantic naming
+
+fix(components-css): update button padding
+
+BREAKING CHANGE: The --button-padding-inline token has been renamed to --button-padding-inline-start and --button-padding-inline-end.
+```
+
+### Enforcement
+
+Commit messages are validated automatically on commit via [commitlint](https://commitlint.js.org/). Commits with invalid messages will be rejected. Run `echo "your message" | pnpm commitlint` to test a message before committing.
+
 ## Code of Conduct
 
 We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. Read [our Code of Conduct](CODE_OF_CONDUCT.md) if you haven't already.
