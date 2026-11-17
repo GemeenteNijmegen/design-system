@@ -75,6 +75,7 @@
     "components/progress-list.tokens",
     "components/task-card.tokens",
     "components/task-navigation.tokens",
-    "layout.tokens"
+    "layout.tokens",
+    "feature-block.tokens"
   ]
 }
