@@ -3,6 +3,96 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.26 (2026-11-17)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.25 (2026-11-17)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.24 (2026-11-17)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.23 (2026-11-12)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.22 (2026-11-11)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.21 (2026-11-11)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.20 (2026-11-10)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.19 (2026-11-10)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.18 (2026-11-10)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.17 (2026-11-10)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.16 (2026-11-10)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.15 (2026-11-10)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.14 (2026-10-27)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.13 (2026-10-14)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.12 (2026-09-02)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.11 (2026-09-02)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.10 (2026-09-02)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.9 (2026-07-28)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.8 (2026-07-20)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.7 (2026-07-20)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.6 (2026-07-08)
+
+**Note:** Version bump only for package @gemeentenijmegen/layout-css
+
+## 0.1.5 (2026-07-06)
+
+### Bug Fixes
+
+* contrain breadcrumb list with max-inline-size ([#278](https://github.com/GemeenteNijmegen/design-system/issues/278)) ([e9637f7](https://github.com/GemeenteNijmegen/design-system/commit/e9637f70c161bfae0d9cfb3f998e53c02e36377f))
+
 ## 0.1.4 (2026-04-21)
 
 **Note:** Version bump only for package @gemeentenijmegen/layout-css
