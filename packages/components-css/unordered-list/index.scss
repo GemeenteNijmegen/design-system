@@ -1,0 +1,17 @@
+.nijmegen-unordered-list {
+  font-size: var(--utrecht-unordered-list-font-size);
+  line-height: var(--utrecht-unordered-list-line-height);
+  margin-block-end: var(--utrecht-unordered-list-item-margin-block-end);
+  margin-inline-start: var(--utrecht-unordered-list-item-margin-block-start);
+  padding-inline-end: var(--utrecht-unordered-list-padding-inline-end);
+  padding-inline-start: var(--utrecht-unordered-list-padding-inline-start);
+  padding-inline-start: var(--utrecht-unordered-list-padding-inline-start, 2ch);
+
+  li {
+    list-style: disc;
+
+    &::marker {
+      color: var(--utrecht-unordered-list-marker-color);
+    }
+  }
+}
