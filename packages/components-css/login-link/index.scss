@@ -1,0 +1,68 @@
+@import "~@utrecht/focus-ring-css/src/mixin";
+
+/* stylelint-disable custom-property-pattern */
+.nijmegen-login-link {
+  align-items: center;
+  appearance: button;
+  background-color: var(--lux-login-link-background-color);
+  border-color: var(--lux-login-link-border-color);
+  border-radius: var(--lux-login-link-border-radius);
+  border-style: solid;
+  border-width: var(--lux-login-link-border-width);
+  color: var(--lux-login-link-color);
+  column-gap: var(--lux-login-link-column-gap);
+  display: flex;
+  font-family: var(--lux-login-link-font-family);
+  font-size: var(--lux-login-link-font-size);
+  font-weight: var(--lux-login-link-font-weight);
+  justify-content: flex-start;
+  line-height: var(--lux-login-link-line-height);
+  margin-block: 0;
+  margin-inline: 0;
+  min-block-size: var(--lux-login-link-min-block-size);
+  min-inline-size: var(--lux-login-link-min-inline-size);
+  padding-block-end: var(--lux-login-link-padding-block-end);
+  padding-block-start: var(--lux-login-link-padding-block-start);
+  padding-inline-end: var(--lux-login-link-padding-inline-end);
+  padding-inline-start: var(--lux-login-link-padding-inline-start);
+  user-select: none;
+}
+
+.nijmegen-login-link--hover,
+.nijmegen-login-link:hover {
+  background-color: var(--lux-login-link-hover-background-color);
+  border-color: var(--lux-login-link-hover-border-color);
+  color: var(--lux-login-link-hover-color);
+}
+
+.nijmegen-login-link--active,
+.nijmegen-login-link:active {
+  background-color: var(--lux-login-link-active-background-color);
+  border-color: var(--lux-login-link-active-border-color);
+  color: var(--lux-login-link-active-color);
+}
+
+.nijmegen-login-link--focus-visible,
+.nijmegen-login-link:focus-visible {
+  @include utrecht-focus-ring;
+
+  background-color: var(--lux-login-link-focus-visible-background-color, #daeae7);
+  border-color: var(--lux-login-link-focus-visible-border-color, transparent);
+  color: var(--lux-login-link-focus-visible-color, #000);
+}
+
+.nijmegen-sr-only {
+  clip: rect(0, 0, 0, 0);
+  height: 1px; /* stylelint-disable-line property-disallowed-list */
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; /* stylelint-disable-line property-disallowed-list */
+}
+
+.nijmegen-login-link__logo {
+  block-size: var(--lux-login-link-icon-size);
+  inline-size: var(--lux-login-link-icon-size);
+  line-height: 1;
+}
+/* stylelint-enable custom-property-pattern */
