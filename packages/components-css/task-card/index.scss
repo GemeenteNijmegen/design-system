@@ -1,0 +1,115 @@
+@import "~@utrecht/focus-ring-css/src/mixin";
+
+.nijmegen-task-card {
+  background-color: var(--denhaag-action-background-color);
+  border-color: var(--denhaag-action-border-color);
+  border-radius: var(--denhaag-action-border-radius);
+  border-style: var(--denhaag-action-border-style);
+  border-width: var(--denhaag-action-border-width);
+  color: var(--denhaag-action-color);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--denhaag-action-font-familiy);
+  gap: var(--denhaag-action-gap);
+  justify-content: space-between;
+  padding-block-end: var(--denhaag-action-padding-block-end);
+  padding-block-start: var(--denhaag-action-padding-block-start);
+  padding-inline-end: var(--denhaag-action-padding-inline-end);
+  padding-inline-start: var(--denhaag-action-padding-inline-start);
+  text-decoration: none;
+
+  @media (width >= 768px) {
+    align-items: center;
+    flex-direction: row;
+    gap: var(--denhaag-action-lg-gap);
+    padding-block-end: var(--denhaag-action-lg-padding-block-end);
+    padding-block-start: var(--denhaag-action-lg-padding-block-start);
+  }
+
+  @media (width < 768px) {
+    .utrecht-button {
+      max-inline-size: 100%;
+      width: 100%; /* stylelint-disable-line property-disallowed-list */
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+
+    b,
+    strong {
+      font-weight: var(--denhaag-action-content-bold-font-weight);
+    }
+  }
+
+  &__context {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    gap: var(--denhaag-action-context-gap, 0.5rem);
+
+    @media (width >= 768px) {
+      align-items: center;
+      flex-direction: row;
+      gap: var(--denhaag-action-context-lg-gap, 1rem);
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex: 1 0 auto;
+    gap: var(--denhaag-action-details-gap);
+
+    @media (width >= 768px) {
+      gap: var(--denhaag-action-details-lg-gap);
+    }
+  }
+
+  &__date {
+    align-items: center;
+    color: var(--denhaag-action-date-color);
+    display: flex;
+    font-weight: var(--denhaag-action-date-font-weight);
+    gap: var(--denhaag-action-date-gap);
+
+    &--warning {
+      align-items: center;
+      color: var(--denhaag-action-date-warning-color);
+      display: flex;
+      font-weight: var(--denhaag-action-date-warning-font-weight);
+      gap: var(--denhaag-action-date-warning-gap);
+    }
+  }
+
+  &__actions {
+    align-items: center;
+    display: flex;
+    gap: var(--denhaag-action-actions-gap);
+  }
+
+  &__link-icon {
+    color: var(--denhaag-action-link-icon-color);
+    flex-shrink: 0;
+    width: var(--denhaag-action-link-icon-width); /* stylelint-disable-line property-disallowed-list */
+  }
+
+  &__warning-icon {
+    color: var(--denhaag-action-warning-icon-color);
+    flex-shrink: 0;
+    width: var(--denhaag-action-warning-icon-width); /* stylelint-disable-line property-disallowed-list */
+  }
+
+  & + & {
+    border-top: none; /* stylelint-disable-line property-disallowed-list */
+  }
+}
+
+.nijmegen-task-card--hover,
+.nijmegen-task-card:hover {
+  background-color: var(--denhaag-action-hover-background-color, #f3f3f3);
+}
+
+.nijmegen-task-card--focus-visible,
+.nijmegen-task-card:focus-visible {
+  @include utrecht-focus-ring;
+}

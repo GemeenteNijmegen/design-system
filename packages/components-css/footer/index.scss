@@ -1,3 +1,5 @@
+@import "~@gemeentenijmegen/layout-css/src/variables";
+
 .nijmegen-footer {
   background-color: var(--nijmegen-page-footer-background-color);
   color: var(--nijmegen-page-footer-color);
@@ -59,12 +61,12 @@
   padding-inline-end: var(--nijmegen-page-footer-main-footer-content-padding-inline-end);
   padding-inline-start: var(--nijmegen-page-footer-main-footer-content-padding-inline-start);
 
-  @media (width <1024px) {
+  @media (width < $nijmegen-breakpoint-lg) {
     display: flex;
     flex-direction: column;
   }
 
-  @media (width >=1024px) {
+  @media (width >= $nijmegen-breakpoint-lg) {
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -84,7 +86,7 @@
   padding-inline-end: var(--nijmegen-page-footer-sub-footer-content-padding-inline-end);
   padding-inline-start: var(--nijmegen-page-footer-sub-footer-content-padding-inline-start);
 
-  @media (width <1024px) {
+  @media (width < $nijmegen-breakpoint-lg) {
     flex-direction: column-reverse;
     gap: var(--nijmegen-page-footer-content-row-gap);
   }

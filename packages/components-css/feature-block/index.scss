@@ -1,0 +1,70 @@
+.nijmegen-feature-block {
+  position: relative;
+
+  &__content {
+    background-color: var(--nijmegen-feature-block-content-background-color, white);
+    display: flex;
+    flex-direction: column;
+    gap: var(--nijmegen-feature-block-content-row-gap);
+    grid-column-end: 6;
+    grid-column-start: 1;
+    padding-block-end: var(--nijmegen-feature-block-content-padding-block-end);
+    padding-block-start: var(--nijmegen-feature-block-content-padding-block-start);
+    padding-inline-end: var(--nijmegen-feature-block-content-padding-inline-end);
+    padding-inline-start: var(--nijmegen-feature-block-content-padding-inline-start);
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    gap: var(--nijmegen-feature-block-message-row-gap, 8px);
+  }
+
+  &__figure {
+    margin: 0; /* stylelint-disable-line property-disallowed-list */
+  }
+
+  @media (width >= $nijmegen-breakpoint-md) {
+    .nijmegen-feature-block__container {
+      display: grid;
+      grid-auto-flow: dense;
+      grid-template-columns: repeat(12, 1fr);
+      margin-inline-end: auto;
+      margin-inline-start: auto;
+      /* stylelint-disable property-disallowed-list */
+      max-width: var(--nijmegen-feature-block-large-vw-container-max-inline-size, 1024px);
+      /* stylelint-enable property-disallowed-list */
+      padding-block-end: var(--nijmegen-feature-block-large-vw-container-padding-block-end, 80px);
+      padding-block-start: var(--nijmegen-feature-block-large-vw-container-padding-block-start, 80px);
+      padding-inline-end: var(--nijmegen-feature-block-large-vw-container-padding-inline-end, 0);
+      padding-inline-start: var(--nijmegen-feature-block-large-vw-container-padding-inline-start, 40px);
+      width: 100%; /* stylelint-disable-line property-disallowed-list */
+    }
+
+    .nijmegen-feature-block__figure {
+      inset: 0;
+      position: absolute;
+      z-index: -1;
+
+      img {
+        height: 100%; /* stylelint-disable-line property-disallowed-list */
+        object-fit: cover;
+        object-position: center center;
+        width: 100%; /* stylelint-disable-line property-disallowed-list */
+      }
+    }
+  }
+
+  @media (width < $nijmegen-breakpoint-md) {
+    .nijmegen-feature-block__container {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .nijmegen-feature-block__figure {
+      img {
+        width: 100%; /* stylelint-disable-line property-disallowed-list */
+      }
+    }
+  }
+}
