@@ -22,6 +22,46 @@
       "line-height": {
         "value": "{utrecht.document.line-height}",
         "type": "lineHeights"
+      },
+      "background-color": {
+        "value": "{nijmegen.color.none}",
+        "type": "color"
+      },
+      "color": {
+        "value": "{nijmegen.form-control.invalid.color}",
+        "type": "color"
+      },
+      "margin-block-end": {
+        "value": "{nijmegen.space.75}",
+        "type": "spacing"
+      },
+      "margin-block-start": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing"
+      },
+      "padding-block-end": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing"
+      },
+      "padding-block-start": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing"
+      },
+      "padding-inline-end": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing"
+      },
+      "padding-inline-start": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing"
+      }
+    }
+  },
+  "todo": {
+    "form-field-error-message": {
+      "column-gap": {
+        "value": "{nijmegen.space.50}",
+        "type": "spacing"
       }
     }
   }
