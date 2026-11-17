@@ -16,6 +16,14 @@
       "color": {
         "value": "{nijmegen.color.foreground.subdued}",
         "type": "color"
+      },
+      "margin-block-end": {
+        "value": "{nijmegen.space.75}",
+        "type": "spacing"
+      },
+      "margin-block-start": {
+        "value": "{nijmegen.space.0}",
+        "type": "spacing"
       }
     }
   }

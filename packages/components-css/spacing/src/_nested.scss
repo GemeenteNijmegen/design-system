@@ -2,6 +2,8 @@
 /* stylelint-disable */
 /* prettier-ignore */
 
+@import "~@gemeentenijmegen/layout-css/src/variables";
+
 .nijmegen-table-of-contents {
   .utrecht-heading-4 {
     margin-block-end: 0;
@@ -29,7 +31,7 @@
     h4,
     h5 {
       max-inline-size: 70%;
-      @media (width <992px) {
+      @media (width < $nijmegen-breakpoint-lg) {
         max-inline-size: 100%;
       }
     }

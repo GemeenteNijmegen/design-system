@@ -13,6 +13,7 @@
     "components/button.tokens",
     "components/button-group.tokens",
     "components/card.tokens",
+    "components/case-card.tokens",
     "components/card-event.tokens",
     "components/cards-news.tokens",
     "components/card-persona.tokens",
@@ -24,6 +25,7 @@
     "components/dropdown-menu.tokens",
     "components/email-input.tokens",
     "components/fieldset.tokens",
+    "components/file.tokens",
     "components/form-field.tokens",
     "components/form-field-description.tokens",
     "components/form-field-error-message.tokens",
@@ -74,6 +76,9 @@
     "components/top-task-card.tokens",
     "components/unordered-list.tokens",
     "components/breadcrumb.tokens",
-    "layout.tokens"
+    "components/textbox.tokens",
+    "components/progress-list.tokens",
+    "layout.tokens",
+    "feature-block.tokens"
   ]
 }
