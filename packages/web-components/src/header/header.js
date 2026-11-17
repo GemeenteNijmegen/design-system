@@ -2,6 +2,8 @@ import style from '@gemeentenijmegen/components-css/header/index.scss';
 import html from './template.html';
 
 class NijmegenHeader extends HTMLElement {
+  #onPageHide = () => this.#closeAllMenus();
+
   constructor() {
     super();
     const template = document.createElement('template');
@@ -33,6 +35,12 @@ class NijmegenHeader extends HTMLElement {
         this.#closeAllMenus();
       });
     }
+
+    window.addEventListener('pagehide', this.#onPageHide);
+  }
+
+  disconnectedCallback() {
+    window.removeEventListener('pagehide', this.#onPageHide);
   }
 
   #handleClick(target, expandableElements) {
@@ -53,6 +61,10 @@ class NijmegenHeader extends HTMLElement {
   }
 
   #handleContainerToggle(button) {
+    if (button.classList.contains('nijmegen-header-item--icon-search')) {
+      this.#manageSearchFocus(button, button.nextElementSibling);
+    }
+
     const controlsId = button.getAttribute('aria-controls');
     if (!controlsId) return;
 
@@ -76,6 +88,10 @@ class NijmegenHeader extends HTMLElement {
 
     currentContainer.element.classList.toggle(currentContainer.visibleClass, isExpanded);
 
+    if (controlsId === 'search-container') {
+      this.#manageSearchFocus(button, currentContainer.element);
+    }
+
     if (isExpanded) {
       Object.entries(containers).forEach(([id, config]) => {
         if (id !== controlsId && config.element) {
@@ -88,6 +104,16 @@ class NijmegenHeader extends HTMLElement {
           }
         }
       });
+    }
+  }
+
+  #manageSearchFocus(button, panel) {
+    if (!panel) return;
+
+    if (button.getAttribute('aria-expanded') === 'true') {
+      panel.querySelector('input')?.focus();
+    } else if (panel.contains(document.activeElement)) {
+      button.focus();
     }
   }
 
@@ -123,7 +149,6 @@ class NijmegenHeader extends HTMLElement {
   }
 
   #hasSmallPanel(button) {
-    // Check if the button's next sibling is a small panel
     const panel = button.nextElementSibling;
     if (panel && panel.classList.contains('nijmegen-header__panel--small')) {
       return true;
@@ -136,13 +161,11 @@ class NijmegenHeader extends HTMLElement {
     const backdrop = this.querySelector('.nijmegen-header__backdrop');
     if (!backdrop) return;
 
-    // Check ALL expandable elements in the component
     const allExpandableElements = this.querySelectorAll('[aria-expanded]:not(.nijmegen-mobile-menu__link)');
 
     const anyExpanded = Array.from(allExpandableElements).some((element) => {
       const isExpanded = element.getAttribute('aria-expanded') === 'true';
 
-      // Ignore small panels
       if (this.#hasSmallPanel(element)) {
         return false;
       }

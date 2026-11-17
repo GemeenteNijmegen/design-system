@@ -19,7 +19,7 @@
       },
       "text-decoration-thickness": {
         "type": "other",
-        "value": "10%",
+        "value": "5%",
         "description": "[code-only]"
       },
       "text-underline-offset": {
@@ -46,12 +46,16 @@
         },
         "text-decoration": {
           "type": "textDecoration",
-          "value": "None"
+          "value": "{utrecht.link.text-decoration}"
         },
         "text-decoration-thickness": {
           "type": "other",
-          "value": "auto",
+          "value": "10%",
           "description": "[code-only]"
+        },
+        "text-underline-offset": {
+          "value": "18%",
+          "type": "other"
         }
       },
       "focus": {
@@ -67,7 +71,7 @@
       "focus-visible": {
         "text-decoration": {
           "type": "textDecoration",
-          "value": "None"
+          "value": "{utrecht.link.text-decoration}"
         },
         "text-decoration-thickness": {
           "type": "other",

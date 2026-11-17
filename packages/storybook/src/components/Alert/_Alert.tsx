@@ -1,5 +1,6 @@
-import { IconAlertCircle, IconAlertTriangle, IconCircleCheck, IconInfoCircle } from '@tabler/icons-react';
-import { Alert, Heading4, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import { IconAlertCircle, IconAlertTriangle, IconCircleCheck, IconInfoCircle, IconX } from '@tabler/icons-react';
+import { Heading4, Paragraph } from '@utrecht/component-library-react/dist/css-module';
+import '@gemeentenijmegen/components-css';
 
 export const argTypes = {
   title: {
@@ -24,51 +25,72 @@ export const argTypes = {
       defaultValue: '',
     },
   },
+  global: {
+    name: 'global',
+    control: 'boolean',
+    table: {
+      defaultValue: { summary: false },
+    },
+  },
 };
 
 export const defaultArgs = {
   title: 'Heading',
   text: 'Lorem ipsum dolor sit amet, consectetur ad isicing elit, sed do eiusmod',
   type: 'info',
+  global: false,
 };
 
-export const AlertStory = ({ title = defaultArgs.title, text = defaultArgs.text, type = defaultArgs.type }) => {
+export const AlertStory = ({
+  title = defaultArgs.title,
+  text = defaultArgs.text,
+  type = defaultArgs.type,
+  global = defaultArgs.global,
+}) => {
   let icon = <IconCircleCheck />;
+  let ariaLabel = 'Alert type Succes';
+
   switch (type) {
     case 'error':
-      icon = (
-        <span className="utrecht-icon" role="img" aria-label="Alert type Foutmelding">
-          <IconAlertCircle />
-        </span>
-      );
+      icon = <IconAlertCircle />;
+      ariaLabel = 'Alert type Foutmelding';
       break;
     case 'info':
-      icon = (
-        <span className="utrecht-icon" role="img" aria-label="Alert type Informatie">
-          <IconInfoCircle />
-        </span>
-      );
+      icon = <IconInfoCircle />;
+      ariaLabel = 'Alert type Informatie';
       break;
     case 'ok':
-      icon = (
-        <span className="utrecht-icon" role="img" aria-label="Alert type Succes">
-          <IconCircleCheck />
-        </span>
-      );
+      icon = <IconCircleCheck />;
+      ariaLabel = 'Alert type Succes';
       break;
     case 'warning':
-      icon = (
-        <span className="utrecht-icon" role="img" aria-label="Alert type Waarschuwing">
-          <IconAlertTriangle />
-        </span>
-      );
+      icon = <IconAlertTriangle />;
+      ariaLabel = 'Alert type Waarschuwing';
       break;
   }
 
   return (
-    <Alert icon={icon} type={type}>
-      <Heading4>{title}</Heading4>
-      <Paragraph>{text}</Paragraph>
-    </Alert>
+    <div className={`nijmegen-alert nijmegen-alert--${type}`}>
+      <div className="nijmegen-alert__icon">
+        <span className="utrecht-icon" role="img" aria-label={ariaLabel}>
+          {icon}
+        </span>
+      </div>
+      <div className="nijmegen-alert__content">
+        <div className="nijmegen-alert__message" role="status">
+          <Heading4>{title}</Heading4>
+          <Paragraph>{text}</Paragraph>
+        </div>
+      </div>
+      {global && (
+        <div className="nijmegen-alert__icon">
+          <button className="nijmegen-alert__close">
+            <span className="utrecht-icon" role="img" aria-label="Sluiten">
+              <IconX></IconX>
+            </span>
+          </button>
+        </div>
+      )}
+    </div>
   );
 };
