@@ -1,7 +1,7 @@
 import '@gemeentenijmegen/components-css';
 import clsx from 'clsx';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { DropdownMenuStory } from '../../Dropdown menu/_DropdownMenu';
+// import { DropdownMenuStory } from '../../Dropdown menu/_DropdownMenu';
 import { MobileMenuStoryHtml, MobileMenuStoryWebComponent } from '../../Mobile menu/MobileMenu';
 import { SearchStory, SearchStoryWebComponent } from '../../Search/_Search';
 import '@gemeentenijmegen/web-components/dist/nijmegen-header.js';
@@ -329,53 +329,62 @@ export const HeaderStoryWebComponent = ({ state = '', variant = '', account = fa
     <nijmegen-header>
       <div className="nijmegen-header__content--small">
         <div className="nijmegen-header__content--small--inner">
-          {variant !== 'funnel' && (
-            <button
-              className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu', {
-                'nijmegen-toolbar-button--active': state === 'active',
-                'nijmegen-toolbar-button--hover': state === 'hover',
-                'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-              })}
-              type="button"
-              aria-expanded={expanded}
-              aria-controls="mobile-menu"
-              aria-label="Menu openen"
-            >
-              Menu
-            </button>
-          )}
+          <img src={logoMerk} alt="Beeldmerk gemeente Nijmegen"></img>
           <div>
-            <img src={logoMerk} alt="Beeldmerk gemeente Nijmegen"></img>
+            {variant !== 'funnel' && (
+              <button
+                className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-world', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-label="Translate"
+              ></button>
+            )}
+            {variant !== 'funnel' && (
+              <button
+                className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-search', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-expanded={expanded}
+                aria-controls="search-container"
+                aria-label="Zoeken"
+              ></button>
+            )}
+            {variant === 'funnel' && account === true && (
+              <button
+                className={clsx('nijmegen-toolbar-button', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-expanded={expanded}
+                aria-label="Account"
+              >
+                A. van der Klap
+              </button>
+            )}
+            {variant !== 'funnel' && (
+              <button
+                className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-expanded={expanded}
+                aria-controls="mobile-menu"
+                aria-label="Menu openen"
+              >
+                Menu
+              </button>
+            )}
           </div>
-          {variant !== 'funnel' && (
-            <button
-              className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-search', {
-                'nijmegen-toolbar-button--active': state === 'active',
-                'nijmegen-toolbar-button--hover': state === 'hover',
-                'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-              })}
-              type="button"
-              aria-expanded={expanded}
-              aria-controls="search-container"
-              aria-label="Zoeken"
-            >
-              Zoeken
-            </button>
-          )}
-          {variant === 'funnel' && account === true && (
-            <button
-              className={clsx('nijmegen-toolbar-button', {
-                'nijmegen-toolbar-button--active': state === 'active',
-                'nijmegen-toolbar-button--hover': state === 'hover',
-                'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-              })}
-              type="button"
-              aria-expanded={expanded}
-              aria-label="Account"
-            >
-              A. van der Klap
-            </button>
-          )}
         </div>
 
         {variant === 'default' && (
@@ -652,30 +661,42 @@ export const HeaderStoryWebComponent = ({ state = '', variant = '', account = fa
               </li>
             )}
             {variant === 'default' && (
+              // <li className="nijmegen-header-action nijmegen-header-action--relative">
+              //   <button
+              //     className={clsx('nijmegen-header-item', {
+              //       'nijmegen-header-item--active': state === 'active',
+              //       'nijmegen-header-item--hover': state === 'hover',
+              //       'nijmegen-header-item--focus-visible': state === 'focus-visible',
+              //     })}
+              //     aria-expanded={expanded}
+              //     aria-label="Taal wijzigen, huidige taal is Nederlands"
+              //   >
+              //     Nederlands
+              //   </button>
+
+              //   <div className="nijmegen-header__panel nijmegen-header__panel--small">
+              //     <DropdownMenuStory
+              //       items={[
+              //         { text: 'English (Engels)', href: '#', lang: 'en' },
+              //         { text: 'Deutsch (Duits)', href: '#', lang: 'de' },
+              //         { text: 'Français (Frans)', href: '#', lang: 'fr' },
+              //         { text: 'Türkçe (Turks)', href: '#', lang: 'tr' },
+              //         { text: 'العربية (Arabisch)', href: '#', lang: 'ar' },
+              //       ]}
+              //     />
+              //   </div>
+              // </li>
               <li className="nijmegen-header-action nijmegen-header-action--relative">
                 <button
-                  className={clsx('nijmegen-header-item', {
+                  className={clsx('nijmegen-header-item nijmegen-header-item--icon-world', {
                     'nijmegen-header-item--active': state === 'active',
                     'nijmegen-header-item--hover': state === 'hover',
                     'nijmegen-header-item--focus-visible': state === 'focus-visible',
                   })}
-                  aria-expanded={expanded}
-                  aria-label="Taal wijzigen, huidige taal is Nederlands"
+                  aria-label="Translate"
                 >
-                  Nederlands
+                  Translate
                 </button>
-
-                <div className="nijmegen-header__panel nijmegen-header__panel--small">
-                  <DropdownMenuStory
-                    items={[
-                      { text: 'English (Engels)', href: '#', lang: 'en' },
-                      { text: 'Deutsch (Duits)', href: '#', lang: 'de' },
-                      { text: 'Français (Frans)', href: '#', lang: 'fr' },
-                      { text: 'Türkçe (Turks)', href: '#', lang: 'tr' },
-                      { text: 'العربية (Arabisch)', href: '#', lang: 'ar' },
-                    ]}
-                  />
-                </div>
               </li>
             )}
             {variant !== 'default' && account === true && (
@@ -721,52 +742,62 @@ export const HeaderStoryHtml = ({ state = '', expanded = '', variant = '', accou
     <header className="nijmegen-header">
       <div className="nijmegen-header__content--small">
         <div className="nijmegen-header__content--small--inner">
-          {variant !== 'funnel' && (
-            <button
-              className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu', {
-                'nijmegen-toolbar-button--active': state === 'active',
-                'nijmegen-toolbar-button--hover': state === 'hover',
-                'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-              })}
-              type="button"
-              aria-expanded={expanded}
-              aria-controls="mobile-menu"
-              aria-label="Menu openen"
-            >
-              Menu
-            </button>
-          )}
+          <img src={logoMerk} alt="Beeldmerk gemeente Nijmegen"></img>
           <div>
-            <img src={logoMerk} alt="Beeldmerk gemeente Nijmegen"></img>
+            {variant !== 'funnel' && (
+              <button
+                className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-world', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-label="Translate"
+              ></button>
+            )}
+            {variant !== 'funnel' && (
+              <button
+                className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-search', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-expanded={expanded}
+                aria-controls="search-container"
+                aria-label="Zoeken"
+              ></button>
+            )}
+            {variant === 'funnel' && account === true && (
+              <button
+                className={clsx('nijmegen-toolbar-button', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-expanded={expanded}
+                aria-label="Account"
+              >
+                A. van der Klap
+              </button>
+            )}
+            {variant !== 'funnel' && (
+              <button
+                className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-menu', {
+                  'nijmegen-toolbar-button--active': state === 'active',
+                  'nijmegen-toolbar-button--hover': state === 'hover',
+                  'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
+                })}
+                type="button"
+                aria-expanded={expanded}
+                aria-controls="mobile-menu"
+                aria-label="Menu openen"
+              >
+                Menu
+              </button>
+            )}
           </div>
-          {variant !== 'funnel' && (
-            <button
-              className={clsx('nijmegen-toolbar-button nijmegen-toolbar-button--icon-search', {
-                'nijmegen-toolbar-button--active': state === 'active',
-                'nijmegen-toolbar-button--hover': state === 'hover',
-                'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-              })}
-              type="button"
-              aria-expanded={expanded}
-              aria-label="Zoeken"
-            >
-              Zoeken
-            </button>
-          )}
-          {variant === 'funnel' && account === true && (
-            <button
-              className={clsx('nijmegen-toolbar-button', {
-                'nijmegen-toolbar-button--active': state === 'active',
-                'nijmegen-toolbar-button--hover': state === 'hover',
-                'nijmegen-toolbar-button--focus-visible': state === 'focus-visible',
-              })}
-              type="button"
-              aria-expanded={expanded}
-              aria-label="Account"
-            >
-              A. van der Klap
-            </button>
-          )}
         </div>
 
         {variant === 'default' && (
@@ -1034,30 +1065,42 @@ export const HeaderStoryHtml = ({ state = '', expanded = '', variant = '', accou
               </li>
             )}
             {variant === 'default' && (
+              // <li className="nijmegen-header-action nijmegen-header-action--relative">
+              //   <button
+              //     className={clsx('nijmegen-header-item', {
+              //       'nijmegen-header-item--active': state === 'active',
+              //       'nijmegen-header-item--hover': state === 'hover',
+              //       'nijmegen-header-item--focus-visible': state === 'focus-visible',
+              //     })}
+              //     aria-expanded={expanded}
+              //     aria-label="Taal wijzigen, huidige taal is Nederlands"
+              //   >
+              //     Nederlands
+              //   </button>
+
+              //   <div className="nijmegen-header__panel nijmegen-header__panel--small">
+              //     <DropdownMenuStory
+              //       items={[
+              //         { text: 'English (Engels)', href: '#', lang: 'en' },
+              //         { text: 'Deutsch (Duits)', href: '#', lang: 'de' },
+              //         { text: 'Français (Frans)', href: '#', lang: 'fr' },
+              //         { text: 'Türkçe (Turks)', href: '#', lang: 'tr' },
+              //         { text: 'العربية (Arabisch)', href: '#', lang: 'ar' },
+              //       ]}
+              //     />
+              //   </div>
+              // </li>
               <li className="nijmegen-header-action nijmegen-header-action--relative">
                 <button
-                  className={clsx('nijmegen-header-item', {
+                  className={clsx('nijmegen-header-item nijmegen-header-item--icon-world', {
                     'nijmegen-header-item--active': state === 'active',
                     'nijmegen-header-item--hover': state === 'hover',
                     'nijmegen-header-item--focus-visible': state === 'focus-visible',
                   })}
-                  aria-expanded={expanded}
-                  aria-label="Taal wijzigen, huidige taal is Nederlands"
+                  aria-label="Translate"
                 >
-                  Nederlands
+                  Translate
                 </button>
-
-                <div className="nijmegen-header__panel nijmegen-header__panel--small">
-                  <DropdownMenuStory
-                    items={[
-                      { text: 'English (Engels)', href: '#', lang: 'en' },
-                      { text: 'Deutsch (Duits)', href: '#', lang: 'de' },
-                      { text: 'Français (Frans)', href: '#', lang: 'fr' },
-                      { text: 'Türkçe (Turks)', href: '#', lang: 'tr' },
-                      { text: 'العربية (Arabisch)', href: '#', lang: 'ar' },
-                    ]}
-                  />
-                </div>
               </li>
             )}
             {variant !== 'default' && account === true && (
