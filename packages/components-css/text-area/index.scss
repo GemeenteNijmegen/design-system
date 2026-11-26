@@ -1,0 +1,68 @@
+/* stylelint-disable custom-property-pattern */
+
+@import "~@utrecht/focus-ring-css/src/mixin";
+
+.nijmegen-text-area {
+  background-color: var(--utrecht-textarea-background-color);
+  border-block-end-width: var(--utrecht-textarea-border-block-end-width);
+  border-color: var(--utrecht-textarea-border-color);
+  border-radius: var(--utrecht-textarea-border-radius);
+  border-style: solid;
+  border-width: var(--utrecht-textarea-border-width);
+  box-sizing: border-box;
+  color: var(--utrecht-textarea-color);
+  font-family: var(--utrecht-textarea-font-family);
+  font-size: var(--utrecht-textarea-font-size);
+  font-weight: var(--utrecht-textarea-font-weight);
+  inline-size: 100%;
+  line-height: var(--utrecht-textarea-line-height);
+  max-inline-size: var(--utrecht-textarea-max-inline-size);
+  padding-block-end: var(--utrecht-textarea-padding-block-end);
+  padding-block-start: var(--utrecht-textarea-padding-block-start);
+  padding-inline-end: var(--utrecht-textarea-padding-inline-end);
+  padding-inline-start: var(--utrecht-textarea-padding-inline-start);
+
+  &::placeholder {
+    color: var(--utrecht-textarea-placeholder-color);
+  }
+
+  &:hover,
+  &--hover {
+    background-color: var(--todo-textarea-hover-background-color);
+    border-color: var(--todo-textarea-hover-border-color);
+    color: var(--todo-textarea-hover-color);
+  }
+
+  &:focus-visible,
+  &--focus-visible {
+    @include utrecht-focus-ring;
+
+    background-color: var(--utrecht-textarea-focus-background-color);
+    border-color: var(--utrecht-textarea-focus-border-color);
+    color: var(--utrecht-textarea-focus-color);
+  }
+
+  &[aria-invalid="true"],
+  &--invalid {
+    background-color: var(--utrecht-textarea-invalid-background-color);
+    border-block-end-width: var(--utrecht-textarea-invalid-border-block-end-width);
+    border-color: var(--utrecht-textarea-invalid-border-color);
+    border-width: var(--utrecht-textarea-invalid-border-width);
+    color: var(--utrecht-textarea-invalid-color);
+  }
+
+  &[readonly],
+  &--read-only {
+    background-color: var(--utrecht-textarea-read-only-background-color);
+    border-color: var(--utrecht-textarea-read-only-border-color);
+    color: var(--utrecht-textarea-read-only-color);
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: var(--utrecht-textarea-disabled-background-color);
+    border-color: var(--utrecht-textarea-disabled-border-color);
+    color: var(--utrecht-textarea-disabled-color);
+  }
+}
+/* stylelint-enable custom-property-pattern */
