@@ -1,0 +1,13 @@
+.nijmegen-form-field {
+  display: flex;
+  flex-direction: column;
+  margin-block-end: var(--utrecht-form-field-margin-block-end);
+  margin-block-start: var(--utrecht-form-field-margin-block-start);
+
+  &--invalid {
+    border-inline-start-color: var(--utrecht-form-field-invalid-border-inline-start-color);
+    border-inline-start-style: solid;
+    border-inline-start-width: var(--utrecht-form-field-invalid-border-inline-start-width);
+    padding-inline-start: var(--utrecht-form-field-invalid-padding-inline-start);
+  }
+}
