@@ -1,0 +1,35 @@
+/* stylelint-disable custom-property-pattern */
+.nijmegen-form-field-error-message {
+  background-color: var(--utrecht-form-field-error-message-background-color);
+  color: var(--utrecht-form-field-error-message-color);
+  display: flex;
+  font-family: var(--utrecht-document-font-family, inherit);
+  font-size: var(--utrecht-form-field-error-message-font-size, inherit);
+  font-style: var(--utrecht-form-field-error-message-font-style);
+  gap: var(--todo-form-field-error-message-column-gap, 0);
+  line-height: var(--utrecht-form-field-error-message-line-height);
+  margin-block-end: var(--utrecht-form-field-error-message-margin-block-end);
+  margin-block-start: var(--utrecht-form-field-error-message-margin-block-start);
+  padding-block-end: var(--utrecht-form-field-error-message-padding-block-end);
+  padding-block-start: var(--utrecht-form-field-error-message-padding-block-start);
+  padding-inline-end: var(--utrecht-form-field-error-message-padding-inline-end);
+  padding-inline-start: var(--utrecht-form-field-error-message-padding-inline-start);
+
+  &::before {
+    background-color: var(--utrecht-form-field-error-message-color);
+    content: "";
+    flex-shrink: 0;
+    /* stylelint-disable-next-line property-disallowed-list */
+    height: var(--todo-form-field-error-message-icon-size, 1.5rem);
+    mask-image: var(
+      --nijmegen-header-item-close-icon-image,
+      url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-alert-circle"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>')
+    );
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 100%;
+    padding-block-start: 0.25rem;
+    width: var(--todo-form-field-error-message-icon-size, 1.5rem); /* stylelint-disable-line property-disallowed-list */
+  }
+}
+/* stylelint-enable custom-property-pattern */
