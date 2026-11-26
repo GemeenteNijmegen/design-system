@@ -1,0 +1,75 @@
+/* stylelint-disable custom-property-pattern */
+
+@import "~@utrecht/focus-ring-css/src/mixin";
+
+.nijmegen-select {
+  background-color: var(--utrecht-select-background-color);
+  border-block-end-width: var(--utrecht-select-border-block-end-width);
+  border-color: var(--utrecht-select-border-color);
+  border-radius: var(--utrecht-select-border-radius);
+  border-style: solid;
+  border-width: var(--utrecht-select-border-width);
+  box-sizing: border-box;
+  color: var(--utrecht-select-color);
+  font-family: var(--utrecht-select-font-family);
+  font-size: var(--utrecht-select-font-size);
+  font-weight: var(--utrecht-select-font-weight);
+  inline-size: 100%;
+  line-height: var(--utrecht-select-line-height);
+  max-inline-size: var(--utrecht-select-max-inline-size);
+  min-block-size: var(--utrecht-select-min-block-size);
+  padding-block-end: var(--utrecht-select-padding-block-end);
+  padding-block-start: var(--utrecht-select-padding-block-start);
+  padding-inline-end: var(--utrecht-select-padding-inline-end);
+  padding-inline-start: var(--utrecht-select-padding-inline-start);
+
+  &:not([multiple]) {
+    appearance: none;
+    background-image: var(
+      --utrecht-select-background-image,
+      url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>')
+    );
+    background-position: right 0.25rem center;
+    background-repeat: no-repeat;
+    background-size: 1.4rem;
+  }
+
+  &:hover,
+  &--hover {
+    background-color: var(--utrecht-select-hover-background-color);
+    border-color: var(--utrecht-select-hover-border-color);
+    color: var(--utrecht-select-hover-color);
+  }
+
+  &:focus-visible,
+  &--focus-visible {
+    @include utrecht-focus-ring;
+
+    background-color: var(--utrecht-select-focus-background-color);
+    border-color: var(--utrecht-select-focus-border-color);
+    color: var(--utrecht-select-focus-color);
+  }
+
+  &[aria-invalid="true"],
+  &--invalid {
+    background-color: var(--utrecht-select-invalid-background-color);
+    border-block-end-width: var(--utrecht-select-invalid-border-block-end-width);
+    border-color: var(--utrecht-select-invalid-border-color);
+    border-width: var(--utrecht-select-invalid-border-width);
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: var(--utrecht-select-disabled-background-color);
+    border-color: var(--utrecht-select-disabled-border-color);
+    color: var(--utrecht-select-disabled-color);
+
+    &:not([multiple]) {
+      background-image: var(
+        --utrecht-select-disabled-background-image,
+        url('data:image/svg+xml,<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="%23868686"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9l6 6l6 -6" /></svg>')
+      );
+    }
+  }
+}
+/* stylelint-enable custom-property-pattern */
