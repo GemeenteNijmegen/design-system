@@ -1,0 +1,9 @@
+.nijmegen-form-field-description {
+  color: var(--utrecht-form-field-description-color);
+  font-family: var(--utrecht-document-font-family, inherit);
+  font-size: var(--utrecht-form-field-description-font-size, inherit);
+  font-style: var(--utrecht-form-field-description-font-style);
+  line-height: var(--utrecht-form-field-description-line-height);
+  margin-block-end: var(--utrecht-form-field-description-margin-block-end);
+  margin-block-start: var(--utrecht-form-field-description-margin-block-start);
+}
