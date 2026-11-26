@@ -43,7 +43,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const DefaultFormFieldLabel: Story = {
+export const Default: Story = {
   args: {
     htmlFor: 'f8d58cea-75ad-41d0-b7d8-34989929bb78',
     children: 'Username',
@@ -53,16 +53,16 @@ export const DefaultFormFieldLabel: Story = {
   },
 };
 
-export const CheckedFormFieldLabel: Story = {
+export const Checked: Story = {
   args: {
-    ...DefaultFormFieldLabel.args,
+    ...Default.args,
     checked: true,
   },
 };
 
-export const DisabledFormFieldLabel: Story = {
+export const Disabled: Story = {
   args: {
-    ...DefaultFormFieldLabel.args,
+    ...Default.args,
     disabled: true,
   },
 };

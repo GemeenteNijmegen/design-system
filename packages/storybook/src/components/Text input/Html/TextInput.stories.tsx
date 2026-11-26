@@ -43,7 +43,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const DefaultTextInput: Story = {
+export const Default: Story = {
   args: {
     id: '06c51b81-480a-46bb-938d-e20a4540a9c1',
     placeholder: '',
@@ -51,22 +51,22 @@ export const DefaultTextInput: Story = {
   },
 };
 
-export const HoverTextInput: Story = {
-  args: { ...DefaultTextInput.args, state: 'hover' },
+export const Hover: Story = {
+  args: { ...Default.args, state: 'hover' },
 };
 
-export const FocusVisibleTextInput: Story = {
-  args: { ...DefaultTextInput.args, state: 'focus-visible' },
+export const FocusVisible: Story = {
+  args: { ...Default.args, state: 'focus-visible' },
 };
 
-export const DisabledTextInput: Story = {
-  args: { ...DefaultTextInput.args, state: 'disabled' },
+export const Disabled: Story = {
+  args: { ...Default.args, state: 'disabled' },
 };
 
-export const InvalidTextInput: Story = {
-  args: { ...DefaultTextInput.args, state: 'invalid' },
+export const Invalid: Story = {
+  args: { ...Default.args, state: 'invalid' },
 };
 
-export const ReadOnlyTextInput: Story = {
-  args: { ...DefaultTextInput.args, state: 'read-only' },
+export const ReadOnly: Story = {
+  args: { ...Default.args, state: 'read-only' },
 };

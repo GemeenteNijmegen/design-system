@@ -43,7 +43,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const DefaultFormFieldDescription: Story = {
+export const Default: Story = {
   args: {
     id: '0427f759-009c-43ad-8e1c-3d7b9982a133',
     children: 'Your password must contain at least 16 characters.',

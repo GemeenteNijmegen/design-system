@@ -43,7 +43,7 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const DefaultFormFieldErrorMessage: Story = {
+export const Default: Story = {
   args: {
     id: '4f8817a0-7159-4add-bae5-d19e24251e6a',
     children: 'Your password is too short. Use at least 16 characters.',
