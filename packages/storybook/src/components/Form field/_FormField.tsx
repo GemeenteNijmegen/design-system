@@ -17,7 +17,13 @@ export const argTypes = {
   errorMessage: {
     control: 'text',
   },
+  fieldType: {
+    control: { type: 'select' },
+    options: ['Text input', 'Text area', 'Select'],
+  },
 };
+
+type FormFieldType = 'Text input' | 'Text area' | 'Select';
 
 interface FormFieldStoryProps {
   id?: string;
@@ -25,14 +31,27 @@ interface FormFieldStoryProps {
   description?: string;
   invalid?: boolean;
   errorMessage?: string;
+  fieldType?: FormFieldType;
 }
 
-export const FormFieldStory = ({ id, label, description, invalid, errorMessage }: FormFieldStoryProps) => {
+export const FormFieldStory = ({
+  id,
+  label,
+  description,
+  invalid,
+  errorMessage,
+  fieldType = 'Text input',
+}: FormFieldStoryProps) => {
   const descriptionId = `${id}-description`;
   const errorMessageId = `${id}-error-message`;
   const showErrorMessage = invalid && errorMessage;
   const describedBy = [description && descriptionId, showErrorMessage && errorMessageId].filter(Boolean).join(' ');
   const className = ['nijmegen-form-field', invalid && 'nijmegen-form-field--invalid'].filter(Boolean).join(' ');
+  const fieldProps = {
+    id,
+    'aria-describedby': describedBy || undefined,
+    'aria-invalid': invalid || undefined,
+  };
 
   return (
     <div className={className}>
@@ -49,13 +68,21 @@ export const FormFieldStory = ({ id, label, description, invalid, errorMessage }
           {errorMessage}
         </div>
       )}
-      <input
-        type="text"
-        id={id}
-        className="nijmegen-text-input"
-        aria-describedby={describedBy || undefined}
-        aria-invalid={invalid || undefined}
-      />
+      {fieldType === 'Text input' && <input type="text" className="nijmegen-text-input" {...fieldProps} />}
+      {fieldType === 'Text area' && <textarea className="nijmegen-text-area" rows={4} {...fieldProps} />}
+      {fieldType === 'Select' && (
+        <select className="nijmegen-select" {...fieldProps}>
+          <option value="1" className="nijmegen-select__option">
+            Option 1
+          </option>
+          <option value="2" className="nijmegen-select__option">
+            Option 2
+          </option>
+          <option value="3" className="nijmegen-select__option">
+            Option 3
+          </option>
+        </select>
+      )}
     </div>
   );
 };

@@ -50,6 +50,7 @@ export const Default: Story = {
     description: 'Your username is your email address.',
     invalid: false,
     errorMessage: 'Enter a valid email address.',
+    fieldType: 'Text input',
   },
 };
 
